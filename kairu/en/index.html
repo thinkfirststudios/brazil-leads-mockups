@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<!-- Speculative pitch mockup for a prospect who has not commissioned, seen or
+     approved it. Must never be indexed or compete with the real business. -->
+<title>Kairú — vegan burgers in [CONFIRM neighbourhood], Florianópolis, Brazil</title>
+<meta name="description" content="A full menu with prices, an allergen filter and direct WhatsApp ordering. Plant-based burgers in Florianópolis, Brazil. [CONFIRM format, neighbourhood and hours]">
+<!-- ⚠ NOTE WHAT IS *NOT* IN THE TITLE OR THE DESCRIPTION: the words
+     "100% vegano". That is a claim about bread, sauces and fryer oil, and it
+     does not go into a meta tag — the most-copied string on the site — before
+     the kitchen has confirmed it. [CONFIRM] -->
+<link rel="canonical" href="https://kairu.com.br/en/">
+<link rel="alternate" hreflang="pt-BR" href="https://kairu.com.br/">
+<link rel="alternate" hreflang="en" href="https://kairu.com.br/en/">
+<link rel="alternate" hreflang="x-default" href="https://kairu.com.br/">
+<!-- [CONFIRM domain] — no website exists. kairu.com.br is a stand-in so the
+     URL structure and hreflang can be reviewed.
+     The EN tree is not decoration: Floripa's remote-worker population skews
+     heavily plant-based and searches "vegan burger Florianopolis" in English,
+     finding nothing today.
+     DNS, on any migration: change the WEB records only. NEVER touch MX. -->
+<meta property="og:title" content="Kairú — vegan burgers in [CONFIRM neighbourhood], Florianópolis, Brazil">
+<meta property="og:description" content="A full menu with prices, an allergen filter and direct WhatsApp ordering. Plant-based burgers in Florianópolis, Brazil. [CONFIRM format, neighbourhood and hours]">
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:locale" content="en_US">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Restaurant",
+ "@id":"https://kairu.com.br/#restaurant",
+ "name":"Kair\u00fa",
+ "url":"https://kairu.com.br/en/",
+ "inLanguage":"en",
+ "servesCuisine":["Burger","Plant-based"],
+ "menu":"https://kairu.com.br/#cardapio",
+ "telephone":"[CONFIRM]",
+ "email":"[CONFIRM]",
+ "priceRange":"[CONFIRM]",
+ "currenciesAccepted":"BRL",
+ "paymentAccepted":"[CONFIRM: Pix, cart\u00f5es]",
+ "sameAs":["https://www.instagram.com/kairu.veg/"],
+ "address":{"@type":"PostalAddress","streetAddress":"[CONFIRM]",
+   "addressLocality":"Florian\u00f3polis","addressRegion":"SC",
+   "postalCode":"[CONFIRM]","addressCountry":"BR"},
+ "geo":{"@type":"GeoCoordinates","latitude":"[CONFIRM]","longitude":"[CONFIRM]"},
+ "openingHoursSpecification":[{"@type":"OpeningHoursSpecification",
+   "dayOfWeek":"[CONFIRM]","opens":"[CONFIRM]","closes":"[CONFIRM \u2014 fecham tarde?]"}]
+}
+</script>
+<!-- servesCuisine says "Plant-based", which is what the lead source and the
+     .veg handle support. It does NOT say "Vegan" as a hasMenu attribute or a
+     dietary restriction, because that is the claim under [CONFIRM].
+     NO aggregateRating, NO review, NO delivery-app rating is emitted — none
+     exists to attribute, and a delivery rating is never invented. -->
+</head>
+<body>
+<a class="skip" href="#main">skip to content</a>
+
+<!-- 1 · Sticky nav — solid near-black at every scroll position -->
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="../index.html">kair<span>ú</span></a>
+    <nav class="nav" aria-label="main navigation"><a href="#cardapio">menu</a><a href="#pedir">order</a><a href="#sobre">about</a><a href="#onde">find us</a><a href="#contato">contact</a></nav>
+    <div class="hdr__r">
+      <span class="langs">
+        <a href="../index.html" hreflang="pt-BR" lang="pt-BR">PT</a>
+        <a href="index.html" hreflang="en" lang="en" class="on">EN</a>
+      </span>
+      <a class="btn btn--sm" href="#pedir">order</a>
+      <button class="burger" aria-label="open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mnav" aria-label="Menu"><a href="#cardapio">menu</a><a href="#pedir">order</a><a href="#sobre">about</a><a href="#onde">find us</a><a href="#contato">contact</a><a href="#pedir">order</a></nav>
+<main id="main">
+
+<!-- 2 · Hero — one image, one job. The discipline of a single CTA is the
+     design argument on this page. -->
+<section class="hero">
+  <div class="wrap">
+    <p class="hero__mark">kairú · @kairu.veg</p>
+    <div class="hero__img">
+      <!-- PLACEHOLDER-hero-burger.jpg — royalty-free stock (Unsplash).
+           ⚠ THIS IS NOT A PLANT-BASED PRODUCT AND NOT KAIRÚ'S FOOD. See the
+           note below the hero: stock burger photography cannot stand in for a
+           vegan menu, and a real shoot is a correctness requirement here. -->
+      <img src="https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=900&q=74" width="900" height="900" fetchpriority="high"
+        alt="A burger photographed on a dark background — stock image, not a Kairú product and not a plant-based item">
+    </div>
+    <h1 class="h1"><span class="cfm">[CONFIRM tagline — não inventar]</span></h1>
+    <p class="lede">Plant-based burgers in Florianópolis. Order direct, with nobody in between.</p>
+    <div class="btn-row">
+      <a class="btn btn--wa" href="#" data-wa>Order on WhatsApp <span class="ar">&rarr;</span></a>
+    </div>
+    <a class="hero__link" href="#cardapio">see the menu</a>
+  </div>
+</section>
+
+<!-- 3 · Ticker. EVERY claim in it is [CONFIRM], and "100% vegetal" is
+     switched off in this build — see the flag beneath. Renders static under
+     prefers-reduced-motion. -->
+<div class="ticker" role="note" aria-label="Credentials to confirm">
+  <div class="ticker__track"><span>100% plant-based [CONFIRM]</span><span>no animal-derived ingredients [CONFIRM]</span><span>made to order [CONFIRM]</span><span>delivery in [CONFIRM neighbourhood]</span><span>100% plant-based [CONFIRM]</span><span>no animal-derived ingredients [CONFIRM]</span><span>made to order [CONFIRM]</span><span>delivery in [CONFIRM neighbourhood]</span></div>
+</div>
+
+<div class="wrap" style="margin-top:clamp(24px,3vw,40px)">
+  <div class="flag" data-rv>
+    <b>the most important line on this site</b>
+    <strong>“100% plant-based” is a claim, not a decoration</strong> — which is why it is switched off in this build. It goes live only once the kitchen confirms that <strong>the bread, the sauces, the fryer oil</strong> and every ingredient are free of animal products, and states whether the kitchen also handles non-vegan items. Someone with a dairy or egg allergy and someone with an ethical commitment both rely on that sentence — and a false one is misleading advertising under the Brazilian Consumer Code.
+  </div>
+</div>
+
+<!-- 4 · Trust strip -->
+<div class="wrap" style="margin-top:clamp(24px,3vw,40px)">
+  <div class="trust" data-rv>
+    <div><div class="ic" aria-hidden="true">&#9752;</div><b>100% plant-based</b><span><span class="cfm">[CONFIRM]</span></span></div>
+    <div><div class="ic" aria-hidden="true">&#9832;</div><b>made to order</b><span><span class="cfm">[CONFIRM]</span></span></div>
+    <div><div class="ic" aria-hidden="true">&#9634;</div><b>gluten-free options</b><span><span class="cfm">[CONFIRM]</span></span></div>
+    <div><div class="ic" aria-hidden="true">&#9993;</div><b>order on WhatsApp</b><span><span class="cfm">[CONFIRM]</span></span></div>
+    <div><div class="ic" aria-hidden="true">&#9679;</div><b>we take Pix</b><span><span class="cfm">[CONFIRM]</span></span></div>
+  </div>
+</div>
+
+<!-- ==========================================================================
+     5 · ⭐ THE BURGER BOARD. For a burger joint the menu IS the site: the
+     decision a visitor is making is "which burger", and everything else
+     exists to get them here.
+     ========================================================================== -->
+<section class="sec sec--dark on-dark" id="cardapio">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">menu</p>
+      <h2 class="h2">the menu google can actually read.</h2>
+      <p class="lede">Today it lives inside an Instagram highlight: invisible to search, unreadable to a screen reader, impossible to filter. Nobody searching “vegan burger Florianópolis” finds you.</p>
+    </div>
+
+    <!-- the filter chips: cheap to build, immediately useful, and something an
+         Instagram highlight literally cannot do -->
+    <div class="chips" role="group" aria-label="Filter by allergen" data-rv>
+      <button type="button" data-f="all" aria-pressed="true">all</button>
+      <button type="button" data-f="sem-gluten" aria-pressed="false">gluten free</button>
+      <button type="button" data-f="sem-soja" aria-pressed="false">soy free</button>
+      <button type="button" data-f="sem-castanhas" aria-pressed="false">nut free</button>
+    </div>
+
+    <div class="board" data-board data-imgs="https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=600&q=70|https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=70|https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=600&q=70|https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=600&q=70|https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=70|https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=600&q=70|https://images.unsplash.com/photo-1512152272829-e3139592d56f?auto=format&fit=crop&w=600&q=70|https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=600&q=70|https://images.unsplash.com/photo-1619740455993-9e612b1af08a?auto=format&fit=crop&w=600&q=70|https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=70|https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=70|https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=600&q=70|https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=600&q=70|https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=70|https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=600&q=70|https://images.unsplash.com/photo-1512152272829-e3139592d56f?auto=format&fit=crop&w=600&q=70" data-rv>
+      <article class="item"><div class="item__b"><h3>loading menu…</h3>
+        <p><span class="cfm">[CONFIRM nome]</span></p><span class="price">R$ 00,00</span></div></article>
+    </div>
+
+    <div class="flag" style="margin-top:clamp(26px,3.2vw,44px)" data-rv>
+      <b>about these photographs</b>
+      Every burger photograph on this site is stock, and <strong>every one of them shows meat and dairy cheese</strong> — there is no decent stock photography of a plant-based burger. In a 100% plant-based kitchen that is not an aesthetic detail: it is the difference between showing your product and showing precisely what you do not serve. <strong>Real photography, shot on black, is not an extra on this project — it is a requirement.</strong>
+    </div>
+    <p class="cfm-note" style="margin-top:16px" data-rv>Not one burger, ingredient, sauce or price on this menu is real. On a burger menu the temptation to write something plausible is high and the damage is total: someone choosing on an ingredient list cannot be handed an invented one. The whole board comes from a single array at the top of <code>script.js</code> — editable live in the meeting.</p>
+  </div>
+</section>
+
+<!-- 6 · Monte seu combo — assembles a WhatsApp message, not a cart -->
+<section class="sec sec--light" id="combo">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">build a combo</p>
+      <h2 class="h2">three clicks and a message ready to send.</h2>
+      <p class="lede">No cart, no payment on the site, no backend. It is the cheapest possible way to raise average ticket, and it costs one afternoon to build.</p>
+    </div>
+    <form id="comboForm" data-rv>
+      <div class="combo">
+        <div><b>01</b><h3>burger</h3>
+          <select id="c-burger"><option>[CONFIRM]</option></select></div>
+        <div><b>02</b><h3>side</h3>
+          <select id="c-side"><option>[CONFIRM]</option></select></div>
+        <div><b>03</b><h3>drink</h3>
+          <select id="c-drink"><option>[CONFIRM]</option></select></div>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn--wa" type="submit">Send my combo on WhatsApp <span class="ar">&rarr;</span></button>
+      </div>
+      <p class="cfm-note" style="margin-top:20px">Combo pricing and what it includes: [CONFIRM]. Under the CDC a combo has to state clearly what is in it.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     7 · ⭐ PEÇA DIRETO — the two paths, presented honestly side by side.
+     The direct option is framed as a customer benefit, never as an attack on
+     iFood: they need the platform's volume, and the site's job is to ADD a
+     channel they own, not to pick a fight with the one they have.
+     ========================================================================== -->
+<section class="sec sec--dark on-dark" id="pedir">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">order direct</p>
+      <h2 class="h2">two ways to order, and we show both.</h2>
+    </div>
+    <div class="paths">
+      <div class="path path--direct" data-rv>
+        <h3>on WhatsApp</h3>
+        <p>Straight to the kitchen. No platform commission — the whole order value stays with Kairú, and that is what pays for what a plant-based burger actually costs to make.</p>
+        <a class="btn btn--wa btn--full" href="#" data-wa>Order on WhatsApp <span class="ar">&rarr;</span></a>
+      </div>
+      <div class="path path--app" data-rv>
+        <h3>on iFood</h3>
+        <p>If you are there, the link sits here too. The platform brings volume and there is no sense fighting it — the site adds a channel, it does not replace what already works.</p>
+        <a class="btn btn--ember btn--full" href="#" data-ifood>Order on iFood <span class="cfm">[CONFIRM]</span></a>
+      </div>
+    </div>
+    <ul class="rows" data-rv>
+      <li><b>Delivery radius</b><span><span class="cfm">[CONFIRM]</span></span></li>
+      <li><b>Neighbourhoods covered</b><span><span class="cfm">[CONFIRM]</span></span></li>
+      <li><b>Average prep time</b><span><span class="cfm">[CONFIRM]</span></span></li>
+      <li><b>Minimum order</b><span><span class="cfm">[CONFIRM]</span></span></li>
+      <li><b>Takeaway</b><span><span class="cfm">[CONFIRM]</span></span></li>
+    </ul>
+    <div class="split" style="margin-top:clamp(28px,3.4vw,48px)">
+      <figure class="shot shot--wide" data-rv>
+        <!-- PLACEHOLDER-entrega.jpg — royalty-free stock (Unsplash). No people, no minors. -->
+        <img src="https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=900&q=72" width="900" height="506" loading="lazy" decoding="async"
+          alt="Kraft paper packaging on a light surface — illustrative stock photograph">
+      </figure>
+      <p class="cfm-note" data-rv>[CONFIRM whether they are on iFood] — the most commercially important open question on this lead. No app badge, link or rating ships unverified, and no delivery rating is ever invented. If app pricing differs from counter pricing, that has to be stated.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · O que tem dentro — the credibility block. On a vegan lead this does
+     more work than an About section ever could. -->
+<section class="sec sec--white" id="ingredientes">
+  <div class="wrap">
+    <div class="split">
+      <figure class="shot" data-rv>
+        <!-- PLACEHOLDER-ingredientes.jpg — royalty-free stock (Unsplash). No people. -->
+        <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=900&q=72" width="900" height="1125" loading="lazy" decoding="async"
+          alt="Fresh vegetables and ingredients laid out on wood — illustrative stock photograph">
+      </figure>
+      <div data-rv>
+        <div class="sec-head">
+          <p class="eyebrow">what is in it</p>
+          <h2 class="h2">this is precisely what a vegan customer chooses on.</h2>
+        </div>
+        <p class="lede">Where do the patties, the bread and the sauces come from? Are they house-made? It is the question that decides the purchase in this category — and the information no Instagram highlight can hold.</p>
+        <p class="cfm-note"><span class="cfm">[CONFIRM — de onde vêm os hambúrgueres, o pão e os molhos? São feitos na casa?]</span></p>
+        <p class="cfm-note" style="margin-top:12px">No ingredient, supplier, patty brand or “house-made” claim has been written here. Inventing that on a plant-based menu is unforgivable: it is exactly the fact the customer is deciding on.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9 + 10 · Sobre + edição limitada -->
+<section class="sec sec--light">
+  <div class="wrap">
+    <div class="split split--top">
+      <div data-rv>
+        <div class="sec-head">
+          <p class="eyebrow">about kairú</p>
+          <h2 class="h2">this part gets written in a twenty-minute conversation.</h2>
+        </div>
+        <p class="lede"><span class="cfm">[CONFIRM quem começou, por que vegano, e o que significa “Kairú”]</span></p>
+        <p class="cfm-note">There is no founding year, no founders&rsquo; story and no meaning of the name on this page, because none of it was verified. The name in particular is worth asking about: if it means something, it is the best opening line the site could have.</p>
+        <figure class="shot shot--wide" style="margin-top:22px">
+          <!-- PLACEHOLDER-cozinha.jpg — royalty-free stock (Unsplash). Adult hands, no faces, no minors. -->
+          <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&w=900&q=72" width="900" height="506" loading="lazy" decoding="async"
+            alt="Adult hands preparing food on a counter, no faces — illustrative stock photograph">
+        </figure>
+      </div>
+      <div data-rv>
+        <div class="sec-head">
+          <p class="eyebrow">limited edition</p>
+          <h2 class="h2">the burger of the month, that does not vanish in 24 hours.</h2>
+        </div>
+        <figure class="shot">
+          <!-- PLACEHOLDER-burger-drop.jpg — royalty-free stock (Unsplash). NOT a plant-based product. -->
+          <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=900&q=72" width="900" height="1125" loading="lazy" decoding="async"
+            alt="A burger on a black background in dramatic light — stock image, not a Kairú product">
+        </figure>
+        <p class="cfm-note" style="margin-top:18px"><strong>Next drop coming soon — follow @kairu.veg.</strong> This is the piece that answers the standard objection that “a website goes stale”: you change it in a minute, in the same menu array, and unlike a Story it stays findable afterwards. No special has been fabricated here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · Alérgenos — promoted high, because on a plant-based menu it is a
+     FEATURE rather than fine print -->
+<section class="sec sec--white" id="alergenos">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">allergens &amp; choices</p>
+      <h2 class="h2">plant-based does not mean allergen-free.</h2>
+      <p class="lede">Soy and nuts are in almost every plant-based patty and cheese. A plant-based menu does not reduce the allergen burden — it shifts it. Which is why the useful filter here is not “vegan”: it is <em>which allergen this item avoids</em>.</p>
+    </div>
+    <div class="allerblock" data-rv>
+      <h3>Mandatory declaration — ANVISA RDC 26/2015</h3>
+      <p>A per-item declaration, for those that apply:</p>
+      <div class="chipset">
+        <span>wheat (gluten)</span><span>soy</span>
+        <span>tree nuts</span><span>peanuts</span>
+        <span>sesame</span><span>mustard</span>
+      </div>
+      <h3>Cross-contact</h3>
+      <p>A shared fryer and a shared grill make cross-contact likely, and that has to be said in plain words — not buried in a footer. <span class="cfm">[CONFIRM]</span></p>
+      <h3>Gluten-free bun</h3>
+      <p>A frequent request in this category, and a real differentiator if it exists. <span class="cfm">[CONFIRM]</span></p>
+      <h3>Does the kitchen handle non-vegan items?</h3>
+      <p>If it does, that is stated honestly. It is better to lose a sale than to betray the trust of someone who chose you for precisely this reason. <span class="cfm">[CONFIRM]</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- 12 + 13 · Galeria + Instagram -->
+<section class="sec sec--dark on-dark" id="galeria">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">gallery</p>
+      <h2 class="h2">every frame here is a placeholder.</h2>
+    </div>
+    <div class="gal" data-rv>
+      <figure>
+        <!-- PLACEHOLDER — royalty-free stock (Unsplash). NOT plant-based, NOT Kairú's food.
+             Adults only, no minors in any frame. -->
+        <img src="https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=600&q=68" width="600" height="600" loading="lazy" decoding="async"
+          alt="A stock food photograph — not a Kairú product">
+      </figure>
+      <figure>
+        <!-- PLACEHOLDER — royalty-free stock (Unsplash). NOT plant-based, NOT Kairú's food.
+             Adults only, no minors in any frame. -->
+        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=600&q=68" width="600" height="600" loading="lazy" decoding="async"
+          alt="A stock food photograph — not a Kairú product">
+      </figure>
+      <figure>
+        <!-- PLACEHOLDER — royalty-free stock (Unsplash). NOT plant-based, NOT Kairú's food.
+             Adults only, no minors in any frame. -->
+        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=68" width="600" height="600" loading="lazy" decoding="async"
+          alt="A stock food photograph — not a Kairú product">
+      </figure>
+      <figure>
+        <!-- PLACEHOLDER — royalty-free stock (Unsplash). NOT plant-based, NOT Kairú's food.
+             Adults only, no minors in any frame. -->
+        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=600&q=68" width="600" height="600" loading="lazy" decoding="async"
+          alt="A stock food photograph — not a Kairú product">
+      </figure>
+      <figure>
+        <!-- PLACEHOLDER — royalty-free stock (Unsplash). NOT plant-based, NOT Kairú's food.
+             Adults only, no minors in any frame. -->
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=68" width="600" height="600" loading="lazy" decoding="async"
+          alt="A stock food photograph — not a Kairú product">
+      </figure>
+      <figure>
+        <!-- PLACEHOLDER — royalty-free stock (Unsplash). NOT plant-based, NOT Kairú's food.
+             Adults only, no minors in any frame. -->
+        <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=600&q=68" width="600" height="600" loading="lazy" decoding="async"
+          alt="A stock food photograph — not a Kairú product">
+      </figure>
+      <figure>
+        <!-- PLACEHOLDER — royalty-free stock (Unsplash). NOT plant-based, NOT Kairú's food.
+             Adults only, no minors in any frame. -->
+        <img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=600&q=68" width="600" height="600" loading="lazy" decoding="async"
+          alt="A stock food photograph — not a Kairú product">
+      </figure>
+      <figure>
+        <!-- PLACEHOLDER — royalty-free stock (Unsplash). NOT plant-based, NOT Kairú's food.
+             Adults only, no minors in any frame. -->
+        <img src="https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=600&q=68" width="600" height="600" loading="lazy" decoding="async"
+          alt="A stock food photograph — not a Kairú product">
+      </figure>
+    </div>
+
+    <div class="sec-head" style="margin-top:clamp(40px,4.6vw,70px)" data-rv>
+      <p class="eyebrow">instagram</p>
+      <h2 class="h2">@kairu.veg</h2>
+      <p class="lede">The limited editions drop there first — and vanish there in 24 hours. The site is where they stay.</p>
+    </div>
+    <div class="ig" data-rv>
+      <a href="https://www.instagram.com/kairu.veg/" target="_blank" rel="noopener">
+        <img src="https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=420&q=66" width="420" height="420" loading="lazy" decoding="async"
+          alt="An example tile — stock photograph">
+      </a>
+      <a href="https://www.instagram.com/kairu.veg/" target="_blank" rel="noopener">
+        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=420&q=66" width="420" height="420" loading="lazy" decoding="async"
+          alt="An example tile — stock photograph">
+      </a>
+      <a href="https://www.instagram.com/kairu.veg/" target="_blank" rel="noopener">
+        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=420&q=66" width="420" height="420" loading="lazy" decoding="async"
+          alt="An example tile — stock photograph">
+      </a>
+      <a href="https://www.instagram.com/kairu.veg/" target="_blank" rel="noopener">
+        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=420&q=66" width="420" height="420" loading="lazy" decoding="async"
+          alt="An example tile — stock photograph">
+      </a>
+      <a href="https://www.instagram.com/kairu.veg/" target="_blank" rel="noopener">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=420&q=66" width="420" height="420" loading="lazy" decoding="async"
+          alt="An example tile — stock photograph">
+      </a>
+      <a href="https://www.instagram.com/kairu.veg/" target="_blank" rel="noopener">
+        <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=420&q=66" width="420" height="420" loading="lazy" decoding="async"
+          alt="An example tile — stock photograph">
+      </a>
+    </div>
+    <p class="cfm-note" style="margin-top:18px" data-rv>No follower count is printed: a number hardcoded into a static page ages badly.</p>
+  </div>
+</section>
+
+<!-- 14 · Avaliações — structural only -->
+<section class="sec sec--light" id="avaliacoes">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">reviews</p>
+      <h2 class="h2">three empty cards, and that is how they stay.</h2>
+      <p class="lede">An invented testimonial is misleading advertising under CDC art. 37, and an invented delivery-app rating is worse still because it is checkable in two taps.</p>
+    </div>
+    <div class="revs">
+      <div class="rev" data-rv><span class="cfm">[CONFIRM — puxar avaliações verificadas do Google/iFood antes do lançamento]</span></div>
+      <div class="rev" data-rv><span class="cfm">[CONFIRM — puxar avaliações verificadas do Google/iFood antes do lançamento]</span></div>
+      <div class="rev" data-rv><span class="cfm">[CONFIRM — puxar avaliações verificadas do Google/iFood antes do lançamento]</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 15 + 16 · Onde estamos + faixa de números (empty) -->
+<section class="sec sec--white" id="onde">
+  <div class="wrap">
+    <div class="split split--top">
+      <div data-rv>
+        <div class="sec-head">
+          <p class="eyebrow">find us</p>
+          <h2 class="h2">and what time you close.</h2>
+        </div>
+        <ul class="rows">
+          <li><b>Address</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Neighbourhood</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Parking</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Format</b><span>counter, table or takeaway <span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Seats</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Dog-friendly</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Google Business Profile</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>HappyCow</b><span><span class="cfm">[CONFIRM]</span></span></li>
+        </ul>
+        <ul class="rows" style="margin-top:26px">
+          <li><b>Mon–Fri</b><span class="cfm">[CONFIRM] 00h00 – 00h00</span></li>
+          <li><b>Saturday</b><span class="cfm">[CONFIRM] 00h00 – 00h00</span></li>
+          <li><b>Sunday</b><span class="cfm">[CONFIRM] 00h00 – 00h00</span></li>
+          <li><b>Late closing?</b><span class="cfm">[CONFIRM]</span></li>
+        </ul>
+        <p class="cfm-note" style="margin-top:20px">A burger joint often opens evenings only and closes late — but that is not assumed. And HappyCow is free: a large share of this audience finds where to eat through exactly that.</p>
+      </div>
+      <div data-rv>
+        <div class="map" role="img" aria-label="Map — address to be confirmed, Florianópolis">
+          <div class="map__grid" aria-hidden="true"></div>
+          <div>
+            <div class="pin" aria-hidden="true"></div>
+            <strong style="display:block;font-size:1.1rem">Florianópolis · SC</strong>
+            <span style="font-size:.9rem;text-transform:none">Address and neighbourhood <span class="cfm">[CONFIRM]</span></span>
+          </div>
+        </div>
+        <figure class="shot shot--wide" style="margin-top:16px">
+          <!-- PLACEHOLDER-fachada-noite.jpg — royalty-free stock (Unsplash). No people. -->
+          <img src="https://images.unsplash.com/photo-1590766940554-634a7ed41450?auto=format&fit=crop&w=900&q=72" width="900" height="506" loading="lazy" decoding="async"
+            alt="A lit façade at night — illustrative stock photograph">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--dark on-dark">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">by the numbers</p>
+      <h2 class="h2">four slots, all empty.</h2>
+      <p class="lede">No figure goes live unconfirmed. If nothing can be confirmed, the section is deleted — not filled.</p>
+    </div>
+    <div class="nums">
+      <div class="num" data-rv><b data-count="[CONFIRM]"><span class="cfm">[CONFIRM]</span></b><span>flavours on the menu</span></div>
+      <div class="num" data-rv><b data-count="[CONFIRM]"><span class="cfm">[CONFIRM]</span></b><span>years on the island</span></div>
+      <div class="num" data-rv><b data-count="[CONFIRM]"><span class="cfm">[CONFIRM]</span></b><span>Google rating</span></div>
+      <div class="num" data-rv><b data-count="[CONFIRM]"><span class="cfm">[CONFIRM]</span></b><span>neighbourhoods covered</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 17 · Contato -->
+<section class="sec sec--light" id="contato">
+  <div class="wrap">
+    <div class="split split--top">
+      <div data-rv>
+        <div class="sec-head">
+          <p class="eyebrow">contact</p>
+          <h2 class="h2">one channel, and it is behind a login.</h2>
+        </div>
+        <p class="lede">No phone, WhatsApp or email was captured. The buttons on this site render and stay disabled — an invented number can be dialled.</p>
+        <ul class="rows">
+          <li><b>Instagram</b><span><a href="https://www.instagram.com/kairu.veg/" target="_blank" rel="noopener">@kairu.veg</a></span></li>
+          <li><b>WhatsApp</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Phone</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Email</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Pix</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Cards</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Beer / alcohol</b><span><span class="cfm">[CONFIRM]</span></span></li>
+        </ul>
+      </div>
+      <div class="form" data-rv>
+        <h3 class="h3" style="margin-bottom:8px">message the kitchen</h3>
+        <p class="muted" style="font-size:.9rem;text-transform:none">Mockup — nothing is sent.</p>
+        <form data-mock>
+          <div class="fr">
+            <div class="field"><label for="cnome">Name</label><input type="text" id="cnome" name="nome" required></div>
+            <div class="field"><label for="ccontato">WhatsApp or email</label><input type="text" id="ccontato" name="contato" required></div>
+          </div>
+          <div class="field"><label for="cassunto">Subject</label>
+            <select id="cassunto" name="assunto">
+              <option>An order</option>
+              <option>Allergens and ingredients</option>
+              <option>A large order</option>
+              <option>Something else</option>
+            </select></div>
+          <div class="field"><label for="cmsg">Message</label><textarea id="cmsg" name="msg"></textarea></div>
+          <label class="consent" for="cconsent">
+            <input type="checkbox" id="cconsent" data-consent>
+            <span>I consent to this data being used only to answer this message, as described in the <a href="privacy.html">Privacy Policy</a>.</span>
+          </label>
+          <button class="btn btn--full" type="submit">Send <span class="ar">&rarr;</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <span class="brand">kair<span style="color:var(--lime)">ú</span></span>
+        <p style="font-size:.92rem;margin-top:14px;text-transform:none">Address <span class="cfm">[CONFIRM]</span><br>Neighbourhood <span class="cfm">[CONFIRM]</span><br>Florianópolis — SC</p>
+        <p style="font-size:.92rem"><a href="https://www.instagram.com/kairu.veg/" target="_blank" rel="noopener">@kairu.veg</a></p>
+        <p style="margin-top:14px"><span class="age18">Sale prohibited to under-18s <span class="cfm">[CONFIRM]</span></span></p>
+      </div>
+      <div>
+        <h4>browse</h4>
+        <ul>
+          <li><a href="#cardapio">Menu</a></li>
+          <li><a href="#pedir">Order direct</a></li>
+          <li><a href="#ingredientes">What is in it</a></li>
+          <li><a href="#alergenos">Allergens</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="#" data-ck-open>Cookie preferences</a></li>
+          <li><a href="index.html" hreflang="pt-BR">Português</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>hours</h4>
+        <div class="hr"><b>Mon–Fri</b> <span><span class="cfm">[CONFIRM]</span></span></div>
+        <div class="hr"><b>Saturday</b> <span><span class="cfm">[CONFIRM]</span></span></div>
+        <div class="hr"><b>Sunday</b> <span><span class="cfm">[CONFIRM]</span></span></div>
+      </div>
+    </div>
+    <div class="ftr__legal">
+      <span>CNPJ <span class="cfm">[CONFIRM]</span></span>
+      <span>Registered name <span class="cfm">[CONFIRM]</span></span>
+      <span>Sanitary licence <span class="cfm">[CONFIRM]</span></span>
+    </div>
+    <div class="ftr__legal" style="border-top:0;padding-top:0;margin-top:8px">
+      <span>© 2026 Kairú</span>
+      <span>Demonstration mockup. No burger, ingredient, price, rating, CNPJ or founding year has been invented, and “100% plant-based” is not asserted. Every photograph is stock and none of them shows plant-based food.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="#" data-wa aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.24-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg></a>
+<div class="mbar">
+  <a class="btn btn--wa" href="#" data-wa>Order on WhatsApp</a>
+  <a class="btn btn--ember" href="#" data-ifood>iFood <span class="cfm">[CONFIRM]</span></a>
+</div>
+
+<div class="ck" role="dialog" aria-label="Cookie preferences">
+  <div class="ck__in">
+    <div>
+      <p><strong>Cookies and personal data.</strong>
+        Only the essential stays on. Analytics and marketing stay off until you switch them on, and nothing is pre-ticked.
+        <a href="privacy.html">Privacy Policy</a></p>
+      <div class="ck__opts">
+        <label><input type="checkbox" checked disabled> Essential</label>
+        <label><input type="checkbox" id="ckA"> Analytics</label>
+        <label><input type="checkbox" id="ckM"> Marketing</label>
+      </div>
+    </div>
+    <div class="ck__btns">
+      <button class="btn btn--ghost btn--sm" data-ck="none">Reject</button>
+      <button class="btn btn--ghost btn--sm" data-ck="save">Save</button>
+      <button class="btn btn--sm" data-ck="all">Accept</button>
+    </div>
+  </div>
+</div>
+
+<script src="../script.js" defer></script>
+</body>
+</html>
