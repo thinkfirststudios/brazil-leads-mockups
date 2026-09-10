@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Zila Restaurante e Eventos - spec mockup sitemap.
+
+     THE HOST BELOW IS A PLACEHOLDER, NOT A GUESS. No domain exists
+     for this business: the only confirmed digital surface is an
+     Instagram handle. Rather than invent a hostname, this file uses
+     the RFC 2606 reserved .example TLD, which can never resolve to
+     anyone real. Replace it before launch. [CONFIRM]
+
+     /eventos/ and /en/events/ carry a higher priority than the
+     homepage on purpose: an events query and a restaurant query are
+     different searches, and the events line is the one this
+     business currently cannot be found for at all.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/eventos/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/eventos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/events/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/eventos/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/o-espaco.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/o-espaco.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/the-space.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/o-espaco.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/cardapio.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/cardapio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/menu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/cardapio.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/galeria.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/galeria.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/gallery.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/galeria.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/contato.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/contato.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/privacidade.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/privacidade.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/events/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/eventos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/events/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/eventos/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/the-space.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/o-espaco.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/the-space.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/o-espaco.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/menu.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/cardapio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/menu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/cardapio.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/gallery.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/galeria.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/gallery.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/galeria.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/contato.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/privacidade.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>

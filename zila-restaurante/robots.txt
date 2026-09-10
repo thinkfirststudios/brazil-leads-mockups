@@ -1,0 +1,25 @@
+# Zila Restaurante e Eventos - spec mockup
+#
+# STATUS: LEAD, not signed. Nothing here is deployed, and every page in
+# this build carries <meta name="robots" content="noindex,nofollow">.
+# This file matches that state.
+#
+# There is NO EXISTING SITE and therefore no URL to preserve and no 301
+# map: the only confirmed digital surface for this business is the
+# Instagram profile @zila_restaurante_e_eventos.
+#
+# AT LAUNCH, replace everything below with:
+#
+#     User-agent: *
+#     Allow: /
+#     Sitemap: https://<the confirmed domain>/sitemap.xml
+#
+# and remove the noindex meta tag from every page.
+#
+# On whatever domain is registered: change web records only. NEVER MX.
+
+User-agent: *
+Disallow: /
+
+# Sitemap: see sitemap.xml in this folder - the host in it is the RFC 2606
+# reserved .example domain and has to be replaced before launch.
