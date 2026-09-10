@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Brazil Leads — spec mockups</title>
+<style>
+  :root{
+    --ink:#14161a; --mid:#5a6068; --line:#e3e2de; --line2:#f0efeb;
+    --paper:#faf9f6; --card:#ffffff; --accent:#1f6f5c; --flag:#a8501f;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font:400 15px/1.6 var(--sans);-webkit-text-size-adjust:100%}
+  a{color:var(--accent)}
+  .wrap{width:min(100% - 40px,1180px);margin-inline:auto}
+  @media(max-width:640px){.wrap{width:min(100% - 24px,1180px)}}
+
+  header{border-bottom:1px solid var(--line);background:var(--card);padding:38px 0 30px}
+  h1{margin:0;font-size:clamp(1.5rem,1.2rem + 1.4vw,2.2rem);letter-spacing:-.02em}
+  .sub{color:var(--mid);margin:10px 0 0;max-width:78ch}
+  .stats{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:22px;font:600 .78rem/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--mid)}
+  .stats b{color:var(--ink);font-size:1.05rem;letter-spacing:0;display:block;margin-bottom:5px;text-transform:none}
+
+  .warn{background:#fdf6ec;border:1px solid #e8d5b5;border-left:3px solid var(--flag);
+        padding:16px 18px;margin:26px 0 0;font-size:.92rem;line-height:1.65;color:#5c4326}
+  .warn strong{color:#7a3d12}
+
+  .tools{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:22px 0;border-bottom:1px solid var(--line2)}
+  #q{flex:1 1 260px;font:400 15px/1.4 var(--sans);padding:11px 14px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+  #q:focus{outline:2px solid var(--accent);outline-offset:1px}
+  .count{font:600 .78rem/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--mid)}
+
+  ul.grid{list-style:none;margin:26px 0 60px;padding:0;display:grid;gap:14px;
+          grid-template-columns:repeat(auto-fill,minmax(330px,1fr))}
+  li.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:11px}
+  li.card[hidden]{display:none}
+  .card h2{margin:0;font-size:1.04rem;line-height:1.35;letter-spacing:-.01em}
+  .card h2 a{text-decoration:none;color:var(--ink)}
+  .card h2 a:hover{color:var(--accent);text-decoration:underline}
+  .slug{font:600 .68rem/1 var(--mono);letter-spacing:.02em;color:var(--mid);word-break:break-all}
+  .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+  .pill{font:600 .68rem/1 var(--sans);letter-spacing:.04em;border:1px solid var(--line);border-radius:999px;padding:6px 10px;color:var(--mid);background:var(--paper);white-space:nowrap}
+  .pill--conf{border-color:#e0c9a8;background:#fdf6ec;color:#7a3d12}
+  .links{display:flex;flex-wrap:wrap;gap:6px}
+  .links a{font:600 .72rem/1 var(--sans);letter-spacing:.05em;text-decoration:none;
+           border:1px solid var(--line);border-radius:6px;padding:8px 11px;color:var(--ink);background:var(--paper)}
+  .links a:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .links a.tree{border-color:#c3d9d1;background:#eef6f3;color:#14503f}
+  .links a.tree:hover{background:#14503f;color:#fff}
+  .links a.doc{border-style:dashed;color:var(--mid)}
+
+  footer{border-top:1px solid var(--line);padding:26px 0 50px;color:var(--mid);font-size:.86rem}
+  .empty{padding:40px 0;color:var(--mid)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Brazil Leads &mdash; spec mockups</h1>
+    <p class="sub">Static, self-contained mockups built from each prospect&rsquo;s public information.
+      Open any card to view the build. Every language tree and sub-section is linked directly.</p>
+    <div class="stats">
+      <span><b>40</b> builds</span>
+      <span><b>247</b> HTML pages</span>
+      <span><b>11726</b> open [CONFIRM] markers</span>
+      <span><b>84</b> folders in scope</span>
+    </div>
+    <p class="warn"><strong>Speculative work. Not client work. Not approved. Not live.</strong>
+      Every business here is a <em>prospect</em> &mdash; none commissioned this, none has signed, and none has seen
+      or approved any of it. The builds carry real trading names, phone numbers and addresses taken from each
+      business&rsquo;s own public sources, and every unverified fact is left visible as a <code>[CONFIRM]</code>
+      marker rather than guessed. These are pitch artefacts and must not be read as a representation of any of
+      these businesses. Search engines are blocked via <code>robots.txt</code> so nothing here competes with a
+      prospect&rsquo;s real site. The build briefs and lead research are not published in this repository.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="tools">
+    <input id="q" type="search" placeholder="Filter by name or slug…" aria-label="Filter builds">
+    <span class="count" id="count"></span>
+  </div>
+  <ul class="grid" id="grid">
+    <li class="card" data-k="a-baleeira a baleeira">
+      <h2><a href="a-baleeira/index.html">A Baleeira</a></h2>
+      <span class="slug">a-baleeira/</span>
+      <div class="links">
+        <a class="tree" href="a-baleeira/index.html">PT-BR</a>
+        <a class="tree" href="a-baleeira/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">226 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="adaiane-scorsin-design adaiane scorsin">
+      <h2><a href="adaiane-scorsin-design/index.html">Adaiane Scorsin</a></h2>
+      <span class="slug">adaiane-scorsin-design/</span>
+      <div class="links">
+        <a class="tree" href="adaiane-scorsin-design/index.html">PT-BR</a>
+        <a class="tree" href="adaiane-scorsin-design/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">32 pages</span>
+        <span class="pill pill--conf">397 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="angeli-global angeli global">
+      <h2><a href="angeli-global/index.html">Angeli Global</a></h2>
+      <span class="slug">angeli-global/</span>
+      <div class="links">
+        <a class="tree" href="angeli-global/index.html">PT-BR</a>
+        <a class="tree" href="angeli-global/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">217 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="anomada anómada">
+      <h2><a href="anomada/index.html">anómada</a></h2>
+      <span class="slug">anomada/</span>
+      <div class="links">
+        <a class="tree" href="anomada/index.html">PT-BR</a>
+        <a class="tree" href="anomada/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">239 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="areias-campeche areias campeche">
+      <h2><a href="areias-campeche/index.html">Areias Campeche</a></h2>
+      <span class="slug">areias-campeche/</span>
+      <div class="links">
+        <a class="tree" href="areias-campeche/index.html">PT-BR</a>
+        <a class="tree" href="areias-campeche/en/index.html">EN</a>
+        <a class="tree" href="areias-campeche/es/index.html">ES</a>
+      </div>
+      <div class="meta">
+        <span class="pill">6 pages</span>
+        <span class="pill pill--conf">360 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="bch-arquitetos bch arquitetos">
+      <h2><a href="bch-arquitetos/index.html">BCh Arquitetos</a></h2>
+      <span class="slug">bch-arquitetos/</span>
+      <div class="links">
+        <a class="tree" href="bch-arquitetos/index.html">PT-BR</a>
+        <a class="tree" href="bch-arquitetos/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">20 pages</span>
+        <span class="pill pill--conf">464 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="bollte-praia-boutique-pousada bollté praia boutique pousada">
+      <h2><a href="bollte-praia-boutique-pousada/index.html">Bollté Praia Boutique Pousada</a></h2>
+      <span class="slug">bollte-praia-boutique-pousada/</span>
+      <div class="links">
+        <a class="tree" href="bollte-praia-boutique-pousada/index.html">PT-BR</a>
+        <a class="tree" href="bollte-praia-boutique-pousada/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">128 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="boni-restaurante boni restaurante">
+      <h2><a href="boni-restaurante/index.html">Boni Restaurante</a></h2>
+      <span class="slug">boni-restaurante/</span>
+      <div class="links">
+        <a class="tree" href="boni-restaurante/index.html">PT-BR</a>
+        <a class="tree" href="boni-restaurante/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">215 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="camila-saunier-international-realty imóveis de alto padrão no brasil">
+      <h2><a href="camila-saunier-international-realty/index.html">Imóveis de Alto Padrão no Brasil</a></h2>
+      <span class="slug">camila-saunier-international-realty/</span>
+      <div class="links">
+        <a class="tree" href="camila-saunier-international-realty/index.html">PT-BR</a>
+        <a class="tree" href="camila-saunier-international-realty/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">222 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="campeche-park campeche park">
+      <h2><a href="campeche-park/index.html">Campeche Park</a></h2>
+      <span class="slug">campeche-park/</span>
+      <div class="links">
+        <a class="tree" href="campeche-park/index.html">PT-BR</a>
+        <a class="tree" href="campeche-park/en/index.html">EN</a>
+        <a class="tree" href="campeche-park/es/index.html">ES</a>
+      </div>
+      <div class="meta">
+        <span class="pill">6 pages</span>
+        <span class="pill pill--conf">339 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="cardoso-advogados-associados cardoso &amp; advogados associados">
+      <h2><a href="cardoso-advogados-associados/index.html">Cardoso &amp; Advogados Associados</a></h2>
+      <span class="slug">cardoso-advogados-associados/</span>
+      <div class="links">
+        <a class="tree" href="cardoso-advogados-associados/index.html">PT-BR</a>
+        <a class="tree" href="cardoso-advogados-associados/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">186 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="casa-mare-floripa casa maré floripa">
+      <h2><a href="casa-mare-floripa/index.html">Casa Maré Floripa</a></h2>
+      <span class="slug">casa-mare-floripa/</span>
+      <div class="links">
+        <a class="tree" href="casa-mare-floripa/index.html">PT-BR</a>
+        <a class="tree" href="casa-mare-floripa/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">126 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="centro-automotivo-vale-do-sol centro automotivo vale do sol">
+      <h2><a href="centro-automotivo-vale-do-sol/index.html">Centro Automotivo Vale do Sol</a></h2>
+      <span class="slug">centro-automotivo-vale-do-sol/</span>
+      <div class="links">
+        <a class="tree" href="centro-automotivo-vale-do-sol/index.html">PT-BR</a>
+      </div>
+      <div class="meta">
+        <span class="pill">2 pages</span>
+        <span class="pill pill--conf">109 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="conceito-estetica-avancada conceito estética avançada">
+      <h2><a href="conceito-estetica-avancada/index.html">Conceito Estética Avançada</a></h2>
+      <span class="slug">conceito-estetica-avancada/</span>
+      <div class="links">
+        <a class="tree" href="conceito-estetica-avancada/index.html">PT-BR</a>
+        <a class="tree" href="conceito-estetica-avancada/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">266 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="cool-office-lagoa cool office lagoa">
+      <h2><a href="cool-office-lagoa/index.html">Cool Office Lagoa</a></h2>
+      <span class="slug">cool-office-lagoa/</span>
+      <div class="links">
+        <a class="tree" href="cool-office-lagoa/index.html">PT-BR</a>
+        <a class="tree" href="cool-office-lagoa/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">272 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="costa-solar-lagoa costa solar lagoa">
+      <h2><a href="costa-solar-lagoa/index.html">Costa Solar Lagoa</a></h2>
+      <span class="slug">costa-solar-lagoa/</span>
+      <div class="links">
+        <a class="tree" href="costa-solar-lagoa/index.html">PT-BR</a>
+        <a class="tree" href="costa-solar-lagoa/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">156 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="costao-do-santinho-resort costão do santinho resort">
+      <h2><a href="costao-do-santinho-resort/index.html">Costão do Santinho Resort</a></h2>
+      <span class="slug">costao-do-santinho-resort/</span>
+      <div class="links">
+        <a class="tree" href="costao-do-santinho-resort/index.html">PT-BR</a>
+        <a class="tree" href="costao-do-santinho-resort/en/index.html">EN</a>
+        <a class="tree" href="costao-do-santinho-resort/es/index.html">ES</a>
+      </div>
+      <div class="meta">
+        <span class="pill">18 pages</span>
+        <span class="pill pill--conf">930 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="cris-hotel cris hotel">
+      <h2><a href="cris-hotel/index.html">Cris Hotel</a></h2>
+      <span class="slug">cris-hotel/</span>
+      <div class="links">
+        <a class="tree" href="cris-hotel/index.html">PT-BR</a>
+        <a class="tree" href="cris-hotel/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">154 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="cumbuca-cafe cumbuca café">
+      <h2><a href="cumbuca-cafe/index.html">Cumbuca Café</a></h2>
+      <span class="slug">cumbuca-cafe/</span>
+      <div class="links">
+        <a class="tree" href="cumbuca-cafe/index.html">PT-BR</a>
+        <a class="tree" href="cumbuca-cafe/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">382 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="delicias-caramelle delícias caramelle">
+      <h2><a href="delicias-caramelle/index.html">Delícias Caramelle</a></h2>
+      <span class="slug">delicias-caramelle/</span>
+      <div class="links">
+        <a class="tree" href="delicias-caramelle/index.html">PT-BR</a>
+        <a class="tree" href="delicias-caramelle/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">248 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="delpizzo-arquitetura arquitetura, interiores e gestão de obras em florianópolis">
+      <h2><a href="delpizzo-arquitetura/index.html">Arquitetura, Interiores e Gestão de Obras em Florianópolis</a></h2>
+      <span class="slug">delpizzo-arquitetura/</span>
+      <div class="links">
+        <a class="tree" href="delpizzo-arquitetura/index.html">PT-BR</a>
+        <a class="tree" href="delpizzo-arquitetura/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">16 pages</span>
+        <span class="pill pill--conf">718 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="docaria-da-jo docaria da jô">
+      <h2><a href="docaria-da-jo/index.html">Docaria da Jô</a></h2>
+      <span class="slug">docaria-da-jo/</span>
+      <div class="links">
+        <a class="tree" href="docaria-da-jo/index.html">PT-BR</a>
+        <a class="tree" href="docaria-da-jo/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">240 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="english-for-all english for all">
+      <h2><a href="english-for-all/index.html">English for All</a></h2>
+      <span class="slug">english-for-all/</span>
+      <div class="links">
+        <a class="tree" href="english-for-all/index.html">PT-BR</a>
+        <a class="tree" href="english-for-all/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">324 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="essencia-do-sol-pousada pousada essência do sol">
+      <h2><a href="essencia-do-sol-pousada/index.html">Pousada Essência do Sol</a></h2>
+      <span class="slug">essencia-do-sol-pousada/</span>
+      <div class="links">
+        <a class="tree" href="essencia-do-sol-pousada/index.html">PT-BR</a>
+        <a class="tree" href="essencia-do-sol-pousada/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">190 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="fairyland-bakery fairyland bakery">
+      <h2><a href="fairyland-bakery/index.html">FairyLand Bakery</a></h2>
+      <span class="slug">fairyland-bakery/</span>
+      <div class="links">
+        <a class="tree" href="fairyland-bakery/index.html">PT-BR</a>
+        <a class="tree" href="fairyland-bakery/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">266 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="floripa-dive floripa dive">
+      <h2><a href="floripa-dive/index.html">Floripa Dive</a></h2>
+      <span class="slug">floripa-dive/</span>
+      <div class="links">
+        <a class="tree" href="floripa-dive/index.html">PT-BR</a>
+        <a class="tree" href="floripa-dive/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">196 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="floripa-for-gringos laiane dethling | your trusted problem-solver in brazil">
+      <h2><a href="floripa-for-gringos/index.html">Laiane Dethling | Your Trusted Problem-Solver in Brazil</a></h2>
+      <span class="slug">floripa-for-gringos/</span>
+      <div class="links">
+        <a class="tree" href="floripa-for-gringos/index.html">PT-BR</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">150 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="floripa-stand-up-paddle passeios de stand up paddle e caiaque em florianópolis">
+      <h2><a href="floripa-stand-up-paddle/index.html">Passeios de Stand Up Paddle e Caiaque em Florianópolis</a></h2>
+      <span class="slug">floripa-stand-up-paddle/</span>
+      <div class="links">
+        <a class="tree" href="floripa-stand-up-paddle/index.html">PT-BR</a>
+        <a class="tree" href="floripa-stand-up-paddle/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">254 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="garden-family-and-friends garden family and friends">
+      <h2><a href="garden-family-and-friends/index.html">Garden Family and Friends</a></h2>
+      <span class="slug">garden-family-and-friends/</span>
+      <div class="links">
+        <a class="tree" href="garden-family-and-friends/index.html">PT-BR</a>
+        <a class="tree" href="garden-family-and-friends/en/index.html">EN</a>
+        <a class="tree" href="garden-family-and-friends/es/index.html">ES</a>
+      </div>
+      <div class="meta">
+        <span class="pill">6 pages</span>
+        <span class="pill pill--conf">576 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="ghiorzitavares-arquitetura ghiorzitavares arquitetura">
+      <h2><a href="ghiorzitavares-arquitetura/index.html">GhiorziTavares Arquitetura</a></h2>
+      <span class="slug">ghiorzitavares-arquitetura/</span>
+      <div class="links">
+        <a class="tree" href="ghiorzitavares-arquitetura/index.html">PT-BR</a>
+        <a class="tree" href="ghiorzitavares-arquitetura/en/index.html">EN</a>
+        <a class="tree" href="ghiorzitavares-arquitetura/fr/index.html">FR</a>
+      </div>
+      <div class="meta">
+        <span class="pill">9 pages</span>
+        <span class="pill pill--conf">441 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="global-travel-corporate global travel &amp; corporate">
+      <h2><a href="global-travel-corporate/index.html">Global Travel &amp; Corporate</a></h2>
+      <span class="slug">global-travel-corporate/</span>
+      <div class="links">
+        <a class="tree" href="global-travel-corporate/index.html">PT-BR</a>
+        <a class="tree" href="global-travel-corporate/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">180 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="grao-mestre grão mestre">
+      <h2><a href="grao-mestre/index.html">Grão Mestre</a></h2>
+      <span class="slug">grao-mestre/</span>
+      <div class="links">
+        <a class="tree" href="grao-mestre/index.html">PT-BR</a>
+        <a class="tree" href="grao-mestre/en/index.html">EN</a>
+        <a href="grao-mestre/buffet/index.html">/buffet/</a>
+        <a href="grao-mestre/emporio/index.html">/emporio/</a>
+      </div>
+      <div class="meta">
+        <span class="pill">8 pages</span>
+        <span class="pill pill--conf">436 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="habiflex-engenharia-e-negocios habiflex engenharia e negócios">
+      <h2><a href="habiflex-engenharia-e-negocios/index.html">Habiflex Engenharia e Negócios</a></h2>
+      <span class="slug">habiflex-engenharia-e-negocios/</span>
+      <div class="links">
+        <a class="tree" href="habiflex-engenharia-e-negocios/index.html">PT-BR</a>
+        <a class="tree" href="habiflex-engenharia-e-negocios/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">270 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="haute-haus-guest-house haute haus">
+      <h2><a href="haute-haus-guest-house/index.html">Haute Haus</a></h2>
+      <span class="slug">haute-haus-guest-house/</span>
+      <div class="links">
+        <a class="tree" href="haute-haus-guest-house/index.html">PT-BR</a>
+        <a class="tree" href="haute-haus-guest-house/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">168 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="hotel-hola hotel hola">
+      <h2><a href="hotel-hola/index.html">Hotel Hola</a></h2>
+      <span class="slug">hotel-hola/</span>
+      <div class="links">
+        <a class="tree" href="hotel-hola/index.html">PT-BR</a>
+        <a class="tree" href="hotel-hola/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">252 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="hotel-sete-ilhas hotel sete ilhas em jurerê internacional, florianópolis">
+      <h2><a href="hotel-sete-ilhas/index.html">Hotel Sete Ilhas em Jurerê Internacional, Florianópolis</a></h2>
+      <span class="slug">hotel-sete-ilhas/</span>
+      <div class="links">
+        <a class="tree" href="hotel-sete-ilhas/index.html">PT-BR</a>
+        <a class="tree" href="hotel-sete-ilhas/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">174 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="ilha-formosa ilha formosa">
+      <h2><a href="ilha-formosa/index.html">Ilha Formosa</a></h2>
+      <span class="slug">ilha-formosa/</span>
+      <div class="links">
+        <a class="tree" href="ilha-formosa/index.html">PT-BR</a>
+        <a class="tree" href="ilha-formosa/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">208 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="imobiliaria-ilha-da-magia ilha da magia imóveis">
+      <h2><a href="imobiliaria-ilha-da-magia/index.html">Ilha da Magia Imóveis</a></h2>
+      <span class="slug">imobiliaria-ilha-da-magia/</span>
+      <div class="links">
+        <a class="tree" href="imobiliaria-ilha-da-magia/index.html">PT-BR</a>
+        <a class="tree" href="imobiliaria-ilha-da-magia/en/index.html">EN</a>
+      </div>
+      <div class="meta">
+        <span class="pill">4 pages</span>
+        <span class="pill pill--conf">264 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="island-vibe-nomads [confirm nome]">
+      <h2><a href="island-vibe-nomads/index.html">[CONFIRM nome]</a></h2>
+      <span class="slug">island-vibe-nomads/</span>
+      <div class="links">
+        <a class="tree" href="island-vibe-nomads/index.html">PT-BR</a>
+        <a class="tree" href="island-vibe-nomads/en/index.html">EN</a>
+        <a class="tree" href="island-vibe-nomads/es/index.html">ES</a>
+      </div>
+      <div class="meta">
+        <span class="pill">6 pages</span>
+        <span class="pill pill--conf">447 [CONFIRM]</span>
+      </div>
+    </li>
+    <li class="card" data-k="jo-cintra-tailor-made-tours viagens personalizadas e sob medida · curadoria de alto padrão">
+      <h2><a href="jo-cintra-tailor-made-tours/index.html">Viagens personalizadas e sob medida · Curadoria de alto padrão</a></h2>
+      <span class="slug">jo-cintra-tailor-made-tours/</span>
+      <div class="links">
+        <a class="tree" href="jo-cintra-tailor-made-tours/index.html">PT-BR</a>
+        <a class="tree" href="jo-cintra-tailor-made-tours/en/index.html">EN</a>
+        <a class="tree" href="jo-cintra-tailor-made-tours/es/index.html">ES</a>
+      </div>
+      <div class="meta">
+        <span class="pill">6 pages</span>
+        <span class="pill pill--conf">336 [CONFIRM]</span>
+      </div>
+    </li>
+  </ul>
+  <p class="empty" id="empty" hidden>Nothing matches that filter.</p>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p style="margin:0">Conventions used across every build: nothing invented &mdash; no price, rate, registration
+      number, review score, award or founding year that was not published by the prospect; every unverified fact
+      renders as a visible <code>[CONFIRM]</code>; no children in any stock photograph; WhatsApp buttons render
+      but stay disabled where no number could be verified; LGPD consent with reject as prominent as accept.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var q = document.getElementById('q');
+  var cards = document.querySelectorAll('#grid .card');
+  var count = document.getElementById('count');
+  var empty = document.getElementById('empty');
+  function apply() {
+    var v = q.value.trim().toLowerCase(), shown = 0;
+    for (var i = 0; i < cards.length; i++) {
+      var hit = !v || cards[i].getAttribute('data-k').indexOf(v) !== -1;
+      cards[i].hidden = !hit;
+      if (hit) shown++;
+    }
+    count.textContent = shown + ' of ' + cards.length + ' shown';
+    empty.hidden = shown !== 0;
+  }
+  q.addEventListener('input', apply);
+  apply();
+})();
+</script>
+</body>
+</html>

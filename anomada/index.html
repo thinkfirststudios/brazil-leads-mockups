@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  anómada — Padaria · Brunch · Pizzeria · Drinks
+  Servidão dos Artistas nº30, Rio Tavares — Florianópolis, SC
+  MOCKUP ESPECULATIVO — lead não assinado.
+
+  ⚠ ORTOGRAFIA: o texto deles é escrito em português EUROPEU e isso é a marca.
+    "Anómada" (não "Anômada"), "acabámos", "à partida", "Contactos",
+    "Horários de Funcionamento". A grafia deles é PRESERVADA EXATAMENTE.
+    Usamos hreflang="pt-BR" por alcance, mas não reescrevemos as palavras deles.
+
+  ⚠ Todo marcador [CONFIRM] é um placeholder visível. Nenhuma pizza, bebida,
+    vinho, pastelaria ou preço foi inventado — só existem aqui os itens que
+    eles próprios já nomearam publicamente.
+
+  ⚠ Fotografia: stock royalty-free provisório, nunca apresentado como deles.
+    Nenhuma criança em qualquer imagem.
+  ============================================================================
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>anómada — Padaria, Brunch e Pizzeria em Rio Tavares, Florianópolis</title>
+<meta name="description" content="A casa de quem à partida se deixa ficar. Padaria, brunch, pizzeria e drinks em Rio Tavares, Florianópolis.">
+<meta name="robots" content="noindex,nofollow"><!-- MOCKUP: remover antes do lançamento -->
+
+<link rel="alternate" hreflang="pt-BR" href="https://example.com/">
+<link rel="alternate" hreflang="en" href="https://example.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://example.com/">
+<link rel="canonical" href="https://example.com/">
+
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="anómada — Rio Tavares, Florianópolis">
+<meta property="og:description" content="A casa de quem à partida se deixa ficar.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=1900&q=68">
+
+<!-- Restaurant + Bakery, with all THREE schedules modelled separately -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":["Restaurant","Bakery"],
+  "name":"anómada",
+  "slogan":"A casa de quem à partida se deixa ficar.",
+  "servesCuisine":["Pizza","Portuguesa","Brasileira","Brunch"],
+  "acceptsReservations":true,
+  "menu":"https://example.com/#cardapio",
+  "priceRange":"[CONFIRM]",
+  "address":{"@type":"PostalAddress","streetAddress":"Servidão dos Artistas nº30",
+    "addressLocality":"Florianópolis","addressRegion":"SC","addressCountry":"BR",
+    "postalCode":"[CONFIRM]"},
+  "geo":{"@type":"GeoCoordinates","latitude":"[CONFIRM]","longitude":"[CONFIRM]"},
+  "email":"anomada.floripa@gmail.com",
+  "telephone":"[CONFIRM — o número publicado tem 8 dígitos]",
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","name":"Padaria (apenas retirada e iFood)",
+     "dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"23:00"},
+    {"@type":"OpeningHoursSpecification","name":"Pizza & drinks",
+     "dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"18:00","closes":"23:00"},
+    {"@type":"OpeningHoursSpecification","name":"Brunch all day",
+     "dayOfWeek":["Saturday","Sunday"],"opens":"08:00","closes":"18:00"}
+  ],
+  "sameAs":["https://www.instagram.com/anomada__/"]
+}
+</script>
+</head>
+<body>
+
+<!-- ==================== 1 · TOPBAR ==================== -->
+<div class="top">
+  <div class="wrap top__in">
+    <div class="top__sched">
+      <span><b>Padaria</b> 9h–23h</span>
+      <span><b>Pizza</b> 18h–23h</span>
+      <span><b>Brunch</b> fds 8h–18h</span>
+    </div>
+    <div class="openflag" aria-live="polite"><i></i><span>—</span></div>
+    <div class="top__r">
+      <a href="https://www.instagram.com/anomada__/" target="_blank" rel="noopener" aria-label="Instagram @anomada__">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+          <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
+      </a>
+      <div class="lang" role="group" aria-label="Idioma">
+        <a class="on" href="index.html" hreflang="pt-BR" aria-current="true">PT</a>
+        <a href="en/index.html" hreflang="en">EN</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 2 · HEADER ==================== -->
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="index.html">anómada</a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#manifesto">Manifesto</a><a href="#padaria">Padaria</a><a href="#pizza">Pizza</a>
+      <a href="#brunch">Brunch</a><a href="#drinks">Drinks</a><a href="#onde-estamos">Onde estamos</a>
+    </nav>
+    <a class="btn btn--sm" data-wa="true" href="#">Pedir no WhatsApp</a>
+    <button class="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<nav class="mnav" aria-label="Navegação mobile">
+  <a href="#manifesto">Manifesto</a><a href="#padaria">Padaria</a><a href="#pizza">Pizza</a>
+  <a href="#brunch">Brunch</a><a href="#drinks">Drinks</a><a href="#onde-estamos">Onde estamos</a>
+  <a href="en/index.html" hreflang="en" style="font-size:1rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ember)">English version →</a>
+</nav>
+
+<main>
+
+<!-- ==================== 3 · HERO — tipográfico ==================== -->
+<section class="hero">
+  <div class="hero__bg">
+    <!-- PLACEHOLDER-hero-interior-lume.jpg — interior aberto ao lume, ao anoitecer -->
+    <img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=1900&q=68"
+         alt="Interior de planta aberta em luz baixa e quente ao anoitecer — estrutura aparente, betão e madeira, brilho do forno a lenha ao fundo, mesa comunitária com adultos sentados."
+         fetchpriority="high" width="1900" height="1100">
+  </div>
+  <div class="hero__scrim"></div>
+  <div class="wrap hero__in">
+    <h1 data-rv>A casa de quem à partida se deixa ficar.</h1>
+    <p class="hero__offer" data-rv>Café da manhã · Almoço · Brunch · Pizzeria · Drinks</p>
+    <div class="btn-row" data-rv>
+      <a class="btn" href="#cardapio">Ver o cardápio <span class="ar">→</span></a>
+      <a class="btn btn--ghost" data-wa="true" href="#">Reservar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 4 ⭐ TRÊS JANELAS DE SERVIÇO ==================== -->
+<section class="sec concrete" id="servicos">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Horários de funcionamento</p>
+      <h2 class="h-lg">Três serviços, três horários</h2>
+      <p class="lede">São três agendas diferentes — e é a coisa mais mal compreendida sobre a casa.
+        Aqui elas ficam lado a lado, sem letra miúda.</p>
+    </div>
+
+    <div class="windows">
+      <article class="win" data-rv>
+        <div class="win__img"><!-- PLACEHOLDER-padaria-grade.jpg -->
+          <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=760&q=70"
+               alt="Pães e viennoiserie dispostos numa estante de padaria." loading="lazy"></div>
+        <div class="win__b">
+          <h3>Padaria</h3>
+          <p class="win__hrs">terça a dom · 9h às 23h</p>
+          <p><strong>Apenas retirada e iFood.</strong> É a única forma de comprar da padaria hoje —
+            e é exatamente por isso que um caminho de pedido directo no próprio domínio faz diferença.</p>
+          <div class="btn-row" style="margin-top:14px">
+            <a class="btn btn--sm" href="#padaria">Ver padaria <span class="ar">→</span></a></div>
+        </div>
+      </article>
+
+      <article class="win" data-rv>
+        <div class="win__img"><!-- PLACEHOLDER-brunch-mesa.jpg -->
+          <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=760&q=70"
+               alt="Mesa de brunch vista de cima — pratos, fruta, café e mãos adultas a servir-se." loading="lazy"></div>
+        <div class="win__b">
+          <h3>Brunch all day</h3>
+          <p class="win__hrs">sábados, domingos e feriados · 8h às 18h</p>
+          <p>Só ao fim-de-semana e feriados. “Opções frescas, saudáveis e coloridas – tudo feito em casa.”</p>
+          <div class="btn-row" style="margin-top:14px">
+            <a class="btn btn--sm" href="#brunch">Ver brunch <span class="ar">→</span></a></div>
+        </div>
+      </article>
+
+      <article class="win" data-rv>
+        <div class="win__img"><!-- PLACEHOLDER-pizza-tesoura.jpg -->
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=760&q=70"
+               alt="Pizza a ser cortada sobre balcão escuro, em luz de brasa." loading="lazy"></div>
+        <div class="win__b">
+          <h3>Pizza &amp; Drinks</h3>
+          <p class="win__hrs">terça a dom · 18h às 23h</p>
+          <p>Pizzas autorais, carta de drinks da casa e vinhos portugueses. Só a partir das 18h.</p>
+          <div class="btn-row" style="margin-top:14px">
+            <a class="btn btn--sm" href="#pizza">Ver pizzas <span class="ar">→</span></a></div>
+        </div>
+      </article>
+    </div>
+
+    <p class="cfm-block" style="margin-top:28px" data-rv>[CONFIRM — “terça a dom” <em>sugere</em> encerramento
+      à segunda-feira, mas eles não o escrevem em lado nenhum. Confirmar antes de afirmar que fecham à segunda.]</p>
+  </div>
+</section>
+
+<!-- ==================== 5 · O MANIFESTO ==================== -->
+<section class="mani" id="manifesto">
+  <div class="wrap wrap--n">
+    <div class="mani__rule" aria-hidden="true"></div>
+    <blockquote style="margin:0" data-rv>
+      <p>Esta é a casa dos que andam por aí.</p>
+      <p>Dos que partem à aventura, mesmo sem sair do lugar.</p>
+      <p>Dos que são de todo o lado e de lugar nenhum.</p>
+      <p>Dos viajantes, dos errantes, dos amantes do raro e do comum.</p>
+      <p>Aqui, o desconhecido é familiar. Já é da casa sem ter entrado.</p>
+      <p>Passe por onde passar, passe sempre.</p>
+      <p>Venha para proteger, como se já conhecesse. Como se fosse aqui viver.</p>
+      <p>O tempo leva tempo a saborear.</p>
+      <p>E ainda agora acabámos de chegar.</p>
+      <p>A casa de quem à partida, se deixa ficar.</p>
+    </blockquote>
+    <div class="mani__rule mani__rule--b" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ==================== 6–7 · CARDÁPIO ==================== -->
+<section class="sec soft" id="cardapio">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Cardápio</p>
+      <h2 class="h-lg">O que se come aqui</h2>
+      <p class="lede">Hoje não existe um único nome de prato nem um único preço indexado no site.
+        Não há nada em Google para “marguerita ao contrário” ou “pizza de ostra à bulhão pato” —
+        e são produtos genuinamente diferenciados.</p>
+    </div>
+
+    <p class="cfm-block" data-rv><strong>[CONFIRM cardápio completo + preços para as quatro categorias.]</strong>
+      Só aparecem abaixo os itens que eles próprios já nomearam publicamente. Nenhuma pizza, pastelaria,
+      bebida, vinho ou preço foi inventado.</p>
+
+    <div class="tabs" role="tablist" aria-label="Categorias do cardápio">
+      <button role="tab" aria-selected="true"  data-tab="padaria">Padaria</button>
+      <button role="tab" aria-selected="false" data-tab="brunch">Brunch</button>
+      <button role="tab" aria-selected="false" data-tab="pizza">Pizza</button>
+      <button role="tab" aria-selected="false" data-tab="drinks">Drinks &amp; Vinhos</button>
+    </div>
+
+    <!-- ---------- PADARIA ---------- -->
+    <div data-panel="padaria" id="padaria">
+      <p class="notice" data-rv>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="flex:none;margin-top:2px"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+        <span><strong>Padaria: apenas retirada e iFood</strong> — terça a domingo, 9h às 23h.
+          <span class="cfm">[CONFIRM URL da loja no iFood]</span></span></p>
+
+      <div class="grid4">
+        <article class="item" data-rv>
+          <div class="item__img"><!-- PLACEHOLDER-padaria-01.jpg -->
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=560&q=70"
+                 alt="Pães artesanais de fermentação longa sobre linho cru." loading="lazy"></div>
+          <div class="item__b">
+            <p class="item__n"><span class="cfm">[CONFIRM nome do pão]</span></p>
+            <p class="item__d"><span class="cfm">[CONFIRM descrição]</span></p>
+            <div class="chips"><span class="chip chip--gluten">Contém glúten</span>
+              <span class="chip chip--alg">[CONFIRM alérgenos]</span></div>
+            <p class="item__price">R$ <span class="cfm">[CONFIRM]</span></p>
+          </div>
+        </article>
+        <article class="item" data-rv>
+          <div class="item__img"><!-- PLACEHOLDER-padaria-02.jpg -->
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=560&q=70"
+                 alt="Croissants folhados polvilhados de farinha, em fundo escuro." loading="lazy"></div>
+          <div class="item__b">
+            <p class="item__n"><span class="cfm">[CONFIRM nome]</span></p>
+            <p class="item__d"><span class="cfm">[CONFIRM descrição]</span></p>
+            <div class="chips"><span class="chip chip--gluten">Contém glúten</span>
+              <span class="chip chip--alg">contém: leite</span><span class="chip chip--alg">contém: ovo</span></div>
+            <p class="item__price">R$ <span class="cfm">[CONFIRM]</span></p>
+          </div>
+        </article>
+        <article class="item" data-rv>
+          <div class="item__img"><!-- PLACEHOLDER-padaria-03.jpg -->
+            <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=560&q=70"
+                 alt="Variedade de pães empilhados, tons dourados." loading="lazy"></div>
+          <div class="item__b">
+            <p class="item__n"><span class="cfm">[CONFIRM nome]</span></p>
+            <p class="item__d"><span class="cfm">[CONFIRM descrição]</span></p>
+            <div class="chips"><span class="chip chip--gluten">Contém glúten</span>
+              <span class="chip chip--alg">[CONFIRM alérgenos]</span></div>
+            <p class="item__price">R$ <span class="cfm">[CONFIRM]</span></p>
+          </div>
+        </article>
+        <article class="item" data-rv>
+          <div class="item__img"><!-- PLACEHOLDER-padaria-04.jpg -->
+            <img src="https://images.unsplash.com/photo-1587241321921-91a834d6d191?auto=format&fit=crop&w=560&q=70"
+                 alt="Interior de padaria com estantes e produção ao fundo." loading="lazy"></div>
+          <div class="item__b">
+            <p class="item__n"><span class="cfm">[CONFIRM nome]</span></p>
+            <p class="item__d"><span class="cfm">[CONFIRM descrição]</span></p>
+            <div class="chips"><span class="chip chip--alg">[CONFIRM alérgenos]</span></div>
+            <p class="item__price">R$ <span class="cfm">[CONFIRM]</span></p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- ---------- BRUNCH ---------- -->
+    <div data-panel="brunch" hidden>
+      <p class="notice" data-rv>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="flex:none;margin-top:2px"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <span><strong>Sábados, domingos e feriados · 8h às 18h.</strong> O brunch não funciona durante a semana.</span></p>
+      <div class="grid4">
+        <article class="item" data-rv>
+          <div class="item__img"><img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?auto=format&fit=crop&w=560&q=70"
+            alt="Mesa de brunch colorida com fruta, tigelas e waffles, luz natural." loading="lazy"></div>
+          <div class="item__b"><p class="item__n"><span class="cfm">[CONFIRM item de brunch]</span></p>
+            <p class="item__d"><span class="cfm">[CONFIRM descrição]</span></p>
+            <div class="chips"><span class="chip chip--alg">[CONFIRM alérgenos]</span></div>
+            <p class="item__price">R$ <span class="cfm">[CONFIRM]</span></p></div>
+        </article>
+        <article class="item" data-rv>
+          <div class="item__img"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=560&q=70"
+            alt="Tigela de salada colorida com legumes frescos." loading="lazy"></div>
+          <div class="item__b"><p class="item__n"><span class="cfm">[CONFIRM item]</span></p>
+            <p class="item__d"><span class="cfm">[CONFIRM descrição]</span></p>
+            <div class="chips"><span class="chip chip--olive">produtos locais [CONFIRM]</span>
+              <span class="chip chip--alg">[CONFIRM alérgenos]</span></div>
+            <p class="item__price">R$ <span class="cfm">[CONFIRM]</span></p></div>
+        </article>
+        <article class="item" data-rv>
+          <div class="item__img"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=560&q=70"
+            alt="Café a ser extraído em método coado, mãos adultas." loading="lazy"></div>
+          <div class="item__b"><p class="item__n"><span class="cfm">[CONFIRM café / bebida]</span></p>
+            <p class="item__d"><span class="cfm">[CONFIRM descrição]</span></p>
+            <div class="chips"><span class="chip chip--alg">[CONFIRM alérgenos]</span></div>
+            <p class="item__price">R$ <span class="cfm">[CONFIRM]</span></p></div>
+        </article>
+        <article class="item" data-rv>
+          <div class="item__img"><img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=560&q=70"
+            alt="Mesa posta de brunch vista de cima com pratos partilhados." loading="lazy"></div>
+          <div class="item__b"><p class="item__n"><span class="cfm">[CONFIRM item]</span></p>
+            <p class="item__d"><span class="cfm">[CONFIRM descrição]</span></p>
+            <div class="chips"><span class="chip chip--alg">[CONFIRM alérgenos]</span></div>
+            <p class="item__price">R$ <span class="cfm">[CONFIRM]</span></p></div>
+        </article>
+      </div>
+    </div>
+
+    <!-- ---------- ⭐ PIZZA ---------- -->
+    <div data-panel="pizza" hidden id="pizza">
+      <div class="grid4">
+        <!-- REAL — named in their own copy -->
+        <article class="item" data-rv>
+          <div class="item__img"><!-- PLACEHOLDER-marguerita-ao-contrario.jpg -->
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=560&q=70"
+                 alt="Pizza de estilo napolitano sobre balcão escuro, em luz de brasa." loading="lazy"></div>
+          <div class="item__b">
+            <p class="item__n">Marguerita ao contrário</p>
+            <p class="item__d">A margherita invertida da casa, inspirada no Franco Pepe.</p>
+            <div class="chips"><span class="chip chip--gluten">Contém glúten</span>
+              <span class="chip chip--alg">contém: leite</span>
+              <span class="chip chip--alg">[CONFIRM alérgenos completos]</span></div>
+            <p class="item__price">R$ <span class="cfm">[CONFIRM]</span></p>
+            <a class="btn btn--sm" data-wa="Marguerita ao contrário" href="#">Pedir <span class="ar">→</span></a>
+          </div>
+        </article>
+
+        <!-- REAL — named in their own copy -->
+        <article class="item" data-rv>
+          <div class="item__img"><!-- PLACEHOLDER-pizza-ostra-bulhao-pato.jpg -->
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=560&q=70"
+                 alt="Fatia de pizza em close, com molho verde de ervas brilhante." loading="lazy"></div>
+          <div class="item__b">
+            <p class="item__n">Pizza de ostra à bulhão pato</p>
+            <p class="item__d">Um molho tipicamente português com um insumo típico da ilha da magia, em
+              homenagem aos dois portugueses que criaram o Anómada.</p>
+            <div class="chips"><span class="chip chip--gluten">Contém glúten</span>
+              <span class="chip chip--alg">contém: moluscos</span>
+              <span class="chip chip--alg">[CONFIRM alérgenos completos]</span></div>
+            <p class="item__price">R$ <span class="cfm">[CONFIRM]</span></p>
+            <a class="btn btn--sm" data-wa="Pizza de ostra à bulhão pato" href="#">Pedir <span class="ar">→</span></a>
+          </div>
+        </article>
+
+        <article class="item" data-rv>
+          <div class="item__img"><!-- PLACEHOLDER-pizza-autoral-01.jpg -->
+            <img src="https://images.unsplash.com/photo-1533777324565-a040eb52facd?auto=format&fit=crop&w=560&q=70"
+                 alt="Pizzas e pratos italianos vistos de cima sobre mármore." loading="lazy"></div>
+          <div class="item__b">
+            <p class="item__n"><span class="cfm">[CONFIRM pizza autoral]</span></p>
+            <p class="item__d">“Criamos pizzas autorais brincando com sabores e culturas.”
+              <span class="cfm">[CONFIRM nome e descrição]</span></p>
+            <div class="chips"><span class="chip chip--gluten">Contém glúten</span>
+              <span class="chip chip--alg">[CONFIRM alérgenos]</span></div>
+            <p class="item__price">R$ <span class="cfm">[CONFIRM]</span></p>
+          </div>
+        </article>
+
+        <article class="item" data-rv>
+          <div class="item__img"><!-- PLACEHOLDER-pizza-autoral-02.jpg -->
+            <img src="https://images.unsplash.com/photo-1595535873420-a599195b3f4a?auto=format&fit=crop&w=560&q=70"
+                 alt="Mãos adultas a finalizar um prato na cozinha." loading="lazy"></div>
+          <div class="item__b">
+            <p class="item__n"><span class="cfm">[CONFIRM pizza autoral]</span></p>
+            <p class="item__d"><span class="cfm">[CONFIRM descrição]</span></p>
+            <div class="chips"><span class="chip chip--gluten">Contém glúten</span>
+              <span class="chip chip--alg">[CONFIRM alérgenos]</span></div>
+            <p class="item__price">R$ <span class="cfm">[CONFIRM]</span></p>
+          </div>
+        </article>
+      </div>
+      <p class="cfm-block" style="margin-top:24px" data-rv>[CONFIRM restante da carta de pizzas — nomes,
+        descrições, alérgenos e preços. Nunca inventar uma pizza.]</p>
+    </div>
+
+    <!-- ---------- DRINKS ---------- -->
+    <div data-panel="drinks" hidden>
+      <div class="grid4">
+        <article class="item" data-rv>
+          <div class="item__img"><img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=560&q=70"
+            alt="Drink autoral servido em balcão, luz lateral dramática." loading="lazy"></div>
+          <div class="item__b"><p class="item__n"><span class="cfm">[CONFIRM drink autoral]</span></p>
+            <p class="item__d"><span class="cfm">[CONFIRM descrição]</span></p>
+            <p class="item__price">R$ <span class="cfm">[CONFIRM]</span></p></div>
+        </article>
+        <article class="item" data-rv>
+          <div class="item__img"><img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=560&q=70"
+            alt="Garrafas em prateleira de madeira num bar, rótulos não legíveis." loading="lazy"></div>
+          <div class="item__b"><p class="item__n"><span class="cfm">[CONFIRM vinho português]</span></p>
+            <p class="item__d"><span class="cfm">[CONFIRM região e descrição]</span></p>
+            <p class="item__price">R$ <span class="cfm">[CONFIRM]</span></p></div>
+        </article>
+        <article class="item" data-rv>
+          <div class="item__img"><img src="https://images.unsplash.com/photo-1593351415075-3bac9f45c877?auto=format&fit=crop&w=560&q=70"
+            alt="Taças de vinho num brinde, apenas mãos adultas." loading="lazy"></div>
+          <div class="item__b"><p class="item__n"><span class="cfm">[CONFIRM vinho a copo]</span></p>
+            <p class="item__d"><span class="cfm">[CONFIRM]</span></p>
+            <p class="item__price">R$ <span class="cfm">[CONFIRM]</span></p></div>
+        </article>
+        <article class="item" data-rv>
+          <div class="item__img"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=560&q=70"
+            alt="Interior de café com plantas e cadeiras em rattan." loading="lazy"></div>
+          <div class="item__b"><p class="item__n"><span class="cfm">[CONFIRM bebida sem álcool]</span></p>
+            <p class="item__d"><span class="cfm">[CONFIRM]</span></p>
+            <p class="item__price">R$ <span class="cfm">[CONFIRM]</span></p></div>
+        </article>
+      </div>
+    </div>
+
+    <!-- ---------- Allergen / gluten standing statement ---------- -->
+    <div class="cfm-block" style="margin-top:34px" data-rv>
+      <strong>Declaração de alérgenos — ANVISA RDC 26/2015 · Lei 10.674/2003.</strong>
+      Cada item precisa das suas próprias chips: <strong>glúten, leite, ovo, castanhas/nozes, amendoim,
+      soja, peixe, crustáceos, moluscos</strong>. A pizza de ostra exige declaração de
+      <strong>moluscos</strong> — não é decorativo, marisco é alérgeno de topo.
+      A indicação <strong>“CONTÉM GLÚTEN” / “NÃO CONTÉM GLÚTEN”</strong> é obrigatória em todos os pães,
+      pastelaria e pizzas. <span class="cfm">[CONFIRM política de contaminação cruzada — ambiente de farinha partilhado?]</span>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 8 · "AQUI, SE CORTA A PIZZA COM TESOURA." ==================== -->
+<section class="promo dark">
+  <div class="promo__t" data-rv>
+    <blockquote>“Aqui, se corta a pizza com tesoura.”</blockquote>
+    <p style="margin-top:26px;color:rgba(242,237,228,.82)">“Somos amantes do raro e do comum. Gostamos de
+      mesas fartas, repletas de produtos locais e amigos felizes.”</p>
+    <p style="color:rgba(242,237,228,.82)">“Fazemos a marguerita ao contrário, inspirados no Franco Pepe
+      e criamos pizzas autorais brincando com sabores e culturas.”</p>
+  </div>
+  <div class="promo__i">
+    <!-- PLACEHOLDER-tesoura.jpg -->
+    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1000&q=70"
+         alt="Pizza a ser cortada sobre mesa partilhada, mãos adultas." loading="lazy">
+  </div>
+</section>
+
+<!-- ==================== 9 · BRUNCH ALL DAY ==================== -->
+<section class="sec" id="brunch">
+  <div class="wrap visit">
+    <div data-rv>
+      <p class="eyebrow">Brunch all day</p>
+      <h2 class="h-lg">Sábados, domingos e feriados<br><span style="color:var(--ember)">8h às 18h</span></h2>
+      <hr class="rule">
+      <p style="margin-top:24px">“Seja para café da manhã, brunch ou lanche, encontre opções frescas,
+        saudáveis e coloridas – tudo feito em casa, porque Anómada é isso: a segunda casa de todos aqueles
+        que nos visitam.”</p>
+      <div class="btn-row">
+        <a class="btn" href="#cardapio">Ver o brunch <span class="ar">→</span></a>
+        <a class="btn btn--ghost" data-wa="true" href="#">Reservar</a>
+      </div>
+    </div>
+    <figure style="margin:0;overflow:hidden;aspect-ratio:4/3" data-rv>
+      <!-- PLACEHOLDER-brunch-fds.jpg -->
+      <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?auto=format&fit=crop&w=1000&q=70"
+           alt="Mesa de brunch de fim-de-semana, colorida, em luz natural de janela, adultos a partilhar."
+           loading="lazy" style="width:100%;height:100%;object-fit:cover">
+    </figure>
+  </div>
+</section>
+
+<!-- ==================== 10 · DRINKS & VINHOS ==================== -->
+<section class="sec azul" id="drinks">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Drinks &amp; Vinhos</p>
+      <h2 class="h-lg">Drinks autorais e vinhos portugueses</h2>
+      <p class="lede" style="color:rgba(242,237,228,.88)">“Criações autorais compõem a carta de drinks da
+        casa, juntamente com uma seleção de vinhos portugueses para celebrar cada momento.”</p>
+    </div>
+
+    <div class="cols2">
+      <div data-rv>
+        <h3 class="h-md" style="margin-bottom:18px">Drinks autorais</h3>
+        <ul class="listing">
+          <li><span class="n"><span class="cfm">[CONFIRM drink]</span></span><span class="p">R$ [CONFIRM]</span></li>
+          <li><span class="n"><span class="cfm">[CONFIRM drink]</span></span><span class="p">R$ [CONFIRM]</span></li>
+          <li><span class="n"><span class="cfm">[CONFIRM drink]</span></span><span class="p">R$ [CONFIRM]</span></li>
+          <li><span class="n"><span class="cfm">[CONFIRM drink]</span></span><span class="p">R$ [CONFIRM]</span></li>
+        </ul>
+        <figure style="margin:24px 0 0;overflow:hidden;aspect-ratio:16/10">
+          <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=800&q=70"
+               alt="Drink assinatura sobre balcão de betão, luz lateral." loading="lazy"
+               style="width:100%;height:100%;object-fit:cover"></figure>
+      </div>
+      <div data-rv>
+        <h3 class="h-md" style="margin-bottom:18px">Vinhos portugueses</h3>
+        <ul class="listing">
+          <li><span class="n"><span class="cfm">[CONFIRM vinho + região]</span></span><span class="p">R$ [CONFIRM]</span></li>
+          <li><span class="n"><span class="cfm">[CONFIRM vinho + região]</span></span><span class="p">R$ [CONFIRM]</span></li>
+          <li><span class="n"><span class="cfm">[CONFIRM vinho + região]</span></span><span class="p">R$ [CONFIRM]</span></li>
+          <li><span class="n"><span class="cfm">[CONFIRM vinho + região]</span></span><span class="p">R$ [CONFIRM]</span></li>
+        </ul>
+        <figure style="margin:24px 0 0;overflow:hidden;aspect-ratio:16/10">
+          <img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=800&q=70"
+               alt="Garrafas de vinho em prateleira de madeira, rótulos não legíveis." loading="lazy"
+               style="width:100%;height:100%;object-fit:cover"></figure>
+      </div>
+    </div>
+
+    <p class="age" data-rv>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v5M12 16h.01"/></svg>
+      Venda proibida para menores de 18 anos · Se beber, não dirija.
+    </p>
+  </div>
+</section>
+
+<!-- ==================== 11 · DOIS PORTUGUESES EM FLORIPA ==================== -->
+<section class="sec concrete">
+  <div class="wrap visit">
+    <figure style="margin:0;overflow:hidden;aspect-ratio:4/3" data-rv>
+      <!-- PLACEHOLDER-fundadores.jpg — stock, NUNCA apresentado como os fundadores -->
+      <img src="https://images.unsplash.com/photo-1587241321921-91a834d6d191?auto=format&fit=crop&w=1000&q=70"
+           alt="Dois adultos a trabalhar atrás de um balcão de padaria, vistos de forma oblíqua; os rostos não são o assunto."
+           loading="lazy" style="width:100%;height:100%;object-fit:cover">
+      <figcaption style="font-size:.78rem;opacity:.7;margin-top:8px">
+        Imagem de stock provisória — <strong>não</strong> são os fundadores. Substituir por fotografia real.</figcaption>
+    </figure>
+    <div data-rv>
+      <p class="eyebrow">Origem</p>
+      <h2 class="h-lg">Dois portugueses em Floripa</h2>
+      <hr class="rule">
+      <p style="margin-top:24px">A casa foi criada por <strong>“os dois portugueses que criaram o Anómada”</strong>.
+        A pizza de ostra à bulhão pato é a homenagem: um molho tipicamente português com um insumo típico
+        da ilha da magia.</p>
+      <p class="cfm-block">[CONFIRM nomes dos fundadores, quando chegaram e quando o Anómada abriu.
+        <strong>Não bordar isto numa biografia</strong> — só existe a frase que eles próprios escreveram.]</p>
+      <p style="font-size:.88rem;opacity:.78">Nota editorial: a grafia europeia do texto deles
+        (“Anómada”, “acabámos”, “à partida”, “Contactos”) é deliberada e é a marca. É preservada tal e qual.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 12 · GALERIA / VISIT ==================== -->
+<section class="sec">
+  <div class="wrap visit">
+    <div data-rv>
+      <p class="eyebrow">Passe sempre</p>
+      <h2 class="h-lg">“Passe por onde passar, passe sempre.”</h2>
+      <hr class="rule">
+      <p style="margin-top:24px"><strong>Servidão dos Artistas nº30</strong><br>
+        Rio Tavares — Florianópolis, SC, Brasil</p>
+      <div class="btn-row">
+        <a class="btn" href="#onde-estamos">Obter direções <span class="ar">→</span></a>
+        <a class="btn btn--ghost" data-wa="true" href="#">Falar no WhatsApp</a>
+      </div>
+    </div>
+    <div class="strip" data-rv>
+      <figure><!-- PLACEHOLDER-exterior.jpg -->
+        <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=520&q=70"
+             alt="Fachada de estabelecimento ao anoitecer com luz quente a sair para a rua." loading="lazy"></figure>
+      <figure><!-- PLACEHOLDER-espresso.jpg -->
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=520&q=70"
+             alt="Café a ser extraído, mãos adultas." loading="lazy"></figure>
+      <figure><!-- PLACEHOLDER-mesa-comunitaria.jpg -->
+        <img src="https://images.unsplash.com/photo-1481931098730-318b6f776db0?auto=format&fit=crop&w=520&q=70"
+             alt="Mesa comunitária cheia ao serão, pratos partilhados e taças." loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 13 · ONDE ESTAMOS ==================== -->
+<section class="sec soft" id="onde-estamos">
+  <div class="wrap visit">
+    <div data-rv>
+      <p class="eyebrow">Onde estamos</p>
+      <h2 class="h-lg">Rio Tavares</h2>
+      <hr class="rule">
+      <p style="margin-top:24px"><strong>Servidão dos Artistas nº30</strong><br>
+        Rio Tavares — Florianópolis, SC, Brasil</p>
+      <p>Rio Tavares fica no <strong>sul da ilha</strong>, perto do Campeche e da estrada do aeroporto —
+        útil para quem não conhece a geografia de Floripa.</p>
+      <p>Estacionamento: <span class="cfm">[CONFIRM]</span></p>
+
+      <h3 style="margin:30px 0 12px;font-size:1.15rem">Horários de Funcionamento</h3>
+      <table class="hrs">
+        <tr><th scope="row">Padaria <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--ink);opacity:.7">(apenas retirada e ifood)</span></th>
+          <td>terça a dom, 9h às 23h</td></tr>
+        <tr><th scope="row">Pizza &amp; drinks</th><td>terça a dom, 18h às 23h</td></tr>
+        <tr><th scope="row">Brunch all day</th><td>sábados, domingos e feriados, 8h às 18h</td></tr>
+      </table>
+      <p style="font-size:.86rem;opacity:.75;margin-top:12px"><span class="cfm">[CONFIRM encerramento à segunda-feira]</span></p>
+    </div>
+    <div data-rv>
+      <div class="map">
+        <div class="map__grid" aria-hidden="true"></div>
+        <div class="map__pin">
+          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--ember)" stroke-width="1.6" style="margin:0 auto 10px"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p style="margin:0;font-family:var(--serif);font-size:1.15rem">Mapa incorporado</p>
+          <p style="margin-top:6px;font-size:.88rem">Servidão dos Artistas nº30 · Rio Tavares</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 14 · RESERVAS & GRUPOS ==================== -->
+<section class="sec dark" id="reservas">
+  <div class="wrap visit">
+    <div data-rv>
+      <p class="eyebrow">Reservas &amp; grupos</p>
+      <h2 class="h-lg">A reserva é pelo WhatsApp</h2>
+      <hr class="rule">
+      <p style="margin-top:24px">A página de <em>Contactos</em> deles já diz “Reservas e outros:” acima do
+        número. Aqui isso vira um formulário que <strong>compõe a mensagem</strong> — o envio continua a ser
+        feito por si, no WhatsApp.</p>
+      <p class="cfm-block">[CONFIRM se aceitam reservas para os três serviços ou só para pizza.]</p>
+      <p class="cfm-block"><strong>[CONFIRM o número de WhatsApp.]</strong> O número publicado no site,
+        <strong>+55 48 8843-8819</strong> “(apenas mensagens de whatsapp)”, tem <strong>8 dígitos</strong> —
+        falta um para um celular brasileiro. Não inventámos o nono dígito, por isso os botões de WhatsApp
+        deste mockup mostram um aviso em vez de ligar para o número de um desconhecido. É também um dos
+        pontos mais fortes da proposta: a única via de contacto do site pode não estar a funcionar.</p>
+    </div>
+    <form class="form" id="resvForm" data-rv novalidate>
+      <div class="fr">
+        <div class="field"><label for="data">Data (DD/MM)</label><input id="data" name="data" type="date" required></div>
+        <div class="field"><label for="hora">Hora</label>
+          <select id="hora" name="hora">
+            <option>08h00</option><option>09h00</option><option>10h00</option><option>11h00</option>
+            <option>12h00</option><option>18h00</option><option>19h00</option>
+            <option selected>20h00</option><option>21h00</option><option>22h00</option>
+          </select></div>
+      </div>
+      <div class="fr">
+        <div class="field"><label for="pessoas">Pessoas</label>
+          <select id="pessoas" name="pessoas"><option>1</option><option selected>2</option><option>3</option>
+            <option>4</option><option>5</option><option>6</option><option>7+</option></select></div>
+        <div class="field"><label for="servico">Serviço</label>
+          <select id="servico" name="servico">
+            <option>Pizza &amp; drinks (ter–dom, 18h–23h)</option>
+            <option>Brunch (sáb, dom e feriados, 8h–18h)</option>
+            <option>Padaria (retirada — ter–dom, 9h–23h)</option>
+          </select></div>
+      </div>
+      <div class="field"><label for="nome">Nome</label><input id="nome" name="nome" type="text" placeholder="O seu nome"></div>
+      <label class="consent"><input type="checkbox" required>
+        Autorizo o tratamento dos meus dados para responder a este pedido de reserva, conforme a
+        <a href="privacidade.html" style="color:#F6CFB6;text-decoration:underline">Política de Privacidade</a>.
+        Controlador: <span class="cfm">[CONFIRM razão social]</span>.</label>
+      <button class="btn" type="submit">Compor mensagem no WhatsApp <span class="ar">→</span></button>
+    </form>
+  </div>
+</section>
+
+<!-- ==================== 15 · iFOOD & RETIRADA ==================== -->
+<section class="sec concrete">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Como pedir</p>
+      <h2 class="h-lg">Directo, ou pelo iFood</h2>
+      <p class="lede">Hoje toda a venda da padaria ou entra pela porta ou paga comissão ao iFood.
+        Não existe caminho de pedido directo no vosso próprio domínio — é o que esta secção resolve.</p>
+    </div>
+    <div class="windows">
+      <article class="win" data-rv style="border-color:var(--ember);border-width:2px">
+        <div class="win__b">
+          <h3>Pedido directo</h3>
+          <p class="win__hrs">Pizza · ter–dom 18h–23h</p>
+          <p>Pizza e drinks directamente no WhatsApp da casa, sem comissão de intermediário.
+            É o caminho que deve dominar visualmente — e domina.</p>
+          <div class="btn-row" style="margin-top:14px">
+            <a class="btn" data-wa="true" href="#">Pedir no WhatsApp <span class="ar">→</span></a></div>
+        </div>
+      </article>
+      <article class="win" data-rv>
+        <div class="win__b">
+          <h3>Padaria — retirada</h3>
+          <p class="win__hrs">ter–dom 9h–23h</p>
+          <p>Encomenda e levantamento na Servidão dos Artistas nº30.</p>
+          <div class="btn-row" style="margin-top:14px">
+            <a class="btn btn--ghost btn--sm" data-wa="true" href="#">Encomendar retirada</a></div>
+        </div>
+      </article>
+      <article class="win" data-rv>
+        <div class="win__b">
+          <h3>iFood</h3>
+          <p class="win__hrs">Padaria</p>
+          <p>A padaria também está no iFood. <span class="cfm">[CONFIRM URL da loja no iFood]</span></p>
+          <div class="btn-row" style="margin-top:14px">
+            <a class="btn btn--ghost btn--sm" href="#" onclick="return false">Abrir no iFood <span class="cfm">[CONFIRM]</span></a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 16 · NEWSLETTER ==================== -->
+<section class="sec sec--t dark">
+  <div class="wrap">
+    <div style="max-width:56ch" data-rv>
+      <p class="eyebrow">Newsletter</p>
+      <h2 class="h-md">“E ainda agora acabámos de chegar.”</h2>
+      <p class="lede" style="margin-top:14px;color:rgba(242,237,228,.82)">Novidades da padaria, pizzas
+        autorais novas e o que entra na carta de vinhos.</p>
+      <form class="news" id="newsForm" novalidate>
+        <input type="email" name="email" placeholder="o.seu@email.com" required aria-label="E-mail">
+        <button class="btn" type="submit">Subscrever</button>
+      </form>
+      <label class="consent" style="margin-top:14px">
+        <input type="checkbox" required>
+        Aceito receber comunicações da anómada e concordo com a
+        <a href="privacidade.html" style="color:#F6CFB6;text-decoration:underline">Política de Privacidade</a>.
+        Posso cancelar a qualquer momento.</label>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ==================== RODAPÉ ==================== -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <span class="brand">anómada</span>
+        <p style="max-width:34ch">A casa de quem à partida se deixa ficar.</p>
+        <p style="font-size:.88rem;margin-top:14px">Servidão dos Artistas nº30<br>
+          Rio Tavares — Florianópolis, SC, Brasil</p>
+        <div class="soc" style="margin-top:18px">
+          <a href="https://www.instagram.com/anomada__/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></a>
+          <a data-wa="true" href="#" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20l1.2-5.3A8.4 8.4 0 1 1 21 11.5z"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Horários de Funcionamento</h4>
+        <ul>
+          <li><strong>Padaria</strong><br>terça a dom, 9h às 23h<br>
+            <span style="opacity:.7">apenas retirada e ifood</span></li>
+          <li><strong>Pizza &amp; drinks</strong><br>terça a dom, 18h às 23h</li>
+          <li><strong>Brunch all day</strong><br>sábados, domingos e feriados, 8h às 18h</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contactos</h4>
+        <ul>
+          <li>WhatsApp: <span class="cfm">[CONFIRM — publicado como +55 48 8843-8819, com 8 dígitos]</span><br>
+            <span style="opacity:.7">(apenas mensagens de whatsapp)</span></li>
+          <li>Propostas e parcerias:<br>
+            <a href="mailto:anomada.floripa@gmail.com">anomada.floripa@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/anomada__/" target="_blank" rel="noopener">@anomada__</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="#manifesto">Manifesto</a></li><li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#reservas">Reservas</a></li><li><a href="#onde-estamos">Onde estamos</a></li>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
+          <li><a href="en/index.html" hreflang="en">English</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top:32px;font-size:.83rem;opacity:.82;border-top:1px solid rgba(242,237,228,.16);padding-top:22px">
+      <p style="margin-bottom:8px"><strong>Alérgenos e glúten.</strong> Trabalhamos com farinha de trigo,
+        leite, ovo, frutos secos, soja, peixe, crustáceos e moluscos no mesmo espaço. Cada item do cardápio
+        indica <strong>“CONTÉM GLÚTEN”</strong> ou <strong>“NÃO CONTÉM GLÚTEN”</strong> (Lei 10.674/2003) e
+        os seus alérgenos (ANVISA RDC 26/2015).
+        <span class="cfm">[CONFIRM política de contaminação cruzada]</span></p>
+      <p style="margin:0">Venda proibida para menores de 18 anos · Se beber, não dirija ·
+        Couvert / taxa de serviço: <span class="cfm">[CONFIRM]</span> ·
+        Alvará sanitário: <span class="cfm">[CONFIRM]</span></p>
+    </div>
+
+    <div class="ftr__bot">
+      <p style="margin:0">© <span id="yr">2025</span> anómada ·
+        <span class="cfm">[CONFIRM razão social]</span> · CNPJ <span class="cfm">[CONFIRM]</span></p>
+      <div class="lang"><a class="on" href="index.html">PT</a><a href="en/index.html">EN</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== STICKY CTAs ==================== -->
+<a class="wa" data-wa="true" href="#" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.4 4.7.7.3 1.3.5 1.8.6.7.2 1.4.2 2 .1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+</a>
+
+<div class="mbar">
+  <a class="btn" data-wa="true" href="#">Pedir no WhatsApp</a>
+  <a class="btn btn--ghost" href="#cardapio" style="color:var(--bone);border-color:rgba(242,237,228,.4)">Cardápio</a>
+</div>
+
+<!-- ==================== LGPD ==================== -->
+<div class="ck" role="dialog" aria-live="polite" aria-label="Consentimento de cookies">
+  <p><strong>Cookies e privacidade.</strong> Usamos cookies essenciais para o site funcionar. Cookies de
+    análise e marketing só são activados com o seu consentimento — vêm <strong>desligados</strong> por
+    padrão. Veja a <a href="privacidade.html">Política de Privacidade</a>.</p>
+  <div class="ck__opts">
+    <label><input type="checkbox" checked disabled> Essenciais (sempre activos)</label>
+    <label><input type="checkbox" id="ckA"> Análise</label>
+    <label><input type="checkbox" id="ckM"> Marketing</label>
+  </div>
+  <div class="ck__btns">
+    <button class="btn btn--sm" data-ck="none">Rejeitar tudo</button>
+    <button class="btn btn--sm btn--ghost" style="color:var(--bone);border-color:rgba(242,237,228,.4)" data-ck="save">Salvar escolhas</button>
+    <button class="btn btn--sm" data-ck="all">Aceitar tudo</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+</body>
+</html>

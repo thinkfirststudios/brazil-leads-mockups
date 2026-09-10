@@ -1,0 +1,479 @@
+/* ==========================================================================
+   GLOBAL TRAVEL & CORPORATE — Florianópolis, SC
+   Spec mockup.
+
+   ⚠ THIS IS A B2B PRODUCT, NOT A TRAVEL SITE. Global Travel is a TMC — a
+     travel management company — selling policy control, savings reporting and
+     duty-of-care to finance directors and HR managers. The buyer is not a
+     traveller. Nothing here converts on wanderlust; it converts on cost
+     control, compliance and 24-hour support.
+
+   THE ISLAND-HOPPING REFERENCE IS REJECTED ALMOST ENTIRELY. A script headline
+   over turquoise water, a Flights/Hotels/Tours search card and "From $699"
+   price pills are the wrong unit of value for a CFO evaluating a travel
+   programme. What IS taken, from the yacht-charter reference, is only its
+   B2B-transferable mechanics: the thin sticky topbar with one reserved primary
+   action, the floating stat strip pinned under the hero, the 4-up panel on a
+   deep field, the light/dark band rhythm, and the mega footer. Everything else
+   is SaaS convention — logo wall, product cards for named software, a
+   dashboard treatment, a persona router, a qualifying proposal form.
+
+   ⭐ THE STRUCTURAL DECISION: they also sell leisure and luxury travel, and
+     their current site gives it nowhere to go — a visitor planning a honeymoon
+     lands on a form asking for their company's CNPJ. So the B2B path and the
+     LEISURE path are architecturally separate from the first screen and NEVER
+     share a CTA. The leisure band is warmer, lighter and typographically
+     distinct, so it reads as a different product from the same company within
+     one second.
+
+   ⚠ Orange #F4740D is theirs, extracted from their live stylesheet — but it is
+     DEMOTED HERE to an action-only colour rather than a decorative one.
+     [CONFIRM against their actual logo artwork; it was read from CSS.]
+
+   ⚠ CONTRAST (WCAG 2.1 AA):
+       · Ink #0F1B2A on Cloud #F4F6F8 ≈ 15.1:1 — AAA
+       · Slate #3C4A5A on Cloud ≈ 8.0:1 — AAA
+       · Orange #F4740D on Cloud ≈ 2.9:1 — FAILS. Button fill only, white text
+         on the darker stop; small orange text uses #B24E02 (≈ 4.6:1).
+       · Green #1E8E5A on Cloud ≈ 3.7:1 — large savings figures only.
+       · Red #D9312B is reserved for the duty-of-care / disruption panel and
+         never used decoratively.
+   ========================================================================== */
+
+:root{
+  --orange:#F4740D;
+  --orange-dk:#B24E02;
+  --red:#D9312B;
+  --ink:#0F1B2A;
+  --ink-lt:#1B3350;
+  --slate:#3C4A5A;
+  --cloud:#F4F6F8;
+  --white:#FFFFFF;
+  --green:#1E8E5A;
+  --line:#DDE3E9;
+
+  --g-deep:linear-gradient(155deg,var(--ink) 0%,var(--ink-lt) 100%);
+  --g-cta:linear-gradient(135deg,var(--orange) 0%,var(--red) 160%);
+  --g-save:linear-gradient(135deg,rgba(30,142,90,.12) 0%,rgba(15,27,42,.12) 100%);
+  /* the leisure band — the ONE warm gradient in the build, and it exists to
+     signal "different product" */
+  --g-leisure:linear-gradient(135deg,#F6E7D8 0%,#FBF7F2 100%);
+
+  --sans:"Plus Jakarta Sans","Helvetica Neue",Arial,sans-serif;
+
+  --wrap:1320px;
+  --gut:clamp(18px,4.4vw,56px);
+  --r:12px;
+  --r-sm:8px;
+  --sh:0 6px 24px rgba(15,27,42,.08);
+  --sh-lift:0 18px 44px rgba(15,27,42,.16);
+  --ease:cubic-bezier(.22,.8,.28,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--white);color:var(--slate);
+  font-family:var(--sans);font-size:16.5px;line-height:1.7;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+h1,h2,h3,h4{margin:0;font-family:var(--sans);font-weight:700;line-height:1.14;
+  letter-spacing:-.028em;color:var(--ink)}
+p{margin:0 0 1em}
+:focus-visible{outline:3px solid var(--orange-dk);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-9999px;top:0;z-index:200;background:var(--ink);color:#fff;padding:12px 20px}
+.skip:focus{left:0}
+/* tabular figures for every metric — this is a numbers buyer */
+.tab{font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+
+.wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gut)}
+.wrap--n{max-width:900px}
+.sec{padding-block:clamp(52px,7vw,110px);position:relative}
+.sec--t{padding-block:clamp(30px,4.2vw,58px)}
+.cloud{background:var(--cloud)}
+.deep{background-image:var(--g-deep);color:#B7C3D0}
+.deep h1,.deep h2,.deep h3{color:#fff}
+.deep .lede{color:#9AA9B8}
+.deep .eyebrow{color:#F9A960}
+
+.eyebrow{font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--orange-dk);margin:0 0 14px}
+.h-xl{font-size:clamp(2.2rem,5vw,3.7rem)}
+.h-lg{font-size:clamp(1.85rem,3.5vw,2.8rem)}
+.h-md{font-size:clamp(1.35rem,2.2vw,1.8rem)}
+.lede{font-size:clamp(1rem,1.3vw,1.14rem);color:var(--slate);max-width:62ch}
+.sec-head{max-width:62ch;margin-bottom:clamp(26px,3.4vw,46px)}
+.sec-head--row{max-width:none;display:flex;flex-wrap:wrap;gap:22px;
+  justify-content:space-between;align-items:flex-end}
+
+/* ---------- [CONFIRM] ---------- */
+.cfm{display:inline-block;border:1px dashed var(--orange-dk);background:rgba(244,116,13,.10);
+  color:var(--orange-dk);padding:.05em .5em;border-radius:var(--r-sm);
+  font-size:.85em;font-weight:800;font-style:normal}
+.deep .cfm,.leisure .cfm{border-color:#F9A960;background:rgba(249,169,96,.18);color:#F9A960}
+.cfm-note{border:1px dashed var(--orange-dk);background:rgba(244,116,13,.07);border-radius:var(--r-sm);
+  padding:15px 18px;color:var(--orange-dk);font-size:.92rem;margin:0 0 22px}
+.deep .cfm-note{border-color:#F9A960;background:rgba(249,169,96,.12);color:#F9A960}
+/* a finding on their own live site */
+.flag{border-left:4px solid var(--red);background:rgba(217,49,43,.06);
+  border-radius:0 var(--r-sm) var(--r-sm) 0;padding:16px 20px;margin:0 0 20px;font-size:.93rem}
+.flag b{color:var(--ink)}
+.deep .flag{background:rgba(217,49,43,.16);color:#D5DEE6}
+.deep .flag b{color:#fff}
+
+/* ---------- Buttons — orange is the ONLY action colour ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:15px 28px;border-radius:var(--r-sm);font-size:.88rem;font-weight:700;
+  background:var(--orange);color:#fff;box-shadow:var(--sh);
+  transition:transform .28s var(--ease),box-shadow .28s var(--ease),background .28s}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--sh-lift);background-image:var(--g-cta)}
+.btn .ar{transition:transform .28s var(--ease)}
+.btn:hover .ar{transform:translateX(5px)}
+/* the secondary CTA is VISIBLY lighter — the two hero actions are not equals */
+.btn--ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line);box-shadow:none}
+.btn--ghost:hover{background:var(--ink);color:#fff;border-color:var(--ink);background-image:none}
+.deep .btn--ghost,.hero .btn--ghost{color:#fff;border-color:rgba(255,255,255,.45)}
+.deep .btn--ghost:hover,.hero .btn--ghost:hover{background:#fff;color:var(--ink)}
+.btn--ink{background:var(--ink)}
+.btn--ink:hover{background:#081220;background-image:none}
+.btn--wa{background:#12A150}
+.btn--wa:hover{background:#0C7C3C;background-image:none}
+/* the leisure CTA is deliberately a DIFFERENT colour and shape — the two paths
+   must never share a call to action */
+.btn--leisure{background:#8A5A2B;border-radius:999px}
+.btn--leisure:hover{background:#6E4620;background-image:none}
+.btn--sm{padding:10px 18px;font-size:.8rem}
+.btn--full{width:100%}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+
+/* ---------- Topbar ---------- */
+.top{background:var(--ink);color:#9AA9B8;font-size:.82rem;padding-block:9px}
+.top__in{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.top a:hover{color:#fff}
+.top__l,.top__r{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.pills{display:flex;gap:4px}
+.pills a{padding:3px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.26)}
+.pills a.on{background:var(--orange);color:#fff;border-color:var(--orange);font-weight:800}
+/* the existing client portal is a first-class credibility signal to a buyer */
+.login{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(255,255,255,.4);
+  border-radius:var(--r-sm);padding:5px 13px;font-weight:700;color:#fff}
+.login:hover{background:rgba(255,255,255,.1)}
+
+/* ---------- Header ---------- */
+.hdr{position:sticky;top:0;z-index:90;background:rgba(255,255,255,.97);backdrop-filter:blur(9px);
+  border-bottom:1px solid var(--line);padding-block:13px;
+  transition:padding .28s var(--ease),box-shadow .28s var(--ease)}
+.hdr.is-stuck{padding-block:8px;box-shadow:var(--sh)}
+.hdr__in{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-size:1.14rem;font-weight:800;letter-spacing:-.03em;color:var(--ink);line-height:1.06}
+.brand span{color:var(--orange)}
+.brand small{display:block;font-size:.56rem;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--slate);font-weight:700}
+.nav{display:flex;align-items:center;gap:17px}
+.nav a{font-size:.83rem;font-weight:600;color:var(--slate);padding-block:5px;
+  border-bottom:2px solid transparent;transition:.24s;white-space:nowrap}
+.nav a:hover{color:var(--ink);border-bottom-color:var(--orange)}
+/* the leisure nav item is visually distinct even in the nav bar */
+.nav a.leis{color:#8A5A2B}
+.nav a.leis:hover{border-bottom-color:#8A5A2B}
+.hdr__r{display:flex;align-items:center;gap:10px}
+.burger{display:none;width:44px;height:44px;position:relative}
+.burger span{position:absolute;left:11px;width:22px;height:2.5px;border-radius:2px;
+  background:var(--ink);transition:.28s var(--ease)}
+.burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:27px}
+.burger.on span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.on span:nth-child(2){opacity:0}
+.burger.on span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:89;background:var(--white);display:flex;flex-direction:column;
+  justify-content:center;gap:0;padding:96px var(--gut) 40px;overflow-y:auto;
+  opacity:0;visibility:hidden;transform:translateY(-12px);transition:.3s var(--ease)}
+.mnav.on{opacity:1;visibility:visible;transform:none}
+.mnav a{font-size:clamp(1.4rem,6vw,2rem);font-weight:700;letter-spacing:-.03em;color:var(--ink);
+  padding-block:11px;border-bottom:1px solid var(--line)}
+.mnav a.leis{color:#8A5A2B}
+
+/* ---------- Hero — split, deliberately NOT a beach ---------- */
+.hero{background-image:var(--g-deep);color:#B7C3D0;padding-block:clamp(46px,6.4vw,96px) clamp(90px,11vw,150px)}
+.hero__g{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(26px,4vw,60px);align-items:center}
+.hero h1{color:#fff;font-size:clamp(2rem,4.4vw,3.4rem)}
+.hero p{color:#9AA9B8;max-width:46ch;margin-top:18px;font-size:1.06rem}
+/* the device mock — a frame, never fabricated client data inside it */
+.device{border-radius:var(--r);overflow:hidden;border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.06);box-shadow:var(--sh-lift)}
+.device__bar{display:flex;gap:6px;padding:11px 14px;border-bottom:1px solid rgba(255,255,255,.14)}
+.device__bar i{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.28)}
+.device__bar span{margin-left:10px;font-size:.7rem;color:#9AA9B8;letter-spacing:.04em}
+.device img{width:100%;aspect-ratio:16/10;object-fit:cover;opacity:.9}
+.device__note{padding:12px 14px;font-size:.76rem;color:#9AA9B8;border-top:1px solid rgba(255,255,255,.14)}
+
+/* ---------- ⭐ Floating metrics strip — the highest-value real estate on the
+   page for this buyer, and the asterisk on the savings figure is rendered, not
+   hidden. ---------- */
+.metrics{display:grid;grid-template-columns:repeat(5,1fr);background:var(--white);
+  border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh-lift);
+  margin-top:-64px;position:relative;z-index:5;overflow:hidden}
+.metric{padding:22px clamp(12px,1.8vw,24px);border-right:1px solid var(--line)}
+.metric:last-child{border-right:0}
+.metric b{display:block;font-size:clamp(1.4rem,2.8vw,2.1rem);font-weight:800;color:var(--ink);line-height:1.05}
+.metric b.save{color:var(--green)}
+.metric sup{color:var(--orange-dk);font-size:.6em}
+.metric span{font-size:.82rem;display:block;margin-top:5px}
+.footnote{font-size:.82rem;color:var(--slate);margin-top:14px;padding-left:14px;
+  border-left:3px solid var(--orange)}
+
+/* ---------- Logo wall ---------- */
+.logos{display:flex;gap:clamp(20px,3vw,48px);align-items:center;overflow:hidden;
+  padding-block:8px;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.logos__t{display:flex;gap:clamp(20px,3vw,48px);align-items:center;animation:marq 34s linear infinite}
+.logo{flex:0 0 auto;height:44px;min-width:132px;border:1px dashed var(--line);border-radius:var(--r-sm);
+  display:grid;place-items:center;font-size:.72rem;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;color:#9AA1A9;background:var(--cloud)}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- 4-up panel ---------- */
+.four{display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+  border-top:1px solid rgba(255,255,255,.16);border-left:1px solid rgba(255,255,255,.16)}
+.four div{padding:clamp(22px,3vw,36px);border-right:1px solid rgba(255,255,255,.16);
+  border-bottom:1px solid rgba(255,255,255,.16)}
+.four .ic{width:34px;height:34px;border:1.5px solid var(--orange);border-radius:var(--r-sm);
+  display:grid;place-items:center;color:var(--orange);font-size:.95rem;margin-bottom:14px}
+.four b{display:block;font-size:1.06rem;color:#fff;margin-bottom:7px}
+.four p{font-size:.92rem;margin:0}
+
+/* ---------- Product bands ---------- */
+.callouts{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(14px,2vw,24px);margin-top:clamp(20px,2.6vw,34px)}
+.callout{border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;background:var(--white)}
+.deep .callout{border-color:rgba(255,255,255,.18);background:rgba(255,255,255,.05)}
+.callout b{display:block;font-size:1rem;color:var(--ink);margin-bottom:6px}
+.deep .callout b{color:#fff}
+.callout p{font-size:.92rem;margin:0}
+
+/* ---------- ⭐ Reserve Zap — a simulated WhatsApp thread, built in HTML/CSS.
+   In Brazil WhatsApp IS the business communication layer, and a TMC that lets a
+   traveller rebook a flight in a thread with no login is selling something an
+   international competitor structurally cannot. ---------- */
+.phone{max-width:360px;margin-inline:auto;border-radius:26px;border:8px solid #0B141A;
+  background:#0B141A;box-shadow:var(--sh-lift);overflow:hidden}
+.phone__top{background:#1F2C34;color:#E9EDEF;padding:12px 16px;font-size:.86rem;font-weight:700;
+  display:flex;align-items:center;gap:10px}
+.phone__top i{width:30px;height:30px;border-radius:50%;background:#2A3942;display:grid;place-items:center;
+  font-size:.7rem;color:#8696A0;font-style:normal}
+.phone__body{background:#0B141A;padding:16px 12px;display:grid;gap:8px;min-height:340px}
+.bub{max-width:82%;padding:9px 12px;border-radius:8px;font-size:.86rem;line-height:1.5}
+.bub--in{background:#1F2C34;color:#E9EDEF;justify-self:start;border-top-left-radius:2px}
+.bub--out{background:#005C4B;color:#E9EDEF;justify-self:end;border-top-right-radius:2px}
+.bub--sys{background:transparent;border:1px dashed #3B4A54;color:#8696A0;justify-self:center;
+  font-size:.76rem;text-align:center;max-width:92%}
+.bub time{display:block;font-size:.66rem;color:#8696A0;margin-top:4px;text-align:right}
+
+/* ---------- Four-step diagram ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);
+  border-radius:var(--r);overflow:hidden;background:var(--white)}
+.step{padding:24px 22px;border-right:1px solid var(--line)}
+.step:last-child{border-right:0}
+.step b{display:block;font-size:.74rem;font-weight:800;letter-spacing:.16em;color:var(--orange-dk);
+  margin-bottom:12px}
+.step h3{font-size:1.02rem;margin-bottom:6px}
+.step p{font-size:.9rem;margin:0}
+
+/* ---------- Solutions grid ---------- */
+.sols{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,26px)}
+.sol{background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+  display:flex;flex-direction:column;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.sol:hover{transform:translateY(-4px);box-shadow:var(--sh-lift)}
+.sol__i{aspect-ratio:3/2;overflow:hidden;background:var(--cloud)}
+.sol__i img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease);filter:saturate(.82)}
+.sol:hover .sol__i img{transform:scale(1.04)}
+.sol__b{padding:20px 21px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.sol h3{font-size:1.1rem}
+.sol p{font-size:.92rem;margin:0}
+.badge{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  background:rgba(244,116,13,.12);color:var(--orange-dk);padding:5px 11px;border-radius:999px;align-self:flex-start}
+
+/* ---------- ⭐ Persona router — a controller and an HR manager are buying two
+   different products from the same company. ---------- */
+.personas{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:clamp(20px,2.6vw,32px)}
+.personas button{text-align:left;padding:20px 20px;border:1.5px solid var(--line);border-radius:var(--r);
+  background:var(--white);transition:.26s var(--ease)}
+.personas button:hover{border-color:var(--ink)}
+.personas button b{display:block;font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:5px}
+.personas button span{font-size:.86rem;color:var(--slate)}
+/* never colour-only: the selected persona also fills */
+.personas button[aria-selected="true"]{background:var(--ink);border-color:var(--ink)}
+.personas button[aria-selected="true"] b{color:#fff}
+.personas button[aria-selected="true"] span{color:#9AA9B8}
+.ppanel[hidden]{display:none}
+.ppanel{background:var(--cloud);border:1px solid var(--line);border-radius:var(--r);
+  padding:clamp(22px,3vw,40px);display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(20px,3vw,44px);
+  align-items:center}
+.plist{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:11px}
+.plist li{display:flex;gap:11px;align-items:flex-start;font-size:.96rem}
+.plist .tick{flex:0 0 auto;width:22px;height:22px;border-radius:50%;background:var(--orange);
+  color:#fff;display:grid;place-items:center;font-size:.66rem;font-weight:800;margin-top:3px}
+
+/* ---------- ⭐ The qualifying proposal form ---------- */
+.form{background:var(--white);border:1px solid var(--line);border-radius:var(--r);
+  padding:clamp(22px,3vw,40px);box-shadow:var(--sh)}
+.fstep{display:none}
+.fstep.on{display:block}
+.fbar{display:flex;gap:6px;margin-bottom:22px}
+.fbar span{flex:1;height:5px;border-radius:3px;background:var(--line);transition:background .3s var(--ease)}
+.fbar span.done{background:var(--orange)}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.field label{display:block;font-size:.8rem;font-weight:700;color:var(--ink);margin-bottom:8px}
+.field input,.field select,.field textarea{width:100%;padding:13px 14px;font:inherit;font-size:.96rem;
+  background:var(--cloud);border:1.5px solid var(--line);border-radius:var(--r-sm);color:var(--ink)}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--orange)}
+.reassure{background:rgba(30,142,90,.08);border:1px solid rgba(30,142,90,.3);border-radius:var(--r-sm);
+  padding:13px 16px;font-size:.88rem;color:#146B43;margin-bottom:16px}
+.consent{display:flex;gap:11px;align-items:flex-start;font-size:.88rem;margin:6px 0 18px}
+.consent input{margin-top:5px;accent-color:var(--orange)}
+.consent a{color:var(--orange-dk);text-decoration:underline}
+.fnav{display:flex;gap:10px;justify-content:space-between}
+
+/* ---------- Duty-of-care panel — where the secondary red earns its place --- */
+.risk{border:1px solid var(--red);border-left-width:5px;border-radius:var(--r);
+  background:rgba(217,49,43,.05);padding:clamp(22px,3vw,36px)}
+.deep .risk{background:rgba(217,49,43,.16);border-color:var(--red)}
+.risk h3{color:var(--red);font-size:1.16rem;margin-bottom:10px}
+.deep .risk h3{color:#FF8A85}
+
+/* ---------- ⭐ THE LEISURE BAND — warmer, lighter, its own type rhythm.
+   It must be obvious within one second that this is a different product from
+   the same company. ---------- */
+.leisure{background-image:var(--g-leisure);color:#5A4636}
+.leisure h2,.leisure h3{color:#3E2E20;font-weight:600;letter-spacing:-.012em}
+.leisure .eyebrow{color:#8A5A2B;letter-spacing:.28em}
+.leisure .lede{color:#5A4636}
+.leisure .wide{border-radius:var(--r);overflow:hidden;aspect-ratio:21/9}
+.leisure .wide img{width:100%;height:100%;object-fit:cover}
+
+/* ---------- Blog ---------- */
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,26px)}
+.post{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:24px 22px;
+  display:flex;flex-direction:column;gap:10px;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.post:hover{transform:translateY(-4px);box-shadow:var(--sh-lift)}
+.post .kicker{font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-dk)}
+.post h3{font-size:1.08rem}
+.post p{font-size:.92rem;margin:0}
+.post .meta{font-size:.8rem;color:var(--slate);margin-top:auto}
+
+/* ---------- Contact / map ---------- */
+.rows{list-style:none;margin:20px 0 0;padding:0;border-top:1px solid var(--line)}
+.rows li{display:flex;justify-content:space-between;gap:18px;padding-block:13px;
+  border-bottom:1px solid var(--line);font-size:.95rem}
+.rows b{color:var(--ink);font-weight:700}
+.deep .rows,.deep .rows li{border-color:rgba(255,255,255,.18)}
+.deep .rows b{color:#fff}
+.map{aspect-ratio:4/3;border-radius:var(--r);overflow:hidden;position:relative;background:var(--cloud);
+  display:grid;place-items:center;text-align:center;padding:26px;border:1px solid var(--line)}
+.map__grid{position:absolute;inset:0;opacity:.5;
+  background-image:linear-gradient(rgba(15,27,42,.1) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(15,27,42,.1) 1px,transparent 1px);
+  background-size:36px 36px}
+.map>div{position:relative;z-index:2}
+.map .pin{width:18px;height:18px;border-radius:50%;background:var(--orange);margin:0 auto 12px;
+  box-shadow:0 0 0 8px rgba(244,116,13,.2)}
+
+/* ---------- Mega footer ---------- */
+.ftr{background:var(--ink);color:#8FA0B0;padding-block:clamp(46px,6vw,88px) 0}
+.ftr h4{font-size:.74rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:#F9A960;margin-bottom:16px}
+.ftr__grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1.1fr;gap:clamp(20px,2.6vw,40px)}
+.ftr ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:.9rem}
+.ftr a:hover{color:#fff}
+.ftr .brand{color:#fff;display:block;margin-bottom:14px}
+.ftr .brand small{color:#8FA0B0}
+.legalblk{border-top:1px solid rgba(255,255,255,.14);margin-top:clamp(26px,3.4vw,46px);padding-top:24px;
+  display:flex;flex-wrap:wrap;gap:14px 30px;align-items:center;font-size:.86rem}
+/* the CADASTUR badge is weaker than the number — so the number sits beside it */
+.cad{display:inline-flex;align-items:center;gap:12px;border:1px solid rgba(255,255,255,.28);
+  border-radius:var(--r-sm);padding:10px 14px}
+.cad i{font-style:normal;font-size:.68rem;font-weight:800;letter-spacing:.14em;color:#F9A960}
+.ftr__bot{border-top:1px solid rgba(255,255,255,.14);margin-top:24px;
+  padding-block:20px 28px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
+  align-items:center;font-size:.82rem;color:#69798A}
+
+/* ---------- Mobile action bar + WhatsApp ---------- */
+.wa{position:fixed;right:18px;bottom:18px;z-index:80;width:56px;height:56px;border-radius:50%;
+  background:#12A150;display:grid;place-items:center;box-shadow:0 8px 24px rgba(18,161,80,.38);
+  transition:transform .26s var(--ease)}
+.wa:hover{transform:scale(1.06)}
+.wa svg{width:28px;height:28px;fill:#fff}
+.mbar{display:none}
+
+/* ---------- LGPD — "Recusar" visually equal to "Aceitar" ---------- */
+.ck{position:fixed;left:0;right:0;bottom:0;z-index:95;background:var(--white);
+  border-top:3px solid var(--orange);padding:20px var(--gut);
+  transform:translateY(112%);transition:transform .34s var(--ease)}
+.ck.on{transform:none}
+.ck__in{max-width:var(--wrap);margin-inline:auto;display:grid;grid-template-columns:1.5fr 1fr;
+  gap:22px;align-items:center}
+.ck p{font-size:.88rem;margin:0}
+.ck a{color:var(--orange-dk);text-decoration:underline}
+.ck__opts{display:flex;flex-wrap:wrap;gap:16px;margin-top:11px;font-size:.85rem}
+.ck__opts label{display:flex;gap:8px;align-items:center}
+.ck__opts input{accent-color:var(--orange)}
+.ck__btns{display:flex;flex-wrap:wrap;gap:9px;justify-content:flex-end}
+
+/* ---------- Reveal ---------- */
+[data-rv]{opacity:0;transform:translateY(18px);
+  transition:opacity .5s var(--ease),transform .5s var(--ease)}
+[data-rv].in{opacity:1;transform:none}
+
+/* ---------- Legal ---------- */
+.legal{max-width:880px;margin-inline:auto;padding-block:clamp(44px,6vw,88px)}
+.legal h2{margin:32px 0 12px;font-size:1.55rem}
+.legal h3{margin:22px 0 10px;font-size:1.18rem}
+.legal ul{padding-left:20px;display:grid;gap:8px;margin-bottom:18px}
+.legal table{width:100%;border-collapse:collapse;margin:18px 0;font-size:.92rem}
+.legal th,.legal td{border:1px solid var(--line);padding:11px 13px;text-align:left;vertical-align:top}
+.legal th{background:var(--cloud);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink);font-weight:800}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1180px){
+  .nav{display:none}
+  .burger{display:block}
+  .hero__g{grid-template-columns:1fr;gap:34px}
+  .metrics{grid-template-columns:repeat(3,1fr);margin-top:-40px}
+  .metric:nth-child(3n){border-right:0}
+  .personas,.four{grid-template-columns:repeat(2,1fr)}
+  .four div:nth-child(2n){border-right:0}
+  .sols,.posts{grid-template-columns:repeat(2,1fr)}
+  .ftr__grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:860px){
+  .ppanel,.ck__in,.callouts{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .step:nth-child(2n){border-right:0}
+  .step:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .ck__btns{justify-content:flex-start}
+  .sec-head--row{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:600px){
+  body{padding-bottom:62px}
+  .wa{bottom:76px;width:50px;height:50px}
+  .mbar{display:grid;grid-template-columns:1fr auto;gap:0;position:fixed;left:0;right:0;bottom:0;
+    z-index:82;padding-bottom:env(safe-area-inset-bottom);background:var(--white);
+    border-top:1px solid var(--line)}
+  .mbar .btn{border-radius:0;box-shadow:none;padding:17px 10px}
+  .mbar .btn:hover{transform:none}
+  .metrics,.personas,.four,.sols,.posts,.steps,.fr,.ftr__grid{grid-template-columns:1fr}
+  .metric,.step{border-right:0;border-bottom:1px solid var(--line)}
+  .four div{border-right:0}
+  .top__in{justify-content:center;text-align:center}
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;
+    transition-duration:.001ms!important;scroll-behavior:auto!important}
+  [data-rv]{opacity:1;transform:none}
+  .logos__t{animation:none}
+}

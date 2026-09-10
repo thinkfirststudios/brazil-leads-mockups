@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<!-- Speculative pitch mockup for a prospect who has not commissioned, seen or
+     approved it. Must never be indexed or compete with the real business. -->
+<title>FairyLand Bakery — Artisan Bakery and Bistro in Florianópolis</title>
+<meta name="description" content="An artisan bakery by day and a bistro by night, in Florianópolis. The counter, the bistro menu, orders and reservations — all on one page.">
+<link rel="canonical" href="https://fairylandbakery.example/en/">
+<link rel="alternate" hreflang="pt-BR" href="https://fairylandbakery.example/">
+<link rel="alternate" hreflang="en" href="https://fairylandbakery.example/en/">
+<link rel="alternate" hreflang="x-default" href="https://fairylandbakery.example/">
+<meta property="og:title" content="FairyLand Bakery — Artisan Bakery and Bistro in Florianópolis">
+<meta property="og:description" content="An artisan bakery by day and a bistro by night, in Florianópolis. The counter, the bistro menu, orders and reservations — all on one page.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Italiana&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=900&q=70" fetchpriority="high">
+<link rel="stylesheet" href="../styles.css">
+<!-- ⭐ TWO ENTITIES, deliberately: a Bakery and a Restaurant, each with its own
+     openingHoursSpecification, so a search engine can represent the day service
+     and the night service distinctly. Most bakery-bistros publish one and hide
+     the other, and customers never learn the evening service exists. -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {
+  "@type":"Bakery",
+  "name":"FairyLand Bakery",
+  "alternateName":"[CONFIRM — FairyLand Bakery &amp; May?]",
+  "url":"https://fairylandbakery.example/en/",
+  "inLanguage":"en",
+  "servesCuisine":["Padaria","Confeitaria","Caf\u00e9"],
+  "openingHoursSpecification":"[CONFIRM hor\u00e1rio da padaria]",
+  "address":{"@type":"PostalAddress","streetAddress":"[CONFIRM]","addressLocality":"Florian\u00f3polis",
+    "addressRegion":"SC","addressCountry":"BR","postalCode":"[CONFIRM]"},
+  "geo":{"@type":"GeoCoordinates","latitude":"[CONFIRM]","longitude":"[CONFIRM]"},
+  "telephone":"[CONFIRM]","priceRange":"[CONFIRM]","currenciesAccepted":"BRL",
+  "sameAs":["https://www.instagram.com/fairylandbakery/"],
+  "hasMenu":{"@type":"Menu","hasMenuSection":[
+    {"@type":"MenuSection","name":"P\u00e3es"},{"@type":"MenuSection","name":"Viennoiserie"},
+    {"@type":"MenuSection","name":"Doces e Bolos"},{"@type":"MenuSection","name":"Caf\u00e9 e Bebidas"}]}
+ },
+ {
+  "@type":"Restaurant",
+  "name":"FairyLand Bistr\u00f4",
+  "url":"https://fairylandbakery.example/en/#bistro",
+  "inLanguage":"en",
+  "servesCuisine":["Bistr\u00f4"],
+  "acceptsReservations":"[CONFIRM]",
+  "openingHoursSpecification":"[CONFIRM noites e hor\u00e1rio do bistr\u00f4]",
+  "address":{"@type":"PostalAddress","streetAddress":"[CONFIRM]","addressLocality":"Florian\u00f3polis",
+    "addressRegion":"SC","addressCountry":"BR"},
+  "priceRange":"[CONFIRM]","currenciesAccepted":"BRL",
+  "hasMenu":{"@type":"Menu","hasMenuSection":[
+    {"@type":"MenuSection","name":"Entradas"},{"@type":"MenuSection","name":"Pratos"},
+    {"@type":"MenuSection","name":"Sobremesas"},{"@type":"MenuSection","name":"Vinhos e Drinks"}]}
+ }
+]}
+</script>
+<!-- ⚠ NO aggregateRating and NO review anywhere: nothing is verified. -->
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- 1 · Announcement bar — a GENUINE operational message.
+     ⚠ ref-01's "20% OFF" band is a render artefact. No invented discount. -->
+<div class="annc">The bistro serves on <span class="cfm">[CONFIRM]</span> · bakery open <span class="cfm">[CONFIRM]</span></div>
+
+<!-- 2 · Utility topbar -->
+<div class="top">
+  <div class="wrap top__in">
+    <div class="top__l">
+      <span>Bakery <span class="cfm">[CONFIRM]</span></span>
+      <span>Bistro <span class="cfm">[CONFIRM]</span></span>
+    </div>
+    <div class="top__r">
+      <a href="https://www.instagram.com/fairylandbakery/" target="_blank" rel="noopener">@fairylandbakery</a>
+      <div class="pills">
+        <a href="../" hreflang="pt-BR" lang="pt-BR">PT</a>
+        <a href="index.html" hreflang="en" lang="en" class="on">EN</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 3 · Header — centred logotype with the NAME QUESTION visible beside it, so
+     it gets asked in the meeting instead of being guessed at. -->
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <nav class="nav" aria-label="Navigation">
+      <a href="#padaria">Bakery</a><a href="#vitrine">Menu</a>
+    </nav>
+    <a class="brand" href="index.html">FairyLand Bakery<span class="namefix">[CONFIRM: &amp; May?]</span><small>Padaria &amp; Bistrô</small></a>
+    <div class="hdr__r">
+      <nav class="nav nav--r" aria-label="Navigation">
+        <a href="#bistro">Bistro</a><a href="#encomendas">Orders</a><a href="#visite">Visit</a>
+      </nav>
+      <!-- ⭐ the persistent Padaria | Bistrô switch -->
+      <div class="switch" role="group" aria-label="Bakery or Bistro">
+        <button data-half="padaria" aria-pressed="true">Bakery</button>
+        <button data-half="bistro" aria-pressed="false">Bistro</button>
+      </div>
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mnav" aria-label="Menu">
+  <a href="#padaria">Bakery</a><a href="#vitrine">Menu</a><a href="#bistro">Bistro</a><a href="#encomendas">Orders</a><a href="#visite">Visit</a>
+  <div class="switch" style="margin-top:22px" role="group" aria-label="Bakery or Bistro">
+    <button data-half="padaria" aria-pressed="true">Bakery</button>
+    <button data-half="bistro" aria-pressed="false">Bistro</button>
+  </div>
+  <a href="index.html" lang="pt-BR">Português</a>
+</nav>
+<main id="main">
+
+<!-- 4 · Hero — the day/night hinge. Two halves, one fine gold rule that draws
+     itself in between them; on mobile they stack and the rule turns horizontal. -->
+<section class="hero">
+  <div class="hero__split">
+    <div class="hero__half hero__half--day">
+      <!-- PLACEHOLDER-hero-padaria.jpg — royalty-free stock (Unsplash) -->
+      <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=1100&q=70" width="1100" height="900" fetchpriority="high"
+           alt="A bakery counter in soft morning light with breads and pastries, no people — illustrative stock photograph">
+    </div>
+    <div class="hero__half hero__half--night">
+      <!-- PLACEHOLDER-hero-bistro.jpg — royalty-free stock (Unsplash) -->
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1100&q=70" width="1100" height="900" loading="lazy" decoding="async"
+           alt="A bistro table at night in low warm light, no faces — illustrative stock photograph">
+    </div>
+    <span class="hero__rule" aria-hidden="true"></span>
+  </div>
+  <div class="wrap hero__t">
+    <p class="eyebrow">Florianópolis · Bakery by day, bistro by night</p>
+    <h1>Two houses at one address.</h1>
+    <p class="script">bread in the morning. a laid table at night.</p>
+    <div class="btn-row" style="justify-content:center">
+      <a class="btn" href="#vitrine">See the bakery <span class="ar">&rarr;</span></a>
+      <a class="btn btn--ghost" href="#bistro">See the bistro</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ THE DAY HALF ═══════════ -->
+<section class="sec softbg half" id="vitrine" data-half-section="padaria">
+  <div class="wrap">
+    <div class="sec-head sec-head--row" data-rv>
+      <div>
+        <p class="eyebrow">The bakery counter</p>
+        <h2 class="h-lg">What comes out of the oven.</h2>
+      </div>
+      <p class="lede" style="max-width:38ch">Real categories, contents open. No bread, pastry, cake or price has been invented — and on a boutique bakery menu that is far too easy to do.</p>
+    </div>
+    <div class="cats" data-for="padGrid" role="group" aria-label="Categories"><button data-k="all" aria-pressed="true">All</button><button data-k="paes" aria-pressed="false">Breads</button><button data-k="vienn" aria-pressed="false">Viennoiserie</button><button data-k="doces" aria-pressed="false">Cakes &amp; sweets</button><button data-k="cafe" aria-pressed="false">Coffee &amp; drinks</button></div><div class="items" id="padGrid">
+      <article class="item" data-k="paes" data-rv>
+        <div class="item__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), not their product -->
+          <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=560&q=70" width="560" height="700" loading="lazy" decoding="async"
+               alt="A bakery product or bistro dish under studio light — illustrative stock photograph">
+        </div>
+        <div class="item__b">
+          <h3>Breads 1</h3>
+          <p><span class="cfm">[CONFIRM]</span> — name and a one-line description</p>
+          <div class="alg"><span class="glu">CONTAINS GLUTEN</span><span class="">Milk</span><span class="cfm">[CONFIRM]</span></div>
+          <span class="chip">R$ [CONFIRM]</span>
+          <a class="btn btn--sm btn--full" href="#" data-wa="Breads 1">Order <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="item" data-k="paes" data-rv>
+        <div class="item__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), not their product -->
+          <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=560&q=70" width="560" height="700" loading="lazy" decoding="async"
+               alt="A bakery product or bistro dish under studio light — illustrative stock photograph">
+        </div>
+        <div class="item__b">
+          <h3>Breads 2</h3>
+          <p><span class="cfm">[CONFIRM]</span> — name and a one-line description</p>
+          <div class="alg"><span class="glu">CONTAINS GLUTEN</span><span class="">Milk</span><span class="cfm">[CONFIRM]</span></div>
+          <span class="chip">R$ [CONFIRM]</span>
+          <a class="btn btn--sm btn--full" href="#" data-wa="Breads 2">Order <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="item" data-k="vienn" data-rv>
+        <div class="item__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), not their product -->
+          <img src="https://images.unsplash.com/photo-1568254183919-78a4f43a2877?auto=format&fit=crop&w=560&q=70" width="560" height="700" loading="lazy" decoding="async"
+               alt="A bakery product or bistro dish under studio light — illustrative stock photograph">
+        </div>
+        <div class="item__b">
+          <h3>Viennoiserie 1</h3>
+          <p><span class="cfm">[CONFIRM]</span> — name and a one-line description</p>
+          <div class="alg"><span class="glu">CONTAINS GLUTEN</span><span class="">Milk</span><span class="">Egg</span><span class="cfm">[CONFIRM]</span></div>
+          <span class="chip">R$ [CONFIRM]</span>
+          <a class="btn btn--sm btn--full" href="#" data-wa="Viennoiserie 1">Order <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="item" data-k="vienn" data-rv>
+        <div class="item__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), not their product -->
+          <img src="https://images.unsplash.com/photo-1568254183919-78a4f43a2877?auto=format&fit=crop&w=560&q=70" width="560" height="700" loading="lazy" decoding="async"
+               alt="A bakery product or bistro dish under studio light — illustrative stock photograph">
+        </div>
+        <div class="item__b">
+          <h3>Viennoiserie 2</h3>
+          <p><span class="cfm">[CONFIRM]</span> — name and a one-line description</p>
+          <div class="alg"><span class="glu">CONTAINS GLUTEN</span><span class="">Milk</span><span class="">Egg</span><span class="cfm">[CONFIRM]</span></div>
+          <span class="chip">R$ [CONFIRM]</span>
+          <a class="btn btn--sm btn--full" href="#" data-wa="Viennoiserie 2">Order <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="item" data-k="doces" data-rv>
+        <div class="item__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), not their product -->
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=560&q=70" width="560" height="700" loading="lazy" decoding="async"
+               alt="A bakery product or bistro dish under studio light — illustrative stock photograph">
+        </div>
+        <div class="item__b">
+          <h3>Cakes &amp; sweets 1</h3>
+          <p><span class="cfm">[CONFIRM]</span> — name and a one-line description</p>
+          <div class="alg"><span class="glu">CONTAINS GLUTEN</span><span class="">Milk</span><span class="">Egg</span><span class="">Tree nuts</span><span class="cfm">[CONFIRM]</span></div>
+          <span class="chip">R$ [CONFIRM]</span>
+          <a class="btn btn--sm btn--full" href="#" data-wa="Cakes &amp; sweets 1">Order <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="item" data-k="doces" data-rv>
+        <div class="item__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), not their product -->
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=560&q=70" width="560" height="700" loading="lazy" decoding="async"
+               alt="A bakery product or bistro dish under studio light — illustrative stock photograph">
+        </div>
+        <div class="item__b">
+          <h3>Cakes &amp; sweets 2</h3>
+          <p><span class="cfm">[CONFIRM]</span> — name and a one-line description</p>
+          <div class="alg"><span class="glu">CONTAINS GLUTEN</span><span class="">Milk</span><span class="">Egg</span><span class="">Tree nuts</span><span class="cfm">[CONFIRM]</span></div>
+          <span class="chip">R$ [CONFIRM]</span>
+          <a class="btn btn--sm btn--full" href="#" data-wa="Cakes &amp; sweets 2">Order <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="item" data-k="cafe" data-rv>
+        <div class="item__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), not their product -->
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=560&q=70" width="560" height="700" loading="lazy" decoding="async"
+               alt="A bakery product or bistro dish under studio light — illustrative stock photograph">
+        </div>
+        <div class="item__b">
+          <h3>Coffee &amp; drinks 1</h3>
+          <p><span class="cfm">[CONFIRM]</span> — name and a one-line description</p>
+          <div class="alg"><span class="">Milk</span><span class="cfm">[CONFIRM]</span></div>
+          <span class="chip">R$ [CONFIRM]</span>
+          <a class="btn btn--sm btn--full" href="#" data-wa="Coffee &amp; drinks 1">Order <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="item" data-k="cafe" data-rv>
+        <div class="item__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), not their product -->
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=560&q=70" width="560" height="700" loading="lazy" decoding="async"
+               alt="A bakery product or bistro dish under studio light — illustrative stock photograph">
+        </div>
+        <div class="item__b">
+          <h3>Coffee &amp; drinks 2</h3>
+          <p><span class="cfm">[CONFIRM]</span> — name and a one-line description</p>
+          <div class="alg"><span class="">Milk</span><span class="cfm">[CONFIRM]</span></div>
+          <span class="chip">R$ [CONFIRM]</span>
+          <a class="btn btn--sm btn--full" href="#" data-wa="Coffee &amp; drinks 2">Order <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+    </div>
+    <p class="cfm-note" style="margin-top:26px">[CONFIRM] The price, name and description of every item. And the cross-contamination policy: a bakery works with flour all day, so saying whether a gluten-free option exists and whether it is made in a shared environment is mandatory, not optional.</p>
+  </div>
+</section>
+
+<!-- 6 · Assinaturas da casa -->
+<section class="sec half" data-half-section="padaria">
+  <div class="wrap">
+    <div class="sec-head sec-head--c" data-rv>
+      <p class="eyebrow">House signatures</p>
+      <h2 class="h-lg">Three that define the house.</h2>
+      <p class="lede" style="margin-inline:auto">Which three is yours to say. <span class="cfm">[CONFIRM]</span></p>
+    </div>
+    <div class="carou">
+      <div class="track" tabindex="0" aria-label="Signatures">
+        <div class="sig" data-rv>
+          <div class="sig__i">
+            <!-- PLACEHOLDER-assinatura-01.jpg — royalty-free stock (Unsplash) -->
+            <img src="https://images.unsplash.com/photo-1568254183919-78a4f43a2877?auto=format&fit=crop&w=600&q=70" width="600" height="800" loading="lazy" decoding="async"
+                 alt="A pastry or cake in close crop — illustrative stock photograph">
+          </div>
+          <h3>Signature 1</h3>
+          <p style="font-size:.9rem;margin:0"><span class="cfm">[CONFIRM]</span></p>
+        </div>
+        <div class="sig" data-rv>
+          <div class="sig__i">
+            <!-- PLACEHOLDER-assinatura-02.jpg — royalty-free stock (Unsplash) -->
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=70" width="600" height="800" loading="lazy" decoding="async"
+                 alt="A pastry or cake in close crop — illustrative stock photograph">
+          </div>
+          <h3>Signature 2</h3>
+          <p style="font-size:.9rem;margin:0"><span class="cfm">[CONFIRM]</span></p>
+        </div>
+        <div class="sig" data-rv>
+          <div class="sig__i">
+            <!-- PLACEHOLDER-assinatura-03.jpg — royalty-free stock (Unsplash) -->
+            <img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=600&q=70" width="600" height="800" loading="lazy" decoding="async"
+                 alt="A pastry or cake in close crop — illustrative stock photograph">
+          </div>
+          <h3>Signature 3</h3>
+          <p style="font-size:.9rem;margin:0"><span class="cfm">[CONFIRM]</span></p>
+        </div>
+      </div>
+      <div class="carou__ctl">
+        <button data-carou="prev" aria-label="Previous">&larr;</button>
+        <button data-carou="next" aria-label="Next">&rarr;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · Split promo band — honest: a real message on each side -->
+<section class="half" data-half-section="padaria">
+  <div class="promo">
+    <div class="promo__t blushbg" data-rv>
+      <p class="eyebrow">Orders</p>
+      <h2 class="h-md">A whole cake, ordered ahead.</h2>
+      <p style="margin-top:12px">Minimum lead time and minimum order: <span class="cfm">[CONFIRM]</span></p>
+      <div class="btn-row"><a class="btn btn--sm" href="#encomendas">Place an order <span class="ar">&rarr;</span></a></div>
+    </div>
+    <div class="promo__i">
+      <!-- PLACEHOLDER-promo-maos.jpg — royalty-free stock (Unsplash). Adult hands only. -->
+      <img src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&w=900&q=72" width="900" height="600" loading="lazy" decoding="async"
+           alt="Adult hands finishing a pastry on the counter — illustrative stock photograph">
+    </div>
+  </div>
+</section>
+
+<!-- 12 · Café da manhã / lanche da tarde — the sit-in occasion, distinct from
+     both the takeaway counter and the evening service. -->
+<section class="sec blushbg half" data-half-section="padaria">
+  <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,3.6vw,54px);align-items:center">
+    <div data-rv>
+      <p class="eyebrow">Breakfast and afternoon tea</p>
+      <h2 class="h-lg">Sit down, and stay.</h2>
+      <p class="lede" style="margin-top:16px">A third moment, different from the takeaway counter and different from the evening bistro. Whether it is a set menu or à la carte: <span class="cfm">[CONFIRM]</span></p>
+    </div>
+    <figure class="fig" style="aspect-ratio:3/2" data-rv>
+      <!-- PLACEHOLDER-cafe-da-manha.jpg — royalty-free stock (Unsplash) -->
+      <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=1000&q=72" width="1000" height="667" loading="lazy" decoding="async"
+           alt="A table with coffee, a pastry and a linen napkin in morning light, no people — illustrative stock photograph">
+    </figure>
+  </div>
+</section>
+
+<!-- ═══════════ THE NIGHT HALF ═══════════ -->
+<section class="sec night half" id="bistro" data-half-section="bistro">
+  <div class="wrap">
+    <div class="sec-head sec-head--row" data-rv>
+      <div>
+        <p class="eyebrow">The bistro</p>
+        <h2 class="h-lg">The same house, after dark.</h2>
+        <p class="lede">A bakery survives on passing trade. A bistro has to be <em>found and booked in advance</em> — and today the menu, the service nights and the booking path all live inside an Instagram highlight.</p>
+      </div>
+      <p class="cfm-note" style="max-width:38ch;margin:0" data-rv>[CONFIRM] The bistro&rsquo;s service nights and hours. It is the single most important fact on this half of the page, and it appears here and in the top bar.</p>
+    </div>
+    <div class="cats" data-for="bisGrid" role="group" aria-label="Categories"><button data-k="all" aria-pressed="true">All</button><button data-k="entradas" aria-pressed="false">Starters</button><button data-k="pratos" aria-pressed="false">Mains</button><button data-k="sobrem" aria-pressed="false">Desserts</button><button data-k="vinhos" aria-pressed="false">Wine &amp; drinks</button></div><div class="items" id="bisGrid">
+      <article class="item" data-k="entradas" data-rv>
+        <div class="item__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), not their product -->
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=560&q=70" width="560" height="700" loading="lazy" decoding="async"
+               alt="A bakery product or bistro dish under studio light — illustrative stock photograph">
+        </div>
+        <div class="item__b">
+          <h3>Starters 1</h3>
+          <p><span class="cfm">[CONFIRM]</span> — name and a one-line description</p>
+          <div class="alg"><span class="glu">CONTAINS GLUTEN</span><span class="">Milk</span><span class="">Fish</span><span class="cfm">[CONFIRM]</span></div>
+          <span class="chip">R$ [CONFIRM]</span>
+          <a class="btn btn--sm btn--full btn--gold" href="#" data-wa="Starters 1">Order <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="item" data-k="entradas" data-rv>
+        <div class="item__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), not their product -->
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=560&q=70" width="560" height="700" loading="lazy" decoding="async"
+               alt="A bakery product or bistro dish under studio light — illustrative stock photograph">
+        </div>
+        <div class="item__b">
+          <h3>Starters 2</h3>
+          <p><span class="cfm">[CONFIRM]</span> — name and a one-line description</p>
+          <div class="alg"><span class="glu">CONTAINS GLUTEN</span><span class="">Milk</span><span class="">Fish</span><span class="cfm">[CONFIRM]</span></div>
+          <span class="chip">R$ [CONFIRM]</span>
+          <a class="btn btn--sm btn--full btn--gold" href="#" data-wa="Starters 2">Order <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="item" data-k="pratos" data-rv>
+        <div class="item__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), not their product -->
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=560&q=70" width="560" height="700" loading="lazy" decoding="async"
+               alt="A bakery product or bistro dish under studio light — illustrative stock photograph">
+        </div>
+        <div class="item__b">
+          <h3>Mains 1</h3>
+          <p><span class="cfm">[CONFIRM]</span> — name and a one-line description</p>
+          <div class="alg"><span class="">Milk</span><span class="">Fish</span><span class="">Crustaceans</span><span class="cfm">[CONFIRM]</span></div>
+          <span class="chip">R$ [CONFIRM]</span>
+          <a class="btn btn--sm btn--full btn--gold" href="#" data-wa="Mains 1">Order <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="item" data-k="pratos" data-rv>
+        <div class="item__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), not their product -->
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=560&q=70" width="560" height="700" loading="lazy" decoding="async"
+               alt="A bakery product or bistro dish under studio light — illustrative stock photograph">
+        </div>
+        <div class="item__b">
+          <h3>Mains 2</h3>
+          <p><span class="cfm">[CONFIRM]</span> — name and a one-line description</p>
+          <div class="alg"><span class="">Milk</span><span class="">Fish</span><span class="">Crustaceans</span><span class="cfm">[CONFIRM]</span></div>
+          <span class="chip">R$ [CONFIRM]</span>
+          <a class="btn btn--sm btn--full btn--gold" href="#" data-wa="Mains 2">Order <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="item" data-k="sobrem" data-rv>
+        <div class="item__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), not their product -->
+          <img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=560&q=70" width="560" height="700" loading="lazy" decoding="async"
+               alt="A bakery product or bistro dish under studio light — illustrative stock photograph">
+        </div>
+        <div class="item__b">
+          <h3>Desserts 1</h3>
+          <p><span class="cfm">[CONFIRM]</span> — name and a one-line description</p>
+          <div class="alg"><span class="glu">CONTAINS GLUTEN</span><span class="">Milk</span><span class="">Egg</span><span class="">Tree nuts</span><span class="cfm">[CONFIRM]</span></div>
+          <span class="chip">R$ [CONFIRM]</span>
+          <a class="btn btn--sm btn--full btn--gold" href="#" data-wa="Desserts 1">Order <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="item" data-k="sobrem" data-rv>
+        <div class="item__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), not their product -->
+          <img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=560&q=70" width="560" height="700" loading="lazy" decoding="async"
+               alt="A bakery product or bistro dish under studio light — illustrative stock photograph">
+        </div>
+        <div class="item__b">
+          <h3>Desserts 2</h3>
+          <p><span class="cfm">[CONFIRM]</span> — name and a one-line description</p>
+          <div class="alg"><span class="glu">CONTAINS GLUTEN</span><span class="">Milk</span><span class="">Egg</span><span class="">Tree nuts</span><span class="cfm">[CONFIRM]</span></div>
+          <span class="chip">R$ [CONFIRM]</span>
+          <a class="btn btn--sm btn--full btn--gold" href="#" data-wa="Desserts 2">Order <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="item" data-k="vinhos" data-rv>
+        <div class="item__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), not their product -->
+          <img src="https://images.unsplash.com/photo-1593351415075-3bac9f45c877?auto=format&fit=crop&w=560&q=70" width="560" height="700" loading="lazy" decoding="async"
+               alt="A bakery product or bistro dish under studio light — illustrative stock photograph">
+        </div>
+        <div class="item__b">
+          <h3>Wine &amp; drinks 1</h3>
+          <p><span class="cfm">[CONFIRM]</span> — name and a one-line description</p>
+          <div class="alg"><span class="cfm">[CONFIRM]</span></div>
+          <span class="chip">R$ [CONFIRM]</span>
+          <a class="btn btn--sm btn--full btn--gold" href="#" data-wa="Wine &amp; drinks 1">Order <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="item" data-k="vinhos" data-rv>
+        <div class="item__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), not their product -->
+          <img src="https://images.unsplash.com/photo-1593351415075-3bac9f45c877?auto=format&fit=crop&w=560&q=70" width="560" height="700" loading="lazy" decoding="async"
+               alt="A bakery product or bistro dish under studio light — illustrative stock photograph">
+        </div>
+        <div class="item__b">
+          <h3>Wine &amp; drinks 2</h3>
+          <p><span class="cfm">[CONFIRM]</span> — name and a one-line description</p>
+          <div class="alg"><span class="cfm">[CONFIRM]</span></div>
+          <span class="chip">R$ [CONFIRM]</span>
+          <a class="btn btn--sm btn--full btn--gold" href="#" data-wa="Wine &amp; drinks 2">Order <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+    </div>
+    <p class="cfm-note" style="margin-top:26px">[CONFIRM] Whether a cover charge or service fee applies — under Brazilian consumer law it must be disclosed before ordering, not on the bill. And [CONFIRM] the alcohol licence: without it, the wine and drinks section does not go live.</p>
+  </div>
+</section>
+
+<!-- 9 · Reservas do bistrô — only surfaced if the bistro takes bookings -->
+<section class="sec night half" id="reservas" data-half-section="bistro">
+  <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,3.6vw,54px);align-items:start">
+    <div data-rv>
+      <p class="eyebrow">Reservations</p>
+      <h2 class="h-lg">Bistro covers are the high-margin line.</h2>
+      <p class="lede" style="margin-top:16px">And today they can only be booked inside a DM thread. This form composes a complete message and opens WhatsApp — it sends nothing on its own and holds no table.</p>
+      <p class="cfm-note">[CONFIRM] whether the bistro takes bookings at all. If it does not, this section comes off the site rather than becoming decoration.</p>
+    </div>
+    <div class="form" data-rv>
+      <form id="bookForm">
+        <div class="fr">
+          <div class="field"><label for="data">Date (DD/MM)</label><input type="date" id="data" name="data" required></div>
+          <div class="field"><label for="hora">Time</label>
+            <select id="hora" name="hora"><option>[CONFIRM]</option><option>[CONFIRM]</option><option>[CONFIRM]</option></select></div>
+        </div>
+        <div class="fr">
+          <div class="field"><label for="pax">People</label><input type="number" id="pax" name="pax" min="1" inputmode="numeric" required></div>
+          <div class="field"><label for="ocasiao">Occasion</label>
+            <select id="ocasiao" name="ocasiao">
+              <option>Dinner</option><option>Birthday</option>
+              <option>Celebration</option><option>No occasion</option>
+            </select></div>
+        </div>
+        <div class="field" style="margin-bottom:16px"><label for="obs">Notes and dietary needs</label><textarea id="obs" name="obs"></textarea></div>
+        <label class="consent" for="consentBook">
+          <input type="checkbox" id="consentBook">
+          <span>I consent to this data being used to answer this booking, as described in the <a href="privacy.html">Privacy Policy</a>.</span>
+        </label>
+        <button class="btn btn--gold btn--full" type="submit">Send over WhatsApp <span class="ar">&rarr;</span></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SHARED SECTIONS ═══════════ -->
+
+<!-- 10 · Encomendas — for FairyLand this is a SUPPORTING line, so it is
+     deliberately simpler than a dedicated cake studio's flow.
+     ⛔ No birthday-party or children's-cake imagery or copy. -->
+<section class="sec half" id="encomendas" data-half-section="both">
+  <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,3.6vw,54px);align-items:start">
+    <figure class="fig" style="aspect-ratio:4/5" data-rv>
+      <!-- PLACEHOLDER-encomendas.jpg — royalty-free stock (Unsplash) -->
+      <img src="https://images.unsplash.com/photo-1533777324565-a040eb52facd?auto=format&fit=crop&w=900&q=72" width="900" height="1125" loading="lazy" decoding="async"
+           alt="A marble surface with a plain, undecorated cake — illustrative stock photograph">
+    </figure>
+    <div data-rv>
+      <p class="eyebrow">Orders</p>
+      <h2 class="h-lg">Order ahead.</h2>
+      <p class="lede" style="margin-top:14px">Minimum lead time, minimum order and what is possible: <span class="cfm">[CONFIRM]</span></p>
+      <div class="form" style="margin-top:20px">
+        <form id="orderForm">
+          <div class="fr">
+            <div class="field"><label for="item">Item</label><input type="text" id="item" name="item" placeholder="[CONFIRM]"></div>
+            <div class="field"><label for="tam">Size / servings</label><input type="text" id="tam" name="tam" placeholder="[CONFIRM]"></div>
+          </div>
+          <div class="field" style="margin-bottom:16px"><label for="odata">Needed on (DD/MM)</label><input type="date" id="odata" name="data"></div>
+          <div class="field" style="margin-bottom:16px"><label for="oobs">Notes and dietary needs</label><textarea id="oobs" name="obs"></textarea></div>
+          <label class="consent" for="consentOrd">
+            <input type="checkbox" id="consentOrd">
+            <span>I consent to being contacted about this order, as described in the <a href="privacy.html">Privacy Policy</a>.</span>
+          </label>
+          <button class="btn btn--full" type="submit">Send over WhatsApp <span class="ar">&rarr;</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · Por que FairyLand.
+     ⚠ NOT asserted: "assado na hora", "fermentação natural" or any process
+     claim that has not been confirmed. Three empty slots instead. -->
+<section class="sec softbg half" data-half-section="both">
+  <div class="wrap">
+    <div class="sec-head sec-head--c" data-rv>
+      <p class="eyebrow">Why here</p>
+      <h2 class="h-lg">Three reasons — from you.</h2>
+      <p class="lede" style="margin-inline:auto">We have not written “baked fresh” or “naturally leavened”. Those are process claims, they are easy to type, and they have to be true.</p>
+    </div>
+    <div class="vals">
+      <div class="val" data-rv>
+        <div class="val__i">
+          <!-- PLACEHOLDER-valor-01.jpg — royalty-free stock (Unsplash) -->
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=560&q=70" width="560" height="560" loading="lazy" decoding="async"
+               alt="A bakery or interior detail — illustrative stock photograph">
+        </div>
+        <h3>Differentiator 1</h3>
+        <p style="font-size:.9rem;margin:0"><span class="cfm">[CONFIRM]</span></p>
+      </div>
+      <div class="val" data-rv>
+        <div class="val__i">
+          <!-- PLACEHOLDER-valor-02.jpg — royalty-free stock (Unsplash) -->
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=560&q=70" width="560" height="560" loading="lazy" decoding="async"
+               alt="A bakery or interior detail — illustrative stock photograph">
+        </div>
+        <h3>Differentiator 2</h3>
+        <p style="font-size:.9rem;margin:0"><span class="cfm">[CONFIRM]</span></p>
+      </div>
+      <div class="val" data-rv>
+        <div class="val__i">
+          <!-- PLACEHOLDER-valor-03.jpg — royalty-free stock (Unsplash) -->
+          <img src="https://images.unsplash.com/photo-1521302080334-4bebac2763a6?auto=format&fit=crop&w=560&q=70" width="560" height="560" loading="lazy" decoding="async"
+               alt="A bakery or interior detail — illustrative stock photograph">
+        </div>
+        <h3>Differentiator 3</h3>
+        <p style="font-size:.9rem;margin:0"><span class="cfm">[CONFIRM]</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 · Galeria & Visite-nos -->
+<section class="sec half" id="visite" data-half-section="both">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Visit</p>
+      <h2 class="h-lg">Where to find us.</h2>
+    </div>
+    <div class="gal3" style="margin-bottom:clamp(24px,3.4vw,42px)">
+      <figure class="fig" style="aspect-ratio:4/3" data-rv>
+        <!-- PLACEHOLDER-gal-01.jpg — royalty-free stock (Unsplash) -->
+        <img src="https://images.unsplash.com/photo-1587241321921-91a834d6d191?auto=format&fit=crop&w=700&q=70" width="700" height="525" loading="lazy" decoding="async"
+             alt="A bakery interior or shopfront in natural light, no people — illustrative stock photograph">
+      </figure>
+      <figure class="fig" style="aspect-ratio:4/3" data-rv>
+        <!-- PLACEHOLDER-gal-02.jpg — royalty-free stock (Unsplash) -->
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=700&q=70" width="700" height="525" loading="lazy" decoding="async"
+             alt="A bakery interior or shopfront in natural light, no people — illustrative stock photograph">
+      </figure>
+      <figure class="fig" style="aspect-ratio:4/3" data-rv>
+        <!-- PLACEHOLDER-gal-03.jpg — royalty-free stock (Unsplash) -->
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=70" width="700" height="525" loading="lazy" decoding="async"
+             alt="A bakery interior or shopfront in natural light, no people — illustrative stock photograph">
+      </figure>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,3.4vw,50px);align-items:start">
+      <div data-rv>
+        <ul class="dist">
+          <li><b>Address</b> <span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Neighbourhood</b> <span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Bakery hours</b> <span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Bistro hours</b> <span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Parking</b> <span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>WhatsApp</b> <span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Email</b> <span><a href="#" data-email><span class="cfm">[CONFIRM]</span></a></span></li>
+          <li><b>iFood</b> <span><span class="cfm">[CONFIRM]</span></span></li>
+        </ul>
+        <div class="btn-row"><a class="btn btn--gold" href="#" data-wa>How to find us <span class="cfm">[CONFIRM]</span></a></div>
+      </div>
+      <div class="map" data-rv role="img" aria-label="Map — address to be confirmed">
+        <div class="map__grid" aria-hidden="true"></div>
+        <div>
+          <strong style="display:block;font-family:var(--serif);font-size:1.3rem">Florianópolis</strong>
+          <span style="font-size:.9rem">Santa Catarina</span>
+          <p style="margin:14px 0 0"><span class="cfm">[CONFIRM address]</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 14 · Avaliações — STRUCTURE ONLY, DELIBERATELY EMPTY -->
+<section class="sec blushbg half" data-half-section="both">
+  <div class="wrap wrap--n">
+    <div class="rev-empty" data-rv>
+      <h2 class="h-md">Reviews</h2>
+      <p style="margin-top:12px">[CONFIRM — pull the real Google reviews.] No score, star or testimonial has been written here. The design reference is full of confident numbers; they are render artefacts, not facts about this business.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 15 · Newsletter -->
+<section class="sec sec--t half" data-half-section="both">
+  <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(22px,3vw,44px);align-items:center">
+    <div data-rv>
+      <h2 class="h-md">The FairyLand list</h2>
+      <p class="lede" style="margin-top:10px">What comes out of the oven, the bistro nights, and end-of-year orders.</p>
+    </div>
+    <form id="newsForm" data-rv>
+      <div class="field" style="margin-bottom:14px"><label for="nemail">Email</label><input type="email" id="nemail" name="email" required></div>
+      <label class="consent" for="consentNews">
+        <input type="checkbox" id="consentNews">
+        <span>I agree to receive emails and I have read the <a href="privacy.html">Privacy Policy</a>.</span>
+      </label>
+      <button class="btn" type="submit">Join the list <span class="ar">&rarr;</span></button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <span class="brand">FairyLand Bakery<small>[CONFIRM: &amp; May?]</small></span>
+        <p style="font-size:.88rem;max-width:32ch">An artisan bakery and bistro in Florianópolis — SC.</p>
+        <p style="font-size:.88rem">Address <span class="cfm">[CONFIRM]</span></p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <ul>
+          <li>Bakery <span class="cfm">[CONFIRM]</span></li>
+          <li>Bistro <span class="cfm">[CONFIRM]</span></li>
+          <li>Orders — lead time <span class="cfm">[CONFIRM]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>The house</h4>
+        <ul><li><a href="#padaria">Bakery</a></li><li><a href="#vitrine">Menu</a></li><li><a href="#bistro">Bistro</a></li><li><a href="#encomendas">Orders</a></li><li><a href="#visite">Visit</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact &amp; legal</h4>
+        <ul>
+          <li>WhatsApp <span class="cfm">[CONFIRM]</span></li>
+          <li><a href="#" data-email>Email <span class="cfm">[CONFIRM]</span></a></li>
+          <li><a href="https://www.instagram.com/fairylandbakery/" target="_blank" rel="noopener">@fairylandbakery</a></li>
+          <li>CNPJ <span class="cfm">[CONFIRM]</span></li>
+          <li>Sanitary licence <span class="cfm">[CONFIRM]</span></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="index.html" hreflang="pt-BR">Português</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="allerg"><strong>Allergens and gluten.</strong> A house that is both a bakery and a bistro spans nearly the whole list: <strong>gluten, milk, egg, tree nuts, peanut and soy</strong>, plus <strong>fish, crustaceans and molluscs</strong> on the bistro side. The per-item declaration required by ANVISA RDC 26/2015 and the “CONTAINS GLUTEN / GLUTEN FREE” declaration under Law 10.674/2003 go in as soon as the recipe sheets are confirmed. Cross-contamination policy with flour: <span class="cfm">[CONFIRM]</span></p>
+    <p class="booze">If the bistro is licensed to sell alcohol <span class="cfm">[CONFIRM licence]</span>: <strong>Sale prohibited to under-18s.</strong> <strong>If you drink, do not drive.</strong> Without a confirmed licence the wine and drinks section does not go live.</p>
+    <div class="ftr__bot">
+      <span>© 2026 FairyLand Bakery · Registered name <span class="cfm">[CONFIRM]</span> · CNPJ <span class="cfm">[CONFIRM]</span></span>
+      <span>Mockup — stock imagery, replace before launch.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 16 · Sticky mobile bar — the label swaps to "Reservar" inside the bistro half -->
+<a class="wa" href="#" data-wa aria-label="WhatsApp [CONFIRM]"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.24-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg><span class="wa__cfm">[CONFIRM]</span></a>
+<div class="mbar">
+  <a class="btn" href="#vitrine" data-half-cta>Order on WhatsApp</a>
+  <a class="btn btn--ghost" href="#vitrine">Menu</a>
+</div>
+
+<div class="ck" role="dialog" aria-label="Cookie preferences">
+  <div class="ck__in">
+    <div>
+      <p><strong>Cookies and personal data.</strong>
+        Only the essential stays on. Analytics and marketing stay off until you turn them on. The mailing list, the bistro booking and the order form collect personal data and carry their own consent.
+        <a href="privacy.html">Privacy Policy</a></p>
+      <div class="ck__opts">
+        <label><input type="checkbox" checked disabled> Essential</label>
+        <label><input type="checkbox" id="ckA"> Analytics</label>
+        <label><input type="checkbox" id="ckM"> Marketing</label>
+      </div>
+    </div>
+    <div class="ck__btns">
+      <button class="btn btn--ghost btn--sm" data-ck="none">Reject</button>
+      <button class="btn btn--ghost btn--sm" data-ck="save">Save</button>
+      <button class="btn btn--sm" data-ck="all">Accept</button>
+    </div>
+  </div>
+</div>
+
+<script src="../script.js" defer></script>
+</body>
+</html>

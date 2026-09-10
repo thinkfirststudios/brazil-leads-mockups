@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<!-- Speculative pitch mockup for a prospect who has not commissioned, seen or
+     approved it. Must never be indexed or compete with the real business. -->
+<title>Ilha da Magia Imóveis — Seasonal and Long-Term Rentals in Florianópolis | CRECI-SC 22.482</title>
+<meta name="description" content="Seasonal and long-term rentals in Florianópolis, with two separate search paths. Rent, condominium fee and IPTU shown as separate lines. André Krüger, CRECI-SC 22.482.">
+<link rel="canonical" href="https://www.ilhadamagiaimoveis.com.br/en/">
+<link rel="alternate" hreflang="pt-BR" href="https://www.ilhadamagiaimoveis.com.br/">
+<link rel="alternate" hreflang="en" href="https://www.ilhadamagiaimoveis.com.br/en/">
+<link rel="alternate" hreflang="x-default" href="https://www.ilhadamagiaimoveis.com.br/">
+<!-- URL PLAN — temporada and locação anual get SEPARATE branches, because they
+     are different search intents and must not share a page:
+       /temporada/<bairro>/    and   /aluguel/<bairro>/
+     Per-neighbourhood landing pages for Lagoa da Conceição, Campeche, Jurerê,
+     Centro, Ingleses and Santo Antônio de Lisboa [CONFIRM coverage].
+     MIGRATION: preserve Notícias posts, Quem Sou, Pesquisa Completa and every
+     indexed listing page, or map 301s.
+     DNS: change the WEB records only. NEVER touch MX. -->
+<meta property="og:title" content="Ilha da Magia Imóveis — Seasonal and Long-Term Rentals in Florianópolis | CRECI-SC 22.482">
+<meta property="og:description" content="Seasonal and long-term rentals in Florianópolis, with two separate search paths. Rent, condominium fee and IPTU shown as separate lines. André Krüger, CRECI-SC 22.482.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"RealEstateAgent",
+ "@id":"https://www.ilhadamagiaimoveis.com.br/#agent",
+ "name":"Ilha da Magia Im\u00f3veis",
+ "employee":{"@type":"Person","name":"Andr\u00e9 Kr\u00fcger","jobTitle":"Corretor de im\u00f3veis"},
+ "url":"https://www.ilhadamagiaimoveis.com.br/en/",
+ "inLanguage":"en",
+ "telephone":"+5548998229955",
+ "email":"[CONFIRM]",
+ "identifier":[
+   {"@type":"PropertyValue","name":"CRECI","value":"CRECI-SC 22.482"},
+   {"@type":"PropertyValue","name":"CNPJ/CPF","value":"[CONFIRM]"}
+ ],
+ "address":{"@type":"PostalAddress","streetAddress":"Rua Alves de Brito, 285",
+   "addressLocality":"Centro, Florian\u00f3polis","addressRegion":"SC",
+   "postalCode":"88015-440","addressCountry":"BR"},
+ "geo":{"@type":"GeoCoordinates","latitude":"[CONFIRM]","longitude":"[CONFIRM]"},
+ "sameAs":["https://www.instagram.com/andrekrugerr/"],
+ "currenciesAccepted":"BRL",
+ "areaServed":[{"@type":"Place","name":"Lagoa da Conceição"},{"@type":"Place","name":"Campeche"},{"@type":"Place","name":"Jurerê"},{"@type":"Place","name":"Centro"},{"@type":"Place","name":"Ingleses"},{"@type":"Place","name":"Santo Antônio de Lisboa"}],
+ "knowsLanguage":["pt-BR","[CONFIRM]"]
+}
+</script>
+<!-- ⚠ Their live schema carries "priceRange": "$$$" — a US dollar convention on
+     a BRL-market site. DROPPED here rather than corrected, because a price band
+     is not a fact anyone has confirmed. currenciesAccepted:"BRL" replaces it.
+     Accommodation/Apartment + Offer markup waits on real inventory.
+     knowsLanguage carries a [CONFIRM] because the expat-leasing premise is
+     load-bearing and nobody has stated which languages André actually speaks.
+     NO aggregateRating, NO review, NO occupancy or yield figure is emitted. -->
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- 1 · Utility bar. CRECI at far left, permanently: Lei 6.530/1978 and COFECI
+     require it on every advertisement — and that includes every listing card. -->
+<div class="util">
+  <div class="wrap util__in">
+    <span class="creci" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.35)">CRECI-SC 22.482</span>
+    <a href="#" data-wa>WhatsApp (48) 99822-9955</a>
+    <span class="hide-sm">Rua Alves de Brito, 285 — Centro, Florianópolis/SC</span>
+    <span class="util__r">
+      <span class="hide-sm">Centro · Florianópolis</span>
+      <span class="langs">
+        <a href="../index.html" hreflang="pt-BR" lang="pt-BR">PT</a>
+        <a href="index.html" hreflang="en" lang="en" class="on">EN</a>
+      </span>
+    </span>
+  </div>
+</div>
+
+<!-- 2 · Sticky header. Temporada and Aluguel Anual are separated IN THE
+     NAVIGATION ITSELF — their current site has neither item. -->
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="../index.html">Ilha da Magia<small>Imóveis · Florianópolis</small></a>
+    <nav class="nav" aria-label="Main navigation"><a href="#temporada" class="t-temp">Seasonal</a><a href="#anual">Long-term</a><a href="#comprar">Buy</a><a href="#proprietario">List your Property</a><a href="#bairros">Neighbourhoods</a><a href="#quem-sou">About Me</a><a href="#contato">Contact</a></nav>
+    <div class="hdr__r">
+      <a class="btn btn--wa btn--sm" href="#" data-wa>WhatsApp</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mnav" aria-label="Menu"><a href="#temporada" class="t-temp">Seasonal</a><a href="#anual">Long-term</a><a href="#comprar">Buy</a><a href="#proprietario">List your Property</a><a href="#bairros">Neighbourhoods</a><a href="#quem-sou">About Me</a><a href="#contato">Contact</a></nav>
+<main id="main">
+
+<!-- 3 · Hero -->
+<section class="hero">
+  <!-- PLACEHOLDER-hero-costa.jpg — royalty-free stock (Unsplash). No people. -->
+  <img class="hero__img" src="https://images.unsplash.com/photo-1470004914212-05527e49370b?auto=format&fit=crop&w=1900&q=74" width="1900" height="1000" fetchpriority="high"
+    alt="An elevated view of a coastline with a lagoon, dunes and low-rise housing in golden late-afternoon light — illustrative stock photograph">
+  <div class="wrap hero__in">
+    <h1 class="h1">Renting in Floripa starts with one question: for how long?</h1>
+    <p class="lede">A week by the beach and a twelve-month contract are not the same search — and they should not share the same form. Here they are two paths, from the first screen.</p>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     4 · ⭐ THE DUAL SEARCH CARD — the whole thesis of the pitch.
+     Two tabs that change the FIELDS, not just the results. Their current site
+     has one control whose price ladder runs R$500 → R$5.000.000 — the bottom
+     is a rental ladder and the top is a sales ladder, sharing one broken
+     select. It serves neither product.
+     ========================================================================== -->
+<div class="wrap" id="buscar">
+  <div class="search" data-rv>
+    <div class="search__tabs" role="tablist" aria-label="Type of rental">
+      <button role="tab" id="tab-temp" aria-controls="pan-temp" aria-selected="true" tabindex="0">
+        Seasonal<span>per night · dates and guests</span>
+      </button>
+      <button role="tab" id="tab-anual" aria-controls="pan-anual" aria-selected="false" tabindex="-1">
+        Long-term<span>per month · neighbourhood and bedrooms</span>
+      </button>
+    </div>
+
+    <div class="spanel spanel--temp" id="pan-temp" role="tabpanel" aria-labelledby="tab-temp">
+      <form id="formTemporada">
+        <div class="spanel__g">
+          <div class="f"><label for="t-dest">Destination / beach</label>
+            <select id="t-dest"><option>Lagoa da Conceição</option><option>Campeche</option><option>Jurerê</option><option>Centro</option><option>Ingleses</option><option>Santo Antônio de Lisboa</option></select></div>
+          <div class="f"><label for="t-in">Check-in (DD/MM)</label><input type="date" id="t-in"></div>
+          <div class="f"><label for="t-out">Check-out (DD/MM)</label><input type="date" id="t-out"></div>
+          <div class="f"><label for="t-pax">Guests</label>
+            <select id="t-pax"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8+</option></select></div>
+          <div class="search__go"><button class="btn btn--teal" type="submit">Search <span class="ar">&rarr;</span></button></div>
+        </div>
+        <div class="f" style="margin-top:14px;max-width:340px">
+          <label for="t-faixa">Nightly budget</label>
+          <select id="t-faixa">
+            <option>Up to R$ 300 / night</option>
+            <option>R$ 300 – 600 / night</option>
+            <option>R$ 600 – 1.200 / night</option>
+            <option>R$ 1.200+ / night</option>
+            <option>Prefer to talk</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <div class="spanel spanel--anual" id="pan-anual" role="tabpanel" aria-labelledby="tab-anual" hidden>
+      <form id="formAnual">
+        <div class="spanel__g">
+          <div class="f"><label for="a-bairro">Neighbourhood</label>
+            <select id="a-bairro"><option>Lagoa da Conceição</option><option>Campeche</option><option>Jurerê</option><option>Centro</option><option>Ingleses</option><option>Santo Antônio de Lisboa</option></select></div>
+          <div class="f"><label for="a-dorm">Bedrooms</label>
+            <select id="a-dorm"><option>1</option><option selected>2</option><option>3</option><option>4+</option></select></div>
+          <div class="f"><label for="a-valor">Maximum monthly budget</label>
+            <select id="a-valor">
+              <option>Up to R$ 2,000 / month</option>
+              <option>R$ 2.000 – 3.500 / month</option>
+              <option>R$ 3.500 – 6.000 / month</option>
+              <option>R$ 6.000+ / month</option>
+              <option>Prefer to talk</option>
+            </select></div>
+          <div class="search__go"><button class="btn" type="submit">Search <span class="ar">&rarr;</span></button></div>
+        </div>
+        <div class="toggles">
+          <label class="tog" for="a-pet"><input type="checkbox" id="a-pet"> Pets allowed</label>
+          <label class="tog" for="a-mob"><input type="checkbox" id="a-mob"> Furnished</label>
+        </div>
+      </form>
+    </div>
+
+    <p class="search__note">No result count is shown — the inventory is third-party and turns over, and an invented number here would be the site&rsquo;s first lie. The search hands the request to WhatsApp, written out.</p>
+  </div>
+</div>
+
+<!-- 5 · Neighbourhood collection tiles -->
+<section class="sec" id="bairros">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Choose by neighbourhood</p>
+      <h2 class="h2">Where you want to live — or spend a fortnight.</h2>
+      <p class="lede">Each neighbourhood deserves its own page, and each page deserves both versions: <code>/temporada/&lt;bairro&gt;/</code> and <code>/aluguel/&lt;bairro&gt;/</code>. They are different search intents.</p>
+    </div>
+    <div class="tiles">
+      <a class="tile" href="#buscar" data-rv>
+        <span class="circ">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), one warm grade across all six. No people. -->
+          <img src="https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=400&q=68" width="400" height="400" loading="lazy" decoding="async"
+            alt="Lagoa da Conceição — illustrative stock photograph">
+        </span>
+        <b>Lagoa da Conceição</b>
+        <span><span class="cfm">[CONFIRM]</span></span>
+      </a>
+      <a class="tile" href="#buscar" data-rv>
+        <span class="circ">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), one warm grade across all six. No people. -->
+          <img src="https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?auto=format&fit=crop&w=400&q=68" width="400" height="400" loading="lazy" decoding="async"
+            alt="Campeche — illustrative stock photograph">
+        </span>
+        <b>Campeche</b>
+        <span><span class="cfm">[CONFIRM]</span></span>
+      </a>
+      <a class="tile" href="#buscar" data-rv>
+        <span class="circ">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), one warm grade across all six. No people. -->
+          <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=400&q=68" width="400" height="400" loading="lazy" decoding="async"
+            alt="Jurerê — illustrative stock photograph">
+        </span>
+        <b>Jurerê</b>
+        <span><span class="cfm">[CONFIRM]</span></span>
+      </a>
+      <a class="tile" href="#buscar" data-rv>
+        <span class="circ">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), one warm grade across all six. No people. -->
+          <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=400&q=68" width="400" height="400" loading="lazy" decoding="async"
+            alt="Centro — illustrative stock photograph">
+        </span>
+        <b>Centro</b>
+        <span><span class="cfm">[CONFIRM]</span></span>
+      </a>
+      <a class="tile" href="#buscar" data-rv>
+        <span class="circ">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), one warm grade across all six. No people. -->
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=68" width="400" height="400" loading="lazy" decoding="async"
+            alt="Ingleses — illustrative stock photograph">
+        </span>
+        <b>Ingleses</b>
+        <span><span class="cfm">[CONFIRM]</span></span>
+      </a>
+      <a class="tile" href="#buscar" data-rv>
+        <span class="circ">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), one warm grade across all six. No people. -->
+          <img src="https://images.unsplash.com/photo-1533713692156-f70938dc0d54?auto=format&fit=crop&w=400&q=68" width="400" height="400" loading="lazy" decoding="async"
+            alt="Santo Antônio de Lisboa — illustrative stock photograph">
+        </span>
+        <b>Santo Antônio de Lisboa</b>
+        <span><span class="cfm">[CONFIRM]</span></span>
+      </a>
+    </div>
+    <p class="cfm-note" style="margin-top:24px" data-rv>[CONFIRM which of these he actually covers.] The live inventory shows <strong>Jurerê</strong>; the lead sheet cites <strong>Lagoa and Campeche</strong>. A real service area, not an assumed one.</p>
+  </div>
+</section>
+
+<!-- 6 · Temporada cards -->
+<section class="sec sec--sand" id="temporada">
+  <div class="wrap">
+    <div class="sec-head sec-head--row" data-rv>
+      <div>
+        <p class="eyebrow">Seasonal rentals</p>
+        <h2 class="h2">Nightly rate, minimum stay, distance to the beach.</h2>
+      </div>
+      <p class="lede" style="max-width:40ch">No property, price or reference code from the current site is reproduced here. The stock is third-party and turns over — these cards are labelled placeholders.</p>
+    </div>
+    <div class="cards">
+      <article class="card" data-rv>
+        <div class="card__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash). Must be replaced with real,
+               rights-cleared photography of the actual unit before launch: under the CDC
+               a photograph has to depict the property being advertised. -->
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=700&q=70" width="700" height="525" loading="lazy" decoding="async"
+            alt="Living room with a sea view — illustrative stock photograph">
+          <span class="card__tag card__tag--temp">Seasonal</span>
+        </div>
+        <div class="card__b">
+          <span class="bairro">Neighbourhood <span class="cfm">[CONFIRM]</span></span>
+          <h3><span class="cfm">[CONFIRM imóvel]</span></h3>
+          <div class="spec">
+            <div><b class="cfm">—</b><span>guests</span></div>
+            <div><b class="cfm">—</b><span>beds</span></div>
+            <div><b class="cfm">—</b><span>sleeps</span></div>
+          </div>
+          <div class="chips">
+            <span>Minimum stay: <span class="cfm">[CONFIRM]</span></span>
+            <span>To the beach: <span class="cfm">[CONFIRM]</span></span>
+          </div>
+          <div class="nightly">
+            <b>R$ [CONFIRM]</b><span>/ night</span>
+          </div>
+          <p class="muted" style="font-size:.82rem;margin:0">The total before booking includes cleaning and any mandatory fee. <span class="cfm">[CONFIRM]</span></p>
+          <span class="creci creci--card">CRECI-SC 22.482</span>
+          <a class="btn btn--wa btn--sm btn--full" href="#" data-wa="Hello! I am interested in the seasonal property (ref. [CONFIRM]).">Message on WhatsApp <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="card" data-rv>
+        <div class="card__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash). Must be replaced with real,
+               rights-cleared photography of the actual unit before launch: under the CDC
+               a photograph has to depict the property being advertised. -->
+          <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=700&q=70" width="700" height="525" loading="lazy" decoding="async"
+            alt="A compact modern kitchen — illustrative stock photograph">
+          <span class="card__tag card__tag--temp">Seasonal</span>
+        </div>
+        <div class="card__b">
+          <span class="bairro">Neighbourhood <span class="cfm">[CONFIRM]</span></span>
+          <h3><span class="cfm">[CONFIRM imóvel]</span></h3>
+          <div class="spec">
+            <div><b class="cfm">—</b><span>guests</span></div>
+            <div><b class="cfm">—</b><span>beds</span></div>
+            <div><b class="cfm">—</b><span>sleeps</span></div>
+          </div>
+          <div class="chips">
+            <span>Minimum stay: <span class="cfm">[CONFIRM]</span></span>
+            <span>To the beach: <span class="cfm">[CONFIRM]</span></span>
+          </div>
+          <div class="nightly">
+            <b>R$ [CONFIRM]</b><span>/ night</span>
+          </div>
+          <p class="muted" style="font-size:.82rem;margin:0">The total before booking includes cleaning and any mandatory fee. <span class="cfm">[CONFIRM]</span></p>
+          <span class="creci creci--card">CRECI-SC 22.482</span>
+          <a class="btn btn--wa btn--sm btn--full" href="#" data-wa="Hello! I am interested in the seasonal property (ref. [CONFIRM]).">Message on WhatsApp <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="card" data-rv>
+        <div class="card__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash). Must be replaced with real,
+               rights-cleared photography of the actual unit before launch: under the CDC
+               a photograph has to depict the property being advertised. -->
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=70" width="700" height="525" loading="lazy" decoding="async"
+            alt="A balcony with a hammock over the sea — illustrative stock photograph">
+          <span class="card__tag card__tag--temp">Seasonal</span>
+        </div>
+        <div class="card__b">
+          <span class="bairro">Neighbourhood <span class="cfm">[CONFIRM]</span></span>
+          <h3><span class="cfm">[CONFIRM imóvel]</span></h3>
+          <div class="spec">
+            <div><b class="cfm">—</b><span>guests</span></div>
+            <div><b class="cfm">—</b><span>beds</span></div>
+            <div><b class="cfm">—</b><span>sleeps</span></div>
+          </div>
+          <div class="chips">
+            <span>Minimum stay: <span class="cfm">[CONFIRM]</span></span>
+            <span>To the beach: <span class="cfm">[CONFIRM]</span></span>
+          </div>
+          <div class="nightly">
+            <b>R$ [CONFIRM]</b><span>/ night</span>
+          </div>
+          <p class="muted" style="font-size:.82rem;margin:0">The total before booking includes cleaning and any mandatory fee. <span class="cfm">[CONFIRM]</span></p>
+          <span class="creci creci--card">CRECI-SC 22.482</span>
+          <a class="btn btn--wa btn--sm btn--full" href="#" data-wa="Hello! I am interested in the seasonal property (ref. [CONFIRM]).">Message on WhatsApp <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+    </div>
+    <p class="cfm-note" style="margin-top:22px" data-rv>A nightly rate has to show the total including cleaning and mandatory fees <strong>before</strong> booking, and the minimum stay and cancellation terms have to be stated. [CONFIRM the real cancellation policy.] And if any unit is a short-stay let inside a residential condominium, [CONFIRM the convenção do condomínio permits it] — that is a live and frequently-litigated issue in Florianópolis.</p>
+  </div>
+</section>
+
+<!-- 7 · Aluguel anual cards — the three-line cost block -->
+<section class="sec" id="anual">
+  <div class="wrap">
+    <div class="sec-head sec-head--row" data-rv>
+      <div>
+        <p class="eyebrow">Long-term rentals</p>
+        <h2 class="h2">Rent, condomínio and IPTU on three separate lines.</h2>
+      </div>
+      <p class="lede" style="max-width:42ch">Nobody in this market does this, and it is the number one cause of a wasted viewing: the tenant only discovers the true cost at signing.</p>
+    </div>
+    <div class="cards">
+      <article class="card" data-rv>
+        <div class="card__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash). No people. Replace with real,
+               rights-cleared photography of the actual unit before launch. -->
+          <img src="https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?auto=format&fit=crop&w=700&q=70" width="700" height="525" loading="lazy" decoding="async"
+            alt="A neutral residential interior — illustrative stock photograph">
+          <span class="card__tag card__tag--anual">Long-term</span>
+        </div>
+        <div class="card__b">
+          <span class="bairro">Neighbourhood <span class="cfm">[CONFIRM]</span></span>
+          <h3><span class="cfm">[CONFIRM imóvel]</span></h3>
+          <div class="spec">
+            <div><b class="cfm">—</b><span>beds</span></div>
+            <div><b class="cfm">—</b><span>baths</span></div>
+            <div><b class="cfm">—</b><span>parking</span></div>
+            <div><b class="cfm">—</b><span>m²</span></div>
+          </div>
+          <div class="chips">
+            <span>Furnished: <span class="cfm">[CONFIRM]</span></span>
+            <span>Pets: <span class="cfm">[CONFIRM]</span></span>
+          </div>
+          <div class="cost">
+            <div><span class="lbl">Rent</span><span class="val cfm">R$ [CONFIRM]</span></div>
+            <div><span class="lbl">Condomínio</span><span class="val cfm">R$ [CONFIRM]</span></div>
+            <div><span class="lbl">IPTU</span><span class="val cfm">R$ [CONFIRM]</span></div>
+            <div class="total"><span class="lbl">Total monthly cost</span><span class="val cfm">R$ [CONFIRM]</span></div>
+          </div>
+          <span class="creci creci--card">CRECI-SC 22.482</span>
+          <a class="btn btn--sm btn--full" href="#" data-wa="Hello! I am interested in the long-term rental (ref. [CONFIRM]).">Message on WhatsApp <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="card" data-rv>
+        <div class="card__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash). No people. Replace with real,
+               rights-cleared photography of the actual unit before launch. -->
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=700&q=70" width="700" height="525" loading="lazy" decoding="async"
+            alt="A wide living room in natural light — illustrative stock photograph">
+          <span class="card__tag card__tag--anual">Long-term</span>
+        </div>
+        <div class="card__b">
+          <span class="bairro">Neighbourhood <span class="cfm">[CONFIRM]</span></span>
+          <h3><span class="cfm">[CONFIRM imóvel]</span></h3>
+          <div class="spec">
+            <div><b class="cfm">—</b><span>beds</span></div>
+            <div><b class="cfm">—</b><span>baths</span></div>
+            <div><b class="cfm">—</b><span>parking</span></div>
+            <div><b class="cfm">—</b><span>m²</span></div>
+          </div>
+          <div class="chips">
+            <span>Furnished: <span class="cfm">[CONFIRM]</span></span>
+            <span>Pets: <span class="cfm">[CONFIRM]</span></span>
+          </div>
+          <div class="cost">
+            <div><span class="lbl">Rent</span><span class="val cfm">R$ [CONFIRM]</span></div>
+            <div><span class="lbl">Condomínio</span><span class="val cfm">R$ [CONFIRM]</span></div>
+            <div><span class="lbl">IPTU</span><span class="val cfm">R$ [CONFIRM]</span></div>
+            <div class="total"><span class="lbl">Total monthly cost</span><span class="val cfm">R$ [CONFIRM]</span></div>
+          </div>
+          <span class="creci creci--card">CRECI-SC 22.482</span>
+          <a class="btn btn--sm btn--full" href="#" data-wa="Hello! I am interested in the long-term rental (ref. [CONFIRM]).">Message on WhatsApp <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="card" data-rv>
+        <div class="card__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash). No people. Replace with real,
+               rights-cleared photography of the actual unit before launch. -->
+          <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=700&q=70" width="700" height="525" loading="lazy" decoding="async"
+            alt="A bedroom in neutral tones — illustrative stock photograph">
+          <span class="card__tag card__tag--anual">Long-term</span>
+        </div>
+        <div class="card__b">
+          <span class="bairro">Neighbourhood <span class="cfm">[CONFIRM]</span></span>
+          <h3><span class="cfm">[CONFIRM imóvel]</span></h3>
+          <div class="spec">
+            <div><b class="cfm">—</b><span>beds</span></div>
+            <div><b class="cfm">—</b><span>baths</span></div>
+            <div><b class="cfm">—</b><span>parking</span></div>
+            <div><b class="cfm">—</b><span>m²</span></div>
+          </div>
+          <div class="chips">
+            <span>Furnished: <span class="cfm">[CONFIRM]</span></span>
+            <span>Pets: <span class="cfm">[CONFIRM]</span></span>
+          </div>
+          <div class="cost">
+            <div><span class="lbl">Rent</span><span class="val cfm">R$ [CONFIRM]</span></div>
+            <div><span class="lbl">Condomínio</span><span class="val cfm">R$ [CONFIRM]</span></div>
+            <div><span class="lbl">IPTU</span><span class="val cfm">R$ [CONFIRM]</span></div>
+            <div class="total"><span class="lbl">Total monthly cost</span><span class="val cfm">R$ [CONFIRM]</span></div>
+          </div>
+          <span class="creci creci--card">CRECI-SC 22.482</span>
+          <a class="btn btn--sm btn--full" href="#" data-wa="Hello! I am interested in the long-term rental (ref. [CONFIRM]).">Message on WhatsApp <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+    </div>
+    <p class="cfm-note" style="margin-top:22px" data-rv>Under the Brazilian Consumer Code the advertisement has to make the true monthly cost visible — not a headline rent that excludes mandatory charges. An administration fee, if there is one, becomes a fourth line.</p>
+  </div>
+</section>
+
+<!-- 8 · Guarantees explainer — the highest-intent content on a BR rental site -->
+<section class="sec sec--white" id="garantias">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">How a long-term rental works</p>
+      <h2 class="h2">Fiador, caução or seguro-fiança.</h2>
+      <p class="lede">It is the first question any tenant in Brazil asks, and there is not one line about it on the current site. A plain, factual explanation, with no fee figures.</p>
+    </div>
+    <div class="guar">
+      <div data-rv>
+        <div class="ic" aria-hidden="true">&#9977;</div>
+        <h3>Fiador</h3>
+        <p>A person who takes on responsibility for the contract alongside you, usually by proving income and presenting a mortgage-free property of their own. It is the most traditional route, and the one that depends most on who you know in the city. <span class="cfm">[CONFIRM]</span></p>
+      </div>
+      <div data-rv>
+        <div class="ic" aria-hidden="true">&#9635;</div>
+        <h3>Caução</h3>
+        <p>A cash deposit given as security at the start of the contract and returned at the end if there are no arrears or damage. The tenancy law caps the amount, and it sits in a savings account tied to the contract. <span class="cfm">[CONFIRM]</span></p>
+      </div>
+      <div data-rv>
+        <div class="ic" aria-hidden="true">&#9878;</div>
+        <h3>Seguro-fiança</h3>
+        <p>An insurance policy taken out with an insurer that replaces the guarantor. You pay the premium and the insurer guarantees the contract to the landlord — useful for someone who has just arrived in the city and has no fiador. <span class="cfm">[CONFIRM]</span></p>
+      </div>
+    </div>
+    <p class="cfm-note" style="margin-top:22px" data-rv>[CONFIRM which guarantee types he accepts and whether he works with a partner insurer.] No fee, premium or percentage appears here — those change by contract and by insurer, and a wrong number in this section becomes a complaint.</p>
+    <p class="cfm-note" style="margin-top:12px" data-rv><strong>And a rule of this build:</strong> this site never collects a CPF, income documents or guarantor details through a form. That moves to a secure channel after first contact.</p>
+  </div>
+</section>
+
+<!-- 9 · Neighbourhood guides -->
+<section class="sec sec--sand" id="guias">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Neighbourhood guides</p>
+      <h2 class="h2">The content that answers before you ask.</h2>
+    </div>
+    <div class="guides">
+      <a class="guide" href="#contato" data-rv>
+        <span class="guide__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), editorial. No people. -->
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=700&q=70" width="700" height="467" loading="lazy" decoding="async"
+            alt="Living in Lagoa — illustrative stock photograph">
+        </span>
+        <span class="guide__b">
+          <h3>Living in Lagoa</h3>
+          <p>The character of the neighbourhood, transport, groceries, surf, coworking and the typical rent bracket. <span class="cfm">[CONFIRM]</span></p>
+          <span class="more">Read the guide &rarr;</span>
+        </span>
+      </a>
+      <a class="guide" href="#contato" data-rv>
+        <span class="guide__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), editorial. No people. -->
+          <img src="https://images.unsplash.com/photo-1509233725247-49e657c54213?auto=format&fit=crop&w=700&q=70" width="700" height="467" loading="lazy" decoding="async"
+            alt="Living in Campeche — illustrative stock photograph">
+        </span>
+        <span class="guide__b">
+          <h3>Living in Campeche</h3>
+          <p>The same treatment, for anyone who wants open beach and a growing neighbourhood. <span class="cfm">[CONFIRM]</span></p>
+          <span class="more">Read the guide &rarr;</span>
+        </span>
+      </a>
+      <a class="guide" href="#contato" data-rv>
+        <span class="guide__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash), editorial. No people. -->
+          <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=700&q=70" width="700" height="467" loading="lazy" decoding="async"
+            alt="A season in Jurerê — illustrative stock photograph">
+        </span>
+        <span class="guide__b">
+          <h3>A season in Jurerê</h3>
+          <p>What to expect from a season in Jurerê, and what to ask before you commit. <span class="cfm">[CONFIRM]</span></p>
+          <span class="more">Read the guide &rarr;</span>
+        </span>
+      </a>
+    </div>
+    <p class="cfm-note" style="margin-top:22px" data-rv>A typical rent bracket per neighbourhood goes in as a <strong>range</strong>, dated, and only once confirmed. No appreciation, yield or occupancy projection appears anywhere on this site — not here, and not in the landlord section.</p>
+  </div>
+</section>
+
+<!-- 10 · Local essentials -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">What you need nearby</p>
+      <h2 class="h2">Six things that decide a neighbourhood.</h2>
+    </div>
+    <div class="ess">
+      <div data-rv><div class="ic" aria-hidden="true">&#9778;</div><b>Beach</b><span><span class="cfm">[CONFIRM]</span></span></div>
+      <div data-rv><div class="ic" aria-hidden="true">&#9636;</div><b>Supermarket</b><span><span class="cfm">[CONFIRM]</span></span></div>
+      <div data-rv><div class="ic" aria-hidden="true">&#9974;</div><b>Buses and transport</b><span><span class="cfm">[CONFIRM]</span></span></div>
+      <div data-rv><div class="ic" aria-hidden="true">&#9993;</div><b>Coworking</b><span><span class="cfm">[CONFIRM]</span></span></div>
+      <div data-rv><div class="ic" aria-hidden="true">&#9650;</div><b>Gym</b><span><span class="cfm">[CONFIRM]</span></span></div>
+      <div data-rv><div class="ic" aria-hidden="true">&#9783;</div><b>Surf school</b><span><span class="cfm">[CONFIRM]</span></span></div>
+    </div>
+    <p class="cfm-note" style="margin-top:20px" data-rv>No travel time appears without confirmation. “Ten minutes from the beach” is a checkable claim, and therefore a claim that has to be checked.</p>
+  </div>
+</section>
+
+<!-- 11 · Quem Sou — the named broker, and the reason their own site has a
+     jQuery patch changing "CONOSCO" to "COMIGO" -->
+<section class="sec sec--white" id="quem-sou">
+  <div class="wrap">
+    <div class="split split--top">
+      <div data-rv>
+        <p class="eyebrow">About me</p>
+        <h2 class="h2">“Fale agora comigo.”</h2>
+        <p class="lede" style="margin-top:16px">Someone on your side wrote a jQuery snippet whose only job is to rewrite the template&rsquo;s button from <em>“FALE AGORA CONOSCO”</em> to <em>“FALE AGORA COMIGO”</em>. Us into me. It is one line of code fighting a platform that insists on being a faceless agency when the business is one named broker.</p>
+        <p class="lede">The same platform has a broker-photo block — and it is hidden by injected CSS. The asset of this business is the name, and the site hides the name.</p>
+        <ul class="rows">
+          <li><b>Broker</b><span>André Krüger <span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>CRECI</b><span>CRECI-SC 22.482</span></li>
+          <li><b>Languages</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Years on the island</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Service area</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Instagram</b><span><a href="https://www.instagram.com/andrekrugerr/" target="_blank" rel="noopener">@andrekrugerr</a> <span class="cfm">[CONFIRM]</span></span></li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn btn--wa" href="#" data-wa>Message me now <span class="ar">&rarr;</span></a>
+        </div>
+        <p class="cfm-note" style="margin-top:20px">The languages he speaks are <strong>load-bearing</strong> if the expat premise is real — it is the difference between an English site that makes sense and an English site that leads to a conversation nobody can have. No testimonial, review count or transaction volume appears here without documentation.</p>
+      </div>
+      <div data-rv>
+        <!-- ⚠ NO STOCK FACE APPEARS HERE, deliberately.
+             Everywhere else on this build a stock photograph stands in for a
+             real one. Not for a named individual: putting a stranger's face
+             under "André Krüger" would be a stock model presented as a real
+             person, and that is the one substitution this build will not make.
+             The frame is drawn instead, and it is waiting for his portrait. -->
+        <div class="portrait">
+          <div>
+            <p class="h3" style="margin-bottom:10px">A portrait of André Krüger</p>
+            <p class="muted" style="font-size:.92rem;margin:0;max-width:36ch;margin-inline:auto">No stock photograph fills this space. Putting a stranger&rsquo;s face under a real person&rsquo;s name is the one substitution this mockup will not make. [CONFIRM a real professional portrait, plus permission to use it.]</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 · Landlord track — inverted band, the highest-LTV lead on the site -->
+<section class="sec sec--navy on-dark" id="proprietario">
+  <div class="wrap">
+    <div class="split split--top">
+      <div data-rv>
+        <p class="eyebrow">I own a property</p>
+        <h2 class="h2">The other side of the contract.</h2>
+        <p class="lede" style="margin-top:16px;color:rgba(250,248,244,.9)">This band is not for tenants. It is for someone with an empty property who does not know what to charge, who will screen the tenant, who drafts the contract, and who answers the phone when a pipe bursts in January.</p>
+        <ul class="rows">
+          <li><b>Rent appraisal</b><span>No charge <span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Tenant screening</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Contract and guarantees</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Seasonal management</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Property management</b><span><span class="cfm">[CONFIRM]</span></span></li>
+        </ul>
+        <p class="cfm-note" style="margin-top:20px;color:rgba(250,248,244,.86)">The commercial argument here is <strong>operational</strong> — screening, contracts, maintenance — and never financial. No promise of yield, occupancy rate or payback period appears in this section or in any other.</p>
+      </div>
+      <div class="form" data-rv>
+        <h3 class="h3" style="margin-bottom:8px;color:#fff">Rent appraisal</h3>
+        <p class="muted" style="font-size:.9rem">Three fields. The rest of the conversation happens on WhatsApp.</p>
+        <form data-mock>
+          <div class="fr">
+            <div class="field"><label for="pnome">Name</label><input type="text" id="pnome" name="nome" required></div>
+            <div class="field"><label for="pwa">WhatsApp</label><input type="tel" id="pwa" name="whatsapp" required></div>
+          </div>
+          <div class="field"><label for="pbairro">Property neighbourhood</label>
+            <select id="pbairro" name="bairro"><option>Lagoa da Conceição</option><option>Campeche</option><option>Jurerê</option><option>Centro</option><option>Ingleses</option><option>Santo Antônio de Lisboa</option><option>Other</option></select></div>
+          <div class="field"><label for="ptipo">What you want to do</label>
+            <select id="ptipo" name="tipo">
+              <option>Let seasonally</option>
+              <option>Let long-term</option>
+              <option>Sell</option>
+              <option>Not sure yet</option>
+            </select></div>
+          <label class="consent" for="pconsent">
+            <input type="checkbox" id="pconsent" data-consent>
+            <span>I consent to this data being used to appraise my property and reply to me, as described in the <a href="privacy.html">Privacy Policy</a>.</span>
+          </label>
+          <button class="btn btn--wa btn--full" type="submit">Request an appraisal <span class="ar">&rarr;</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 · FAQ — split into temporada and anual -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Frequently asked</p>
+      <h2 class="h2">Two lists, because they are two products.</h2>
+    </div>
+    <div class="faqtabs" role="group" aria-label="Choose a question group" data-rv>
+      <button type="button" data-faq="temp" aria-selected="true">Seasonal</button>
+      <button type="button" data-faq="anual" aria-selected="false">Long-term</button>
+    </div>
+    <div class="acc" data-faq="temp" data-rv>
+      <div class="acc__i">
+        <button class="acc__b" id="fb-temp-0" aria-controls="fp-temp-0" aria-expanded="false">
+          <span>What is the minimum stay?</span><span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="acc__p" id="fp-temp-0" role="region" aria-labelledby="fb-temp-0">
+          <p style="margin:0">It varies by property and by season, and it is written on each unit&rsquo;s card. <span class="cfm">[CONFIRM]</span></p>
+        </div>
+      </div>
+      <div class="acc__i">
+        <button class="acc__b" id="fb-temp-1" aria-controls="fp-temp-1" aria-expanded="false">
+          <span>What is included in the nightly rate?</span><span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="acc__p" id="fp-temp-1" role="region" aria-labelledby="fb-temp-1">
+          <p style="margin:0">The nightly rate shown is accompanied by the total before booking, including cleaning and any mandatory fee. <span class="cfm">[CONFIRM]</span></p>
+        </div>
+      </div>
+      <div class="acc__i">
+        <button class="acc__b" id="fb-temp-2" aria-controls="fp-temp-2" aria-expanded="false">
+          <span>What is the cancellation policy?</span><span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="acc__p" id="fp-temp-2" role="region" aria-labelledby="fb-temp-2">
+          <p style="margin:0">It has to be written down before booking, without exception. <span class="cfm">[CONFIRM]</span></p>
+        </div>
+      </div>
+      <div class="acc__i">
+        <button class="acc__b" id="fb-temp-3" aria-controls="fp-temp-3" aria-expanded="false">
+          <span>Are pets allowed?</span><span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="acc__p" id="fp-temp-3" role="region" aria-labelledby="fb-temp-3">
+          <p style="margin:0">It depends on the property and on the condominium rules. <span class="cfm">[CONFIRM]</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="acc" data-faq="anual" hidden data-rv>
+      <div class="acc__i">
+        <button class="acc__b" id="fb-anual-0" aria-controls="fp-anual-0" aria-expanded="false">
+          <span>What documents do I need?</span><span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="acc__p" id="fp-anual-0" role="region" aria-labelledby="fb-anual-0">
+          <p style="margin:0">The list is sent through a secure channel after first contact — never through a public form. <span class="cfm">[CONFIRM]</span></p>
+        </div>
+      </div>
+      <div class="acc__i">
+        <button class="acc__b" id="fb-anual-1" aria-controls="fp-anual-1" aria-expanded="false">
+          <span>Who pays the condomínio and the IPTU?</span><span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="acc__p" id="fp-anual-1" role="region" aria-labelledby="fb-anual-1">
+          <p style="margin:0">It depends on the contract, which is why all three lines appear separately on every card on this site. <span class="cfm">[CONFIRM]</span></p>
+        </div>
+      </div>
+      <div class="acc__i">
+        <button class="acc__b" id="fb-anual-2" aria-controls="fp-anual-2" aria-expanded="false">
+          <span>Which guarantee is accepted?</span><span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="acc__p" id="fp-anual-2" role="region" aria-labelledby="fb-anual-2">
+          <p style="margin:0">Fiador, caução or seguro-fiança — see the guarantees section. <span class="cfm">[CONFIRM]</span></p>
+        </div>
+      </div>
+      <div class="acc__i">
+        <button class="acc__b" id="fb-anual-3" aria-controls="fp-anual-3" aria-expanded="false">
+          <span>Can I keep a pet?</span><span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="acc__p" id="fp-anual-3" role="region" aria-labelledby="fb-anual-3">
+          <p style="margin:0">It depends on the property and the condominium rules; the card marks it explicitly. <span class="cfm">[CONFIRM]</span></p>
+        </div>
+      </div>
+    </div>
+    <p class="cfm-note" style="margin-top:22px" data-rv>Every answer is generic and factual. Anything that is his specific policy stays marked [CONFIRM] until he says so — a missing answer is better than a wrong one on a twelve-month contract.</p>
+  </div>
+</section>
+
+<!-- 14 · Notícias -->
+<section class="sec sec--sand" id="noticias">
+  <div class="wrap">
+    <div class="sec-head sec-head--row" data-rv>
+      <div>
+        <p class="eyebrow">News</p>
+        <h2 class="h2">What already exists stays where it is.</h2>
+      </div>
+      <p class="lede" style="max-width:40ch">You already publish under “Notícias”. Every indexed post is preserved or given a 301.</p>
+    </div>
+    <div class="guides">
+      <article class="guide" data-rv>
+        <span class="guide__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash) -->
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=700&q=70" width="700" height="467" loading="lazy" decoding="async"
+            alt="An illustrative news post image — stock photograph">
+        </span>
+        <span class="guide__b">
+          <h3><span class="cfm">[CONFIRM título do post existente]</span></h3>
+          <p>DD/MM/AAAA <span class="cfm">[CONFIRM]</span></p>
+        </span>
+      </article>
+      <article class="guide" data-rv>
+        <span class="guide__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash) -->
+          <img src="https://images.unsplash.com/photo-1589149098258-3e9102cd63d3?auto=format&fit=crop&w=700&q=70" width="700" height="467" loading="lazy" decoding="async"
+            alt="An illustrative news post image — stock photograph">
+        </span>
+        <span class="guide__b">
+          <h3><span class="cfm">[CONFIRM título do post existente]</span></h3>
+          <p>DD/MM/AAAA <span class="cfm">[CONFIRM]</span></p>
+        </span>
+      </article>
+      <article class="guide" data-rv>
+        <span class="guide__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash) -->
+          <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=700&q=70" width="700" height="467" loading="lazy" decoding="async"
+            alt="An illustrative news post image — stock photograph">
+        </span>
+        <span class="guide__b">
+          <h3><span class="cfm">[CONFIRM título do post existente]</span></h3>
+          <p>DD/MM/AAAA <span class="cfm">[CONFIRM]</span></p>
+        </span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 15 · Contato -->
+<section class="sec" id="contato">
+  <div class="wrap">
+    <div class="split split--top">
+      <div data-rv>
+        <p class="eyebrow">Contact</p>
+        <h2 class="h2">Rua Alves de Brito, 285 — Centro.</h2>
+        <div class="btn-row" style="margin-top:20px">
+          <a class="btn btn--wa" href="#" data-wa>WhatsApp (48) 99822-9955 <span class="ar">&rarr;</span></a>
+          <a class="btn btn--ghost" href="#" data-tel>Call</a>
+        </div>
+        <ul class="rows">
+          <li><b>Address</b><span>Rua Alves de Brito, 285 — Centro, Florianópolis/SC · 88015-440</span></li>
+          <li><b>CRECI</b><span>CRECI-SC 22.482</span></li>
+          <li><b>Email</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Hours</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Facebook</b><span><span class="cfm">[CONFIRM]</span></span></li>
+        </ul>
+        <p class="cfm-note" style="margin-top:20px">Neither opening hours nor an email address is published on any page today. For a solo broker, opening hours are a promise of availability — publish the real ones, not the aspirational ones.</p>
+        <div class="map" style="margin-top:24px" role="img" aria-label="Map — Rua Alves de Brito, 285, Centro, Florianópolis">
+          <div class="map__grid" aria-hidden="true"></div>
+          <div>
+            <div class="pin" aria-hidden="true"></div>
+            <strong style="display:block;font-size:1.1rem">Centro · Florianópolis</strong>
+            <span style="font-size:.9rem">Rua Alves de Brito, 285 · CEP 88015-440</span>
+          </div>
+        </div>
+      </div>
+      <div class="form" data-rv id="comprar">
+        <h3 class="h3" style="margin-bottom:8px">Message me</h3>
+        <p class="muted" style="font-size:.9rem">Mockup — nothing is sent. And this form never asks for a CPF, income documents or guarantor details.</p>
+        <form data-mock>
+          <div class="fr">
+            <div class="field"><label for="cnome">Name</label><input type="text" id="cnome" name="nome" required></div>
+            <div class="field"><label for="cwa">WhatsApp</label><input type="tel" id="cwa" name="whatsapp" required></div>
+          </div>
+          <div class="field"><label for="cassunto">Subject</label>
+            <select id="cassunto" name="assunto">
+              <option>Seasonal rental</option>
+              <option>Long-term rental</option>
+              <option>Buying</option>
+              <option>Listing my property</option>
+              <option>Property management</option>
+            </select></div>
+          <div class="field"><label for="cmsg">Message</label><textarea id="cmsg" name="msg"></textarea></div>
+          <label class="consent" for="cconsent">
+            <input type="checkbox" id="cconsent" data-consent>
+            <span>I consent to this data being used only to answer this message, as described in the <a href="privacy.html">Privacy Policy</a>.</span>
+          </label>
+          <button class="btn btn--full" type="submit">Send <span class="ar">&rarr;</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <span class="brand">Ilha da Magia<small>Imóveis · Florianópolis</small></span>
+        <p style="font-size:.92rem;margin-top:14px">Rua Alves de Brito, 285<br>Centro, Florianópolis — SC<br>CEP 88015-440</p>
+        <p style="font-size:.92rem"><a href="#" data-wa>(48) 99822-9955</a></p>
+        <p style="margin-top:14px"><span class="creci">CRECI-SC 22.482</span></p>
+      </div>
+      <div>
+        <h4>Rent</h4>
+        <ul>
+          <li><a href="#temporada">Seasonal</a></li>
+          <li><a href="#anual">Long-term</a></li>
+          <li><a href="#garantias">Fiador, caução, seguro-fiança</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Neighbourhoods</h4>
+        <ul><li><a href="#bairros">Lagoa da Conceição</a></li><li><a href="#bairros">Campeche</a></li><li><a href="#bairros">Jurerê</a></li><li><a href="#bairros">Centro</a></li><li><a href="#bairros">Ingleses</a></li><li><a href="#bairros">Santo Antônio de Lisboa</a></li></ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#quem-sou">About me</a></li>
+          <li><a href="#proprietario">I own a property</a></li>
+          <li><a href="#noticias">News</a></li>
+          <li><a href="https://www.instagram.com/andrekrugerr/" target="_blank" rel="noopener">Instagram</a></li>
+          <li>Facebook <span class="cfm">[CONFIRM]</span></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="#" data-ck-open>Cookie preferences</a></li>
+          <li><a href="index.html" hreflang="pt-BR">Português</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr__legal">
+      <span>CRECI-SC 22.482</span>
+      <span>CNPJ / CPF <span class="cfm">[CONFIRM]</span></span>
+      <span>Registered name <span class="cfm">[CONFIRM]</span></span>
+      <span>Displaying the CRECI is mandatory in all advertising (Law 6,530/1978 and COFECI rules).</span>
+    </div>
+    <div class="ftr__legal" style="border-top:0;padding-top:0;margin-top:8px">
+      <span>© 2026 Ilha da Magia Imóveis</span>
+      <span>Demonstration mockup — stock imagery. No property, rent, nightly rate, occupancy figure, review or yield projection has been invented, and no stock photograph stands in for a real person.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="#" data-wa aria-label="Message on WhatsApp (48) 99822-9955"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.24-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg></a>
+<div class="mbar">
+  <a class="btn btn--wa" href="#" data-wa>WhatsApp</a>
+  <a class="btn" href="#" data-tel>Call</a>
+</div>
+
+<div class="ck" role="dialog" aria-label="Cookie preferences">
+  <div class="ck__in">
+    <div>
+      <p><strong>Cookies and personal data.</strong>
+        Only the essential stays on. Analytics and marketing stay off until you switch them on, and nothing is pre-ticked. No consent banner was observed on the current site — this one is new. And no form on this site collects a CPF, income or guarantor data.
+        <a href="privacy.html">Privacy Policy</a></p>
+      <div class="ck__opts">
+        <label><input type="checkbox" checked disabled> Essential</label>
+        <label><input type="checkbox" id="ckA"> Analytics</label>
+        <label><input type="checkbox" id="ckM"> Marketing</label>
+      </div>
+    </div>
+    <div class="ck__btns">
+      <button class="btn btn--ghost btn--sm" data-ck="none">Reject</button>
+      <button class="btn btn--ghost btn--sm" data-ck="save">Save</button>
+      <button class="btn btn--sm" data-ck="all">Accept</button>
+    </div>
+  </div>
+</div>
+
+<script src="../script.js" defer></script>
+</body>
+</html>

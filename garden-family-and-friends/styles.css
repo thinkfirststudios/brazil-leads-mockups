@@ -1,0 +1,456 @@
+/* ==========================================================================
+   GARDEN FAMILY AND FRIENDS — Av. Campeche, Florianópolis, SC
+   Spec mockup.
+
+   ⭐ THE READING: Garden is the HOSPITALITY member of the three Campeche
+     complexes — the one with a named restaurant, a named chef and a sunset. So
+     this reads like a RESTAURANT WITH LAND ATTACHED, not a sports venue with a
+     kitchen. Warm, editorial, photography-led: large uncropped images, a cream
+     ground, a high-contrast serif with real optical size against a plain
+     grotesque for practical information.
+
+   ⭐ THE ORGANISING DEVICE IS THE DAY ARC. Their reported hours run 08h–23h —
+     fifteen hours, which is a venue that is four different places across one
+     day. A time-of-day selector re-orders what the page shows, and answers
+     "what is this place" faster than any About paragraph can.
+
+   Texture matters more here than on the sibling venues: the place is described
+   as open-air with rustic finishes and GRAFFITI MURALS, so the build carries
+   real surface — a coarse plaster wash behind section headers, brush-edge
+   dividers, and one band where a mural runs behind type at low contrast. Brass
+   hairlines keep it from tipping into rustic pastiche.
+
+   ⛔ NO CHILDREN OR MINORS IN ANY IMAGE — and this rule applies here with
+     particular force. The venue is called "Family and Friends", is described as
+     family-oriented, and every instinct of a hospitality photographer is to
+     shoot exactly that. It does not happen. No children at tables, on the
+     courts, at the studio, in the garden; no "family day" imagery; no
+     background or silhouetted children. Family-friendliness is carried by
+     FACILITIES, POLICY AND COPY — hours, pet policy, space, menu options.
+
+   ⚠ Palette PROPOSED from the venue's reported physical character. This lead is
+     Instagram-only behind a login wall; no brand file was obtainable.
+     [CONFIRM against their logo]
+
+   ⚠ CONTRAST (WCAG 2.1 AA):
+       · Ink #1C201C on Cream #FAF5EC ≈ 15.4:1 — AAA
+       · Garden Green #2F4739 on Cream ≈ 9.2:1 — AAA
+       · Terracotta #B8543A on Cream ≈ 4.6:1 — passes AA at body size
+       · Sunset Gold #E3A34B on Cream ≈ 2.0:1 — FAILS. It is a FILL and a
+         large-display colour only; gold-toned small text uses #8A5F13.
+       · The plaster texture and the mural band NEVER sit behind body copy at a
+         contrast that fails AA — both are capped by a solid scrim.
+   ========================================================================== */
+
+:root{
+  --green:#2F4739;
+  --green-dk:#1C201C;
+  --cream:#FAF5EC;
+  --terra:#B8543A;
+  --terra-dk:#93412C;
+  --gold:#E3A34B;
+  --gold-dk:#8A5F13;
+  --clay:#E4D6C3;
+  --brass:#9C7B3F;
+  --ink:#1C201C;
+  --body:#4E574C;
+
+  --g-hero:linear-gradient(0deg,rgba(28,32,28,.88) 0%,rgba(47,71,57,.30) 52%,rgba(47,71,57,.04) 100%);
+  --g-cta:linear-gradient(135deg,var(--terra) 0%,var(--gold) 160%);
+  --g-sunset:linear-gradient(135deg,var(--terra) 0%,var(--gold) 100%);
+  --g-dark:linear-gradient(160deg,var(--green) 0%,var(--green-dk) 100%);
+  --g-soft:linear-gradient(180deg,var(--cream) 0%,var(--clay) 100%);
+  /* the day arc itself — morning gold through to night green */
+  --g-arc:linear-gradient(90deg,var(--gold) 0%,var(--terra) 46%,var(--green) 100%);
+  --g-card:linear-gradient(180deg,rgba(28,32,28,0) 44%,rgba(28,32,28,.82) 100%);
+
+  --serif:"Fraunces",Georgia,serif;
+  --sans:"Archivo","Helvetica Neue",Arial,sans-serif;
+
+  --wrap:1300px;
+  --gut:clamp(18px,4.4vw,56px);
+  --r:10px;
+  --r-sm:6px;
+  --sh:0 8px 30px rgba(28,32,28,.12);
+  --sh-lift:0 20px 46px rgba(28,32,28,.22);
+  --ease:cubic-bezier(.22,.8,.28,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--body);
+  font-family:var(--sans);font-size:16.5px;line-height:1.72;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+h1,h2,h3,h4{margin:0;font-family:var(--serif);font-weight:600;line-height:1.06;
+  letter-spacing:-.028em;color:var(--ink)}
+p{margin:0 0 1em}
+:focus-visible{outline:3px solid var(--terra);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-9999px;top:0;z-index:200;background:var(--green);color:var(--cream);padding:12px 20px}
+.skip:focus{left:0}
+
+.wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gut)}
+.wrap--n{max-width:900px}
+.sec{padding-block:clamp(52px,7vw,114px);position:relative}
+.sec--t{padding-block:clamp(32px,4.2vw,60px)}
+.claybg{background:var(--clay)}
+.softbg{background-image:var(--g-soft)}
+.dark{background-image:var(--g-dark);color:#C6CFC5}
+.dark h1,.dark h2,.dark h3{color:var(--cream)}
+.dark .lede{color:#AEB9AC}
+.sunset{background-image:var(--g-sunset);color:#fff}
+.sunset h2,.sunset h3{color:#fff}
+.sunset .lede{color:rgba(255,255,255,.94)}
+
+/* the plaster wash behind section headers — texture, capped so it never sits
+   behind body copy at a failing contrast */
+.plaster{position:relative}
+.plaster::before{content:"";position:absolute;inset:-14px -18px;z-index:-1;border-radius:var(--r);
+  background:
+    radial-gradient(ellipse 70% 60% at 20% 30%,rgba(156,123,63,.10),transparent 62%),
+    radial-gradient(ellipse 60% 50% at 80% 70%,rgba(184,84,58,.08),transparent 60%),
+    var(--clay);
+  opacity:.55}
+/* the brush-edge divider */
+.brush{height:3px;border:0;margin:0;background-image:var(--g-arc);
+  mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.hair{height:1px;border:0;margin:0;background:var(--brass);opacity:.5}
+
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--terra-dk);margin:0 0 15px}
+.dark .eyebrow{color:var(--gold)}
+.sunset .eyebrow{color:rgba(255,255,255,.9)}
+.h-xl{font-size:clamp(2.5rem,6.4vw,4.8rem)}
+.h-lg{font-size:clamp(2rem,4vw,3.2rem)}
+.h-md{font-size:clamp(1.4rem,2.4vw,2rem)}
+.lede{font-size:clamp(1rem,1.32vw,1.15rem);color:var(--body);max-width:62ch}
+.sec-head{max-width:62ch;margin-bottom:clamp(26px,3.4vw,48px)}
+.sec-head--row{max-width:none;display:flex;flex-wrap:wrap;gap:22px;
+  justify-content:space-between;align-items:flex-end}
+
+/* ---------- [CONFIRM] ---------- */
+.cfm{display:inline-block;border:1px dashed var(--terra-dk);background:rgba(184,84,58,.10);
+  color:var(--terra-dk);padding:.05em .5em;border-radius:var(--r-sm);
+  font-size:.85em;font-weight:700;font-style:normal}
+.dark .cfm,.sunset .cfm{border-color:var(--gold);background:rgba(227,163,75,.2);color:var(--gold)}
+.sunset .cfm{border-color:#fff;background:rgba(255,255,255,.2);color:#fff}
+.cfm-note{border:1px dashed var(--terra-dk);background:rgba(184,84,58,.07);border-radius:var(--r-sm);
+  padding:15px 18px;color:var(--terra-dk);font-size:.92rem;margin:0 0 22px}
+.dark .cfm-note{border-color:var(--gold);background:rgba(227,163,75,.12);color:var(--gold)}
+.sunset .cfm-note{border-color:rgba(255,255,255,.6);background:rgba(255,255,255,.14);color:#fff}
+/* the positioning caveat — this reading is ours, not a claim they have made */
+.ours{border-left:4px solid var(--brass);background:rgba(156,123,63,.08);
+  border-radius:0 var(--r-sm) var(--r-sm) 0;padding:16px 20px;margin:0 0 22px;font-size:.93rem}
+.ours b{color:var(--ink)}
+.dark .ours{background:rgba(156,123,63,.18);color:#C6CFC5}
+.dark .ours b{color:var(--cream)}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:15px 30px;border-radius:999px;font-size:.8rem;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;background:var(--terra);color:#fff;box-shadow:var(--sh);
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--sh-lift);background:var(--terra-dk)}
+.btn .ar{transition:transform .3s var(--ease)}
+.btn:hover .ar{transform:translateX(5px)}
+.btn--ghost{background:transparent;color:var(--green);border:2px solid var(--green);box-shadow:none}
+.btn--ghost:hover{background:var(--green);color:var(--cream)}
+.dark .btn--ghost,.sunset .btn--ghost,.hero .btn--ghost{color:#fff;border-color:#fff}
+.dark .btn--ghost:hover,.sunset .btn--ghost:hover,.hero .btn--ghost:hover{background:#fff;color:var(--green)}
+.btn--green{background:var(--green)}
+.btn--green:hover{background:var(--green-dk)}
+.btn--wa{background:#12A150}
+.btn--wa:hover{background:#0C7C3C}
+.btn--sm{padding:11px 20px;font-size:.71rem}
+.btn--full{width:100%}
+.btn[data-unconfirmed]{background:var(--clay);color:var(--body);border:1px dashed var(--terra-dk);box-shadow:none}
+.btn[data-unconfirmed]:hover{transform:none;box-shadow:none;background:var(--clay)}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+
+/* ---------- Utility topbar with a live open/closed status ---------- */
+.top{background:var(--green-dk);color:#AEB9AC;font-size:.79rem;padding-block:9px}
+.top__in{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.top a:hover{color:var(--cream)}
+.top__l,.top__r{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.status{display:inline-flex;align-items:center;gap:8px;font-weight:700}
+.status .dot{width:8px;height:8px;border-radius:50%;background:var(--brass)}
+.status.open .dot{background:#6FB98F}
+.status.shut .dot{background:var(--terra)}
+.pills{display:flex;gap:5px}
+.pills a{padding:3px 11px;border-radius:999px;border:1px solid rgba(250,245,236,.3)}
+.pills a.on{background:var(--gold);color:var(--green-dk);border-color:var(--gold);font-weight:700}
+
+/* ---------- Header ---------- */
+.hdr{position:sticky;top:0;z-index:90;background:rgba(250,245,236,.97);backdrop-filter:blur(9px);
+  border-bottom:1px solid rgba(156,123,63,.4);padding-block:15px;
+  transition:padding .3s var(--ease),box-shadow .3s var(--ease)}
+.hdr.is-stuck{padding-block:9px;box-shadow:var(--sh)}
+.hdr__in{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-family:var(--serif);font-size:1.34rem;font-weight:700;color:var(--green);line-height:1.02}
+.brand small{display:block;font-family:var(--sans);font-size:.55rem;letter-spacing:.26em;
+  text-transform:uppercase;color:var(--terra-dk);font-weight:700}
+.nav{display:flex;align-items:center;gap:19px}
+.nav a{font-size:.8rem;font-weight:700;color:var(--body);padding-block:5px;
+  border-bottom:2px solid transparent;transition:.24s}
+.nav a:hover{color:var(--green);border-bottom-color:var(--terra)}
+.hdr__r{display:flex;align-items:center;gap:10px}
+.burger{display:none;width:44px;height:44px;position:relative}
+.burger span{position:absolute;left:11px;width:22px;height:2.5px;border-radius:2px;
+  background:var(--green);transition:.28s var(--ease)}
+.burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:27px}
+.burger.on span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.on span:nth-child(2){opacity:0}
+.burger.on span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:89;background:var(--cream);display:flex;flex-direction:column;
+  justify-content:center;gap:0;padding:96px var(--gut) 40px;overflow-y:auto;
+  opacity:0;visibility:hidden;transform:translateY(-12px);transition:.3s var(--ease)}
+.mnav.on{opacity:1;visibility:visible;transform:none}
+.mnav a{font-family:var(--serif);font-size:clamp(1.6rem,6.6vw,2.3rem);color:var(--ink);
+  padding-block:12px;border-bottom:1px solid rgba(156,123,63,.34)}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:min(90svh,840px);display:flex;align-items:flex-end;
+  overflow:hidden;isolation:isolate}
+.hero__bg{position:absolute;inset:0;z-index:-2;will-change:transform}
+.hero__bg img{width:100%;height:112%;object-fit:cover}
+.hero__scrim{position:absolute;inset:0;z-index:-1;background:var(--g-hero)}
+/* the slow warm-shift, as if the light were moving through the afternoon */
+.hero__warm{position:absolute;inset:0;z-index:-1;mix-blend-mode:soft-light;opacity:.5;
+  background:radial-gradient(ellipse 70% 50% at 30% 70%,rgba(227,163,75,.7),transparent 65%);
+  animation:warm 22s var(--ease) infinite alternate}
+@keyframes warm{from{transform:translate3d(-4%,2%,0) scale(1)}to{transform:translate3d(6%,-3%,0) scale(1.16)}}
+.hero__in{padding-block:0 clamp(58px,9vh,116px);max-width:880px}
+.hero h1{color:var(--cream);font-size:clamp(2.4rem,6vw,4.4rem);text-shadow:0 2px 36px rgba(28,32,28,.55)}
+.hero p{color:rgba(250,245,236,.95);max-width:52ch;margin-top:18px;font-size:1.06rem}
+.hero .eyebrow{color:var(--gold)}
+
+/* ---------- ⭐ A MESA — reservation + a REAL HTML menu ---------- */
+.table{display:grid;grid-template-columns:380px 1fr;gap:clamp(20px,3vw,44px);align-items:start}
+.resv{background:#fff;border:1px solid rgba(156,123,63,.4);border-radius:var(--r);
+  padding:clamp(20px,2.6vw,30px);box-shadow:var(--sh);position:sticky;top:96px}
+.resv h3{font-size:1.3rem;margin-bottom:6px}
+.field{margin-bottom:15px}
+.field label{display:block;font-size:.68rem;font-weight:700;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--terra-dk);margin-bottom:8px}
+.field input,.field select,.field textarea{width:100%;padding:13px 14px;font:inherit;font-size:.95rem;
+  background:var(--cream);border:1px solid rgba(156,123,63,.4);border-radius:var(--r-sm);color:var(--ink)}
+.field textarea{min-height:100px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--terra)}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+/* the composed message preview — this venue takes reservations on WhatsApp and
+   the handoff is honest: no confirmed booking is faked */
+.msg{border:1px dashed var(--terra-dk);background:rgba(184,84,58,.06);border-radius:var(--r-sm);
+  padding:14px 16px;font-size:.86rem;color:var(--terra-dk);white-space:pre-line;margin:14px 0}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:.84rem;margin:6px 0 16px}
+.consent input{margin-top:5px;accent-color:var(--terra)}
+.consent a{color:var(--terra-dk);text-decoration:underline}
+
+/* the menu — REAL HTML TEXT, never a PDF and never photographed pages.
+   That is an accessibility requirement and the highest-value SEO decision on
+   the whole site. */
+.menu{border-top:2px solid var(--green)}
+.menu__sec{padding-block:clamp(20px,2.6vw,32px);border-bottom:1px solid rgba(156,123,63,.34)}
+.menu__sec:last-child{border-bottom:0}
+.menu__sec h3{font-size:1.5rem;margin-bottom:4px}
+.menu__sec .note{font-size:.86rem;margin:0 0 16px}
+.dish{display:grid;grid-template-columns:1fr auto;gap:10px 20px;padding-block:14px;
+  border-bottom:1px dashed rgba(156,123,63,.34)}
+.dish:last-child{border-bottom:0}
+.dish h4{font-family:var(--sans);font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.dish p{font-size:.88rem;margin:0 0 8px;max-width:56ch}
+.dish__p{font-family:var(--serif);font-size:1.1rem;font-weight:600;color:var(--terra-dk);white-space:nowrap}
+/* allergen markers on every line — ANVISA RDC 26/2015 is the single most-missed
+   obligation on Brazilian restaurant sites */
+.alg{display:flex;flex-wrap:wrap;gap:6px}
+.alg span{font-size:.64rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  border:1px solid rgba(78,87,76,.4);padding:4px 8px;color:var(--body);border-radius:999px}
+.alg span.glu{border-color:var(--terra);color:var(--terra-dk);background:rgba(184,84,58,.07)}
+.menustrip{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.8vw,20px);
+  margin-top:clamp(20px,2.6vw,32px)}
+.menustrip figure{margin:0;aspect-ratio:4/3;overflow:hidden;border-radius:var(--r)}
+.menustrip img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.menustrip figure:hover img{transform:scale(1.05)}
+
+/* ---------- ⭐ THE DAY ARC ---------- */
+.arc{position:relative;border-radius:var(--r);overflow:hidden;background-image:var(--g-arc);
+  padding:5px;margin-bottom:clamp(22px,3vw,36px)}
+.arc__tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;position:relative}
+.arc__tabs button{padding:16px 12px;border-radius:var(--r-sm);background:rgba(250,245,236,.86);
+  font-size:.82rem;font-weight:700;letter-spacing:.06em;color:var(--ink);transition:.3s var(--ease)}
+.arc__tabs button b{display:block;font-family:var(--serif);font-size:1.06rem;font-weight:600;margin-bottom:3px}
+.arc__tabs button span{font-size:.74rem;font-weight:600;color:var(--body)}
+/* state is never colour-only: the selected period also fills solid and carries
+   aria-selected */
+.arc__tabs button[aria-selected="true"]{background:var(--green);color:var(--cream)}
+.arc__tabs button[aria-selected="true"] b{color:var(--cream)}
+.arc__tabs button[aria-selected="true"] span{color:#AEB9AC}
+.arcpanel[hidden]{display:none}
+.arcpanel{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(22px,3.4vw,50px);align-items:center}
+
+/* ---------- Generic split / figures ---------- */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(26px,4vw,60px);align-items:center}
+.split--rev .split__t{order:2}
+.fig{overflow:hidden;border-radius:var(--r);box-shadow:var(--sh);position:relative;margin:0}
+.fig img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.fig:hover img{transform:scale(1.04)}
+.fig figcaption{position:absolute;left:0;right:0;bottom:0;padding:10px 15px;
+  background:linear-gradient(0deg,rgba(28,32,28,.84),rgba(28,32,28,0));color:var(--cream);font-size:.72rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.8vw,20px)}
+
+/* ---------- The mural band — type over a photograph at LOW CONTRAST,
+   with a solid scrim so body copy never drops below AA ---------- */
+.mural{position:relative;overflow:hidden;isolation:isolate;border-radius:var(--r)}
+.mural img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;z-index:-2}
+.mural::after{content:"";position:absolute;inset:0;z-index:-1;background:rgba(28,32,28,.78)}
+.mural__in{padding:clamp(30px,5vw,80px) clamp(22px,4vw,60px);color:var(--cream)}
+.mural__in h2{color:var(--cream)}
+.mural__in p{color:#C6CFC5}
+
+/* ---------- Date rail (sunset sets) ---------- */
+.dates{display:flex;gap:10px;overflow-x:auto;padding-bottom:10px;scrollbar-width:none}
+.dates::-webkit-scrollbar{display:none}
+.dates div{flex:0 0 auto;border:1px solid rgba(255,255,255,.42);border-radius:var(--r-sm);
+  padding:14px 18px;min-width:132px}
+.dates b{display:block;font-family:var(--serif);font-size:1.2rem;color:#fff}
+.dates span{font-size:.8rem;color:rgba(255,255,255,.9)}
+
+/* ---------- Info rows ---------- */
+.rows{list-style:none;margin:20px 0 0;padding:0;border-top:1px solid rgba(156,123,63,.4)}
+.rows li{display:flex;justify-content:space-between;align-items:baseline;gap:18px;
+  padding-block:13px;border-bottom:1px solid rgba(156,123,63,.4);font-size:.95rem}
+.rows b{color:var(--ink);font-weight:700}
+.dark .rows{border-color:rgba(250,245,236,.24)}
+.dark .rows li{border-color:rgba(250,245,236,.24)}
+.dark .rows b{color:var(--cream)}
+
+/* ---------- Hours table ---------- */
+.hours{width:100%;border-collapse:collapse;font-size:.95rem}
+.hours th,.hours td{padding:12px 14px;text-align:left;border-bottom:1px solid rgba(156,123,63,.34)}
+.hours th{font-family:var(--sans);font-size:.74rem;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--terra-dk);width:40%}
+.hours tr:last-child th,.hours tr:last-child td{border-bottom:0}
+
+/* ---------- FAQ ---------- */
+.faq{border-top:1px solid rgba(156,123,63,.4)}
+.faq details{border-bottom:1px solid rgba(156,123,63,.4)}
+.faq summary{padding:19px 44px 19px 0;font-family:var(--serif);font-size:1.14rem;
+  color:var(--ink);cursor:pointer;position:relative;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:8px;top:50%;transform:translateY(-50%);
+  color:var(--terra);font-size:1.6rem;transition:transform .24s var(--ease)}
+.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.faq p{padding:0 0 19px;margin:0;font-size:.95rem;max-width:72ch}
+
+/* ---------- Map ---------- */
+.map{aspect-ratio:4/3;border-radius:var(--r);overflow:hidden;position:relative;background:var(--clay);
+  display:grid;place-items:center;text-align:center;padding:26px}
+.map__grid{position:absolute;inset:0;opacity:.44;
+  background-image:linear-gradient(rgba(47,71,57,.16) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(47,71,57,.16) 1px,transparent 1px);
+  background-size:36px 36px}
+.map>div{position:relative;z-index:2;color:var(--ink)}
+.map .pin{width:18px;height:18px;border-radius:50%;background:var(--terra);margin:0 auto 12px;
+  box-shadow:0 0 0 8px rgba(184,84,58,.2)}
+
+/* ---------- Footer ---------- */
+.ftr{background-image:var(--g-dark);color:#AEB9AC;padding-block:clamp(46px,6vw,88px) 0}
+.ftr h4{font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:16px;font-family:var(--sans)}
+.ftr__grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:clamp(24px,3vw,46px)}
+.ftr ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:.9rem}
+.ftr a:hover{color:var(--cream)}
+.ftr .brand{color:var(--cream);display:block;margin-bottom:14px}
+.ftr .brand small{color:var(--gold)}
+.ftr__bot{margin-top:clamp(28px,3.6vw,50px);border-top:1px solid rgba(250,245,236,.2);
+  padding-block:20px 30px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
+  align-items:center;font-size:.79rem;color:#8A968A}
+/* the alcohol notice — kept structurally apart from any family copy */
+.booze{border:1px solid var(--gold);border-radius:var(--r-sm);padding:14px 18px;margin-top:22px;
+  font-size:.85rem;color:var(--gold);max-width:74ch;font-weight:700;letter-spacing:.03em}
+
+/* ---------- Sticky WhatsApp + mobile bar ---------- */
+.wa{position:fixed;right:18px;bottom:18px;z-index:80;width:58px;height:58px;border-radius:50%;
+  background:#12A150;display:grid;place-items:center;box-shadow:0 10px 28px rgba(18,161,80,.4);
+  transition:transform .26s var(--ease)}
+.wa:hover{transform:scale(1.07)}
+.wa svg{width:29px;height:29px;fill:#fff}
+.wa[data-unconfirmed]{background:var(--clay)}
+.wa[data-unconfirmed] svg{fill:var(--ink)}
+.wa__cfm{position:absolute;right:66px;top:50%;transform:translateY(-50%);white-space:nowrap;
+  background:var(--green-dk);color:var(--cream);font-size:.68rem;font-weight:700;
+  padding:6px 11px;border-radius:var(--r-sm)}
+.mbar{display:none}
+
+/* ---------- LGPD ---------- */
+.ck{position:fixed;left:0;right:0;bottom:0;z-index:95;background:var(--cream);
+  border-top:3px solid var(--terra);padding:20px var(--gut);
+  transform:translateY(112%);transition:transform .38s var(--ease)}
+.ck.on{transform:none}
+.ck__in{max-width:var(--wrap);margin-inline:auto;display:grid;grid-template-columns:1.5fr 1fr;
+  gap:22px;align-items:center}
+.ck p{font-size:.87rem;margin:0}
+.ck a{color:var(--terra-dk);text-decoration:underline}
+.ck__opts{display:flex;flex-wrap:wrap;gap:16px;margin-top:11px;font-size:.84rem}
+.ck__opts label{display:flex;gap:8px;align-items:center}
+.ck__opts input{accent-color:var(--terra)}
+.ck__btns{display:flex;flex-wrap:wrap;gap:9px;justify-content:flex-end}
+
+/* ---------- Reveal — images reveal with a soft scale ---------- */
+[data-rv]{opacity:0;transform:translateY(20px) scale(.985);
+  transition:opacity .6s var(--ease),transform .6s var(--ease)}
+[data-rv].in{opacity:1;transform:none}
+
+/* ---------- Legal ---------- */
+.legal{max-width:880px;margin-inline:auto;padding-block:clamp(46px,6vw,90px)}
+.legal h2{margin:34px 0 12px;font-size:1.55rem}
+.legal h3{margin:22px 0 10px;font-size:1.18rem}
+.legal ul{padding-left:20px;display:grid;gap:8px;margin-bottom:18px}
+.legal table{width:100%;border-collapse:collapse;margin:18px 0;font-size:.92rem}
+.legal th,.legal td{border:1px solid rgba(156,123,63,.4);padding:11px 13px;text-align:left;vertical-align:top}
+.legal th{background:var(--clay);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--green);font-weight:700}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1080px){
+  .nav{display:none}
+  .burger{display:block}
+  .table{grid-template-columns:1fr}
+  .resv{position:static}
+  .arcpanel{grid-template-columns:1fr}
+}
+@media (max-width:820px){
+  .split,.ck__in,.two{grid-template-columns:1fr}
+  .split--rev .split__t{order:0}
+  .menustrip{grid-template-columns:1fr}
+  .ftr__grid{grid-template-columns:1fr 1fr}
+  .ck__btns{justify-content:flex-start}
+  .sec-head--row{flex-direction:column;align-items:flex-start}
+  .arc__tabs{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  body{padding-bottom:62px}
+  .wa{bottom:76px;width:52px;height:52px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:0;position:fixed;left:0;right:0;bottom:0;
+    z-index:82;padding-bottom:env(safe-area-inset-bottom);background:var(--cream);
+    border-top:1px solid rgba(156,123,63,.5)}
+  .mbar .btn{border-radius:0;box-shadow:none;padding:17px 8px}
+  .mbar .btn:hover{transform:none}
+  .fr,.ftr__grid{grid-template-columns:1fr}
+  .arc__tabs{grid-template-columns:1fr}
+  .top__in{justify-content:center;text-align:center}
+  .dish{grid-template-columns:1fr;row-gap:6px}
+}
+
+/* ---------- Reduced motion — the warm-shift, the reveals and the arc slide -- */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;
+    transition-duration:.001ms!important;scroll-behavior:auto!important}
+  [data-rv]{opacity:1;transform:none}
+  .hero__warm{animation:none}
+  .dates{scroll-behavior:auto}
+}

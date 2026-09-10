@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<!-- Speculative pitch mockup for a prospect who has not commissioned, seen or
+     approved it. Must never be indexed or compete with the real business. -->
+<title>Floripa Dive — Mergulho na Barra da Lagoa, Florianópolis | Saídas 08h e 14h</title>
+<meta name="description" content="Operadora de mergulho na Barra da Lagoa. Batismo, mergulho credenciado, snorkel e cursos NAUI. Saídas diárias às 08h e 14h para Xavier, Aranhas e Campeche.">
+<link rel="canonical" href="https://floripadive.com.br/">
+<link rel="alternate" hreflang="pt-BR" href="https://floripadive.com.br/">
+<link rel="alternate" hreflang="en" href="https://floripadive.com.br/en/">
+<link rel="alternate" hreflang="x-default" href="https://floripadive.com.br/">
+<!-- [CONFIRM] adding /es/ — Argentine tourists are a major Floripa summer
+     segment and a discovery dive is a classic holiday booking. -->
+<meta property="og:title" content="Floripa Dive — Mergulho na Barra da Lagoa, Florianópolis | Saídas 08h e 14h">
+<meta property="og:description" content="Operadora de mergulho na Barra da Lagoa. Batismo, mergulho credenciado, snorkel e cursos NAUI. Saídas diárias às 08h e 14h para Xavier, Aranhas e Campeche.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1900&q=70" fetchpriority="high">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SportsActivityLocation",
+  "name":"Floripa Dive",
+  "description":"Operadora de mergulho na Barra da Lagoa (Fortaleza da Barra), Florian\u00f3polis.",
+  "url":"https://floripadive.com.br/",
+  "inLanguage":"pt-BR",
+  "availableLanguage":["pt-BR","en"],
+  "address":{"@type":"PostalAddress","streetAddress":"Rua Laurindo Jos\u00e9 de Souza, 895",
+    "addressLocality":"Florian\u00f3polis","addressRegion":"SC","postalCode":"88061-440","addressCountry":"BR"},
+  "geo":{"@type":"GeoCoordinates","latitude":"[CONFIRM]","longitude":"[CONFIRM]"},
+  "telephone":"+5548999042041",
+  "email":"contato@floripadive.com.br",
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens":"08:00","closes":"08:20"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens":"14:00","closes":"14:20"}
+  ],
+  "currenciesAccepted":"BRL",
+  "paymentAccepted":"Pix, dep\u00f3sito, transfer\u00eancia",
+  "sameAs":["https://www.instagram.com/floripadive","https://www.facebook.com/Floripadive"]
+}
+</script>
+<!-- ⚠ NO aggregateRating and NO review are emitted. The three testimonials on
+     their live site are unmodified template placeholders ("João P.", "Maria F.",
+     "Carlos S.") and none of them carries into this build.
+     ⚠ NO Course offers with prices: no course price is published anywhere on
+     their site, and a guessed price in structured data is a CDC problem. -->
+</head>
+<body>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+
+<!-- ⭐ The depth rail — decorative, aria-hidden, tied to the real 0–34 m range -->
+<div class="rail" aria-hidden="true">
+  <span class="rail__t" style="top:80px">0 m<span>superfície</span></span>
+  <span class="rail__t" style="top:50%">18 m<span>Open Water</span></span>
+  <span class="rail__t" style="bottom:30px">34 m<span>máx. nas ilhas</span></span>
+  <span class="rail__m" data-depth style="top:80px"></span>
+</div>
+
+<!-- 1 · Sticky utility topbar — the departure times belong in permanent view.
+     They are the single most operationally useful fact on this site. -->
+<div class="top">
+  <div class="wrap top__in">
+    <div class="top__l">
+      <a href="#" data-tel>+55 48 99904-2041</a>
+      <span class="dep">Saídas 08h · 14h · todos os dias</span>
+    </div>
+    <div class="top__r">
+      <div class="pills">
+        <a href="index.html" hreflang="pt-BR" lang="pt-BR" class="on">PT</a>
+        <a href="en/index.html" hreflang="en" lang="en">EN</a>
+      </div>
+      <a class="btn btn--sm" href="#reservas">Agendar mergulho</a>
+    </div>
+  </div>
+</div>
+
+<!-- 2 · Sticky header -->
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="index.html">Floripa <span>Dive</span><small>Barra da Lagoa · Fortaleza da Barra</small></a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#mergulhos">Mergulhos</a><a href="#cursos">Cursos</a><a href="#ilhas">Onde mergulhamos</a><a href="#seguranca">Segurança</a><a href="#sobre">Quem somos</a><a href="#contato">Contato</a>
+    </nav>
+    <div class="hdr__r">
+      <a class="btn btn--sm" href="#reservas">Reservar</a>
+      <button class="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mnav" aria-label="Menu">
+  <a href="#mergulhos">Mergulhos</a><a href="#cursos">Cursos</a><a href="#ilhas">Onde mergulhamos</a><a href="#seguranca">Segurança</a><a href="#sobre">Quem somos</a><a href="#contato">Contato</a>
+  <a href="en/index.html" lang="en">English</a>
+</nav>
+<main id="main">
+
+<!-- 3 · Hero — looking up toward the surface. The page starts at 0 m. -->
+<section class="hero">
+  <div class="hero__bg">
+    <!-- PLACEHOLDER-hero-superficie.jpg — royalty-free stock (Unsplash), not their dive site -->
+    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1900&q=70" width="1900" height="1070" fetchpriority="high"
+         alt="Vista subaquática em água azul e clara com raios de sol vindo da superfície, sem mergulhadores — imagem ilustrativa">
+  </div>
+  <div class="hero__scrim"></div>
+  <div class="hero__caustic" aria-hidden="true"></div>
+  <div class="wrap hero__in">
+    <p class="eyebrow">Barra da Lagoa · Fortaleza da Barra · Florianópolis — SC</p>
+    <h1>Mergulhe em Florianópolis.</h1>
+    <p>Saídas todos os dias às 08h e às 14h para a Ilha do Xavier, a Ilha das Aranhas e a Ilha do Campeche — de 0 a 34 metros. Batismo, mergulho credenciado e cursos NAUI, do básico ao instrutor.</p>
+    <div class="btn-row">
+      <a class="btn" href="#batismo">Reservar mergulho de batismo <span class="ar">&rarr;</span></a>
+      <a class="btn btn--ghost" href="#" data-wa>Falar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · Stat strip docked to the hero.
+     ⚠ THIS REPLACES THEIR THREE BROKEN "0 +" COUNTERS. Three values are real
+     and published by them; the fourth is a VISIBLE BLANK, never a zero. -->
+<div class="wrap">
+  <div class="stats" data-rv>
+    <div class="stat"><b>08h · 14h</b><span>saídas, todos os dias</span></div>
+    <div class="stat"><b>o ano todo</b><span>operação contínua</span></div>
+    <div class="stat"><b>3 · 0–34 m</b><span>ilhas e faixa de profundidade</span></div>
+    <div class="stat"><b data-count="[CONFIRM]">[CONFIRM]</b><span>mergulhos realizados</span></div>
+  </div>
+</div>
+
+<!-- 5 · ⭐ MERGULHO DE BATISMO — the hero product, because a discovery dive is
+     what most first-time visitors actually buy. -->
+<section class="sec band-2" id="batismo">
+  <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(26px,4vw,60px);align-items:start">
+    <div data-rv>
+      <p class="eyebrow">Mergulho de Batismo</p>
+      <h2 class="h-lg">Três horas, e trinta minutos embaixo d’água.</h2>
+      <p class="lede" style="margin-top:16px">Na Ilha do Xavier, com todo o equipamento incluso e o instrutor ao seu lado do início ao fim do mergulho.</p>
+      <ul class="tl" style="margin-top:22px">
+        <li><b>Encontro no portão</b><span>08h ou 14h — e o portão fecha 20 minutos depois</span></li>
+        <li><b>Aula teórica</b><span>Como o equipamento funciona e o que acontece embaixo d’água</span></li>
+        <li><b>Aula prática</b><span>Antes de entrar no mar</span></li>
+        <li><b>Mergulho de 30 min</b><span>Acompanhado pelo instrutor o tempo inteiro</span></li>
+        <li><b>Snorkel livre</b><span>1h+ enquanto o barco fica cerca de 2h na ilha</span></li>
+        <li><b>Lanche a bordo</b><span>Incluído</span></li>
+        <li><b>Retorno</b><span>Saída de 3 horas no total</span></li>
+      </ul>
+    </div>
+    <div data-rv>
+      <figure style="margin:0 0 22px;overflow:hidden;border-radius:6px">
+        <!-- PLACEHOLDER-barco.jpg — royalty-free stock (Unsplash), not their boat -->
+        <img src="https://images.unsplash.com/photo-1470107355970-2ace9f20ab15?auto=format&fit=crop&w=1000&q=72" width="1000" height="667" loading="lazy" decoding="async"
+             style="aspect-ratio:3/2;object-fit:cover"
+             alt="Barco fundeado em água clara junto a uma ilha rochosa, sem pessoas — imagem ilustrativa">
+      </figure>
+      <p class="pline">R$ 410,00 <small>por pessoa · sinal de R$ 60 para reservar</small></p>
+      <p class="flag" style="margin-top:16px"><b>Duas etiquetas de preço no ar:</b>
+        a página do produto publica <strong>R$ 410,00</strong> e a vitrine de produtos relacionados de outra página publica <strong>“a partir de R$ 380,00”</strong>. As duas não podem estar certas ao mesmo tempo — e dois preços vivos para um produto é problema de CDC, não só inconsistência. Deixamos os dois à vista. <span class="cfm">[CONFIRM]</span></p>
+      <div class="chips" style="margin-top:14px">
+        <span>Ilha do Xavier</span><span>mínimo 2 pessoas</span>
+        <span>cancelamento 24h</span>
+      </div>
+      <p class="cfm-note" style="margin-top:16px">“Não precisa saber nadar” é afirmação da home deles — e a página do Open Water exige saber nadar. A frase só aparece neste site acompanhada dos arranjos de supervisão e flutuação que a sustentam. <span class="cfm">[CONFIRM]</span></p>
+      <div class="btn-row">
+        <a class="btn btn--full" href="#" data-wa="Mergulho de Batismo">Reservar batismo <span class="ar">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · ⭐ THE GATE-TIME CARD.
+     Currently this instruction is buried inside a product description. It is a
+     forfeiture condition, so it gets its own hard-to-miss card. -->
+<section class="sec sec--t band-3">
+  <div class="wrap">
+    <div class="gate" data-rv>
+      <div class="gate__c">08:20<br>14:20</div>
+      <div>
+        <h3>O portão fecha 20 minutos depois de abrir.</h3>
+        <p style="margin:0 0 10px;color:#C6DFEA">Regra publicada por eles, em caixa alta no próprio site: <strong>“ESSE É O HORÁRIO PARA ESTAR NO PORTÃO DA ESCOLA”</strong>. O portão abre às 08h e às 14h e fecha às 08:20 e às 14:20. Depois disso não há embarque.</p>
+        <p style="margin:0;color:#A9CBDA;font-size:.92rem">Conte com o trânsito de Florianópolis. Perder o portão é condição de perda do sinal, e por isso este aviso aparece aqui e de novo no momento da reserva — não escondido numa descrição de produto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7–8 · Mergulho credenciado, snorkel and the boat trip -->
+<section class="sec band-4" id="mergulhos">
+  <div class="wrap">
+    <div class="sec-head sec-head--row" data-rv>
+      <div>
+        <p class="eyebrow">Mergulhos e passeios</p>
+        <h2 class="h-lg">Quatro produtos, todos com preço publicado.</h2>
+      </div>
+      <p class="lede" style="max-width:40ch">Todas as saídas: 08h e 14h, mínimo 2 pessoas, sinal de R$ 60 por pessoa, cancelamento até 24h antes.</p>
+    </div>
+    <div class="prods">
+      <article class="prod" data-rv>
+        <div class="prod__i">
+          <!-- PLACEHOLDER-equipamento.jpg — royalty-free stock (Unsplash) -->
+          <img src="https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?auto=format&fit=crop&w=700&q=70" width="700" height="438" loading="lazy" decoding="async"
+               alt="Equipamento de mergulho — cilindro e regulador — sem pessoas, imagem ilustrativa">
+        </div>
+        <div class="prod__b">
+          <h3>Mergulho credenciado</h3>
+          <p>Todo o equipamento e um cilindro. Ilha do Xavier, Ilha das Aranhas ou Ilha do Campeche — a escolha depende do mar e do vento, no dia. De 0 a 34 m.</p>
+          <p class="pline">R$ 440,00 <small>por pessoa</small></p>
+          <!-- ⚠ the surcharge sits BESIDE the price, per CDC — never buried -->
+          <p class="surcharge"><strong>+ R$ 100,00</strong> se for necessário um instrutor ou dive master para guiar o mergulho. As condições que disparam essa cobrança: <span class="cfm">[CONFIRM]</span></p>
+          <p style="font-size:.88rem;margin:0">Checagem de certificação — carteirinha, logbook, recência: <span class="cfm">[CONFIRM]</span></p>
+          <a class="btn btn--sm btn--full" href="#" data-wa="Mergulho credenciado">Reservar <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="prod" data-rv>
+        <div class="prod__i">
+          <!-- PLACEHOLDER-snorkel.jpg — royalty-free stock (Unsplash) -->
+          <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=700&q=70" width="700" height="438" loading="lazy" decoding="async"
+               alt="Água clara vista da superfície, sem pessoas — imagem ilustrativa">
+        </div>
+        <div class="prod__b">
+          <h3>Mergulho de snorkel</h3>
+          <p>A entrada de menor compromisso do catálogo — e hoje quase invisível no site de vocês.</p>
+          <p class="pline">a partir de R$ 270,00</p>
+          <p style="font-size:.88rem;margin:0">Duração e o que está incluso: <span class="cfm">[CONFIRM]</span></p>
+          <a class="btn btn--sm btn--full" href="#" data-wa="Mergulho de snorkel">Reservar <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="prod" data-rv>
+        <div class="prod__i">
+          <!-- PLACEHOLDER-passeio.jpg — royalty-free stock (Unsplash) -->
+          <img src="https://images.unsplash.com/photo-1470107355970-2ace9f20ab15?auto=format&fit=crop&w=700&q=70" width="700" height="438" loading="lazy" decoding="async"
+               alt="Barco em água aberta junto a uma ilha, sem pessoas — imagem ilustrativa">
+        </div>
+        <div class="prod__b">
+          <h3>Passeio Ilha do Xavier</h3>
+          <p>Para quem não vai mergulhar. A outra entrada acessível do catálogo.</p>
+          <p class="pline">a partir de R$ 240,00</p>
+          <p style="font-size:.88rem;margin:0">Duração e o que está incluso: <span class="cfm">[CONFIRM]</span></p>
+          <a class="btn btn--sm btn--full" href="#" data-wa="Passeio Ilha do Xavier">Reservar <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+    </div>
+    <p class="cfm-note" style="margin-top:26px">O texto “sobre” de vocês também menciona <strong>pesca subaquática</strong> e <strong>passeios de barco</strong>, que a navegação não vende. A pesca subaquática carrega considerações regulatórias próprias — espécies protegidas, defeso, áreas protegidas — e por isso não é listada, descrita nem precificada aqui até ser confirmada. <span class="cfm">[CONFIRM]</span></p>
+  </div>
+</section>
+
+<!-- 9 · Onde mergulhamos — three searchable place names with nothing currently
+     written about them. Genuinely valuable local SEO.
+     ⚠ NO species list, NO visibility figure, NO water temperature. -->
+<section class="sec band-4" id="ilhas">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Onde mergulhamos</p>
+      <h2 class="h-lg">Três ilhas, de 0 a 34 metros.</h2>
+      <p class="lede">“a escolha da ilha depende das condições do Mar e vento” — texto de vocês. Nenhuma lista de espécies, visibilidade ou temperatura da água foi inventada aqui.</p>
+    </div>
+    <div class="isles">
+      <figure class="isle" style="margin:0" data-rv>
+        <!-- PLACEHOLDER-ilha-xavier.jpg — royalty-free stock (Unsplash), NOT their dive site -->
+        <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=700&q=72" width="700" height="933" loading="lazy" decoding="async"
+             alt="Ilha rochosa ao largo em mar aberto, sem pessoas — imagem ilustrativa">
+        <figcaption>
+          <b>Ilha do Xavier</b>
+          <span class="depth">0–34 m na operação</span>
+          <span style="display:block;font-size:.84rem;margin-top:6px">Perfil do ponto e o que se vê: [CONFIRM]</span>
+        </figcaption>
+      </figure>
+      <figure class="isle" style="margin:0" data-rv>
+        <!-- PLACEHOLDER-ilha-aranhas.jpg — royalty-free stock (Unsplash), NOT their dive site -->
+        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=700&q=72" width="700" height="933" loading="lazy" decoding="async"
+             alt="Ilha rochosa ao largo em mar aberto, sem pessoas — imagem ilustrativa">
+        <figcaption>
+          <b>Ilha das Aranhas</b>
+          <span class="depth">0–34 m na operação</span>
+          <span style="display:block;font-size:.84rem;margin-top:6px">Perfil do ponto e o que se vê: [CONFIRM]</span>
+        </figcaption>
+      </figure>
+      <figure class="isle" style="margin:0" data-rv>
+        <!-- PLACEHOLDER-ilha-campeche.jpg — royalty-free stock (Unsplash), NOT their dive site -->
+        <img src="https://images.unsplash.com/photo-1509233725247-49e657c54213?auto=format&fit=crop&w=700&q=72" width="700" height="933" loading="lazy" decoding="async"
+             alt="Ilha rochosa ao largo em mar aberto, sem pessoas — imagem ilustrativa">
+        <figcaption>
+          <b>Ilha do Campeche</b>
+          <span class="depth">0–34 m na operação</span>
+          <span style="display:block;font-size:.84rem;margin-top:6px">Perfil do ponto e o que se vê: [CONFIRM]</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · ⭐ THE COURSE LADDER — the structural centrepiece.
+     Each rung sells the next; that is the entire commercial logic of a dive
+     school. Only the Open Water rung is fully populated, from THEIR syllabus. -->
+<section class="sec band-5" id="cursos">
+  <div class="wrap">
+    <div class="sec-head sec-head--row" data-rv>
+      <div>
+        <p class="eyebrow">Cursos</p>
+        <h2 class="h-lg">Do batismo ao instrutor.</h2>
+        <p class="lede">A escada inteira que vocês publicam, numa única espinha. Nenhum preço de curso está publicado no site de vocês hoje — então cada degrau traz R$ [CONFIRM] em vez de um número inventado.</p>
+      </div>
+      <p class="cfm-note" style="max-width:40ch;margin:0" data-rv>A NAUI é a única agência que vocês nomeiam. Nada neste site substitui, acrescenta ou insinua PADI, SSI, CMAS ou qualquer outra — e nenhum número de credencial foi inventado.</p>
+    </div>
+    <div class="ladder">
+      <article class="rung" data-rv>
+        <div class="rung__h">
+          <span class="rung__n">Entrada</span>
+          <h3>Mergulho de Batismo</h3>
+        </div>
+        <p>Não é certificação. Saída de 3h na Ilha do Xavier, mergulho de 30 min acompanhado pelo instrutor.</p>
+        <table class="spec">
+          <tbody>
+            <tr><th scope="row">Pré-requisito</th><td>“Não precisa saber nadar” — afirmação deles, [CONFIRM]</td></tr>
+            <tr><th scope="row">Profundidade</th><td>[CONFIRM]</td></tr>
+            <tr><th scope="row">Preço</th><td>R$ 410,00 [CONFIRM — o site publica R$ 410 e R$ 380]</td></tr>
+          </tbody>
+        </table>
+        <div class="btn-row" style="margin-top:16px">
+          <a class="btn btn--sm" href="#" data-wa="curso:Mergulho de Batismo">Falar sobre este curso <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="rung" data-rv>
+        <div class="rung__h">
+          <span class="rung__n">Nível 1</span>
+          <h3>Curso Básico — Open Water Scuba Diver</h3>
+        </div>
+        <p>Teoria em sala · água confinada (piscina ou meio controlado) · água aberta (mar, lago ou represa). Ao concluir, o mergulhador pode mergulhar sem supervisão dentro do seu nível de treinamento.</p>
+        <table class="spec">
+          <tbody>
+            <tr><th scope="row">Idade mínima</th><td>10 anos — certificação júnior até os 15</td></tr>
+            <tr><th scope="row">Pré-requisitos</th><td>Aprovação médica para a atividade · saber nadar</td></tr>
+            <tr><th scope="row">Profundidade máxima</th><td>18 m</td></tr>
+            <tr><th scope="row">Teoria</th><td>Introdução · Equipamentos · Atividades Práticas · Ciência do Mergulho · Descompressão · Planejamento de Mergulho · Meio Ambiente · Solução de Problemas · Educação · Exame</td></tr>
+            <tr><th scope="row">Preço</th><td>R$ [CONFIRM]</td></tr>
+          </tbody>
+        </table>
+        <div class="btn-row" style="margin-top:16px">
+          <a class="btn btn--sm" href="#" data-wa="curso:Curso Básico — Open Water Scuba Diver">Falar sobre este curso <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="rung" data-rv>
+        <div class="rung__h">
+          <span class="rung__n">Nível 2</span>
+          <h3>Curso Avançado</h3>
+        </div>
+        <table class="spec">
+          <tbody>
+            <tr><th scope="row">Pré-requisito</th><td><span class="cfm">[CONFIRM]</span></td></tr>
+            <tr><th scope="row">Profundidade</th><td><span class="cfm">[CONFIRM]</span></td></tr>
+            <tr><th scope="row">Preço</th><td>R$ <span class="cfm">[CONFIRM]</span></td></tr>
+          </tbody>
+        </table>
+        <div class="btn-row" style="margin-top:16px">
+          <a class="btn btn--sm" href="#" data-wa="curso:Curso Avançado">Falar sobre este curso <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="rung" data-rv>
+        <div class="rung__h">
+          <span class="rung__n">Nível 3</span>
+          <h3>Curso de Primeiros Socorros</h3>
+        </div>
+        <table class="spec">
+          <tbody>
+            <tr><th scope="row">Pré-requisito</th><td><span class="cfm">[CONFIRM]</span></td></tr>
+            <tr><th scope="row">Profundidade</th><td><span class="cfm">[CONFIRM]</span></td></tr>
+            <tr><th scope="row">Preço</th><td>R$ <span class="cfm">[CONFIRM]</span></td></tr>
+          </tbody>
+        </table>
+        <div class="btn-row" style="margin-top:16px">
+          <a class="btn btn--sm" href="#" data-wa="curso:Curso de Primeiros Socorros">Falar sobre este curso <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="rung" data-rv>
+        <div class="rung__h">
+          <span class="rung__n">Nível 4</span>
+          <h3>Curso de Resgate</h3>
+        </div>
+        <table class="spec">
+          <tbody>
+            <tr><th scope="row">Pré-requisito</th><td><span class="cfm">[CONFIRM]</span></td></tr>
+            <tr><th scope="row">Profundidade</th><td><span class="cfm">[CONFIRM]</span></td></tr>
+            <tr><th scope="row">Preço</th><td>R$ <span class="cfm">[CONFIRM]</span></td></tr>
+          </tbody>
+        </table>
+        <div class="btn-row" style="margin-top:16px">
+          <a class="btn btn--sm" href="#" data-wa="curso:Curso de Resgate">Falar sobre este curso <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="rung" data-rv>
+        <div class="rung__h">
+          <span class="rung__n">Nível 5</span>
+          <h3>Curso Master Scuba Diver</h3>
+        </div>
+        <table class="spec">
+          <tbody>
+            <tr><th scope="row">Pré-requisito</th><td><span class="cfm">[CONFIRM]</span></td></tr>
+            <tr><th scope="row">Profundidade</th><td><span class="cfm">[CONFIRM]</span></td></tr>
+            <tr><th scope="row">Preço</th><td>R$ <span class="cfm">[CONFIRM]</span></td></tr>
+          </tbody>
+        </table>
+        <div class="btn-row" style="margin-top:16px">
+          <a class="btn btn--sm" href="#" data-wa="curso:Curso Master Scuba Diver">Falar sobre este curso <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="rung" data-rv>
+        <div class="rung__h">
+          <span class="rung__n">Nível 6</span>
+          <h3>Curso Dive Master</h3>
+        </div>
+        <table class="spec">
+          <tbody>
+            <tr><th scope="row">Pré-requisito</th><td><span class="cfm">[CONFIRM]</span></td></tr>
+            <tr><th scope="row">Profundidade</th><td><span class="cfm">[CONFIRM]</span></td></tr>
+            <tr><th scope="row">Preço</th><td>R$ <span class="cfm">[CONFIRM]</span></td></tr>
+          </tbody>
+        </table>
+        <div class="btn-row" style="margin-top:16px">
+          <a class="btn btn--sm" href="#" data-wa="curso:Curso Dive Master">Falar sobre este curso <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="rung" data-rv>
+        <div class="rung__h">
+          <span class="rung__n">Instrutor</span>
+          <h3>ITC NAUI</h3>
+        </div>
+        <p>O topo da escada deles. É a única agência que eles nomeiam.</p>
+        <table class="spec">
+          <tbody>
+            <tr><th scope="row">Pré-requisito</th><td><span class="cfm">[CONFIRM]</span></td></tr>
+            <tr><th scope="row">Profundidade</th><td><span class="cfm">[CONFIRM]</span></td></tr>
+            <tr><th scope="row">Preço</th><td>R$ <span class="cfm">[CONFIRM]</span></td></tr>
+          </tbody>
+        </table>
+        <div class="btn-row" style="margin-top:16px">
+          <a class="btn btn--sm" href="#" data-wa="curso:ITC NAUI">Falar sobre este curso <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+    </div>
+    <h3 class="h-md" style="margin-top:clamp(26px,3.4vw,44px)" data-rv>Especialidades</h3>
+    <div class="specialties">
+      <div class="spc" data-rv><b>Mergulho noturno</b>R$ <span class="cfm">[CONFIRM]</span></div>
+      <div class="spc" data-rv><b>Mergulho profundo / naufrágio</b>R$ <span class="cfm">[CONFIRM]</span></div>
+      <div class="spc" data-rv><b>Mergulho de navegação com bússola</b>R$ <span class="cfm">[CONFIRM]</span></div>
+      <div class="spc" data-rv><b>Mergulho de busca e recuperação</b>R$ <span class="cfm">[CONFIRM]</span></div>
+      <div class="spc" data-rv><b>Identificação de vidas marinhas</b>R$ <span class="cfm">[CONFIRM]</span></div>
+      <div class="spc" data-rv><b>Curso completo</b>R$ <span class="cfm">[CONFIRM]</span></div>
+    </div>
+    <div class="prods" style="margin-top:clamp(26px,3.4vw,44px);grid-template-columns:1fr 1fr">
+      <figure style="margin:0;overflow:hidden;border-radius:6px" data-rv>
+        <!-- PLACEHOLDER-console.jpg — royalty-free stock (Unsplash) -->
+        <img src="https://images.unsplash.com/photo-1560089000-7433a4ebbd64?auto=format&fit=crop&w=900&q=72" width="900" height="600" loading="lazy" decoding="async"
+             style="aspect-ratio:3/2;object-fit:cover"
+             alt="Água aberta vista de dentro, sem rostos — imagem ilustrativa">
+      </figure>
+      <figure style="margin:0;overflow:hidden;border-radius:6px" data-rv>
+        <!-- PLACEHOLDER-noturno.jpg — royalty-free stock (Unsplash) -->
+        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=900&q=72" width="900" height="600" loading="lazy" decoding="async"
+             style="aspect-ratio:3/2;object-fit:cover"
+             alt="Água iluminada à noite, sem pessoas — imagem ilustrativa">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · Segurança e credenciais — for a scuba operator this is the most
+     important section on the page, and their current site has nothing like it.
+     Every row is a visible [CONFIRM] slot. -->
+<section class="sec band-5" id="seguranca">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Segurança e credenciais</p>
+      <h2 class="h-lg">Nove perguntas que um mergulhador faz antes de entrar no barco.</h2>
+      <p class="lede">Nenhuma delas tem resposta pública hoje. Nenhuma foi inventada aqui — e num esporte em que o pior cenário é irreversível, uma credencial inventada é a coisa mais grave que se pode escrever num site.</p>
+    </div>
+    <ul class="safety" data-rv>
+      <li><b>Filiação e certificação — NAUI</b><p>Eles nomeiam a NAUI, e só a NAUI. Nada neste site substitui, acrescenta ou insinua PADI, SSI, CMAS ou qualquer outra agência. Filiação do centro e número de credencial de cada instrutor: </p><span class="cfm">[CONFIRM]</span></li>
+      <li><b>Marinha do Brasil</b><p>Duas saídas de barco por dia, o ano inteiro, para ilhas ao largo, a até 34 m. Registro e vistoria da embarcação, equipamento de segurança obrigatório e habilitação do condutor são regidos pelas Normas da Autoridade Marítima. Embarcação, registro e licença: </p><span class="cfm">[CONFIRM]</span></li>
+      <li><b>CADASTUR</b><p>Registro no Ministério do Turismo para operadores de turismo. Não publicado hoje: </p><span class="cfm">[CONFIRM]</span></li>
+      <li><b>Seguro</b><p>Responsabilidade civil e cobertura de acidente de mergulho, e se seguro de mergulho é exigido ou oferecido: </p><span class="cfm">[CONFIRM]</span></li>
+      <li><b>Atestado médico e termo de responsabilidade</b><p>A própria página de Open Water deles já exige aprovação médica. O questionário médico e o termo precisam existir e ser assinados antes de qualquer atividade na água — e o questionário é dado de saúde, portanto sensível pela LGPD: nunca um campo de site ligado a uma caixa de e-mail. </p><span class="cfm">[CONFIRM]</span></li>
+      <li><b>“Não precisa saber nadar”</b><p>Esta frase está na home deles para o Batismo, enquanto a página do Open Water exige saber nadar. Quais arranjos de supervisão, flutuabilidade e flutuação tornam isso seguro para um não-nadador — e essa resposta é publicada ao lado da frase, ou a frase sai: </p><span class="cfm">[CONFIRM]</span></li>
+      <li><b>Oxigênio de emergência e plano de emergência</b><p>Oxigênio a bordo e a câmara hiperbárica mais próxima, com plano de evacuação escrito: </p><span class="cfm">[CONFIRM]</span></li>
+      <li><b>Cancelamento por condições do mar</b><p>Separado da regra de 24h do cliente. Como funciona e como o depósito é tratado: </p><span class="cfm">[CONFIRM]</span></li>
+      <li><b>Ilha do Campeche — área protegida</b><p>É sítio arqueológico e ambiental protegido, com restrição de visitação. Quais autorizações permitem mergulho comercial ali — a operação não é descrita como autorizada enquanto isso não for confirmado: </p><span class="cfm">[CONFIRM]</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 12 · Reservas e pagamento — entirely from their own copy -->
+<section class="sec band-5" id="reservas">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Reservas e pagamento</p>
+      <h2 class="h-lg">Quatro passos, todos escritos por vocês.</h2>
+    </div>
+    <div class="steps" data-rv>
+      <div class="step"><b>01</b><h3>Escolha a saída</h3><p>08h ou 14h, todos os dias. Mínimo de 2 pessoas para a saída acontecer.</p></div>
+      <div class="step"><b>02</b><h3>Pague o sinal</h3><p>R$ 60,00 por pessoa, por Pix, depósito ou transferência.</p></div>
+      <div class="step"><b>03</b><h3>Saldo na escola</h3><p>O restante é pago no dia, na escola.</p></div>
+      <div class="step"><b>04</b><h3>Cancelamento</h3><p>Remarcação ou cancelamento até 24h antes. Com menos de 24h, o sinal é perdido.</p></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,3.4vw,50px);margin-top:clamp(26px,3.4vw,44px);align-items:start">
+      <div data-rv>
+        <p class="cfm-note">Estas condições são contratuais: pelo CDC, o sinal, a janela de 24h e a regra do portão precisam ser apresentados <strong>antes</strong> do pagamento, não depois. É por isso que aparecem aqui, no cartão do portão e ao lado de cada preço.</p>
+        <ul class="dist">
+          <li><b>Sinal</b> <span>R$ 60,00 por pessoa</span></li>
+          <li><b>Formas para o sinal</b> <span>Pix · depósito · transferência</span></li>
+          <li><b>Saldo</b> <span>na escola · <span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Cancelamento</b> <span>24h</span></li>
+          <li><b>Mínimo por saída</b> <span>2</span></li>
+        </ul>
+      </div>
+      <div class="form" data-rv>
+        <form id="bookForm">
+          <div class="fr">
+            <div class="field"><label for="nome">Nome</label><input type="text" id="nome" name="nome" required></div>
+            <div class="field"><label for="wpp">WhatsApp</label><input type="tel" id="wpp" name="wpp" required></div>
+          </div>
+          <div class="fr">
+            <div class="field"><label for="atividade">Atividade</label>
+              <select id="atividade" name="atividade">
+                <option>Mergulho de Batismo</option>
+                <option>Mergulho credenciado</option>
+                <option>Mergulho de snorkel</option>
+                <option>Passeio Ilha do Xavier</option>
+                <option>Curso</option>
+              </select></div>
+            <div class="field"><label for="saida">Saída</label>
+              <select id="saida" name="saida"><option>08h</option><option>14h</option></select></div>
+          </div>
+          <div class="fr">
+            <div class="field"><label for="data">Data (DD/MM)</label><input type="date" id="data" name="data"></div>
+            <div class="field"><label for="pax">Pessoas</label><input type="number" id="pax" name="pax" min="1" value="2" inputmode="numeric"></div>
+          </div>
+          <div class="field" style="margin-bottom:14px"><label for="msg">Mensagem</label><textarea id="msg" name="msg"></textarea></div>
+          <p style="font-size:.86rem;color:#A9CBDA">⚠ Não envie informação de saúde por aqui. O questionário médico é dado sensível e é preenchido e assinado na escola, não num formulário de site.</p>
+          <label class="consent" for="consent">
+            <input type="checkbox" id="consent">
+            <span>Autorizo o contato por WhatsApp para responder a esta reserva, conforme a <a href="privacidade.html">Política de Privacidade</a> (LGPD, Lei 13.709/2018).</span>
+          </label>
+          <button class="btn btn--full" type="submit">Enviar pelo WhatsApp <span class="ar">&rarr;</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 · Quem somos.
+     ⚠ Their four templated "differentiator" blocks — Equipamento de Elite,
+     Experiências Exclusivas, Suporte Contínuo, Atualizações Constantes — are
+     generic template copy making unverifiable superlative claims, and none of
+     them survives into this build. -->
+<section class="sec band-5" id="sobre">
+  <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(26px,4vw,56px);align-items:center">
+    <div data-rv>
+      <p class="eyebrow">Quem somos</p>
+      <h2 class="h-lg">Na Fortaleza da Barra, o ano inteiro.</h2>
+      <p class="lede" style="margin-top:16px">“operamos o ano todo com saídas para mergulho autônomo, mergulho de batismo, pesca subaquática, passeios de barco e cursos de especialização.” — texto de vocês.</p>
+      <p class="cfm-note">Retiramos os quatro blocos de “diferenciais” que o template de vocês trouxe — <em>Equipamento de Elite</em>, <em>Experiências Exclusivas</em>, <em>Suporte Contínuo</em>, <em>Atualizações Constantes</em>. São texto genérico de template, fazem afirmações superlativas que ninguém consegue verificar, e não sobrevivem a este build. O que entra no lugar é a seção de segurança acima.</p>
+    </div>
+    <figure style="margin:0;overflow:hidden;border-radius:6px" data-rv>
+      <!-- PLACEHOLDER-fortaleza.jpg — royalty-free stock (Unsplash) -->
+      <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=72" width="1000" height="750" loading="lazy" decoding="async"
+           style="aspect-ratio:4/3;object-fit:cover"
+           alt="Fortificação histórica em ponta rochosa com o mar ao fundo — imagem ilustrativa">
+    </figure>
+  </div>
+</section>
+
+<!-- 14 · Depoimentos — EMPTY STATE.
+     Their three existing testimonials are unmodified template placeholders and
+     none of them carries into this build. -->
+<section class="sec band-5">
+  <div class="wrap wrap--n">
+    <div class="empty" data-rv>
+      <h2 class="h-md">Depoimentos</h2>
+      <p style="margin-top:12px;color:#C6DFEA">[CONFIRM — puxar avaliações reais do Google ou do TripAdvisor, ou obter autorização escrita de clientes nomeados.] Os três depoimentos do site atual — “João P. — Aluno”, “Maria F. — Aluno”, “Carlos S. — Aluno” — são texto de template que nunca foi trocado. Nenhum deles entra aqui, e nenhum depoimento foi escrito no lugar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 15 · Journal — their three 2022 filler posts are removed; three PROPOSED
+     replacements render as labelled placeholders. -->
+<section class="sec band-1">
+  <div class="wrap">
+    <div class="sec-head sec-head--row" data-rv>
+      <div>
+        <p class="eyebrow">Conteúdo</p>
+        <h2 class="h-lg">Três artigos que ninguém em Floripa escreveu ainda.</h2>
+      </div>
+      <p class="lede" style="max-width:40ch">Propostas nossas, marcadas como propostas. Os três posts de 2022 do site atual são recheio de template e saem.</p>
+    </div>
+    <div class="posts">
+      <article class="post" data-rv>
+        <div class="post__i">
+          <!-- PLACEHOLDER-post-01.jpg — royalty-free stock (Unsplash) -->
+          <img src="https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?auto=format&fit=crop&w=700&q=70" width="700" height="394" loading="lazy" decoding="async"
+               alt="Cena de mergulho ou de mar, sem pessoas — imagem ilustrativa">
+        </div>
+        <div class="post__b">
+          <h3>Batismo de mergulho em Floripa: o que esperar</h3>
+          <p>Conteúdo proposto — a escrever com vocês. <span class="cfm">[CONFIRM]</span></p>
+        </div>
+      </article>
+      <article class="post" data-rv>
+        <div class="post__i">
+          <!-- PLACEHOLDER-post-02.jpg — royalty-free stock (Unsplash) -->
+          <img src="https://images.unsplash.com/photo-1470107355970-2ace9f20ab15?auto=format&fit=crop&w=700&q=70" width="700" height="394" loading="lazy" decoding="async"
+               alt="Cena de mergulho ou de mar, sem pessoas — imagem ilustrativa">
+        </div>
+        <div class="post__b">
+          <h3>Ilha do Xavier, Aranhas ou Campeche — como escolhemos o ponto</h3>
+          <p>Conteúdo proposto — a escrever com vocês. <span class="cfm">[CONFIRM]</span></p>
+        </div>
+      </article>
+      <article class="post" data-rv>
+        <div class="post__i">
+          <!-- PLACEHOLDER-post-03.jpg — royalty-free stock (Unsplash) -->
+          <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=700&q=70" width="700" height="394" loading="lazy" decoding="async"
+               alt="Cena de mergulho ou de mar, sem pessoas — imagem ilustrativa">
+        </div>
+        <div class="post__b">
+          <h3>Do Open Water ao Dive Master: como funciona a progressão</h3>
+          <p>Conteúdo proposto — a escrever com vocês. <span class="cfm">[CONFIRM]</span></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 16 · FAQ -->
+<section class="sec band-5">
+  <div class="wrap wrap--n">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Perguntas frequentes</p>
+      <h2 class="h-lg">O que um visitante pergunta antes de mergulhar num país onde acabou de chegar.</h2>
+    </div>
+    <div class="faq" data-rv>
+      <details><summary>Preciso saber nadar?</summary><p>A home deles diz que não, para o Batismo. A página do Open Water exige saber nadar. Enquanto os arranjos de segurança que sustentam a primeira frase não forem publicados, ela não é repetida aqui: <span class="cfm">[CONFIRM]</span></p></details>
+      <details><summary>Preciso de atestado médico?</summary><p>O Open Water exige aprovação médica para a atividade. Para o Batismo e o snorkel: <span class="cfm">[CONFIRM]</span></p></details>
+      <details><summary>Qual a idade mínima?</summary><p>O Open Water deles é a partir de 10 anos, com certificação júnior até os 15. Para o Batismo, o snorkel e o passeio: <span class="cfm">[CONFIRM]</span></p></details>
+      <details><summary>Por que o portão fecha 20 minutos depois de abrir?</summary><p>Porque o barco sai. É regra publicada por eles: 08h/14h para estar no portão, 08:20/14:20 e ele fecha. Chegar depois disso significa não embarcar — e isso é condição de perda do depósito, por isso aparece aqui e no momento da reserva.</p></details>
+      <details><summary>Por que mínimo de duas pessoas?</summary><p>Regra deles para a saída acontecer. Se você estiver sozinho: <span class="cfm">[CONFIRM]</span></p></details>
+      <details><summary>Como funciona o depósito de R$ 60?</summary><p>R$ 60,00 por pessoa, por depósito, transferência ou Pix, para reservar. O saldo é pago na escola. Remarcação ou cancelamento até 24h antes; com menos de 24h, o depósito é perdido.</p></details>
+      <details><summary>O que a taxa de +R$ 100 cobre?</summary><p>No mergulho credenciado, quando é necessário um instrutor ou dive master para guiar o mergulho. As condições que disparam essa cobrança: <span class="cfm">[CONFIRM]</span></p></details>
+      <details><summary>Em qual ilha vamos mergulhar?</summary><p>Ilha do Xavier, Ilha das Aranhas ou Ilha do Campeche — a escolha depende das condições do mar e do vento, no dia. Profundidades de 0 a 34 m.</p></details>
+      <details><summary>Minha certificação é aceita?</summary><p>O que eles pedem para o mergulho credenciado — carteirinha, logbook, recência: <span class="cfm">[CONFIRM]</span></p></details>
+      <details><summary>O seguro está incluso?</summary><p><span class="cfm">[CONFIRM]</span></p></details>
+      <details><summary>Quais formas de pagamento?</summary><p>Pix, depósito ou transferência para o sinal — publicado por eles. Para o saldo pago na escola: <span class="cfm">[CONFIRM]</span></p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 17 · CTA band -->
+<section class="sec sec--t ctaband">
+  <div class="wrap wrap--n">
+    <h2 class="h-lg" data-rv>Reserve seu mergulho.</h2>
+    <p style="margin:14px auto 0;max-width:52ch;color:rgba(255,255,255,.94)" data-rv>Saídas às 08h e às 14h, todos os dias. Sinal de R$ 60 por pessoa.</p>
+    <div class="btn-row" style="justify-content:center" data-rv>
+      <a class="btn btn--deep" href="#reservas">Reservar agora <span class="ar">&rarr;</span></a>
+      <a class="btn btn--wa" href="#" data-wa>WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- 18 · Contato & mapa -->
+<section class="sec band-5" id="contato">
+  <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,3.4vw,52px);align-items:start">
+    <div data-rv>
+      <p class="eyebrow">Contato</p>
+      <h2 class="h-lg">Rua Laurindo José de Souza, 895.</h2>
+      <p class="lede" style="margin-top:14px">Barra da Lagoa, Florianópolis — SC · CEP 88061-440</p>
+      <ul class="dist">
+        <li><b>WhatsApp</b> <span><a href="#" data-wa>+55 48 99904-2041</a></span></li>
+        <li><b>E-mail</b> <span><a href="#" data-email>contato@floripadive.com.br</a></span></li>
+        <li><b>Saídas</b> <span>08h · 14h — todos os dias</span></li>
+        <li><b>Portão fecha</b> <span>08:20 · 14:20</span></li>
+        <li><b>Instagram</b> <span><a href="https://www.instagram.com/floripadive" target="_blank" rel="noopener">@floripadive</a></span></li>
+        <li><b>Facebook</b> <span><a href="https://www.facebook.com/Floripadive" target="_blank" rel="noopener">/Floripadive</a></span></li>
+      </ul>
+    </div>
+    <div class="map" data-rv role="img" aria-label="Mapa — Rua Laurindo José de Souza, 895, Barra da Lagoa">
+      <div class="map__grid" aria-hidden="true"></div>
+      <div>
+        <div class="pin" aria-hidden="true"></div>
+        <strong style="display:block;font-size:1.2rem">Barra da Lagoa</strong>
+        <span style="font-size:.9rem;color:#A9CBDA">Fortaleza da Barra · CEP 88061-440</span>
+        <p style="margin:12px 0 0;font-size:.84rem;color:#A9CBDA">Embed do Google Maps entra aqui na implantação.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- 19 · Footer. ⚠ The hard-coded "© 2023" on their current site is corrected. -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <span class="brand">Floripa <span>Dive</span><small>Barra da Lagoa · Florianópolis</small></span>
+        <p style="font-size:.9rem;max-width:34ch">Rua Laurindo José de Souza, 895<br>Barra da Lagoa — Florianópolis — SC<br>CEP 88061-440</p>
+        <p style="font-size:.9rem"><a href="#" data-tel>+55 48 99904-2041</a> · <a href="#" data-email>contato@floripadive.com.br</a></p>
+      </div>
+      <div>
+        <h4>Mergulhos</h4>
+        <ul>
+          <li><a href="#batismo">Mergulho de Batismo</a></li>
+          <li><a href="#mergulhos">Mergulho credenciado</a></li>
+          <li><a href="#mergulhos">Snorkel</a></li>
+          <li><a href="#mergulhos">Passeio Ilha do Xavier</a></li>
+          <li><a href="#ilhas">Onde mergulhamos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Registros</h4>
+        <ul>
+          <li>CNPJ <span class="cfm">[CONFIRM]</span></li>
+          <li>CADASTUR <span class="cfm">[CONFIRM]</span></li>
+          <li>Filiação NAUI <span class="cfm">[CONFIRM]</span></li>
+          <li>Registro da embarcação (Marinha) <span class="cfm">[CONFIRM]</span></li>
+          <li>Seguro <span class="cfm">[CONFIRM]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
+          <li><a href="privacidade.html#cookies">Preferências de cookies</a></li>
+          <li>Termos de Uso <span class="cfm">[CONFIRM]</span></li>
+          <li><a href="en/index.html" hreflang="en">English</a></li>
+        </ul>
+        <a class="btn btn--wa btn--sm" style="margin-top:14px" href="#" data-wa>WhatsApp</a>
+      </div>
+    </div>
+    <div class="ftr__bot">
+      <span>© 2026 Floripa Dive · Razão social <span class="cfm">[CONFIRM]</span></span>
+      <span>Mockup — imagens de banco de imagens, substituir antes do lançamento.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 20 · Floating WhatsApp + mobile bottom bar -->
+<a class="wa" href="#" data-wa aria-label="WhatsApp +55 48 99904-2041"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.24-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg></a>
+<div class="mbar">
+  <a class="btn" href="#" data-wa>WhatsApp</a>
+  <a class="btn btn--go" href="#reservas">Reservar</a>
+</div>
+
+<!-- 21 · LGPD — their current site has NO consent mechanism at all -->
+<div class="ck" role="dialog" aria-label="Preferências de cookies">
+  <div class="ck__in">
+    <div>
+      <p><strong>Cookies e dados pessoais.</strong>
+        Só o essencial fica ligado. Analytics e marketing ficam desligados até você ligar. O questionário médico exigido para mergulhar é dado sensível de saúde e nunca é coletado por este site.
+        <a href="privacidade.html">Política de Privacidade</a></p>
+      <div class="ck__opts">
+        <label><input type="checkbox" checked disabled> Essenciais</label>
+        <label><input type="checkbox" id="ckA"> Analytics</label>
+        <label><input type="checkbox" id="ckM"> Marketing</label>
+      </div>
+    </div>
+    <div class="ck__btns">
+      <button class="btn btn--ghost btn--sm" data-ck="none">Rejeitar</button>
+      <button class="btn btn--ghost btn--sm" data-ck="save">Salvar</button>
+      <button class="btn btn--sm" data-ck="all">Aceitar</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

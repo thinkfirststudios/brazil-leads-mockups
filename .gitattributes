@@ -1,0 +1,11 @@
+# Every file in this repo is generated with LF endings. Keep it that way so the
+# working copy on Windows does not produce a whole-repo diff of line endings.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.avif binary
+*.ico binary
+*.pdf binary

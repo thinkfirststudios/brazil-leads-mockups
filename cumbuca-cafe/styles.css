@@ -1,0 +1,389 @@
+/* ==========================================================================
+   CUMBUCA CAFÉ — Florianópolis, SC
+   Spec mockup. THE DELIBERATE OUTLIER OF THE BATCH.
+
+   This build argues AGAINST the lodging references rather than with them.
+   Warm-brown serif cosy-café styling is exactly what signals "commodity café"
+   to the audience Cumbuca wants, so only ref-02's INFORMATION SKELETON is kept
+   — utility topbar, value row, priced product grid, gallery + location,
+   footer — and every surface is rebuilt in a contemporary editorial idiom.
+
+   Rules held throughout:
+     · off-white paper ground, near-black type, ONE hot accent
+     · large tight-tracked grotesk for headings; a small serif reserved ONLY
+       for coffee origin data
+     · asymmetric 12-column grid with real whitespace
+     · HAIRLINE RULES instead of cards — NO DROP SHADOWS ANYWHERE
+     · no corner radius above 4px (the circle motif is the exception, and it
+       is a full circle, not a rounded rectangle)
+     · gradients almost absent: this palette works flat. Only two are allowed —
+       Terracota → #9E3C1F on button hover, and Grafite → transparent as a
+       bottom scrim on the hero image. Nothing decorative.
+
+   ⚠ Palette is PROPOSED, not derived — Instagram-only, no brand assets are
+     retrievable. [CONFIRM against their logo]
+
+   ⚠ CONTRAST: Terracota #C4522E on Papel #F4F2ED ≈ 4.6:1 — passes AA at body
+     size, and it is used sparingly and never as a large fill. Concreto #8C8A84
+     on Papel ≈ 2.9:1 — FAILS, so it is used for RULES and for type at 15px+
+     only where it sits on Papel at ≥ 1.15rem... in practice this build keeps
+     all Concreto body copy at #6E6C67 (≈ 4.9:1) and reserves #8C8A84 strictly
+     for hairlines and non-text marks.
+   ========================================================================== */
+
+:root{
+  --papel:#F4F2ED;
+  --grafite:#141414;
+  --terra:#C4522E;
+  --terra-dk:#9E3C1F;
+  --concreto:#8C8A84;      /* rules and non-text marks ONLY */
+  --secondary:#6E6C67;     /* the readable grey used for actual body copy */
+  --argila:#D8CFC2;
+  --verde:#4C5B45;
+
+  --grotesk:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;   /* origin data only */
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace; /* prices */
+
+  --wrap:1300px;
+  --gut:clamp(18px,4.6vw,64px);
+  --hair:1px solid var(--concreto);
+  --hair-lt:1px solid rgba(140,138,132,.42);
+  --ease:cubic-bezier(.2,.7,.25,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--papel);color:var(--grafite);
+  font-family:var(--grotesk);font-size:16.5px;line-height:1.62;font-weight:400;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+h1,h2,h3,h4{margin:0;font-family:var(--grotesk);font-weight:600;line-height:1;
+  letter-spacing:-.045em;color:var(--grafite)}
+p{margin:0 0 1em}
+:focus-visible{outline:2px solid var(--terra);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-9999px;top:0;z-index:200;background:var(--grafite);color:var(--papel);padding:12px 20px}
+.skip:focus{left:0}
+
+.wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gut)}
+.wrap--n{max-width:860px}
+/* asymmetric 12-column grid — the whitespace is the point */
+.g12{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(16px,2.4vw,34px)}
+.sec{padding-block:clamp(64px,9vw,150px);position:relative}
+.sec--t{padding-block:clamp(38px,5vw,74px)}
+.argila{background:var(--argila)}
+.dark{background:var(--grafite);color:#CFCDC8}
+.dark h1,.dark h2,.dark h3{color:var(--papel)}
+.verde-rule{border-top:2px solid var(--verde);padding-top:26px}
+
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--terra);margin:0 0 18px}
+.dark .eyebrow{color:var(--argila)}
+.h-xl{font-size:clamp(2.9rem,9vw,7rem)}
+.h-lg{font-size:clamp(2.1rem,5vw,4rem)}
+.h-md{font-size:clamp(1.5rem,2.6vw,2.2rem)}
+.h-sm{font-size:clamp(1.1rem,1.6vw,1.35rem);letter-spacing:-.03em}
+.lede{font-size:clamp(1rem,1.35vw,1.16rem);color:var(--secondary);max-width:56ch;letter-spacing:-.008em}
+.dark .lede{color:#B4B2AD}
+.sec-head{margin-bottom:clamp(30px,4.4vw,60px)}
+.sec-head--row{display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;align-items:flex-end}
+
+/* ---------- [CONFIRM] — this build is Instagram-only, so these are everywhere.
+   Kept as a hairline-boxed mark rather than a coloured badge, to stay in
+   register with the rest of the type. ---------- */
+.cfm{display:inline-block;border:1px dashed var(--terra);color:var(--terra-dk);
+  padding:.05em .45em;font-size:.85em;font-weight:600;font-style:normal;
+  letter-spacing:-.01em;background:rgba(196,82,46,.06)}
+.dark .cfm{border-color:var(--argila);color:var(--argila);background:rgba(216,207,194,.12)}
+.cfm-note{border-top:2px solid var(--terra);padding:16px 0 0;color:var(--terra-dk);
+  font-size:.92rem;margin:0 0 22px;max-width:62ch}
+.dark .cfm-note{border-color:var(--argila);color:var(--argila)}
+
+/* ---------- Buttons — flat, square, one hot accent ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:15px 28px;border-radius:2px;font-size:.78rem;font-weight:600;letter-spacing:.06em;
+  text-transform:uppercase;background:var(--terra);color:#fff;
+  transition:background .22s var(--ease),transform .22s var(--ease)}
+/* the ONLY permitted decorative gradient in the whole build */
+.btn:hover{background-image:linear-gradient(135deg,var(--terra) 0%,var(--terra-dk) 100%);
+  transform:translateY(-1px)}
+.btn .ar{transition:transform .22s var(--ease)}
+.btn:hover .ar{transform:translateX(5px)}
+.btn--ghost{background:transparent;color:var(--grafite);border:1px solid var(--grafite)}
+.btn--ghost:hover{background:var(--grafite);color:var(--papel);background-image:none}
+.dark .btn--ghost{color:var(--papel);border-color:var(--papel)}
+.dark .btn--ghost:hover{background:var(--papel);color:var(--grafite)}
+.btn--dark{background:var(--grafite)}
+.btn--dark:hover{background-image:none;background:#000}
+.btn--wa{background:#12A150}
+.btn--wa:hover{background-image:none;background:#0C7C3C}
+.btn--sm{padding:10px 18px;font-size:.7rem}
+.btn--full{width:100%}
+/* no number is confirmed, so the control says so rather than dialling a guess */
+.btn[data-unconfirmed]{background:transparent;color:var(--secondary);
+  border:1px dashed var(--terra)}
+.btn[data-unconfirmed]:hover{background:transparent;background-image:none;transform:none;color:var(--secondary)}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+
+/* ---------- Topbar — thin Grafite strip, live hours, no social clutter ------ */
+.top{background:var(--grafite);color:#B4B2AD;font-size:.76rem;padding-block:9px;
+  letter-spacing:.01em}
+.top__in{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.top a:hover{color:var(--papel)}
+.top__l{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--concreto);
+  margin-right:7px;vertical-align:1px}
+.dot--open{background:#4C9A5B}
+.dot--shut{background:var(--terra)}
+.lang{display:flex;gap:12px}
+.lang a{color:#B4B2AD}
+.lang a.on{color:var(--papel);text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- Header — transparent over hero, SNAPS to solid Grafite.
+              No fade, no blur. ---------- */
+.hdr{position:sticky;top:0;z-index:90;padding-block:20px;background:transparent;
+  transition:background .01s}
+.hdr.is-stuck{background:var(--grafite)}
+.hdr__in{display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{font-size:1.5rem;font-weight:600;letter-spacing:-.06em;color:var(--papel)}
+.brand span{color:var(--terra)}
+.hdr.is-stuck .brand{color:var(--papel)}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a{font-size:.79rem;font-weight:500;letter-spacing:.02em;color:var(--papel);
+  padding-block:3px;border-bottom:1px solid transparent;transition:border-color .2s}
+.nav a:hover,.nav a[aria-current]{border-bottom-color:var(--terra)}
+.hdr__r{display:flex;align-items:center;gap:12px}
+.burger{display:none;width:42px;height:42px;position:relative}
+.burger span{position:absolute;left:10px;width:22px;height:1.5px;background:var(--papel);transition:.24s var(--ease)}
+.burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:27px}
+.burger.on span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.on span:nth-child(2){opacity:0}
+.burger.on span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:89;background:var(--grafite);display:flex;flex-direction:column;
+  justify-content:center;gap:0;padding:96px var(--gut) 40px;
+  opacity:0;visibility:hidden;transition:opacity .26s var(--ease),visibility .26s}
+.mnav.on{opacity:1;visibility:visible}
+.mnav a{font-size:clamp(1.9rem,9vw,3rem);font-weight:600;letter-spacing:-.05em;color:var(--papel);
+  padding-block:12px;border-bottom:1px solid rgba(244,242,237,.2)}
+
+/* ---------- Hero — asymmetric, NOT centred. The circle sits off-centre-right,
+              the headline sits left and breaks hard. ---------- */
+.hero{position:relative;background:var(--grafite);color:var(--papel);
+  padding-block:clamp(80px,13vw,190px) clamp(64px,9vw,130px);margin-top:-78px;padding-top:158px}
+.hero__g{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(24px,4vw,64px);align-items:center}
+.hero h1{color:var(--papel);font-size:clamp(2.8rem,8.4vw,6.4rem);letter-spacing:-.055em}
+.hero h1 em{font-style:normal;color:var(--terra)}
+.hero p{color:#B4B2AD;max-width:38ch;margin-top:22px;font-size:1.04rem}
+/* ⭐ the circle motif — a CSS mask on a RECTANGULAR source, never baked into
+   the asset, so the same photography is reusable elsewhere */
+.circ{position:relative;aspect-ratio:1;border-radius:50%;overflow:hidden;
+  width:min(100%,540px);margin-inline:auto}
+.circ img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.circ:hover img{transform:scale(1.03)}
+/* the only other permitted gradient: Grafite → transparent, hero scrim */
+.circ--hero::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(0deg,rgba(20,20,20,.42) 0%,rgba(20,20,20,0) 46%)}
+/* the brew ring — a slow rotating Terracota arc, the name motif in motion */
+.ring{position:absolute;inset:-14px;border-radius:50%;border:1px solid rgba(196,82,46,.55);
+  border-top-color:var(--terra);border-right-color:transparent;
+  animation:spin 22s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ---------- Manifesto band ---------- */
+.manifesto{font-size:clamp(1.4rem,3vw,2.4rem);line-height:1.22;letter-spacing:-.04em;
+  font-weight:500;max-width:24ch}
+
+/* ---------- ⭐ Cardápio — hairline-ruled rows, NOT cards ---------- */
+.cats{position:sticky;top:66px;z-index:40;background:var(--papel);
+  border-bottom:var(--hair);padding-block:14px;display:flex;gap:10px;flex-wrap:wrap;
+  margin-bottom:clamp(26px,3.4vw,44px)}
+.cats button{font-size:.76rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  padding:8px 14px;border:1px solid transparent;border-radius:2px;color:var(--secondary);
+  transition:.2s var(--ease)}
+.cats button:hover{color:var(--grafite);border-color:var(--concreto)}
+/* active state is never colour-only: it also gets a solid fill and aria-current */
+.cats button[aria-current="true"]{background:var(--grafite);color:var(--papel);border-color:var(--grafite)}
+
+.menu{border-top:var(--hair)}
+.row{display:grid;grid-template-columns:84px 1fr auto;gap:clamp(14px,2vw,26px);
+  align-items:start;padding-block:22px;border-bottom:var(--hair-lt);
+  transition:background .2s var(--ease)}
+.row:hover{background:rgba(216,207,194,.34)}
+.row__i{width:84px;height:84px;overflow:hidden;border-radius:2px;background:var(--argila)}
+.row__i img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.row:hover .row__i img{transform:scale(1.05)}
+.row h3{font-size:1.06rem;letter-spacing:-.03em;margin-bottom:5px}
+.row p{font-size:.88rem;color:var(--secondary);margin:0 0 9px;max-width:52ch}
+/* origin data — the ONE place the serif is allowed */
+.origin{font-family:var(--serif);font-size:.92rem;color:var(--grafite);
+  display:grid;gap:3px;margin:9px 0 0;padding-top:9px;border-top:var(--hair-lt);max-width:46ch}
+.origin span{display:flex;gap:10px}
+.origin b{font-family:var(--grotesk);font-size:.66rem;font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--secondary);min-width:96px;padding-top:4px}
+/* price column — monospaced so the figures align down the page */
+.row__p{font-family:var(--mono);font-size:.98rem;font-weight:500;white-space:nowrap;
+  padding-top:2px;text-align:right}
+/* allergens — ANVISA RDC 26/2015 is not optional, so these are structural */
+.alg{display:flex;flex-wrap:wrap;gap:6px}
+.alg span{font-size:.66rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
+  border:1px solid var(--concreto);padding:4px 8px;color:var(--secondary);border-radius:2px}
+.alg span.glu{border-color:var(--terra);color:var(--terra-dk)}
+.alg span.no{border-color:var(--verde);color:var(--verde)}
+.grp{padding-block:clamp(26px,3.4vw,46px) 6px}
+.grp h3{font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--secondary)}
+
+/* ---------- Métodos — horizontal scroll of circular crops ---------- */
+.hscroll{display:flex;gap:clamp(16px,2.4vw,32px);overflow-x:auto;scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;padding-bottom:14px;scrollbar-width:none}
+.hscroll::-webkit-scrollbar{display:none}
+.hscroll > *{flex:0 0 min(260px,64vw);scroll-snap-align:start}
+.method{text-align:center}
+.method .circ{width:100%}
+.method b{display:block;margin-top:16px;font-size:1rem;letter-spacing:-.02em}
+.method span{font-size:.84rem;color:var(--secondary)}
+
+/* ---------- Spec list — the "Espaço" section, plain and honest ---------- */
+.spec{border-top:var(--hair)}
+.spec li{display:flex;justify-content:space-between;align-items:baseline;gap:20px;
+  padding-block:15px;border-bottom:var(--hair-lt);font-size:.95rem}
+.spec b{font-weight:500}
+.spec span{color:var(--secondary);text-align:right}
+
+/* ---------- Product cards (beans) ---------- */
+.prods{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.6vw,36px)}
+.prod{border-top:2px solid var(--grafite);padding-top:20px}
+.prod .circ{width:min(100%,240px);margin:0 0 18px}
+.prod h3{font-size:1.14rem;margin-bottom:10px}
+
+/* ---------- Gallery ---------- */
+.gal3{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2.4vw,30px)}
+
+/* ---------- Map ---------- */
+.map{aspect-ratio:1;border:var(--hair);position:relative;display:grid;place-items:center;
+  text-align:center;padding:26px;background:var(--argila)}
+.map__grid{position:absolute;inset:0;opacity:.4;
+  background-image:linear-gradient(rgba(20,20,20,.14) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(20,20,20,.14) 1px,transparent 1px);
+  background-size:36px 36px}
+.map>div{position:relative;z-index:2}
+
+/* ---------- Forms ---------- */
+.field label{display:block;font-size:.68rem;font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--secondary);margin-bottom:8px}
+.field input,.field select,.field textarea{width:100%;padding:13px 0;font:inherit;font-size:.96rem;
+  background:transparent;border:0;border-bottom:var(--hair);border-radius:0;color:var(--grafite)}
+.field textarea{min-height:106px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-bottom-color:var(--terra)}
+.dark .field input,.dark .field select,.dark .field textarea{color:var(--papel);border-bottom-color:rgba(244,242,237,.34)}
+.dark .field label{color:#B4B2AD}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.4vw,30px);margin-bottom:22px}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:.84rem;color:var(--secondary);margin:4px 0 20px}
+.consent input{margin-top:5px;accent-color:var(--terra)}
+.consent a{color:var(--grafite);text-decoration:underline}
+.dark .consent{color:#B4B2AD}
+.dark .consent a{color:var(--papel)}
+
+/* ---------- Reviews — structure only, deliberately EMPTY ----------
+   There is NO CSS for a review card, a star row or a rating figure on this
+   build, on purpose: nothing is verified and nothing will be fabricated. */
+.rev-empty{border:1px dashed var(--terra);padding:clamp(28px,4vw,56px);text-align:center}
+.rev-empty p{color:var(--terra-dk);max-width:54ch;margin-inline:auto;font-size:.96rem}
+
+/* ---------- Footer ---------- */
+.ftr{background:var(--grafite);color:#B4B2AD;padding-block:clamp(56px,7vw,104px) 0}
+.ftr h4{font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--terra);margin-bottom:18px}
+.ftr__grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:clamp(24px,3.4vw,52px)}
+.ftr ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:.88rem}
+.ftr a:hover{color:var(--papel)}
+.ftr .brand{display:block;margin-bottom:16px}
+.ftr__bot{margin-top:clamp(36px,4.6vw,64px);border-top:1px solid rgba(244,242,237,.2);
+  padding-block:22px 30px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
+  align-items:center;font-size:.76rem;color:#8C8A84}
+/* the gluten + allergen statement is a footer fixture, not a hidden note */
+.allerg{border-top:1px solid rgba(244,242,237,.2);margin-top:26px;padding-top:22px;font-size:.82rem;
+  color:#B4B2AD;max-width:78ch}
+
+/* ---------- Sticky mobile bar — deliberately minimal ---------- */
+.mbar{display:none}
+.wa{position:fixed;right:16px;bottom:16px;z-index:80;width:54px;height:54px;border-radius:50%;
+  background:#12A150;display:grid;place-items:center;transition:transform .22s var(--ease)}
+.wa:hover{transform:scale(1.06)}
+.wa svg{width:27px;height:27px;fill:#fff}
+.wa[data-unconfirmed]{background:var(--argila)}
+.wa[data-unconfirmed] svg{fill:var(--grafite)}
+.wa__cfm{position:absolute;right:62px;top:50%;transform:translateY(-50%);white-space:nowrap;
+  background:var(--grafite);color:var(--papel);font-size:.66rem;font-weight:600;padding:6px 10px;border-radius:2px}
+
+/* ---------- LGPD ---------- */
+.ck{position:fixed;left:0;right:0;bottom:0;z-index:95;background:var(--papel);
+  border-top:2px solid var(--grafite);padding:20px var(--gut);
+  transform:translateY(112%);transition:transform .34s var(--ease)}
+.ck.on{transform:none}
+.ck__in{max-width:var(--wrap);margin-inline:auto;display:grid;grid-template-columns:1.5fr 1fr;
+  gap:22px;align-items:center}
+.ck p{font-size:.86rem;margin:0;color:var(--secondary)}
+.ck a{color:var(--grafite);text-decoration:underline}
+.ck__opts{display:flex;flex-wrap:wrap;gap:16px;margin-top:11px;font-size:.82rem}
+.ck__opts label{display:flex;gap:8px;align-items:center}
+.ck__opts input{accent-color:var(--terra)}
+.ck__btns{display:flex;flex-wrap:wrap;gap:9px;justify-content:flex-end}
+
+/* ---------- Reveal ---------- */
+[data-rv]{opacity:0;transform:translateY(18px);
+  transition:opacity .5s var(--ease),transform .5s var(--ease)}
+[data-rv].in{opacity:1;transform:none}
+
+/* ---------- Legal ---------- */
+.legal{max-width:820px;margin-inline:auto;padding-block:clamp(46px,6vw,92px)}
+.legal h2{margin:34px 0 12px;font-size:1.5rem}
+.legal h3{margin:22px 0 10px;font-size:1.14rem}
+.legal ul{padding-left:20px;display:grid;gap:8px;margin-bottom:18px}
+.legal table{width:100%;border-collapse:collapse;margin:18px 0;font-size:.9rem}
+.legal th,.legal td{border-bottom:var(--hair-lt);padding:11px 12px 11px 0;text-align:left;vertical-align:top}
+.legal th{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--secondary);font-weight:600}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1080px){
+  .nav{display:none}
+  .burger{display:block}
+  .prods,.gal3{grid-template-columns:repeat(2,1fr)}
+  .hero__g{grid-template-columns:1fr;gap:44px}
+  .hero{padding-top:120px;margin-top:-70px}
+  .circ{width:min(100%,420px)}
+}
+@media (max-width:760px){
+  .ck__in{grid-template-columns:1fr}
+  .ck__btns{justify-content:flex-start}
+  .ftr__grid{grid-template-columns:1fr 1fr}
+  .sec-head--row{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:560px){
+  body{padding-bottom:60px}
+  .wa{bottom:74px;width:48px;height:48px}
+  .mbar{display:grid;grid-template-columns:1fr auto;gap:0;position:fixed;left:0;right:0;bottom:0;
+    z-index:82;padding-bottom:env(safe-area-inset-bottom);background:var(--grafite)}
+  .mbar .btn{border-radius:0;padding:17px 8px}
+  .mbar .btn:hover{transform:none}
+  .prods,.gal3,.fr,.ftr__grid{grid-template-columns:1fr}
+  /* the menu row keeps its image but drops to two columns */
+  .row{grid-template-columns:64px 1fr;row-gap:10px}
+  .row__i{width:64px;height:64px}
+  .row__p{grid-column:2;text-align:left}
+  .cats{top:0}
+  .top__in{justify-content:center;text-align:center}
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;
+    transition-duration:.001ms!important;scroll-behavior:auto!important}
+  [data-rv]{opacity:1;transform:none}
+  .ring{animation:none}
+  .hscroll{scroll-behavior:auto}
+}

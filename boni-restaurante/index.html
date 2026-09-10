@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  BONI RESTAURANTE — @bonigastronomia · Florianópolis, SC
+  SPEC MOCKUP — lead not signed.
+
+  ⚠ INSTAGRAM-ONLY LEAD. The handle and the one-line source description are the
+    only confirmed facts. Cuisine, address, hours, chef, prices, awards and
+    ownership are ALL unverified and stay visible as [CONFIRM].
+  ⚠ NO DISH, INGREDIENT OR PRICE IS INVENTED — the whole cardápio renders from
+    one array in script.js and every line ships as a visible placeholder.
+  ⚠ NO CHEF BIOGRAPHY IS INVENTED. On a gastronomia-positioned lead that is the
+    single most damaging possible fabrication.
+  ⚠ NO award, guide star, ranking, review score or press mention appears here —
+    and aggregateRating is deliberately ABSENT from the JSON-LD.
+  ⚠ All photography is royalty-free stock placeholder. No minors in any image.
+  ============================================================================
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Boni Restaurante — Cozinha Autoral em [CONFIRM bairro], Florianópolis</title>
+<meta name="description" content="Boni Restaurante — cozinha autoral em Florianópolis, SC. Cardápio, reservas pelo WhatsApp e horários. [CONFIRM bairro].">
+<meta name="robots" content="noindex,nofollow">
+<link rel="alternate" hreflang="pt-BR" href="https://example.com/">
+<link rel="alternate" hreflang="en" href="https://example.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://example.com/">
+<link rel="canonical" href="https://example.com/">
+<meta property="og:type" content="restaurant">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=72">
+<!-- NOTE: aggregateRating is intentionally omitted. It is added only when real,
+     sourced review data exists. Fabricated review markup is a Google penalty. -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"Restaurant","name":"Boni Restaurante",
+  "servesCuisine":"[CONFIRM]","priceRange":"[CONFIRM]","acceptsReservations":true,
+  "menu":"https://example.com/#cardapio",
+  "address":{"@type":"PostalAddress","streetAddress":"[CONFIRM]","addressLocality":"Florianópolis",
+    "addressRegion":"SC","postalCode":"[CONFIRM]","addressCountry":"BR"},
+  "geo":{"@type":"GeoCoordinates","latitude":"[CONFIRM]","longitude":"[CONFIRM]"},
+  "telephone":"[CONFIRM]",
+  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"[CONFIRM]",
+    "opens":"[CONFIRM]","closes":"[CONFIRM]"}],
+  "sameAs":["https://www.instagram.com/bonigastronomia/"]
+}
+</script>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="#">boni</a>
+    <nav class="nav" aria-label="Navegar"><a href="#cardapio">Cardápio</a><a href="#almoco">Almoço</a><a href="#cozinha">A Cozinha</a><a href="#galeria">Galeria</a><a href="#reservas">Reservas</a><a href="#contato">Contato</a></nav>
+    <div class="hdr__cta">
+      <div class="lang" role="group" aria-label="Idioma"><a class="on" href="index.html" hreflang="pt-BR">PT</a><a href="en/index.html" hreflang="en">EN</a></div>
+      <a class="btn btn--sm" href="#reservas">Reservar</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mnav"><a href="#cardapio">Cardápio</a><a href="#almoco">Almoço</a><a href="#cozinha">A Cozinha</a><a href="#galeria">Galeria</a><a href="#reservas">Reservas</a><a href="#contato">Contato</a></nav>
+
+<main>
+
+<!-- HERO — asymmetric, left-weighted, type-led -->
+<section class="hero">
+  <div class="hero__t">
+    <p class="eyebrow">Florianópolis · Santa Catarina</p>
+    <h1 class="hero__mark">boni</h1>
+    <p class="hero__tag"><span class="cfm">[CONFIRM tagline — não inventar]</span></p>
+    <div class="btn-row">
+      <a class="btn btn--wa" href="https://wa.me/5548000000000" target="_blank" rel="noopener">
+        Reservar no WhatsApp <span class="ar">&rarr;</span></a>
+      <a class="btn btn--line" href="#cardapio">Ver Cardápio</a>
+    </div>
+  </div>
+  <div class="hero__i">
+    <!-- PLACEHOLDER-hero-prato.jpg · portrait 4:5, bleeding past the top of the fold -->
+    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=72" alt="Prato principal fotografado em ângulo baixo de três quartos sobre louça escura — composição limpa, espaço negativo, um único acento de cor, luz suave de janela." fetchpriority="high" width="1200" height="1500">
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust" aria-label="Cozinha autoral"><div class="trust__c" data-rv><div class="trust__i"><svg viewBox="0 0 24 24"><path d="M12 2 4 7v10l8 5 8-5V7z"/><path d="m8 12 3 3 5-6"/></svg></div><p class="trust__t">Cozinha autoral</p><p class="cfm" style="font-size:.74rem">[CONFIRM]</p></div><div class="trust__c" data-rv><div class="trust__i"><svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M5 8c0 4 3 7 7 7M19 8c0 4-3 7-7 7"/></svg></div><p class="trust__t">Ingredientes da estação</p><p class="cfm" style="font-size:.74rem">[CONFIRM]</p></div><div class="trust__c" data-rv><div class="trust__i"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20l1.2-5.3A8.4 8.4 0 1 1 21 11.5z"/></svg></div><p class="trust__t">Reserva pelo WhatsApp</p><p class="cfm" style="font-size:.74rem">[CONFIRM]</p></div><div class="trust__c" data-rv><div class="trust__i"><svg viewBox="0 0 24 24"><path d="M12 20c4-6 7-9 7-12a7 7 0 0 0-14 0c0 3 3 6 7 12z"/></svg></div><p class="trust__t">Opções vegetarianas</p><p class="cfm" style="font-size:.74rem">[CONFIRM]</p></div><div class="trust__c" data-rv><div class="trust__i"><svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20"/></svg></div><p class="trust__t">Aceitamos Pix</p><p class="cfm" style="font-size:.74rem">[CONFIRM]</p></div></section>
+
+<!-- ⭐ CARDÁPIO -->
+<section class="sec" id="cardapio">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Cardápio</p>
+      <h2 class="h-lg">O cardápio, legível antes da escolha</h2>
+      <p class="lede" style="margin-top:18px">Quem decide onde gastar R$ 200 num jantar lê o cardápio primeiro. Hoje o de vocês é uma foto dentro de um destaque do Instagram: o Google não indexa, um leitor de tela não fala e um visitante não traduz.</p>
+    </div>
+    <p class="cfm-block" data-rv>[CONFIRM — nenhum prato, ingrediente ou preço desta página é real. O cardápio inteiro sai de um único array em <code>script.js</code> e pode ser colado ao vivo na reunião. Preços em reais (R$), vírgula decimal — nunca convertidos.]</p>
+
+    <div class="menu">
+      <div id="menuList"></div>
+      <aside class="menu__photo" id="menuPhoto" aria-hidden="true"></aside>
+    </div>
+
+    <details class="deg" data-rv>
+      <summary>Menu degustação</summary>
+      <div class="deg__b"><p class="cfm-block" style="margin:0">[CONFIRM se existe menu degustação. Não inventar tempos, pratos ou harmonizações. Se existir, o preço é <strong>por pessoa</strong> e isso precisa estar dito com todas as letras (CDC).]</p></div>
+    </details>
+  </div>
+</section>
+
+<!-- ALMOÇO EXECUTIVO -->
+<section class="sec band" id="almoco">
+  <div class="wrap split">
+    <div class="split__t" data-rv>
+      <p class="eyebrow">Almoço executivo</p>
+      <h2 class="h-md">O almoço de dia de semana</h2><hr class="rule">
+      <p class="lede" style="margin-top:20px">Se existir, esta vira uma das páginas de maior tráfego do site: almoço de semana é busca diária, hiperlocal e de altíssima intenção.</p>
+      <p class="cfm-block" style="margin-top:20px">[CONFIRM se a casa serve almoço executivo. <strong>Não assumir.</strong> É um formato padrão e de altíssimo volume no Brasil — se existir, merece módulo próprio; se não existir, esta seção é removida.]</p>
+      <ul class="facts"><li><b>O que inclui</b><span>Entrada + principal + sobremesa <span class="cfm">[CONFIRM]</span></span></li><li><b>Preço</b><span>R$ <span class="cfm">[CONFIRM]</span></span></li><li><b>Janela de atendimento</b><span><span class="cfm">[CONFIRM]</span></span></li><li><b>Dias</b><span><span class="cfm">[CONFIRM]</span></span></li></ul>
+      <div class="btn-row"><a class="btn" href="#cardapio">Ver o menu de hoje <span class="ar">&rarr;</span></a></div>
+    </div>
+    <figure class="fig" data-rv style="margin:0;aspect-ratio:4/3">
+      <!-- PLACEHOLDER-almoco.jpg -->
+      <img src="https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=1000&q=72" alt="Almoço simples empratado — proteína, arroz e salada — em prato branco sobre mesa clara em luz de dia." loading="lazy">
+      <figcaption class="fig__cap">Placeholder</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- A COZINHA -->
+<section class="sec" id="cozinha">
+  <div class="wrap split split--rev">
+    <div class="split__t" data-rv>
+      <p class="eyebrow">A Cozinha</p>
+      <h2 class="h-md">Quem cozinha</h2><hr class="rule">
+      <p class="cfm-block" style="margin-top:22px">[CONFIRM — quem é o chef, formação, o que define a cozinha. Escrever após conversa.] <strong>Não inventar nome de chef, formação, carreira ou filosofia</strong> — numa casa posicionada em <em>gastronomia</em>, essa é a fabricação mais destrutiva possível.</p>
+    </div>
+    <figure class="fig" data-rv style="margin:0;aspect-ratio:4/3">
+      <!-- PLACEHOLDER-cozinha.jpg -->
+      <img src="https://images.unsplash.com/photo-1595535873420-a599195b3f4a?auto=format&fit=crop&w=1000&q=72" alt="Mãos adultas de cozinheiro empratando com pinça no passe, pouca profundidade de campo, sem rosto, luz quente de cozinha." loading="lazy">
+      <figcaption class="fig__cap">Placeholder</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- INGREDIENTES -->
+<section class="sec terra">
+  <div class="wrap split">
+    <figure class="fig" data-rv style="margin:0;aspect-ratio:4/3">
+      <!-- PLACEHOLDER-ingredientes.jpg -->
+      <img src="https://images.unsplash.com/photo-1523294587484-bae6cc870010?auto=format&fit=crop&w=1000&q=72" alt="Caixa de legumes e ervas da estação sobre bancada de aço, luz fria de dia, sem rostos." loading="lazy">
+      <figcaption class="fig__cap">Placeholder</figcaption>
+    </figure>
+    <div class="split__t" data-rv>
+      <p class="eyebrow">Ingredientes & fornecedores</p>
+      <h2 class="h-md">De onde vem</h2><hr class="rule">
+      <p class="cfm-block" style="margin-top:22px">[CONFIRM fornecedores e origem dos ingredientes.] A produção da ilha e o pescado local são uma força regional real — mas <strong>nenhuma fazenda, pescador ou fornecedor é nomeado</strong>, e nada é chamado de “orgânico” ou “pesca do dia” antes de confirmar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRATO ASSINATURA -->
+<section class="sec">
+  <div class="wrap">
+    <div class="spot" data-rv>
+      <div class="spot__i">
+        <!-- PLACEHOLDER-assinatura.jpg -->
+        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1100&q=72" alt="Macro dramático de um prato — corte ou momento do molho sendo servido, pouca profundidade de campo, fundo escuro." loading="lazy">
+      </div>
+      <div class="spot__b">
+        <p class="eyebrow">Prato assinatura</p>
+        <h2 class="h-md">[CONFIRM prato assinatura — não inventar]</h2>
+        <p style="margin-top:16px"><span class="cfm">[CONFIRM descrição do prato assinatura]</span></p>
+        <div class="mi__tags" style="margin-top:8px">
+          <span class="chip chip--saz">[CONFIRM sazonal?]</span>
+          <span class="chip chip--alg">[CONFIRM alérgenos]</span>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--wa" href="https://wa.me/5548000000000" target="_blank" rel="noopener">
+            Reservar <span class="ar">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BAR -->
+<section class="sec band">
+  <div class="wrap split split--rev">
+    <div class="split__t" data-rv>
+      <p class="eyebrow">Carta de bebidas & bar</p>
+      <h2 class="h-md">Vinhos, coquetéis e sem álcool</h2><hr class="rule">
+      <ul class="facts"><li><b>Vinho a taça</b><span>R$ <span class="cfm">[CONFIRM]</span></span></li><li><b>Vinho garrafa</b><span>R$ <span class="cfm">[CONFIRM]</span></span></li><li><b>Coquetel autoral</b><span>R$ <span class="cfm">[CONFIRM]</span></span></li><li><b>Sem álcool</b><span>R$ <span class="cfm">[CONFIRM]</span></span></li></ul>
+      <p style="margin-top:18px;font-size:.84rem;border:1px solid rgba(35,33,30,.24);display:inline-flex;
+        align-items:center;gap:9px;padding:8px 13px">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v5M12 16h.01"/></svg>
+        Venda proibida para menores de 18 anos. <span class="cfm">[CONFIRM se há venda de álcool]</span></p>
+    </div>
+    <figure class="fig" data-rv style="margin:0;aspect-ratio:4/3">
+      <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1000&q=72" alt="Coquetel e taça de vinho sobre balcão escuro com mãos de bartender em foco suave, adultos, luz noturna." loading="lazy">
+      <figcaption class="fig__cap">Placeholder</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- GRUPOS -->
+<section class="sec">
+  <div class="wrap split">
+    <figure class="fig" data-rv style="margin:0;aspect-ratio:4/3">
+      <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=1000&q=72" alt="Mesa longa posta para um grupo em salão aquecido, taças e pratos compartilhados, adultos." loading="lazy">
+      <figcaption class="fig__cap">Placeholder</figcaption>
+    </figure>
+    <div class="split__t" data-rv>
+      <p class="eyebrow">Grupos & eventos privados</p>
+      <h2 class="h-md">Confraternizações e buyouts</h2><hr class="rule">
+      <ul class="facts"><li><b>Capacidade</b><span><span class="cfm">[CONFIRM]</span></span></li><li><b>Mínimo de pessoas</b><span><span class="cfm">[CONFIRM]</span></span></li><li><b>Buyout do salão</b><span><span class="cfm">[CONFIRM]</span></span></li><li><b>Menu fechado</b><span><span class="cfm">[CONFIRM]</span></span></li></ul>
+      <div class="btn-row"><a class="btn btn--wa" href="https://wa.me/5548000000000" target="_blank" rel="noopener">
+        Orçamento para grupo <span class="ar">&rarr;</span></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section class="sec sandband" id="galeria">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Galeria</p>
+      <h2 class="h-lg">O salão, o passe, a mesa</h2>
+      <p class="lede" style="margin-top:16px">Todas as imagens são <strong>stock provisório</strong> e serão substituídas pela fotografia da casa antes do lançamento.</p>
+    </div>
+    <div class="gal"><figure><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=640&q=72" alt="Imagem de stock provisória do salão, do passe ou de um prato." loading="lazy"><figcaption>PLACEHOLDER-01</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=640&q=72" alt="Imagem de stock provisória do salão, do passe ou de um prato." loading="lazy"><figcaption>PLACEHOLDER-02</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=640&q=72" alt="Imagem de stock provisória do salão, do passe ou de um prato." loading="lazy"><figcaption>PLACEHOLDER-03</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=640&q=72" alt="Imagem de stock provisória do salão, do passe ou de um prato." loading="lazy"><figcaption>PLACEHOLDER-04</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=640&q=72" alt="Imagem de stock provisória do salão, do passe ou de um prato." loading="lazy"><figcaption>PLACEHOLDER-05</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=640&q=72" alt="Imagem de stock provisória do salão, do passe ou de um prato." loading="lazy"><figcaption>PLACEHOLDER-06</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1595535873420-a599195b3f4a?auto=format&fit=crop&w=640&q=72" alt="Imagem de stock provisória do salão, do passe ou de um prato." loading="lazy"><figcaption>PLACEHOLDER-07</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1519996529931-28324d5a630e?auto=format&fit=crop&w=640&q=72" alt="Imagem de stock provisória do salão, do passe ou de um prato." loading="lazy"><figcaption>PLACEHOLDER-08</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=640&q=72" alt="Imagem de stock provisória do salão, do passe ou de um prato." loading="lazy"><figcaption>PLACEHOLDER-09</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1593351415075-3bac9f45c877?auto=format&fit=crop&w=640&q=72" alt="Imagem de stock provisória do salão, do passe ou de um prato." loading="lazy"><figcaption>PLACEHOLDER-10</figcaption></figure></div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="sec sec--t">
+  <div class="wrap">
+    <div class="sec-head" data-rv style="display:flex;justify-content:space-between;align-items:flex-end;
+      gap:20px;max-width:none;flex-wrap:wrap;margin-bottom:24px">
+      <div><p class="eyebrow">Instagram</p><h2 class="h-md">@bonigastronomia</h2>
+        <p style="margin:8px 0 0;font-size:.9rem;opacity:.78">As mudanças do cardápio são postadas por lá.</p></div>
+      <a class="btn btn--line btn--sm" href="https://www.instagram.com/bonigastronomia/" target="_blank" rel="noopener">
+        Seguir <span class="ar">&rarr;</span></a>
+    </div>
+    <div class="ig"><a href="https://www.instagram.com/bonigastronomia/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=440&q=72" alt="Publicação do Instagram — prato empratado." loading="lazy"></a><a href="https://www.instagram.com/bonigastronomia/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=440&q=72" alt="Publicação do Instagram — prato empratado." loading="lazy"></a><a href="https://www.instagram.com/bonigastronomia/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=440&q=72" alt="Publicação do Instagram — prato empratado." loading="lazy"></a><a href="https://www.instagram.com/bonigastronomia/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=440&q=72" alt="Publicação do Instagram — prato empratado." loading="lazy"></a><a href="https://www.instagram.com/bonigastronomia/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=440&q=72" alt="Publicação do Instagram — prato empratado." loading="lazy"></a><a href="https://www.instagram.com/bonigastronomia/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=440&q=72" alt="Publicação do Instagram — prato empratado." loading="lazy"></a></div>
+    <p style="font-size:.83rem;opacity:.7;margin-top:14px">
+      Grade ilustrativa. Nenhum número de seguidores é exibido.
+      <span class="cfm">[CONFIRM integração real do feed]</span></p>
+  </div>
+</section>
+
+<!-- AVALIAÇÕES & IMPRENSA -->
+<section class="sec band">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Avaliações & imprensa</p>
+      <h2 class="h-md">Estrutura pronta, conteúdo nenhum</h2>
+    </div>
+    <div class="revs">
+      <div class="rev" data-rv><span class="rev__q">&ldquo;</span><p class="cfm" style="margin:0">[CONFIRM — puxar avaliações verificadas do Google antes do lançamento]</p></div>
+      <div class="rev" data-rv><span class="rev__q">&ldquo;</span><p class="cfm" style="margin:0">[CONFIRM — puxar avaliações verificadas do Google antes do lançamento]</p></div>
+      <div class="rev" data-rv><span class="rev__q">&ldquo;</span><p class="cfm" style="margin:0">[CONFIRM — puxar avaliações verificadas do Google antes do lançamento]</p></div>
+    </div>
+    <div class="press" data-rv>
+      <div>[CONFIRM — nenhuma menção de imprensa verificada]</div><div>[CONFIRM — nenhuma menção de imprensa verificada]</div><div>[CONFIRM — nenhuma menção de imprensa verificada]</div>
+      <div>[CONFIRM — nenhuma menção de imprensa verificada]</div><div>[CONFIRM — nenhuma menção de imprensa verificada]</div>
+    </div>
+    <p class="cfm-block" style="margin-top:20px" data-rv>Nenhum prêmio, estrela de guia, ranking, nota ou menção de imprensa aparece neste build — nem no texto, nem na meta description, nem no JSON-LD. <code>aggregateRating</code> fica <strong>fora do schema</strong> até existir dado real e com fonte: marcação de avaliação fabricada é penalidade do Google além de mentira.</p>
+  </div>
+</section>
+
+<!-- RESERVAS -->
+<section class="sec terra" id="reservas">
+  <div class="wrap split">
+    <div class="split__t" data-rv>
+      <p class="eyebrow">Reservas</p>
+      <h2 class="h-lg">Reserve em um toque</h2><hr class="rule">
+      <p class="lede" style="margin-top:20px;color:rgba(255,255,255,.9)">O caminho principal é o WhatsApp: o botão já leva data, horário, número de pessoas e nome escritos.</p>
+      <div class="btn-row">
+        <a class="btn btn--wa" href="https://wa.me/5548000000000" target="_blank" rel="noopener">
+          Reservar no WhatsApp <span class="ar">&rarr;</span></a>
+      </div>
+      <p class="note" style="margin-top:24px">A reserva só está <strong>confirmada após a resposta do restaurante</strong>. O envio do formulário abre uma conversa no WhatsApp — não reserva a mesa automaticamente.</p>
+      <ul class="facts" style="margin-top:18px">
+        <li><b>Grupos grandes</b><span><span class="cfm">[CONFIRM]</span></span></li>
+        <li><b>Cancelamento</b><span><span class="cfm">[CONFIRM]</span></span></li>
+      </ul>
+      <figure class="fig" style="margin:24px 0 0;aspect-ratio:16/10">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=72" alt="Mesa posta para dois com vela e taças, interior noturno aquecido, adultos em foco suave ao fundo." loading="lazy">
+        <figcaption class="fig__cap">Placeholder</figcaption>
+      </figure>
+    </div>
+    <form class="form" id="resvForm" data-rv novalidate>
+      <div class="fr">
+        <div class="field"><label for="nome">Nome</label><input id="nome" name="nome" type="text" required></div>
+        <div class="field"><label for="pessoas">Pessoas</label>
+          <select id="pessoas" name="pessoas"><option>1</option><option selected>2</option><option>3</option>
+            <option>4</option><option>5</option><option>6</option><option>7+</option></select></div>
+      </div>
+      <div class="fr">
+        <div class="field"><label for="data">Data (DD/MM)</label><input id="data" name="data" type="date" required></div>
+        <div class="field"><label for="hora">Horário</label>
+          <select id="hora" name="hora"><option>12h00</option><option>12h30</option><option>13h00</option>
+            <option>19h00</option><option>19h30</option><option selected>20h00</option>
+            <option>20h30</option><option>21h00</option></select></div>
+      </div>
+      <div class="field"><label for="tel">Telefone / WhatsApp</label><input id="tel" name="tel" type="tel" placeholder="(48) 9 0000-0000"></div>
+      <div class="field"><label for="obs">Observações</label><textarea id="obs" name="obs" rows="3"></textarea></div>
+      <label class="consent"><input type="checkbox" required>
+        Autorizo o tratamento dos meus dados (nome, telefone e dados da reserva) para atendimento desta solicitação, conforme a
+        <a href="privacidade.html" style="color:#fff;text-decoration:underline">Política de Privacidade</a>.
+        Controlador: <span class="cfm">[CONFIRM razão social]</span>.</label>
+      <button class="btn btn--wa" type="submit" style="width:100%">Enviar pelo WhatsApp <span class="ar">&rarr;</span></button>
+    </form>
+  </div>
+</section>
+
+<!-- ONDE ESTAMOS -->
+<section class="sec" id="contato">
+  <div class="wrap split">
+    <div class="split__t" data-rv>
+      <p class="eyebrow">Onde estamos</p>
+      <h2 class="h-md">Endereço e horários</h2><hr class="rule">
+      <ul class="facts"><li><b>Endereço</b><span><span class="cfm">[CONFIRM]</span></span></li><li><b>Bairro</b><span><span class="cfm">[CONFIRM]</span></span></li><li><b>Telefone</b><span><span class="cfm">[CONFIRM]</span></span></li><li><b>E-mail</b><span><span class="cfm">[CONFIRM]</span></span></li><li><b>Estacionamento</b><span><span class="cfm">[CONFIRM]</span></span></li><li><b>Pagamento</b><span>Pix e cartões <span class="cfm">[CONFIRM]</span></span></li><li><b>Delivery</b><span>iFood e retirada <span class="cfm">[CONFIRM]</span></span></li></ul>
+      <h3 style="margin:30px 0 12px;font-size:1.1rem">Horários</h3>
+      <table class="hrs"><tr><th scope="row">Segunda</th><td><span class="cfm">[CONFIRM]</span></td></tr><tr><th scope="row">Terça a Quinta</th><td><span class="cfm">[CONFIRM]</span></td></tr><tr><th scope="row">Sexta e Sábado</th><td><span class="cfm">[CONFIRM]</span></td></tr><tr><th scope="row">Domingo</th><td><span class="cfm">[CONFIRM]</span></td></tr></table>
+      <p style="font-size:.86rem;opacity:.76;margin-top:12px"><span class="cfm">[CONFIRM se há intervalo entre almoço e jantar] · [CONFIRM horário de alta temporada]</span></p>
+    </div>
+    <div data-rv>
+      <div class="map"><div class="map__grid" aria-hidden="true"></div>
+        <div>
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--terra)" stroke-width="1.6" style="margin:0 auto 10px"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p style="margin:0;font-family:var(--serif);font-size:1.15rem">Mapa incorporado</p>
+          <p class="cfm" style="margin-top:8px">[CONFIRM endereço para o embed]</p>
+        </div>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn--line btn--sm" href="#" onclick="return false">Como chegar <span class="ar">&rarr;</span></a>
+        <a class="btn btn--wa btn--sm" href="https://wa.me/5548000000000" target="_blank" rel="noopener">
+          Pedir localização</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NÚMEROS — ships empty -->
+<section class="sec sec--t band">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Números</p>
+      <h2 class="h-md">Esta faixa está vazia de propósito</h2>
+      <p class="lede" style="margin-top:14px">Nenhum número é publicado sem verificação. Se nada puder ser confirmado, a seção é <strong>removida</strong>, não preenchida.</p>
+    </div>
+    <div class="stats"><div class="stat" data-rv><div class="stat__n" data-count="">—</div><div class="stat__l">Anos de casa <span class="cfm">[CONFIRM]</span></div></div><div class="stat" data-rv><div class="stat__n" data-count="">—</div><div class="stat__l">Lugares no salão <span class="cfm">[CONFIRM]</span></div></div><div class="stat" data-rv><div class="stat__n" data-count="">—</div><div class="stat__l">Avaliação Google <span class="cfm">[CONFIRM]</span></div></div><div class="stat" data-rv><div class="stat__n" data-count="">—</div><div class="stat__l">— <span class="cfm">[CONFIRM]</span></div></div></div>
+  </div>
+</section>
+
+<!-- ALÉRGENOS -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Alérgenos & informações</p>
+      <h2 class="h-md">Declaração de alérgenos — ANVISA RDC 26/2015</h2>
+      <p class="lede">Declaração obrigatória. Numa cozinha sazonal os alérgenos viajam junto com os dados do cardápio — no mesmo array, desde o primeiro dia.</p>
+    </div>
+    <div class="alg" data-rv><div class="alg__c"><i></i>Trigo (glúten)</div><div class="alg__c"><i></i>Leite</div><div class="alg__c"><i></i>Ovos</div><div class="alg__c"><i></i>Soja</div><div class="alg__c"><i></i>Castanhas</div><div class="alg__c"><i></i>Amendoim</div><div class="alg__c"><i></i>Peixes</div><div class="alg__c"><i></i>Crustáceos</div><div class="alg__c"><i></i>Moluscos</div><div class="alg__c"><i></i>[CONFIRM]</div></div>
+    <p class="cfm-block" data-rv>[CONFIRM conjunto exato de alérgenos por prato, com a cozinha]</p>
+    <p data-rv><strong>Contato cruzado:</strong> “Este prato <em>pode conter</em> [CONFIRM].” A cozinha manipula trigo, leite, ovos, soja, castanhas, amendoim, peixes, crustáceos e moluscos no mesmo ambiente.</p>
+    <p data-rv><strong>Couvert e taxa de serviço:</strong> [CONFIRM se há couvert artístico] · [CONFIRM taxa de 10%]. Quando houver, ambos são <strong>opcionais</strong> e informados antes do pedido, conforme o CDC.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <span class="brand">boni</span>
+        <p style="max-width:36ch"><span class="cfm">[CONFIRM descrição oficial da casa]</span></p>
+        <div class="soc">
+          <a href="https://www.instagram.com/bonigastronomia/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></a>
+          <a href="https://wa.me/5548000000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20l1.2-5.3A8.4 8.4 0 1 1 21 11.5z"/></svg></a>
+        </div>
+        <p style="margin-top:16px;font-size:.82rem;border:1px solid rgba(255,255,255,.24);display:inline-block;padding:7px 12px">Venda proibida para menores de 18 anos</p>
+      </div>
+      <div><h4>Navegar</h4><ul><li><a href="#cardapio">Cardápio</a></li><li><a href="#almoco">Almoço</a></li><li><a href="#cozinha">A Cozinha</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#reservas">Reservas</a></li><li><a href="#contato">Contato</a></li>
+        <li><a href="privacidade.html">Política de Privacidade</a></li></ul></div>
+      <div><h4>Horários &amp; Contato</h4><ul>
+        <li>Segunda: <span class="cfm">[CONFIRM]</span></li><li>Terça a Quinta: <span class="cfm">[CONFIRM]</span></li><li>Sexta e Sábado: <span class="cfm">[CONFIRM]</span></li><li>Domingo: <span class="cfm">[CONFIRM]</span></li>
+        <li style="margin-top:8px"><span class="cfm">[CONFIRM endereço]</span></li>
+        <li><span class="cfm">[CONFIRM telefone]</span></li>
+        <li><span class="cfm">[CONFIRM e-mail]</span></li></ul></div>
+    </div>
+    <div class="ftr__bot">
+      <p style="margin:0">&copy; <span id="yr">2025</span> Boni Restaurante · CNPJ <span class="cfm">[CONFIRM]</span></p>
+      <div class="lang" role="group" aria-label="Idioma"><a class="on" href="index.html" hreflang="pt-BR">PT</a><a href="en/index.html" hreflang="en">EN</a></div>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5548000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.4 4.7.7.3 1.3.5 1.8.6.7.2 1.4.2 2 .1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg></a>
+<div class="mbar">
+  <a class="btn" href="#reservas">Reservar</a>
+  <a class="btn btn--line" href="#cardapio" style="color:#fff;border-color:rgba(255,255,255,.45)">Ver Cardápio</a>
+</div>
+
+<div class="ck" role="dialog" aria-live="polite">
+  <p><strong>Cookies e privacidade.</strong> Cookies essenciais mantêm o site funcionando. Análise e marketing vêm <strong>desligados</strong> por padrão. <a href="privacidade.html">Política de Privacidade</a>.</p>
+  <div class="ck__opts">
+    <label><input type="checkbox" checked disabled> Essenciais (sempre ativos)</label>
+    <label><input type="checkbox" id="ckA"> Análise</label>
+    <label><input type="checkbox" id="ckM"> Marketing</label>
+  </div>
+  <div class="ck__btns">
+    <button class="btn btn--sm btn--line" style="color:#fff;border-color:rgba(255,255,255,.45)" data-ck="none">Rejeitar tudo</button>
+    <button class="btn btn--sm btn--line" style="color:#fff;border-color:rgba(255,255,255,.45)" data-ck="save">Salvar escolhas</button>
+    <button class="btn btn--sm" data-ck="all">Aceitar tudo</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+</body>
+</html>

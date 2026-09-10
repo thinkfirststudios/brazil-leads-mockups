@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<!-- Speculative pitch mockup for a prospect who has not commissioned, seen or
+     approved it. Must never be indexed or compete with the real business. -->
+<title>English for All — English School in Florianópolis, Brazil</title>
+<meta name="description" content="An English school in Florianópolis, Brazil. Information for prospective teachers and for English speakers looking for Portuguese classes.">
+<link rel="canonical" href="https://englishforall.example/en/">
+<!-- pt-BR is x-default on purpose: the students are Brazilians who do not yet
+     speak English. The EN tree targets prospective foreign teachers and, if
+     offered [CONFIRM], Portuguese-for-foreigners students. -->
+<link rel="alternate" hreflang="pt-BR" href="https://englishforall.example/">
+<link rel="alternate" hreflang="en" href="https://englishforall.example/en/">
+<link rel="alternate" hreflang="x-default" href="https://englishforall.example/">
+<meta property="og:title" content="English for All — English School in Florianópolis, Brazil">
+<meta property="og:description" content="An English school in Florianópolis, Brazil. Information for prospective teachers and for English speakers looking for Portuguese classes.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=70" fetchpriority="high">
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LanguageSchool",
+  "name":"English for All",
+  "alternateName":"[CONFIRM nome de fachada]",
+  "url":"https://englishforall.example/en/",
+  "inLanguage":"en",
+  "address":{"@type":"PostalAddress","streetAddress":"[CONFIRM]","addressLocality":"Florian\u00f3polis",
+    "addressRegion":"SC","addressCountry":"BR","postalCode":"[CONFIRM]"},
+  "geo":{"@type":"GeoCoordinates","latitude":"[CONFIRM]","longitude":"[CONFIRM]"},
+  "telephone":"[CONFIRM]",
+  "openingHours":"[CONFIRM]",
+  "areaServed":{"@type":"Place","name":"Florian\u00f3polis, Santa Catarina"},
+  "sameAs":["https://www.instagram.com/familiaenglishforall/"]
+}
+</script>
+<!-- Course / CourseInstance nodes go in per course once the real offer is
+     confirmed, each with courseMode (online/onsite), educationalLevel (CEFR)
+     and inLanguage.
+     ⚠ NO AggregateRating — no real reviews exist.
+     ⚠ NO Offer with a price — no pricing is confirmed. Publishing a guessed
+       price as structured data would be a CDC problem, not just a wrong number. -->
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- 1 · Utility bar -->
+<div class="top">
+  <div class="wrap top__in">
+    <div class="top__l">
+      <a href="#" data-wa>WhatsApp <span class="cfm">[CONFIRM]</span></a>
+      <a href="#" data-tel>Phone <span class="cfm">[CONFIRM]</span></a>
+      <span>Neighbourhood <span class="cfm">[CONFIRM]</span></span>
+    </div>
+    <div class="top__r">
+      <div class="pills">
+        <a href="../" hreflang="pt-BR" lang="pt-BR">PT</a>
+        <a href="index.html" hreflang="en" lang="en" class="on">EN</a>
+      </div>
+      <a href="#nivel"><strong>Free trial class</strong> <span class="cfm">[CONFIRM]</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- 2 · Sticky header -->
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="index.html">English for <span>All</span><small>Florianópolis</small></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#cursos">Courses</a><a href="#nivel">Levels</a><a href="#professores">Teachers</a><a href="#precos">Timetable &amp; Prices</a><a href="#comunidade">About</a><a href="#contato">Contact</a>
+    </nav>
+    <div class="hdr__r">
+      <a class="btn btn--sm btn--wa" href="#" data-wa aria-label="WhatsApp">WhatsApp</a>
+      <a class="btn btn--sm" href="#nivel">Book a trial class</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mnav" aria-label="Menu">
+  <a href="#cursos">Courses</a><a href="#nivel">Levels</a><a href="#professores">Teachers</a><a href="#precos">Timetable &amp; Prices</a><a href="#comunidade">About</a><a href="#contato">Contact</a>
+  <a href="index.html" lang="pt-BR">Português</a>
+</nav>
+<main id="main">
+
+<!-- 3 · Hero — two columns, the subject on a soft organic blob.
+     ⛔ ADULTS ONLY in every image on this build. -->
+<section class="hero">
+  <div class="wrap hero__g">
+    <div>
+      <p class="eyebrow">English school · Florianópolis</p>
+      <h1>Learn English <em>without</em> the fear of starting.</h1>
+      <p>This tree is for teachers considering applying, and for English speakers looking for Portuguese classes. The school itself teaches in Florianópolis, in person and online.</p>
+      <div class="btn-row">
+        <a class="btn" href="#nivel">Check my level <span class="ar">&rarr;</span></a>
+        <a class="btn btn--ghost" href="#" data-wa="trial">Book a free trial class</a>
+      </div>
+    </div>
+    <div class="blob" data-rv>
+      <!-- PLACEHOLDER-hero-aluna.jpg — royalty-free stock (Unsplash). ADULTS ONLY. -->
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=70" width="900" height="1125" fetchpriority="high"
+           alt="Two adults studying with laptops in a bright setting — illustrative stock photograph">
+    </div>
+  </div>
+</section>
+
+<!-- 4 · Reassurance strip.
+     ⚠ Lingua's "5,000+ students" capsule and its rating badges are NOT carried
+     over. No student count, no rating, no "X anos de experiência". -->
+<div class="wrap">
+  <div class="strip">
+    <div class="rcard" data-rv>
+      <div class="ic" aria-hidden="true">&#128101;</div>
+      <b>Small classes</b>
+      <span>How many students per class: <span class="cfm">[CONFIRM]</span></span>
+    </div>
+    <div class="rcard" data-rv>
+      <div class="ic" aria-hidden="true">&#127891;</div>
+      <b>Qualified teachers</b>
+      <span>Each teacher&rsquo;s qualification: <span class="cfm">[CONFIRM]</span></span>
+    </div>
+    <div class="rcard" data-rv>
+      <div class="ic" aria-hidden="true">&#128187;</div>
+      <b>In person and online</b>
+      <span>Which courses in which format: <span class="cfm">[CONFIRM]</span></span>
+    </div>
+    <div class="rcard" data-rv>
+      <div class="ic" aria-hidden="true">&#127881;</div>
+      <b>Free trial class</b>
+      <span>Conditions of the trial class: <span class="cfm">[CONFIRM]</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- 5 · ⭐ DESCUBRA SEU NÍVEL — the highest-converting section on the site.
+     Private, no signup, no email gate, no published score, nothing stored.
+     The questions are CEFR self-descriptions rather than a grammar test:
+     "consigo me apresentar e falar sobre minha rotina" is a question a nervous
+     adult can answer honestly. The result routes straight into a pre-filled
+     WhatsApp trial booking.
+     ⚠ Progressive enhancement: every question below is in the HTML and readable
+     without JavaScript. The script is what turns them into one-at-a-time steps. -->
+<section class="sec" id="nivel">
+  <div class="wrap" style="display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(24px,3.6vw,54px);align-items:start">
+    <div data-rv>
+      <p class="eyebrow">Level check</p>
+      <h2 class="h-lg">Two minutes, and nobody sees it.</h2>
+      <p class="lede" style="margin-top:16px">The single biggest reason people do not start a course is not the price — it is not knowing their own level and being embarrassed to guess. Nobody walks into a school at 34 and announces they are a beginner.</p>
+      <p class="lede">So this check is private: no signup, no email, no published score and nothing stored. It runs in your browser and the result stays on your screen.</p>
+      <div class="lvls" style="margin-top:20px">
+        <span class="lvl lvl-a1">A1</span><span class="lvl lvl-a2">A2</span><span class="lvl lvl-b1">B1</span>
+        <span class="lvl lvl-b2">B2</span><span class="lvl lvl-c1">C1</span>
+      </div>
+      <p style="font-size:.9rem;color:var(--muted);margin-top:14px">Levels follow the Common European Framework (CEFR). Which of them the school actually offers: <span class="cfm">[CONFIRM]</span></p>
+      <figure style="margin:24px 0 0;overflow:hidden;border-radius:18px">
+        <!-- PLACEHOLDER-teste-nivel.jpg — royalty-free stock (Unsplash), no people -->
+        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=70" width="900" height="600" loading="lazy" decoding="async"
+             style="aspect-ratio:3/2;object-fit:cover"
+             alt="An open notebook and pen on a table, no people — illustrative stock photograph">
+      </figure>
+    </div>
+
+    <div class="quiz" id="levelQuiz" data-rv>
+      <div class="quiz__bar" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="q">
+        <p class="q__n">Question 1 of 6</p>
+        <h3>Talking about yourself</h3>
+        <div class="q__opts">
+          <label><input type="radio" name="q1" value="0"><span>I can say my name and a few isolated words.</span></label>
+          <label><input type="radio" name="q1" value="1"><span>I can introduce myself and talk about my routine.</span></label>
+          <label><input type="radio" name="q1" value="2"><span>I can tell the story of my weekend in some detail.</span></label>
+          <label><input type="radio" name="q1" value="3"><span>I can talk about my career and argue a point of view.</span></label>
+          <label><input type="radio" name="q1" value="4"><span>I can talk about almost anything without hunting for words.</span></label>
+        </div>
+      </div>
+      <div class="q">
+        <p class="q__n">Question 2 of 6</p>
+        <h3>Listening</h3>
+        <div class="q__opts">
+          <label><input type="radio" name="q2" value="0"><span>I only catch words I already know, spoken slowly.</span></label>
+          <label><input type="radio" name="q2" value="1"><span>I can follow the gist of a simple conversation.</span></label>
+          <label><input type="radio" name="q2" value="2"><span>I can follow a video or podcast on a familiar topic.</span></label>
+          <label><input type="radio" name="q2" value="3"><span>I follow films and meetings without subtitles, with some effort.</span></label>
+          <label><input type="radio" name="q2" value="4"><span>I understand different accents and fast speech easily.</span></label>
+        </div>
+      </div>
+      <div class="q">
+        <p class="q__n">Question 3 of 6</p>
+        <h3>Reading</h3>
+        <div class="q__opts">
+          <label><input type="radio" name="q3" value="0"><span>I recognise isolated words and signs.</span></label>
+          <label><input type="radio" name="q3" value="1"><span>I read short, direct messages and texts.</span></label>
+          <label><input type="radio" name="q3" value="2"><span>I read a whole news article or work email.</span></label>
+          <label><input type="radio" name="q3" value="3"><span>I read long, technical texts in my field.</span></label>
+          <label><input type="radio" name="q3" value="4"><span>I read anything, including literature and legal text.</span></label>
+        </div>
+      </div>
+      <div class="q">
+        <p class="q__n">Question 4 of 6</p>
+        <h3>Writing</h3>
+        <div class="q__opts">
+          <label><input type="radio" name="q4" value="0"><span>I write isolated words and very short sentences.</span></label>
+          <label><input type="radio" name="q4" value="1"><span>I write a simple message without help.</span></label>
+          <label><input type="radio" name="q4" value="2"><span>I write a work email that reads clearly.</span></label>
+          <label><input type="radio" name="q4" value="3"><span>I write reports and structured texts.</span></label>
+          <label><input type="radio" name="q4" value="4"><span>I write precisely and in the right register for the situation.</span></label>
+        </div>
+      </div>
+      <div class="q">
+        <p class="q__n">Question 5 of 6</p>
+        <h3>In a real conversation</h3>
+        <div class="q__opts">
+          <label><input type="radio" name="q5" value="0"><span>I freeze and switch back to Portuguese.</span></label>
+          <label><input type="radio" name="q5" value="1"><span>I get by, with pauses and repetition.</span></label>
+          <label><input type="radio" name="q5" value="2"><span>I keep the conversation going, mistakes and all.</span></label>
+          <label><input type="radio" name="q5" value="3"><span>I speak naturally and self-correct.</span></label>
+          <label><input type="radio" name="q5" value="4"><span>I converse the way I do in Portuguese, without thinking.</span></label>
+        </div>
+      </div>
+      <div class="q">
+        <p class="q__n">Question 6 of 6</p>
+        <h3>How long you have studied</h3>
+        <div class="q__opts">
+          <label><input type="radio" name="q6" value="0"><span>Never, or I stopped many years ago.</span></label>
+          <label><input type="radio" name="q6" value="1"><span>A little, at school or on my own.</span></label>
+          <label><input type="radio" name="q6" value="2"><span>A few years, on and off.</span></label>
+          <label><input type="radio" name="q6" value="3"><span>Regularly, for a good while.</span></label>
+          <label><input type="radio" name="q6" value="4"><span>I have lived or worked in English.</span></label>
+        </div>
+      </div>
+      <div class="result" role="status" aria-live="polite">
+        <span class="result__lvl" data-result-level>—</span>
+        <p data-result-note style="color:var(--muted)"></p>
+        <p style="font-size:.9rem;color:var(--muted)">An indicative result. Your real level is confirmed in the trial class — and moving class afterwards is normal.</p>
+        <div class="btn-row" style="justify-content:center">
+          <a class="btn" href="#" data-result-wa>Book a trial class <span class="ar">&rarr;</span></a>
+          <button type="button" class="btn btn--ghost" data-q="again">Start again</button>
+        </div>
+      </div>
+      <div class="quiz__nav">
+        <button type="button" class="btn btn--ghost btn--sm" data-q="prev" hidden>&larr; Back</button>
+        <button type="button" class="btn btn--sm" data-q="next">Next <span class="ar">&rarr;</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · Nossos cursos — segmented by COURSE TYPE and LEVEL.
+     ⚠ Lingua's flag-per-language grid is dropped: this is a single-language
+     school, so a flag grid would be meaningless. -->
+<section class="sec washbg" id="cursos">
+  <div class="wrap">
+    <div class="sec-head sec-head--row" data-rv>
+      <div>
+        <p class="eyebrow">Our courses</p>
+        <h2 class="h-lg">Choose by your goal, not by the name.</h2>
+      </div>
+      <p class="lede" style="max-width:40ch">This is a plausible course architecture for a Brazilian school — and no more than that. Your real offer replaces all of it. <span class="cfm">[CONFIRM]</span></p>
+    </div>
+    <div class="courses">
+      <article class="course" data-rv>
+        <div class="course__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash). ADULTS ONLY / no people. -->
+          <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=700&q=70" width="700" height="438" loading="lazy" decoding="async"
+               alt="A study or work scene with adults, or with no people — illustrative stock photograph">
+        </div>
+        <div class="course__b">
+          <h3>English for Adults</h3>
+          <p>General English, structured by CEFR level (A1–C1).</p>
+          <div class="lvls"><span class="lvl lvl-a1">A1</span><span class="lvl lvl-a2">A2</span><span class="lvl lvl-b1">B1</span><span class="lvl lvl-b2">B2</span><span class="lvl lvl-c1">C1</span></div>
+          <span class="fmt">In person / online <span class="cfm">[CONFIRM]</span></span>
+          <dl>
+            <div><dt>Duration</dt><dd><span class="cfm">[CONFIRM]</span></dd></div>
+            <div><dt>Class size</dt><dd><span class="cfm">[CONFIRM]</span></dd></div>
+            <div><dt>Monthly fee</dt><dd>R$ <span class="cfm">[CONFIRM]</span></dd></div>
+          </dl>
+          <a class="btn btn--sm btn--full" href="#" data-wa="English for Adults">Ask about this course <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="course" data-rv>
+        <div class="course__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash). ADULTS ONLY / no people. -->
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=70" width="700" height="438" loading="lazy" decoding="async"
+               alt="A study or work scene with adults, or with no people — illustrative stock photograph">
+        </div>
+        <div class="course__b">
+          <h3>Conversation</h3>
+          <p>Speaking-focused classes. Usually the highest-demand product in Brazil.</p>
+          <div class="lvls"><span class="lvl lvl-off">A1</span><span class="lvl lvl-a2">A2</span><span class="lvl lvl-b1">B1</span><span class="lvl lvl-b2">B2</span><span class="lvl lvl-c1">C1</span></div>
+          <span class="fmt">In person / online <span class="cfm">[CONFIRM]</span></span>
+          <dl>
+            <div><dt>Duration</dt><dd><span class="cfm">[CONFIRM]</span></dd></div>
+            <div><dt>Class size</dt><dd><span class="cfm">[CONFIRM]</span></dd></div>
+            <div><dt>Monthly fee</dt><dd>R$ <span class="cfm">[CONFIRM]</span></dd></div>
+          </dl>
+          <a class="btn btn--sm btn--full" href="#" data-wa="Conversation">Ask about this course <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="course" data-rv>
+        <div class="course__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash). ADULTS ONLY / no people. -->
+          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=700&q=70" width="700" height="438" loading="lazy" decoding="async"
+               alt="A study or work scene with adults, or with no people — illustrative stock photograph">
+        </div>
+        <div class="course__b">
+          <h3>Business English</h3>
+          <p>Professional communication, meetings and interviews.</p>
+          <div class="lvls"><span class="lvl lvl-off">A1</span><span class="lvl lvl-off">A2</span><span class="lvl lvl-b1">B1</span><span class="lvl lvl-b2">B2</span><span class="lvl lvl-c1">C1</span></div>
+          <span class="fmt">In person / online <span class="cfm">[CONFIRM]</span></span>
+          <dl>
+            <div><dt>Duration</dt><dd><span class="cfm">[CONFIRM]</span></dd></div>
+            <div><dt>Class size</dt><dd><span class="cfm">[CONFIRM]</span></dd></div>
+            <div><dt>Monthly fee</dt><dd>R$ <span class="cfm">[CONFIRM]</span></dd></div>
+          </dl>
+          <a class="btn btn--sm btn--full" href="#" data-wa="Business English">Ask about this course <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="course" data-rv>
+        <div class="course__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash). ADULTS ONLY / no people. -->
+          <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=700&q=70" width="700" height="438" loading="lazy" decoding="async"
+               alt="A study or work scene with adults, or with no people — illustrative stock photograph">
+        </div>
+        <div class="course__b">
+          <h3>Exam preparation</h3>
+          <p>IELTS, TOEFL, Cambridge. Preparation — not accreditation, and no score guarantee.</p>
+          <div class="lvls"><span class="lvl lvl-off">A1</span><span class="lvl lvl-off">A2</span><span class="lvl lvl-b1">B1</span><span class="lvl lvl-b2">B2</span><span class="lvl lvl-c1">C1</span></div>
+          <span class="fmt">In person / online <span class="cfm">[CONFIRM]</span></span>
+          <dl>
+            <div><dt>Duration</dt><dd><span class="cfm">[CONFIRM]</span></dd></div>
+            <div><dt>Class size</dt><dd><span class="cfm">[CONFIRM]</span></dd></div>
+            <div><dt>Monthly fee</dt><dd>R$ <span class="cfm">[CONFIRM]</span></dd></div>
+          </dl>
+          <a class="btn btn--sm btn--full" href="#" data-wa="Exam preparation">Ask about this course <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="course" data-rv>
+        <div class="course__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash). ADULTS ONLY / no people. -->
+          <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=700&q=70" width="700" height="438" loading="lazy" decoding="async"
+               alt="A study or work scene with adults, or with no people — illustrative stock photograph">
+        </div>
+        <div class="course__b">
+          <h3>Travel English</h3>
+          <p>A short format, for people about to travel.</p>
+          <div class="lvls"><span class="lvl lvl-a1">A1</span><span class="lvl lvl-a2">A2</span><span class="lvl lvl-b1">B1</span><span class="lvl lvl-off">B2</span><span class="lvl lvl-off">C1</span></div>
+          <span class="fmt">In person / online <span class="cfm">[CONFIRM]</span></span>
+          <dl>
+            <div><dt>Duration</dt><dd><span class="cfm">[CONFIRM]</span></dd></div>
+            <div><dt>Class size</dt><dd><span class="cfm">[CONFIRM]</span></dd></div>
+            <div><dt>Monthly fee</dt><dd>R$ <span class="cfm">[CONFIRM]</span></dd></div>
+          </dl>
+          <a class="btn btn--sm btn--full" href="#" data-wa="Travel English">Ask about this course <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+      <article class="course" data-rv>
+        <div class="course__i">
+          <!-- PLACEHOLDER — royalty-free stock (Unsplash). ADULTS ONLY / no people. -->
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=700&q=70" width="700" height="438" loading="lazy" decoding="async"
+               alt="A study or work scene with adults, or with no people — illustrative stock photograph">
+        </div>
+        <div class="course__b">
+          <h3>One-to-one</h3>
+          <p>One person, one schedule, one goal.</p>
+          <div class="lvls"><span class="lvl lvl-a1">A1</span><span class="lvl lvl-a2">A2</span><span class="lvl lvl-b1">B1</span><span class="lvl lvl-b2">B2</span><span class="lvl lvl-c1">C1</span></div>
+          <span class="fmt">In person / online <span class="cfm">[CONFIRM]</span></span>
+          <dl>
+            <div><dt>Duration</dt><dd><span class="cfm">[CONFIRM]</span></dd></div>
+            <div><dt>Class size</dt><dd><span class="cfm">[CONFIRM]</span></dd></div>
+            <div><dt>Monthly fee</dt><dd>R$ <span class="cfm">[CONFIRM]</span></dd></div>
+          </dl>
+          <a class="btn btn--sm btn--full" href="#" data-wa="One-to-one">Ask about this course <span class="ar">&rarr;</span></a>
+        </div>
+      </article>
+    </div>
+    <p class="cfm-note" style="margin-top:26px">[CONFIRM] Whether the school teaches children and teenagers. If it does, that is a compliance area: no image of a minor anywhere, and enrolment is always done by the responsible adult — this site never collects a child&rsquo;s data.</p>
+    <p class="cfm-note">⚠ Exam preparation is not accreditation. Nothing on this site claims official exam-centre status or official partnership, and nothing guarantees an IELTS, TOEFL or Cambridge score — none of that will be written without documentation.</p>
+  </div>
+</section>
+
+<!-- 7 · Como funcionam as aulas — three-step rail -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head sec-head--c" data-rv>
+      <p class="eyebrow">How it starts</p>
+      <h2 class="h-lg">Three steps, and none of them costs anything.</h2>
+    </div>
+    <div class="rail">
+      <div class="rstep" data-rv><b>01</b><h3>Take the level check</h3><p>Free, two minutes, no signup and nobody watching.</p></div>
+      <div class="rstep" data-rv><b>02</b><h3>Book the trial class</h3><p>Free. Conditions: [CONFIRM]</p></div>
+      <div class="rstep" data-rv><b>03</b><h3>Pick a class and a time</h3><p>Whatever fits your week, in 24-hour time (19h30, not 7:30pm).</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · Nossos professores.
+     ⚠ NEVER invent a teacher, a name, a CELTA/TESOL/Cambridge credential or a
+     rating. Lingua's "4.9 (250+)" badge is not carried over and there is no
+     rating styling in this build at all. -->
+<section class="sec navy" id="professores">
+  <div class="wrap">
+    <div class="sec-head sec-head--row" data-rv>
+      <div>
+        <p class="eyebrow">Who teaches</p>
+        <h2 class="h-lg">The teachers are the product.</h2>
+      </div>
+      <p class="lede" style="max-width:40ch">Three reserved places. Name, qualification and what each teaches come from you — a teaching qualification is verifiable, and a false claim here is serious.</p>
+    </div>
+    <div class="teachers">
+      <article class="teacher" data-rv>
+        <div class="teacher__i">
+          <!-- PLACEHOLDER-professor-01.jpg — royalty-free stock (Unsplash).
+               ⚠ An ADULT stock portrait, never presented as a real teacher. -->
+          <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=600&q=70" width="600" height="600" loading="lazy" decoding="async"
+               alt="Portrait of an adult against a neutral ground — illustrative stock photograph, not a real teacher of the school">
+        </div>
+        <div class="teacher__b">
+          <h3>Teacher 1 — <span class="cfm">[CONFIRM]</span></h3>
+          <p class="what">What they teach: [CONFIRM]</p>
+          <p>Qualification (CELTA, TESOL, degree…): <span class="cfm">[CONFIRM]</span></p>
+          <p>Languages: <span class="cfm">[CONFIRM]</span></p>
+        </div>
+      </article>
+      <article class="teacher" data-rv>
+        <div class="teacher__i">
+          <!-- PLACEHOLDER-professor-02.jpg — royalty-free stock (Unsplash).
+               ⚠ An ADULT stock portrait, never presented as a real teacher. -->
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=70" width="600" height="600" loading="lazy" decoding="async"
+               alt="Portrait of an adult against a neutral ground — illustrative stock photograph, not a real teacher of the school">
+        </div>
+        <div class="teacher__b">
+          <h3>Teacher 2 — <span class="cfm">[CONFIRM]</span></h3>
+          <p class="what">What they teach: [CONFIRM]</p>
+          <p>Qualification (CELTA, TESOL, degree…): <span class="cfm">[CONFIRM]</span></p>
+          <p>Languages: <span class="cfm">[CONFIRM]</span></p>
+        </div>
+      </article>
+      <article class="teacher" data-rv>
+        <div class="teacher__i">
+          <!-- PLACEHOLDER-professor-03.jpg — royalty-free stock (Unsplash).
+               ⚠ An ADULT stock portrait, never presented as a real teacher. -->
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=70" width="600" height="600" loading="lazy" decoding="async"
+               alt="Portrait of an adult against a neutral ground — illustrative stock photograph, not a real teacher of the school">
+        </div>
+        <div class="teacher__b">
+          <h3>Teacher 3 — <span class="cfm">[CONFIRM]</span></h3>
+          <p class="what">What they teach: [CONFIRM]</p>
+          <p>Qualification (CELTA, TESOL, degree…): <span class="cfm">[CONFIRM]</span></p>
+          <p>Languages: <span class="cfm">[CONFIRM]</span></p>
+        </div>
+      </article>
+    </div>
+    <p class="cfm-note" style="margin-top:26px">No score, no stars, no “4.9 (250+)”. No teacher rating has been invented and none will be.</p>
+  </div>
+</section>
+
+<!-- 9 · Horários e preços — the transparency band.
+     Hidden pricing is the most common complaint about Brazilian language
+     schools, so saying "sob consulta" plainly beats omitting the topic. -->
+<section class="sec" id="precos">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Timetable and prices</p>
+      <h2 class="h-lg">No surprise enrolment fee.</h2>
+      <p class="lede">Times in 24-hour format. Values in R$ (BRL). Nothing here has been invented — and if you prefer to quote case by case, we say so outright rather than leaving the topic out.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(20px,3vw,40px);align-items:start">
+      <div class="tblwrap" data-rv>
+        <table class="tbl">
+          <caption class="sr">Class timetable</caption>
+          <thead><tr>
+            <th scope="col">Time</th>
+            <th scope="col">Mon</th><th scope="col">Tue</th>
+            <th scope="col">Wed</th><th scope="col">Thu</th>
+            <th scope="col">Fri</th><th scope="col">Sat</th>
+          </tr></thead>
+          <tbody>
+            <tr><th scope="row">08h00</th><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td></tr>
+            <tr><th scope="row">10h00</th><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td></tr>
+            <tr><th scope="row">14h00</th><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td></tr>
+            <tr><th scope="row">18h00</th><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td></tr>
+            <tr><th scope="row">19h30</th><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td></tr>
+            <tr><th scope="row">21h00</th><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td><td>[CONFIRM]</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="price" data-rv>
+        <p class="eyebrow">Monthly fee</p>
+        <p class="num">R$ <span class="cfm">[CONFIRM]</span></p>
+        <ul>
+          <li><span>Enrolment fee</span><b>R$ <span class="cfm">[CONFIRM]</span></b></li>
+          <li><span>Coursebook</span><b>R$ <span class="cfm">[CONFIRM]</span></b></li>
+          <li><span>Contract length</span><b><span class="cfm">[CONFIRM]</span></b></li>
+          <li><span>Cancellation</span><b><span class="cfm">[CONFIRM]</span></b></li>
+          <li><span>Make-up classes</span><b><span class="cfm">[CONFIRM]</span></b></li>
+        </ul>
+        <p class="cfm-note" style="margin-top:20px">Under Brazilian consumer law the total cost must be clear: monthly fee, enrolment fee, materials, term and cancellation rule together, with no undisclosed auto-renewal. If enrolment happens off-premises or online, the 7-day right of withdrawal applies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · Por que a English for All — checklist -->
+<section class="sec fieldbg">
+  <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,3.6vw,56px);align-items:center">
+    <div data-rv>
+      <p class="eyebrow">Why here</p>
+      <h2 class="h-lg">Eight reasons — and none invented.</h2>
+      <ul class="check" style="margin-top:24px">
+        <li><span class="tick" aria-hidden="true">&#10003;</span><span>Small classes — <span class="cfm">[CONFIRM]</span></span></li>
+        <li><span class="tick" aria-hidden="true">&#10003;</span><span>A focus on speaking — <span class="cfm">[CONFIRM]</span></span></li>
+        <li><span class="tick" aria-hidden="true">&#10003;</span><span>Coursebook included — <span class="cfm">[CONFIRM]</span></span></li>
+        <li><span class="tick" aria-hidden="true">&#10003;</span><span>Flexible timetable — <span class="cfm">[CONFIRM]</span></span></li>
+        <li><span class="tick" aria-hidden="true">&#10003;</span><span>Make-up classes — <span class="cfm">[CONFIRM]</span></span></li>
+        <li><span class="tick" aria-hidden="true">&#10003;</span><span>Qualified teachers — <span class="cfm">[CONFIRM]</span></span></li>
+        <li><span class="tick" aria-hidden="true">&#10003;</span><span>In person and online — <span class="cfm">[CONFIRM]</span></span></li>
+        <li><span class="tick" aria-hidden="true">&#10003;</span><span>A free trial class — <span class="cfm">[CONFIRM]</span></span></li>
+      </ul>
+    </div>
+    <div class="qmark" data-rv>
+      <b>[CONFIRM] what does “família” mean here?</b>
+      <p style="margin:0">The only public signal the school has put into the world is the handle <strong>@familiaenglishforall</strong> — and it is genuinely ambiguous. It could mean (a) a family-run school; (b) a school that treats its student body as a <em>família</em>, a community; or (c) a school that teaches families together.</p>
+      <p style="margin:12px 0 0">Those are three different websites. This mockup is built on the <strong>community</strong> reading, which is the safest and most broadly applicable — but the question is yours, and the answer changes the homepage, the photography and the voice.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · Nossa comunidade — built on the COMMUNITY reading of "família",
+     with the ambiguity flagged above. ⛔ Adults only in all imagery. -->
+<section class="sec" id="comunidade">
+  <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,3.6vw,56px);align-items:center">
+    <figure style="margin:0;overflow:hidden;border-radius:18px" data-rv>
+      <!-- PLACEHOLDER-comunidade.jpg — royalty-free stock (Unsplash). ADULTS ONLY. -->
+      <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=70" width="1000" height="750" loading="lazy" decoding="async"
+           style="aspect-ratio:4/3;object-fit:cover"
+           alt="Adults talking in a relaxed setting — illustrative stock photograph">
+    </figure>
+    <div data-rv>
+      <p class="eyebrow">The community</p>
+      <h2 class="h-lg">You learn English by talking to people.</h2>
+      <p class="lede" style="margin-top:16px">A conversation club, a film night, a language exchange, student meet-ups — what actually exists is yours to say.</p>
+      <ul class="check" style="margin-top:20px">
+        <li><span class="tick" aria-hidden="true">&#10003;</span><span>Conversation club — <span class="cfm">[CONFIRM]</span></span></li>
+        <li><span class="tick" aria-hidden="true">&#10003;</span><span>Film night — <span class="cfm">[CONFIRM]</span></span></li>
+        <li><span class="tick" aria-hidden="true">&#10003;</span><span>Language exchange — <span class="cfm">[CONFIRM]</span></span></li>
+        <li><span class="tick" aria-hidden="true">&#10003;</span><span>Student meet-ups — <span class="cfm">[CONFIRM]</span></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 12 · Depoimentos — permitted for a school, but ONLY real, named and
+     consented. So the section ships as an explicit empty state. -->
+<section class="sec washbg">
+  <div class="wrap wrap--n">
+    <div class="empty" data-rv>
+      <h2 class="h-md">Testimonials</h2>
+      <p style="margin-top:12px">[CONFIRM] A school <em>may</em> publish testimonials — unlike a law firm. But only real, named, consented ones. We have written no examples, used no stock portrait as a student, and will never publish a testimonial from or about a minor. If no real testimonial exists, this section comes off the site.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 13 · FAQ -->
+<section class="sec">
+  <div class="wrap wrap--n">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Frequently asked</p>
+      <h2 class="h-lg">What everyone asks before enrolling.</h2>
+    </div>
+    <div class="faq" data-rv>
+      <details><summary>Do I need to know anything to start?</summary><p>No. There are classes for people who have never studied — and the level check above is private precisely so you do not have to guess in public. Which levels currently have an open class: <span class="cfm">[CONFIRM]</span></p></details>
+      <details><summary>How does the trial class work?</summary><p>It exists, it is free, and it commits you to nothing. Conditions — one per person, subject to availability, in person or online: <span class="cfm">[CONFIRM]</span></p></details>
+      <details><summary>Can I change my class time?</summary><p><span class="cfm">[CONFIRM]</span></p></details>
+      <details><summary>Are missed classes made up?</summary><p><span class="cfm">[CONFIRM]</span></p></details>
+      <details><summary>Is the coursebook included?</summary><p>Whether the material is in the monthly fee or charged separately changes the real cost of the course, so it has to be stated clearly: <span class="cfm">[CONFIRM]</span></p></details>
+      <details><summary>Do you issue a certificate?</summary><p>A certificate of completion issued by the school is <strong>not</strong> an internationally recognised qualification and is not equivalent to Cambridge, IELTS or TOEFL. What the school issues, and what it means: <span class="cfm">[CONFIRM]</span></p></details>
+      <details><summary>How much does it cost?</summary><p>The monthly fee, enrolment fee, materials, contract length and cancellation rule have to appear together — no surprise charges. Until they are confirmed, no figure is published here: <span class="cfm">[CONFIRM]</span></p></details>
+      <details><summary>Do you teach children and teenagers?</summary><p>If the school teaches minors, enrolment is always done by the <strong>responsible adult</strong>: this site never collects a child&rsquo;s or teenager&rsquo;s data. <span class="cfm">[CONFIRM]</span></p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 14 · Blog — a genuine organic asset. "qual meu nível de inglês", "como
+     aprender inglês do zero" and "diferença entre A2 e B1" are high-volume,
+     low-competition Brazilian searches that Instagram ranks for in none. -->
+<section class="sec fieldbg">
+  <div class="wrap">
+    <div class="sec-head sec-head--row" data-rv>
+      <div>
+        <p class="eyebrow">English tips</p>
+        <h2 class="h-lg">What people actually search for.</h2>
+      </div>
+      <p class="lede" style="max-width:38ch">Three articles in Portuguese answering exactly what gets typed into Google — and which today take the visitor to a competitor&rsquo;s site.</p>
+    </div>
+    <div class="posts">
+      <article class="post" data-rv>
+        <div class="post__i">
+          <!-- PLACEHOLDER-blog — royalty-free stock (Unsplash) -->
+          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=700&q=70" width="700" height="394" loading="lazy" decoding="async"
+               alt="Books or a study table — illustrative stock photograph">
+        </div>
+        <div class="post__b">
+          <span class="when">DD/MM/AAAA <span class="cfm">[CONFIRM]</span></span>
+          <h3>What is my English level?</h3>
+          <p>A1 to C1 — what each one means in practice, without the jargon.</p>
+        </div>
+      </article>
+      <article class="post" data-rv>
+        <div class="post__i">
+          <!-- PLACEHOLDER-blog — royalty-free stock (Unsplash) -->
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=70" width="700" height="394" loading="lazy" decoding="async"
+               alt="Books or a study table — illustrative stock photograph">
+        </div>
+        <div class="post__b">
+          <span class="when">DD/MM/AAAA <span class="cfm">[CONFIRM]</span></span>
+          <h3>How to learn English from scratch</h3>
+          <p>What to do in the first three months, and what to ignore.</p>
+        </div>
+      </article>
+      <article class="post" data-rv>
+        <div class="post__i">
+          <!-- PLACEHOLDER-blog — royalty-free stock (Unsplash) -->
+          <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=70" width="700" height="394" loading="lazy" decoding="async"
+               alt="Books or a study table — illustrative stock photograph">
+        </div>
+        <div class="post__b">
+          <span class="when">DD/MM/AAAA <span class="cfm">[CONFIRM]</span></span>
+          <h3>The difference between A2 and B1</h3>
+          <p>The boundary where most people get stuck — and how to tell which side you are on.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 15 · Contato e localização — WhatsApp first, then phone, then a short form.
+     ⛔ The form asks for the enquirer's own details only. If the enquiry is
+     about a young learner, it is the RESPONSÁVEL who writes: no child name,
+     age, school or photograph is ever requested by this site. -->
+<section class="sec" id="contato">
+  <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,3.6vw,54px);align-items:start">
+    <div data-rv>
+      <p class="eyebrow">Contact</p>
+      <h2 class="h-lg">Talk to the school.</h2>
+      <p class="lede" style="margin-top:16px">In Brazil, enrolment happens on WhatsApp — essentially without exception. So it comes first.</p>
+      <div class="btn-row">
+        <a class="btn btn--wa" href="#" data-wa="trial">Book a trial class <span class="cfm">[CONFIRM]</span></a>
+      </div>
+      <ul class="contactlist">
+        <li><b>WhatsApp</b> <span><span class="cfm">[CONFIRM]</span></span></li>
+        <li><b>Phone</b> <span><span class="cfm">[CONFIRM]</span></span></li>
+        <li><b>Address</b> <span><span class="cfm">[CONFIRM]</span></span></li>
+        <li><b>Neighbourhood</b> <span><span class="cfm">[CONFIRM]</span></span></li>
+        <li><b>Office hours</b> <span><span class="cfm">[CONFIRM]</span></span></li>
+        <li><b>Instagram</b> <span><a href="https://www.instagram.com/familiaenglishforall/" target="_blank" rel="noopener">@familiaenglishforall</a></span></li>
+      </ul>
+      <div class="map" style="margin-top:22px" data-rv role="img" aria-label="Map — address to be confirmed">
+        <div class="map__grid" aria-hidden="true"></div>
+        <div>
+          <strong style="display:block;font-family:var(--display);font-size:1.2rem">Florianópolis</strong>
+          <span style="font-size:.9rem;color:var(--muted)">Santa Catarina</span>
+          <p style="margin:12px 0 0"><span class="cfm">[CONFIRM address and neighbourhood]</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="form" data-rv>
+      <form id="contactForm">
+        <div class="fr">
+          <div class="field"><label for="nome">Your name</label><input type="text" id="nome" name="nome" required></div>
+          <div class="field"><label for="wpp">Your WhatsApp</label><input type="tel" id="wpp" name="wpp" required></div>
+        </div>
+        <div class="fr">
+          <div class="field"><label for="curso">Course of interest</label>
+            <select id="curso" name="curso">
+              <option>English for Adults</option>
+              <option>Conversation</option>
+              <option>Business English</option>
+              <option>Exam preparation</option>
+              <option>Travel English</option>
+              <option>One-to-one</option>
+              <option>Not sure yet</option>
+            </select></div>
+          <div class="field"><label for="horario">Preferred time</label>
+            <select id="horario" name="horario">
+              <option>Morning</option><option>Afternoon</option>
+              <option>Evening</option><option>Saturday</option>
+            </select></div>
+        </div>
+        <div class="field" style="margin-bottom:14px"><label for="msg">Message</label><textarea id="msg" name="msg"></textarea></div>
+        <p style="font-size:.86rem;color:var(--muted)">If the class is for a child or teenager, the responsible adult fills this in — this site does not collect a minor&rsquo;s data.</p>
+        <label class="consent" for="consent">
+          <input type="checkbox" id="consent">
+          <span>I consent to being contacted by WhatsApp in reply to this message, as described in the <a href="privacy.html">Privacy Policy</a> (LGPD, Law 13.709/2018).</span>
+        </label>
+        <button class="btn btn--full" type="submit">Send <span class="ar">&rarr;</span></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- 16 · Dark CTA band -->
+<section class="sec navy">
+  <div class="wrap wrap--n" style="text-align:center">
+    <h2 class="h-lg" data-rv>Book your free trial class.</h2>
+    <p class="lede" style="margin:16px auto 0" data-rv>No commitment, no card, no signup. If it is not for you, that is fine. <span class="cfm">[CONFIRM]</span></p>
+    <div class="btn-row" style="justify-content:center" data-rv>
+      <a class="btn btn--sun" href="#" data-wa="trial">Message on WhatsApp <span class="cfm">[CONFIRM]</span></a>
+      <a class="btn btn--ghost" href="#nivel">Take the level check</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- 17 · Footer -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <span class="brand">English for <span>All</span><small>Florianópolis — SC</small></span>
+        <p style="font-size:.9rem;max-width:32ch">Full trading name <span class="cfm">[CONFIRM]</span></p>
+        <p style="font-size:.9rem">CNPJ <span class="cfm">[CONFIRM]</span></p>
+      </div>
+      <div>
+        <h4>Courses</h4>
+        <ul>
+          <li><a href="#cursos">English for Adults</a></li>
+          <li><a href="#cursos">Conversation</a></li>
+          <li><a href="#cursos">Business English</a></li>
+          <li><a href="#cursos">Exam preparation</a></li>
+          <li><a href="#cursos">Travel English</a></li>
+          <li><a href="#cursos">One-to-one</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>The school</h4>
+        <ul>
+          <li><a href="#nivel">Level check</a></li>
+          <li><a href="#professores">Teachers</a></li>
+          <li><a href="#precos">Timetable and prices</a></li>
+          <li><a href="#comunidade">Community</a></li>
+          <li>Address <span class="cfm">[CONFIRM]</span></li>
+          <li>Opening hours <span class="cfm">[CONFIRM]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact &amp; legal</h4>
+        <ul>
+          <li>WhatsApp <span class="cfm">[CONFIRM]</span></li>
+          <li><a href="https://www.instagram.com/familiaenglishforall/" target="_blank" rel="noopener">@familiaenglishforall</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="privacy.html#cookies">Cookie preferences</a></li>
+          <li><a href="index.html" hreflang="pt-BR">Português</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr__bot">
+      <span>© 2026 English for All · Registered name <span class="cfm">[CONFIRM]</span></span>
+      <span>Mockup — stock imagery, with no minors in any of it. Replace before launch.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 18 · Sticky mobile bar + floating WhatsApp -->
+<a class="wa" href="#" data-wa aria-label="Message on WhatsApp — number to confirm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.24-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg><span class="wa__cfm">[CONFIRM]</span></a>
+<div class="mbar">
+  <a class="btn btn--wa" href="#" data-wa>WhatsApp</a>
+  <a class="btn" href="#nivel">Book</a>
+</div>
+
+<div class="ck" role="dialog" aria-label="Cookie preferences">
+  <div class="ck__in">
+    <div>
+      <p><strong>Cookies and personal data.</strong>
+        Only the essential stays on. Analytics and marketing stay off until you turn them on. The level check stores nothing and sends nothing.
+        <a href="privacy.html">Privacy Policy</a></p>
+      <div class="ck__opts">
+        <label><input type="checkbox" checked disabled> Essential</label>
+        <label><input type="checkbox" id="ckA"> Analytics</label>
+        <label><input type="checkbox" id="ckM"> Marketing</label>
+      </div>
+    </div>
+    <div class="ck__btns">
+      <button class="btn btn--ghost btn--sm" data-ck="none">Reject</button>
+      <button class="btn btn--ghost btn--sm" data-ck="save">Save</button>
+      <button class="btn btn--sm" data-ck="all">Accept</button>
+    </div>
+  </div>
+</div>
+
+<script src="../script.js" defer></script>
+</body>
+</html>

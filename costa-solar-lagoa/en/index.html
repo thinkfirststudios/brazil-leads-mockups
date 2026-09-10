@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<!-- Speculative pitch mockup for a prospect who has not commissioned, seen or
+     approved it. Must never be indexed or compete with the real business. -->
+<!-- ⚠ The title carries a [CONFIRM] on the CATEGORY on purpose. We do not ship a
+     title asserting "pousada" or "hotel" when the category is unverified. -->
+<title>Costa Solar Lagoa — [CONFIRM category], Florianópolis</title>
+<meta name="description" content="Costa Solar Lagoa, Florianópolis — SC. Check availability and contact us directly. Category, address and amenities to be confirmed.">
+<link rel="canonical" href="https://costasolarlagoa.example/en/">
+<link rel="alternate" hreflang="pt-BR" href="https://costasolarlagoa.example/">
+<link rel="alternate" hreflang="en" href="https://costasolarlagoa.example/en/">
+<link rel="alternate" hreflang="x-default" href="https://costasolarlagoa.example/">
+<meta property="og:title" content="Costa Solar Lagoa — [CONFIRM category], Florianópolis">
+<meta property="og:description" content="Costa Solar Lagoa, Florianópolis — SC. Check availability and contact us directly. Category, address and amenities to be confirmed.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=1900&q=70" fetchpriority="high">
+<link rel="stylesheet" href="../styles.css">
+<!-- ⚠ NO LodgingBusiness JSON-LD is emitted on this build. The category is
+     unverified and every property would be a guess. Publishing structured data
+     with invented values is worse than publishing none. It goes in the moment
+     the discovery call confirms what this business actually is. -->
+</head>
+<body>
+
+<!-- 1 · Utility topbar -->
+<div class="top">
+  <div class="wrap top__in">
+    <div class="pills">
+      <a href="../" hreflang="pt-BR" lang="pt-BR">PT</a>
+      <a href="index.html" hreflang="en" class="on" lang="en">EN</a>
+    </div>
+    <div class="top__r">
+      <span>Phone <span class="cfm">[CONFIRM]</span></span>
+      <span>Instagram <span class="cfm">[CONFIRM]</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- 2 · Sticky nav -->
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="index.html">Costa Solar Lagoa<small>Florianópolis — SC</small></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#sobre">The Property</a><a href="#acomodacoes">Accommodation</a><a href="#comodidades">Amenities</a><a href="#local">Location</a><a href="#contato">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px">
+      <a class="btn btn--sm" href="#disponibilidade">Book</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mnav" aria-label="Menu">
+  <a href="#sobre">The Property</a><a href="#acomodacoes">Accommodation</a><a href="#comodidades">Amenities</a><a href="#local">Location</a><a href="#contato">Contact</a>
+  <a href="index.html" lang="pt-BR">Português</a>
+</nav>
+
+<!-- 3 · Hero — headline stays factual and non-committal until positioning is confirmed -->
+<section class="hero">
+  <div class="hero__bg">
+    <!-- PLACEHOLDER-hero-lagoa.jpg — royalty-free stock (Unsplash). NOT a photo of this property. -->
+    <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=1900&q=70" width="1900" height="1070" fetchpriority="high"
+         alt="Wide view over calm water at golden hour with green hills behind — illustrative stock image">
+  </div>
+  <div class="hero__scrim"></div>
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="wrap hero__in">
+    <p class="eyebrow">Florianópolis — Santa Catarina</p>
+    <h1>Costa Solar Lagoa</h1>
+    <p>Florianópolis — SC. <span class="cfm">[CONFIRM positioning]</span> Nothing on this page was invented: every open field is a fact we still need from you.</p>
+    <div class="btn-row">
+      <a class="btn" href="#disponibilidade">Book <span class="ar">&rarr;</span></a>
+      <a class="btn btn--ghost" href="#sobre">Discover</a>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · ⭐ Availability widget — the reason the page exists.
+     ⚠ It performs NO lookup. No booking engine has been chosen, so submitting
+     composes a WhatsApp message with the dates in DD/MM and nothing more. -->
+<div class="wrap" id="disponibilidade">
+  <div class="avail" data-rv>
+    <form id="availForm" class="avail__g">
+      <div class="field">
+        <label for="in">Check-in</label>
+        <input type="date" id="in" name="in" required>
+      </div>
+      <div class="field">
+        <label for="out">Check-out</label>
+        <input type="date" id="out" name="out" required>
+      </div>
+      <div class="field">
+        <label for="guests">Guests</label>
+        <select id="guests" name="guests">
+          <option>1</option><option>2</option><option>3</option><option>4</option>
+          <option>5+</option>
+        </select>
+      </div>
+      <button class="btn btn--full" type="submit">Check availability</button>
+    </form>
+    <p class="avail__note">Dates in DD/MM. This form opens a WhatsApp chat with your dates filled in — no booking engine is connected yet. Number: <span class="cfm">[CONFIRM]</span></p>
+  </div>
+</div>
+
+<!-- 5 · About — the copy is a placeholder, not a story. We have none. -->
+<section class="sec" id="sobre">
+  <div class="wrap split">
+    <div class="split__t" data-rv>
+      <p class="eyebrow">The property</p>
+      <h2 class="h-lg">A page built without inventing anything.</h2>
+      <p class="cfm-note">[CONFIRM the story and positioning with the owner.] The only public reference supplied for Costa Solar Lagoa is a single login-walled Instagram post. We do not know the business category, the address, whether “Lagoa” refers to Lagoa da Conceição, or whether the business is trading today.</p>
+      <p class="lede">So this page is a complete, empty structure. Every section below is ready to take real content without a single line of layout changing — and every open field is marked in plain sight rather than hidden in the source.</p>
+      <div class="btn-row">
+        <a class="btn btn--ghost" href="#contato">Send us the facts <span class="ar">&rarr;</span></a>
+      </div>
+    </div>
+    <figure class="fig" style="margin:0;aspect-ratio:4/3" data-rv>
+      <!-- PLACEHOLDER-sobre-fachada.jpg — royalty-free stock (Unsplash) -->
+      <img src="https://images.unsplash.com/photo-1541959833400-049d37f98ccd?auto=format&fit=crop&w=1200&q=72" width="1200" height="900" loading="lazy" decoding="async"
+           alt="Sunlit guesthouse exterior with white walls and tropical planting — illustrative stock image">
+      <figcaption>Illustrative stock — replace with a real photo</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 6 · Four trust badges — VISIBLE EMPTY SLOTS.
+     They are NOT filled with plausible-sounding amenities. -->
+<section class="sec sec--t band">
+  <div class="wrap">
+    <div class="badges">
+      <div class="badge" data-rv>
+        <div class="ic" aria-hidden="true"></div>
+        <b><span class="cfm">[CONFIRM]</span></b>
+        <span>Selling point 1 — to be defined with the owner</span>
+      </div>
+      <div class="badge" data-rv>
+        <div class="ic" aria-hidden="true"></div>
+        <b><span class="cfm">[CONFIRM]</span></b>
+        <span>Selling point 2 — to be defined with the owner</span>
+      </div>
+      <div class="badge" data-rv>
+        <div class="ic" aria-hidden="true"></div>
+        <b><span class="cfm">[CONFIRM]</span></b>
+        <span>Selling point 3 — to be defined with the owner</span>
+      </div>
+      <div class="badge" data-rv>
+        <div class="ic" aria-hidden="true"></div>
+        <b><span class="cfm">[CONFIRM]</span></b>
+        <span>Selling point 4 — to be defined with the owner</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · Accommodation carousel — three explicitly-labelled placeholder cards.
+     It is not even established that this business has rooms. -->
+<section class="sec" id="acomodacoes">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Accommodation</p>
+      <h2 class="h-lg">Example structure — accommodation to be confirmed.</h2>
+      <p class="lede">There is no verified unit type, occupancy, bed configuration or rate. The three cards below show the format, not the offer.</p>
+    </div>
+    <div class="carou">
+      <div class="track" tabindex="0" aria-label="Accommodation">
+        <article class="card" data-rv>
+          <div class="card__i">
+            <span class="card__tag">Example</span>
+            <!-- PLACEHOLDER-acomodacao-01.jpg — royalty-free stock (Unsplash) PLACEHOLDER, not this property -->
+            <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=760&q=72" width="760" height="507" loading="lazy" decoding="async" alt="Bright guest room with white bedding and wooden furniture — illustrative stock image">
+          </div>
+          <div class="card__b">
+            <h3>Accommodation 1</h3>
+            <p><span class="cfm">[CONFIRM type, name, occupancy and amenities]</span></p>
+            <div class="card__p">
+              <b>On request</b>
+              <span>rate to be confirmed</span>
+            </div>
+            <a class="btn btn--sm btn--full" href="#disponibilidade">Enquire <span class="ar">&rarr;</span></a>
+          </div>
+        </article>
+        <article class="card" data-rv>
+          <div class="card__i">
+            <span class="card__tag">Example</span>
+            <!-- PLACEHOLDER-acomodacao-02.jpg — royalty-free stock (Unsplash) PLACEHOLDER, not this property -->
+            <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=760&q=72" width="760" height="507" loading="lazy" decoding="async" alt="Balcony with chairs and greenery beyond — illustrative stock image">
+          </div>
+          <div class="card__b">
+            <h3>Accommodation 2</h3>
+            <p><span class="cfm">[CONFIRM type, name, occupancy and amenities]</span></p>
+            <div class="card__p">
+              <b>On request</b>
+              <span>rate to be confirmed</span>
+            </div>
+            <a class="btn btn--sm btn--full" href="#disponibilidade">Enquire <span class="ar">&rarr;</span></a>
+          </div>
+        </article>
+        <article class="card" data-rv>
+          <div class="card__i">
+            <span class="card__tag">Example</span>
+            <!-- PLACEHOLDER-acomodacao-03.jpg — royalty-free stock (Unsplash) PLACEHOLDER, not this property -->
+            <img src="https://images.unsplash.com/photo-1590073844006-33379778ae09?auto=format&fit=crop&w=760&q=72" width="760" height="507" loading="lazy" decoding="async" alt="Neutral double room with a plant and soft daylight — illustrative stock image">
+          </div>
+          <div class="card__b">
+            <h3>Accommodation 3</h3>
+            <p><span class="cfm">[CONFIRM type, name, occupancy and amenities]</span></p>
+            <div class="card__p">
+              <b>On request</b>
+              <span>rate to be confirmed</span>
+            </div>
+            <a class="btn btn--sm btn--full" href="#disponibilidade">Enquire <span class="ar">&rarr;</span></a>
+          </div>
+        </article>
+      </div>
+      <div class="carou__ctl">
+        <button data-carou="prev" aria-label="Previous">&larr;</button>
+        <button data-carou="next" aria-label="Next">&rarr;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · Amenity grid — six visible empty slots, never invented amenities -->
+<section class="sec band" id="comodidades">
+  <div class="wrap">
+    <div class="sec-head sec-head--c" data-rv>
+      <p class="eyebrow">Amenities</p>
+      <h2 class="h-lg">Six reserved slots.</h2>
+      <p class="lede" style="margin-inline:auto">Wi-Fi, breakfast, pool, parking, air conditioning, kitchen — none of it is verified, so none of it is written here.</p>
+    </div>
+    <div class="amen">
+      <div class="cfm-slot" data-rv><div class="ic" aria-hidden="true"></div>
+        <span class="cfm">[CONFIRM]</span> <span style="display:block;margin-top:6px">Amenity 1</span></div>
+      <div class="cfm-slot" data-rv><div class="ic" aria-hidden="true"></div>
+        <span class="cfm">[CONFIRM]</span> <span style="display:block;margin-top:6px">Amenity 2</span></div>
+      <div class="cfm-slot" data-rv><div class="ic" aria-hidden="true"></div>
+        <span class="cfm">[CONFIRM]</span> <span style="display:block;margin-top:6px">Amenity 3</span></div>
+      <div class="cfm-slot" data-rv><div class="ic" aria-hidden="true"></div>
+        <span class="cfm">[CONFIRM]</span> <span style="display:block;margin-top:6px">Amenity 4</span></div>
+      <div class="cfm-slot" data-rv><div class="ic" aria-hidden="true"></div>
+        <span class="cfm">[CONFIRM]</span> <span style="display:block;margin-top:6px">Amenity 5</span></div>
+      <div class="cfm-slot" data-rv><div class="ic" aria-hidden="true"></div>
+        <span class="cfm">[CONFIRM]</span> <span style="display:block;margin-top:6px">Amenity 6</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9 · Location — the distance ladder renders with BLANK values.
+     ⚠ All geo copy is held at "Florianópolis". Targeting the wrong
+     neighbourhood is worse than targeting none. -->
+<section class="sec" id="local">
+  <div class="wrap split">
+    <div class="split__t" data-rv>
+      <p class="eyebrow">Location</p>
+      <h2 class="h-lg">Florianópolis — SC.</h2>
+      <p class="cfm-note">[CONFIRM full street address and neighbourhood.] “Lagoa” in the name suggests Lagoa da Conceição, but that is an inference from the name and nothing more — there are other Lagoas in Santa Catarina. Until it is confirmed, this page says only Florianópolis.</p>
+      <ul class="ladder">
+        <li><b>Lagoa da Conceição</b> <span><span class="cfm">[CONFIRM]</span> km · <span class="cfm">[CONFIRM]</span> min</span></li>
+        <li><b>Praia Mole</b> <span><span class="cfm">[CONFIRM]</span> km · <span class="cfm">[CONFIRM]</span> min</span></li>
+        <li><b>Praia da Joaquina</b> <span><span class="cfm">[CONFIRM]</span> km · <span class="cfm">[CONFIRM]</span> min</span></li>
+        <li><b>City centre</b> <span><span class="cfm">[CONFIRM]</span> km · <span class="cfm">[CONFIRM]</span> min</span></li>
+        <li><b>Hercílio Luz Airport</b> <span><span class="cfm">[CONFIRM]</span> km · <span class="cfm">[CONFIRM]</span> min</span></li>
+      </ul>
+    </div>
+    <div class="map" data-rv role="img" aria-label="Map of Florianópolis — exact address to be confirmed">
+      <div class="map__grid" aria-hidden="true"></div>
+      <div>
+        <strong style="display:block;font-family:var(--serif);font-size:1.4rem;color:#1F2933">Florianópolis</strong>
+        <span style="font-size:.9rem">Santa Catarina, Brasil</span>
+        <p style="margin:16px 0 0"><span class="cfm">[CONFIRM exact address — the marker cannot be placed without it]</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · What to do in the region — genuinely public island attractions, so the
+     section renders complete WITHOUT asserting anything about the business. -->
+<section class="sec dark">
+  <div class="wrap">
+    <div class="sec-head sec-head--c" data-rv>
+      <p class="eyebrow">In the region</p>
+      <h2 class="h-lg">What the island offers.</h2>
+      <p class="lede" style="margin-inline:auto">Public attractions in Florianópolis. No claim about distances or access from the property — that depends on the address, which we do not have yet.</p>
+    </div>
+    <div class="acts">
+      <figure class="act" style="margin:0" data-rv>
+        <!-- PLACEHOLDER-regiao-01.jpg — royalty-free stock (Unsplash) PLACEHOLDER -->
+        <img src="https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?auto=format&fit=crop&w=700&q=72" width="700" height="875" loading="lazy" decoding="async" alt="Aerial view of a wide beach and blue sea — illustrative stock image">
+        <figcaption><b>Beaches</b><span>Wide sand and open sea from above</span></figcaption>
+      </figure>
+      <figure class="act" style="margin:0" data-rv>
+        <!-- PLACEHOLDER-regiao-02.jpg — royalty-free stock (Unsplash) PLACEHOLDER -->
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=700&q=72" width="700" height="875" loading="lazy" decoding="async" alt="Dirt trail between tall trees — illustrative stock image">
+        <figcaption><b>Trails</b><span>Coastal and forest trails across the island</span></figcaption>
+      </figure>
+      <figure class="act" style="margin:0" data-rv>
+        <!-- PLACEHOLDER-regiao-03.jpg — royalty-free stock (Unsplash) PLACEHOLDER -->
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=72" width="700" height="875" loading="lazy" decoding="async" alt="A plated dish in a restaurant, natural light — illustrative stock image">
+        <figcaption><b>Dining</b><span>Island cooking, seafood and cafés</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · Breakfast band — we do not know whether breakfast is served AT ALL. -->
+<section class="sec">
+  <div class="wrap split split--rev">
+    <div class="split__t" data-rv>
+      <p class="eyebrow">Breakfast</p>
+      <h2 class="h-lg">Served? To be confirmed.</h2>
+      <p class="cfm-note">[CONFIRM whether breakfast is served at all.] If it is: included in the rate or charged separately, service hours, table service or buffet, and whether gluten-free or lactose-free options exist. Each of those answers changes this section and none of them can be assumed.</p>
+    </div>
+    <figure class="fig" style="margin:0;aspect-ratio:3/2" data-rv>
+      <!-- PLACEHOLDER-cafe-da-manha.jpg — royalty-free stock (Unsplash) -->
+      <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=72" width="1200" height="800" loading="lazy" decoding="async"
+           alt="Breakfast table seen from above with fruit, breads and coffee — illustrative stock image">
+      <figcaption>Illustrative stock</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 12 · Gallery — eight tiles, all labelled illustrative -->
+<section class="sec band">
+  <div class="wrap">
+    <div class="sec-head sec-head--c" data-rv>
+      <p class="eyebrow">Gallery</p>
+      <h2 class="h-lg">Illustrative images — to be replaced with real photos.</h2>
+    </div>
+    <div class="gal">
+      <figure data-rv>
+        <!-- PLACEHOLDER-galeria-01.jpg — royalty-free stock (Unsplash) PLACEHOLDER, never presented as this property -->
+        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=600&q=70" width="600" height="600" loading="lazy" decoding="async"
+             alt="Generic warm-graded coastal guesthouse scene — illustrative stock image">
+      </figure>
+      <figure data-rv>
+        <!-- PLACEHOLDER-galeria-02.jpg — royalty-free stock (Unsplash) PLACEHOLDER, never presented as this property -->
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=70" width="600" height="600" loading="lazy" decoding="async"
+             alt="Generic warm-graded coastal guesthouse scene — illustrative stock image">
+      </figure>
+      <figure data-rv>
+        <!-- PLACEHOLDER-galeria-03.jpg — royalty-free stock (Unsplash) PLACEHOLDER, never presented as this property -->
+        <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=600&q=70" width="600" height="600" loading="lazy" decoding="async"
+             alt="Generic warm-graded coastal guesthouse scene — illustrative stock image">
+      </figure>
+      <figure data-rv>
+        <!-- PLACEHOLDER-galeria-04.jpg — royalty-free stock (Unsplash) PLACEHOLDER, never presented as this property -->
+        <img src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?auto=format&fit=crop&w=600&q=70" width="600" height="600" loading="lazy" decoding="async"
+             alt="Generic warm-graded coastal guesthouse scene — illustrative stock image">
+      </figure>
+      <figure data-rv>
+        <!-- PLACEHOLDER-galeria-05.jpg — royalty-free stock (Unsplash) PLACEHOLDER, never presented as this property -->
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=70" width="600" height="600" loading="lazy" decoding="async"
+             alt="Generic warm-graded coastal guesthouse scene — illustrative stock image">
+      </figure>
+      <figure data-rv>
+        <!-- PLACEHOLDER-galeria-06.jpg — royalty-free stock (Unsplash) PLACEHOLDER, never presented as this property -->
+        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=70" width="600" height="600" loading="lazy" decoding="async"
+             alt="Generic warm-graded coastal guesthouse scene — illustrative stock image">
+      </figure>
+      <figure data-rv>
+        <!-- PLACEHOLDER-galeria-07.jpg — royalty-free stock (Unsplash) PLACEHOLDER, never presented as this property -->
+        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=70" width="600" height="600" loading="lazy" decoding="async"
+             alt="Generic warm-graded coastal guesthouse scene — illustrative stock image">
+      </figure>
+      <figure data-rv>
+        <!-- PLACEHOLDER-galeria-08.jpg — royalty-free stock (Unsplash) PLACEHOLDER, never presented as this property -->
+        <img src="https://images.unsplash.com/photo-1455587734955-081b22074882?auto=format&fit=crop&w=600&q=70" width="600" height="600" loading="lazy" decoding="async"
+             alt="Generic warm-graded coastal guesthouse scene — illustrative stock image">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 13 · Reviews — OMITTED ENTIRELY. No invented quote, no invented score,
+     no aggregate. There is no verified review data for this lead. -->
+<section class="sec">
+  <div class="wrap wrap--n">
+    <div class="reviews-empty" data-rv>
+      <h2 class="h-md">Guest reviews</h2>
+      <p>[CONFIRM — awaiting real guest reviews; do not populate.] There is no score, review count, award, star rating or verified testimonial for this business. None was invented and none will be.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 14 · Direct-booking value band -->
+<section class="sec dark">
+  <div class="wrap">
+    <div class="sec-head sec-head--c" data-rv>
+      <p class="eyebrow">Book direct</p>
+      <h2 class="h-lg">Talking directly is better for both sides.</h2>
+    </div>
+    <div class="value">
+      <div data-rv><b>Best available rate</b><span>No intermediary commission in between. Rate and policy: <span class="cfm">[CONFIRM]</span></span></div>
+      <div data-rv><b>Direct contact</b><span>A conversation with whoever runs the house, not a call centre. WhatsApp <span class="cfm">[CONFIRM]</span></span></div>
+      <div data-rv><b>Payment</b><span>Pix, card or bank transfer — accepted methods to be confirmed: <span class="cfm">[CONFIRM]</span>. All values in R$ (BRL) only.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 15 · Contact — LGPD consent is required before the message can be sent -->
+<section class="sec" id="contato">
+  <div class="wrap split">
+    <div class="split__t" data-rv>
+      <p class="eyebrow">Contact</p>
+      <h2 class="h-lg">Get in touch with Costa Solar Lagoa.</h2>
+      <p class="lede" style="margin-top:14px">The form composes a WhatsApp message. This site stores nothing.</p>
+      <ul class="ladder">
+        <li><b>WhatsApp</b> <span><span class="cfm">[CONFIRM]</span></span></li>
+        <li><b>Phone</b> <span><span class="cfm">[CONFIRM]</span></span></li>
+        <li><b>Email</b> <span><span class="cfm">[CONFIRM]</span></span></li>
+        <li><b>Address</b> <span><span class="cfm">[CONFIRM]</span></span></li>
+        <li><b>Instagram</b> <span><span class="cfm">[CONFIRM]</span></span></li>
+      </ul>
+      <div class="btn-row">
+        <a class="btn btn--wa" href="#" data-wa>WhatsApp <span class="cfm">[CONFIRM]</span></a>
+        <a class="btn btn--ghost" href="#" data-email>Email <span class="cfm">[CONFIRM]</span></a>
+      </div>
+    </div>
+    <div class="form" data-rv>
+      <form id="contactForm">
+        <div class="fr">
+          <div class="field"><label for="nome">Name</label><input type="text" id="nome" name="nome" required></div>
+          <div class="field"><label for="wpp">WhatsApp</label><input type="tel" id="wpp" name="wpp"></div>
+        </div>
+        <div class="fr">
+          <div class="field"><label for="email">Email</label><input type="email" id="email" name="email"></div>
+          <div class="field"><label for="datas">Dates (DD/MM)</label><input type="text" id="datas" name="datas" placeholder="12/03 – 15/03"></div>
+        </div>
+        <div class="field" style="margin-bottom:14px">
+          <label for="msg">Message</label>
+          <textarea id="msg" name="msg"></textarea>
+        </div>
+        <label class="consent" for="consent">
+          <input type="checkbox" id="consent" name="consent">
+          <span>I consent to being contacted by WhatsApp or email in reply to this message, as described in the <a href="privacy.html">Privacy Policy</a> (LGPD, Law 13.709/2018).</span>
+        </label>
+        <button class="btn btn--full" type="submit">Send over WhatsApp <span class="ar">&rarr;</span></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- 16 · Dark footer -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <span class="brand">Costa Solar Lagoa<small>Florianópolis — SC</small></span>
+        <p style="font-size:.9rem;max-width:34ch">Business category <span class="cfm">[CONFIRM]</span> — nothing on this page was assumed.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul><li><a href="#sobre">The Property</a></li><li><a href="#acomodacoes">Accommodation</a></li><li><a href="#comodidades">Amenities</a></li><li><a href="#local">Location</a></li><li><a href="#contato">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Address <span class="cfm">[CONFIRM]</span></li>
+          <li>Phone <span class="cfm">[CONFIRM]</span></li>
+          <li>Instagram <span class="cfm">[CONFIRM]</span></li>
+          <li>CNPJ <span class="cfm">[CONFIRM]</span></li>
+          <li>CADASTUR nº <span class="cfm">[CONFIRM]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>WhatsApp</h4>
+        <p style="font-size:.88rem">Message the house directly.</p>
+        <a class="btn btn--wa btn--sm" href="#" data-wa>WhatsApp <span class="cfm">[CONFIRM]</span></a>
+        <ul style="margin-top:16px">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="privacy.html#cookies">Cookie Policy</a></li>
+          <li><a href="index.html" hreflang="pt-BR">Português</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr__bot">
+      <span>© 2026 Costa Solar Lagoa · Registered name <span class="cfm">[CONFIRM]</span></span>
+      <span>Mockup — stock imagery, replace before launch.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 17 · Sticky WhatsApp + mobile action bar. Renders visibly unconfirmed:
+     the number is BLOCKING and a placeholder could dial a stranger. -->
+<a class="wa" href="#" data-wa aria-label="WhatsApp — number to confirm">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.24-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg><span class="wa__cfm">[CONFIRM]</span>
+</a>
+<div class="mbar">
+  <a class="btn btn--wa" href="#" data-wa>WhatsApp</a>
+  <a class="btn" href="#disponibilidade">Book</a>
+</div>
+
+<!-- LGPD consent — nothing pre-ticked, rejecting exactly as easy as accepting -->
+<div class="ck" role="dialog" aria-label="Cookie preferences">
+  <div class="ck__in">
+    <div>
+      <p><strong>Cookies and personal data.</strong>
+        We use only what is essential for the site to work. Analytics and marketing stay off until you turn them on.
+        <a href="privacy.html">Privacy Policy</a></p>
+      <div class="ck__opts">
+        <label><input type="checkbox" checked disabled> Essential (always on)</label>
+        <label><input type="checkbox" id="ckA"> Analytics</label>
+        <label><input type="checkbox" id="ckM"> Marketing</label>
+      </div>
+    </div>
+    <div class="ck__btns">
+      <button class="btn btn--ghost btn--sm" data-ck="none">Reject</button>
+      <button class="btn btn--ghost btn--sm" data-ck="save">Save preferences</button>
+      <button class="btn btn--sm" data-ck="all">Accept</button>
+    </div>
+  </div>
+</div>
+
+<script src="../script.js" defer></script>
+</body>
+</html>

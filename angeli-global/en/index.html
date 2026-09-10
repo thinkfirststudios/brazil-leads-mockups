@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  ANGELI GLOBAL — /en/ · PRIMARY TREE (x-default points here)
+  SPEC MOCKUP — lead not signed.
+
+  🔴 THE SINGLE MOST IMPORTANT THING ABOUT THIS BUILD:
+     Their live site publishes "723% ROI Alavancado", "TIR 25%",
+     "Cap Rate 7,20%", "6.02x vs. CDI", "yield 8–12% ao ano",
+     "valorização 312% (2015–2024)", "16% a.a." and "90% de valorização"
+     under the banner of a firm whose ONLY disclosed credential is
+     CRECI/SC 37.050-F — a real-estate BROKERAGE registration, not a CVM
+     investment-advisor authorisation.
+     NONE of those figures appears anywhere in this build. There is no
+     calculator, no stat row, and no number in the hero — deliberately.
+     A family office does not convert on a 723% ROI badge; it discounts the
+     firm the moment it sees one.
+
+  ⚠ EN-first is the correct call and their current site gets it wrong: a .com
+    domain addressing non-residents, entirely in Portuguese, with an "English"
+    nav link that returns the pt-BR page.
+  ⚠ Every [CONFIRM] marker is a deliberate, visible placeholder.
+  ⚠ All photography is royalty-free stock placeholder. No children in any image.
+  ============================================================================
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Angeli Global — Cross-Border Real-Estate Advisory · Santa Catarina, Brazil</title>
+<meta name="description" content="Buy-side real-estate advisory for non-resident and high-net-worth investors across the Santa Catarina coast. Disclosed process, disclosed credentials, disclosed remuneration. CRECI/SC 37.050-F.">
+<meta name="robots" content="noindex,nofollow"><!-- MOCKUP: remove before launch -->
+
+<link rel="alternate" hreflang="en" href="https://example.com/en/">
+<link rel="alternate" hreflang="pt-BR" href="https://example.com/">
+<link rel="alternate" hreflang="x-default" href="https://example.com/en/">
+<link rel="canonical" href="https://example.com/en/">
+<!-- [CONFIRM whether /es/ is also wanted — Argentine capital is a real segment on this coast] -->
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:title" content="Angeli Global — Cross-Border Real-Estate Advisory">
+<meta property="og:description" content="Buy-side advisory for non-resident investors on the Santa Catarina coast.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;350;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1496588152823-86ff7695e68f?auto=format&fit=crop&w=2000&q=70">
+
+<!--
+  Schema: RealEstateAgent + Person ONLY.
+  Deliberately NOT used: Product, Offer, AggregateRating, or any
+  financial-instrument schema. CRECI goes in `identifier`, never as a credential
+  implying investment authorisation.
+-->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"RealEstateAgent",
+  "name":"Angeli Global",
+  "description":"Buy-side real-estate advisory for non-resident and high-net-worth investors on the Santa Catarina coast.",
+  "areaServed":["Balneário Camboriú","Itapema","Praia Brava / Itajaí","Porto Belo","Balneário Piçarras","Florianópolis"],
+  "address":{"@type":"PostalAddress","addressRegion":"SC","addressCountry":"BR",
+    "streetAddress":"[CONFIRM registered address]"},
+  "telephone":"[CONFIRM]",
+  "employee":{
+    "@type":"Person","name":"Lucas Sorgato Angeli",
+    "identifier":"CRECI/SC 37.050-F",
+    "jobTitle":"Real-estate broker (CRECI/SC 37.050-F) — buy-side property advisory",
+    "knowsLanguage":["pt-BR","[CONFIRM]"]
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- =============== 1 · UTILITY BAR (CRECI permanent, far left) =============== -->
+<div class="util">
+  <div class="wrap util__in">
+    <div class="util__l">
+      <span class="creci"><i></i>CRECI/SC 37.050-F</span>
+      <span>Real-estate brokerage registration</span>
+      <a href="tel:+5547000000000"><span class="cfm">[CONFIRM phone]</span></a>
+    </div>
+    <div class="util__r">
+      <div class="lang" role="group" aria-label="Language">
+        <a href="../index.html" hreflang="pt-BR">PT</a>
+        <a class="on" href="index.html" hreflang="en" aria-current="true">EN</a>
+      </div>
+      <a class="btn btn--sm btn--solid" href="#consultation">Schedule a consultation</a>
+    </div>
+  </div>
+</div>
+
+<!-- =============== 2 · STICKY HEADER =============== -->
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="index.html">Angeli Global</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#approach">Approach</a><a href="#markets">Markets</a>
+      <a href="#mandate">Mandate Process</a><a href="#investing">Investing in Brazil</a>
+      <a href="#insights">Insights</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="hdr__in" style="gap:14px;flex:0 0 auto">
+      <a class="btn btn--sm" href="#consultation">Consultation</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mnav" aria-label="Mobile navigation">
+  <a href="#approach">Approach</a><a href="#markets">Markets</a><a href="#mandate">Mandate Process</a>
+  <a href="#investing">Investing in Brazil</a><a href="#insights">Insights</a>
+  <a href="#about">About</a><a href="#contact">Contact</a>
+  <a href="../index.html" hreflang="pt-BR" style="font-size:1rem;letter-spacing:.2em;text-transform:uppercase;color:var(--plat)">Versão em português →</a>
+</nav>
+
+<main>
+
+<!-- =============== 3 · HERO — single frame, NO NUMBER ANYWHERE =============== -->
+<section class="hero">
+  <div class="hero__bg">
+    <!-- PLACEHOLDER-hero-coastline-dusk.jpg · 21:9 · cool graphite/platinum grade -->
+    <img src="https://images.unsplash.com/photo-1496588152823-86ff7695e68f?auto=format&fit=crop&w=2000&q=70"
+         alt="Elevated dusk view of a coastal city skyline against the Atlantic, cool graphite tones, no people."
+         fetchpriority="high" width="2000" height="1125">
+  </div>
+  <div class="hero__scrim"></div>
+  <div class="wrap hero__in">
+    <p class="eyebrow" data-rv>Santa Catarina Coast · Brazil</p>
+    <h1 data-rv>Buy-side property advisory for non-resident and high-net-worth investors.</h1>
+    <p class="hero__sub" data-rv>We are engaged by the buyer. We disclose our process, our credentials
+      and how we are paid — and we publish no return projections.</p>
+    <p class="hero__mkts" data-rv>Balneário Camboriú · Itapema · Praia Brava / Itajaí · Porto Belo ·
+      Balneário Piçarras · Florianópolis</p>
+    <div class="btn-row" data-rv>
+      <a class="btn btn--solid" href="#consultation">Request a consultation <span class="ar">→</span></a>
+      <a class="btn" href="#approach">Read our approach <span class="ar">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- =============== 4 ⭐ OUR APPROACH — the institutional statement =============== -->
+<section class="sec graph" id="approach">
+  <div class="wrap approach">
+    <div data-rv>
+      <p class="eyebrow">Our approach</p>
+      <h2 class="h-lg">Credibility from disclosed process, not published returns.</h2>
+      <hr class="hr-plat">
+
+      <h3 style="font-size:1.1rem;margin-bottom:8px">Independence</h3>
+      <p>We act on the buy side. Our role is to source, shortlist, interrogate and negotiate on behalf of
+        the acquirer — not to move inventory. Where a conflict exists between a vendor relationship and a
+        client mandate, it is disclosed in writing before the mandate is signed.
+        <span class="cfm">[CONFIRM the firm's actual conflict policy]</span></p>
+
+      <h3 style="font-size:1.1rem;margin:24px 0 8px">Mandate discipline</h3>
+      <p>We work to a written mandate with a defined scope, a defined market and a defined timeframe.
+        Scenario modelling, where a client asks for it, is produced privately under that mandate with its
+        assumptions stated on the page — never as a public marketing output and never as a projection of
+        what an investor will earn. <span class="cfm">[CONFIRM mandate terms]</span></p>
+
+      <h3 style="font-size:1.1rem;margin:24px 0 8px">Disclosed remuneration</h3>
+      <p>How an advisor is paid determines whose interest they serve, so we state it plainly rather than
+        leaving a client to assume. <span class="cfm">[CONFIRM — commission from the vendor? a buy-side
+        retainer? both? State the actual arrangement here. Disclosed remuneration is the single most
+        credible thing a buy-side advisor can publish, and almost nobody in this market does it.]</span></p>
+
+      <figure style="margin:34px 0 0;overflow:hidden;border:1px solid rgba(184,188,194,.22)">
+        <!-- PLACEHOLDER-boardroom-detail.jpg — no handshakes, no suited people pointing at charts -->
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=70"
+             alt="Architectural interior detail — glass partitions and stone in cool directional light, no people."
+             loading="lazy" width="1200" height="675" style="filter:saturate(.4) brightness(.85)">
+      </figure>
+    </div>
+
+    <aside class="credpanel" data-rv>
+      <p class="eyebrow">Credentials</p>
+      <h3>What we are, stated precisely</h3>
+      <dl class="credlist">
+        <li><dt>Principal</dt><dd>Lucas Sorgato Angeli</dd></li>
+        <li><dt>Registration</dt><dd><strong>CRECI/SC 37.050-F</strong><br>
+          <span style="font-size:.85rem;color:var(--muted)">A Santa Catarina real-estate brokerage
+          registration for an individual (<em>pessoa física</em>). It is <strong>not</strong> a CVM
+          investment-advisor authorisation and is never presented as one.</span></dd></li>
+        <li><dt>CRECI-J (if trading as a company)</dt><dd><span class="cfm">[CONFIRM whether a CRECI-J registration is required]</span></dd></li>
+        <li><dt>CNPJ</dt><dd><span class="cfm">[CONFIRM]</span></dd></li>
+        <li><dt>Registered address</dt><dd><span class="cfm">[CONFIRM]</span></dd></li>
+        <li><dt>Professional memberships</dt><dd><span class="cfm">[CONFIRM — their site claims adherence to
+          ABECIP guidelines. ABECIP is the association of real-estate credit and savings entities; confirm
+          what adherence means for a brokerage and whether the firm is entitled to invoke it.]</span></dd></li>
+        <li><dt>Years in the market</dt><dd><span class="cfm">[CONFIRM]</span></dd></li>
+        <li><dt>How we are paid</dt><dd><span class="cfm">[CONFIRM]</span></dd></li>
+      </dl>
+      <p class="warn" style="margin-top:22px">Angeli Global is a real-estate advisory firm. It is
+        <strong>not</strong> a CVM-authorised investment advisor, <strong>not</strong> a law firm and
+        <strong>not</strong> a tax advisor. Nothing on this site is an offer, a recommendation or
+        investment advice.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- =============== 5 · THE MANDATE PROCESS =============== -->
+<section class="sec" id="mandate">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">The mandate process</p>
+      <h2 class="h-lg">Four stages, describing what is examined</h2>
+      <p class="lede">Each stage below states what we look at — never what an investor will earn.</p>
+    </div>
+    <div class="rail">
+      <div class="rail__i" data-rv>
+        <p class="rail__n">01</p>
+        <h3>Regional and market analysis</h3>
+        <p>Supply, absorption and the launch pipeline across the six coastal markets. Where a figure is
+          cited it is attributed to a named public dataset with a date. <span class="cfm">[CONFIRM methodology and sources]</span></p>
+      </div>
+      <div class="rail__i" data-rv>
+        <p class="rail__n">02</p>
+        <h3>Legal and title due diligence</h3>
+        <p>Matrícula, certidões, ônus reais, condominium and IPTU arrears, and the standing of the vendor.
+          Conducted with independent Brazilian counsel — we coordinate, we do not advise.</p>
+      </div>
+      <div class="rail__i" data-rv>
+        <p class="rail__n">03</p>
+        <h3>Structuring and scenario modelling</h3>
+        <p>Ownership structure options and, where requested, scenario modelling with stated assumptions.
+          <strong>Stage 3 outputs are delivered privately to an identified client under a signed mandate.</strong>
+          They are never published, and never presented as a projection of return.</p>
+      </div>
+      <div class="rail__i" data-rv>
+        <p class="rail__n">04</p>
+        <h3>Exit and disposal planning</h3>
+        <p>How the position is intended to be unwound: disposal route, capital-gains treatment and the
+          remittance mechanics that follow. Coordinated with tax counsel in the relevant jurisdiction.</p>
+      </div>
+    </div>
+    <p class="notadvice" data-rv>Informational only — not legal, tax or investment advice.</p>
+  </div>
+</section>
+
+<!-- =============== 6 · MARKETS — qualitative only, no figures =============== -->
+<section class="sec graph" id="markets">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Markets</p>
+      <h2 class="h-lg">Six coastal markets, described qualitatively</h2>
+      <p class="lede">Character, typology, buyer profile and infrastructure context. No percentages, no
+        price-per-m², no GDP figures and no appreciation claims appear on this page.</p>
+      <p class="cfm-block" style="margin-top:22px">[CONFIRM — if any figure is to be added to these panels
+        it must carry a <strong>named public source</strong> (IBGE, FipeZAP, Secovi-SC, CBIC or the
+        municipality) and a <strong>visible date</strong>. Prefer cutting. Angeli Global is
+        <strong>Balneário Camboriú-led, not Florianópolis-led</strong> — BC is the headline market and
+        Florianópolis is one of six.]</p>
+    </div>
+
+    <div class="mkts">
+      <article class="mkt" data-rv>
+        <div class="mkt__img"><!-- PLACEHOLDER-market-bc.jpg -->
+          <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=800&q=70"
+               alt="High-rise coastal skyline seen from the water at dusk." loading="lazy"></div>
+        <div class="mkt__b"><h3>Balneário Camboriú</h3>
+          <p>The firm's headline market: a dense vertical beachfront with a concentration of high-specification
+            towers and branded residences.</p>
+          <ul class="mkt__meta">
+            <li><b>Typology</b><span>High-rise apartments, penthouses, branded residences</span></li>
+            <li><b>Buyer</b><span><span class="cfm">[CONFIRM buyer profile]</span></span></li>
+            <li><b>Context</b><span><span class="cfm">[CONFIRM infrastructure context — sourced or cut]</span></span></li>
+          </ul></div>
+      </article>
+
+      <article class="mkt" data-rv>
+        <div class="mkt__img"><!-- PLACEHOLDER-market-itapema.jpg -->
+          <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=70"
+               alt="Palm-lined beachfront with calm water under a clear sky." loading="lazy"></div>
+        <div class="mkt__b"><h3>Itapema</h3>
+          <p>A beachfront market adjacent to Balneário Camboriú with its own development cycle and a
+            distinct buyer.</p>
+          <ul class="mkt__meta">
+            <li><b>Typology</b><span><span class="cfm">[CONFIRM]</span></span></li>
+            <li><b>Buyer</b><span><span class="cfm">[CONFIRM]</span></span></li>
+            <li><b>Context</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          </ul></div>
+      </article>
+
+      <article class="mkt" data-rv>
+        <div class="mkt__img"><!-- PLACEHOLDER-market-praia-brava.jpg -->
+          <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=800&q=70"
+               alt="Headland and bay on a subtropical coastline seen from above." loading="lazy"></div>
+        <div class="mkt__b"><h3>Praia Brava / Itajaí</h3>
+          <p>A headland market with a port-city economy behind it.</p>
+          <ul class="mkt__meta">
+            <li><b>Typology</b><span><span class="cfm">[CONFIRM]</span></span></li>
+            <li><b>Buyer</b><span><span class="cfm">[CONFIRM]</span></span></li>
+            <li><b>Context</b><span><span class="cfm">[CONFIRM — the live site's "90% de valorização" and
+              "R$ 48,2 bilhões de PIB" lines are unsourced and are not reproduced here]</span></span></li>
+          </ul></div>
+      </article>
+
+      <article class="mkt" data-rv>
+        <div class="mkt__img"><!-- PLACEHOLDER-market-porto-belo.jpg -->
+          <img src="https://images.unsplash.com/photo-1470107355970-2ace9f20ab15?auto=format&fit=crop&w=800&q=70"
+               alt="Motor boat on calm water at sunset in a sheltered bay." loading="lazy"></div>
+        <div class="mkt__b"><h3>Porto Belo</h3>
+          <p>A sheltered bay market with a marine and leisure orientation.</p>
+          <ul class="mkt__meta">
+            <li><b>Typology</b><span><span class="cfm">[CONFIRM]</span></span></li>
+            <li><b>Buyer</b><span><span class="cfm">[CONFIRM]</span></span></li>
+            <li><b>Context</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          </ul></div>
+      </article>
+
+      <article class="mkt" data-rv>
+        <div class="mkt__img"><!-- PLACEHOLDER-market-picarras.jpg -->
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=70"
+               alt="Open shoreline at low light with gentle surf." loading="lazy"></div>
+        <div class="mkt__b"><h3>Balneário Piçarras</h3>
+          <p>A lower-density shoreline market north of Itajaí.</p>
+          <ul class="mkt__meta">
+            <li><b>Typology</b><span><span class="cfm">[CONFIRM]</span></span></li>
+            <li><b>Buyer</b><span><span class="cfm">[CONFIRM]</span></span></li>
+            <li><b>Context</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          </ul></div>
+      </article>
+
+      <article class="mkt" data-rv>
+        <div class="mkt__img"><!-- PLACEHOLDER-market-floripa.jpg -->
+          <img src="https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?auto=format&fit=crop&w=800&q=70"
+               alt="Aerial view of a turquoise bay and beach on an island coastline." loading="lazy"></div>
+        <div class="mkt__b"><h3>Florianópolis</h3>
+          <p>An island capital and one of six markets — not the firm's lead market. Their published focus
+            within the island is <strong>Jurerê Internacional</strong>, <strong>Ponta de Canas</strong>
+            and <strong>Campeche</strong>.</p>
+          <ul class="mkt__meta">
+            <li><b>Typology</b><span><span class="cfm">[CONFIRM]</span></span></li>
+            <li><b>Buyer</b><span><span class="cfm">[CONFIRM]</span></span></li>
+            <li><b>Context</b><span><span class="cfm">[CONFIRM — the live site's "maior polo tecnológico por
+              habitante", "melhor IDH entre as capitais", "o metro quadrado mais caro do país" and
+              "R$ 350M de Marina" claims are unsourced and are not reproduced here]</span></span></li>
+          </ul></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =============== 7 · INVESTING IN BRAZIL — the anchor content block =============== -->
+<section class="sec" id="investing">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Investing in Brazil as a non-resident</p>
+      <h2 class="h-lg">What actually happens, in plain English</h2>
+      <p class="lede">This replaces the returns calculator as the site's primary content magnet — and it is
+        genuinely better, because it answers the question a foreign buyer actually loses sleep over.</p>
+    </div>
+
+    <div class="approach" style="align-items:start">
+      <div class="steps" data-rv>
+        <div class="stp"><p class="stp__n">01</p><div>
+          <h3>CPF — the Brazilian taxpayer number</h3>
+          <p>A CPF is required to hold title. Residency is <em>not</em> required to buy property in Brazil.
+            The CPF is obtained through the Receita Federal, in most cases via a Brazilian consulate.
+            <span class="cfm">[CONFIRM current process with counsel]</span></p></div></div>
+
+        <div class="stp"><p class="stp__n">02</p><div>
+          <h3>Registering inbound funds with the Banco Central</h3>
+          <p>This is the step that determines whether sale proceeds can later be remitted out of Brazil.
+            Funds entering the country for the acquisition should be registered so that the capital is
+            recognised on the way back out. Getting this wrong at purchase is discovered at exit, when it
+            is expensive to fix. <span class="cfm">[CONFIRM current registration regime]</span></p></div></div>
+
+        <div class="stp"><p class="stp__n">03</p><div>
+          <h3>Ownership structure — individual, SPE or holding</h3>
+          <p>Each route carries different liability, succession and reporting consequences. The comparison
+            below states them qualitatively. We make no tax-saving claim and no numeric comparison.</p></div></div>
+
+        <div class="stp"><p class="stp__n">04</p><div>
+          <h3>Title due diligence</h3>
+          <p>Matrícula and its full chain, certidões on the vendor and the property, ônus reais, and any
+            condominium or IPTU arrears that attach to the asset rather than the seller.</p></div></div>
+
+        <div class="stp"><p class="stp__n">05</p><div>
+          <h3>Closing — escritura, cartório, ITBI</h3>
+          <p>The deed is executed before a notary and registered at the competent cartório. ITBI, the
+            municipal transfer tax, is assessed by the municipality and is payable on transfer.
+            <span class="cfm">[CONFIRM rates and timing per municipality with counsel]</span></p></div></div>
+
+        <div class="stp"><p class="stp__n">06</p><div>
+          <h3>Exit — capital gains and remittance out</h3>
+          <p>Disposal triggers a Brazilian capital-gains assessment, and remitting proceeds abroad depends
+            on the registration made at step 2. Treaty position depends on the investor's own jurisdiction.
+            <span class="cfm">[CONFIRM with tax counsel in both jurisdictions]</span></p></div></div>
+      </div>
+
+      <div data-rv>
+        <figure style="margin:0 0 24px;overflow:hidden;border:1px solid rgba(184,188,194,.22)">
+          <!-- PLACEHOLDER-documents.jpg — no readable data, no real registration numbers -->
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=70"
+               alt="Overhead of documents, a calculator and a pen on a desk; no readable data." loading="lazy"
+               width="900" height="600" style="filter:saturate(.4) brightness(.8)">
+        </figure>
+        <p class="warn"><strong>Informational only — not legal, tax or investment advice.</strong>
+          Every step on this page must be confirmed with Brazilian counsel and with a tax advisor
+          qualified in your own jurisdiction. Angeli Global introduces and coordinates; it does not
+          advise on law or tax. <span class="cfm">[CONFIRM every step against Brazilian counsel]</span></p>
+        <p class="cfm-block">[CONFIRM — if any visa, residency or "golden visa" content is added, an
+          OAB-registered lawyer must be involved. Non-lawyers may not advise on immigration. Copy must say
+          <em>introduction to independent counsel</em>, never <em>we handle</em>, <em>we obtain</em> or
+          <em>we advise</em>.]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== 8 · STRUCTURING OPTIONS — qualitative only =============== -->
+<section class="sec graph">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Structuring options</p>
+      <h2 class="h-lg">Individual · SPE · Holding</h2>
+      <p class="lede">Qualitative only. No tax rates, no savings figures, no numeric comparison — by design.
+        Their current site's "PF/PJ Tributário" comparison is precisely what this section must not become.</p>
+    </div>
+
+    <table class="cmp" data-rv>
+      <thead><tr><th scope="col">Consideration</th><th scope="col">Pessoa física</th><th scope="col">SPE</th><th scope="col">Holding</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Liability</th>
+          <td data-l="Pessoa física">Personal exposure; no separation between the asset and the individual.</td>
+          <td data-l="SPE">Ring-fenced to the vehicle, subject to how it is constituted and operated.</td>
+          <td data-l="Holding">Separation at entity level; depends on the group structure.</td></tr>
+        <tr><th scope="row">Succession</th>
+          <td data-l="Pessoa física">Follows Brazilian inheritance procedure over the asset itself.</td>
+          <td data-l="SPE">Interests in the vehicle transfer rather than the property.</td>
+          <td data-l="Holding">Commonly used where succession planning is a stated objective.</td></tr>
+        <tr><th scope="row">Transfer</th>
+          <td data-l="Pessoa física">Transfer of the property, with the associated registration steps.</td>
+          <td data-l="SPE">Transfer of quotas, subject to the vehicle's own constitution.</td>
+          <td data-l="Holding">Depends on the level at which the transfer occurs.</td></tr>
+        <tr><th scope="row">Reporting burden</th>
+          <td data-l="Pessoa física">Generally simpler.</td>
+          <td data-l="SPE">Additional filing and accounting obligations.</td>
+          <td data-l="Holding">Additional filing and accounting obligations, typically ongoing.</td></tr>
+        <tr><th scope="row">Typical use case</th>
+          <td data-l="Pessoa física">A single property held directly.</td>
+          <td data-l="SPE">A defined project or a single asset with a defined exit.</td>
+          <td data-l="Holding">Multiple assets, or where succession is a stated objective.</td></tr>
+        <tr><th scope="row">Status</th>
+          <td data-l="Pessoa física"><span class="cfm">[CONFIRM with a tax professional]</span></td>
+          <td data-l="SPE"><span class="cfm">[CONFIRM with a tax professional]</span></td>
+          <td data-l="Holding"><span class="cfm">[CONFIRM with a tax professional]</span></td></tr>
+      </tbody>
+    </table>
+    <p class="notadvice" data-rv>Informational only — not legal, tax or investment advice. Every row above
+      requires confirmation with a qualified tax professional before it is relied upon.</p>
+  </div>
+</section>
+
+<!-- =============== 9 · WORKING WITH INDEPENDENT COUNSEL =============== -->
+<section class="sec">
+  <div class="wrap approach">
+    <div data-rv>
+      <p class="eyebrow">Independent counsel</p>
+      <h2 class="h-md">We coordinate. We do not advise on law or tax.</h2>
+      <hr class="hr-plat">
+      <p>Legal and tax work on a cross-border acquisition is carried out by independent professionals
+        engaged by the client — a Brazilian real-estate lawyer and a tax advisor qualified in the client's
+        own jurisdiction. Angeli Global's role is introduction and coordination.</p>
+      <p class="cfm-block">[CONFIRM named partner firms and their <strong>OAB registrations</strong>, plus
+        named tax advisors per jurisdiction. <strong>If no partner can be named and has not consented,
+        this section stays as a plain disclosure statement — do not name a firm that has not consented.</strong>
+        Note also that OAB advertising rules restrict how legal services may be promoted <em>even on a third
+        party's website</em>: a partner firm cannot be marketed with results claims or comparative language.]</p>
+      <ul style="list-style:none;padding:0;margin:0;display:grid;gap:14px">
+        <li><strong>Brazilian real-estate counsel:</strong> <span class="cfm">[CONFIRM firm + OAB registration]</span></li>
+        <li><strong>Tax advisors by jurisdiction:</strong> <span class="cfm">[CONFIRM]</span></li>
+        <li><strong>Notary / cartório:</strong> <span class="cfm">[CONFIRM]</span></li>
+      </ul>
+    </div>
+    <figure data-rv style="margin:0;overflow:hidden;border:1px solid rgba(184,188,194,.22);aspect-ratio:4/3">
+      <!-- PLACEHOLDER-counsel.jpg -->
+      <img src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?auto=format&fit=crop&w=1000&q=70"
+           alt="Neoclassical courthouse colonnade in cool daylight, no people." loading="lazy"
+           style="width:100%;height:100%;object-fit:cover;filter:saturate(.4) brightness(.85)">
+    </figure>
+  </div>
+</section>
+
+<!-- =============== 10 · INSIGHTS — sourced editorial =============== -->
+<section class="sec graph" id="insights">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Insights</p>
+      <h2 class="h-lg">Editorial, with sources</h2>
+      <p class="cfm-block" style="margin-top:22px">[CONFIRM — the existing blog headlines must be
+        <strong>rewritten, not merely redirected</strong>: "R$ 350M de Marina em Obras",
+        "R$ 14.906/m², Senna Tower e Branded Residences" and "R$ 48,2 Bilhões de PIB, 90% de Valorização e a
+        Janela que o Mercado Ainda Não Precificou" are unsourced-figure headlines, and the last is an
+        explicit investment recommendation. Preserving a URL does not mean preserving its claims.]</p>
+    </div>
+    <div class="arts">
+      <a class="art" href="#" onclick="return false" data-rv>
+        <div class="art__img"><img src="https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?auto=format&fit=crop&w=700&q=70"
+          alt="Aerial view of a coastline with turquoise water." loading="lazy"></div>
+        <div class="art__b"><p class="art__d"><span class="cfm">[CONFIRM DD/MM/AAAA]</span></p>
+          <h3>Registering inbound funds with the Banco Central — and why it decides your exit</h3>
+          <p style="font-size:.92rem;color:var(--muted);margin:0">What the registration is for, when it must
+            happen, and what goes wrong when it does not.</p>
+          <p class="art__src">Sources: <span class="cfm">[CONFIRM named public source + date]</span></p></div>
+      </a>
+      <a class="art" href="#" onclick="return false" data-rv>
+        <div class="art__img"><img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=700&q=70"
+          alt="Modern architectural façade detail in cool white and glass." loading="lazy"></div>
+        <div class="art__b"><p class="art__d"><span class="cfm">[CONFIRM DD/MM/AAAA]</span></p>
+          <h3>Title due diligence on a Brazilian apartment: what the matrícula actually tells you</h3>
+          <p style="font-size:.92rem;color:var(--muted);margin:0">The chain of title, the certidões that
+            matter, and the debts that follow the asset rather than the seller.</p>
+          <p class="art__src">Sources: <span class="cfm">[CONFIRM named public source + date]</span></p></div>
+      </a>
+      <a class="art" href="#" onclick="return false" data-rv>
+        <div class="art__img"><img src="https://images.unsplash.com/photo-1470107355970-2ace9f20ab15?auto=format&fit=crop&w=700&q=70"
+          alt="Boat on calm water at dawn near a marina." loading="lazy"></div>
+        <div class="art__b"><p class="art__d"><span class="cfm">[CONFIRM DD/MM/AAAA]</span></p>
+          <h3>Supply and absorption on the Santa Catarina coast: reading the launch pipeline</h3>
+          <p style="font-size:.92rem;color:var(--muted);margin:0">How to read a launch pipeline without
+            turning it into a forecast.</p>
+          <p class="art__src">Sources: <span class="cfm">[CONFIRM — IBGE / FipeZAP / Secovi-SC / CBIC, named and dated]</span></p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =============== 11 · ABOUT =============== -->
+<section class="sec" id="about">
+  <div class="wrap about">
+    <figure data-rv>
+      <!-- PLACEHOLDER-portrait.jpg — clearly a stock placeholder pending a real photograph -->
+      <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=70"
+           alt="Environmental portrait of an adult professional in an architectural setting, cool natural light."
+           loading="lazy" width="800" height="1066">
+    </figure>
+    <div data-rv>
+      <p class="eyebrow">About</p>
+      <h2 class="h-lg">Lucas Sorgato Angeli</h2>
+      <hr class="hr-plat">
+      <p><strong>CRECI/SC 37.050-F</strong> — a Santa Catarina real-estate brokerage registration held by an
+        individual. It authorises real-estate brokerage and property advisory. It is <strong>not</strong> an
+        investment credential and is not described as one here.</p>
+      <p class="cfm-block">[CONFIRM — his live About page describes him as <em>"Consultor de Investimentos
+        Imobiliários credenciado pelo CRECI/SC 37.050-F"</em>. That phrasing presents a brokerage
+        registration as an investment credential and is not reproduced in this build.]</p>
+      <ul style="list-style:none;padding:0;margin:22px 0 0;display:grid;gap:13px">
+        <li><strong>Languages:</strong> <span class="cfm">[CONFIRM]</span></li>
+        <li><strong>Years in the market:</strong> <span class="cfm">[CONFIRM]</span></li>
+        <li><strong>Education:</strong> <span class="cfm">[CONFIRM]</span></li>
+        <li><strong>Second brand in use:</strong> "Angeli Asset Consultancy" —
+          <span class="cfm">[CONFIRM whether this is a separate legal entity, a product name or informal
+          branding. "Asset Consultancy" is materially more regulated-sounding than "real-estate brokerage"
+          and the distinction matters.]</span></li>
+      </ul>
+      <p class="warn" style="margin-top:24px">No assets under management, transaction volume, client count,
+        "+180 investidores", testimonial or track record is published on this page. None of it is currently
+        documented. <span class="cfm">[CONFIRM with independent documentation before any such figure appears]</span></p>
+      <p class="cfm-block">[CONFIRM Angeli's actual relationship to <strong>Senna Tower</strong> and
+        <strong>Boreal Tower</strong> — authorised sales partner, introducer, or no relationship — and the
+        <strong>RI / memorial de incorporação registration</strong> of each, before either is named or
+        pictured anywhere. Advertising an unregistered development is prohibited (Lei 4.591/1964, art. 32)
+        and the RI number must appear in the advertising. Never imply he developed them. All renders are
+        labelled <em>imagem meramente ilustrativa</em>.]</p>
+    </div>
+  </div>
+</section>
+
+<!-- =============== 12 · REQUEST A CONSULTATION =============== -->
+<section class="sec graph" id="consultation">
+  <div class="wrap approach">
+    <div data-rv>
+      <p class="eyebrow">Consultation</p>
+      <h2 class="h-lg">Request a consultation</h2>
+      <hr class="hr-plat">
+      <p>We work on a mandate basis. An initial consultation establishes whether the requirement and the
+        market fit what we do. <span class="cfm">[CONFIRM the firm's actual qualification criteria and
+        mandate terms]</span></p>
+      <p class="warn">This form does <strong>not</strong> collect CPF, passport numbers, bank details or
+        source-of-funds documentation, and never will. Please do not send them by email either.
+        <span class="cfm">[CONFIRM whether any AML/KYC obligation applies to mandate onboarding — if so it
+        stays entirely off the public site.]</span></p>
+      <p class="fx">Currency: <strong>R$ (BRL)</strong> primary · USD shown only as an
+        <em>indicative</em> secondary. <span class="cfm">[CONFIRM conversion basis + date]</span></p>
+      <div class="btn-row">
+        <a class="btn" data-email href="#">Email us <span class="ar">→</span></a>
+        <a class="btn" href="#" onclick="return false">Book a time (BRT / UTC−3) <span class="cfm">[CONFIRM scheduling link]</span></a>
+      </div>
+      <p style="font-size:.85rem;color:var(--muted);margin-top:16px">Family offices in other timezones do
+        not open WhatsApp first — email and a timezone-aware scheduling link are given equal prominence.</p>
+    </div>
+
+    <form class="form" id="consultForm" data-rv novalidate>
+      <div class="fr">
+        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+      </div>
+      <div class="fr">
+        <div class="field"><label for="phone">Phone (with country code)</label><input id="phone" name="phone" type="tel" placeholder="+00 000 000 000"></div>
+        <div class="field"><label for="jurisdiction">Jurisdiction of residence</label><input id="jurisdiction" name="jurisdiction" type="text"></div>
+      </div>
+      <div class="fr">
+        <div class="field"><label for="market">Market of interest</label>
+          <select id="market" name="market">
+            <option>Balneário Camboriú</option><option>Itapema</option><option>Praia Brava / Itajaí</option>
+            <option>Porto Belo</option><option>Balneário Piçarras</option><option>Florianópolis</option>
+            <option>Not yet decided</option>
+          </select></div>
+        <div class="field"><label for="timeline">Timeline</label>
+          <select id="timeline" name="timeline">
+            <option>0–3 months</option><option>3–6 months</option><option>6–12 months</option>
+            <option>12 months +</option><option>Exploratory</option>
+          </select></div>
+      </div>
+      <div class="field"><label for="budget">Indicative budget band (R$)</label>
+        <select id="budget" name="budget">
+          <option><span class="cfm">[CONFIRM bands]</span></option>
+          <option>[CONFIRM band 1]</option><option>[CONFIRM band 2]</option>
+          <option>[CONFIRM band 3]</option><option>Prefer not to say</option>
+        </select></div>
+      <div class="field"><label for="referral">How were you referred?</label><input id="referral" name="referral" type="text"></div>
+      <div class="field"><label for="notes">Notes</label><textarea id="notes" name="notes" rows="3"></textarea></div>
+      <label class="consent"><input type="checkbox" required>
+        I consent to Angeli Global processing the information above in order to respond to this enquiry,
+        as set out in the <a href="privacy.html" style="color:var(--plat-hi);text-decoration:underline">Privacy Policy</a>.
+        Controller: <span class="cfm">[CONFIRM legal entity]</span>.</label>
+      <button class="btn btn--solid" type="submit" style="justify-content:center">Send request <span class="ar">→</span></button>
+    </form>
+  </div>
+</section>
+
+<!-- =============== 13 · DISCLOSURES — full width, NOT fine print =============== -->
+<section class="sec disc" id="disclosures">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Disclosures</p>
+      <h2 class="h-lg">What we are, what we are not, and how we are paid</h2>
+    </div>
+    <div class="grid">
+      <div data-rv>
+        <h3>What Angeli Global is</h3>
+        <p>A real-estate advisory firm operating under <strong>CRECI/SC 37.050-F</strong>, a Santa Catarina
+          real-estate brokerage registration held by an individual. Our activity is real-estate brokerage
+          and buy-side property advisory.</p>
+
+        <h3>What Angeli Global is not</h3>
+        <ul>
+          <li><strong>Not</strong> a CVM-authorised investment advisor, analyst or securities distributor.</li>
+          <li><strong>Not</strong> a law firm and not a provider of legal advice.</li>
+          <li><strong>Not</strong> a tax advisor.</li>
+        </ul>
+        <p class="cfm-block">[CONFIRM whether Angeli Global or Lucas Sorgato Angeli holds any CVM
+          registration or is affiliated with an authorised institution. <strong>Until confirmed, this site
+          does not reference FIIs, "asset consultancy", "investidores qualificados", "alocação",
+          "mandato de investimento" or any securities activity</strong> — advising on, recommending or
+          distributing securities in Brazil requires CVM authorisation, which a CRECI registration does
+          not confer.]</p>
+      </div>
+
+      <div data-rv>
+        <h3>Remuneration</h3>
+        <p><span class="cfm">[CONFIRM — state plainly whether the firm is paid a commission by the vendor,
+          a buy-side retainer by the client, or both, and disclose any circumstance in which both occur.]</span></p>
+
+        <h3>Risk</h3>
+        <ul>
+          <li>Past market performance does not indicate future results.</li>
+          <li>All property investment carries risk, including the risk of loss of capital.</li>
+          <li>Currency movement can materially change outcomes for a non-resident investor.</li>
+          <li>Liquidity in this asset class is limited and exit timing is not guaranteed.</li>
+        </ul>
+
+        <h3>No offer, no recommendation</h3>
+        <p>Nothing on this site constitutes an offer, a solicitation, a recommendation or investment,
+          legal or tax advice. No return, yield, appreciation, cap-rate or benchmark comparison is
+          published on this site.</p>
+
+        <h3>Illustrative imagery</h3>
+        <p>All photography on this site is stock placeholder pending the firm's own imagery. Any
+          development render is <em>imagem meramente ilustrativa</em>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== 14 · CONTACT =============== -->
+<section class="sec" id="contact">
+  <div class="wrap approach">
+    <div data-rv>
+      <p class="eyebrow">Contact</p>
+      <h2 class="h-md">Get in touch</h2>
+      <hr class="hr-plat">
+      <ul class="cdetail">
+        <li><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/></svg>
+          <span><strong>Email:</strong> <span class="cfm">[CONFIRM]</span></span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20l1.2-5.3A8.4 8.4 0 1 1 21 11.5z"/></svg>
+          <span><strong>WhatsApp:</strong> <span class="cfm">[CONFIRM]</span></span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span><strong>Registered address:</strong> <span class="cfm">[CONFIRM]</span></span></li>
+        <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <span><strong>Hours:</strong> <span class="cfm">[CONFIRM]</span> — Brasília time (<strong>BRT / UTC−3</strong>)</span></li>
+      </ul>
+      <p class="cfm-block" style="margin-top:24px">[CONFIRM — no CNPJ, address, phone or email was
+        recoverable anywhere on angeliglobal.com. A firm asking for eight-figure mandates that a prospect
+        cannot verify exists is a conversion problem before it is a compliance one.]</p>
+    </div>
+    <div data-rv>
+      <div class="credpanel">
+        <p class="eyebrow">Registration</p>
+        <h3>CRECI/SC 37.050-F</h3>
+        <p style="font-size:.92rem;color:var(--muted);margin-top:10px">Displayed on every page describing
+          property services, as Lei 6.530/1978 and COFECI rules require.</p>
+        <hr class="hr-plat">
+        <p style="font-size:.92rem;margin:0"><strong>Legal entity:</strong> <span class="cfm">[CONFIRM]</span><br>
+          <strong>CNPJ:</strong> <span class="cfm">[CONFIRM]</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =============== 15 · FOOTER =============== -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <p class="brand" style="display:block;margin-bottom:16px">Angeli Global</p>
+        <p style="font-size:.9rem;max-width:36ch;color:var(--muted)">Buy-side real-estate advisory on the
+          Santa Catarina coast.</p>
+        <p class="creci" style="margin-top:18px"><i></i>CRECI/SC 37.050-F</p>
+        <p style="font-size:.82rem;color:var(--muted);margin-top:10px">
+          <span class="cfm">[CONFIRM legal entity name]</span><br>
+          CNPJ <span class="cfm">[CONFIRM]</span><br>
+          <span class="cfm">[CONFIRM registered address]</span></p>
+      </div>
+      <div><h4>Navigate</h4><ul>
+        <li><a href="#approach">Approach</a></li><li><a href="#mandate">Mandate Process</a></li>
+        <li><a href="#investing">Investing in Brazil</a></li><li><a href="#insights">Insights</a></li>
+        <li><a href="#about">About</a></li><li><a href="#disclosures">Disclosures</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="../index.html" hreflang="pt-BR">Português</a></li></ul></div>
+      <div><h4>Markets</h4><ul>
+        <li><a href="#markets">Balneário Camboriú</a></li><li><a href="#markets">Itapema</a></li>
+        <li><a href="#markets">Praia Brava / Itajaí</a></li><li><a href="#markets">Porto Belo</a></li>
+        <li><a href="#markets">Balneário Piçarras</a></li><li><a href="#markets">Florianópolis</a></li>
+        <li style="color:var(--plat);font-size:.8rem">Jurerê Internacional · Ponta de Canas · Campeche</li></ul></div>
+      <div><h4>Legal</h4><ul>
+        <li><a href="privacy.html">Privacy Policy (EN)</a></li>
+        <li><a href="../privacidade.html">Política de Privacidade (pt-BR)</a></li>
+        <li><a href="privacy.html#cookies">Cookie preferences</a></li>
+        <li><a href="#disclosures">Disclosures</a></li></ul></div>
+    </div>
+
+    <div class="ftr__disc">
+      <strong>Condensed disclosures.</strong> Angeli Global is a CRECI-registered real-estate advisory
+      (CRECI/SC 37.050-F). It is not a CVM-authorised investment advisor, not a law firm and not a tax
+      advisor. Nothing on this site is an offer, a recommendation, or investment, legal or tax advice.
+      Past market performance does not indicate future results; all property investment carries risk,
+      including loss of capital. No return, yield or appreciation figure is published on this site.
+      Remuneration: <span class="cfm">[CONFIRM]</span>. Prices, where shown, are in Brazilian reais (R$);
+      any USD figure is indicative only <span class="cfm">[CONFIRM conversion basis + date]</span>.
+    </div>
+
+    <div class="ftr__bot">
+      <p style="margin:0">© <span id="yr">2025</span> Angeli Global · CRECI/SC 37.050-F ·
+        CNPJ <span class="cfm">[CONFIRM]</span></p>
+    </div>
+  </div>
+</footer>
+
+<!-- =============== 16 · FLOATING WHATSAPP + EMAIL =============== -->
+<div class="float">
+  <a class="em" data-email href="#" aria-label="Email Angeli Global">
+    <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/></svg>
+  </a>
+  <a class="wa" data-wa href="#" aria-label="Contact Angeli Global on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.4 4.7.7.3 1.3.5 1.8.6.7.2 1.4.2 2 .1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+  </a>
+</div>
+
+<!-- LGPD + GDPR cookie consent -->
+<div class="ck" role="dialog" aria-live="polite" aria-label="Cookie preferences">
+  <div class="ck__in">
+    <div>
+      <p><strong>Cookies and privacy.</strong> Essential cookies keep this site working. Analytics and
+        marketing cookies are <strong>off by default</strong> and only run if you switch them on. This
+        applies under Brazil's LGPD and the EU GDPR alike. <a href="privacy.html">Privacy Policy</a>.</p>
+      <div class="ck__opts">
+        <label><input type="checkbox" checked disabled> Essential</label>
+        <label><input type="checkbox" id="ckA"> Analytics</label>
+        <label><input type="checkbox" id="ckM"> Marketing</label>
+      </div>
+    </div>
+    <div class="ck__btns">
+      <button class="btn" data-ck="none">Reject all</button>
+      <button class="btn" data-ck="save">Save choices</button>
+      <button class="btn" data-ck="all">Accept all</button>
+    </div>
+  </div>
+</div>
+
+<script src="../script.js"></script>
+<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+</body>
+</html>

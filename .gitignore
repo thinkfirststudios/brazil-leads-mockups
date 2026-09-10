@@ -1,0 +1,36 @@
+# ── list-building scratch, not part of the deliverable ──────────────────────
+MOVE-84-FROM-HOT.ps1
+PASTE-THIS-84-BRAZIL-LEADS.txt
+
+# ── OneDrive / Windows / macOS noise ────────────────────────────────────────
+# This working copy lives inside OneDrive, which likes to leave artefacts around.
+desktop.ini
+Thumbs.db
+ehthumbs.db
+*.lnk
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# ── editor / tooling ────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*~
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+
+# ── local previews ──────────────────────────────────────────────────────────
+.cache/
+*.log
+
+# ── internal only — never goes to a public remote ───────────────────────────
+# Contact details, decision-maker names, candid critiques of prospects and the
+# pitch angle. These stay on disk and out of git.
+PROMPT.md
+LEAD-NOTES.md
+**/PROMPT.md
+**/LEAD-NOTES.md

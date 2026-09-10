@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<!-- Speculative pitch mockup for a prospect who has not commissioned, seen or
+     approved it. Must never be indexed or compete with the real business. -->
+<title>Acomodações — Costão do Santinho Resort, Florianópolis</title>
+<meta name="description" content="Hotel Internacional e Vilas Portuguesas: oito categorias de suíte com metragem, capacidade e ocupação lado a lado.">
+<link rel="canonical" href="https://costao.com.br/acomodacoes.html">
+<!-- Three REAL parallel trees. Their live site already ships PT/EN/ES; anything
+     less than three would read as a downgrade. Reciprocal hreflang + x-default. -->
+<link rel="alternate" hreflang="pt-BR" href="https://costao.com.br/acomodacoes.html">
+<link rel="alternate" hreflang="en" href="https://costao.com.br/en/accommodation.html">
+<link rel="alternate" hreflang="es" href="https://costao.com.br/es/alojamiento.html">
+<link rel="alternate" hreflang="x-default" href="https://costao.com.br/acomodacoes.html">
+<meta property="og:title" content="Acomodações — Costão do Santinho Resort, Florianópolis">
+<meta property="og:description" content="Hotel Internacional e Vilas Portuguesas: oito categorias de suíte com metragem, capacidade e ocupação lado a lado.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+<div class="top">
+  <div class="wrap top__in">
+    <div class="top__l">
+      <a href="#" data-tel>0800 048 1000</a>
+      <span class="sr">Telefone publicado pelo resort</span>
+    </div>
+    <div class="top__r">
+      <a href="#proprietario">Portal do proprietário</a>
+      <a href="#" data-wa>WhatsApp <span class="cfm">[CONFIRM]</span></a>
+      <div class="pills"><a href="acomodacoes.html" hreflang="pt-BR" lang="pt-BR" class="on">PT</a><a href="en/accommodation.html" hreflang="en" lang="en">EN</a><a href="es/alojamiento.html" hreflang="es" lang="es">ES</a></div>
+    </div>
+  </div>
+</div>
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="index.html">Costão do Santinho<small>Resort · Florianópolis</small></a>
+    <nav class="nav" aria-label="Navegação principal"><a href="index.html#resort">O Resort</a><a href="acomodacoes.html" aria-current="page">Acomodações</a><a href="index.html#allinclusive">All Inclusive</a><a href="gastronomia.html">Gastronomia</a><a href="index.html#spa">SPA</a><a href="estrutura.html">Estrutura</a><a href="eventos.html">Eventos</a></nav>
+    <div class="hdr__r">
+      <span class="datechip" aria-live="polite"></span>
+      <a class="btn btn--sm" href="index.html#reservar">Reservar</a>
+      <button class="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mnav" aria-label="Menu">
+  <a href="index.html#resort">O Resort</a><a href="acomodacoes.html">Acomodações</a><a href="index.html#allinclusive">All Inclusive</a><a href="gastronomia.html">Gastronomia</a><a href="index.html#spa">SPA</a><a href="estrutura.html">Estrutura</a><a href="eventos.html">Eventos</a>
+  <a href="index.html#reservar">Reservar</a>
+</nav>
+<main id="main">
+
+<section class="sec sec--t softbg">
+  <div class="wrap">
+    <p class="eyebrow" data-rv><a href="index.html">Início</a> / Acomodações</p>
+    <h1 class="h-lg" data-rv>Duas famílias, oito suítes, sete vilas.</h1>
+    <p class="lede" data-rv>Metragem, capacidade, berço, cama extra e cozinha transcritos da tabela publicada por vocês. Tarifas não são publicadas em nenhuma página pública e não foram inventadas aqui.</p>
+  </div>
+</section>
+<div class="wrap" id="reservar">
+  <div class="avail" data-rv>
+    <form id="availForm" class="avail__g">
+      <div class="field"><label for="chegada">Chegada</label><input type="date" id="chegada" name="chegada" required></div>
+      <div class="field"><label for="saida">Saída</label><input type="date" id="saida" name="saida" required></div>
+      <div class="field"><label for="adultos">Adultos</label>
+        <select id="adultos" name="adultos"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
+      <div class="field"><label for="criancas">Crianças</label>
+        <select id="criancas" name="criancas"><option selected>0</option><option>1</option><option>2</option><option>3</option></select></div>
+      <div class="field"><label for="quartos">Quartos</label>
+        <select id="quartos" name="quartos"><option selected>1</option><option>2</option><option>3</option></select></div>
+      <div class="field"><label for="codigo">Código</label><input type="text" id="codigo" name="codigo" autocomplete="off"></div>
+      <!-- child AGES appear here, because their own suite matrix is expressed
+           in adultos / crianças / bebê and a child&rsquo;s age changes which suite fits -->
+      <div class="ages"></div>
+      <button class="btn go" type="submit">Verificar disponibilidade</button>
+    </form>
+    <p class="avail__note">Datas em DD/MM. Valores sempre em R$ (BRL). Este formulário monta uma mensagem de WhatsApp com as datas — ele <strong>não</strong> substitui o motor de reservas contratado por vocês <span class="cfm">[CONFIRM]</span>.</p>
+  </div>
+</div>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Hotel Internacional</p>
+      <h2 class="h-lg">&ldquo;Exclusividade, comodidade e sofisticação.&rdquo;</h2>
+    </div>
+    <div data-rv><div class="tblwrap"><table class="tbl"><caption>Metragem, capacidade, berço, cama extra e cozinha transcritos da tabela publicada por eles. As linhas Sacada, Banheira, Reserva de restaurantes, Voucher Costão Spa e Crédito Rancho do Pescador NÃO renderizaram na página deles — ficam como [CONFIRM].</caption><thead><tr><th scope="col">Suíte</th><th scope="col">Metragem</th><th scope="col">Capacidade</th><th scope="col">Berço</th><th scope="col">Cama extra</th><th scope="col">Cozinha</th><th scope="col">Ocupação publicada</th><th scope="col">Sacada</th><th scope="col">Banheira</th><th scope="col">Voucher SPA</th></tr></thead><tbody><tr><th scope="row">Suíte Luxo</th><td>48 m²</td><td>2 adultos</td><td>1</td><td>2</td><td>Completa</td><td>2 Adultos / 2 Crianças / 1 Bebê</td><td><span class="cfm">[CONFIRM]</span></td><td><span class="cfm">[CONFIRM]</span></td><td><span class="cfm">[CONFIRM]</span></td></tr><tr><th scope="row">Suíte Júnior</th><td>30 m²</td><td>2 adultos</td><td>1</td><td>1</td><td class="na">N/A</td><td>2 Adultos / 1 Criança / 1 Bebê</td><td><span class="cfm">[CONFIRM]</span></td><td><span class="cfm">[CONFIRM]</span></td><td><span class="cfm">[CONFIRM]</span></td></tr><tr><th scope="row">Suíte Master</th><td>40 m²</td><td>2 adultos</td><td>1</td><td>1</td><td>Minicopa</td><td>2 Adultos / 1 Criança / 1 Bebê</td><td><span class="cfm">[CONFIRM]</span></td><td><span class="cfm">[CONFIRM]</span></td><td><span class="cfm">[CONFIRM]</span></td></tr><tr><th scope="row">Suíte Prime Júnior</th><td>30 m²</td><td>2 adultos</td><td>1</td><td>1</td><td class="na">N/A</td><td>2 Adultos / 1 Criança / 1 Bebê</td><td><span class="cfm">[CONFIRM]</span></td><td><span class="cfm">[CONFIRM]</span></td><td><span class="cfm">[CONFIRM]</span></td></tr><tr><th scope="row">Suíte Prime Luxo</th><td>48 m²</td><td>2 adultos</td><td>1</td><td>2</td><td>Completa</td><td>2 Adultos / 2 Crianças / 1 Bebê</td><td><span class="cfm">[CONFIRM]</span></td><td><span class="cfm">[CONFIRM]</span></td><td><span class="cfm">[CONFIRM]</span></td></tr><tr><th scope="row">Suíte Prime Master</th><td>40 m²</td><td>2 adultos</td><td>1</td><td>1</td><td class="na">N/A</td><td>2 Adultos / 1 Criança / 1 Bebê</td><td><span class="cfm">[CONFIRM]</span></td><td><span class="cfm">[CONFIRM]</span></td><td><span class="cfm">[CONFIRM]</span></td></tr><tr><th scope="row">Suíte Imperial</th><td>140 m²</td><td>4 adultos</td><td>1</td><td>2</td><td>Completa</td><td>4 Adultos / 2 Crianças / 1 Bebê</td><td><span class="cfm">[CONFIRM]</span></td><td><span class="cfm">[CONFIRM]</span></td><td><span class="cfm">[CONFIRM]</span></td></tr><tr><th scope="row">Suíte Prime 2 dormitórios</th><td>140 m²</td><td>4 adultos</td><td>1</td><td>2</td><td>Completa</td><td>4 Adultos / 2 Crianças / 1 Bebê</td><td><span class="cfm">[CONFIRM]</span></td><td><span class="cfm">[CONFIRM]</span></td><td><span class="cfm">[CONFIRM]</span></td></tr></tbody></table></div></div>
+    <div class="split" style="margin-top:clamp(30px,4vw,56px)">
+      <div class="split__t" data-rv>
+        <p class="eyebrow">Acessibilidade</p>
+        <h2 class="h-md">Suítes adaptadas — texto deles, em destaque.</h2>
+        <ul style="margin-top:14px;padding-left:20px;display:grid;gap:8px;font-size:.94rem">
+          <li>Localizadas no Hotel Internacional</li>
+          <li>Banheiro sem box e porta de entrada mais larga</li>
+          <li>Barras de apoio e cadeira de banho</li>
+          <li>Acesso às suítes por elevador</li>
+          <li>Rampas de acesso ao Hotel Internacional</li>
+        </ul>
+        <p style="margin-top:16px;font-size:.92rem">Um resort que anuncia publicamente suítes adaptadas está se comprometendo com um padrão de acessibilidade — então o site precisa cumprir o mesmo padrão (eMAG / WCAG 2.1 AA), e esse texto merece ser uma página de verdade, não uma nota de rodapé.</p>
+      </div>
+      <div data-rv><p class="flag"><b>Aviso de reforma publicado por eles:</b>
+  “durante o período de reforma, de 03/05/2026 a 19/09/2026, as acomodações adaptadas seguem disponíveis”. Hoje esse aviso está enterrado dentro de um parágrafo de acessibilidade, onde nenhum hóspede que vai reservar vai encontrar. Aqui ele fica onde a decisão é tomada. <span class="cfm">[CONFIRM]</span>
+  status atual.</p>
+
+        <p class="cfm-note">[CONFIRM] Quantidade de suítes adaptadas, quais categorias as oferecem e se as Vilas Portuguesas têm alguma unidade adaptada — nada disso está publicado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sandbg">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow">Vilas Portuguesas</p>
+      <h2 class="h-lg">&ldquo;O charme e a beleza do estilo açoriano.&rdquo;</h2>
+      <p class="lede">Sete categorias publicadas, nenhuma com metragem. Essa é a lacuna mais cara desta página: sem m² não há comparação possível entre uma vila e uma suíte.</p>
+    </div>
+    <div class="tblwrap" data-rv>
+      <table class="tbl">
+        <thead><tr>
+          <th scope="col">Categoria</th>
+          <th scope="col">Metragem</th>
+          <th scope="col">Ocupação publicada</th>
+          <th scope="col">Diária</th>
+        </tr></thead>
+        <tbody>
+          <tr><th scope="row">Luxo 1 dormitório</th><td><span class="cfm">[CONFIRM]</span></td><td>2 Adultos / 2 Crianças / 1 Bebê</td><td><span class="cfm">[CONFIRM]</span></td></tr>
+          <tr><th scope="row">Luxo Família 2 dormitórios</th><td><span class="cfm">[CONFIRM]</span></td><td>4 Adultos / 2 Crianças / 1 Bebê</td><td><span class="cfm">[CONFIRM]</span></td></tr>
+          <tr><th scope="row">Luxo Família 3 dormitórios</th><td><span class="cfm">[CONFIRM]</span></td><td>6 Adultos / 2 Crianças / 1 Bebê</td><td><span class="cfm">[CONFIRM]</span></td></tr>
+          <tr><th scope="row">Superior 1 dormitório</th><td><span class="cfm">[CONFIRM]</span></td><td>2 Adultos / 2 Crianças / 1 Bebê</td><td><span class="cfm">[CONFIRM]</span></td></tr>
+          <tr><th scope="row">Superior 2 dormitórios</th><td><span class="cfm">[CONFIRM]</span></td><td>4 Adultos / 2 Crianças / 1 Bebê</td><td><span class="cfm">[CONFIRM]</span></td></tr>
+          <tr><th scope="row">Superior 3 dormitórios</th><td><span class="cfm">[CONFIRM]</span></td><td>6 Adultos / 2 Crianças / 1 Bebê</td><td><span class="cfm">[CONFIRM]</span></td></tr>
+          <tr><th scope="row">Superior</th><td><span class="cfm">[CONFIRM]</span></td><td>2 Adultos / 1 Criança</td><td><span class="cfm">[CONFIRM]</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap split">
+    <figure class="fig" style="aspect-ratio:3/2" data-rv>
+      <!-- PLACEHOLDER-hotel-internacional.jpg — royalty-free stock (Unsplash) -->
+      <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1100&q=72" width="1100" height="733" loading="lazy" decoding="async"
+           alt="Suíte contemporânea com sacada voltada para o mar e cama king — imagem ilustrativa">
+      <figcaption>Hotel Internacional — imagem ilustrativa</figcaption>
+    </figure>
+    <figure class="fig" style="aspect-ratio:3/2" data-rv>
+      <!-- PLACEHOLDER-vilas-portuguesas.jpg — royalty-free stock (Unsplash) -->
+      <img src="https://images.unsplash.com/photo-1533713692156-f70938dc0d54?auto=format&fit=crop&w=1100&q=72" width="1100" height="733" loading="lazy" decoding="async"
+           alt="Casario baixo caiado de branco com telhado de barro junto ao mar — imagem ilustrativa">
+      <figcaption>Vilas Portuguesas — imagem ilustrativa</figcaption>
+    </figure>
+  </div>
+</section>
+</main>
+<!-- 18 · Dark footer.
+     ⚠ THE RAZÃO SOCIAL CONTRADICTION IS SURFACED, NOT RESOLVED. Their live
+     English footer says LTDA. and their live Portuguese footer says S.A. —
+     same CNPJ, two legal forms, on the same site. That is a legal-entity error
+     on a public page and it is worth raising in the pitch, so the mockup shows
+     both and asks. -->
+<footer class="ftr">
+  <div class="ftr__bg" aria-hidden="true">
+    <!-- PLACEHOLDER-resort-noite.jpg — royalty-free stock (Unsplash) -->
+    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1600&q=60" width="1600" height="900" loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <span class="brand">Costão do Santinho<small>Resort</small></span>
+        <p style="font-size:.89rem;max-width:36ch">Estrada Vereador Onildo Lemos, 2505<br>
+          Praia do Santinho — Florianópolis — Santa Catarina<br>88058-700</p>
+        <p style="font-size:.89rem"><a href="#" data-tel><strong>0800 048 1000</strong></a></p>
+        <div class="apps">
+          <span>App iOS <span class="cfm">[CONFIRM]</span></span><span>App Android <span class="cfm">[CONFIRM]</span></span>
+        </div>
+      </div>
+      <div>
+        <h4>Resort</h4>
+        <ul>
+          <li><a href="acomodacoes.html">Acomodações</a></li>
+          <li><a href="gastronomia.html">Gastronomia</a></li>
+          <li><a href="estrutura.html">Estrutura e lazer</a></li>
+          <li><a href="eventos.html">Eventos e convenções</a></li>
+          <li><a href="index.html#spa">Costão SPA By L&rsquo;Occitane</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Institucional</h4>
+        <ul>
+          <li>Fale com o Costão <span class="cfm">[CONFIRM]</span></li>
+          <li>Trabalhe conosco <span class="cfm">[CONFIRM]</span></li>
+          <li>Dúvidas frequentes <span class="cfm">[CONFIRM]</span></li>
+          <li><a href="#proprietario">Portal do proprietário</a></li>
+          <li>Como chegar <span class="cfm">[CONFIRM]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>WhatsApp</h4>
+        <p style="font-size:.88rem">O 0800 é publicado por eles e disca de verdade. O WhatsApp ainda não tem número.</p>
+        <a class="btn btn--wa btn--sm" href="#" data-wa>WhatsApp <span class="cfm">[CONFIRM]</span></a>
+        <ul style="margin-top:16px">
+          <li><a href="privacidade.html">Política de privacidade</a></li>
+          <li>Política de segurança <span class="cfm">[CONFIRM]</span></li>
+          <li><a href="privacidade.html#cookies">Preferências de cookies</a></li>
+          <li>CADASTUR nº <span class="cfm">[CONFIRM]</span></li>
+        </ul>
+        <div class="pills" style="margin-top:14px">
+          <a href="acomodacoes.html" hreflang="pt-BR" lang="pt-BR" class="on">PT</a><a href="en/accommodation.html" hreflang="en" lang="en">EN</a><a href="es/alojamiento.html" hreflang="es" lang="es">ES</a>
+        </div>
+      </div>
+    </div>
+    <div class="flag" style="margin-top:34px">
+      <b>[CONFIRM razão social]</b>
+      CNPJ 04.908.757/0001-39 — o rodapé em português do site atual publica <strong>COSTÃO DO SANTINHO TURISMO E LAZER S.A.</strong> e o rodapé em inglês publica <strong>COSTÃO DO SANTINHO TURISMO E LAZER LTDA.</strong> Mesmo CNPJ, duas formas jurídicas, no mesmo site. Reproduzimos as duas aqui de propósito: a escolha é de vocês, não nossa.
+    </div>
+    <div class="ftr__bot">
+      <span>© 2026 Costão do Santinho · CNPJ 04.908.757/0001-39</span>
+      <span>Mockup — imagens de banco de imagens, substituir antes do lançamento.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 19 · Persistent mobile bar + sticky WhatsApp -->
+<a class="wa" href="#" data-wa aria-label="WhatsApp <span class="cfm">[CONFIRM]</span>"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.24-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg><span class="wa__cfm">[CONFIRM]</span></a>
+<div class="mbar">
+  <a class="btn btn--wa" href="#" data-wa>WhatsApp</a>
+  <a class="btn" href="index.html#reservar">Reservar</a>
+</div>
+
+<!-- LGPD — granular, nothing pre-ticked, rejecting exactly as easy as accepting.
+     They already publish a Política de privacidade and a Política de segurança;
+     those are LINKED, not rewritten. -->
+<div class="ck" role="dialog" aria-label="Preferências de cookies">
+  <div class="ck__in">
+    <div>
+      <p><strong>Cookies e dados pessoais.</strong>
+        Usamos apenas o essencial para o site funcionar. Analytics e marketing ficam desligados até você ligar.
+        <a href="privacidade.html">Política de privacidade</a></p>
+      <div class="ck__opts">
+        <label><input type="checkbox" checked disabled> Essenciais (sempre ativos)</label>
+        <label><input type="checkbox" id="ckA"> Analytics</label>
+        <label><input type="checkbox" id="ckM"> Marketing</label>
+      </div>
+    </div>
+    <div class="ck__btns">
+      <button class="btn btn--ghost btn--sm" data-ck="none">Rejeitar</button>
+      <button class="btn btn--ghost btn--sm" data-ck="save">Salvar preferências</button>
+      <button class="btn btn--sm" data-ck="all">Aceitar</button>
+    </div>
+  </div>
+</div>
+<script src="script.js" defer></script>
+</body>
+</html>
