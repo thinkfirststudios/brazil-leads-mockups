@@ -1,0 +1,418 @@
+/* ===========================================================================
+   MARQUÊS DA LAGOA — Lagoa da Conceição, Florianópolis, SC
+   Spec mockup. LEAD, not signed. Nothing here is client work.
+
+   Instagram-only (@marquesdalagoaoficial) behind a login wall. Every business
+   fact on this build is a [CONFIRM] — including whether they genuinely front
+   the water, which the entire design rests on.
+
+   PALETTE IS PROPOSED from the Lagoa da Conceição setting, not sampled from
+   brand artwork. No logo was captured. [CONFIRM against their logo.]
+
+     --teal   #1F6E78  lagoon teal — primary, buttons, rules, active states
+     --coral  #E4703A  sunset coral — price pills, the sunset strip, highlights
+     --sand   #F5EDE0  page base
+     --deep   #123540  deep water — footer, hero scrim, night band
+     --sky    #8FBFC7  soft secondary for tags and quiet UI
+     --wa     #3F9D6B  reserved strictly for the WhatsApp CTA
+
+   CONTRAST — measured, not assumed (WCAG 2.1 AA):
+     deep  #123540 on sand #F5EDE0 = 11.23:1 ✓ AAA  body + headings
+     teal  #1F6E78 on sand         =  5.08:1 ✓ AA   links, small headings
+     white         on teal         =  5.90:1 ✓ AA   -> teal buttons take white
+     coral #E4703A on sand         =  2.71:1 ✗✗ FAILS body text badly.
+           -> coral is a FILL, a badge and a large-display colour only. Coral
+              text on sand uses --coral-deep #9C4319 = 5.59:1 ✓ AA.
+     white         on coral        =  3.14:1 ✗ FAILS as a button label.
+     deep          on coral        =  4.15:1 ✗ just misses 4.5 for body, ✓ AA
+              Large (>=24px / >=19px bold).
+           -> the coral price pill uses deep text at 19px bold and above only.
+              Where a small coral-filled control is needed, --coral-deep takes
+              a white label at 6.50:1 ✓ AA.
+     sky   #8FBFC7 on sand         =  1.73:1 ✗✗ decorative fill only, never text.
+     sky           on deep         =  6.49:1 ✓ AA   sky IS usable reversed.
+     wa    #3F9D6B on sand         =  2.89:1 ✗ FAILS as text.
+           -> the WhatsApp button is a fill with a white label; --wa-deep
+              #2E7A52 gives white 5.22:1 ✓ AA and is what the button uses.
+     sand          on deep         = 11.23:1 ✓ AAA  reversed copy
+     sand          on teal         =  5.08:1 ✓ AA
+   =========================================================================== */
+
+:root{
+  --teal:#1F6E78;
+  --teal-deep:#175159;
+  --coral:#E4703A;
+  --coral-deep:#9C4319;
+  --sand:#F5EDE0;
+  --sand-2:#E9DCC8;
+  --deep:#123540;
+  --sky:#8FBFC7;
+  --wa:#3F9D6B;
+  --wa-deep:#2E7A52;
+  --line:rgba(18,53,64,.16);
+
+  --grad-sunset:linear-gradient(135deg,#E4703A 0%,#D4406B 100%);
+  --grad-teal:linear-gradient(160deg,#1F6E78 0%,#123540 100%);
+  --grad-band:linear-gradient(180deg,#F5EDE0 0%,#E9DCC8 100%);
+  --scrim:linear-gradient(0deg,rgba(18,53,64,.88) 0%,rgba(18,53,64,.35) 42%,rgba(18,53,64,0) 72%);
+  --scrim-warm:linear-gradient(0deg,rgba(18,53,64,.9) 0%,rgba(212,64,107,.18) 46%,rgba(228,112,58,.1) 62%,rgba(18,53,64,0) 80%);
+
+  --wrap:1220px;
+  --gut:clamp(18px,4.5vw,56px);
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --pebble:26px;              /* soft-edged cards that echo pebbles, not boxes */
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+body{
+  margin:0;background:var(--sand);color:var(--deep);
+  font-family:"Inter","Helvetica Neue",Arial,system-ui,sans-serif;
+  font-size:17px;line-height:1.68;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+@media (max-width:768px){body{padding-bottom:calc(60px + env(safe-area-inset-bottom,0px))}}
+
+/* relaxed rounded sans for headings, plain grotesque for body — no serif */
+h1,h2,h3,h4{font-family:"Nunito","Inter",Arial,sans-serif;font-weight:800;line-height:1.14;
+  letter-spacing:-.018em;margin:0;text-wrap:balance}
+h1{font-size:clamp(2.1rem,5.6vw,4rem)}
+h2{font-size:clamp(1.6rem,3.4vw,2.5rem)}
+h3{font-size:clamp(1.04rem,1.8vw,1.3rem)}
+p{margin:0 0 1.05em}
+img{max-width:100%;display:block}
+a{color:var(--teal-deep);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--coral-deep);outline-offset:3px;border-radius:6px}
+
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--gut)}
+.skip{position:absolute;left:-9999px;background:var(--deep);color:#fff;padding:12px 18px;z-index:999}
+.skip:focus{left:8px;top:8px}
+
+.eyebrow{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;font-weight:800;
+  color:var(--coral-deep);margin:0 0 12px}
+.sec--deep .eyebrow,.sec--teal .eyebrow{color:#F5B695}
+.lede{font-size:clamp(1rem,1.6vw,1.2rem);color:#33565F;max-width:64ch}
+.sec--deep .lede,.sec--teal .lede{color:#CFE0E4}
+.sec{padding:clamp(52px,7.5vw,108px) 0}
+.sec--band{background:var(--grad-band)}
+.sec--teal{background:var(--grad-teal);color:var(--sand)}
+.sec--teal h2,.sec--teal h3{color:#fff}
+.sec--deep{background:var(--deep);color:var(--sand)}
+.sec--deep h2,.sec--deep h3{color:#fff}
+
+/* the wide horizon rule — the section divider, echoing the lagoon's geometry */
+.horizon{height:2px;border:0;margin:0 0 22px;
+  background:linear-gradient(90deg,var(--coral) 0%,var(--teal) 38%,rgba(31,110,120,0) 100%)}
+.sec--deep .horizon,.sec--teal .horizon{
+  background:linear-gradient(90deg,var(--coral) 0%,var(--sky) 38%,rgba(143,191,199,0) 100%)}
+
+/* ── [CONFIRM] markers ──────────────────────────────────────────────────── */
+.cfm{background:#FBE6D3;color:#5A2C10;border-bottom:1px dashed #B0662F;
+  padding:.06em .38em;font-size:.9em;font-style:normal}
+.sec--deep .cfm,.sec--teal .cfm{background:#3A2A22;color:#F6D9C2;border-bottom-color:#B0662F}
+
+.flag{border:1px solid var(--coral-deep);border-left-width:4px;background:#FBEEE4;
+  padding:18px 20px;margin:24px 0;font-size:.94rem;color:#4E2610;border-radius:16px}
+.flag strong{color:#331507}
+.flag--teal{border-color:var(--teal-deep);background:#E3EFF0;color:#0D3239}
+.flag--teal strong{color:#062026}
+.sec--deep .flag,.sec--teal .flag{background:rgba(255,255,255,.09);color:#D7E3E6;border-color:var(--coral)}
+.sec--deep .flag strong,.sec--teal .flag strong{color:#fff}
+
+/* =========================== HEADER ====================================== */
+.hdr{position:fixed;inset:0 0 auto 0;z-index:70;background:transparent;
+  transition:background .35s var(--ease),box-shadow .35s var(--ease)}
+.hdr.is-stuck{background:rgba(18,53,64,.97);box-shadow:0 2px 18px -6px rgba(0,0,0,.5)}
+@supports (backdrop-filter:blur(6px)){.hdr.is-stuck{backdrop-filter:blur(8px)}}
+.hdr__in{max-width:var(--wrap);margin:0 auto;padding:15px var(--gut);
+  display:flex;align-items:center;gap:16px;transition:padding .3s var(--ease)}
+.hdr.is-stuck .hdr__in{padding-block:10px}
+.mark{display:flex;flex-direction:column;line-height:1.05;text-decoration:none;color:#fff}
+.mark b{font-family:"Nunito","Inter",Arial,sans-serif;font-size:1.14rem;font-weight:800;letter-spacing:.01em}
+.mark span{font-size:.55rem;letter-spacing:.26em;text-transform:uppercase;color:var(--sky);margin-top:5px}
+.nav{margin-left:auto;display:flex;align-items:center;gap:clamp(10px,1.5vw,22px)}
+.nav a{color:#F0F5F6;text-decoration:none;font-size:.8rem;padding:6px 0;
+  border-bottom:2px solid transparent;white-space:nowrap}
+.nav a:hover{border-bottom-color:var(--coral);color:#fff}
+.langs{display:flex;gap:3px;align-items:center;font-size:.72rem}
+.langs a{padding:3px 6px;color:#9FBCC3;text-decoration:none;letter-spacing:.1em;border:0}
+.langs a[aria-current="true"]{color:var(--coral);font-weight:800}
+.langs i{font-style:normal;color:#4B6D77}
+.burger{display:none;margin-left:auto;background:none;border:0;padding:9px;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:#fff;margin:5px 0;border-radius:2px;
+  transition:transform .3s var(--ease),opacity .2s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media (max-width:900px){
+  .burger{display:block}
+  .nav{position:fixed;inset:0;background:var(--grad-teal);flex-direction:column;
+    justify-content:center;gap:22px;transform:translateY(-100%);
+    transition:transform .42s var(--ease);margin:0;z-index:80}
+  .nav.is-open{transform:none}
+  .nav a{font-size:1.12rem}
+}
+
+/* =========================== BUTTONS ===================================== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:15px 28px;border:0;cursor:pointer;text-decoration:none;font:inherit;
+  font-size:.8rem;font-weight:800;letter-spacing:.06em;border-radius:999px;
+  background:var(--teal);color:#fff;
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease),filter .25s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.1);
+  box-shadow:0 14px 28px -14px rgba(31,110,120,.85)}
+.btn svg{transition:transform .25s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn--sunset{background:var(--grad-sunset);color:#fff;font-size:.84rem}
+.btn--wa{background:var(--wa-deep);color:#fff}
+.btn--wa:hover{box-shadow:0 14px 28px -14px rgba(46,122,82,.9)}
+.btn--out{background:none;border:1.5px solid var(--deep);color:var(--deep)}
+.btn--out:hover{border-color:var(--teal);color:var(--teal-deep);background:rgba(31,110,120,.08);box-shadow:none}
+.sec--deep .btn--out,.sec--teal .btn--out,.hero .btn--out{border-color:rgba(255,255,255,.65);color:#fff}
+.btn--sm{padding:11px 20px;font-size:.7rem}
+[data-unconfirmed]{opacity:.62;cursor:not-allowed;filter:grayscale(.4)}
+
+/* =========================== HERO ======================================== */
+/* Horizon placed a third from the top, so the layout inherits the lagoon's
+   own geometry rather than a generic 50/50 split. */
+.hero{position:relative;min-height:92svh;display:flex;align-items:flex-end;
+  background:var(--deep);overflow:hidden}
+.hero__img{position:absolute;inset:-6% 0 0;width:100%;height:112%;object-fit:cover;
+  object-position:50% 33%;will-change:transform}
+.hero__scrim{position:absolute;inset:0;background:var(--scrim-warm)}
+.hero__in{position:relative;z-index:2;width:100%;max-width:var(--wrap);margin:0 auto;
+  padding:0 var(--gut) clamp(44px,7vh,96px);text-align:center}
+.hero h1{color:#fff;margin:0 auto;max-width:15ch}
+.hero__sub{color:#E4EEF0;font-size:clamp(1rem,1.9vw,1.3rem);margin:20px auto 30px;max-width:44ch}
+.hero__cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+
+/* =========================== SUNSET STRIP ================================ */
+/* The signature module. Computed client-side from the date and a fixed
+   lat/long — no API, no key, no dependency. Degrades to a static line. */
+.sunset{background:var(--grad-sunset);color:#fff;position:relative;z-index:5}
+.sunset__in{max-width:var(--wrap);margin:0 auto;padding:16px var(--gut);
+  display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center;justify-content:center;
+  text-align:center;font-size:.96rem}
+.sunset b{font-family:"Nunito","Inter",Arial,sans-serif;font-size:1.3rem;font-weight:800;
+  letter-spacing:-.01em}
+.sunset .approx{font-size:.8rem;opacity:.9}
+.sunset .btn{background:rgba(255,255,255,.96);color:#8A3A12}
+.sunset .btn:hover{background:#fff;box-shadow:0 12px 26px -14px rgba(0,0,0,.6)}
+
+/* =========================== TRUST STRIP ================================= */
+.trust{display:grid;gap:clamp(10px,1.6vw,18px);list-style:none;margin:0;padding:0;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr))}
+.trust li{background:#fff;border-radius:var(--pebble);padding:24px 20px;text-align:center;
+  border:1px solid var(--line);transition:transform .3s var(--ease),box-shadow .3s}
+.trust li:hover{transform:translateY(-4px);box-shadow:0 18px 34px -22px rgba(18,53,64,.5)}
+.trust .ic{width:44px;height:44px;border-radius:50%;background:var(--grad-teal);
+  display:grid;place-items:center;margin:0 auto 12px}
+.trust .ic svg{width:21px;height:21px;fill:#fff}
+.trust b{display:block;font-size:.98rem}
+.trust span{display:block;font-size:.8rem;color:#5A757D;margin-top:6px;line-height:1.45}
+
+/* =========================== SPLITS / FULL BLEED ========================= */
+.split{display:grid;gap:clamp(26px,4vw,58px);grid-template-columns:1fr;align-items:center}
+@media (min-width:900px){.split{grid-template-columns:1fr 1fr}}
+.split figure{margin:0;border-radius:var(--pebble);overflow:hidden}
+.split img{width:100%;aspect-ratio:4/3;object-fit:cover}
+
+.bleed{position:relative;overflow:hidden;min-height:60svh;display:flex;align-items:flex-end}
+.bleed img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bleed::after{content:"";position:absolute;inset:0;background:var(--scrim)}
+.bleed__in{position:relative;z-index:2;width:100%;max-width:var(--wrap);margin:0 auto;
+  padding:clamp(60px,10vh,120px) var(--gut) clamp(34px,6vh,64px);color:#fff}
+.bleed__in h2{color:#fff}
+.bleed__in p{color:#DCE9EB;max-width:56ch}
+
+/* =========================== MENU ======================================== */
+.share{display:grid;gap:clamp(14px,2vw,24px);list-style:none;margin:28px 0 0;padding:0;
+  grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr))}
+.dish{background:#fff;border:1px solid var(--line);border-radius:var(--pebble);overflow:hidden;
+  display:flex;flex-direction:column;transition:transform .3s var(--ease),box-shadow .3s}
+.dish:hover{transform:translateY(-4px);box-shadow:0 20px 40px -24px rgba(18,53,64,.5)}
+.dish figure{margin:0;aspect-ratio:4/5;overflow:hidden;position:relative}
+.dish img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.dish:hover img{transform:scale(1.05)}
+.serves{position:absolute;top:12px;left:12px;z-index:2;background:var(--teal);color:#fff;
+  font-size:.66rem;letter-spacing:.08em;font-weight:800;padding:7px 12px;border-radius:999px}
+.dish__b{padding:18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.dish__b h3{font-size:1.04rem}
+.dish__b p{font-size:.88rem;color:#5A757D;margin:0}
+/* coral price pill — deep text, 19px bold and above only (4.15:1 large) */
+.price{align-self:flex-start;background:var(--coral);color:var(--deep);
+  font-family:"Nunito","Inter",Arial,sans-serif;font-size:1.2rem;font-weight:800;
+  padding:8px 16px;border-radius:999px;margin-top:auto}
+.allerg{display:flex;flex-wrap:wrap;gap:5px;list-style:none;margin:0;padding:0}
+.allerg li{font-size:.6rem;letter-spacing:.05em;text-transform:uppercase;font-weight:800;
+  padding:5px 9px;border-radius:999px;background:#E3EFF0;color:#0D3239}
+.allerg li.veg{background:#E1EFE3;color:#20401F}
+
+.mains{list-style:none;margin:26px 0 0;padding:0;border-top:1px solid var(--line)}
+.mains li{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;padding:16px 0;
+  border-bottom:1px solid var(--line)}
+.mains b{font-size:1rem;font-weight:700}
+.mains .dots{flex:1;border-bottom:1px dotted rgba(18,53,64,.3);min-width:20px;transform:translateY(-4px)}
+.mains .p{font-family:"Nunito","Inter",Arial,sans-serif;font-weight:800;font-size:1.06rem;
+  color:var(--coral-deep)}
+.mains span.d{flex-basis:100%;font-size:.86rem;color:#5A757D}
+
+/* =========================== DRINKS TABS ================================= */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 0;padding:0;list-style:none}
+.tabs button{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);color:#fff;
+  padding:11px 20px;font:inherit;font-size:.78rem;font-weight:700;cursor:pointer;border-radius:999px;
+  transition:background .25s,border-color .25s}
+.tabs button:hover{border-color:var(--coral)}
+.tabs button[aria-selected="true"]{background:var(--grad-sunset);border-color:transparent}
+.drinks{list-style:none;margin:26px 0 0;padding:0;
+  columns:2 260px;column-gap:clamp(20px,4vw,54px)}
+.drinks li{break-inside:avoid;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;
+  padding:13px 0;border-bottom:1px solid rgba(255,255,255,.16)}
+.drinks b{font-size:.98rem;font-weight:700;color:#fff}
+.drinks .dots{flex:1;border-bottom:1px dotted rgba(255,255,255,.35);min-width:16px;transform:translateY(-4px)}
+.drinks .p{font-family:"Nunito","Inter",Arial,sans-serif;font-weight:800;color:var(--coral)}
+.drinks span.d{flex-basis:100%;font-size:.84rem;color:#B7CDD2}
+.age{background:rgba(228,112,58,.22);border:1px solid var(--coral);border-radius:16px;
+  padding:16px 18px;margin-top:28px;font-size:.94rem;color:#FBE4D6}
+.age strong{color:#fff}
+
+/* =========================== AGENDA ====================================== */
+.agenda{list-style:none;margin:28px 0 0;padding:0;border-top:1px solid var(--line)}
+.agenda li{display:grid;gap:6px 20px;grid-template-columns:1fr;padding:20px 0;
+  border-bottom:1px solid var(--line);align-items:center}
+@media (min-width:760px){.agenda li{grid-template-columns:92px 1fr 130px 150px}}
+.agenda .when{font-family:"Nunito","Inter",Arial,sans-serif;font-weight:800;font-size:1.06rem;
+  color:var(--coral-deep)}
+.agenda .act{font-weight:700}
+.agenda .at{font-size:.9rem;color:#5A757D}
+.agenda .cover{font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;
+  padding:6px 12px;border-radius:999px;background:#E3EFF0;color:#0D3239;justify-self:start}
+.empty{background:#fff;border:1px dashed var(--teal);border-radius:var(--pebble);
+  padding:clamp(22px,4vw,40px);text-align:center;margin-top:22px}
+
+/* =========================== GALLERY ===================================== */
+.gal{columns:4 190px;column-gap:clamp(10px,1.6vw,16px);margin-top:28px}
+.gal figure{margin:0 0 clamp(10px,1.6vw,16px);break-inside:avoid;overflow:hidden;
+  border-radius:var(--pebble);position:relative}
+.gal img{width:100%;height:auto;display:block;transition:transform .6s var(--ease)}
+.gal figure:hover img{transform:scale(1.06)}
+
+/* =========================== INSTAGRAM STRIP ============================= */
+.igs{display:grid;gap:clamp(8px,1.4vw,14px);grid-template-columns:repeat(auto-fit,minmax(min(100%,140px),1fr));
+  margin-top:26px}
+.igs a{position:relative;display:block;border-radius:18px;overflow:hidden;aspect-ratio:1/1}
+.igs img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.igs a:hover img{transform:scale(1.07)}
+
+/* =========================== REVIEWS (empty) ============================= */
+.revs{display:grid;gap:clamp(14px,2vw,22px);list-style:none;margin:26px 0 0;padding:0;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))}
+.revs li{background:#fff;border:1px dashed var(--teal);border-radius:var(--pebble);
+  padding:24px;font-size:.92rem;color:#33565F}
+
+/* =========================== HOURS TABLE ================================= */
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:var(--pebble)}
+table.hours{width:100%;border-collapse:collapse;min-width:420px;font-size:.94rem;background:#fff}
+table.hours th,table.hours td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line)}
+table.hours th{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--coral-deep);font-weight:800;background:var(--sand)}
+table.hours tbody tr:hover{background:#FBF6EE}
+table.hours td.late{font-weight:700;color:var(--teal-deep)}
+
+/* =========================== FORMS ======================================= */
+.form{display:grid;gap:15px;max-width:660px}
+.f2{display:grid;gap:15px;grid-template-columns:1fr 1fr}
+@media (max-width:560px){.f2{grid-template-columns:1fr}}
+label{display:block;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;
+  color:#5A757D;margin-bottom:6px}
+.sec--deep label,.sec--teal label{color:#A7C2C8}
+input,select,textarea{width:100%;padding:13px 15px;font:inherit;font-size:.96rem;
+  border:1px solid var(--line);background:#fff;color:var(--deep);border-radius:14px;
+  transition:border-color .22s,box-shadow .22s}
+.sec--deep input,.sec--deep select,.sec--deep textarea,
+.sec--teal input,.sec--teal select,.sec--teal textarea{
+  background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.26);color:#fff}
+.sec--deep option,.sec--teal option{color:var(--deep)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--coral);
+  box-shadow:0 0 0 3px rgba(228,112,58,.28)}
+textarea{min-height:104px;resize:vertical}
+/* the mesa-na-beira-da-água toggle — the question every customer wants to ask */
+.waterside{display:flex;gap:13px;align-items:flex-start;background:rgba(143,191,199,.16);
+  border:1px solid var(--sky);border-radius:16px;padding:16px 18px}
+.sec--deep .waterside,.sec--teal .waterside{background:rgba(143,191,199,.12)}
+.waterside input{width:auto;margin-top:4px;flex:0 0 auto;accent-color:#E4703A}
+.waterside label{text-transform:none;letter-spacing:0;font-size:.94rem;font-weight:700;
+  color:var(--deep);margin:0}
+.sec--deep .waterside label,.sec--teal .waterside label{color:#fff}
+.waterside .n{display:block;font-weight:400;font-size:.84rem;color:#5A757D;margin-top:4px}
+.sec--deep .waterside .n,.sec--teal .waterside .n{color:#B7CDD2}
+.consent{display:flex;gap:11px;align-items:flex-start;font-size:.86rem}
+.consent input{width:auto;margin-top:4px;flex:0 0 auto;accent-color:#E4703A}
+.consent label{text-transform:none;letter-spacing:0;font-size:.86rem;font-weight:400;
+  color:#5A757D;margin:0}
+.sec--deep .consent label,.sec--teal .consent label{color:#CFE0E4}
+.formnote{font-size:.8rem;color:#5A757D}
+.sec--deep .formnote,.sec--teal .formnote{color:#A7C2C8}
+
+/* =========================== FOOTER ====================================== */
+.ftr{background:var(--deep);color:#A7C2C8;padding:clamp(46px,7vw,88px) 0 30px;font-size:.9rem}
+.ftr a{color:#E4EEF0;text-decoration:none}
+.ftr a:hover{color:var(--coral)}
+.ftr h4{color:#fff;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;
+  margin:0 0 14px;font-weight:800}
+.ftr__grid{display:grid;gap:34px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.ftr ul{list-style:none;margin:0;padding:0}
+.ftr li{margin-bottom:8px}
+.ftr__legal{border-top:1px solid rgba(255,255,255,.12);margin-top:40px;padding-top:24px;
+  font-size:.78rem;color:#7C9AA2;display:grid;gap:9px}
+.warn{background:rgba(228,112,58,.16);border-left:3px solid var(--coral);padding:14px 16px;
+  border-radius:12px;color:#F6DCCB;font-size:.86rem}
+.warn strong{color:#fff}
+
+/* =========================== STICKY / WHATSAPP =========================== */
+.stick{position:fixed;left:0;right:0;bottom:0;z-index:66;display:none;
+  grid-template-columns:1fr 1fr;background:var(--deep);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  box-shadow:0 -3px 16px -6px rgba(0,0,0,.55)}
+@media (max-width:768px){.stick{display:grid}}
+.stick a{display:flex;align-items:center;justify-content:center;gap:9px;height:60px;
+  color:#fff;font:inherit;font-size:.78rem;font-weight:800;letter-spacing:.06em;text-decoration:none}
+.stick .p{background:var(--grad-sunset)}
+.stick svg{width:20px;height:20px;fill:currentColor}
+
+.wa{position:fixed;right:16px;bottom:16px;z-index:67;width:56px;height:56px;border-radius:50%;
+  border:0;cursor:pointer;background:linear-gradient(135deg,#25D366 0%,#128C7E 100%);
+  display:grid;place-items:center;box-shadow:0 10px 26px -8px rgba(0,0,0,.45);
+  transition:transform .3s var(--ease)}
+.wa:hover{transform:scale(1.07)}
+.wa svg{width:28px;height:28px;fill:#fff}
+@media (max-width:768px){.wa{bottom:calc(70px + env(safe-area-inset-bottom,0px))}}
+
+/* =========================== COOKIE BANNER =============================== */
+.ck{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--deep);color:#BFD4D9;
+  padding:18px var(--gut);border-top:3px solid var(--coral);font-size:.9rem;
+  transform:translateY(115%);transition:transform .45s var(--ease)}
+.ck.is-on{transform:none}
+.ck__in{max-width:1140px;margin:0 auto;display:grid;gap:14px}
+.ck h4{margin:0;color:#fff;font-size:1rem}
+.ck__opts{display:flex;flex-wrap:wrap;gap:18px;font-size:.86rem}
+.ck__opts label{text-transform:none;letter-spacing:0;color:#BFD4D9;font-weight:400;
+  display:flex;gap:8px;align-items:center;margin:0;font-size:.86rem}
+.ck__opts input{width:auto;accent-color:#E4703A}
+.ck__btns{display:flex;flex-wrap:wrap;gap:9px}
+.ck__btns .btn{padding:12px 20px;font-size:.7rem}
+.ck .btn--out{border-color:rgba(255,255,255,.6);color:#fff}
+
+/* =========================== REVEALS ===================================== */
+.rv{opacity:0;transform:translateY(18px);
+  transition:opacity .55s var(--ease),transform .55s var(--ease)}
+.rv.is-in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .hero__img{inset:0;height:100%}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;
+    animation-iteration-count:1!important}
+}
+
+@media print{.hdr,.wa,.stick,.ck,.sunset{display:none}body{background:#fff;color:#000}}
