@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Wood Art Marcenaria - spec mockup sitemap.
+
+     THE HOST BELOW IS A PLACEHOLDER, NOT A GUESS. No domain could be
+     confirmed for this business: the address on our lead sheet
+     (akilar.com.br) belongs to a third-party listings portal. Rather
+     than invent a hostname, this file uses the RFC 2606 reserved
+     .example TLD, which can never resolve to anyone real. Replace it
+     with the confirmed domain before launch. [CONFIRM]
+
+     Every page in this build is currently noindex,nofollow and
+     robots.txt disallows all crawling, so nothing here is live.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/index.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/pecas.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/pecas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/pieces.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/pecas.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/madeiras-e-acabamentos.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/madeiras-e-acabamentos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/timber-and-finishes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/madeiras-e-acabamentos.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/processo.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/processo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/process.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/processo.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/projetos.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/projetos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/projetos.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/onde-atendemos.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/onde-atendemos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/service-area.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/onde-atendemos.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/atelie.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/atelie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/studio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/atelie.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/contato.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/contato.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/privacidade.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/privacidade.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/campeche.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/campeche.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/joinery/campeche.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/campeche.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/lagoa-da-conceicao.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/lagoa-da-conceicao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/joinery/lagoa-da-conceicao.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/lagoa-da-conceicao.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/jurere.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/jurere.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/joinery/jurere.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/jurere.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/ingleses.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/ingleses.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/joinery/ingleses.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/ingleses.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/centro.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/centro.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/joinery/centro.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/centro.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/index.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/pieces.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/pecas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/pieces.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/pecas.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/timber-and-finishes.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/madeiras-e-acabamentos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/timber-and-finishes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/madeiras-e-acabamentos.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/process.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/processo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/process.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/processo.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/projects.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/projetos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/projetos.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/service-area.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/onde-atendemos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/service-area.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/onde-atendemos.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/studio.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/atelie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/studio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/atelie.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/contato.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/privacidade.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/joinery/campeche.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/campeche.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/joinery/campeche.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/campeche.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/joinery/lagoa-da-conceicao.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/lagoa-da-conceicao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/joinery/lagoa-da-conceicao.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/lagoa-da-conceicao.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/joinery/jurere.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/jurere.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/joinery/jurere.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/jurere.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/joinery/ingleses.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/ingleses.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/joinery/ingleses.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/ingleses.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-REAL-DOMAIN.example/en/joinery/centro.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/centro.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-REAL-DOMAIN.example/en/joinery/centro.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://REPLACE-WITH-REAL-DOMAIN.example/marcenaria/centro.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>

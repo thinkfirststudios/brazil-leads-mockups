@@ -1,0 +1,26 @@
+# Wood Art Marcenaria - spec mockup
+#
+# STATUS: LEAD, not signed. Nothing here is deployed, and every page in
+# this build carries <meta name="robots" content="noindex,nofollow">.
+# This file matches that state: while the mockup is unpublished, nothing
+# should be crawled.
+#
+# THE DOMAIN IS THE OPEN QUESTION ON THIS LEAD. The address on our lead
+# sheet, akilar.com.br, belongs to AkiLar - a third-party home-services
+# listings portal out of Jaragua do Sul - and NOT to this business. It
+# must never be treated as a migration source. [CONFIRM the real domain,
+# or confirm there is none.]
+#
+# AT LAUNCH, replace everything below with:
+#
+#     User-agent: *
+#     Allow: /
+#     Sitemap: https://<the real domain>/sitemap.xml
+#
+# and remove the noindex meta tag from every page.
+
+User-agent: *
+Disallow: /
+
+# Sitemap: see sitemap.xml in this folder - the host in it is the RFC 2606
+# reserved .example domain and has to be replaced before launch.
