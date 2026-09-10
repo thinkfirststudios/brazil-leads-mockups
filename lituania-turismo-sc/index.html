@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<!-- Speculative pitch mockup for a prospect who has not commissioned, seen or
+     approved it. Must never be indexed or compete with the real business. -->
+<meta name="theme-color" content="#F4B843">
+<title>Agência de Turismo em Florianópolis · Excursões, City Tour e Transfer | Lituânia Turismo SC</title>
+<meta name="description" content="Excursões com saída de Florianópolis, city tour privativo, transfer do aeroporto e transporte corporativo. Calendário de saídas, pacotes e orçamento por WhatsApp.">
+  <link rel="alternate" hreflang="pt-BR" href="index.html">
+  <link rel="alternate" hreflang="en" href="en/index.html">
+  <link rel="alternate" hreflang="es" href="es/index.html">
+  <link rel="alternate" hreflang="x-default" href="index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Litu\u00e2nia Turismo SC",
+  "url": "https://lituaniaturismosc.com.br/",
+  "telephone": "+55 48 98436-5684",
+  "email": "contato@lituaniaturismosc.com.br",
+  "availableLanguage": ["pt-BR", "en", "es"],
+  "areaServed": [
+    {"@type": "State", "name": "Santa Catarina"},
+    {"@type": "State", "name": "Paran\u00e1"},
+    {"@type": "Country", "name": "Uruguay"}
+  ],
+  "sameAs": [
+    "https://www.tiktok.com/@lituaniaturismosc"
+  ]
+}
+</script>
+</head>
+<body class="mode-viagens">
+<a class="skip" href="#main">Ir para o conteúdo</a>
+<div class="topbar">
+  <div class="topbar__in">
+    <span><a href="#" data-wa>(48) 98436-5684</a></span>
+    <span><a href="mailto:contato@lituaniaturismosc.com.br">contato@lituaniaturismosc.com.br</a></span>
+    <span class="langs">
+      <a href="index.html" hreflang="pt-BR" lang="pt-BR" aria-current="true">PT</a><i>·</i><a href="en/index.html" hreflang="en" lang="en">EN</a><i>·</i><a href="es/index.html" hreflang="es" lang="es">ES</a>
+    </span>
+    <span><a class="btn btn--sm" href="#" data-wa>Falar no WhatsApp</a></span>
+  </div>
+</div>
+<header class="hdr">
+  <div class="hdr__in">
+    <a class="mark" href="index.html"><b>Lituânia<em>.</em></b><span>Turismo SC</span></a>
+    <button class="burger" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <div class="group group--v"><b>Viagens &amp; Passeios</b><a href="#calendario">Calendário de saídas</a><a href="#pacotes">Pacotes</a><a href="#galeria">Galeria</a><a href="#blog">Blog</a></div>
+      <div class="group group--t"><b>Transporte &amp; Receptivo</b><a href="transporte.html#citytour">City Tour privativo</a><a href="transporte.html#transfer">Transfer / Traslado</a><a href="transporte.html#corporativo">Corporativo</a><a href="transporte.html#frota">Frota</a></div>
+      <div class="plain"><a href="#sobre">Sobre</a><a href="#contato">Contato</a></div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ═══ HERO ═══ PLACEHOLDER-hero.jpg -->
+  <section class="hero">
+    <img class="hero__img" src="https://images.unsplash.com/photo-1471506480208-91b3a4cc78be?auto=format&fit=crop&w=2000&q=72" alt="Estrada de montanha em curvas ao entardecer, com um ciclista adulto ao longe — foto de banco de imagens, não é um passeio da Lituânia Turismo" fetchpriority="high" width="2000" height="1125">
+    <div class="hero__scrim"></div>
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__in">
+      <h1>O que realmente importa é como você chega até lá.</h1>
+      <p class="hero__sub">Excursões com saída de Florianópolis e transporte privativo na Ilha. Duas coisas diferentes, e daqui em diante em páginas diferentes.</p>
+      <div class="hero__cta">
+        <a class="btn" href="#calendario">Ver próximas saídas <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.5"/></svg></a>
+        <a class="btn btn--cool" href="transporte.html">Orçar transporte privativo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ THE SPLIT — the structural argument of the whole build ═══ -->
+  <section class="sec sec--sand" style="padding-block:clamp(34px,5vw,60px)">
+    <div class="wrap"><div class="flag rv" style="margin:0"><strong>Este site atende dois públicos que hoje disputam a mesma página.</strong> De um lado, treze pacotes com data — e onze deles <em>saem</em> de Santa Catarina, vendidos a quem já mora aqui. Do outro, city tour, traslado, receptivo e transporte corporativo, vendidos a quem chega. O menu de serviços atual começa pelo segundo e não tem uma linha de conteúdo atrás dele. Este build separa os dois: o calendário fica aqui, a frota fica na página de transporte.</div></div>
+  </section>
+
+  <!-- ═══ DEPARTURE BOARD ═══ -->
+  <section class="sec" id="calendario">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Calendário de saídas</p>
+      <h2 class="rv">Treze pacotes. Nenhuma data publicada.</h2>
+      <p class="lede rv" style="margin-top:16px">Uma lista de nomes de lugares não é um produto. Um quadro de saídas com data, duração, vagas e prazo transforma treze nomes em treze decisões.</p>
+      <div class="flag rv"><strong>Todos os treze títulos abaixo são reais — copiados da página de pacotes deles.</strong> Data, duração, situação de vagas e valor não são: eles não publicam nenhum. Cada um fica como <span class="cfm">[CONFIRM]</span> visível. <span class="cfm">[CONFIRM o calendário real: datas, duração, ponto de embarque, mínimo de passageiros, valores em R$, sinal, e política de cancelamento e de saída não confirmada]</span></div>
+
+      <div class="filters" role="group" aria-label="Calendário de saídas">
+        <button type="button" data-filter="all" aria-pressed="true">Todos</button>
+        <button type="button" data-filter="serra" aria-pressed="false">Serra</button>
+        <button type="button" data-filter="vale" aria-pressed="false">Vale Europeu</button>
+        <button type="button" data-filter="litoral" aria-pressed="false">Litoral</button>
+        <button type="button" data-filter="intl" aria-pressed="false">Internacional</button>
+        <button type="button" data-filter="feriado" aria-pressed="false">Réveillon / Feriado</button>
+      </div>
+      <p class="count" role="status" aria-live="polite"></p>
+
+      <ul class="board">
+      <li data-tags="litoral" class="rv">
+        <span class="when"><span class="cfm">[CONFIRM]</span></span>
+        <span class="dest">Travessia Guarda do Embaú | Pinheira<br><span class="kind">Litoral</span></span>
+        <span class="dur"><span class="cfm">[CONFIRM]</span></span>
+        <span><span class="chip chip--pill"><span class="cfm">[CONFIRM]</span></span></span>
+        <span><a class="btn btn--sm" href="#" data-wa="Olá! Quero informações sobre a saída: Travessia Guarda do Embaú | Pinheira">Perguntar no WhatsApp</a></span>
+      </li>
+      <li data-tags="serra" class="rv">
+        <span class="when"><span class="cfm">[CONFIRM]</span></span>
+        <span class="dest">Urubici com Serra do Corvo Branco<br><span class="kind">Serra</span></span>
+        <span class="dur"><span class="cfm">[CONFIRM]</span></span>
+        <span><span class="chip chip--pill"><span class="cfm">[CONFIRM]</span></span></span>
+        <span><a class="btn btn--sm" href="#" data-wa="Olá! Quero informações sobre a saída: Urubici com Serra do Corvo Branco">Perguntar no WhatsApp</a></span>
+      </li>
+      <li data-tags="vale" class="rv">
+        <span class="when"><span class="cfm">[CONFIRM]</span></span>
+        <span class="dest">Oktoberfest de Blumenau 2026<br><span class="kind">Vale Europeu</span></span>
+        <span class="dur"><span class="cfm">[CONFIRM]</span></span>
+        <span><span class="chip chip--pill"><span class="cfm">[CONFIRM]</span></span></span>
+        <span><a class="btn btn--sm" href="#" data-wa="Olá! Quero informações sobre a saída: Oktoberfest de Blumenau 2026">Perguntar no WhatsApp</a></span>
+      </li>
+      <li data-tags="feriado" class="rv">
+        <span class="when"><span class="cfm">[CONFIRM]</span></span>
+        <span class="dest">Réveillon Hotel Villa das Termas<br><span class="kind">Réveillon / Feriado</span></span>
+        <span class="dur"><span class="cfm">[CONFIRM]</span></span>
+        <span><span class="chip chip--pill"><span class="cfm">[CONFIRM]</span></span></span>
+        <span><a class="btn btn--sm" href="#" data-wa="Olá! Quero informações sobre a saída: Réveillon Hotel Villa das Termas">Perguntar no WhatsApp</a></span>
+      </li>
+      <li data-tags="vale" class="rv">
+        <span class="when"><span class="cfm">[CONFIRM]</span></span>
+        <span class="dest">Ituporanga + Café Acacius<br><span class="kind">Vale Europeu</span></span>
+        <span class="dur"><span class="cfm">[CONFIRM]</span></span>
+        <span><span class="chip chip--pill"><span class="cfm">[CONFIRM]</span></span></span>
+        <span><a class="btn btn--sm" href="#" data-wa="Olá! Quero informações sobre a saída: Ituporanga + Café Acacius">Perguntar no WhatsApp</a></span>
+      </li>
+      <li data-tags="serra" class="rv">
+        <span class="when"><span class="cfm">[CONFIRM]</span></span>
+        <span class="dest">Final de semana Italiano<br><span class="kind">Serra</span></span>
+        <span class="dur"><span class="cfm">[CONFIRM]</span></span>
+        <span><span class="chip chip--pill"><span class="cfm">[CONFIRM]</span></span></span>
+        <span><a class="btn btn--sm" href="#" data-wa="Olá! Quero informações sobre a saída: Final de semana Italiano">Perguntar no WhatsApp</a></span>
+      </li>
+      <li data-tags="vale" class="rv">
+        <span class="when"><span class="cfm">[CONFIRM]</span></span>
+        <span class="dest">Nova Trento + Cavernas de Botuverá<br><span class="kind">Vale Europeu</span></span>
+        <span class="dur"><span class="cfm">[CONFIRM]</span></span>
+        <span><span class="chip chip--pill"><span class="cfm">[CONFIRM]</span></span></span>
+        <span><a class="btn btn--sm" href="#" data-wa="Olá! Quero informações sobre a saída: Nova Trento + Cavernas de Botuverá">Perguntar no WhatsApp</a></span>
+      </li>
+      <li data-tags="vale" class="rv">
+        <span class="when"><span class="cfm">[CONFIRM]</span></span>
+        <span class="dest">Natal de Blumenau e Pomerode<br><span class="kind">Vale Europeu</span></span>
+        <span class="dur"><span class="cfm">[CONFIRM]</span></span>
+        <span><span class="chip chip--pill"><span class="cfm">[CONFIRM]</span></span></span>
+        <span><a class="btn btn--sm" href="#" data-wa="Olá! Quero informações sobre a saída: Natal de Blumenau e Pomerode">Perguntar no WhatsApp</a></span>
+      </li>
+      <li data-tags="intl" class="rv">
+        <span class="when"><span class="cfm">[CONFIRM]</span></span>
+        <span class="dest">Carnaval 2027 no Uruguai<br><span class="kind">Internacional</span></span>
+        <span class="dur"><span class="cfm">[CONFIRM]</span></span>
+        <span><span class="chip chip--pill"><span class="cfm">[CONFIRM]</span></span></span>
+        <span><a class="btn btn--sm" href="#" data-wa="Olá! Quero informações sobre a saída: Carnaval 2027 no Uruguai">Perguntar no WhatsApp</a></span>
+      </li>
+      <li data-tags="vale" class="rv">
+        <span class="when"><span class="cfm">[CONFIRM]</span></span>
+        <span class="dest">Rota Enxaimel — Pomerode<br><span class="kind">Vale Europeu</span></span>
+        <span class="dur"><span class="cfm">[CONFIRM]</span></span>
+        <span><span class="chip chip--pill"><span class="cfm">[CONFIRM]</span></span></span>
+        <span><a class="btn btn--sm" href="#" data-wa="Olá! Quero informações sobre a saída: Rota Enxaimel — Pomerode">Perguntar no WhatsApp</a></span>
+      </li>
+      <li data-tags="serra" class="rv">
+        <span class="when"><span class="cfm">[CONFIRM]</span></span>
+        <span class="dest">São Miguel das Missões + Trem dos Pampas<br><span class="kind">Serra</span></span>
+        <span class="dur"><span class="cfm">[CONFIRM]</span></span>
+        <span><span class="chip chip--pill"><span class="cfm">[CONFIRM]</span></span></span>
+        <span><a class="btn btn--sm" href="#" data-wa="Olá! Quero informações sobre a saída: São Miguel das Missões + Trem dos Pampas">Perguntar no WhatsApp</a></span>
+      </li>
+      <li data-tags="litoral" class="rv">
+        <span class="when"><span class="cfm">[CONFIRM]</span></span>
+        <span class="dest">Jardim Secreto<br><span class="kind">Litoral</span></span>
+        <span class="dur"><span class="cfm">[CONFIRM]</span></span>
+        <span><span class="chip chip--pill"><span class="cfm">[CONFIRM]</span></span></span>
+        <span><a class="btn btn--sm" href="#" data-wa="Olá! Quero informações sobre a saída: Jardim Secreto">Perguntar no WhatsApp</a></span>
+      </li>
+      <li data-tags="serra" class="rv">
+        <span class="when"><span class="cfm">[CONFIRM]</span></span>
+        <span class="dest">Bonito — Janeiro de 2027<br><span class="kind">Serra</span></span>
+        <span class="dur"><span class="cfm">[CONFIRM]</span></span>
+        <span><span class="chip chip--pill"><span class="cfm">[CONFIRM]</span></span></span>
+        <span><a class="btn btn--sm" href="#" data-wa="Olá! Quero informações sobre a saída: Bonito — Janeiro de 2027">Perguntar no WhatsApp</a></span>
+      </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══ PACKAGE CARDS ═══ PLACEHOLDER-packages.jpg -->
+  <section class="sec sec--wash" id="pacotes">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Pacotes</p>
+      <h2 class="rv">O catálogo, como cartão.</h2>
+      <p class="lede rv" style="margin-top:16px">Um cartão por pacote publicado. A etiqueta de categoria é leitura nossa do destino, não rótulo deles.</p>
+      <ul class="cards" style="margin-top:32px">
+      <li class="card rv" data-tags="litoral">
+        <span class="pill">Litoral</span>
+        <span class="value">Consultar valores</span>
+        <figure><img src="https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?auto=format&fit=crop&w=800&q=72" alt="Vista aérea de faixa de praia e ondas — foto de banco de imagens" loading="lazy" decoding="async" width="800" height="600"></figure>
+        <div class="card__t"><h3>Travessia Guarda do Embaú | Pinheira</h3><p><span class="cfm">[CONFIRM]</span> · <span class="cfm">[CONFIRM]</span></p></div>
+      </li>
+      <li class="card rv" data-tags="serra">
+        <span class="pill">Serra</span>
+        <span class="value">Consultar valores</span>
+        <figure><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=72" alt="Serras verdes em camadas sob luz baixa — foto de banco de imagens" loading="lazy" decoding="async" width="800" height="600"></figure>
+        <div class="card__t"><h3>Urubici com Serra do Corvo Branco</h3><p><span class="cfm">[CONFIRM]</span> · <span class="cfm">[CONFIRM]</span></p></div>
+      </li>
+      <li class="card rv" data-tags="vale">
+        <span class="pill">Vale Europeu</span>
+        <span class="value">Consultar valores</span>
+        <figure><img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=72" alt="Construção histórica em pedra na neblina — foto de banco de imagens" loading="lazy" decoding="async" width="800" height="600"></figure>
+        <div class="card__t"><h3>Oktoberfest de Blumenau 2026</h3><p><span class="cfm">[CONFIRM]</span> · <span class="cfm">[CONFIRM]</span></p></div>
+      </li>
+      <li class="card rv" data-tags="feriado">
+        <span class="pill">Réveillon / Feriado</span>
+        <span class="value">Consultar valores</span>
+        <figure><img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=72" alt="Deque de piscina de resort com espreguiçadeiras, sem pessoas — foto de banco de imagens" loading="lazy" decoding="async" width="800" height="600"></figure>
+        <div class="card__t"><h3>Réveillon Hotel Villa das Termas</h3><p><span class="cfm">[CONFIRM]</span> · <span class="cfm">[CONFIRM]</span></p></div>
+      </li>
+      <li class="card rv" data-tags="vale">
+        <span class="pill">Vale Europeu</span>
+        <span class="value">Consultar valores</span>
+        <figure><img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=800&q=72" alt="Pessoa adulta cuidando de canteiro plantado — foto de banco de imagens" loading="lazy" decoding="async" width="800" height="600"></figure>
+        <div class="card__t"><h3>Ituporanga + Café Acacius</h3><p><span class="cfm">[CONFIRM]</span> · <span class="cfm">[CONFIRM]</span></p></div>
+      </li>
+      <li class="card rv" data-tags="serra">
+        <span class="pill">Serra</span>
+        <span class="value">Consultar valores</span>
+        <figure><img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800&q=72" alt="Campo aberto ao pôr do sol — foto de banco de imagens" loading="lazy" decoding="async" width="800" height="600"></figure>
+        <div class="card__t"><h3>Final de semana Italiano</h3><p><span class="cfm">[CONFIRM]</span> · <span class="cfm">[CONFIRM]</span></p></div>
+      </li>
+      <li class="card rv" data-tags="vale">
+        <span class="pill">Vale Europeu</span>
+        <span class="value">Consultar valores</span>
+        <figure><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=72" alt="Floresta alta com feixes de luz entre os troncos — foto de banco de imagens" loading="lazy" decoding="async" width="800" height="600"></figure>
+        <div class="card__t"><h3>Nova Trento + Cavernas de Botuverá</h3><p><span class="cfm">[CONFIRM]</span> · <span class="cfm">[CONFIRM]</span></p></div>
+      </li>
+      <li class="card rv" data-tags="vale">
+        <span class="pill">Vale Europeu</span>
+        <span class="value">Consultar valores</span>
+        <figure><img src="https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?auto=format&fit=crop&w=800&q=72" alt="Edifício histórico de tijolos em esquina urbana — foto de banco de imagens" loading="lazy" decoding="async" width="800" height="600"></figure>
+        <div class="card__t"><h3>Natal de Blumenau e Pomerode</h3><p><span class="cfm">[CONFIRM]</span> · <span class="cfm">[CONFIRM]</span></p></div>
+      </li>
+      <li class="card rv" data-tags="intl">
+        <span class="pill">Internacional</span>
+        <span class="value">Consultar valores</span>
+        <figure><img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=800&q=72" alt="Rua de cidade ao anoitecer com trânsito e fachadas iluminadas — foto de banco de imagens" loading="lazy" decoding="async" width="800" height="600"></figure>
+        <div class="card__t"><h3>Carnaval 2027 no Uruguai</h3><p><span class="cfm">[CONFIRM]</span> · <span class="cfm">[CONFIRM]</span></p></div>
+      </li>
+      <li class="card rv" data-tags="vale">
+        <span class="pill">Vale Europeu</span>
+        <span class="value">Consultar valores</span>
+        <figure><img src="https://images.unsplash.com/photo-1573599852326-2d4da0bbe613?auto=format&fit=crop&w=800&q=72" alt="Palácio e jardins formais ao entardecer — foto de banco de imagens" loading="lazy" decoding="async" width="800" height="600"></figure>
+        <div class="card__t"><h3>Rota Enxaimel — Pomerode</h3><p><span class="cfm">[CONFIRM]</span> · <span class="cfm">[CONFIRM]</span></p></div>
+      </li>
+      <li class="card rv" data-tags="serra">
+        <span class="pill">Serra</span>
+        <span class="value">Consultar valores</span>
+        <figure><img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=800&q=72" alt="Vale largo com paredão de rocha e mata — foto de banco de imagens" loading="lazy" decoding="async" width="800" height="600"></figure>
+        <div class="card__t"><h3>São Miguel das Missões + Trem dos Pampas</h3><p><span class="cfm">[CONFIRM]</span> · <span class="cfm">[CONFIRM]</span></p></div>
+      </li>
+      <li class="card rv" data-tags="litoral">
+        <span class="pill">Litoral</span>
+        <span class="value">Consultar valores</span>
+        <figure><img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800&q=72" alt="Colinas verdes onduladas — foto de banco de imagens" loading="lazy" decoding="async" width="800" height="600"></figure>
+        <div class="card__t"><h3>Jardim Secreto</h3><p><span class="cfm">[CONFIRM]</span> · <span class="cfm">[CONFIRM]</span></p></div>
+      </li>
+      <li class="card rv" data-tags="serra">
+        <span class="pill">Serra</span>
+        <span class="value">Consultar valores</span>
+        <figure><img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=800&q=72" alt="Cachoeira em desfiladeiro verde com passarela — foto de banco de imagens" loading="lazy" decoding="async" width="800" height="600"></figure>
+        <div class="card__t"><h3>Bonito — Janeiro de 2027</h3><p><span class="cfm">[CONFIRM]</span> · <span class="cfm">[CONFIRM]</span></p></div>
+      </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══ TRUST STRIP ═══ -->
+  <section class="sec">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">O que eles afirmam</p>
+      <h2 class="rv">Quatro afirmações e uma ausência.</h2>
+      <ul class="trust" style="margin-top:30px">
+      <li class="rv"><b>Frota própria</b><span>Afirmado no rodapé do site atual, sem nenhum detalhe: nenhum tipo de veículo, nenhuma capacidade, nenhuma idade de frota. <span class="cfm">[CONFIRM inventário da frota, conferido contra os documentos dos veículos]</span></span></li>
+      <li class="rv"><b>Atuação local, nacional e internacional</b><span>Esta se sustenta: existe um pacote de Carnaval no Uruguai no catálogo. O que ela também significa é que ANTT e regras de fronteira são questões abertas. <span class="cfm">[CONFIRM registro ANTT e documentação de travessia]</span></span></li>
+      <li class="rv"><b>Atendimento por WhatsApp</b><span>Real e verificável — (48) 98436-5684, publicado duas vezes no rodapé deles.</span></li>
+      <li class="rv"><b>Filiais em cada cidade</b><span>Afirmação forte, zero detalhe. <span class="cfm">[CONFIRM quais cidades, e se são filiais próprias ou parceiros]</span></span></li>
+      <li class="rv is-missing"><b>CADASTUR</b><span>Nenhum número aparece no site. O registro no Ministério do Turismo é exigido por lei tanto para agência de viagens quanto para transportadora turística — e a Lituânia é as duas coisas. <span class="cfm">[CONFIRM o número CADASTUR e se está ativo]</span></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══ VIDEOS — click-to-load facades, never live embeds ═══ -->
+  <section class="sec sec--ink">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Vídeos</p>
+      <h2 class="rv">Quatro tours já produzidos, no fim da página.</h2>
+      <p class="lede rv" style="margin-top:16px">Eles têm um canal ativo e quatro vídeos de roteiro prontos, hoje escondidos no rodapé sem nenhuma marcação VideoObject. É conteúdo bom, já pago, rendendo nada.</p>
+      <ul class="vids" style="margin-top:32px">
+      <li class="vid rv">
+        <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800&q=72" alt="Campo aberto ao pôr do sol — foto de banco de imagens" loading="lazy" decoding="async" width="800" height="450">
+        <button type="button" data-video aria-label="Bento Gonçalves e Garibaldi"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></button>
+        <figcaption>Bento Gonçalves e Garibaldi<br><span style="font-size:.78rem;font-weight:400;color:#9BA0A7">Duração <span class="cfm">[CONFIRM]</span></span></figcaption>
+      </li>
+      <li class="vid rv">
+        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=800&q=72" alt="Rua de cidade ao anoitecer com trânsito e fachadas iluminadas — foto de banco de imagens" loading="lazy" decoding="async" width="800" height="450">
+        <button type="button" data-video aria-label="Carnevale di Venezia"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></button>
+        <figcaption>Carnevale di Venezia<br><span style="font-size:.78rem;font-weight:400;color:#9BA0A7">Duração <span class="cfm">[CONFIRM]</span></span></figcaption>
+      </li>
+      <li class="vid rv">
+        <img src="https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?auto=format&fit=crop&w=800&q=72" alt="Edifício histórico de tijolos em esquina urbana — foto de banco de imagens" loading="lazy" decoding="async" width="800" height="450">
+        <button type="button" data-video aria-label="Cidades Históricas"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></button>
+        <figcaption>Cidades Históricas<br><span style="font-size:.78rem;font-weight:400;color:#9BA0A7">Duração <span class="cfm">[CONFIRM]</span></span></figcaption>
+      </li>
+      <li class="vid rv">
+        <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=800&q=72" alt="Passarela de madeira atravessando a mata — foto de banco de imagens" loading="lazy" decoding="async" width="800" height="450">
+        <button type="button" data-video aria-label="Curitiba e Morretes"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></button>
+        <figcaption>Curitiba e Morretes<br><span style="font-size:.78rem;font-weight:400;color:#9BA0A7">Duração <span class="cfm">[CONFIRM]</span></span></figcaption>
+      </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══ GALLERY ═══ PLACEHOLDER-gallery.jpg -->
+  <section class="sec" id="galeria">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Galeria</p>
+      <h2 class="rv">O acervo de fotos, refeito.</h2>
+      <p class="lede rv" style="margin-top:16px">A galeria atual vive em URLs <code>zoom.php?id=NNN</code>. Todas são preservadas ou redirecionadas com 301 — nada some em silêncio.</p>
+      <div class="gal rv" style="margin-top:28px">
+        <figure><img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=600&q=72" alt="Costa brasileira com morros e enseada — foto de banco de imagens" loading="lazy" decoding="async" width="600" height="400"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?auto=format&fit=crop&w=600&q=72" alt="Vista aérea de faixa de praia e ondas — foto de banco de imagens" loading="lazy" decoding="async" width="600" height="400"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=72" alt="Serras verdes em camadas sob luz baixa — foto de banco de imagens" loading="lazy" decoding="async" width="600" height="400"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=600&q=72" alt="Lago de montanha refletindo picos ao amanhecer — foto de banco de imagens" loading="lazy" decoding="async" width="600" height="400"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=600&q=72" alt="Passarela de madeira atravessando a mata — foto de banco de imagens" loading="lazy" decoding="async" width="600" height="400"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=72" alt="Praia ao pôr do sol com o mar calmo — foto de banco de imagens" loading="lazy" decoding="async" width="600" height="400"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=600&q=72" alt="Colinas verdes onduladas — foto de banco de imagens" loading="lazy" decoding="async" width="600" height="400"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=600&q=72" alt="Vista aérea de lago cercado de floresta — foto de banco de imagens" loading="lazy" decoding="async" width="600" height="400"></figure>
+      </div>
+      <div class="flag rv">Todas as imagens desta galeria são de banco de imagens. As fotos reais deles entram no lugar antes de qualquer publicação. <span class="cfm">[CONFIRM os direitos de uso do acervo atual]</span></div>
+    </div>
+  </section>
+
+  <!-- ═══ BLOG ═══ -->
+  <section class="sec sec--wash" id="blog">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Blog</p>
+      <h2 class="rv">O canal de anúncio das próximas saídas.</h2>
+      <p class="lede rv" style="margin-top:16px">Os três posts existentes estão todos datados de 02/04/2026. Reenquadrado, o blog deixa de ser um blog e vira o lugar onde uma saída nova é anunciada — e cada post termina no quadro de saídas.</p>
+      <ul class="posts" style="margin-top:30px">
+      <li class="post rv"><time datetime="2026-04-02">02/04/2026</time><h3>Serra do Rio do Rastro + Vinhos</h3><p>Um roteiro especial, regado a vinhos selecionados e paisagens de tirar o fôlego! No sábado, 18 de abril… <span class="cfm">[CONFIRM o ano e se esta saída ainda está aberta]</span></p><a href="#calendario">Ver no calendário <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.5"/></svg></a></li>
+      <li class="post rv"><time datetime="2026-04-02">02/04/2026</time><h3>Tour Inesquecível no Uruguai</h3><p>Deixe-se encantar por: Colônia… <span class="cfm">[CONFIRM o restante do texto e a data de saída]</span></p><a href="#calendario">Ver no calendário <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.5"/></svg></a></li>
+      <li class="post rv"><time datetime="2026-04-02">02/04/2026</time><h3>Bento Gonçalves e Garibaldi</h3><p>um fim de semana rodeado por vinhos premiados, paisagens encantadoras e muita cultura italiana <span class="cfm">[CONFIRM data]</span></p><a href="#calendario">Ver no calendário <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.5"/></svg></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ PLACEHOLDER-about.jpg -->
+  <section class="sec sec--teal" id="sobre">
+    <div class="wrap">
+      <hr class="rule" style="background:#FAF8F4">
+      <p class="eyebrow" style="color:#DCEAEB">Sobre</p>
+      <h2 class="rv">Aqui, não se trata apenas de viagens.</h2>
+      <blockquote class="rv" style="margin:24px 0 0;font-size:clamp(1.05rem,2vw,1.35rem);
+        line-height:1.5;max-width:62ch;border-left:3px solid #F4B843;padding-left:22px">
+        &ldquo;Aqui, não se trata apenas de viagens; trata-se de criar experiências incríveis… Acreditamos que cada destino tem sua própria magia, mas o que realmente importa é como você chega até lá.&rdquo;
+      </blockquote>
+      <p class="rv" style="margin-top:22px;max-width:62ch;font-style:italic">&ldquo;Oferecemos transportes corporativos, viagens, passeios, transfers e receptivo com atuação local, nacional e até internacional.&rdquo;</p>
+      <p class="rv" style="font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:#BEDDDF">lituaniaturismosc.com.br — na íntegra</p>
+      <figure class="rv" style="margin:34px 0 0">
+        <img src="https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=1600&q=72" alt="Cadeias de montanha em camadas na neblina ao amanhecer — foto de banco de imagens" loading="lazy" decoding="async" width="1600" height="900" style="border-radius:3px">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ═══ NEWSLETTER ═══ -->
+  <section class="sec">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Próximas saídas</p>
+      <h2 class="rv">Receba as próximas saídas antes de todo mundo.</h2>
+      <p class="lede rv" style="margin-top:16px">Para um negócio de saídas com data, a lista é o motor de vendas. Eles já têm uma; o que falta é uma promessa atrelada a ela.</p>
+      <form class="form rv" data-mock style="margin-top:24px">
+        <div><label for="news-mail">Seu e-mail</label>
+          <input id="news-mail" name="mail" type="email" autocomplete="email"></div>
+        <div class="consent">
+          <input type="checkbox" id="news-consent" data-consent>
+          <label for="news-consent">Aceito receber avisos de novas saídas da Lituânia Turismo SC e sei que posso sair da lista a qualquer momento (LGPD).</label>
+        </div>
+        <div><button class="btn" type="submit">Quero receber <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.5"/></svg></button></div>
+        <p class="formnote">Mockup — nada é enviado e nada é armazenado.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section class="sec sec--wash" id="contato">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Contato</p>
+      <h2 class="rv">Fale com a gente.</h2>
+
+      <ul class="trust rv" style="margin:26px 0 34px">
+        <li><b>WhatsApp</b><span><a href="#" data-wa>(48) 98436-5684</a></span></li>
+        <li><b>E-mail</b><span><a href="mailto:contato@lituaniaturismosc.com.br">contato@lituaniaturismosc.com.br</a></span></li>
+        <li><b>Endereço</b><span><span class="cfm">[CONFIRM — nenhum endereço aparece no site atual. Sem endereço não há Perfil da Empresa no Google e não há presença no pacote local.]</span></span></li>
+        <li><b>Horário</b><span><span class="cfm">[CONFIRM]</span></span></li>
+      </ul>
+
+      <form class="form rv" data-mock>
+        <div class="modeswitch" role="group" aria-label="Contato">
+          <button type="button" data-mode="excursao" aria-pressed="true">Excursão</button>
+        <button type="button" data-mode="transporte" aria-pressed="false">Transporte</button>
+        </div>
+
+        <div data-pane="excursao">
+          <div class="f2" style="margin-bottom:15px">
+            <div><label for="c-nome">Nome</label><input id="c-nome" type="text" autocomplete="name"></div>
+            <div><label for="c-wa">WhatsApp</label><input id="c-wa" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="f2" style="margin-bottom:15px">
+            <div><label for="c-pack">Pacote de interesse</label>
+              <select id="c-pack">
+              <option>Travessia Guarda do Embaú | Pinheira</option>
+              <option>Urubici com Serra do Corvo Branco</option>
+              <option>Oktoberfest de Blumenau 2026</option>
+              <option>Réveillon Hotel Villa das Termas</option>
+              <option>Ituporanga + Café Acacius</option>
+              <option>Final de semana Italiano</option>
+              <option>Nova Trento + Cavernas de Botuverá</option>
+              <option>Natal de Blumenau e Pomerode</option>
+              <option>Carnaval 2027 no Uruguai</option>
+              <option>Rota Enxaimel — Pomerode</option>
+              <option>São Miguel das Missões + Trem dos Pampas</option>
+              <option>Jardim Secreto</option>
+              <option>Bonito — Janeiro de 2027</option>
+              </select></div>
+            <div><label for="c-pax">Pessoas</label><input id="c-pax" type="number" min="1" step="1"></div>
+          </div>
+        </div>
+
+        <div data-pane="transporte">
+          <div class="f2" style="margin-bottom:15px">
+            <div><label for="c-nome2">Nome</label><input id="c-nome2" type="text"></div>
+            <div><label for="c-emp">Empresa</label><input id="c-emp" type="text"></div>
+          </div>
+          <div class="f2" style="margin-bottom:15px">
+            <div><label for="c-serv">Serviço</label>
+              <select id="c-serv">
+              <option>City Tour privativo</option>
+              <option>Transfer aeroporto (FLN)</option>
+              <option>Transporte corporativo</option>
+              <option>Fretamento / evento</option>
+              </select></div>
+            <div><label for="c-rota">Trecho / rota</label><input id="c-rota" type="text"></div>
+          </div>
+        </div>
+
+        <div class="f2">
+          <div><label for="c-mail">E-mail</label><input id="c-mail" type="email"></div>
+          <div><label for="c-data">Data pretendida</label><input id="c-data" type="date"></div>
+        </div>
+        <div><label for="c-msg">Mensagem</label><textarea id="c-msg"></textarea></div>
+        <div class="consent">
+          <input type="checkbox" id="c-consent" data-consent>
+          <label for="c-consent">Autorizo a Lituânia Turismo SC a usar estes dados para responder a esta solicitação, nos termos da LGPD.</label>
+        </div>
+        <div><button class="btn" type="submit">Enviar <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.5"/></svg></button></div>
+        <p class="formnote">Mockup — nada é enviado e nada é armazenado.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <a class="mark" href="index.html" style="color:#FAF8F4"><b>Lituânia<em style="color:#F4B843">.</em></b><span style="color:#9BA0A7">Turismo SC</span></a>
+        <p style="margin-top:16px;max-width:34ch">Agência de turismo em Florianópolis</p>
+        <p style="font-style:italic;color:#9BA0A7;max-width:36ch">&ldquo;Acreditamos que cada destino tem sua própria magia, mas o que realmente importa é como você chega até lá.&rdquo;</p>
+        <div class="socials">
+          <a href="https://www.tiktok.com/@lituaniaturismosc" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://www.youtube.com/@Litu%C3%A2niaTurismo_SC" target="_blank" rel="noopener">YouTube</a>
+          <a href="#" data-unconfirmed title="[CONFIRM]">Instagram</a>
+          <a href="#" data-unconfirmed title="[CONFIRM]">Facebook</a>
+        </div>
+      </div>
+      <div><h4 class="gold">Viagens &amp; Passeios</h4><ul><li><a href="#calendario">Calendário de saídas</a></li><li><a href="#pacotes">Pacotes</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#blog">Blog</a></li></ul></div>
+      <div><h4>Transporte &amp; Receptivo</h4><ul><li><a href="transporte.html#citytour">City Tour privativo</a></li><li><a href="transporte.html#transfer">Transfer / Traslado</a></li><li><a href="transporte.html#corporativo">Corporativo</a></li><li><a href="transporte.html#frota">Frota</a></li></ul></div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="#" data-wa>(48) 98436-5684</a></li>
+          <li><a href="mailto:contato@lituaniaturismosc.com.br">contato@lituaniaturismosc.com.br</a></li>
+          <li><strong>Endereço</strong><br><span class="cfm">[CONFIRM — nenhum endereço aparece no site atual. Sem endereço não há Perfil da Empresa no Google e não há presença no pacote local.]</span></li>
+          <li><strong>Horário de atendimento</strong> <span class="cfm">[CONFIRM]</span></li>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
+          <li><a href="#" data-ck-open>Preferências de cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr__legal">
+      <p style="margin:0">CNPJ <span class="cfm">[CONFIRM]</span></p>
+      <p style="margin:0">CADASTUR <span class="cfm">[CONFIRM — obrigatório para agência de turismo e para transportadora turística. Nenhum número aparece no site atual.]</span></p>
+      <p style="margin:0">ANTT <span class="cfm">[CONFIRM — o inventário publicado inclui saídas interestaduais e uma internacional]</span></p>
+      <p style="margin:0">Todas as imagens deste mockup são de banco de imagens (Unsplash), usadas como espaço reservado. Nenhuma retrata um passeio, um veículo ou uma unidade da Lituânia Turismo SC.</p>
+      <p style="margin:0">Site atual creditado a Info News Comunicação. <span class="cfm">[CONFIRM como tratar o crédito]</span></p>
+      <p style="margin:0"><strong>Mockup de proposta — não é site publicado, não é trabalho de cliente.</strong></p>
+    </div>
+  </div>
+</footer>
+<div class="stick"><a href="#calendario">Ver saídas</a><button class="wa-btn" data-wa aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 0C5.5 0 .18 5.32.18 11.86c0 2.09.55 4.13 1.59 5.93L.08 24l6.36-1.67a11.8 11.8 0 0 0 5.6 1.43h.01c6.54 0 11.86-5.32 11.86-11.86 0-3.17-1.23-6.15-3.39-8.42A11.82 11.82 0 0 0 12.04 0zm0 21.5h-.01a9.44 9.44 0 0 1-4.8-1.32l-.35-.2-3.57.93.96-3.47-.23-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.9.99 6.68 2.77a9.38 9.38 0 0 1 2.76 6.68c0 5.2-4.24 9.45-9.45 9.45zm5.43-7.12c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.07 2.86 1.22 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35z"/></svg></button></div><button class="wa" data-wa aria-label="Falar no WhatsApp" title="Falar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 0C5.5 0 .18 5.32.18 11.86c0 2.09.55 4.13 1.59 5.93L.08 24l6.36-1.67a11.8 11.8 0 0 0 5.6 1.43h.01c6.54 0 11.86-5.32 11.86-11.86 0-3.17-1.23-6.15-3.39-8.42A11.82 11.82 0 0 0 12.04 0zm0 21.5h-.01a9.44 9.44 0 0 1-4.8-1.32l-.35-.2-3.57.93.96-3.47-.23-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.9.99 6.68 2.77a9.38 9.38 0 0 1 2.76 6.68c0 5.2-4.24 9.45-9.45 9.45zm5.43-7.12c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.07 2.86 1.22 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35z"/></svg></button>
+<div class="ck" role="dialog" aria-live="polite" aria-label="Cookies e dados pessoais">
+  <div class="ck__in">
+    <h4>Cookies e dados pessoais</h4>
+    <p style="margin:0">O site atual dispara o Google Tag Manager sem nenhum pedido de consentimento e sem política de privacidade. Aqui não: analytics e conteúdo incorporado ficam <strong>desligados</strong> até você ligar, e recusar é tão fácil quanto aceitar. <a href="privacidade.html">Política de Privacidade</a>.</p>
+    <div class="ck__opts">
+      <label><input type="checkbox" checked disabled> Necessários (sempre ativos)</label>
+      <label><input type="checkbox" id="ck-a"> Analytics</label>
+      <label><input type="checkbox" id="ck-m"> Marketing e vídeos incorporados</label>
+    </div>
+    <div class="ck__btns">
+      <button class="btn btn--cool" data-ck="reject">Recusar tudo</button>
+      <button class="btn btn--cool" data-ck="save">Salvar escolha</button>
+      <button class="btn" data-ck="accept">Aceitar tudo</button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
