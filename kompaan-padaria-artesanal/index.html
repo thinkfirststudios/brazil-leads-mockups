@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<!-- Speculative pitch mockup for a prospect who has not commissioned, seen or
+     approved it. Must never be indexed or compete with the real business. -->
+<title>Kompaan Padaria Artesanal — Pães Artesanais em Florianópolis</title>
+<meta name="description" content="Calendário de fornadas, encomendas e atacado da Kompaan Padaria Artesanal em Florianópolis. Veja o que sai do forno hoje e reserve o seu pão antes que acabe.">
+  <link rel="alternate" hreflang="pt-BR" href="index.html">
+  <link rel="alternate" hreflang="en" href="en/index.html">
+  <link rel="alternate" hreflang="x-default" href="index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Kompaan Padaria Artesanal",
+  "url": "https://www.instagram.com/kompaan_/",
+  "sameAs": ["https://www.instagram.com/kompaan_/"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Florian\u00f3polis",
+    "addressRegion": "SC",
+    "addressCountry": "BR",
+    "streetAddress": "[CONFIRM]",
+    "postalCode": "[CONFIRM]"
+  },
+  "servesCuisine": "Padaria Artesanal"
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+<div class="topbar">
+  <div class="topbar__in">
+    <span data-today>Hoje assamos: <span class="cfm">[CONFIRM]</span></span><span>Retirada: <b><span class="cfm">[CONFIRM janela de retirada]</span></b></span><span>Hoje é <span data-date>--/--</span></span>
+    <span class="langs">
+      <a href="index.html" hreflang="pt-BR" lang="pt-BR" aria-current="true">PT</a><i>/</i><a href="en/index.html" hreflang="en" lang="en">EN</a>
+    </span>
+  </div>
+</div>
+<header class="hdr">
+  <div class="hdr__in">
+    <a class="wordmark" href="index.html"><b>Kompaan</b><span>Padaria artesanal</span></a>
+    <button class="burger" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#paes">Pães</a><a href="#calendario">Calendário</a><a href="#encomendas">Encomendas</a><a href="#atacado">Atacado</a><a href="#visite">Visite</a>
+      <a class="btn btn--sm" href="#encomendas">Encomendar</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ═══ HERO ═══ PLACEHOLDER-hero-crumb.jpg -->
+  <section class="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__in">
+      <div>
+        <hr class="rule">
+        <h1>O pão de hoje, e a que horas ele sai do forno.</h1>
+        <p class="lede" style="margin-top:18px">Padaria artesanal em Florianópolis <span class="cfm">[CONFIRM bairro]</span>. Duas perguntas, uma página: o que é assado hoje e o que precisa ser encomendado.</p>
+        <div class="hero__cta">
+          <a class="btn" href="#paes">Ver os pães <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.5"/></svg></a>
+          <a class="btn btn--out" href="#encomendas">Encomendar</a>
+        </div>
+        <p class="hero__note">Foto de banco de imagens. A imagem que esta posição pede é o miolo aberto em corte transversal, na luz rasante — e ela precisa ser da Kompaan, porque o miolo é o argumento. <span class="cfm">[CONFIRM fotografia real]</span></p>
+      </div>
+      <figure class="hero__fig rv">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1400&q=72" alt="Pães rústicos redondos com crosta escura e espigas de trigo sobre superfície escura — foto de banco de imagens, não é produto da Kompaan" fetchpriority="high" width="1400" height="1050">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ═══ BAKE CALENDAR — the module the whole site is built around ═══ -->
+  <section class="sec sec--band" id="calendario">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Calendário de fornadas</p>
+      <h2 class="rv">O que sai do forno esta semana.</h2>
+      <p class="lede rv" style="margin-top:16px">A coluna de hoje fica em destaque e o horário do fuso de São Paulo manda, não o do visitante — quem lê isto de Lisboa às 23h não pode ver o pão de amanhã.</p>
+      <div class="flag rv"><strong>Toda a agenda abaixo é um espaço reservado.</strong> Não sabemos que pães a Kompaan assa, em que dias, a que horas saem do forno, nem se esgotam. Cada nome e cada horário é um <span class="cfm">[CONFIRM]</span>. A agenda inteira vive em um único objeto no topo do <code>script.js</code>, então eles mesmos conseguem editar sem tocar no HTML. <span class="cfm">[CONFIRM a agenda completa: pães, dias, horários e quais são só por encomenda]</span></div>
+
+      <div class="cal rv">
+        <!-- Static fallback: replaced by script.js from the SCHEDULE object.
+             Ships as readable text so the page is not empty without JS. -->
+        <div class="cal__day is-today"><span class="cal__dow">—</span>
+          <ul class="cal__items"><li>Calendário de fornadas: segunda a domingo, com o pão de cada dia e o horário em que sai do forno. <span class="cfm">[CONFIRM]</span></li></ul>
+        </div>
+      </div>
+      <p class="cal__legend rv"><span><span class="state state--ok">Disponível</span></span> <span><span class="state state--pre">Só por encomenda</span></span> <span><span class="state state--out">Esgotado</span></span></p>
+    </div>
+  </section>
+
+  <!-- ═══ PRODUCT GRID ═══ PLACEHOLDER-breads.jpg -->
+  <section class="sec" id="paes">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Nossos pães</p>
+      <h2 class="rv">A linha completa.</h2>
+      <p class="lede rv" style="margin-top:16px">Cada ficha carrega farinhas, peso, método, dias de fornada, alérgenos e preço. Nenhum desses campos foi preenchido por nós.</p>
+      <div class="flag flag--warn rv"><strong>Nenhum pão, farinha, peso, hidratação, tempo de fermentação ou preço foi inventado.</strong> Padaria de fermentação longa vive de credibilidade de processo, o que torna detalhe técnico fabricado mais perigoso aqui do que em qualquer outro lugar. As fichas ficam prontas e vazias.</div>
+
+      <div class="chips" role="group" aria-label="Nossos pães">
+        <button type="button" data-filter="all" aria-pressed="true">Todos</button>
+        <button type="button" data-filter="paes" aria-pressed="false">Pães</button>
+        <button type="button" data-filter="laminados" aria-pressed="false">Laminados</button>
+        <button type="button" data-filter="doces" aria-pressed="false">Doces</button>
+      </div>
+      <p class="count" role="status" aria-live="polite"></p>
+
+      <ul class="prods">
+      <li class="prod rv" data-tags="paes">
+        <figure><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=72" alt="Pães rústicos redondos com crosta escura e espigas de trigo sobre superfície escura — foto de banco de imagens, não é produto da Kompaan" loading="lazy" decoding="async" width="900" height="675"></figure>
+        <div class="prod__b">
+          <h3><span class="cfm">Pão [CONFIRM nome]</span></h3>
+          <dl>
+            <dt>Farinhas / grãos</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+            <dt>Peso</dt><dd><span class="cfm">[CONFIRM] g</span></dd>
+            <dt>Método</dt><dd><span class="cfm">[CONFIRM — não afirmamos fermentação natural sem confirmação]</span></dd>
+            <dt>Dias em que é assado</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+          </dl>
+          <ul class="allerg" aria-label="Alérgenos">
+            <li class="glut">Contém glúten</li>
+            <li><span class="cfm">[CONFIRM leite]</span></li>
+            <li><span class="cfm">[CONFIRM ovo]</span></li>
+            <li><span class="cfm">[CONFIRM gergelim]</span></li>
+            <li><span class="cfm">[CONFIRM castanhas / soja / amendoim]</span></li>
+          </ul>
+          <p class="price">R$ <span class="cfm">[CONFIRM]</span></p>
+          <p style="margin:0"><a class="btn btn--sm btn--out" href="#encomendas">Encomendar</a></p>
+        </div>
+      </li>
+      <li class="prod rv" data-tags="paes">
+        <figure><img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=900&q=72" alt="Pães e baguetes recém-assados empilhados em luz quente — foto de banco de imagens, não é produto da Kompaan" loading="lazy" decoding="async" width="900" height="675"></figure>
+        <div class="prod__b">
+          <h3><span class="cfm">Pão [CONFIRM nome]</span></h3>
+          <dl>
+            <dt>Farinhas / grãos</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+            <dt>Peso</dt><dd><span class="cfm">[CONFIRM] g</span></dd>
+            <dt>Método</dt><dd><span class="cfm">[CONFIRM — não afirmamos fermentação natural sem confirmação]</span></dd>
+            <dt>Dias em que é assado</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+          </dl>
+          <ul class="allerg" aria-label="Alérgenos">
+            <li class="glut">Contém glúten</li>
+            <li><span class="cfm">[CONFIRM leite]</span></li>
+            <li><span class="cfm">[CONFIRM ovo]</span></li>
+            <li><span class="cfm">[CONFIRM gergelim]</span></li>
+            <li><span class="cfm">[CONFIRM castanhas / soja / amendoim]</span></li>
+          </ul>
+          <p class="price">R$ <span class="cfm">[CONFIRM]</span></p>
+          <p style="margin:0"><a class="btn btn--sm btn--out" href="#encomendas">Encomendar</a></p>
+        </div>
+      </li>
+      <li class="prod rv" data-tags="paes">
+        <figure><img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=900&q=72" alt="Prateleira de padaria abastecida com pães e baguetes — foto de banco de imagens, não é a loja da Kompaan" loading="lazy" decoding="async" width="900" height="675"></figure>
+        <div class="prod__b">
+          <h3><span class="cfm">Pão [CONFIRM nome]</span></h3>
+          <dl>
+            <dt>Farinhas / grãos</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+            <dt>Peso</dt><dd><span class="cfm">[CONFIRM] g</span></dd>
+            <dt>Método</dt><dd><span class="cfm">[CONFIRM — não afirmamos fermentação natural sem confirmação]</span></dd>
+            <dt>Dias em que é assado</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+          </dl>
+          <ul class="allerg" aria-label="Alérgenos">
+            <li class="glut">Contém glúten</li>
+            <li><span class="cfm">[CONFIRM leite]</span></li>
+            <li><span class="cfm">[CONFIRM ovo]</span></li>
+            <li><span class="cfm">[CONFIRM gergelim]</span></li>
+            <li><span class="cfm">[CONFIRM castanhas / soja / amendoim]</span></li>
+          </ul>
+          <p class="price">R$ <span class="cfm">[CONFIRM]</span></p>
+          <p style="margin:0"><a class="btn btn--sm btn--out" href="#encomendas">Encomendar</a></p>
+        </div>
+      </li>
+      <li class="prod rv" data-tags="laminados">
+        <figure><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=72" alt="Massa laminada assada com farinha caindo sobre fundo escuro — foto de banco de imagens, não é produto da Kompaan" loading="lazy" decoding="async" width="900" height="675"></figure>
+        <div class="prod__b">
+          <h3><span class="cfm">Laminado [CONFIRM item]</span></h3>
+          <dl>
+            <dt>Farinhas / grãos</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+            <dt>Peso</dt><dd><span class="cfm">[CONFIRM] g</span></dd>
+            <dt>Método</dt><dd><span class="cfm">[CONFIRM — não afirmamos fermentação natural sem confirmação]</span></dd>
+            <dt>Dias em que é assado</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+          </dl>
+          <ul class="allerg" aria-label="Alérgenos">
+            <li class="glut">Contém glúten</li>
+            <li><span class="cfm">[CONFIRM leite]</span></li>
+            <li><span class="cfm">[CONFIRM ovo]</span></li>
+            <li><span class="cfm">[CONFIRM gergelim]</span></li>
+            <li><span class="cfm">[CONFIRM castanhas / soja / amendoim]</span></li>
+          </ul>
+          <p class="price">R$ <span class="cfm">[CONFIRM]</span></p>
+          <p style="margin:0"><a class="btn btn--sm btn--out" href="#encomendas">Encomendar</a></p>
+        </div>
+      </li>
+      <li class="prod rv" data-tags="laminados">
+        <figure><img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=900&q=72" alt="Pães doces enrolados vistos de cima, polvilhados de açúcar — foto de banco de imagens, não é produto da Kompaan" loading="lazy" decoding="async" width="900" height="675"></figure>
+        <div class="prod__b">
+          <h3><span class="cfm">Laminado [CONFIRM item]</span></h3>
+          <dl>
+            <dt>Farinhas / grãos</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+            <dt>Peso</dt><dd><span class="cfm">[CONFIRM] g</span></dd>
+            <dt>Método</dt><dd><span class="cfm">[CONFIRM — não afirmamos fermentação natural sem confirmação]</span></dd>
+            <dt>Dias em que é assado</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+          </dl>
+          <ul class="allerg" aria-label="Alérgenos">
+            <li class="glut">Contém glúten</li>
+            <li><span class="cfm">[CONFIRM leite]</span></li>
+            <li><span class="cfm">[CONFIRM ovo]</span></li>
+            <li><span class="cfm">[CONFIRM gergelim]</span></li>
+            <li><span class="cfm">[CONFIRM castanhas / soja / amendoim]</span></li>
+          </ul>
+          <p class="price">R$ <span class="cfm">[CONFIRM]</span></p>
+          <p style="margin:0"><a class="btn btn--sm btn--out" href="#encomendas">Encomendar</a></p>
+        </div>
+      </li>
+      <li class="prod rv" data-tags="doces">
+        <figure><img src="https://images.unsplash.com/photo-1568254183919-78a4f43a2877?auto=format&fit=crop&w=900&q=72" alt="Vitrine refrigerada de padaria com assados variados — foto de banco de imagens, não é a vitrine da Kompaan" loading="lazy" decoding="async" width="900" height="675"></figure>
+        <div class="prod__b">
+          <h3><span class="cfm">Doce [CONFIRM item]</span></h3>
+          <dl>
+            <dt>Farinhas / grãos</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+            <dt>Peso</dt><dd><span class="cfm">[CONFIRM] g</span></dd>
+            <dt>Método</dt><dd><span class="cfm">[CONFIRM — não afirmamos fermentação natural sem confirmação]</span></dd>
+            <dt>Dias em que é assado</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+          </dl>
+          <ul class="allerg" aria-label="Alérgenos">
+            <li class="glut">Contém glúten</li>
+            <li><span class="cfm">[CONFIRM leite]</span></li>
+            <li><span class="cfm">[CONFIRM ovo]</span></li>
+            <li><span class="cfm">[CONFIRM gergelim]</span></li>
+            <li><span class="cfm">[CONFIRM castanhas / soja / amendoim]</span></li>
+          </ul>
+          <p class="price">R$ <span class="cfm">[CONFIRM]</span></p>
+          <p style="margin:0"><a class="btn btn--sm btn--out" href="#encomendas">Encomendar</a></p>
+        </div>
+      </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══ PRE-ORDER ═══ PLACEHOLDER-kraft.jpg -->
+  <section class="sec sec--kraft" id="encomendas">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <hr class="rule">
+          <p class="eyebrow" style="color:#4B3B18">Encomendas</p>
+          <h2 class="rv">Seu pão acaba. Isso deveria virar lista de espera, não venda perdida.</h2>
+          <p class="lede rv" style="margin-top:16px;color:#3A3F44">Quando a prateleira esvazia às 11h, a demanda que chega às 15h simplesmente evapora. Uma encomenda transforma esse &ldquo;esgotado&rdquo; no pedido confirmado de amanhã.</p>
+          <p class="cutoff rv"><b>Prazo e horário-limite</b>Pedidos até <span class="cfm">[CONFIRM horário-limite]</span> com <span class="cfm">[CONFIRM antecedência mínima]</span> de antecedência. Retirada: <span class="cfm">[CONFIRM janela]</span>. Sinal / depósito: <span class="cfm">[CONFIRM se existe e quanto]</span>.</p>
+
+          <form class="form rv" id="form-encomenda" novalidate>
+            <div class="f2">
+              <div><label for="pedido-item">Item</label>
+                <select id="pedido-item" name="item">
+                  <option>[CONFIRM item 1]</option><option>[CONFIRM item 2]</option>
+                  <option>[CONFIRM item 3]</option>
+                </select>
+              </div>
+              <div><label for="pedido-qtd">Quantidade</label>
+                <input id="pedido-qtd" name="qtd" type="number" min="1" step="1" value="1"></div>
+            </div>
+            <div class="f2">
+              <div><label for="pedido-data">Data de retirada</label>
+                <input id="pedido-data" name="data" type="date"></div>
+              <div><label for="pedido-nome">Nome</label>
+                <input id="pedido-nome" name="nome" type="text" autocomplete="name"></div>
+            </div>
+            <div><label for="pedido-wa">Seu WhatsApp</label>
+              <input id="pedido-wa" name="wa" type="tel" autocomplete="tel"></div>
+            <div><label for="pedido-obs">Observações</label>
+              <textarea id="pedido-obs" name="obs"></textarea></div>
+            <div class="consent">
+              <input type="checkbox" id="consent-enc">
+              <label for="consent-enc">Autorizo a Kompaan a usar estes dados para responder e organizar a minha encomenda, nos termos da LGPD. Posso revogar quando quiser.</label>
+            </div>
+            <div><button class="btn" type="submit">Montar pedido no WhatsApp <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.5"/></svg></button></div>
+            <p class="formnote">O formulário monta a mensagem e abre o WhatsApp. Ele não envia nada sozinho e não confirma pedido — quem confirma é a padaria, respondendo.</p>
+          </form>
+        </div>
+        <div>
+          <figure class="rv" style="margin:0 0 26px">
+            <img src="https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=900&q=72" alt="Embalagens de papel kraft sobre fundo liso, sem marca visível — foto de banco de imagens" loading="lazy" decoding="async" width="900" height="675" style="border-radius:2px">
+          </figure>
+          <hr class="rule">
+          <p class="eyebrow" style="color:#4B3B18">Avise-me quando assar</p>
+          <h3 class="rv">Para o pão que só sai de vez em quando.</h3>
+          <p class="rv" style="color:#3A3F44">Um recado quando o pão que você pediu sair do forno. Opt-in explícito, descadastro em um clique.</p>
+          <form class="form rv" id="form-avisar" novalidate>
+            <div class="f2">
+              <div><label for="avisar-item">Item</label>
+                <input id="avisar-item" name="item" type="text" placeholder="[CONFIRM]"></div>
+              <div><label for="avisar-wa">Seu WhatsApp</label>
+                <input id="avisar-wa" name="wa" type="tel"></div>
+            </div>
+            <div class="consent">
+              <input type="checkbox" id="consent-avisar">
+              <label for="consent-avisar">Aceito receber aviso de fornada da Kompaan e sei que posso sair da lista a qualquer momento.</label>
+            </div>
+            <div><button class="btn btn--out" type="submit">Entrar na lista</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROCESS ═══ PLACEHOLDER-dough.jpg — no starter jar, deliberately -->
+  <section class="sec sec--slate" id="processo">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <hr class="rule" style="background:#C8B393">
+          <p class="eyebrow">O processo</p>
+          <h2 class="rv">O que dá para dizer, e o que não dá.</h2>
+          <div class="flag rv"><strong>Esta seção está deliberadamente vazia.</strong> Fermentação natural, fermentação longa, idade de fermento, moagem em pedra: nada disso está confirmado, e afirmação de processo errada é a coisa mais cara que uma padaria artesanal pode publicar. Também não há foto de fermento em pote em lugar nenhum deste site — uma foto de levain <em>é</em> uma afirmação de processo. Quando a Kompaan confirmar, os campos abaixo preenchem sozinhos.</div>
+          <ul class="specs rv">
+        <li><b>Método de fermentação</b><span class="cfm">[CONFIRM]</span></li>
+        <li><b>Tempo de fermentação</b><span class="cfm">[CONFIRM]</span></li>
+        <li><b>Farinhas utilizadas</b><span class="cfm">[CONFIRM]</span></li>
+        <li><b>Moagem própria ou local?</b><span class="cfm">[CONFIRM]</span></li>
+        <li><b>Forno</b><span class="cfm">[CONFIRM]</span></li>
+          </ul>
+        </div>
+        <figure class="rv">
+          <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&w=1000&q=72" alt="Mãos adultas trabalhando massa sobre bancada enfarinhada, poeira de farinha na luz — foto de banco de imagens" loading="lazy" decoding="async" width="1000" height="750">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ GRAIN ═══ PLACEHOLDER-grain.jpg -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="split">
+        <figure class="rv">
+          <img src="https://images.unsplash.com/photo-1523294587484-bae6cc870010?auto=format&fit=crop&w=1000&q=72" alt="Espigas de trigo sobre bancada de madeira — foto de banco de imagens" loading="lazy" decoding="async" width="1000" height="750">
+        </figure>
+        <div>
+          <hr class="rule">
+          <p class="eyebrow">Grãos e farinhas</p>
+          <h2 class="rv">De onde vem a farinha.</h2>
+          <p class="lede rv" style="margin-top:14px">Se houver moinho local ou moagem em pedra, isso é um diferencial de verdade — e por isso mesmo não pode ser presumido.</p>
+          <ul class="specs rv">
+        <li><b>Moinho / fornecedor</b><span class="cfm">[CONFIRM]</span></li>
+        <li><b>Trigo</b><span class="cfm">[CONFIRM]</span></li>
+        <li><b>Centeio</b><span class="cfm">[CONFIRM]</span></li>
+        <li><b>Outros grãos</b><span class="cfm">[CONFIRM]</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WHY ═══ PLACEHOLDER-why.jpg -->
+  <section class="sec sec--band">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Por que Kompaan</p>
+      <h2 class="rv">Três motivos — quando eles nos disserem quais são.</h2>
+      <ul class="trio" style="margin-top:30px">
+      <li class="rv"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=72" alt="Pães rústicos redondos com crosta escura e espigas de trigo sobre superfície escura — foto de banco de imagens, não é produto da Kompaan" loading="lazy" decoding="async" width="800" height="533"><div><h3><span class="cfm">[CONFIRM diferencial 1]</span></h3><p style="margin:0">Sem &ldquo;assado na hora&rdquo; e sem &ldquo;fermentação natural&rdquo; até haver confirmação por escrito.</p></div></li>
+        <li class="rv"><img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=72" alt="Prateleira de padaria abastecida com pães e baguetes — foto de banco de imagens, não é a loja da Kompaan" loading="lazy" decoding="async" width="800" height="533"><div><h3><span class="cfm">[CONFIRM diferencial 2]</span></h3><p style="margin:0">Este cartão espera um fato verificável, não um adjetivo.</p></div></li>
+        <li class="rv"><img src="https://images.unsplash.com/photo-1587241321921-91a834d6d191?auto=format&fit=crop&w=800&q=72" alt="Interior de padaria com balcão e prateleiras, uma pessoa adulta ao fundo de costas — foto de banco de imagens, não é a loja da Kompaan" loading="lazy" decoding="async" width="800" height="533"><div><h3><span class="cfm">[CONFIRM diferencial 3]</span></h3><p style="margin:0">Três motivos reais valem mais do que dez genéricos.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══ WHOLESALE ═══ -->
+  <section class="sec" id="atacado">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Atacado e fornecimento</p>
+      <h2 class="rv">A porta da frente para cafés e restaurantes.</h2>
+      <p class="lede rv" style="margin-top:16px">Um restaurante não sustenta uma relação de fornecimento por DM de Instagram. Pedido semanal fixo, dias de entrega, volume mínimo, nota fiscal e prazo — tudo isso precisa de uma página.</p>
+      <div class="flag rv"><strong>Se a Kompaan atende atacado ainda não está confirmado.</strong> <span class="cfm">[CONFIRM se fornecem, mínimos, dias de entrega e faturamento]</span>. O formulário fica pronto para o dia em que a resposta for sim.</div>
+      <form class="form rv" id="form-atacado" novalidate>
+        <div class="f2">
+          <div><label for="ata-emp">Estabelecimento</label><input id="ata-emp" type="text"></div>
+          <div><label for="ata-cnpj">CNPJ</label><input id="ata-cnpj" type="text"></div>
+        </div>
+        <div class="f2">
+          <div><label for="ata-resp">Responsável</label><input id="ata-resp" type="text"></div>
+          <div><label for="ata-vol">Volume semanal estimado</label><input id="ata-vol" type="text" placeholder="[CONFIRM]"></div>
+        </div>
+        <div><button class="btn btn--out" type="submit">Enviar consulta de atacado</button></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══ COFFEE / COUNTER ═══ PLACEHOLDER-coffee.jpg -->
+  <section class="sec sec--kraft">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <hr class="rule">
+          <p class="eyebrow" style="color:#4B3B18">Café e balcão</p>
+          <h3 class="rv">Pequeno, e secundário de propósito.</h3>
+          <p class="rv" style="color:#3A3F44;max-width:52ch">Se existe café e lugar para sentar, entra aqui — em segundo plano. Esta marca é uma padaria primeiro, e o site não deve fingir o contrário. <span class="cfm">[CONFIRM se há café, se há lugares e quantos]</span></p>
+        </div>
+        <figure class="rv">
+          <img src="https://images.unsplash.com/photo-1521302080334-4bebac2763a6?auto=format&fit=crop&w=900&q=72" alt="Xícara de café preto sobre superfície clara — foto de banco de imagens" loading="lazy" decoding="async" width="900" height="675" style="border-radius:2px">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ STORAGE GUIDE TEASER ═══ -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="split">
+        <figure class="rv">
+          <img src="https://images.unsplash.com/photo-1540914124281-342587941389?auto=format&fit=crop&w=900&q=72" alt="Fatias de pão vistas de cima sobre superfície clara — foto de banco de imagens" loading="lazy" decoding="async" width="900" height="675">
+        </figure>
+        <div>
+          <hr class="rule">
+          <p class="eyebrow">Como conservar o pão</p>
+          <h2 class="rv">Pão de verdade não se guarda como pão de saco.</h2>
+          <p class="lede rv" style="margin-top:14px">Guardar, congelar e reaquecer. Três minutos de leitura que evitam a reclamação mais comum de padaria artesanal — &ldquo;endureceu no dia seguinte&rdquo;.</p>
+          <p class="rv"><a class="btn btn--out" href="conservar-o-pao.html">Ler o guia completo <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.5"/></svg></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ GALLERY + VISIT ═══ PLACEHOLDER-visit.jpg -->
+  <section class="sec sec--band" id="visite">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Galeria e visita</p>
+      <h2 class="rv">Onde encontrar.</h2>
+      <div class="gal rv" style="margin-top:28px">
+        <figure><img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=900&q=72" alt="Prateleira de padaria abastecida com pães e baguetes — foto de banco de imagens, não é a loja da Kompaan" loading="lazy" decoding="async" width="900" height="600">
+          <figcaption>Prateleira de manhã — imagem de banco de imagens</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1587241321921-91a834d6d191?auto=format&fit=crop&w=900&q=72" alt="Interior de padaria com balcão e prateleiras, uma pessoa adulta ao fundo de costas — foto de banco de imagens, não é a loja da Kompaan" loading="lazy" decoding="async" width="900" height="600">
+          <figcaption>Balcão e salão — imagem de banco de imagens</figcaption></figure>
+        <div class="empty-shelf"><span class="cfm">A segunda foto deste par é a prateleira quase vazia às 16h. É a imagem mais persuasiva que uma padaria que esgota pode publicar, e ela só existe se for real. [CONFIRM fotografia]</span></div>
+      </div>
+      <ul class="specs rv" style="margin-top:34px">
+        <li>Endereço: <span class="cfm">[CONFIRM endereço completo e CEP]</span></li>
+        <li>Horários: <span class="cfm">[CONFIRM]</span> · Dias de fornada: <span class="cfm">[CONFIRM]</span></li>
+        <li>Estacionamento: <span class="cfm">[CONFIRM]</span></li>
+      </ul>
+      <p class="formnote rv" style="margin-top:14px">O mapa não carrega até você aceitar cookies de conteúdo incorporado — um iframe do Google Maps é uma transferência de dados a terceiros.</p>
+
+      <hr class="rule" style="margin-top:56px">
+      <p class="eyebrow">Avaliações</p>
+      <div class="revs rv">Nenhuma avaliação foi escrita, inventada ou &ldquo;representada&rdquo; aqui. Este bloco fica reservado para avaliações reais do Google Business Profile. <span class="cfm">[CONFIRM — puxar avaliações reais do Google]</span></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <a class="wordmark" href="index.html" style="color:#F6F3EC"><b>Kompaan</b><span style="color:#C8B393">Padaria artesanal</span></a>
+        <p style="margin-top:18px;max-width:32ch">Padaria artesanal em Florianópolis <span class="cfm">[CONFIRM bairro]</span>.</p>
+        <p><a href="https://www.instagram.com/kompaan_/" target="_blank" rel="noopener">@kompaan_</a></p>
+      </div>
+      <div>
+        <h4>Horários e fornadas</h4>
+        <ul>
+          <li>Horário de funcionamento: <span class="cfm">[CONFIRM]</span></li>
+          <li>Dias de fornada: <span class="cfm">[CONFIRM — não é a mesma coisa que o horário]</span></li>
+          <li>Endereço: <span class="cfm">[CONFIRM endereço e CEP]</span></li>
+          <li>Estacionamento: <span class="cfm">[CONFIRM]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li>WhatsApp: <a href="#" data-wa data-unconfirmed>falar</a> <span class="cfm">[CONFIRM número]</span></li>
+          <li>E-mail: <span class="cfm">[CONFIRM]</span></li>
+          <li>iFood: <span class="cfm">[CONFIRM — pão viaja mal, um &ldquo;não&rdquo; deliberado é uma resposta válida]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html#calendario">Calendário de fornadas</a></li>
+          <li><a href="index.html#paes">Nossos pães</a></li>
+          <li><a href="index.html#encomendas">Encomendas</a></li>
+          <li><a href="index.html#atacado">Atacado</a></li>
+          <li><a href="conservar-o-pao.html">Como conservar o pão</a></li>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
+          <li><a href="#" data-ck-open>Preferências de cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="gluten-note" style="margin-top:34px"><strong>Glúten e alérgenos.</strong>
+      Esta padaria trabalha com trigo e centeio no mesmo ambiente. Todos os pães e assados
+      <strong>CONTÊM GLÚTEN</strong> salvo indicação em contrário no próprio produto, e não é possível
+      garantir ausência de contaminação cruzada sem uma área de produção separada.
+      <span class="cfm">[CONFIRM política de contaminação cruzada e dados de alérgenos por produto —
+      ANVISA RDC 26/2015 e Lei 10.674/2003]</span>. Nenhum produto deste site é apresentado como
+      &ldquo;sem glúten&rdquo;.</p>
+    <div class="ftr__legal">
+      <p style="margin:0">CNPJ e razão social <span class="cfm">[CONFIRM]</span> · Alvará sanitário <span class="cfm">[CONFIRM]</span></p>
+      <p style="margin:0">Todas as fotos desta página são de banco de imagens (Unsplash) usadas como espaço
+        reservado. Nenhuma delas é produto, loja ou equipe da Kompaan.</p>
+      <p style="margin:0"><strong>Mockup de proposta — não é site publicado, não é trabalho de cliente.</strong></p>
+    </div>
+  </div>
+</footer>
+<div class="stick"><a href="#encomendas">Encomendar</a><button class="wa-btn" data-wa data-unconfirmed aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 0C5.5 0 .18 5.32.18 11.86c0 2.09.55 4.13 1.59 5.93L.08 24l6.36-1.67a11.8 11.8 0 0 0 5.6 1.43h.01c6.54 0 11.86-5.32 11.86-11.86 0-3.17-1.23-6.15-3.39-8.42A11.82 11.82 0 0 0 12.04 0zm0 21.5h-.01a9.44 9.44 0 0 1-4.8-1.32l-.35-.2-3.57.93.96-3.47-.23-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.9.99 6.68 2.77a9.38 9.38 0 0 1 2.76 6.68c0 5.2-4.24 9.45-9.45 9.45zm5.43-7.12c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.07 2.86 1.22 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35z"/></svg></button></div><button class="wa" data-wa data-unconfirmed aria-label="Falar no WhatsApp" title="Falar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 0C5.5 0 .18 5.32.18 11.86c0 2.09.55 4.13 1.59 5.93L.08 24l6.36-1.67a11.8 11.8 0 0 0 5.6 1.43h.01c6.54 0 11.86-5.32 11.86-11.86 0-3.17-1.23-6.15-3.39-8.42A11.82 11.82 0 0 0 12.04 0zm0 21.5h-.01a9.44 9.44 0 0 1-4.8-1.32l-.35-.2-3.57.93.96-3.47-.23-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.9.99 6.68 2.77a9.38 9.38 0 0 1 2.76 6.68c0 5.2-4.24 9.45-9.45 9.45zm5.43-7.12c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.07 2.86 1.22 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35z"/></svg></button>
+<div class="ck" role="dialog" aria-live="polite" aria-label="Preferências de cookies">
+  <div class="ck__in">
+    <h4>Cookies e dados pessoais</h4>
+    <p style="margin:0">Só usamos os cookies necessários para o site funcionar. Analytics, mapa incorporado e
+      widgets sociais ficam <strong>desligados</strong> até você ligar, e recusar é tão simples quanto aceitar.
+      <a href="privacidade.html">Política de Privacidade</a>.</p>
+    <div class="ck__opts">
+      <label><input type="checkbox" checked disabled> Necessários (sempre ativos)</label>
+      <label><input type="checkbox" id="ck-a"> Analytics</label>
+      <label><input type="checkbox" id="ck-m"> Mapa e conteúdo incorporado</label>
+    </div>
+    <div class="ck__btns">
+      <button class="btn btn--pale" data-ck="reject">Recusar tudo</button>
+      <button class="btn btn--pale" data-ck="save">Salvar escolha</button>
+      <button class="btn" data-ck="accept">Aceitar tudo</button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

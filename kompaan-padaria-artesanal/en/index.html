@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<!-- Speculative pitch mockup for a prospect who has not commissioned, seen or
+     approved it. Must never be indexed or compete with the real business. -->
+<title>Kompaan Artisan Bakery — Bread in Florianópolis, Brazil</title>
+<meta name="description" content="Bake calendar, pre-orders and wholesale for Kompaan artisan bakery in Florianópolis. See what comes out of the oven today and reserve your loaf before it goes.">
+  <link rel="alternate" hreflang="pt-BR" href="../index.html">
+  <link rel="alternate" hreflang="en" href="index.html">
+  <link rel="alternate" hreflang="x-default" href="../index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Kompaan Padaria Artesanal",
+  "url": "https://www.instagram.com/kompaan_/",
+  "sameAs": ["https://www.instagram.com/kompaan_/"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Florian\u00f3polis",
+    "addressRegion": "SC",
+    "addressCountry": "BR",
+    "streetAddress": "[CONFIRM]",
+    "postalCode": "[CONFIRM]"
+  },
+  "servesCuisine": "Padaria Artesanal"
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="topbar__in">
+    <span data-today>Baking today: <span class="cfm">[CONFIRM]</span></span><span>Pickup: <b><span class="cfm">[CONFIRM pickup window]</span></b></span><span>Today is <span data-date>--/--</span></span>
+    <span class="langs">
+      <a href="../index.html" hreflang="pt-BR" lang="pt-BR">PT</a><i>/</i><a href="index.html" hreflang="en" lang="en" aria-current="true">EN</a>
+    </span>
+  </div>
+</div>
+<header class="hdr">
+  <div class="hdr__in">
+    <a class="wordmark" href="index.html"><b>Kompaan</b><span>Artisan bakery</span></a>
+    <button class="burger" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#paes">Breads</a><a href="#calendario">Calendar</a><a href="#encomendas">Pre-order</a><a href="#atacado">Wholesale</a><a href="#visite">Visit</a>
+      <a class="btn btn--sm" href="#encomendas">Pre-order</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ═══ HERO ═══ PLACEHOLDER-hero-crumb.jpg -->
+  <section class="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__in">
+      <div>
+        <hr class="rule">
+        <h1>Today’s bread, and what time it leaves the oven.</h1>
+        <p class="lede" style="margin-top:18px">Artisan bakery in Florianópolis <span class="cfm">[CONFIRM neighbourhood]</span>. Two questions, one page: what is baked today, and what has to be ordered ahead.</p>
+        <div class="hero__cta">
+          <a class="btn" href="#paes">See the breads <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.5"/></svg></a>
+          <a class="btn btn--out" href="#encomendas">Pre-order</a>
+        </div>
+        <p class="hero__note">Stock photograph. What this position actually needs is the crumb, cut open in cross-section under raking light — and it has to be Kompaan’s, because the crumb is the argument. <span class="cfm">[CONFIRM real photography]</span></p>
+      </div>
+      <figure class="hero__fig rv">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1400&q=72" alt="Rustic round loaves with a dark crust and wheat ears on a dark surface — stock photograph, not a Kompaan product" fetchpriority="high" width="1400" height="1050">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ═══ BAKE CALENDAR — the module the whole site is built around ═══ -->
+  <section class="sec sec--band" id="calendario">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Bake calendar</p>
+      <h2 class="rv">What comes out of the oven this week.</h2>
+      <p class="lede rv" style="margin-top:16px">Today’s column is highlighted, and São Paulo time governs it rather than the visitor’s — someone reading this from Lisbon at 23:00 must not be shown tomorrow’s bread.</p>
+      <div class="flag rv"><strong>Every entry below is a placeholder.</strong> We do not know which breads Kompaan bakes, on which days, what time they come out, or whether they sell out. Every name and time is a <span class="cfm">[CONFIRM]</span>. The whole schedule lives in one object at the top of <code>script.js</code>, so they can edit it themselves without touching the HTML. <span class="cfm">[CONFIRM the full schedule: breads, days, oven-out times, and which items are pre-order only]</span></div>
+
+      <div class="cal rv">
+        <!-- Static fallback: replaced by script.js from the SCHEDULE object.
+             Ships as readable text so the page is not empty without JS. -->
+        <div class="cal__day is-today"><span class="cal__dow">—</span>
+          <ul class="cal__items"><li>Bake calendar: Monday to Sunday, with each day’s bread and the time it leaves the oven. <span class="cfm">[CONFIRM]</span></li></ul>
+        </div>
+      </div>
+      <p class="cal__legend rv"><span><span class="state state--ok">On the shelf</span></span> <span><span class="state state--pre">Pre-order only</span></span> <span><span class="state state--out">Sold out</span></span></p>
+    </div>
+  </section>
+
+  <!-- ═══ PRODUCT GRID ═══ PLACEHOLDER-breads.jpg -->
+  <section class="sec" id="paes">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Our breads</p>
+      <h2 class="rv">The full line.</h2>
+      <p class="lede rv" style="margin-top:16px">Each card carries flours, weight, method, bake days, allergens and price. Not one of those fields was filled in by us.</p>
+      <div class="flag flag--warn rv"><strong>No loaf, flour, weight, hydration, fermentation time or price has been invented.</strong> A long-fermentation bakery lives on process credibility, which makes fabricated technical detail more dangerous here than anywhere else. The cards ship built and empty.</div>
+
+      <div class="chips" role="group" aria-label="Our breads">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="paes" aria-pressed="false">Breads</button>
+        <button type="button" data-filter="laminados" aria-pressed="false">Viennoiserie</button>
+        <button type="button" data-filter="doces" aria-pressed="false">Sweets</button>
+      </div>
+      <p class="count" role="status" aria-live="polite"></p>
+
+      <ul class="prods">
+      <li class="prod rv" data-tags="paes">
+        <figure><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=72" alt="Rustic round loaves with a dark crust and wheat ears on a dark surface — stock photograph, not a Kompaan product" loading="lazy" decoding="async" width="900" height="675"></figure>
+        <div class="prod__b">
+          <h3><span class="cfm">Bread [CONFIRM name]</span></h3>
+          <dl>
+            <dt>Flours / grains</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+            <dt>Weight</dt><dd><span class="cfm">[CONFIRM] g</span></dd>
+            <dt>Method</dt><dd><span class="cfm">[CONFIRM — no natural-fermentation claim without confirmation]</span></dd>
+            <dt>Baked on</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+          </dl>
+          <ul class="allerg" aria-label="Allergens">
+            <li class="glut">Contains gluten</li>
+            <li><span class="cfm">[CONFIRM milk]</span></li>
+            <li><span class="cfm">[CONFIRM egg]</span></li>
+            <li><span class="cfm">[CONFIRM sesame]</span></li>
+            <li><span class="cfm">[CONFIRM nuts / soy / peanut]</span></li>
+          </ul>
+          <p class="price">R$ <span class="cfm">[CONFIRM]</span></p>
+          <p style="margin:0"><a class="btn btn--sm btn--out" href="#encomendas">Pre-order</a></p>
+        </div>
+      </li>
+      <li class="prod rv" data-tags="paes">
+        <figure><img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=900&q=72" alt="Freshly baked loaves and baguettes stacked in warm light — stock photograph, not a Kompaan product" loading="lazy" decoding="async" width="900" height="675"></figure>
+        <div class="prod__b">
+          <h3><span class="cfm">Bread [CONFIRM name]</span></h3>
+          <dl>
+            <dt>Flours / grains</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+            <dt>Weight</dt><dd><span class="cfm">[CONFIRM] g</span></dd>
+            <dt>Method</dt><dd><span class="cfm">[CONFIRM — no natural-fermentation claim without confirmation]</span></dd>
+            <dt>Baked on</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+          </dl>
+          <ul class="allerg" aria-label="Allergens">
+            <li class="glut">Contains gluten</li>
+            <li><span class="cfm">[CONFIRM milk]</span></li>
+            <li><span class="cfm">[CONFIRM egg]</span></li>
+            <li><span class="cfm">[CONFIRM sesame]</span></li>
+            <li><span class="cfm">[CONFIRM nuts / soy / peanut]</span></li>
+          </ul>
+          <p class="price">R$ <span class="cfm">[CONFIRM]</span></p>
+          <p style="margin:0"><a class="btn btn--sm btn--out" href="#encomendas">Pre-order</a></p>
+        </div>
+      </li>
+      <li class="prod rv" data-tags="paes">
+        <figure><img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=900&q=72" alt="Bakery shelving stocked with loaves and baguettes — stock photograph, not Kompaan’s shop" loading="lazy" decoding="async" width="900" height="675"></figure>
+        <div class="prod__b">
+          <h3><span class="cfm">Bread [CONFIRM name]</span></h3>
+          <dl>
+            <dt>Flours / grains</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+            <dt>Weight</dt><dd><span class="cfm">[CONFIRM] g</span></dd>
+            <dt>Method</dt><dd><span class="cfm">[CONFIRM — no natural-fermentation claim without confirmation]</span></dd>
+            <dt>Baked on</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+          </dl>
+          <ul class="allerg" aria-label="Allergens">
+            <li class="glut">Contains gluten</li>
+            <li><span class="cfm">[CONFIRM milk]</span></li>
+            <li><span class="cfm">[CONFIRM egg]</span></li>
+            <li><span class="cfm">[CONFIRM sesame]</span></li>
+            <li><span class="cfm">[CONFIRM nuts / soy / peanut]</span></li>
+          </ul>
+          <p class="price">R$ <span class="cfm">[CONFIRM]</span></p>
+          <p style="margin:0"><a class="btn btn--sm btn--out" href="#encomendas">Pre-order</a></p>
+        </div>
+      </li>
+      <li class="prod rv" data-tags="laminados">
+        <figure><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=72" alt="Baked laminated pastry with falling flour against a dark ground — stock photograph, not a Kompaan product" loading="lazy" decoding="async" width="900" height="675"></figure>
+        <div class="prod__b">
+          <h3><span class="cfm">Viennoiserie [CONFIRM item]</span></h3>
+          <dl>
+            <dt>Flours / grains</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+            <dt>Weight</dt><dd><span class="cfm">[CONFIRM] g</span></dd>
+            <dt>Method</dt><dd><span class="cfm">[CONFIRM — no natural-fermentation claim without confirmation]</span></dd>
+            <dt>Baked on</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+          </dl>
+          <ul class="allerg" aria-label="Allergens">
+            <li class="glut">Contains gluten</li>
+            <li><span class="cfm">[CONFIRM milk]</span></li>
+            <li><span class="cfm">[CONFIRM egg]</span></li>
+            <li><span class="cfm">[CONFIRM sesame]</span></li>
+            <li><span class="cfm">[CONFIRM nuts / soy / peanut]</span></li>
+          </ul>
+          <p class="price">R$ <span class="cfm">[CONFIRM]</span></p>
+          <p style="margin:0"><a class="btn btn--sm btn--out" href="#encomendas">Pre-order</a></p>
+        </div>
+      </li>
+      <li class="prod rv" data-tags="laminados">
+        <figure><img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=900&q=72" alt="Sweet rolled buns seen from above, dusted with sugar — stock photograph, not a Kompaan product" loading="lazy" decoding="async" width="900" height="675"></figure>
+        <div class="prod__b">
+          <h3><span class="cfm">Viennoiserie [CONFIRM item]</span></h3>
+          <dl>
+            <dt>Flours / grains</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+            <dt>Weight</dt><dd><span class="cfm">[CONFIRM] g</span></dd>
+            <dt>Method</dt><dd><span class="cfm">[CONFIRM — no natural-fermentation claim without confirmation]</span></dd>
+            <dt>Baked on</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+          </dl>
+          <ul class="allerg" aria-label="Allergens">
+            <li class="glut">Contains gluten</li>
+            <li><span class="cfm">[CONFIRM milk]</span></li>
+            <li><span class="cfm">[CONFIRM egg]</span></li>
+            <li><span class="cfm">[CONFIRM sesame]</span></li>
+            <li><span class="cfm">[CONFIRM nuts / soy / peanut]</span></li>
+          </ul>
+          <p class="price">R$ <span class="cfm">[CONFIRM]</span></p>
+          <p style="margin:0"><a class="btn btn--sm btn--out" href="#encomendas">Pre-order</a></p>
+        </div>
+      </li>
+      <li class="prod rv" data-tags="doces">
+        <figure><img src="https://images.unsplash.com/photo-1568254183919-78a4f43a2877?auto=format&fit=crop&w=900&q=72" alt="Bakery display case holding assorted baked goods — stock photograph, not Kompaan’s counter" loading="lazy" decoding="async" width="900" height="675"></figure>
+        <div class="prod__b">
+          <h3><span class="cfm">Sweet [CONFIRM item]</span></h3>
+          <dl>
+            <dt>Flours / grains</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+            <dt>Weight</dt><dd><span class="cfm">[CONFIRM] g</span></dd>
+            <dt>Method</dt><dd><span class="cfm">[CONFIRM — no natural-fermentation claim without confirmation]</span></dd>
+            <dt>Baked on</dt><dd><span class="cfm">[CONFIRM]</span></dd>
+          </dl>
+          <ul class="allerg" aria-label="Allergens">
+            <li class="glut">Contains gluten</li>
+            <li><span class="cfm">[CONFIRM milk]</span></li>
+            <li><span class="cfm">[CONFIRM egg]</span></li>
+            <li><span class="cfm">[CONFIRM sesame]</span></li>
+            <li><span class="cfm">[CONFIRM nuts / soy / peanut]</span></li>
+          </ul>
+          <p class="price">R$ <span class="cfm">[CONFIRM]</span></p>
+          <p style="margin:0"><a class="btn btn--sm btn--out" href="#encomendas">Pre-order</a></p>
+        </div>
+      </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══ PRE-ORDER ═══ PLACEHOLDER-kraft.jpg -->
+  <section class="sec sec--kraft" id="encomendas">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <hr class="rule">
+          <p class="eyebrow" style="color:#4B3B18">Pre-orders</p>
+          <h2 class="rv">Your bread sells out. That should be a waiting list, not a lost sale.</h2>
+          <p class="lede rv" style="margin-top:16px;color:#3A3F44">When the shelf empties at 11:00, the demand arriving at 15:00 simply evaporates. A pre-order turns that sold-out state into tomorrow’s confirmed order.</p>
+          <p class="cutoff rv"><b>Lead time and cutoff</b>Orders by <span class="cfm">[CONFIRM cutoff time]</span> with <span class="cfm">[CONFIRM minimum lead time]</span> notice. Pickup: <span class="cfm">[CONFIRM window]</span>. Deposit: <span class="cfm">[CONFIRM whether one is taken, and how much]</span>.</p>
+
+          <form class="form rv" id="form-encomenda" novalidate>
+            <div class="f2">
+              <div><label for="pedido-item">Item</label>
+                <select id="pedido-item" name="item">
+                  <option>[CONFIRM item 1]</option><option>[CONFIRM item 2]</option>
+                  <option>[CONFIRM item 3]</option>
+                </select>
+              </div>
+              <div><label for="pedido-qtd">Quantity</label>
+                <input id="pedido-qtd" name="qtd" type="number" min="1" step="1" value="1"></div>
+            </div>
+            <div class="f2">
+              <div><label for="pedido-data">Pickup date</label>
+                <input id="pedido-data" name="data" type="date"></div>
+              <div><label for="pedido-nome">Name</label>
+                <input id="pedido-nome" name="nome" type="text" autocomplete="name"></div>
+            </div>
+            <div><label for="pedido-wa">Your WhatsApp</label>
+              <input id="pedido-wa" name="wa" type="tel" autocomplete="tel"></div>
+            <div><label for="pedido-obs">Notes</label>
+              <textarea id="pedido-obs" name="obs"></textarea></div>
+            <div class="consent">
+              <input type="checkbox" id="consent-enc">
+              <label for="consent-enc">I authorise Kompaan to use these details to reply to and arrange my order, under the LGPD. I may withdraw at any time.</label>
+            </div>
+            <div><button class="btn" type="submit">Compose the order in WhatsApp <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.5"/></svg></button></div>
+            <p class="formnote">The form composes the message and opens WhatsApp. It sends nothing on its own and confirms nothing — the bakery confirms, by replying.</p>
+          </form>
+        </div>
+        <div>
+          <figure class="rv" style="margin:0 0 26px">
+            <img src="https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=900&q=72" alt="Kraft paper packaging on a plain ground, no branding visible — stock photograph" loading="lazy" decoding="async" width="900" height="675" style="border-radius:2px">
+          </figure>
+          <hr class="rule">
+          <p class="eyebrow" style="color:#4B3B18">Tell me when it’s baked</p>
+          <h3 class="rv">For the loaf that only comes out now and then.</h3>
+          <p class="rv" style="color:#3A3F44">A message when the bread you asked about leaves the oven. Explicit opt-in, one-click unsubscribe.</p>
+          <form class="form rv" id="form-avisar" novalidate>
+            <div class="f2">
+              <div><label for="avisar-item">Item</label>
+                <input id="avisar-item" name="item" type="text" placeholder="[CONFIRM]"></div>
+              <div><label for="avisar-wa">Your WhatsApp</label>
+                <input id="avisar-wa" name="wa" type="tel"></div>
+            </div>
+            <div class="consent">
+              <input type="checkbox" id="consent-avisar">
+              <label for="consent-avisar">I agree to receive bake-day notifications from Kompaan and understand I can leave the list at any time.</label>
+            </div>
+            <div><button class="btn btn--out" type="submit">Join the list</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROCESS ═══ PLACEHOLDER-dough.jpg — no starter jar, deliberately -->
+  <section class="sec sec--slate" id="processo">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <hr class="rule" style="background:#C8B393">
+          <p class="eyebrow">The process</p>
+          <h2 class="rv">What can be said, and what cannot.</h2>
+          <div class="flag rv"><strong>This section is deliberately empty.</strong> Natural fermentation, long fermentation, starter age, stone milling: none of it is confirmed, and a wrong process claim is the most expensive thing an artisan bakery can publish. There is also no photograph of a starter jar anywhere on this site — a levain photo <em>is</em> a process claim. The fields below fill themselves in the moment Kompaan confirms.</div>
+          <ul class="specs rv">
+        <li><b>Fermentation method</b><span class="cfm">[CONFIRM]</span></li>
+        <li><b>Fermentation time</b><span class="cfm">[CONFIRM]</span></li>
+        <li><b>Flours used</b><span class="cfm">[CONFIRM]</span></li>
+        <li><b>Milled in house or locally?</b><span class="cfm">[CONFIRM]</span></li>
+        <li><b>Oven</b><span class="cfm">[CONFIRM]</span></li>
+          </ul>
+        </div>
+        <figure class="rv">
+          <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&w=1000&q=72" alt="Adult hands working dough on a floured bench, flour dust in the light — stock photograph" loading="lazy" decoding="async" width="1000" height="750">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ GRAIN ═══ PLACEHOLDER-grain.jpg -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="split">
+        <figure class="rv">
+          <img src="https://images.unsplash.com/photo-1523294587484-bae6cc870010?auto=format&fit=crop&w=1000&q=72" alt="Wheat ears on a wooden bench — stock photograph" loading="lazy" decoding="async" width="1000" height="750">
+        </figure>
+        <div>
+          <hr class="rule">
+          <p class="eyebrow">Grain and flour</p>
+          <h2 class="rv">Where the flour comes from.</h2>
+          <p class="lede rv" style="margin-top:14px">If there is a local mill or stone milling involved, that is a real differentiator — which is exactly why it cannot be assumed.</p>
+          <ul class="specs rv">
+        <li><b>Mill / supplier</b><span class="cfm">[CONFIRM]</span></li>
+        <li><b>Wheat</b><span class="cfm">[CONFIRM]</span></li>
+        <li><b>Rye</b><span class="cfm">[CONFIRM]</span></li>
+        <li><b>Other grains</b><span class="cfm">[CONFIRM]</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WHY ═══ PLACEHOLDER-why.jpg -->
+  <section class="sec sec--band">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Why Kompaan</p>
+      <h2 class="rv">Three reasons — once they tell us what they are.</h2>
+      <ul class="trio" style="margin-top:30px">
+      <li class="rv"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=72" alt="Rustic round loaves with a dark crust and wheat ears on a dark surface — stock photograph, not a Kompaan product" loading="lazy" decoding="async" width="800" height="533"><div><h3><span class="cfm">[CONFIRM differentiator 1]</span></h3><p style="margin:0">No “baked fresh” and no “natural fermentation” until there is written confirmation.</p></div></li>
+        <li class="rv"><img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=72" alt="Bakery shelving stocked with loaves and baguettes — stock photograph, not Kompaan’s shop" loading="lazy" decoding="async" width="800" height="533"><div><h3><span class="cfm">[CONFIRM differentiator 2]</span></h3><p style="margin:0">This card is waiting on a verifiable fact, not an adjective.</p></div></li>
+        <li class="rv"><img src="https://images.unsplash.com/photo-1587241321921-91a834d6d191?auto=format&fit=crop&w=800&q=72" alt="Bakery interior with a counter and shelving, one adult with their back turned in the distance — stock photograph, not Kompaan’s shop" loading="lazy" decoding="async" width="800" height="533"><div><h3><span class="cfm">[CONFIRM differentiator 3]</span></h3><p style="margin:0">Three real reasons beat ten generic ones.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══ WHOLESALE ═══ -->
+  <section class="sec" id="atacado">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Wholesale and supply</p>
+      <h2 class="rv">The front door for cafés and restaurants.</h2>
+      <p class="lede rv" style="margin-top:16px">A restaurant will not run a supply relationship through an Instagram DM. Standing weekly orders, delivery days, minimum volumes, invoicing and lead times all need a page.</p>
+      <div class="flag rv"><strong>Whether Kompaan supplies wholesale at all is unconfirmed.</strong> <span class="cfm">[CONFIRM whether they supply, minimums, delivery days and invoicing]</span>. The form is built for the day the answer is yes.</div>
+      <form class="form rv" id="form-atacado" novalidate>
+        <div class="f2">
+          <div><label for="ata-emp">Business</label><input id="ata-emp" type="text"></div>
+          <div><label for="ata-cnpj">CNPJ</label><input id="ata-cnpj" type="text"></div>
+        </div>
+        <div class="f2">
+          <div><label for="ata-resp">Contact person</label><input id="ata-resp" type="text"></div>
+          <div><label for="ata-vol">Estimated weekly volume</label><input id="ata-vol" type="text" placeholder="[CONFIRM]"></div>
+        </div>
+        <div><button class="btn btn--out" type="submit">Send wholesale enquiry</button></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══ COFFEE / COUNTER ═══ PLACEHOLDER-coffee.jpg -->
+  <section class="sec sec--kraft">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <hr class="rule">
+          <p class="eyebrow" style="color:#4B3B18">Coffee and counter</p>
+          <h3 class="rv">Small, and secondary on purpose.</h3>
+          <p class="rv" style="color:#3A3F44;max-width:52ch">If there is coffee and somewhere to sit, it belongs here — in the background. This brand is a bakery first and the site should not pretend otherwise. <span class="cfm">[CONFIRM whether there is coffee, seating, and how many seats]</span></p>
+        </div>
+        <figure class="rv">
+          <img src="https://images.unsplash.com/photo-1521302080334-4bebac2763a6?auto=format&fit=crop&w=900&q=72" alt="A cup of black coffee on a pale surface — stock photograph" loading="lazy" decoding="async" width="900" height="675" style="border-radius:2px">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ STORAGE GUIDE TEASER ═══ -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="split">
+        <figure class="rv">
+          <img src="https://images.unsplash.com/photo-1540914124281-342587941389?auto=format&fit=crop&w=900&q=72" alt="Slices of bread seen from above on a pale surface — stock photograph" loading="lazy" decoding="async" width="900" height="675">
+        </figure>
+        <div>
+          <hr class="rule">
+          <p class="eyebrow">How to keep your bread</p>
+          <h2 class="rv">Real bread is not stored like supermarket bread.</h2>
+          <p class="lede rv" style="margin-top:14px">Keeping, freezing and refreshing. Three minutes of reading that heads off the most common artisan-bakery complaint — “it went hard the next day”.</p>
+          <p class="rv"><a class="btn btn--out" href="bread-storage.html">Read the full guide <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.5"/></svg></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ GALLERY + VISIT ═══ PLACEHOLDER-visit.jpg -->
+  <section class="sec sec--band" id="visite">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Gallery and visit</p>
+      <h2 class="rv">Where to find them.</h2>
+      <div class="gal rv" style="margin-top:28px">
+        <figure><img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=900&q=72" alt="Bakery shelving stocked with loaves and baguettes — stock photograph, not Kompaan’s shop" loading="lazy" decoding="async" width="900" height="600">
+          <figcaption>The shelf in the morning — stock photograph</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1587241321921-91a834d6d191?auto=format&fit=crop&w=900&q=72" alt="Bakery interior with a counter and shelving, one adult with their back turned in the distance — stock photograph, not Kompaan’s shop" loading="lazy" decoding="async" width="900" height="600">
+          <figcaption>Counter and room — stock photograph</figcaption></figure>
+        <div class="empty-shelf"><span class="cfm">The second photograph in this pair is the nearly-empty shelf at 16:00. It is the most persuasive image a bakery that sells out can publish, and it only exists if it is real. [CONFIRM photography]</span></div>
+      </div>
+      <ul class="specs rv" style="margin-top:34px">
+        <li>Address: <span class="cfm">[CONFIRM full address and postcode]</span></li>
+        <li>Hours: <span class="cfm">[CONFIRM]</span> · Bake days: <span class="cfm">[CONFIRM]</span></li>
+        <li>Parking: <span class="cfm">[CONFIRM]</span></li>
+      </ul>
+      <p class="formnote rv" style="margin-top:14px">The map does not load until you accept embedded-content cookies — a Google Maps iframe is a data transfer to a third party.</p>
+
+      <hr class="rule" style="margin-top:56px">
+      <p class="eyebrow">Reviews</p>
+      <div class="revs rv">No review has been written, invented or “represented” here. This block is held for real Google Business Profile reviews. <span class="cfm">[CONFIRM — pull the real Google reviews]</span></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <a class="wordmark" href="index.html" style="color:#F6F3EC"><b>Kompaan</b><span style="color:#C8B393">Artisan bakery</span></a>
+        <p style="margin-top:18px;max-width:32ch">Artisan bakery in Florianópolis <span class="cfm">[CONFIRM neighbourhood]</span>.</p>
+        <p><a href="https://www.instagram.com/kompaan_/" target="_blank" rel="noopener">@kompaan_</a></p>
+      </div>
+      <div>
+        <h4>Hours and bake days</h4>
+        <ul>
+          <li>Opening hours: <span class="cfm">[CONFIRM]</span></li>
+          <li>Bake days: <span class="cfm">[CONFIRM — not the same thing as opening hours]</span></li>
+          <li>Address: <span class="cfm">[CONFIRM address and postcode]</span></li>
+          <li>Parking: <span class="cfm">[CONFIRM]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>WhatsApp: <a href="#" data-wa data-unconfirmed>message</a> <span class="cfm">[CONFIRM number]</span></li>
+          <li>E-mail: <span class="cfm">[CONFIRM]</span></li>
+          <li>iFood: <span class="cfm">[CONFIRM — bread travels badly, a deliberate &ldquo;no&rdquo; is a valid answer]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html#calendario">Bake calendar</a></li>
+          <li><a href="index.html#paes">Our breads</a></li>
+          <li><a href="index.html#encomendas">Pre-orders</a></li>
+          <li><a href="index.html#atacado">Wholesale</a></li>
+          <li><a href="bread-storage.html">How to keep your bread</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="#" data-ck-open>Cookie preferences</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="gluten-note" style="margin-top:34px"><strong>Gluten and allergens.</strong>
+      This bakery works with wheat and rye in one room. Every bread and baked item
+      <strong>CONTAINS GLUTEN</strong> unless the product itself says otherwise, and cross-contamination
+      cannot be ruled out without a genuinely separate production area.
+      <span class="cfm">[CONFIRM the cross-contamination policy and per-product allergen data —
+      ANVISA RDC 26/2015 and Lei 10.674/2003]</span>. Nothing on this site is presented as
+      &ldquo;gluten free&rdquo;.</p>
+    <div class="ftr__legal">
+      <p style="margin:0">CNPJ and legal entity name <span class="cfm">[CONFIRM]</span> · Sanitary licence <span class="cfm">[CONFIRM]</span></p>
+      <p style="margin:0">Every photograph on this page is stock (Unsplash) used as a placeholder. None of it
+        is Kompaan’s product, shop or team.</p>
+      <p style="margin:0"><strong>Pitch mockup — not a published site, not client work.</strong></p>
+    </div>
+  </div>
+</footer>
+<div class="stick"><a href="#encomendas">Pre-order</a><button class="wa-btn" data-wa data-unconfirmed aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 0C5.5 0 .18 5.32.18 11.86c0 2.09.55 4.13 1.59 5.93L.08 24l6.36-1.67a11.8 11.8 0 0 0 5.6 1.43h.01c6.54 0 11.86-5.32 11.86-11.86 0-3.17-1.23-6.15-3.39-8.42A11.82 11.82 0 0 0 12.04 0zm0 21.5h-.01a9.44 9.44 0 0 1-4.8-1.32l-.35-.2-3.57.93.96-3.47-.23-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.9.99 6.68 2.77a9.38 9.38 0 0 1 2.76 6.68c0 5.2-4.24 9.45-9.45 9.45zm5.43-7.12c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.07 2.86 1.22 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35z"/></svg></button></div><button class="wa" data-wa data-unconfirmed aria-label="Chat on WhatsApp" title="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 0C5.5 0 .18 5.32.18 11.86c0 2.09.55 4.13 1.59 5.93L.08 24l6.36-1.67a11.8 11.8 0 0 0 5.6 1.43h.01c6.54 0 11.86-5.32 11.86-11.86 0-3.17-1.23-6.15-3.39-8.42A11.82 11.82 0 0 0 12.04 0zm0 21.5h-.01a9.44 9.44 0 0 1-4.8-1.32l-.35-.2-3.57.93.96-3.47-.23-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.9.99 6.68 2.77a9.38 9.38 0 0 1 2.76 6.68c0 5.2-4.24 9.45-9.45 9.45zm5.43-7.12c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.07 2.86 1.22 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35z"/></svg></button>
+<div class="ck" role="dialog" aria-live="polite" aria-label="Cookie preferences">
+  <div class="ck__in">
+    <h4>Cookies and personal data</h4>
+    <p style="margin:0">We use only the cookies the site needs to work. Analytics, the embedded map and any
+      social widget stay <strong>off</strong> until you switch them on, and refusing is as easy as accepting.
+      <a href="%s">Privacy Policy</a>.</p>
+    <div class="ck__opts">
+      <label><input type="checkbox" checked disabled> Necessary (always on)</label>
+      <label><input type="checkbox" id="ck-a"> Analytics</label>
+      <label><input type="checkbox" id="ck-m"> Map and embedded content</label>
+    </div>
+    <div class="ck__btns">
+      <button class="btn btn--pale" data-ck="reject">Reject all</button>
+      <button class="btn btn--pale" data-ck="save">Save choice</button>
+      <button class="btn" data-ck="accept">Accept all</button>
+    </div>
+  </div>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>
