@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="%(lang)s">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<!-- Speculative pitch mockup for a prospect who has not commissioned, seen or
+     approved it. Must never be indexed or compete with the real business. -->
+%(head)s
+</head>
+<body>
+<a class="skip" href="#main">%(skip)s</a>
+%(hdr)s
+
+<main id="main">
+
+  <!-- ═══ HERO ═══ PLACEHOLDER-hero.jpg -->
+  <section class="hero">
+    <img class="hero__img" src="%(heroimg)s" alt="%(heroalt)s" fetchpriority="high" width="2000" height="1125">
+    <div class="hero__scrim"></div>
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__in">
+      <h1>%(h1)s</h1>
+      <p class="hero__sub">%(sub)s</p>
+      <a class="btn" href="#projetos">%(cta)s <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.4"/></svg></a>
+    </div>
+    <span class="hero__scroll">%(scroll)s</span>
+  </section>
+
+  <!-- ═══ ESCOPO LINE ═══ -->
+  <p class="escopo">%(escopo)s</p>
+
+  <!-- ═══ PROJETOS ═══ -->
+  <section class="sec" id="projetos">
+    <div class="wide">
+      <hr class="rule">
+      <p class="eyebrow">%(projeyebrow)s</p>
+      <h2 class="rv">%(projh2)s</h2>
+      <p class="lede rv" style="margin-top:20px">%(projlede)s</p>
+      <div class="flag rv">%(projflag)s</div>
+
+      <div class="filters" role="group" aria-label="%(projeyebrow)s">
+        %(filterbtns)s
+      </div>
+      <p class="count" role="status" aria-live="polite"></p>
+
+      <ul class="grid">
+      %(cards)s
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══ TURN KEY BAND ═══ PLACEHOLDER-turnkey.jpg -->
+  <section class="sec sec--ink tk" id="servicos">
+    <img class="tk__img" src="%(tkimg)s" alt="%(tkalt)s" loading="lazy" decoding="async" width="1800" height="1200">
+    <div class="wide tk__in">
+      <hr class="rule">
+      <p class="eyebrow">%(tkeyebrow)s</p>
+      <h2 class="rv">%(tkh2)s</h2>
+      <div class="rv" style="margin-top:26px;max-width:70ch">
+        <p class="verbatim">&ldquo;%(tkq1)s&rdquo;<br><br>&ldquo;%(tkq2)s&rdquo;<span class="src">%(tksrc)s</span></p>
+      </div>
+      <ol class="steps rv">
+      %(stepsli)s
+      </ol>
+      <p class="verbatim rv" style="max-width:70ch">&ldquo;%(tkteam)s&rdquo;</p>
+      <p class="rv" style="margin-top:30px"><a class="btn" href="#" data-wa data-unconfirmed>%(tkcta)s <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.4"/></svg></a></p>
+      <div class="flag rv">%(tkflag)s</div>
+    </div>
+  </section>
+
+  <!-- ═══ ESTÚDIO ═══ PLACEHOLDER-founders.jpg -->
+  <section class="sec" id="estudio">
+    <div class="wide">
+      <div class="studio">
+        <div>
+          <hr class="rule">
+          <p class="eyebrow">%(steyebrow)s</p>
+          <h2 class="rv">%(sth2)s</h2>
+          <div class="rv" style="margin-top:26px">
+            <p class="verbatim">&ldquo;%(stq1)s&rdquo;</p>
+            <p class="verbatim" style="margin-top:22px">&ldquo;%(stq2)s&rdquo;<span class="src">%(stsrc)s</span></p>
+          </div>
+          <div class="flag rv">%(stflag)s</div>
+        </div>
+        <div class="founders rv">
+          <div class="founder">
+            <figure><img src="%(f1img)s" alt="%(f1alt)s" loading="lazy" decoding="async" width="700" height="933"></figure>
+            <div class="sig">%(sig)s</div>
+            <figcaption><strong>%(f1)s</strong><br>%(frole)s</figcaption>
+          </div>
+          <div class="founder">
+            <figure><img src="%(f2img)s" alt="%(f2alt)s" loading="lazy" decoding="async" width="700" height="933"></figure>
+            <div class="sig">%(sig)s</div>
+            <figcaption><strong>%(f2)s</strong><br>%(frole)s</figcaption>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ NA MÍDIA ═══ text credits only, no licensed marks -->
+  <section class="sec sec--ink" id="na-midia">
+    <div class="wide">
+      <hr class="rule">
+      <p class="eyebrow">%(pryebrow)s</p>
+      <h2 class="rv">%(prh2)s</h2>
+      <p class="lede rv" style="margin-top:20px">%(prlede)s</p>
+      <div class="flag rv">%(prflag)s</div>
+      <ul class="press">
+      %(pressli)s
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══ SETORES ═══ PLACEHOLDER-sectors.jpg -->
+  <section class="sec sec--bone">
+    <div class="wide">
+      <div class="split">
+        <div class="pair rv">
+          <figure><img src="%(clinicimg)s" alt="%(clinicalt)s" loading="lazy" decoding="async" width="900" height="1200"></figure>
+          <figure><img src="%(boardimg)s" alt="%(boardalt)s" loading="lazy" decoding="async" width="900" height="1200"></figure>
+        </div>
+        <div>
+          <hr class="rule">
+          <p class="eyebrow">%(secyebrow)s</p>
+          <h2 class="rv">%(sech2)s</h2>
+          <ul class="sectors rv" style="margin-top:28px">
+        %(sectorsli)s
+          </ul>
+          <p class="verbatim rv" style="margin-top:26px">&ldquo;%(secspec)s&rdquo;<span class="src">studiokaza.arq.br</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ BIM ═══ PLACEHOLDER-bim.jpg -->
+  <section class="sec">
+    <div class="wide">
+      <div class="bim">
+        <div>
+          <hr class="rule">
+          <p class="eyebrow">%(bimeyebrow)s</p>
+          <blockquote class="rv">&ldquo;%(bimq)s&rdquo;</blockquote>
+          <p class="src rv" style="margin-top:16px">studiokaza.arq.br</p>
+        </div>
+        <figure class="rv">
+          <img src="%(bimimg)s" alt="%(bimalt)s" loading="lazy" decoding="async" width="1200" height="900">
+          <svg class="wire" viewBox="0 0 400 300" preserveAspectRatio="none" aria-hidden="true">
+            <g stroke="#A8873F" stroke-width="1" fill="none" opacity=".9">
+              <path d="M40 250 L40 110 L200 40 L360 110 L360 250 Z"/>
+              <path d="M40 110 L200 180 L360 110"/>
+              <path d="M200 180 L200 250"/>
+              <path d="M120 250 L120 145"/><path d="M280 250 L280 145"/>
+            </g>
+          </svg>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PRESENÇA ═══ -->
+  <section class="sec sec--bone">
+    <div class="wide">
+      <hr class="rule">
+      <p class="eyebrow">%(pryeyebrow)s</p>
+      <h2 class="rv">%(pryh2)s</h2>
+      <ul class="units rv">
+      %(units)s
+      </ul>
+      <p class="verbatim rv" style="margin-top:40px;max-width:60ch">&ldquo;%(reach)s&rdquo;<span class="src">studiokaza.arq.br</span></p>
+      <p class="rv" style="margin-top:20px"><span class="stat" data-count="16">16</span> %(reachlbl)s</p>
+      <div class="flag rv">%(unitflag)s</div>
+    </div>
+  </section>
+
+  <!-- ═══ CLIENTES ═══ -->
+  <section class="sec">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">%(clieyebrow)s</p>
+      <p class="lede rv">%(cliline)s</p>
+      <div class="flag rv">%(cliflag)s</div>
+
+      <hr class="rule" style="margin-top:64px">
+      <p class="eyebrow">%(eveeyebrow)s</p>
+      <div class="flag rv">%(eveflag)s</div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTATO ═══ -->
+  <section class="sec sec--bone" id="contato">
+    <div class="wide">
+      <div class="split" style="align-items:start">
+        <div>
+          <hr class="rule">
+          <p class="eyebrow">%(coeyebrow)s</p>
+          <h2 class="rv">%(coh2)s</h2>
+          <p class="lede rv" style="margin-top:20px">%(colede)s</p>
+          <ul class="contact-list rv" style="margin-top:30px">
+            <li><b>%(cemail)s</b><a href="mailto:contato@studiokaza.arq.br">contato@studiokaza.arq.br</a></li>
+            <li><b>%(cphone)s</b>%(phoneval)s</li>
+            <li><b>%(cwa)s</b>%(waval)s</li>
+            <li><b>%(cunits)s</b>São Bento do Sul (SC) · Curitiba (PR) · Itapema (SC) · Campo Alegre (SC)</li>
+          </ul>
+        </div>
+        <form class="form rv" novalidate>
+          <div class="f2">
+            <div><label for="nome">%(lblname)s</label><input id="nome" name="nome" type="text" autocomplete="name" required></div>
+            <div><label for="mail">%(lblmail)s</label><input id="mail" name="mail" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="f2">
+            <div><label for="tel">%(lblphone)s</label><input id="tel" name="tel" type="tel" autocomplete="tel"></div>
+            <div><label for="tipo">%(lbltype)s</label>
+              <select id="tipo" name="tipo">
+            %(typeopts)s
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="tk">%(lbltk)s</label>
+            <select id="tk" name="tk"><option>%(yes)s</option><option>%(no)s</option><option>%(dunno)s</option></select>
+          </div>
+          <div><label for="msg">%(lblmsg)s</label><textarea id="msg" name="msg"></textarea></div>
+          <div class="consent">
+            <input type="checkbox" id="consent" name="consent">
+            <label for="consent">%(consent)s</label>
+          </div>
+          <div><button class="btn btn--dark" type="submit">%(send)s <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.4"/></svg></button></div>
+          <p class="formnote">Mockup — no form handler is wired. Nothing is sent and nothing is stored.</p>
+          <p class="thanks" hidden>Obrigado, retornaremos o mais breve possível! (Thank you — we will reply as soon as possible.)</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wide">
+    <div class="ftr__grid">
+      <div>
+        <a class="brand" href="index.html" style="color:#FAFAF8;text-decoration:none">
+          <b>STUDIO KAZA</b><span class="spaced">arquitetura + interiores</span>
+        </a>
+        <p style="margin-top:18px;max-width:30ch">Always in search of the different. From drawing to finished keys.</p>
+        <p class="arqbr">studiokaza.arq.br — a Brazilian domain restricted to registered architects.
+          <span class="cfm">[CONFIRM the registration used to obtain the domain]</span></p>
+      </div>
+      <div>
+        <h4>Units</h4>
+        <ul>
+          <li><strong>Head office</strong> — São Bento do Sul, SC<br><span class="cfm">[CONFIRM address]</span></li>
+          <li>Curitiba, PR — <span class="cfm">[CONFIRM address]</span></li>
+          <li>Itapema, SC — <span class="cfm">[CONFIRM address]</span></li>
+          <li>Campo Alegre, SC — <span class="cfm">[CONFIRM address]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contato@studiokaza.arq.br">contato@studiokaza.arq.br</a></li>
+          <li>Phone: <span class="cfm">[CONFIRM — the current contact page renders only &ldquo;47-&rdquo;]</span></li>
+          <li><a href="#" data-wa data-unconfirmed>WhatsApp</a> <span class="cfm">[CONFIRM number]</span></li>
+          <li>Instagram <span class="cfm">[CONFIRM — no social link exists in the site markup]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html#projetos">Projects</a></li>
+          <li><a href="index.html#estudio">Studio</a></li>
+          <li><a href="index.html#servicos">Services</a></li>
+          <li><a href="index.html#na-midia">Press</a></li>
+          <li><a href="index.html#contato">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="#" data-ck-open>Cookie preferences</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr__legal">
+      <p style="margin:0">CNPJ <span class="cfm">[CONFIRM — and whether one registration covers all four units]</span></p>
+      <p style="margin:0">Partners&rsquo; CAU numbers <span class="cfm">[CONFIRM both]</span> · CAU-PJ <span class="cfm">[CONFIRM]</span> ·
+        CREA <span class="cfm">[CONFIRM which applies — structural and complementary engineering]</span></p>
+      <p style="margin:0">Photography: every image on this page is stock (Unsplash), standing in as a
+        placeholder. None of it depicts Studio Kaza&rsquo;s work.
+        <span class="cfm">[CONFIRM photographer credits and usage licence, per image]</span></p>
+      <p style="margin:0">Studio Kaza Arquitetura © 2025 · <strong>Pitch mockup — not a published site, not client work.</strong></p>
+    </div>
+  </div>
+</footer>
+<button class="wa" data-wa data-unconfirmed aria-label="Chat on WhatsApp" title="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.470 1.45 1.07 2.86 1.22 3.06.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.44 9.44 0 0 1-4.8-1.32l-.35-.2-3.57.93.96-3.47-.23-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.9.99 6.68 2.77a9.38 9.38 0 0 1 2.76 6.68c0 5.2-4.24 9.45-9.45 9.45zM20.52 3.48A11.82 11.82 0 0 0 12.04 0C5.5 0 .18 5.32.18 11.86c0 2.09.55 4.13 1.59 5.93L.08 24l6.36-1.67a11.8 11.8 0 0 0 5.6 1.43h.01c6.54 0 11.86-5.32 11.86-11.86 0-3.17-1.23-6.15-3.39-8.42z"/></svg></button>
+<div class="ck" role="dialog" aria-live="polite" aria-label="Cookie preferences">
+  <div class="ck__in">
+    <h4>Cookies and personal data</h4>
+    <p style="margin:0">We use only the cookies the site needs to work. Analytics and third-party
+      embeds stay <strong>off</strong> until you switch them on, and you can change your mind at any
+      time. <a href="%s">Privacy Policy</a>.</p>
+    <div class="ck__opts">
+      <label><input type="checkbox" checked disabled> Necessary (always on)</label>
+      <label><input type="checkbox" id="ck-a"> Analytics</label>
+      <label><input type="checkbox" id="ck-m"> Marketing and embedded video</label>
+    </div>
+    <div class="ck__btns">
+      <button class="btn btn--ghost" data-ck="reject">Reject all</button>
+      <button class="btn btn--ghost" data-ck="save">Save choice</button>
+      <button class="btn" data-ck="accept">Accept all</button>
+    </div>
+  </div>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>
