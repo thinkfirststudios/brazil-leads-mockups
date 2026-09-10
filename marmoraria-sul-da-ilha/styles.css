@@ -1,0 +1,450 @@
+/* ===========================================================================
+   MARMORARIA SUL DA ILHA — Florianópolis, SC
+   Spec mockup. LEAD, not signed. Nothing here is client work.
+
+   ⚠️ NAME. Our lead sheet records "Marmoria Sul da Ilha"; their Instagram
+   handle is marmorariasuldailha. *Marmoraria* is the correct Portuguese word
+   for a stone-fabrication shop, so the sheet is almost certainly wrong. This
+   build uses MARMORARIA SUL DA ILHA throughout. [CONFIRM the spelling before
+   the pitch — a misspelt name on slide one ends the meeting.]
+
+   Instagram-only behind a login wall: no website, no Google listing, no
+   directory record. Every business fact on this build is a [CONFIRM].
+
+   PALETTE IS INVENTED — a stone-yard palette, deliberately NOT the
+   alabaster-and-brass of the other stone lead in this batch.
+   [CONFIRM against their logo.]
+
+     --basalt     #191C1B  dark bands, footer
+     --graphite   #33393A  secondary dark
+     --travertine #E8DFD1  page field
+     --bone       #F7F3EC  cards
+     --teal       #2E5F63  Atlantic slate-teal accent
+     --copper     #A8603C  the orçamento CTA only, and nothing else
+
+   CONTRAST — measured, not assumed (WCAG 2.2 AA / eMAG / LBI art. 63):
+     basalt   #191C1B on travertine #E8DFD1 = 13.00:1 ✓ AAA  headings + body
+     graphite #33393A on travertine         =  8.90:1 ✓ AAA  body
+     graphite         on bone      #F7F3EC  = 10.62:1 ✓ AAA
+     teal     #2E5F63 on travertine         =  5.42:1 ✓ AA   links, accents
+     teal             on basalt              =  2.40:1 ✗ FAILS reversed.
+              -> teal is never text on the dark bands. Reversed accent copy
+                 uses travertine (13.00:1) or bone (15.52:1).
+     copper   #A8603C on travertine         =  3.61:1 ✗ FAILS body text.
+     white            on copper              =  4.77:1 ✓ AA — so the copper CTA
+                 takes a WHITE label, and that is the only way copper carries
+                 text anywhere on this build. Copper text on light uses
+                 --copper-deep #7A4127 = 6.09:1 ✓ AA.
+     travertine on basalt                    = 13.00:1 ✓ AAA reversed copy
+     bone       on basalt                    = 15.52:1 ✓ AAA
+   =========================================================================== */
+
+:root{
+  --basalt:#191C1B;
+  --graphite:#33393A;
+  --travertine:#E8DFD1;
+  --bone:#F7F3EC;
+  --teal:#2E5F63;
+  --teal-deep:#1F4649;
+  --copper:#A8603C;
+  --copper-deep:#7A4127;
+  --line:rgba(25,28,27,.16);
+
+  --grad-cta:linear-gradient(115deg,#191C1B 0%,#2E5F63 100%);
+  --grad-copper:linear-gradient(135deg,#B76B44 0%,#A8603C 100%);
+  --grad-rule:linear-gradient(90deg,#A8603C,rgba(168,96,60,0));
+  --scrim:linear-gradient(180deg,rgba(25,28,27,0) 0%,rgba(25,28,27,.78) 100%);
+  --portal-vignette:radial-gradient(120% 90% at 50% 0%,rgba(255,255,255,.10),rgba(25,28,27,.35));
+
+  --wrap:1240px;
+  --gut:clamp(18px,4.5vw,56px);
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --slab:28px 28px 6px 6px;   /* the slab-portal mask: a chapa standing upright */
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+body{
+  margin:0;background:var(--travertine);color:var(--basalt);
+  font-family:"Inter","Helvetica Neue",Arial,system-ui,sans-serif;
+  font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+@media (max-width:768px){body{padding-bottom:calc(56px + env(safe-area-inset-bottom,0px))}}
+
+h1,h2,h3,h4{font-family:"Inter",Arial,sans-serif;font-weight:700;line-height:1.13;
+  letter-spacing:-.021em;margin:0;text-wrap:balance}
+h1{font-size:clamp(2rem,4.8vw,3.4rem)}
+h2{font-size:clamp(1.55rem,3.2vw,2.35rem)}
+h3{font-size:clamp(1.02rem,1.7vw,1.24rem)}
+p{margin:0 0 1.05em}
+img{max-width:100%;display:block}
+a{color:var(--teal-deep);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--copper-deep);outline-offset:3px;border-radius:4px}
+
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--gut)}
+.skip{position:absolute;left:-9999px;background:var(--basalt);color:#fff;padding:12px 18px;z-index:999}
+.skip:focus{left:8px;top:8px}
+
+.eyebrow{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;font-weight:700;
+  color:var(--copper-deep);margin:0 0 12px}
+.sec--dark .eyebrow{color:#D79A76}
+.lede{font-size:clamp(1rem,1.6vw,1.18rem);color:var(--graphite);max-width:64ch}
+.sec--dark .lede{color:#C3C7C5}
+.sec{padding:clamp(52px,7.5vw,106px) 0}
+.sec--bone{background:var(--bone)}
+.sec--dark{background:var(--basalt);color:var(--travertine)}
+.sec--dark h2,.sec--dark h3{color:var(--bone)}
+.rule{height:2px;width:64px;border:0;background:var(--grad-rule);margin:0 0 18px}
+
+/* ── [CONFIRM] markers ──────────────────────────────────────────────────── */
+.cfm{background:#F7E6D6;color:#4E2A14;border-bottom:1px dashed #A8603C;
+  padding:.06em .38em;font-size:.9em;font-style:normal}
+.sec--dark .cfm{background:#3A2C24;color:#F2D9C6;border-bottom-color:#A8603C}
+
+.flag{border:1px solid var(--copper);border-left-width:4px;background:#F6EBE2;
+  padding:18px 20px;margin:24px 0;font-size:.94rem;color:#4A2915;border-radius:10px}
+.flag strong{color:#2E1809}
+.flag--teal{border-color:var(--teal-deep);background:#E4EEEE;color:#123033}
+.flag--teal strong{color:#08191B}
+.sec--dark .flag{background:rgba(255,255,255,.07);color:#CFD3D1;border-color:var(--copper)}
+.sec--dark .flag strong{color:#fff}
+
+/* =========================== UTILITY BAR ================================= */
+.util{background:var(--basalt);color:#A9AEAC;font-size:.78rem;
+  border-bottom:1px solid rgba(255,255,255,.08)}
+.util__in{max-width:var(--wrap);margin:0 auto;padding:8px var(--gut);
+  display:flex;flex-wrap:wrap;gap:7px 20px;align-items:center}
+.util a{color:#E4E7E5;text-decoration:none}
+.util a:hover{color:#D79A76}
+.langs{margin-left:auto;display:flex;gap:3px;align-items:center}
+.langs a{padding:3px 6px;color:#8B918F;text-decoration:none;letter-spacing:.08em}
+.langs a[aria-current="true"]{color:#D79A76;font-weight:700}
+.langs i{font-style:normal;color:#474D4B}
+
+/* =========================== HEADER ====================================== */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(232,223,209,.97);
+  border-bottom:1px solid var(--line);transition:box-shadow .3s var(--ease)}
+@supports (backdrop-filter:blur(6px)){.hdr{backdrop-filter:blur(8px)}}
+.hdr.is-stuck{box-shadow:0 2px 16px -6px rgba(25,28,27,.35)}
+.hdr__in{max-width:var(--wrap);margin:0 auto;padding:13px var(--gut);
+  display:flex;align-items:center;gap:16px;transition:padding .3s var(--ease)}
+.hdr.is-stuck .hdr__in{padding-block:8px}
+.mark{display:flex;flex-direction:column;line-height:1.05;text-decoration:none;color:var(--basalt)}
+.mark b{font-size:1.1rem;font-weight:800;letter-spacing:.01em}
+.mark span{font-size:.55rem;letter-spacing:.26em;text-transform:uppercase;color:var(--teal-deep);margin-top:5px}
+.nav{margin-left:auto;display:flex;align-items:center;gap:clamp(10px,1.5vw,20px)}
+.nav a{color:var(--basalt);text-decoration:none;font-size:.79rem;padding:6px 0;
+  border-bottom:2px solid transparent;white-space:nowrap}
+.nav a:hover{border-bottom-color:var(--copper);color:var(--copper-deep)}
+.burger{display:none;margin-left:auto;background:none;border:0;padding:9px;cursor:pointer}
+.burger span{display:block;width:23px;height:1.8px;background:var(--basalt);margin:5px 0;
+  transition:transform .3s var(--ease),opacity .2s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(6.8px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-6.8px) rotate(-45deg)}
+@media (max-width:1040px){
+  .burger{display:block}
+  .nav{position:fixed;inset:0;background:var(--travertine);flex-direction:column;
+    justify-content:center;gap:20px;transform:translateY(-100%);
+    transition:transform .4s var(--ease);margin:0;z-index:70}
+  .nav.is-open{transform:none}
+  .nav a{font-size:1.06rem}
+}
+
+/* =========================== BUTTONS ===================================== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:14px 26px;border:0;cursor:pointer;text-decoration:none;font:inherit;
+  font-size:.79rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  border-radius:6px;background:var(--basalt);color:var(--bone);
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease),filter .25s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.25);
+  box-shadow:0 12px 26px -14px rgba(25,28,27,.7)}
+.btn svg{transition:transform .25s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+/* the single loud CTA — white on copper, 4.77:1 */
+.btn--copper{background:var(--grad-copper);color:#fff}
+.btn--copper:hover{box-shadow:0 12px 28px -14px rgba(168,96,60,.95)}
+.btn--out{background:none;border:1.5px solid var(--basalt);color:var(--basalt)}
+.btn--out:hover{border-color:var(--teal-deep);color:var(--teal-deep);
+  background:rgba(46,95,99,.08);box-shadow:none}
+.sec--dark .btn--out,.hero .btn--out{border-color:rgba(247,243,236,.6);color:var(--bone)}
+.btn--sm{padding:10px 18px;font-size:.68rem}
+[data-unconfirmed]{opacity:.62;cursor:not-allowed;filter:grayscale(.4)}
+
+/* =========================== HERO ======================================== */
+.hero{background:var(--basalt);color:var(--bone);position:relative;overflow:hidden}
+.hero__in{max-width:var(--wrap);margin:0 auto;padding:clamp(46px,7vw,96px) var(--gut);
+  display:grid;gap:clamp(28px,4vw,60px);grid-template-columns:1fr;align-items:center}
+@media (min-width:920px){.hero__in{grid-template-columns:1.1fr .9fr}}
+.hero h1{color:#fff;max-width:16ch}
+.hero__sub{color:#C3C7C5;font-size:clamp(1rem,1.8vw,1.26rem);margin:18px 0 28px;max-width:50ch}
+.hero__cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero__glow{position:absolute;left:-14%;bottom:-30%;width:62vw;height:62vw;pointer-events:none;
+  background:radial-gradient(circle,rgba(46,95,99,.35) 0%,rgba(46,95,99,0) 62%);
+  animation:drift 22s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translate3d(0,0,0)}to{transform:translate3d(7vw,-5vw,0)}}
+
+/* the slab portal — 2:3, the proportion of a chapa standing in a yard */
+.portal{position:relative;margin:0;border-radius:var(--slab);overflow:hidden;
+  aspect-ratio:2/3;max-width:420px;justify-self:center;width:100%;
+  box-shadow:0 28px 60px -30px rgba(0,0,0,.8)}
+.portal img{width:100%;height:100%;object-fit:cover}
+.portal::after{content:"";position:absolute;inset:0;background:var(--portal-vignette);
+  pointer-events:none}
+.portal figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;
+  background:rgba(25,28,27,.8);color:#E4E7E5;font-size:.68rem;padding:9px 12px;line-height:1.4}
+
+/* =========================== 3-STEP ORÇAMENTO ============================ */
+.steps{position:relative;overflow:hidden}
+.steps__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.16}
+.steps__in{position:relative;z-index:2}
+.stepcards{display:grid;gap:clamp(14px,2vw,22px);list-style:none;margin:30px 0 0;padding:0;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));counter-reset:s}
+.stepcard{background:var(--bone);border-radius:10px;padding:26px 22px;
+  display:flex;flex-direction:column;gap:11px;counter-increment:s;
+  border-left:4px solid var(--copper);transition:transform .3s var(--ease),box-shadow .3s}
+.stepcard:hover{transform:translateY(-4px);box-shadow:0 20px 40px -24px rgba(25,28,27,.55)}
+.stepcard::before{content:"0" counter(s);color:var(--copper-deep);font-weight:800;
+  font-size:.74rem;letter-spacing:.18em}
+.stepcard h3{color:var(--basalt)}
+.stepcard p{font-size:.92rem;color:var(--graphite);margin:0}
+.stepcard .btn{margin-top:auto;align-self:flex-start}
+.rights{background:rgba(247,243,236,.09);border-left:3px solid var(--copper);
+  padding:16px 18px;border-radius:6px;font-size:.92rem;margin:26px 0 0;color:#CFD3D1}
+.rights strong{color:#fff}
+
+/* =========================== MATERIALS BOARD ============================= */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 0;padding:0;list-style:none}
+.chips button{background:var(--bone);border:1px solid var(--line);color:var(--basalt);
+  padding:9px 17px;font:inherit;font-size:.74rem;letter-spacing:.06em;cursor:pointer;
+  border-radius:6px;transition:background .25s,border-color .25s,color .25s}
+.chips button:hover{border-color:var(--copper)}
+.chips button[aria-pressed="true"]{background:var(--basalt);border-color:var(--basalt);
+  color:var(--bone);font-weight:700}
+.count{font-size:.8rem;color:var(--graphite);margin:16px 0 24px;min-height:1.2em}
+
+.mats{display:grid;gap:clamp(14px,2vw,22px);list-style:none;margin:0;padding:0;
+  grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr))}
+.mat{background:var(--bone);border:1px solid var(--line);border-radius:10px;overflow:hidden;
+  display:flex;flex-direction:column;transition:transform .3s var(--ease),box-shadow .3s}
+.mat:hover{transform:translateY(-4px);box-shadow:0 20px 40px -24px rgba(25,28,27,.5)}
+.mat.is-out{display:none}
+/* Slab swatches are DRAWN, with vertical vein movement, because these are
+   chapas standing in a yard — and because no stone may be named until the
+   prospect supplies the catalogue. A photograph would imply a specific stone. */
+.swatch{aspect-ratio:2/3;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.sw-granito{background:
+  radial-gradient(ellipse 3px 5px at 22% 18%,rgba(12,13,12,.62) 0 100%,transparent 0),
+  radial-gradient(ellipse 4px 6px at 64% 44%,rgba(12,13,12,.5) 0 100%,transparent 0),
+  radial-gradient(ellipse 2px 4px at 40% 76%,rgba(238,236,230,.45) 0 100%,transparent 0),
+  linear-gradient(178deg,#5C6165 0%,#3A3E42 100%);
+  background-size:23px 29px,34px 41px,17px 23px,100% 100%}
+.sw-marmore{background:
+  linear-gradient(174deg,transparent 0 38%,rgba(51,57,58,.24) 38.3% 39.4%,transparent 39.8%),
+  linear-gradient(186deg,transparent 0 58%,rgba(51,57,58,.17) 58.3% 59.1%,transparent 59.5%),
+  linear-gradient(170deg,transparent 0 18%,rgba(51,57,58,.13) 18.3% 18.9%,transparent 19.3%),
+  linear-gradient(182deg,transparent 0 76%,rgba(51,57,58,.2) 76.2% 77.1%,transparent 77.5%),
+  linear-gradient(178deg,#FCFAF6 0%,#EFEBE2 100%)}
+.sw-quartzito{background:
+  repeating-linear-gradient(174deg,rgba(46,95,99,.2) 0 4px,transparent 4px 13px),
+  repeating-linear-gradient(184deg,rgba(25,28,27,.11) 0 2px,transparent 2px 19px),
+  linear-gradient(178deg,#E4EDE7 0%,#C7D8CE 100%)}
+.sw-quartzo{background:
+  radial-gradient(circle at 30% 26%,rgba(25,28,27,.11) 0 1.1px,transparent 1.2px),
+  radial-gradient(circle at 70% 62%,rgba(25,28,27,.09) 0 1.3px,transparent 1.4px),
+  linear-gradient(178deg,#FFFFFF 0%,#F1EEE8 100%);
+  background-size:19px 19px,27px 27px,100% 100%}
+.sw-porcelanato{background:
+  linear-gradient(178deg,transparent 0 49.5%,rgba(25,28,27,.15) 49.7% 50.2%,transparent 50.4%),
+  linear-gradient(178deg,#E7E4DE 0%,#D3CFC7 100%)}
+.swatch .illus{position:absolute;left:0;right:0;bottom:0;background:rgba(25,28,27,.8);
+  color:#E7DFD3;font-size:.6rem;padding:7px 10px;line-height:1.35}
+.mat__b{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.mat__b h3{font-size:1rem}
+.mat__b p{font-size:.87rem;color:var(--graphite);margin:0}
+.mat__b .btn{margin-top:auto;align-self:flex-start}
+
+/* =========================== SPLITS ====================================== */
+.split{display:grid;gap:clamp(26px,4vw,58px);grid-template-columns:1fr;align-items:center}
+@media (min-width:900px){.split{grid-template-columns:1fr 1fr}}
+.split figure{margin:0}
+.split .wide{border-radius:10px;overflow:hidden}
+.split .wide img{width:100%;aspect-ratio:4/3;object-fit:cover}
+
+/* the island map — drawn, with the southern arc emphasised */
+.island{width:100%;height:auto;background:var(--bone);border-radius:10px;display:block}
+.island .land{fill:rgba(46,95,99,.14);stroke:var(--teal);stroke-width:1.6}
+.island .arc{fill:rgba(168,96,60,.26);stroke:var(--copper);stroke-width:2.2}
+.island .pin{fill:var(--copper)}
+.island text{font:600 11px "Inter",Arial,sans-serif;fill:var(--basalt)}
+.island .lbl-arc{font-weight:800;fill:var(--copper-deep)}
+
+/* =========================== SERVICES ==================================== */
+.svcs{display:grid;gap:clamp(12px,1.8vw,20px);list-style:none;margin:28px 0 0;padding:0;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.svc{background:var(--bone);border:1px solid var(--line);border-radius:10px;padding:22px;
+  display:flex;flex-direction:column;gap:8px;transition:transform .28s var(--ease),box-shadow .28s}
+.svc:hover{transform:translateY(-3px);box-shadow:0 18px 34px -22px rgba(25,28,27,.45)}
+.svc.is-dark{background:var(--basalt);color:var(--travertine);border-color:transparent}
+.svc.is-dark h3{color:#fff}
+.svc.is-dark p{color:#C3C7C5}
+.svc h3{font-size:1.02rem}
+.svc p{font-size:.9rem;color:var(--graphite);margin:0}
+.svc .btn{margin-top:auto;align-self:flex-start}
+
+/* =========================== PROCESS RAIL ================================ */
+.rail{display:grid;gap:2px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  list-style:none;margin:28px 0 0;padding:0;background:var(--line);counter-reset:p}
+.rail li{background:var(--bone);padding:24px 20px;counter-increment:p}
+.rail li::before{content:"0" counter(p);display:block;color:var(--copper-deep);font-weight:800;
+  font-size:.72rem;letter-spacing:.18em;margin-bottom:9px}
+.rail b{display:block;font-size:1rem;margin-bottom:6px}
+.rail span{font-size:.88rem;color:var(--graphite);line-height:1.5}
+.rail li.is-mark{background:var(--basalt)}
+.rail li.is-mark b{color:#fff}
+.rail li.is-mark span{color:#C3C7C5}
+.rail3{display:grid;gap:clamp(12px,1.8vw,20px);grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  margin-top:26px}
+.rail3 figure{margin:0;border-radius:10px;overflow:hidden}
+.rail3 img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .55s var(--ease)}
+.rail3 figure:hover img{transform:scale(1.05)}
+.rail3 figcaption{font-size:.76rem;color:var(--graphite);padding:8px 2px 0}
+.sec--dark .rail3 figcaption{color:#A9AEAC}
+
+/* =========================== EDGE PROFILES =============================== */
+.edges{display:grid;gap:clamp(12px,1.8vw,20px);list-style:none;margin:28px 0 0;padding:0;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr))}
+.edge{background:var(--bone);border:1px solid var(--line);border-radius:10px;padding:18px;
+  text-align:center}
+.edge svg{width:100%;height:auto;display:block;margin-bottom:12px;fill:none;
+  stroke:var(--basalt);stroke-width:2.6;stroke-linejoin:round;stroke-linecap:round}
+.edge svg .dim{stroke:var(--copper);stroke-width:1.4;stroke-dasharray:3 3}
+.edge b{display:block;font-size:.94rem}
+.edge span{display:block;font-size:.8rem;color:var(--graphite);margin-top:5px}
+
+/* =========================== MASONRY GALLERY ============================= */
+.masonry{columns:3 250px;column-gap:clamp(10px,1.6vw,18px);margin-top:28px}
+.masonry figure{margin:0 0 clamp(10px,1.6vw,18px);break-inside:avoid;overflow:hidden;
+  border-radius:10px;position:relative}
+.masonry img{width:100%;height:auto;display:block;transition:transform .6s var(--ease)}
+.masonry figure:hover img{transform:scale(1.05)}
+.masonry figcaption{font-size:.78rem;color:var(--graphite);padding:9px 2px 0}
+
+/* =========================== WET CUTTING (drawn) ========================= */
+.wetcut{width:100%;height:auto;background:var(--basalt);border-radius:10px;display:block}
+.wetcut .blade{fill:none;stroke:#9FB6B8;stroke-width:2.4}
+.wetcut .stone{fill:rgba(232,223,209,.18);stroke:var(--travertine);stroke-width:1.8}
+.wetcut .spray{fill:none;stroke:#4FA3AC;stroke-width:1.6;stroke-linecap:round;opacity:.85}
+.wetcut .drop{fill:#4FA3AC;opacity:.75}
+.wetcut text{font:600 11px "Inter",Arial,sans-serif;fill:#C3C7C5}
+
+/* =========================== SERVICE AREA ================================ */
+.areas{display:flex;flex-wrap:wrap;gap:9px;list-style:none;margin:24px 0 0;padding:0}
+.areas a,.areas span{display:inline-block;border:1px solid var(--line);background:var(--bone);
+  padding:10px 16px;border-radius:6px;font-size:.84rem;text-decoration:none;color:var(--basalt);
+  transition:border-color .22s,background .22s,transform .22s}
+.areas a:hover{border-color:var(--copper);background:#F2E6DC;transform:translateY(-2px)}
+.areas .is-south{border-color:var(--copper);border-left-width:4px;font-weight:600}
+
+/* =========================== FAQ ========================================= */
+.faq{list-style:none;margin:26px 0 0;padding:0;border-top:1px solid var(--line)}
+.faq li{border-bottom:1px solid var(--line)}
+.faq button{width:100%;background:none;border:0;padding:20px 40px 20px 0;font:inherit;
+  font-size:1rem;font-weight:600;text-align:left;cursor:pointer;color:var(--basalt);position:relative}
+.faq button::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);
+  font-size:1.3rem;color:var(--copper-deep)}
+.faq button[aria-expanded="true"]::after{content:"–"}
+.faq .a{padding:0 0 20px;font-size:.94rem;color:var(--graphite);max-width:70ch}
+.faq .a[hidden]{display:none}
+
+/* =========================== TESTIMONIAL (empty) ========================= */
+.testi{border:1px dashed var(--copper);border-radius:10px;padding:clamp(24px,4vw,44px);
+  text-align:center;background:var(--bone)}
+
+/* =========================== FORMS ======================================= */
+.form{display:grid;gap:15px;max-width:640px}
+.f2{display:grid;gap:15px;grid-template-columns:1fr 1fr}
+@media (max-width:560px){.f2{grid-template-columns:1fr}}
+label{display:block;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
+  color:var(--graphite);margin-bottom:6px}
+.sec--dark label{color:#A9AEAC}
+input,select,textarea{width:100%;padding:13px 14px;font:inherit;font-size:.96rem;
+  border:1px solid var(--line);background:#fff;color:var(--basalt);border-radius:6px;
+  transition:border-color .22s,box-shadow .22s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--copper);
+  box-shadow:0 0 0 3px rgba(168,96,60,.24)}
+textarea{min-height:110px;resize:vertical}
+.consent{display:flex;gap:11px;align-items:flex-start;font-size:.86rem}
+.consent input{width:auto;margin-top:4px;flex:0 0 auto;accent-color:#A8603C}
+.consent label{text-transform:none;letter-spacing:0;font-size:.86rem;font-weight:400;
+  color:var(--graphite);margin:0}
+.sec--dark .consent label{color:#C3C7C5}
+.formnote{font-size:.8rem;color:var(--graphite)}
+.sec--dark .formnote{color:#A9AEAC}
+
+/* =========================== CTA BAND ==================================== */
+.ctaband{background:var(--grad-cta);color:var(--bone);text-align:center;
+  padding:clamp(48px,7vw,88px) var(--gut)}
+.ctaband h2{color:#fff;max-width:22ch;margin:0 auto 20px}
+
+/* =========================== FOOTER ====================================== */
+.ftr{background:var(--basalt);color:#A9AEAC;padding:clamp(46px,7vw,86px) 0 28px;font-size:.9rem}
+.ftr a{color:#E4E7E5;text-decoration:none}
+.ftr a:hover{color:#D79A76}
+.ftr h4{color:#fff;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;
+  margin:0 0 14px;font-weight:700}
+.ftr__grid{display:grid;gap:32px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.ftr ul{list-style:none;margin:0;padding:0}
+.ftr li{margin-bottom:8px}
+.ftr__legal{border-top:1px solid rgba(255,255,255,.12);margin-top:38px;padding-top:22px;
+  font-size:.78rem;color:#7F8583;display:grid;gap:9px}
+
+/* =========================== STICKY / WHATSAPP =========================== */
+.stick{position:fixed;left:0;right:0;bottom:0;z-index:65;display:none;
+  grid-template-columns:1fr 1fr;background:var(--basalt);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  box-shadow:0 -3px 16px -6px rgba(0,0,0,.55)}
+@media (max-width:768px){.stick{display:grid}}
+.stick a,.stick button{display:flex;align-items:center;justify-content:center;gap:9px;
+  height:56px;border:0;background:none;color:#fff;font:inherit;font-size:.76rem;
+  font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;text-decoration:none}
+.stick .wa-btn{background:linear-gradient(135deg,#25D366 0%,#128C7E 100%)}
+.stick svg{width:20px;height:20px;fill:currentColor}
+
+.wa{position:fixed;right:16px;bottom:16px;z-index:66;width:54px;height:54px;border-radius:50%;
+  border:0;cursor:pointer;background:linear-gradient(135deg,#25D366 0%,#128C7E 100%);
+  display:grid;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.45);
+  transition:transform .3s var(--ease)}
+.wa:hover{transform:scale(1.07)}
+.wa svg{width:27px;height:27px;fill:#fff}
+@media (max-width:768px){.wa{bottom:calc(66px + env(safe-area-inset-bottom,0px))}}
+
+/* =========================== COOKIE BANNER =============================== */
+.ck{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--basalt);color:#BEC3C1;
+  padding:18px var(--gut);border-top:3px solid var(--copper);font-size:.9rem;
+  transform:translateY(115%);transition:transform .45s var(--ease)}
+.ck.is-on{transform:none}
+.ck__in{max-width:1140px;margin:0 auto;display:grid;gap:14px}
+.ck h4{margin:0;color:#fff;font-size:1rem}
+.ck__opts{display:flex;flex-wrap:wrap;gap:18px;font-size:.86rem}
+.ck__opts label{text-transform:none;letter-spacing:0;color:#BEC3C1;font-weight:400;
+  display:flex;gap:8px;align-items:center;margin:0;font-size:.86rem}
+.ck__opts input{width:auto;accent-color:#A8603C}
+.ck__btns{display:flex;flex-wrap:wrap;gap:9px}
+.ck__btns .btn{padding:12px 20px;font-size:.68rem}
+.ck .btn--out{border-color:rgba(255,255,255,.6);color:#fff}
+
+/* =========================== REVEALS ===================================== */
+.rv{opacity:0;transform:translateY(18px);
+  transition:opacity .55s var(--ease),transform .55s var(--ease)}
+.rv.is-in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .hero__glow{animation:none}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;
+    animation-iteration-count:1!important}
+}
+
+@media print{.hdr,.util,.wa,.stick,.ck{display:none}body{background:#fff}}
