@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<!-- Speculative pitch mockup for a prospect who has not commissioned, seen or
+     approved it. Must never be indexed or compete with the real business. -->
+<meta name="theme-color" content="#ff5703">
+<title>Tours in Florianópolis · City Tour, Airport Transfer and Receptive | Local Tour</title>
+<meta name="description" content="Receptive tourism agency in Florianópolis, Brazil. City tours, Ilha do Campeche, trails, day trips and FLN airport transfers with an official, bilingual tour guide.">
+  <link rel="alternate" hreflang="pt-BR" href="../index.html">
+  <link rel="alternate" hreflang="en" href="index.html">
+  <link rel="alternate" hreflang="es" href="../es/index.html">
+  <link rel="alternate" hreflang="x-default" href="../index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Local Tour",
+  "url": "https://localtour.com.br/",
+  "telephone": "+55 48 98487-5199",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Travessa Ressacada, 123",
+    "addressLocality": "Florian\u00f3polis",
+    "addressRegion": "SC",
+    "postalCode": "88047-604",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification",
+     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+     "opens": "09:00", "closes": "17:00"},
+    {"@type": "OpeningHoursSpecification",
+     "dayOfWeek": ["Saturday","Sunday"], "opens": "09:00", "closes": "16:00"}
+  ],
+  "areaServed": [
+    {"@type": "City", "name": "Florian\u00f3poli"},
+    {"@type": "City", "name": "Balne\u00e1rio Cambori\u00fa"},
+    {"@type": "City", "name": "Urubici"},
+    {"@type": "City", "name": "S\u00e3o Joaquim"},
+    {"@type": "City", "name": "Blumenau"}
+  ],
+  "availableLanguage": ["pt-BR", "en", "es"]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="topbar__in">
+    <span><a href="#" data-wa>+55 48 98487-5199</a></span>
+    <span>Mon–Fri 09:00–17:00 · Sat–Sun 09:00–16:00</span>
+    <span class="langs">
+      <a href="../index.html" hreflang="pt-BR" lang="pt-BR">PT</a><i>|</i><a href="index.html" hreflang="en" lang="en" aria-current="true">EN</a><i>|</i><a href="../es/index.html" hreflang="es" lang="es">ES</a>
+    </span>
+    <span><a class="btn btn--sm" href="#" data-wa>Book on WhatsApp</a></span>
+  </div>
+</div>
+<header class="hdr">
+  <div class="hdr__in">
+    <a class="mark" href="index.html"><b>Local<em>Tour</em></b><span>Receptive tourism</span></a>
+    <button class="burger" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#passeios">Tours</a><a href="#guia">Tour guide</a><a href="#eventos">Events</a><a href="#guia-floripa">Floripa guide</a><a href="#contato">Contact</a><a href="florianopolis-airport-transfer.html">Airport transfer</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ═══ HERO ═══ PLACEHOLDER-hero.jpg -->
+  <section class="hero">
+    <img class="hero__img" src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=2000&q=72" alt="Brazilian coastline with green headlands and a clear-water bay — stock photograph, not a Local Tour photograph" fetchpriority="high" width="2000" height="1125">
+    <div class="hero__scrim"></div>
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__in">
+      <h1>See Floripa with people who are from here.</h1>
+      <p class="hero__sub">An accredited receptive tourism agency with an official tour guide and bilingual drivers. From the airport transfer to a full day around the island.</p>
+    </div>
+  </section>
+
+  <!-- ═══ THE FINDER — overlapping the hero's lower edge ═══ -->
+  <div class="finder">
+    <div class="finder__card">
+      <h2>Find your tour</h2>
+      <button class="btn btn--out finder__toggle" type="button" aria-expanded="false">Find your tour</button>
+      <div class="finder__grid">
+        <div><label for="f-tipo">Type of experience</label>
+          <select id="f-tipo">
+            <option value="all">All types</option>
+            <option value="cidade">City tour</option>
+            <option value="ilha">Island & sea</option>
+            <option value="aventura">Adventure</option>
+            <option value="batevolta">Day trip</option>
+            <option value="transfer">Transfer</option>
+          </select></div>
+        <div><label for="f-data">Date</label><input id="f-data" type="date"></div>
+        <div><label for="f-pax">Passengers</label><input id="f-pax" type="number" min="1" max="15" step="1"></div>
+        <div><label for="f-idioma">Guide language</label>
+          <select id="f-idioma">
+            <option>Português</option>
+            <option>English</option>
+            <option>Español</option>
+          </select></div>
+        <div><a class="btn" href="#passeios" data-finder-go>See tours <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.6"/></svg></a></div>
+      </div>
+      <p class="finder__out"></p>
+      <p class="formnote" style="margin:8px 0 0">This is not a booking engine and it shows no price: it filters the catalogue and composes the WhatsApp message. Local Tour publishes no prices anywhere, and none has been invented here.</p>
+    </div>
+  </div>
+
+  <!-- ═══ CREDENTIALS ═══ -->
+  <section class="sec">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Credentials</p>
+      <h2 class="rv">What they already have — and currently keep in the footer.</h2>
+      <ul class="creds" style="margin-top:28px">
+      <li class="rv"><b>Meet and greet at the main airports</b><span>Their words. Their office is in Carianos, the airport district — their current site never says so, and it is the single best argument the transfer product has.</span></li>
+      <li class="rv"><b>Punctuality</b><span>Their words, and the thing their Google reviews mention most.</span></li>
+      <li class="rv"><b>Vehicles for up to 15 passengers</b><span>Their words. It is the only capacity they publish, and nothing in this build exceeds it. <span class="cfm">[CONFIRM the full fleet and each vehicle’s capacity]</span></span></li>
+      <li class="rv"><b>Bilingual driver and tour guides</b><span>Their words — and the reason the English and Spanish trees exist in this build. Today that promise is made in Portuguese only.</span></li>
+      <li class="rv is-badge"><b>CADASTUR</b><span class="num">24.087453.10.0001-1</span><span>Their Ministry of Tourism registration, published by them. It is legally required for a travel agency and for a tourist transport operator, and in a market full of informal operators it is worth a great deal. <span class="cfm">[CONFIRM it is current and active]</span></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══ TOUR CATALOGUE ═══ PLACEHOLDER-tours.jpg -->
+  <section class="sec sec--sand" id="passeios">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Tours</p>
+      <h2 class="rv">The catalogue, filterable.</h2>
+      <p class="lede rv" style="margin-top:14px">Eleven published products. Their current site shows all of them in one column with no filter — every visitor scrolls the lot.</p>
+      <div class="chips" role="group" aria-label="Tours" style="margin-top:22px">
+        <button type="button" data-filter="all" aria-pressed="true">All types</button>
+        <button type="button" data-filter="cidade" aria-pressed="false">City tour</button>
+        <button type="button" data-filter="ilha" aria-pressed="false">Island & sea</button>
+        <button type="button" data-filter="aventura" aria-pressed="false">Adventure</button>
+        <button type="button" data-filter="batevolta" aria-pressed="false">Day trip</button>
+      </div>
+      <p class="count" role="status" aria-live="polite"></p>
+      <ul class="tours">
+      <li class="tour rv" data-tags="cidade">
+        <figure>
+          <span class="pill">City</span>
+          <span class="quote">Ask for a quote</span>
+          <img src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?auto=format&fit=crop&w=800&q=72" alt="Long suspension bridge over water at dusk — stock photograph, not the Hercílio Luz bridge" loading="lazy" decoding="async" width="800" height="600">
+        </figure>
+        <div class="tour__b">
+          <h3>City Tour Floripa Espetacular</h3>
+          <p>Their best Florianópolis tour with an official tour guide: the historic centre and the Figueira, the Hercílio Luz bridge, the beaches. Covers Centro, east and north.</p>
+          <a class="btn btn--sm btn--out" href="#" data-wa="Hello! I would like a quote for: City Tour Floripa Espetacular">Request a quote</a>
+        </div>
+      </li>
+      <li class="tour rv" data-tags="cidade">
+        <figure>
+          <span class="pill">City</span>
+          <span class="quote">Ask for a quote</span>
+          <img src="https://images.unsplash.com/photo-1470004914212-05527e49370b?auto=format&fit=crop&w=800&q=72" alt="Tropical city between green hills at dawn — stock photograph, not Florianópolis" loading="lazy" decoding="async" width="800" height="600">
+        </figure>
+        <div class="tour__b">
+          <h3>City Tour Floripa por Inteiro</h3>
+          <p>A shared tour, departing Thursdays and Saturdays. The full published route — Centro, south, east and north, with a lunch stop.</p>
+          <a class="btn btn--sm btn--out" href="#" data-wa="Hello! I would like a quote for: City Tour Floripa por Inteiro">Request a quote</a>
+        </div>
+      </li>
+      <li class="tour rv" data-tags="cidade">
+        <figure>
+          <span class="pill">City</span>
+          <span class="quote">Ask for a quote</span>
+          <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=800&q=72" alt="Waterfront skyline seen from above — stock photograph" loading="lazy" decoding="async" width="800" height="600">
+        </figure>
+        <div class="tour__b">
+          <h3>City Tour Floripa Essencial</h3>
+          <p>Route <span class="cfm">[CONFIRM — their page gives no detail for this tour]</span>.</p>
+          <a class="btn btn--sm btn--out" href="#" data-wa="Hello! I would like a quote for: City Tour Floripa Essencial">Request a quote</a>
+        </div>
+      </li>
+      <li class="tour rv" data-tags="cidade">
+        <figure>
+          <span class="pill">City</span>
+          <span class="quote">Ask for a quote</span>
+          <img src="https://images.unsplash.com/photo-1541443131876-44b03de101c5?auto=format&fit=crop&w=800&q=72" alt="Blue car parked, seen in three-quarter view — stock photograph, not a Local Tour vehicle" loading="lazy" decoding="async" width="800" height="600">
+        </figure>
+        <div class="tour__b">
+          <h3>City Tour Privado</h3>
+          <p>Choose the sights you want to see and stay as long as you like at each stop.</p>
+          <a class="btn btn--sm btn--out" href="#" data-wa="Hello! I would like a quote for: City Tour Privado">Request a quote</a>
+        </div>
+      </li>
+      <li class="tour rv" data-tags="ilha">
+        <figure>
+          <span class="pill">Island & sea</span>
+          <span class="quote">Ask for a quote</span>
+          <img src="https://images.unsplash.com/photo-1509233725247-49e657c54213?auto=format&fit=crop&w=800&q=72" alt="Palms over turquoise shallows — stock photograph, not Ilha do Campeche" loading="lazy" decoding="async" width="800" height="600">
+        </figure>
+        <div class="tour__b">
+          <h3>Ilha do Campeche</h3>
+          <p>Land transport plus the boat crossing, departing from hotels in the centre. Access is subject to a daily quota and to sea conditions.</p>
+          <a class="btn btn--sm btn--out" href="#" data-wa="Hello! I would like a quote for: Ilha do Campeche">Request a quote</a>
+        </div>
+      </li>
+      <li class="tour rv" data-tags="aventura">
+        <figure>
+          <span class="pill">Adventure</span>
+          <span class="quote">Ask for a quote</span>
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=72" alt="Layered green ridges under low light — stock photograph, not the Lagoinha do Leste trail" loading="lazy" decoding="async" width="800" height="600">
+        </figure>
+        <div class="tour__b">
+          <h3>Trilha Lagoinha do Leste</h3>
+          <p>A guided walk with a local guide.</p>
+          <a class="btn btn--sm btn--out" href="#" data-wa="Hello! I would like a quote for: Trilha Lagoinha do Leste">Request a quote</a>
+        </div>
+      </li>
+      <li class="tour rv" data-tags="aventura">
+        <figure>
+          <span class="pill">Adventure</span>
+          <span class="quote">Ask for a quote</span>
+          <img src="https://images.unsplash.com/photo-1533107862482-0e6974b06ec4?auto=format&fit=crop&w=800&q=72" alt="An adult with a bicycle on a rocky summit — stock photograph. This is NOT paragliding: no free-flight photograph is available in this library" loading="lazy" decoding="async" width="800" height="600">
+        </figure>
+        <div class="tour__b">
+          <h3>Voo de Parapente</h3>
+          <p>A tandem flight with a pilot-instructor.</p>
+          <a class="btn btn--sm btn--out" href="#" data-wa="Hello! I would like a quote for: Voo de Parapente">Request a quote</a>
+        </div>
+      </li>
+      <li class="tour rv" data-tags="aventura">
+        <figure>
+          <span class="pill">Adventure</span>
+          <span class="quote">Ask for a quote</span>
+          <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=800&q=72" alt="Waterfall in a green gorge — stock photograph. This is NOT rafting: no raft-descent photograph is available in this library" loading="lazy" decoding="async" width="800" height="600">
+        </figure>
+        <div class="tour__b">
+          <h3>Rafting em Santo Amaro</h3>
+          <p>An inflatable-raft descent on a river in Greater Florianópolis.</p>
+          <a class="btn btn--sm btn--out" href="#" data-wa="Hello! I would like a quote for: Rafting em Santo Amaro">Request a quote</a>
+        </div>
+      </li>
+      <li class="tour rv" data-tags="batevolta">
+        <figure>
+          <span class="pill">Day trip</span>
+          <span class="quote">Ask for a quote</span>
+          <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=72" alt="Historic stone building in mist — stock photograph, not Vila Germânica" loading="lazy" decoding="async" width="800" height="600">
+        </figure>
+        <div class="tour__b">
+          <h3>Blumenau e Pomerode (Rota Alemã)</h3>
+          <p>The Beer Museum, Vila Germânica and the Rota Enxaimel.</p>
+          <a class="btn btn--sm btn--out" href="#" data-wa="Hello! I would like a quote for: Blumenau e Pomerode (Rota Alemã)">Request a quote</a>
+        </div>
+      </li>
+      <li class="tour rv" data-tags="batevolta">
+        <figure>
+          <span class="pill">Day trip</span>
+          <span class="quote">Ask for a quote</span>
+          <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=72" alt="Green mountains with low cloud and a winding road — stock photograph, not the Serra do Rio do Rastro" loading="lazy" decoding="async" width="800" height="600">
+        </figure>
+        <div class="tour__b">
+          <h3>Urubici e São Joaquim</h3>
+          <p>Via the Serra do Rio do Rastro, with a viewpoint stop.</p>
+          <a class="btn btn--sm btn--out" href="#" data-wa="Hello! I would like a quote for: Urubici e São Joaquim">Request a quote</a>
+        </div>
+      </li>
+      <li class="tour rv" data-tags="batevolta">
+        <figure>
+          <span class="pill">Day trip</span>
+          <span class="quote">Ask for a quote</span>
+          <img src="https://images.unsplash.com/photo-1573599852326-2d4da0bbe613?auto=format&fit=crop&w=800&q=72" alt="Historic building and formal gardens at dusk — stock photograph, not the Nova Trento sanctuary" loading="lazy" decoding="async" width="800" height="600">
+        </figure>
+        <div class="tour__b">
+          <h3>Madre Paulina, Nova Trento e Brusque</h3>
+          <p>The sanctuary, a typical lunch in Nova Trento and shopping at the FIP in Brusque.</p>
+          <a class="btn btn--sm btn--out" href="#" data-wa="Hello! I would like a quote for: Madre Paulina, Nova Trento e Brusque">Request a quote</a>
+        </div>
+      </li>
+      </ul>
+      <div class="flag rv"><strong>No price, duration, departure time or group size has been invented.</strong> Local Tour publishes no price anywhere — plenty of receptive agencies deliberately do not. So every card carries &ldquo;Ask for a quote&rdquo; rather than a figure. <span class="cfm">[CONFIRM whether they want prices shown; if so, a full table in R$ with what is included, what is not, and the cancellation terms]</span></div>
+    </div>
+  </section>
+
+  <!-- ═══ FEATURED ITINERARY ═══ PLACEHOLDER-itinerary.jpg -->
+  <section class="sec sec--ink">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Featured itinerary</p>
+      <h2 class="rv">City Tour Floripa por Inteiro</h2>
+      <p class="rv" style="margin-top:14px"><span class="badge">Shared · departs Thursdays and Saturdays</span></p>
+      <p class="lede rv" style="margin-top:14px">The only route they publish in full. Here it becomes a timeline rather than a paragraph.</p>
+      <ol class="timeline rv">
+        <li><b>Centro</b><span>Praça XV de Novembro (the zero milestone), the Miramar Memorial, the Figueira Centenária, the Metropolitan Cathedral, Palácio Cruz e Sousa, the Rua Felipe Schmidt promenade, Largo da Antiga Alfândega and the Mercado Público Municipal.</span></li>
+        <li><b>The bridge</b><span>The Hercílio Luz bridge viewpoint.</span></li>
+        <li><b>South</b><span>The Deputada Antonieta de Barros tunnel, Via Expressa Sul, the Rio Tavares mangrove, Freguesia do Ribeirão da Ilha, the Morro das Pedras viewpoint and Praia da Armação.</span></li>
+        <li class="is-lunch"><b>East</b><span>Lagoa da Conceição, Praia da Joaquina, Praia Mole and Barra da Lagoa — with a <strong>lunch stop at a seafood restaurant</strong>.</span></li>
+        <li><b>North</b><span>The north of the island.</span></li>
+      </ol>
+      <div class="strip3 rv">
+        <figure><img src="https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?auto=format&fit=crop&w=700&q=72" alt="Historic brick building on a city corner — stock photograph, not the Mercado Público" loading="lazy" decoding="async" width="700" height="467"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=700&q=72" alt="A huge spreading tree with sunlight through the branches — stock photograph, not the Figueira Centenária" loading="lazy" decoding="async" width="700" height="467"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=700&q=72" alt="Timber jetty on still water with forest behind — stock photograph, not Lagoa da Conceição" loading="lazy" decoding="async" width="700" height="467"></figure>
+      </div>
+      <div class="flag rv">Duration, departure time, pickup point, what is included and the price: <span class="cfm">[CONFIRM all of them]</span>. They publish the route but none of that data.</div>
+    </div>
+  </section>
+
+  <!-- ═══ AIRPORT TRANSFER TEASER ═══ PLACEHOLDER-transfer.jpg -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <hr class="rule">
+          <p class="eyebrow">FLN Airport transfer</p>
+          <h2 class="rv">Their office is in Carianos. That is the airport district.</h2>
+          <p class="lede rv" style="margin-top:14px">The highest-intent search in this entire market is &ldquo;transfer aeroporto Florianópolis&rdquo;. The page they have for it is five paragraphs of prose with no table, no vehicle options, no FAQ and no schema.</p>
+          <ul class="bullets rv">
+        <li><span class="dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><span>Meet and greet at arrivals with a name board.</span></li>
+        <li><span class="dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><span>Advance booking required.</span></li>
+        <li><span class="dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><span>Flight number required at booking.</span></li>
+        <li><span class="dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><span>Delay and flight-change handling, as stated on their page.</span></li>
+          </ul>
+          <p class="rv" style="margin-top:24px"><a class="btn" href="florianopolis-airport-transfer.html">See the transfer page <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.6"/></svg></a></p>
+        </div>
+        <figure class="rv"><img src="https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&w=1200&q=72" alt="Empty covered kerbside area with painted floor markings — stock photograph, not Florianópolis airport" loading="lazy" decoding="async" width="1200" height="750"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TOUR GUIDE ═══ PLACEHOLDER-guide.jpg -->
+  <section class="sec sec--sand" id="guia">
+    <div class="wrap">
+      <div class="split">
+        <figure class="rv"><img src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?auto=format&fit=crop&w=1200&q=72" alt="Neoclassical colonnade seen from below — stock photograph, not a Florianópolis building" loading="lazy" decoding="async" width="1200" height="750"></figure>
+        <div>
+          <hr class="rule">
+          <p class="eyebrow">Tour guide</p>
+          <h2 class="rv">What separates a receptive agency from a van company.</h2>
+          <p class="lede rv" style="margin-top:14px">An official, credentialed, bilingual tour guide specialising in the historic and cultural attractions of Santa Catarina — city tours, trails and custom itineraries.</p>
+          <div class="flag rv">&ldquo;Guia de Turismo Oficial&rdquo; is a regulated designation. <span class="cfm">[CONFIRM the guide registration numbers before restating the claim as fact]</span>. Their Google reviews repeatedly name a guide, <strong>Mario</strong>, and a <strong>Claudia</strong>, described by one reviewer as family — most likely the owners. <span class="cfm">[CONFIRM before naming anyone on the page]</span>, and no stock photograph is used to stand in for either of them.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ DESTINATIONS ═══ PLACEHOLDER-destinations.jpg -->
+  <section class="sec">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Destinations</p>
+      <h2 class="rv">Where people actually want to go.</h2>
+      <p class="lede rv" style="margin-top:14px">Each destination links into the guide they have already written.</p>
+      <ul class="dests" style="margin-top:26px">
+        <li class="dest rv"><img src="https://images.unsplash.com/photo-1509233725247-49e657c54213?auto=format&fit=crop&w=500&q=72" alt="Palms over turquoise shallows — stock photograph, not Ilha do Campeche" loading="lazy" decoding="async" width="500" height="500"><b>Ilha do Campeche</b></li>
+        <li class="dest rv"><img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=500&q=72" alt="Timber jetty on still water with forest behind — stock photograph, not Lagoa da Conceição" loading="lazy" decoding="async" width="500" height="500"><b>Lagoa do Peri</b></li>
+        <li class="dest rv"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=500&q=72" alt="Sea-view restaurant terrace with tables laid, no people — stock photograph" loading="lazy" decoding="async" width="500" height="500"><b>Ribeirão da Ilha</b></li>
+        <li class="dest rv"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=500&q=72" alt="Layered green ridges under low light — stock photograph, not the Lagoinha do Leste trail" loading="lazy" decoding="async" width="500" height="500"><b>Lagoinha do Leste</b></li>
+        <li class="dest rv"><img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=500&q=72" alt="Timber boardwalk running through forest — stock photograph" loading="lazy" decoding="async" width="500" height="500"><b>Naufragados</b></li>
+        <li class="dest rv"><img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=500&q=72" alt="An adult surfer inside the barrel of a wave — stock photograph" loading="lazy" decoding="async" width="500" height="500"><b>Praia da Armação</b></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══ WHY ═══ PLACEHOLDER-why.jpg -->
+  <section class="sec sec--teal">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <hr class="rule" style="background:#fff">
+          <p class="eyebrow">Why Local Tour</p>
+          <h2 class="rv">Four reasons, all of them theirs.</h2>
+          <ul class="bullets rv">
+        <li><span class="dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><span>Authentic experiences, with people who know the island.</span></li>
+        <li><span class="dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><span>Total flexibility: private or shared, at your own pace.</span></li>
+        <li><span class="dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><span>A credentialed, bilingual tour guide.</span></li>
+        <li><span class="dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><span>Proven expertise: 10+ years of unforgettable memories. <span class="cfm">[CONFIRM the founding year — the claim appears in their copy with no date]</span></span></li>
+          </ul>
+          <p class="rv" style="margin-top:24px"><a class="btn" href="#" data-wa>Chat on WhatsApp <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.6"/></svg></a></p>
+        </div>
+        <figure class="rv"><img src="https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?auto=format&fit=crop&w=1200&q=72" alt="Aerial view of a strip of beach and surf — stock photograph" loading="lazy" decoding="async" width="1200" height="750"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ REVIEWS ═══ typographic, no imagery -->
+  <section class="sec sec--sand">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Reviews</p>
+      <div class="revhead rv">
+        <span class="score"><span data-count="[CONFIRM]">[CONFIRM]</span></span>
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span class="lede" style="margin:0">145 Google reviews, hidden below the fold.</span>
+      </div>
+      <p class="lede rv" style="margin-top:12px">They are real, specific and hard-won — and today they live inside a third-party widget at the bottom of the page with no visual weight at all.</p>
+      <div class="flag rv"><strong>No review has been written or invented here.</strong> The rating and the count are live values: <span class="cfm">[CONFIRM the current rating]</span> and <span class="cfm">[CONFIRM the current count — it was 145 on 31/08/2026]</span>. The three cards below are the structure, empty, waiting for the real reviews pulled from the Google listing.</div>
+      <ul class="revs">
+        <li class="rev rv"><time><span class="cfm">[CONFIRM DD/MM/YYYY]</span></time><p>&ldquo;<span class="cfm">[CONFIRM the real Google review text]</span>&rdquo;</p><b><span class="cfm">[CONFIRM name]</span></b></li>
+        <li class="rev rv"><time><span class="cfm">[CONFIRM DD/MM/YYYY]</span></time><p>&ldquo;<span class="cfm">[CONFIRM the real Google review text]</span>&rdquo;</p><b><span class="cfm">[CONFIRM name]</span></b></li>
+        <li class="rev rv"><time><span class="cfm">[CONFIRM DD/MM/YYYY]</span></time><p>&ldquo;<span class="cfm">[CONFIRM the real Google review text]</span>&rdquo;</p><b><span class="cfm">[CONFIRM name]</span></b></li>
+      </ul>
+      <p class="rv" style="margin-top:22px"><a href="https://www.google.com/maps" target="_blank" rel="noopener">See it on Google <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.6"/></svg></a></p>
+    </div>
+  </section>
+
+  <!-- ═══ BLOG HUBS ═══ PLACEHOLDER-guide.jpg -->
+  <section class="sec" id="guia-floripa">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Floripa guide</p>
+      <h2 class="rv">Forty pages of local guide, filed under &ldquo;BLOGuia&rdquo;.</h2>
+      <p class="lede rv" style="margin-top:14px">It is the best content asset in this entire batch: around 40 beach pages plus food and lodging guides. It sits under a menu item no visitor will decode, with no internal linking into the tour pages.</p>
+      <ul class="hubs">
+        <li class="hub rv"><img src="https://images.unsplash.com/photo-1476231682828-37e571bc172f?auto=format&fit=crop&w=600&q=72" alt="Aerial view of dense forest cut by a road — stock photograph" loading="lazy" decoding="async" width="600" height="400"><div><h3>What to do</h3><p>Sights, trails and tours around the island.</p></div></li>
+        <li class="hub rv"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=72" alt="Sea-view restaurant terrace with tables laid, no people — stock photograph" loading="lazy" decoding="async" width="600" height="400"><div><h3>Where to eat and drink</h3><p>Tainha, berbigão, seafood and where to eat in the centre.</p></div></li>
+        <li class="hub rv"><img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=600&q=72" alt="Aerial view of resort pools beside the sea — stock photograph" loading="lazy" decoding="async" width="600" height="400"><div><h3>Where to stay</h3><p>Lodging by region of the island.</p></div></li>
+        <li class="hub rv"><img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=72" alt="White sand, a palm and a small boat at the shore — stock photograph" loading="lazy" decoding="async" width="600" height="400"><div><h3>Beach guide</h3><p>Naufragados, Lagoinha do Leste, Solidão, Matadeiro, Galheta, Saquinho, Açores, Ribeirão da Ilha, Lagoa do Peri, Pântano do Sul, Armação, Caieira da Barra do Sul, Tapera and more.</p></div></li>
+      </ul>
+      <p class="rv" style="margin-top:24px"><a class="btn btn--out" href="#guia-floripa">See the full guide <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.6"/></svg></a></p>
+      <div class="flag rv"><strong>Every existing URL is preserved or 301-redirected.</strong> Not one of the ~40 beach pages, not one tour page and none of the three legal pages is silently dropped. <span class="cfm">[CONFIRM the full URL inventory]</span></div>
+    </div>
+  </section>
+
+  <!-- ═══ EVENTS / CORPORATE ═══ PLACEHOLDER-events.jpg -->
+  <section class="sec sec--ink" id="eventos">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <hr class="rule">
+          <p class="eyebrow">Events and corporate</p>
+          <h2 class="rv">Executive van, bilingual driver and a specialist guide.</h2>
+          <p class="lede rv" style="margin-top:14px">A company does not close event transport over a WhatsApp link. It closes on a proposal.</p>
+          <form class="form rv" data-mock style="margin-top:22px">
+            <div class="f2">
+              <div><label for="e-nome">Name</label><input id="e-nome" type="text" autocomplete="name"></div>
+              <div><label for="e-mail">E-mail</label><input id="e-mail" type="email" autocomplete="email"></div>
+            </div>
+            <div class="f2">
+              <div><label for="e-wa">WhatsApp</label><input id="e-wa" type="tel" autocomplete="tel"></div>
+              <div><label for="e-pax">Number of passengers</label><input id="e-pax" type="number" min="1" max="15" step="1"></div>
+            </div>
+            <div><label for="e-msg">Message</label><textarea id="e-msg"></textarea></div>
+            <div class="consent">
+              <input type="checkbox" id="e-consent" data-consent>
+              <label for="e-consent">I authorise Local Tour to use these details to answer this enquiry, under the LGPD and the Privacy Policy.</label>
+            </div>
+            <div><button class="btn" type="submit">Request a proposal <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.6"/></svg></button></div>
+            <p class="formnote">Mockup — nothing is sent and nothing is stored.</p>
+          </form>
+        </div>
+        <figure class="rv"><img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=72" alt="Event hall set with round tables and projection screens — stock photograph" loading="lazy" decoding="async" width="1200" height="750"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section class="sec" id="contato">
+    <div class="wrap">
+      <hr class="rule">
+      <p class="eyebrow">Contact</p>
+      <h2 class="rv">Talk to us.</h2>
+      <ul class="creds rv" style="margin:24px 0 30px">
+        <li><b>WhatsApp</b><span><a href="#" data-wa>+55 48 98487-5199</a></span></li>
+        <li><b>Contact</b><span>Travessa Ressacada, 123 · Carianos · Florianópolis/SC · 88047-604</span></li>
+      </ul>
+      <form class="form rv" data-mock>
+        <div class="f2">
+          <div><label for="c-nome">Name</label><input id="c-nome" type="text" autocomplete="name"></div>
+          <div><label for="c-wa">WhatsApp</label><input id="c-wa" type="tel" autocomplete="tel"></div>
+        </div>
+        <div class="f2">
+          <div><label for="c-mail">E-mail</label><input id="c-mail" type="email" autocomplete="email"></div>
+          <div><label for="c-tour">Tour of interest</label>
+            <select id="c-tour">
+              <option>City Tour Floripa Espetacular</option>
+              <option>City Tour Floripa por Inteiro</option>
+              <option>City Tour Floripa Essencial</option>
+              <option>City Tour Privado</option>
+              <option>Ilha do Campeche</option>
+              <option>Trilha Lagoinha do Leste</option>
+              <option>Voo de Parapente</option>
+              <option>Rafting em Santo Amaro</option>
+              <option>Blumenau e Pomerode (Rota Alemã)</option>
+              <option>Urubici e São Joaquim</option>
+              <option>Madre Paulina, Nova Trento e Brusque</option>
+            </select></div>
+        </div>
+        <div class="f2">
+          <div><label for="c-data">Date</label><input id="c-data" type="date"></div>
+          <div><label for="c-pax">Number of passengers</label><input id="c-pax" type="number" min="1" max="15" step="1"></div>
+        </div>
+        <div><label for="c-idioma">Preferred language</label>
+          <select id="c-idioma">
+            <option>Português</option>
+            <option>English</option>
+            <option>Español</option>
+          </select></div>
+        <div><label for="c-msg">Message</label><textarea id="c-msg"></textarea></div>
+        <div class="consent">
+          <input type="checkbox" id="c-consent" data-consent>
+          <label for="c-consent">I authorise Local Tour to use these details to answer this enquiry, under the LGPD and the Privacy Policy.</label>
+        </div>
+        <div><button class="btn" type="submit">Send <svg width="15" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M11 1l4 4-4 4M15 5H0" stroke="currentColor" stroke-width="1.6"/></svg></button></div>
+        <p class="formnote">Mockup — nothing is sent and nothing is stored.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <a class="mark" href="index.html" style="color:#fff"><b>Local<em style="color:#ff5703">Tour</em></b><span style="color:#8FA1A7">Receptive tourism agency in Florianópolis, Brazil</span></a>
+        <p style="margin-top:16px;max-width:34ch"><strong>Address</strong><br>Travessa Ressacada, 123 · Carianos · Florianópolis/SC · 88047-604</p>
+        <p><strong>Hours</strong><br>Mon–Fri 09:00–17:00 · Sat–Sun 09:00–16:00</p>
+      </div>
+      <div><h4>Tours</h4><ul><li><a href="#passeios">Tours</a></li><li><a href="#guia">Tour guide</a></li><li><a href="#eventos">Events</a></li><li><a href="#guia-floripa">Floripa guide</a></li><li><a href="#contato">Contact</a></li><li><a href="florianopolis-airport-transfer.html">Airport transfer</a></li></ul></div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#" data-wa>+55 48 98487-5199</a></li>
+          <li>E-mail: <span class="cfm">[CONFIRM — the address published on their site is obfuscated by a spam filter and could not be read]</span></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="#" data-ck-open>Cookie preferences</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Floripa guide</h4>
+        <ul>
+          <li><a href="#guia-floripa">O Que Fazer?</a></li>
+          <li><a href="#guia-floripa">Onde Comer e Beber?</a></li>
+          <li><a href="#guia-floripa">Onde Ficar?</a></li>
+          <li><a href="#guia-floripa">Guia de Praias</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr__legal">
+      <p style="margin:0">CNPJ <span class="num">27.622.633/0001-98</span> · CADASTUR <span class="num">24.087453.10.0001-1</span>
+        <span class="cfm">[CONFIRM ambos estão vigentes]</span></p>
+      <p style="margin:0">All three legal pages (Privacy, Cookies and Terms) already exist on their current site and are preserved rather than replaced with boilerplate.</p>
+      <p style="margin:0">Every photograph in this mockup is stock (Unsplash) used as a placeholder. None of it is a Local Tour vehicle, guide, tour or customer.</p>
+      <p style="margin:0"><strong>Pitch mockup — not a published site, not client work.</strong></p>
+    </div>
+  </div>
+</footer>
+<div class="stick"><button class="wa-btn" data-wa aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 0C5.5 0 .18 5.32.18 11.86c0 2.09.55 4.13 1.59 5.93L.08 24l6.36-1.67a11.8 11.8 0 0 0 5.6 1.43h.01c6.54 0 11.86-5.32 11.86-11.86 0-3.17-1.23-6.15-3.39-8.42A11.82 11.82 0 0 0 12.04 0zm0 21.5h-.01a9.44 9.44 0 0 1-4.8-1.32l-.35-.2-3.57.93.96-3.47-.23-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.9.99 6.68 2.77a9.38 9.38 0 0 1 2.76 6.68c0 5.2-4.24 9.45-9.45 9.45zm5.43-7.12c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.07 2.86 1.22 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35z"/></svg></button><a class="book" href="#contato">Book</a></div><button class="wa" data-wa aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 0C5.5 0 .18 5.32.18 11.86c0 2.09.55 4.13 1.59 5.93L.08 24l6.36-1.67a11.8 11.8 0 0 0 5.6 1.43h.01c6.54 0 11.86-5.32 11.86-11.86 0-3.17-1.23-6.15-3.39-8.42A11.82 11.82 0 0 0 12.04 0zm0 21.5h-.01a9.44 9.44 0 0 1-4.8-1.32l-.35-.2-3.57.93.96-3.47-.23-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.9.99 6.68 2.77a9.38 9.38 0 0 1 2.76 6.68c0 5.2-4.24 9.45-9.45 9.45zm5.43-7.12c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.07 2.86 1.22 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35z"/></svg></button>
+<div class="ck" role="dialog" aria-live="polite" aria-label="Cookies and personal data">
+  <div class="ck__in">
+    <h4>Cookies and personal data</h4>
+    <p style="margin:0">We use only the cookies the site needs to work. Analytics, the map and the Google reviews widget stay <strong>off</strong> until you switch them on, and refusing is as easy as accepting. <a href="privacy.html">Privacy Policy</a>.</p>
+    <div class="ck__opts">
+      <label><input type="checkbox" checked disabled> Necessary (always on)</label>
+      <label><input type="checkbox" id="ck-a"> Analytics</label>
+      <label><input type="checkbox" id="ck-m"> Map and embedded reviews</label>
+    </div>
+    <div class="ck__btns">
+      <button class="btn btn--out" data-ck="reject">Reject all</button>
+      <button class="btn btn--out" data-ck="save">Save choice</button>
+      <button class="btn" data-ck="accept">Accept all</button>
+    </div>
+  </div>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>
