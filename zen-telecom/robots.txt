@@ -1,0 +1,24 @@
+# Zen Telecom - spec mockup
+#
+# STATUS: LEAD, not signed. Nothing here is deployed, and every page in
+# this build carries <meta name="robots" content="noindex,nofollow">.
+# This file matches that state.
+#
+# AT LAUNCH, replace everything below with:
+#
+#     User-agent: *
+#     Allow: /
+#     Sitemap: https://www.zentelecom.com.br/sitemap.xml
+#
+# and remove the noindex meta tag from every page.
+#
+# MIGRATION NOTE. Three paths on the live site are preserved by this
+# build as directories, so they keep resolving with no 301 needed:
+#     /zengamer/        /documentos/        /indique-a-zen/
+# Two third-party systems must NOT be broken by any migration:
+#     central.zentelecom.hubsoft.com.br   (subscriber portal, HubSoft)
+#     typebot.co/atendimento-zen          (sales funnel)
+# And, as on every migration: change web records only. NEVER touch MX.
+
+User-agent: *
+Disallow: /
