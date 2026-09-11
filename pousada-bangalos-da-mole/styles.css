@@ -215,7 +215,8 @@ a{color:var(--glass-deep);text-underline-offset:3px}
 /* The copy carries its own ground. The pane gradient is anchored to the
    pane's height, so a long headline lifts the lede to where that gradient
    has faded and the sunlit pool comes through at 2.92:1. */
-.hero__in::before{content:"";position:absolute;inset:-40px -6vw 0 -6vw;z-index:-1;
+.hero__in::before{content:"";position:absolute;z-index:-1;
+  top:-56px;bottom:0;left:50%;width:100vw;transform:translateX(-50%);
   background:linear-gradient(0deg,rgba(27,34,41,.94) 0%,rgba(27,34,41,.9) 58%,
              rgba(27,34,41,.72) 82%,rgba(27,34,41,0) 100%);pointer-events:none}
 @media (min-width:880px){
