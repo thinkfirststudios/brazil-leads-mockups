@@ -474,3 +474,23 @@ table.ladder td.on::after{content:"";position:absolute;inset:0;border:2px solid 
   .hero{min-height:auto;color:#000}
   .hero-scrim,.hero-scrim2{display:none}
 }
+
+/* ---------------------------------------------------- responsive tables */
+/* A data table with several prose columns has a min-content width far
+   wider than a phone. Without its own scroll box it widens the whole
+   document and the page scrolls sideways. */
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+.tbl-scroll>table{margin:0}
+
+/* ------------------------------------------------- overflow guard
+   Nothing may widen the document. Form controls and replaced elements
+   cap at their container; flex/grid children get min-width:0 so they
+   are allowed to shrink below their content width; and the header's
+   right-hand cluster wraps on a phone rather than pushing the page
+   sideways. */
+input,select,textarea,img,svg,video,iframe{max-width:100%}
+.form,.mapwrap,.split__t,.hdr__r,.head-right{min-width:0}
+.form,.mapwrap,.split__t{max-width:100%}
+@media (max-width:820px){
+  .hdr__r,.head-right{flex-wrap:wrap;justify-content:flex-end;row-gap:.4rem}
+}
