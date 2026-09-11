@@ -2,51 +2,56 @@
    Terra Maya - spec mockup stylesheet
    STATUS: LEAD, not signed. Nothing here is deployed or approved.
 
-   THE PALETTE IS A PROPOSAL. No brand file was retrievable: the handle the
-   client supplied sits behind a login wall, and the domain the press and
-   the directories point at - terramayacosmetica.com.br - does not resolve
-   at all. Every colour is marked [CONFIRM against their logo].
+   THE PALETTE IS NOW THE LOGO'S. The client supplied the brand artwork
+   after the first build, and the colours below are sampled off it rather
+   than proposed: an olive green at hue 85 and a terracotta at hue 29.
+   The first pass had guessed a sage/forest green at hue 135 and a duller
+   brown, and both were wrong. What is still [CONFIRM] is whether these
+   are the official brand values or only what survived a JPEG - ask for
+   the vector file and the hex codes.
 
    MEASURED CONTRAST (WCAG 2.2, sRGB relative luminance)
    ---------------------------------------------------------------------
-   ink     #231F1B on areia #F6F1E7  14.54  AA
-   ink     #231F1B on papel #FDFBF7  15.83  AA
-   folha   #2E3B30 on areia          10.45  AA
-   areia / papel on folha    10.45 / 11.39  AA
-   musgo   #5E7355 on areia           4.60  AA   (text-safe on light)
-   musgo   #5E7355 on folha           2.27  FAIL (never on the dark band)
-   barro   #9A5E3A fill, areia text   4.62  AA   <- the CTA
-   barro-ink #834C2B on areia         6.15  AA   (clay-family TEXT)
-   ouro    #C9973F on areia           2.34  FAIL (hairlines only, never text)
-   ouro    #C9973F on folha           4.47  large only
-   ouro-ink #7E611F on areia          5.16  AA   (honey-family TEXT)
+   ink       #231F1B on areia #F6F1E7  14.54  AA
+   ink       #231F1B on papel #FDFBF7  15.83  AA
+   folha     #2A3612 on areia          11.41  AA   <- the logo green
+   areia / papel on folha      11.41 / 12.43  AA
+   musgo     #55672D on areia           5.54  AA   (text-safe on light)
+   barro     #9E5A1B fill, areia text   4.74  AA   <- the CTA
+   barro-lit #8A4E17 fill, areia text   5.86  AA   (hover, DARKER)
+   barro-ink #8A4E17 on areia           5.86  AA   (clay-family TEXT)
+   terra     #BA7229 on areia           3.38  FAIL <- the logo terracotta
+   terra     #BA7229 on areia, LARGE    3.38  pass (>=3.0 display only)
+   terra-lit #D89755 on folha           5.19  AA   (clay TEXT on the dark band)
 
-   THE CTA HOVER GOES DARKER HERE, AND THAT IS THE OPPOSITE OF THE LAST
-   THREE BUILDS IN THIS BATCH. The clay accent is already close to the
-   floor: as a fill with cream text, #9A5E3A measures 4.62. Brightening
-   it the usual way drops it straight through - #A06340 is 4.28, below
-   AA - while darkening to #8A5230 climbs to 5.60. So on this palette
-   "buttons brighten" is the wrong instinct and the hover deepens
-   instead. Every accent has to be measured in the direction it is
-   actually going to move.
+   THE BRAND'S OWN TERRACOTTA CANNOT CARRY TEXT. #BA7229 measures 3.38:1
+   on the cream field and 3.38:1 on the olive band - it fails AA on both,
+   and it fails as a button fill in every direction: cream on it 3.38,
+   white on it 3.80. That is not a reason to change the brand colour. It
+   is a reason to give it the roles it can hold - the mark, rules,
+   hairlines, borders, and display type at 24px+ where the 3.0 floor
+   applies - and to darken it to #9E5A1B wherever a word has to sit on it.
 
-   The first clay tried, #B0714A, is unusable as a fill in ANY direction:
-   cream 3.52, white 3.96, ink 4.14, folha 2.97. It is kept nowhere.
+   THE CTA HOVER THEREFORE GOES DARKER, as it did in the first build and
+   for the same reason: #9E5A1B is 4.74 and brightening it back toward the
+   logo colour drops it straight through the floor (#AA6520 is 4.06,
+   #BA7229 is 3.38). Darkening to #8A4E17 climbs to 5.86. Measure the
+   accent in the direction it is actually going to move.
 
    Fonts: Fraunces for display, Karla for text.
    ========================================================================== */
 
 :root{
-  --folha:#2E3B30;       /* deep leaf - dark bands, footer */
-  --folha-2:#1E2921;     /* the dark gradient's second stop */
-  --musgo:#5E7355;       /* moss - text-safe on light, never on the dark band */
+  --folha:#2A3612;       /* logo green - dark bands, footer, headings */
+  --folha-2:#1B240C;     /* the dark gradient's second stop */
+  --musgo:#55672D;       /* mid olive - text-safe on light, never on the dark band */
   --areia:#F6F1E7;       /* page field */
   --papel:#FDFBF7;       /* cards */
-  --barro:#9A5E3A;       /* clay - the CTA fill, cream text 4.62 */
-  --barro-lit:#8A5230;   /* CTA hover: DARKER, 5.60 - see the note above */
-  --barro-ink:#834C2B;   /* clay-family text on light */
-  --ouro:#C9973F;        /* honey - hairlines and rules ONLY, never text */
-  --ouro-ink:#7E611F;    /* honey-family text on light */
+  --barro:#9E5A1B;       /* the CTA fill - cream text 4.74 */
+  --barro-lit:#8A4E17;   /* CTA hover: DARKER, 5.86 - see the note above */
+  --barro-ink:#8A4E17;   /* clay-family text on light */
+  --terra:#BA7229;       /* THE LOGO TERRACOTTA - mark, rules, display. Never text. */
+  --terra-lit:#D89755;   /* clay text on the dark band, 5.19 */
   --ink:#231F1B;         /* body text */
   --line:rgba(35,31,27,.14);
   --line-dk:rgba(246,241,231,.2);
@@ -86,9 +91,9 @@ section{padding-block:var(--pad)}
 .lede{font-size:clamp(1.02rem,1.5vw,1.18rem);color:rgba(35,31,27,.82);max-width:62ch}
 .small{font-size:.87rem;color:rgba(35,31,27,.66)}
 .eyebrow{font-size:.71rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--ouro-ink);margin:0 0 .7rem}
+  color:var(--barro-ink);margin:0 0 .7rem}
 .rule{height:1px;width:min(220px,40%);border:0;margin:1.4rem 0 0;
-  background:linear-gradient(90deg,#C9973F,rgba(201,151,63,0))}
+  background:linear-gradient(90deg,#BA7229,rgba(186,114,41,0))}
 .skip{position:absolute;left:-9999px;top:0;background:var(--barro);color:var(--areia);
   padding:.8rem 1.2rem;z-index:200;font-weight:700;border-radius:0 0 var(--r) 0}
 .skip:focus{left:0}
@@ -124,11 +129,11 @@ section{padding-block:var(--pad)}
   justify-content:space-between}
 .u-left,.u-right{display:flex;flex-wrap:wrap;gap:.4rem 1.15rem;align-items:center;min-width:0}
 .utility a{color:rgba(246,241,231,.92);text-decoration:none}
-.utility a:hover{color:var(--ouro);text-decoration:underline}
+.utility a:hover{color:var(--terra-lit);text-decoration:underline}
 .langsw{display:inline-flex;border:1px solid var(--line-dk);border-radius:999px;overflow:hidden}
 .langsw a{padding:.14rem .6rem;font-weight:700;letter-spacing:.06em;font-size:.71rem}
-.langsw a.on{background:var(--ouro);color:var(--ink)}
-.langsw a.on:hover{color:var(--ink);text-decoration:none}
+.langsw a.on{background:var(--barro);color:var(--areia)}
+.langsw a.on:hover{color:var(--areia);text-decoration:none}
 
 /* ----------------------------------------------------------------- header */
 .site-head{position:sticky;top:0;z-index:70;background:rgba(246,241,231,.94);
@@ -137,18 +142,18 @@ section{padding-block:var(--pad)}
   transition:padding .25s ease,box-shadow .25s ease,border-color .25s ease,
              background-color .25s ease}
 .site-head.is-stuck{padding-block:.42rem;box-shadow:0 8px 26px rgba(35,31,27,.12);
-  border-bottom-color:rgba(201,151,63,.45);background:rgba(246,241,231,.985)}
+  border-bottom-color:rgba(186,114,41,.45);background:rgba(246,241,231,.985)}
 .head-in{display:flex;align-items:center;gap:1rem;justify-content:space-between}
 .brand{font-family:var(--serif);font-size:1.3rem;color:var(--ink);text-decoration:none;
   line-height:1.02;display:block;letter-spacing:.005em;white-space:nowrap}
 .brand small{display:block;font-family:var(--sans);font-weight:700;font-size:.57rem;
-  letter-spacing:.2em;text-transform:uppercase;color:var(--ouro-ink);margin-top:.22rem}
+  letter-spacing:.2em;text-transform:uppercase;color:var(--barro-ink);margin-top:.22rem}
 .site-nav{display:flex;align-items:center;gap:.1rem}
 .site-nav a{color:var(--ink);text-decoration:none;font-size:.86rem;font-weight:600;
   padding:.5rem .68rem;border-radius:999px;white-space:nowrap;
   transition:background-color .16s ease}
-.site-nav a:hover{background:rgba(94,115,85,.14);color:var(--ink)}
-.site-nav a[aria-current="page"]{background:rgba(94,115,85,.2);color:var(--ink)}
+.site-nav a:hover{background:rgba(85,103,45,.14);color:var(--ink)}
+.site-nav a[aria-current="page"]{background:rgba(85,103,45,.2);color:var(--ink)}
 .head-cta{display:flex;align-items:center;gap:.5rem;min-width:0}
 .burger{display:none;background:none;border:1.5px solid var(--line);border-radius:10px;
   width:44px;height:44px;cursor:pointer;padding:0;align-items:center;justify-content:center}
@@ -179,42 +184,42 @@ section{padding-block:var(--pad)}
 .hero-media img{width:100%;height:100%;object-fit:cover;opacity:.4;
   transform:scale(1.06);will-change:transform}
 .hero-media::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(100deg,rgba(30,41,33,.95) 0%,rgba(30,41,33,.82) 40%,
-             rgba(46,59,48,.42) 100%),
-             linear-gradient(180deg,rgba(30,41,33,.25) 0%,rgba(30,41,33,.6) 100%)}
+  background:linear-gradient(100deg,rgba(27,36,12,.95) 0%,rgba(27,36,12,.82) 40%,
+             rgba(42,54,18,.42) 100%),
+             linear-gradient(180deg,rgba(27,36,12,.25) 0%,rgba(27,36,12,.6) 100%)}
 .hero-in{position:relative;z-index:2;max-width:46rem}
 .hero h1{color:var(--areia)}
 .hero .lede{color:rgba(246,241,231,.9);max-width:48ch}
-.hero .eyebrow{color:var(--ouro)}
+.hero .eyebrow{color:var(--terra-lit)}
 .hero-cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.9rem}
 .hero-note{margin-top:1.8rem;font-size:.81rem;color:rgba(246,241,231,.72);max-width:56ch}
 
 /* -------------------------------------------------------------- page head */
-.page-head{background:var(--papel);border-bottom:1px solid rgba(201,151,63,.4);
+.page-head{background:var(--papel);border-bottom:1px solid rgba(186,114,41,.4);
   padding-block:clamp(2.4rem,6vw,4.4rem)}
 .page-head .lede{max-width:58ch}
 .crumb{font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;
-  color:var(--ouro-ink);margin:0 0 .6rem}
+  color:var(--barro-ink);margin:0 0 .6rem}
 .crumb a{color:inherit;text-decoration:none}
 .crumb a:hover{text-decoration:underline}
 
 /* ------------------------------------------------------------------ bands */
-.band-folha{background:linear-gradient(160deg,#2E3B30 0%,#1E2921 100%);color:var(--areia)}
+.band-folha{background:linear-gradient(160deg,#2A3612 0%,#1B240C 100%);color:var(--areia)}
 .band-folha h2,.band-folha h3,.band-folha h4{color:var(--areia)}
 .band-folha .lede{color:rgba(246,241,231,.88)}
-.band-folha .eyebrow{color:var(--ouro)}
+.band-folha .eyebrow{color:var(--terra-lit)}
 .band-folha .small{color:rgba(246,241,231,.72)}
-.band-folha a{color:var(--ouro)}
+.band-folha a{color:var(--terra-lit)}
 .band-papel{background:var(--papel)}
 .band-photo{position:relative;color:var(--areia);overflow:hidden}
 .band-photo>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
   z-index:0;opacity:.34}
 .band-photo::before{content:"";position:absolute;inset:0;z-index:1;
-  background:linear-gradient(150deg,rgba(30,41,33,.94) 8%,rgba(46,59,48,.86) 100%)}
+  background:linear-gradient(150deg,rgba(27,36,12,.94) 8%,rgba(42,54,18,.86) 100%)}
 .band-photo>.wide,.band-photo>.wrap{position:relative;z-index:2}
 .band-photo h2,.band-photo h3{color:var(--areia)}
 .band-photo .lede{color:rgba(246,241,231,.88)}
-.band-photo .eyebrow{color:var(--ouro)}
+.band-photo .eyebrow{color:var(--terra-lit)}
 
 /* ------------------------------------------------------------------ cards */
 .grid{display:grid;gap:1.2rem}
@@ -232,11 +237,11 @@ section{padding-block:var(--pad)}
 .card p{margin:.45rem 0 0;font-size:.9rem;color:rgba(35,31,27,.78)}
 .card .num{font-family:var(--serif);font-size:1.9rem;color:var(--barro-ink);line-height:1;
   display:block;margin-bottom:.5rem}
-.card-folha{background:rgba(246,241,231,.07);border-color:rgba(201,151,63,.4);
+.card-folha{background:rgba(246,241,231,.07);border-color:rgba(186,114,41,.4);
   color:var(--areia)}
 .card-folha h3{color:var(--areia)}
 .card-folha p{color:rgba(246,241,231,.86)}
-.card-folha .num{color:var(--ouro)}
+.card-folha .num{color:var(--terra-lit)}
 .split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.6rem,4vw,3.2rem);
   align-items:center}
 .split.top{align-items:start}
@@ -257,7 +262,7 @@ figure{margin:0}
 .cap{font-size:.76rem;color:rgba(35,31,27,.62);margin:.55rem 0 0;line-height:1.45}
 .band-folha .cap,.band-photo .cap{color:rgba(246,241,231,.68)}
 .ph{position:absolute;left:.6rem;top:.6rem;z-index:3;font-size:.6rem;font-weight:700;
-  letter-spacing:.09em;text-transform:uppercase;background:rgba(30,41,33,.85);
+  letter-spacing:.09em;text-transform:uppercase;background:rgba(27,36,12,.85);
   color:var(--areia);padding:.22rem .55rem;border-radius:6px}
 
 /* ------------------------------------------------------- product category */
@@ -274,7 +279,7 @@ figure{margin:0}
 .cat h3{font-size:1.02rem}
 .cat p{font-size:.85rem;margin:.4rem 0 0;color:rgba(35,31,27,.76);flex:1 1 auto}
 .cat .n{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--ouro-ink);display:block;margin-bottom:.3rem}
+  color:var(--barro-ink);display:block;margin-bottom:.3rem}
 
 /* --------------------------------------------------------- claim chips */
 /* "Organico", "vegano", "cruelty free" and "natural" are regulated claims,
@@ -282,36 +287,36 @@ figure{margin:0}
    reads as certified until the certificate exists. */
 .claims{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
 .claim{display:inline-flex;align-items:center;gap:.45rem;font-size:.78rem;font-weight:700;
-  padding:.34rem .8rem;border-radius:999px;border:1.5px solid rgba(154,94,58,.4);
-  color:var(--barro-ink);background:rgba(154,94,58,.08)}
-.band-folha .claim,.band-photo .claim{color:#F0D49E;border-color:rgba(201,151,63,.5);
-  background:rgba(201,151,63,.14)}
+  padding:.34rem .8rem;border-radius:999px;border:1.5px solid rgba(158,90,27,.4);
+  color:var(--barro-ink);background:rgba(158,90,27,.08)}
+.band-folha .claim,.band-photo .claim{color:#D89755;border-color:rgba(186,114,41,.5);
+  background:rgba(186,114,41,.14)}
 .claim .q{font-weight:700;opacity:.9}
 
 /* ------------------------------------------------------------ confirm ink */
-.cfm{font-weight:700;color:var(--barro-ink);background:rgba(154,94,58,.13);
+.cfm{font-weight:700;color:var(--barro-ink);background:rgba(158,90,27,.13);
   padding:.05em .42em;border-radius:5px;font-size:.94em;
   white-space:normal;overflow-wrap:anywhere}
-.band-folha .cfm,.band-photo .cfm{color:#F0D49E;background:rgba(201,151,63,.2)}
-.cfm-block{border-left:3px solid var(--ouro);background:rgba(201,151,63,.12);
+.band-folha .cfm,.band-photo .cfm{color:#D89755;background:rgba(186,114,41,.2)}
+.cfm-block{border-left:3px solid var(--terra);background:rgba(186,114,41,.12);
   padding:1rem 1.15rem;border-radius:0 var(--r) var(--r) 0;font-size:.89rem;
   margin:1.3rem 0 0;color:rgba(35,31,27,.86)}
 .cfm-block p{margin:.4rem 0}
 .cfm-block p:first-child{margin-top:0}
-.band-folha .cfm-block,.band-photo .cfm-block{background:rgba(201,151,63,.15);
+.band-folha .cfm-block,.band-photo .cfm-block{background:rgba(186,114,41,.15);
   color:rgba(246,241,231,.92)}
-.warn-block{border:1px solid rgba(154,94,58,.32);background:rgba(154,94,58,.07);
+.warn-block{border:1px solid rgba(158,90,27,.32);background:rgba(158,90,27,.07);
   padding:1.05rem 1.2rem;border-radius:var(--r);font-size:.88rem;margin:1.3rem 0 0}
 .warn-block b{color:var(--barro-ink)}
 .band-folha .warn-block,.band-photo .warn-block{border-color:var(--line-dk);
   background:rgba(246,241,231,.07);color:rgba(246,241,231,.9)}
-.band-folha .warn-block b,.band-photo .warn-block b{color:var(--ouro)}
+.band-folha .warn-block b,.band-photo .warn-block b{color:var(--terra-lit)}
 
 /* ----------------------------------------------------------------- lists */
 .ticks{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:.55rem}
 .ticks li{position:relative;padding-left:1.55rem;font-size:.93rem}
 .ticks li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;
-  border-radius:1px;background:var(--ouro);transform:rotate(45deg)}
+  border-radius:1px;background:var(--terra);transform:rotate(45deg)}
 .band-folha .ticks li{color:rgba(246,241,231,.88)}
 .hours{width:100%;border-collapse:collapse;font-size:.9rem;margin-top:1rem}
 .hours th,.hours td{text-align:left;padding:.6rem .2rem;
@@ -323,7 +328,7 @@ figure{margin:0}
 .form-card{background:var(--papel);border:1px solid var(--line);border-radius:var(--r-lg);
   padding:clamp(1.3rem,3vw,2rem)}
 .band-folha .form-card,.band-photo .form-card{background:rgba(246,241,231,.07);
-  border-color:rgba(201,151,63,.4)}
+  border-color:rgba(186,114,41,.4)}
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
 @media (max-width:620px){.form-grid{grid-template-columns:1fr}}
 .field{display:flex;flex-direction:column;gap:.3rem;min-width:0}
@@ -335,7 +340,7 @@ input,select,textarea{font-family:var(--sans);font-size:.95rem;padding:.72rem .8
   width:100%;max-width:100%}
 textarea{resize:vertical;min-height:6.5rem}
 input:focus,select:focus,textarea:focus{border-color:var(--barro);outline:none;
-  box-shadow:0 0 0 3px rgba(154,94,58,.22)}
+  box-shadow:0 0 0 3px rgba(158,90,27,.22)}
 .consent{display:flex;gap:.65rem;align-items:flex-start;margin-top:1.05rem;
   font-size:.82rem;font-weight:400;line-height:1.5}
 .consent input{width:18px;height:18px;flex:0 0 auto;margin-top:.15rem;accent-color:var(--musgo)}
@@ -359,21 +364,21 @@ details p{padding:0 1.1rem 1.1rem;margin:0;font-size:.92rem;color:rgba(35,31,27,
 .tbl-scroll>table{margin:0}
 
 /* ---------------------------------------------------------------- footer */
-.site-foot{background:linear-gradient(160deg,#2E3B30 0%,#1E2921 100%);
+.site-foot{background:linear-gradient(160deg,#2A3612 0%,#1B240C 100%);
   color:rgba(246,241,231,.86);padding-block:3.2rem 2rem;font-size:.89rem}
 .site-foot .brand{color:var(--areia)}
-.site-foot .brand small{color:var(--ouro)}
+.site-foot .brand small{color:var(--terra-lit)}
 .site-foot h4{font-family:var(--sans);font-size:.7rem;letter-spacing:.18em;
-  text-transform:uppercase;margin:0 0 .7rem;color:var(--ouro)}
+  text-transform:uppercase;margin:0 0 .7rem;color:var(--terra-lit)}
 .foot-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6rem;margin-top:2.1rem;
-  padding-top:1.9rem;border-top:1px solid rgba(201,151,63,.4)}
+  padding-top:1.9rem;border-top:1px solid rgba(186,114,41,.4)}
 @media (max-width:900px){.foot-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:520px){.foot-grid{grid-template-columns:1fr}}
 .foot-grid>*{min-width:0}
 .foot-grid ul{list-style:none;padding:0;margin:0;display:grid;gap:.42rem}
 .site-foot a{color:rgba(246,241,231,.88);text-decoration:none}
-.site-foot a:hover{color:var(--ouro);text-decoration:underline}
-.foot-legal{margin-top:1.9rem;padding-top:1.3rem;border-top:1px solid rgba(201,151,63,.4);
+.site-foot a:hover{color:var(--terra-lit);text-decoration:underline}
+.foot-legal{margin-top:1.9rem;padding-top:1.3rem;border-top:1px solid rgba(186,114,41,.4);
   font-size:.78rem;color:rgba(246,241,231,.62);display:flex;flex-wrap:wrap;
   gap:.5rem 1.2rem;justify-content:space-between}
 .foot-note{font-size:.78rem;color:rgba(246,241,231,.6);margin-top:.95rem;max-width:78ch}
@@ -381,14 +386,14 @@ details p{padding:0 1.1rem 1.1rem;margin:0;font-size:.92rem;color:rgba(35,31,27,
 /* ------------------------------------------------------------ sticky CTAs */
 .wa-float{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:90;
   width:56px;height:56px;border-radius:999px;background:#3F9D6B;display:grid;place-items:center;
-  box-shadow:0 10px 26px rgba(30,41,33,.38);transition:transform .2s ease}
+  box-shadow:0 10px 26px rgba(27,36,12,.38);transition:transform .2s ease}
 .wa-float:hover{transform:scale(1.07)}
 .wa-float svg{width:30px;height:30px;fill:#0B2E17}
 @media (max-width:767px){.wa-float{bottom:calc(70px + env(safe-area-inset-bottom))}}
 .mobile-bar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:88;height:56px;
   padding-bottom:env(safe-area-inset-bottom);
-  background:linear-gradient(160deg,#2E3B30 0%,#1E2921 100%);
-  box-shadow:0 -6px 24px rgba(30,41,33,.34)}
+  background:linear-gradient(160deg,#2A3612 0%,#1B240C 100%);
+  box-shadow:0 -6px 24px rgba(27,36,12,.34)}
 .mobile-bar .in{display:grid;grid-template-columns:1fr 1fr;height:56px}
 .mobile-bar a{display:flex;align-items:center;justify-content:center;gap:.4rem;
   color:var(--areia);text-decoration:none;font-weight:700;font-size:.88rem}
@@ -397,7 +402,7 @@ details p{padding:0 1.1rem 1.1rem;margin:0;font-size:.92rem;color:rgba(35,31,27,
 
 /* -------------------------------------------------------------- LGPD bar */
 .lgpd{position:fixed;left:0;right:0;bottom:0;z-index:120;background:var(--papel);
-  border-top:2px solid var(--ouro);box-shadow:0 -12px 40px rgba(30,41,33,.26);
+  border-top:2px solid var(--terra);box-shadow:0 -12px 40px rgba(27,36,12,.26);
   padding:1.2rem 0 calc(1.2rem + env(safe-area-inset-bottom));
   transform:translateY(102%);transition:transform .34s cubic-bezier(.22,.9,.3,1)}
 .lgpd.is-open{transform:translateY(0)}
@@ -428,3 +433,34 @@ details p{padding:0 1.1rem 1.1rem;margin:0;font-size:.92rem;color:rgba(35,31,27,
 
 /* ------------------------------------------------- overflow guard */
 input,select,textarea,img,svg,video,iframe{max-width:100%}
+
+/* ------------------------------------------------------------ brand mark
+   The client supplied the logo after the first build, so the header is no
+   longer a typographic stand-in. logo.png is their own artwork, cut out of
+   the JPEG they sent: the flat white field was lifted to alpha and the
+   result trimmed to the ink. Nothing was redrawn or recoloured.
+   [CONFIRM] ask for the vector original before any of this goes live. */
+.brand{display:flex;align-items:center;gap:.72rem}
+.brand-mark{width:auto;height:46px;flex:0 0 auto}
+.site-head.is-stuck .brand-mark{height:36px}
+.brand-mark,.site-head.is-stuck .brand-mark{transition:height .25s ease}
+.brand-txt{display:block;min-width:0}
+/* The wordmark lives inside the artwork, so the text beside it is only the
+   descriptor - hidden from screen readers would lose the name, so the link
+   carries it instead. */
+.site-foot .brand-mark{height:54px}
+@media (max-width:420px){.brand-mark{height:34px}.brand-txt{display:none}}
+
+/* ------------------------------------------- offcanvas-visibility-guard
+   backdrop-filter on the sticky header makes the header the containing
+   block for its position:fixed children, so this panel's top:0 is the
+   header's top edge and not the viewport's. translateY(-102%) therefore
+   leaves its bottom edge inside the screen at scroll 0. Visibility takes
+   it out of the render tree while closed; the delay lets the slide finish
+   before it disappears. */
+@media (max-width:1080px){
+  .site-nav{visibility:hidden;transition:transform .32s cubic-bezier(.22,.9,.3,1),
+    visibility 0s linear .32s}
+  .site-nav.is-open{visibility:visible;transition:transform .32s cubic-bezier(.22,.9,.3,1),
+    visibility 0s}
+}
