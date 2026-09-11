@@ -233,7 +233,10 @@ section{padding-block:clamp(2.8rem,7vw,5.2rem)}
 /* ---------- hero: the week ahead, not a single plate ---------- */
 .hero{position:relative;overflow:hidden;background:var(--barro)}
 .hero-media{position:relative}
-.hero-media img{width:100%;aspect-ratio:21/9;object-fit:cover}
+.hero-media img{width:100%;aspect-ratio:21/9;object-fit:cover;
+  max-height:min(52vh,520px)}   /* aspect-ratio alone follows the
+     window WIDTH, so at 1440 this banner was 617px tall and pushed
+     the h1 to y=889 - below a 900px fold */
 .hero-in{padding-block:clamp(2.2rem,6vw,3.8rem)}
 .hero h1{max-width:17ch;margin-bottom:.9rem}
 .hero .lede{max-width:52ch}
