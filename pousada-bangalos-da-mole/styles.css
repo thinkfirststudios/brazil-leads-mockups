@@ -71,7 +71,7 @@
   --grad-cta:linear-gradient(135deg,#E2664F 0%,#C24A36 100%);
   --grad-dark:linear-gradient(180deg,#33444F 0%,#212D35 100%);
   --grad-off:linear-gradient(180deg,#FFFFFF 0%,#F6F4F0 100%);
-  --scrim:linear-gradient(0deg,rgba(27,34,41,.96) 0%,rgba(27,34,41,.9) 34%,rgba(27,34,41,.62) 56%,rgba(27,34,41,.2) 74%,rgba(27,34,41,0) 88%);
+  --scrim:linear-gradient(0deg,rgba(27,34,41,.95) 0%,rgba(27,34,41,.88) 38%,rgba(27,34,41,.72) 62%,rgba(27,34,41,.58) 82%,rgba(27,34,41,.5) 100%);
 
   --disp:"Archivo","Barlow","Helvetica Neue",Arial,sans-serif;
   --sans:"Barlow","Inter","Helvetica Neue",Arial,system-ui,sans-serif;
