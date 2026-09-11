@@ -613,3 +613,21 @@ input,select,textarea,img,svg,video,iframe{max-width:100%}
   .fav-lbl{position:absolute;width:1px;height:1px;overflow:hidden;
     clip-path:inset(50%);white-space:nowrap}
 }
+
+/* ------------------------------------------- legal-header-layout
+   The LGPD privacy page is generated from a shared template and uses
+   .hdr__cta for its header cluster. Most stylesheets in this batch define
+   .hdr__r or .head-cta instead, so on those sites the cluster had no
+   layout at all - block flow, and on a long brand name it ran off the
+   screen. This defines it, keeps the back-link on one line, and lets the
+   row wrap before anything overflows. */
+.hdr__cta,.head-cta{display:flex;align-items:center;gap:.6rem;
+  flex-wrap:wrap;justify-content:flex-end;min-width:0;max-width:100%}
+.hdr__cta .btn,.head-cta .btn{white-space:nowrap}
+.hdr__cta .lang,.head-cta .lang{display:inline-flex;gap:.35rem;flex:0 0 auto}
+@media (max-width:560px){
+  .hdr__in,.head-in{flex-wrap:wrap;row-gap:.55rem}
+  .hdr__in>.brand,.head-in>.brand{min-width:0;max-width:100%}
+  .brand__n{white-space:normal;overflow-wrap:anywhere}
+  .hdr__cta,.head-cta{width:100%;justify-content:flex-start}
+}
