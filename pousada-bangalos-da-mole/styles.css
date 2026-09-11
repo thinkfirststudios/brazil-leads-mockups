@@ -71,7 +71,7 @@
   --grad-cta:linear-gradient(135deg,#E2664F 0%,#C24A36 100%);
   --grad-dark:linear-gradient(180deg,#33444F 0%,#212D35 100%);
   --grad-off:linear-gradient(180deg,#FFFFFF 0%,#F6F4F0 100%);
-  --scrim:linear-gradient(0deg,rgba(27,34,41,.94) 0%,rgba(27,34,41,.55) 40%,rgba(27,34,41,0) 62%);
+  --scrim:linear-gradient(0deg,rgba(27,34,41,.96) 0%,rgba(27,34,41,.9) 34%,rgba(27,34,41,.62) 56%,rgba(27,34,41,.2) 74%,rgba(27,34,41,0) 88%);
 
   --disp:"Archivo","Barlow","Helvetica Neue",Arial,sans-serif;
   --sans:"Barlow","Inter","Helvetica Neue",Arial,system-ui,sans-serif;
@@ -207,13 +207,17 @@ a{color:var(--glass-deep);text-underline-offset:3px}
 .hero{position:relative;display:grid;grid-template-columns:1fr;background:var(--ink)}
 @media (min-width:880px){.hero{grid-template-columns:1fr 1fr}}
 .hero__pane{position:relative;min-height:46svh;overflow:hidden}
-@media (min-width:880px){.hero__pane{min-height:min(52svh,470px)}}
-/* 78svh made the hero 1045px on a tall window and pushed the copy
-   band, and its headline, off the first screen entirely */
+@media (min-width:880px){.hero__pane{min-height:min(72svh,640px)}}
 .hero__pane img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero__pane::after{content:"";position:absolute;inset:0;background:var(--scrim)}
 .hero__in{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:clamp(26px,4vw,54px);
   color:#fff}
+/* The copy carries its own ground. The pane gradient is anchored to the
+   pane's height, so a long headline lifts the lede to where that gradient
+   has faded and the sunlit pool comes through at 2.92:1. */
+.hero__in::before{content:"";position:absolute;inset:-40px -6vw 0 -6vw;z-index:-1;
+  background:linear-gradient(0deg,rgba(27,34,41,.94) 0%,rgba(27,34,41,.9) 58%,
+             rgba(27,34,41,.72) 82%,rgba(27,34,41,0) 100%);pointer-events:none}
 @media (min-width:880px){
   .hero__in{left:50%;transform:translateX(-50%);width:min(940px,92vw);text-align:center}
   .hero__pane .hero__in{position:static;transform:none;width:auto;text-align:left}
@@ -505,10 +509,3 @@ input,select,textarea,img,svg,video,iframe{max-width:100%}
   .hdr__cta,.head-cta{width:100%;justify-content:flex-start}
 }
 
-/* ------------------------------------------- hero-band-buttons
-   .hero__band is outside .hero, so the dark-surface button rules never
-   reached it and .btn--out kept its light-theme ink: #33444F on a
-   #1B2229 band is 1.59:1. */
-.hero__band .btn--out{color:#fff;border-color:rgba(255,255,255,.55)}
-.hero__band .btn--out:hover{background:rgba(255,255,255,.12);color:#fff;
-  border-color:rgba(255,255,255,.8)}
