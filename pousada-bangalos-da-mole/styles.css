@@ -222,7 +222,8 @@ a{color:var(--glass-deep);text-underline-offset:3px}
 @media (min-width:880px){.hero__acts{justify-content:center}}
 .hero__band{position:relative;z-index:4;background:var(--ink);padding:clamp(26px,4vw,52px) 0;
   text-align:center}
-.hero__band h1{margin-inline:auto}
+.hero__band h1{margin-inline:auto;color:#fff}   /* the band is var(--ink); without this the h1 inherits the
+     default dark heading ink and measures 1.59:1 on it */
 .hero__band p{margin-inline:auto}
 .hero__band .hero__acts{justify-content:center}
 
