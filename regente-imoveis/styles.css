@@ -602,3 +602,14 @@ input,select,textarea,img,svg,video,iframe{max-width:100%}
 @media (max-width:820px){
   .hdr__r,.head-right{flex-wrap:wrap;justify-content:flex-end;row-gap:.4rem}
 }
+
+/* ------------------------------------------- fav-label-phone
+   The saved-listings control is a real feature, not a CTA, so it is
+   shortened rather than hidden: at 390px "Favoritos" wrapped the button
+   onto a second line inside a 174px cluster. Below 560px the word goes
+   and the heart and the count stay, which is what the control is for. */
+.fav-btn{white-space:nowrap}
+@media (max-width:560px){
+  .fav-lbl{position:absolute;width:1px;height:1px;overflow:hidden;
+    clip-path:inset(50%);white-space:nowrap}
+}

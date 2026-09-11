@@ -480,3 +480,31 @@ input,select,textarea,img,svg,video,iframe{max-width:100%}
   .nav.is-open{visibility:visible;transition:transform .32s cubic-bezier(.22,.9,.3,1),
     visibility 0s}
 }
+
+/* ------------------------------------------- nav-fits-its-breakpoint
+   The nav measures 1201px and the burger did not appear until 1120px, so
+   every viewport between them showed a nav that could not fit: its last
+   link sat at 1390..1440, hard against the right edge of a 1440 screen.
+   Tightened, and the breakpoint raised to a width where it genuinely
+   fits rather than one where it merely starts to look cramped. */
+@media (max-width:1560px){
+  .group{gap:clamp(7px,.85vw,12px);padding:6px 9px}
+  .nav a{font-size:.75rem}
+}
+@media (max-width:1400px){
+  .nav{display:none}
+  .burger{display:flex}
+}
+
+/* ------------------------------------------- legal-header-wrap
+   The LGPD privacy page uses .hdr__cta where the rest of the site uses
+   .hdr__r, so the phone guard above does not reach it. Its CTA is
+   "Voltar ao site" - with no nav and no burger on that page, it is the
+   only explicit way back - so the row wraps and the brand shrinks rather
+   than the link being hidden. */
+@media (max-width:560px){
+  .hdr__in,.head-in{flex-wrap:wrap;row-gap:.5rem}
+  .hdr__cta,.head-cta{min-width:0;flex-wrap:wrap;justify-content:flex-end}
+  .brand{min-width:0}
+  .brand__n{white-space:normal;overflow-wrap:anywhere}
+}

@@ -500,3 +500,27 @@ input,select,textarea,img,svg,video,iframe{max-width:100%}
 @media (max-width:820px){
   .hdr__r,.head-right{flex-wrap:wrap;justify-content:flex-end;row-gap:.4rem}
 }
+
+/* ------------------------------------------- header-cta-phone-guard
+   .hdr__r is flex:none and the mobile breakpoint hides only the secondary
+   button, so the language switcher + primary text CTA + burger overflow a
+   390px row by 76-112px. The sticky .mbar (below 860px) and the floating
+   WhatsApp button already carry these actions at this width, so the
+   header's text CTAs come out and nothing is lost. */
+@media (max-width:560px){
+  .hdr__r .btn{display:none}
+  .hdr__r{gap:8px}
+}
+
+/* ------------------------------------------- legal-header-wrap
+   The LGPD privacy page uses .hdr__cta where the rest of the site uses
+   .hdr__r, so the phone guard above does not reach it. Its CTA is
+   "Voltar ao site" - with no nav and no burger on that page, it is the
+   only explicit way back - so the row wraps and the brand shrinks rather
+   than the link being hidden. */
+@media (max-width:560px){
+  .hdr__in,.head-in{flex-wrap:wrap;row-gap:.5rem}
+  .hdr__cta,.head-cta{min-width:0;flex-wrap:wrap;justify-content:flex-end}
+  .brand{min-width:0}
+  .brand__n{white-space:normal;overflow-wrap:anywhere}
+}
