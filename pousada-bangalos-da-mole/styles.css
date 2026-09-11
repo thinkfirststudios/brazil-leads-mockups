@@ -222,7 +222,10 @@ a{color:var(--glass-deep);text-underline-offset:3px}
 .hero p{color:#D6D1C8;max-width:46ch;margin:16px 0 0}
 .hero__acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
 @media (min-width:880px){.hero__acts{justify-content:center}}
-.hero__band{position:relative;z-index:4;background:var(--ink);padding:clamp(26px,4vw,52px) 0;
+.hero__band{position:relative;z-index:4;background:var(--ink);
+  padding:clamp(26px,4vw,52px) 0 clamp(84px,9vw,128px);   /* the availability card below is
+     lifted -52px; without this clearance that lift lands on the hero buttons */
+  
   text-align:center}
 .hero__band h1{margin-inline:auto;color:#fff}   /* the band is var(--ink); without this the h1 inherits the
      default dark heading ink and measures 1.59:1 on it */
@@ -501,3 +504,11 @@ input,select,textarea,img,svg,video,iframe{max-width:100%}
   .brand__n{white-space:normal;overflow-wrap:anywhere}
   .hdr__cta,.head-cta{width:100%;justify-content:flex-start}
 }
+
+/* ------------------------------------------- hero-band-buttons
+   .hero__band is outside .hero, so the dark-surface button rules never
+   reached it and .btn--out kept its light-theme ink: #33444F on a
+   #1B2229 band is 1.59:1. */
+.hero__band .btn--out{color:#fff;border-color:rgba(255,255,255,.55)}
+.hero__band .btn--out:hover{background:rgba(255,255,255,.12);color:#fff;
+  border-color:rgba(255,255,255,.8)}
