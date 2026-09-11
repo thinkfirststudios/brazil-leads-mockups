@@ -361,7 +361,7 @@ figure{margin:0}
 .wa{position:fixed;right:16px;bottom:88px;z-index:90;width:56px;height:56px;border-radius:50%;
   background:linear-gradient(135deg,var(--wa) 0%,var(--wa-cta) 100%);display:grid;place-items:center;
   box-shadow:0 8px 24px rgba(27,126,68,.4);transition:transform .22s}
-.wa svg{width:29px;height:29px;fill:#fff}
+.wa svg{width:29px;height:29px;fill:#0B2E17}
 .wa:hover{transform:scale(1.08)}
 @media(min-width:769px){.wa{bottom:22px}}
 .mbar{position:fixed;left:0;right:0;bottom:0;z-index:88;display:grid;grid-template-columns:1fr 1fr;gap:8px;

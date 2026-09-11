@@ -103,7 +103,7 @@ html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;font-family:var(--sans);font-size:1rem;line-height:1.65;color:var(--bone);
   background:var(--black);-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
+img{max-width:100%;display:block;height:auto}
 a{color:var(--first)}
 a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,
 select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{

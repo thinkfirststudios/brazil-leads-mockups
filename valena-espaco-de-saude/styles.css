@@ -97,7 +97,7 @@ html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;font-family:var(--sans);font-size:1rem;line-height:1.68;color:var(--ink);
   background:var(--bone);-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
+img{max-width:100%;display:block;height:auto}
 a{color:var(--terra-ink)}
 a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,
 select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{
@@ -405,7 +405,7 @@ section{padding-block:clamp(2.8rem,7vw,5.4rem)}
   border-radius:50%;background:#25D366;display:inline-flex;align-items:center;justify-content:center;
   box-shadow:0 9px 24px rgba(34,40,42,.28);transition:transform .24s var(--ease)}
 .wa-bubble:hover{transform:scale(1.07)}
-.wa-bubble svg{width:1.9rem;height:1.9rem;fill:#fff}
+.wa-bubble svg{width:1.9rem;height:1.9rem;fill:#0B2E17}
 .wa-bubble[data-unconfirmed]{background:var(--euc-ink)}
 @media (max-width:720px){.wa-bubble{bottom:4.6rem}}
 

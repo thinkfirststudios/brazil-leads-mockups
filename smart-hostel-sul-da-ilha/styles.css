@@ -93,7 +93,7 @@ body{
   margin:0;background:#fff;color:var(--cinza);
   font-family:var(--sans);font-size:17px;line-height:1.6;font-weight:400;overflow-x:hidden;
 }
-img{max-width:100%;display:block}
+img{max-width:100%;display:block;height:auto}
 a{color:var(--teal-ink);text-underline-offset:3px}
 h1,h2,h3,h4{font-family:var(--disp);line-height:1.02;margin:0 0 .5em;font-weight:800;
   letter-spacing:-.03em;color:var(--ink);text-transform:uppercase}

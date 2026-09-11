@@ -88,7 +88,7 @@ body{
   margin:0;background:var(--chalk);color:var(--ink);
   font-family:var(--sans);font-size:17px;line-height:1.7;font-weight:400;overflow-x:hidden;
 }
-img{max-width:100%;display:block}
+img{max-width:100%;display:block;height:auto}
 a{color:var(--clay-ink);text-underline-offset:3px}
 h1,h2,h3,h4{font-family:var(--serif);line-height:1.2;margin:0 0 .5em;font-weight:500;color:var(--ink)}
 h1{font-size:clamp(2.1rem,5.4vw,3.5rem);letter-spacing:.005em}

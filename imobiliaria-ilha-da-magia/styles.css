@@ -424,7 +424,7 @@ figure{margin:0}
 /* ---------- sticky CTAs --------------------------------------------------- */
 .wa{position:fixed;right:16px;bottom:88px;z-index:90;width:56px;height:56px;border-radius:50%;
   background:var(--g-wa);display:grid;place-items:center;box-shadow:0 8px 22px rgba(27,126,68,.42);transition:transform .24s}
-.wa svg{width:29px;height:29px;fill:#fff}
+.wa svg{width:29px;height:29px;fill:#0B2E17}
 .wa:hover{transform:scale(1.08)}
 @media(min-width:769px){.wa{bottom:22px}}
 /* on mobile the floating button hides behind the sticky bar to avoid overlap */

@@ -84,7 +84,7 @@ h1{font-size:clamp(2.6rem,7.2vw,6.1rem)}
 h2{font-size:clamp(2rem,4.6vw,3.6rem)}
 h3{font-size:clamp(1.15rem,2vw,1.5rem);letter-spacing:-.015em}
 p{margin:0 0 1.1em}
-img{max-width:100%;display:block}
+img{max-width:100%;display:block;height:auto}
 a{color:var(--brass-deep);text-decoration-thickness:1px;text-underline-offset:3px}
 
 :focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:2px}
@@ -416,7 +416,7 @@ textarea{min-height:130px;resize:vertical}
   transition:transform .3s var(--ease);
 }
 .wa:hover{transform:scale(1.07)}
-.wa svg{width:28px;height:28px;fill:#fff}
+.wa svg{width:28px;height:28px;fill:#0B2E17}
 .wa[data-unconfirmed]{filter:grayscale(1);opacity:.72}
 
 /* =========================== COOKIE BANNER =============================== */

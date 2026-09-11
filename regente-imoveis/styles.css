@@ -109,7 +109,7 @@ body{
   font-family:var(--sans);font-size:17px;line-height:1.62;font-weight:400;
   overflow-x:hidden;
 }
-img{max-width:100%;display:block}
+img{max-width:100%;display:block;height:auto}
 a{color:var(--rg-blue);text-underline-offset:3px}
 h1,h2,h3,h4{line-height:1.14;margin:0 0 .5em;font-weight:700;letter-spacing:-.02em;color:var(--rg-navy)}
 h1{font-size:clamp(2rem,5.4vw,3.55rem);font-weight:800}

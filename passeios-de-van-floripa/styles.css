@@ -98,7 +98,7 @@ h2{font-size:clamp(1.75rem,3.8vw,3rem)}
 h3{font-size:clamp(1.06rem,1.9vw,1.42rem)}
 h4{font-family:var(--sans);margin:0}
 p{margin:0 0 1.05em}
-img{max-width:100%;display:block}
+img{max-width:100%;display:block;height:auto}
 a{color:var(--navy);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--gold-deep);outline-offset:3px;border-radius:3px}
 
@@ -419,7 +419,7 @@ textarea{min-height:96px;resize:vertical}
   display:grid;place-items:center;box-shadow:0 10px 26px -8px rgba(0,0,0,.5);
   transition:transform .3s var(--ease)}
 .wa:hover{transform:scale(1.08)}
-.wa svg{width:27px;height:27px;fill:#fff}
+.wa svg{width:27px;height:27px;fill:#0B2E17}
 @media (max-width:880px){.wa{bottom:calc(72px + env(safe-area-inset-bottom,0px))}}
 
 /* ── cookie banner ──────────────────────────────────────────────────────── */

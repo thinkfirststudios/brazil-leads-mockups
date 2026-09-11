@@ -88,7 +88,7 @@ h1{font-size:clamp(2.05rem,5.2vw,3.7rem)}
 h2{font-size:clamp(1.6rem,3.3vw,2.45rem)}
 h3{font-size:clamp(1.04rem,1.8vw,1.3rem)}
 p{margin:0 0 1.05em}
-img{max-width:100%;display:block}
+img{max-width:100%;display:block;height:auto}
 a{color:var(--restinga-deep);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--terra-btn);outline-offset:3px;border-radius:4px}
 
@@ -395,7 +395,7 @@ textarea{min-height:104px;resize:vertical}
   display:grid;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.4);
   transition:transform .3s var(--ease)}
 .wa:hover{transform:scale(1.07)}
-.wa svg{width:27px;height:27px;fill:#fff}
+.wa svg{width:27px;height:27px;fill:#0B2E17}
 @media (max-width:768px){.wa{bottom:calc(68px + env(safe-area-inset-bottom,0px))}}
 
 /* =========================== COOKIE BANNER =============================== */
