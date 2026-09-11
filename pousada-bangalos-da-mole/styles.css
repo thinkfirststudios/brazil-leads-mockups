@@ -207,7 +207,9 @@ a{color:var(--glass-deep);text-underline-offset:3px}
 .hero{position:relative;display:grid;grid-template-columns:1fr;background:var(--ink)}
 @media (min-width:880px){.hero{grid-template-columns:1fr 1fr}}
 .hero__pane{position:relative;min-height:46svh;overflow:hidden}
-@media (min-width:880px){.hero__pane{min-height:78svh}}
+@media (min-width:880px){.hero__pane{min-height:min(52svh,470px)}}
+/* 78svh made the hero 1045px on a tall window and pushed the copy
+   band, and its headline, off the first screen entirely */
 .hero__pane img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero__pane::after{content:"";position:absolute;inset:0;background:var(--scrim)}
 .hero__in{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:clamp(26px,4vw,54px);
