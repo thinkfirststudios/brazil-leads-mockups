@@ -7,7 +7,7 @@
    +55-48-84645450 — MALFORMED: Brazilian mobiles carry 9 digits after the area
    code, this has 8. The placeholder below is intentionally non-dialable so
    nothing ever ships pointing at a stranger's phone. */
-const WA_NUMBER = '5548900000000';                 // [CONFIRM]
+const WA_NUMBER = null;   // [CONFIRM] - was '5548900000000', a placeholder, not a number
 const WA = 'https://wa.me/' + WA_NUMBER + '?text=';
 
 const IS_EN = document.documentElement.lang.toLowerCase().startsWith('en');
@@ -158,3 +158,51 @@ document.addEventListener('DOMContentLoaded', () => {
                  behavior: reduce ? 'auto' : 'smooth' });
     }));
 });
+
+
+/* ---------------------------------------------------------------------
+   No confirmed WhatsApp number  [CONFIRM]
+   The placeholder above is not a phone number, and a placeholder still
+   concatenates into a working wa.me URL - which is how this build ended
+   up with a live button pointing at somebody else's line. Until the real
+   number is supplied, nothing dials: every WhatsApp control is inert and
+   says why when it is clicked. Remove this block once WA_NUMBER is real.
+   ------------------------------------------------------------------ */
+(function () {
+  if (typeof WA_NUMBER !== 'undefined' && WA_NUMBER) return;
+  var isEN = (document.documentElement.lang || '').toLowerCase().indexOf('en') === 0;
+  var isES = (document.documentElement.lang || '').toLowerCase().indexOf('es') === 0;
+  var MSG = isEN
+    ? 'No WhatsApp number has been confirmed for this business, so no button '
+      + 'on this mockup dials. Supply the number you actually answer and every '
+      + 'WhatsApp link here starts working.'
+    : (isES
+      ? 'No se ha confirmado ningun numero de WhatsApp, asi que ningun boton '
+        + 'de esta maqueta marca. Indique el numero que realmente atienden y '
+        + 'todos los enlaces de WhatsApp empezaran a funcionar.'
+      : 'Nenhum numero de WhatsApp foi confirmado, entao nenhum botao deste '
+        + 'mockup disca. Informe o numero que voces realmente atendem e todos '
+        + 'os links de WhatsApp passam a funcionar.');
+  function neutralise() {
+    var sel = 'a[href*="wa.me"], a[href*="api.whatsapp"], a[data-wa], '
+            + '.btn--wa, .wa, .wa-float';
+    Array.prototype.forEach.call(document.querySelectorAll(sel), function (a) {
+      if (a.tagName !== 'A') return;
+      a.setAttribute('href', '#');
+      a.removeAttribute('target');
+      a.setAttribute('aria-disabled', 'true');
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        alert(MSG);
+      }, true);
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(neutralise, 0);
+    });
+  } else {
+    setTimeout(neutralise, 0);
+  }
+})();

@@ -66,7 +66,7 @@
 <!-- 1 · Sticky nav — solid near-black at every scroll position -->
 <header class="hdr">
   <div class="wrap hdr__in">
-    <a class="brand" href="../index.html">kair<span>ú</span></a>
+    <a class="brand" href="index.html">kair<span>ú</span></a>
     <nav class="nav" aria-label="main navigation"><a href="#cardapio">menu</a><a href="#pedir">order</a><a href="#sobre">about</a><a href="#onde">find us</a><a href="#contato">contact</a></nav>
     <div class="hdr__r">
       <span class="langs">
@@ -173,12 +173,12 @@
     </div>
     <form id="comboForm" data-rv>
       <div class="combo">
-        <div><b>01</b><h3>burger</h3>
-          <select id="c-burger"><option>[CONFIRM]</option></select></div>
-        <div><b>02</b><h3>side</h3>
-          <select id="c-side"><option>[CONFIRM]</option></select></div>
-        <div><b>03</b><h3>drink</h3>
-          <select id="c-drink"><option>[CONFIRM]</option></select></div>
+        <div><b>01</b><h3 id="lbl-c-burger">burger</h3>
+          <select id="c-burger" aria-labelledby="lbl-c-burger"><option>[CONFIRM]</option></select></div>
+        <div><b>02</b><h3 id="lbl-c-side">side</h3>
+          <select id="c-side" aria-labelledby="lbl-c-side"><option>[CONFIRM]</option></select></div>
+        <div><b>03</b><h3 id="lbl-c-drink">drink</h3>
+          <select id="c-drink" aria-labelledby="lbl-c-drink"><option>[CONFIRM]</option></select></div>
       </div>
       <div class="btn-row">
         <button class="btn btn--wa" type="submit">Send my combo on WhatsApp <span class="ar">&rarr;</span></button>
@@ -254,7 +254,7 @@
 </section>
 
 <!-- 9 + 10 · Sobre + edição limitada -->
-<section class="sec sec--light">
+<section id="sobre" class="sec sec--light">
   <div class="wrap">
     <div class="split split--top">
       <div data-rv>
