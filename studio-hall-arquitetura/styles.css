@@ -226,7 +226,7 @@ section{padding-block:clamp(3.6rem,9vw,7.5rem)}
 .hero-scrim{position:absolute;inset:0;z-index:1;background:var(--g-scrim)}
 .hero-glow{position:absolute;inset:0;z-index:1;background:var(--g-glow);
   animation:drift 26s ease-in-out infinite alternate}
-.hero-in{position:relative;z-index:2;width:100%;padding-block:0 clamp(3rem,10vw,6.5rem)}
+.hero-in{position:relative;z-index:2;padding-block:0 clamp(3rem,10vw,6.5rem)}
 .hero h1{color:var(--white);max-width:14ch;margin-bottom:1.3rem}
 .hero .lede{color:rgba(255,255,255,.94);max-width:48ch}
 .hero-cta{display:flex;align-items:center;gap:1.6rem;flex-wrap:wrap;margin-top:2.2rem}
