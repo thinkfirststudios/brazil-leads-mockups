@@ -409,8 +409,19 @@ details.qa .a p:last-child{margin:0}
 
 /* header WA pills + track chip */
 .hdr-pills{display:flex;gap:.4rem}
-.btn-wa-sand{background:var(--wa);color:var(--wa-ink);box-shadow:inset 0 -3px 0 var(--sand)}
-.btn-wa-teal{background:var(--wa);color:var(--wa-ink);box-shadow:inset 0 -3px 0 var(--teal-deep)}
+/* One WhatsApp control with two destinations (Compra / Locação), not two
+   identical green buttons. The green glyph carries the WhatsApp affordance;
+   each track keeps its own colour — teal for Compra, sand for Locação — so
+   the two doors stay distinguishable at a glance. */
+.hdr-pills{display:inline-flex;align-items:center;gap:0;border:1.5px solid var(--line);border-radius:99px;padding:3px;background:#fff}
+.hdr-pills .wa-mark{display:grid;place-items:center;width:26px;height:26px;margin:0 .35rem 0 .2rem;border-radius:50%;background:var(--wa);color:#fff;flex:none}
+.hdr-pills .wa-mark svg{width:16px;height:16px}
+.btn-wa-teal,.btn-wa-sand{border-radius:99px;box-shadow:none}
+.btn-wa-teal{background:var(--teal-deep);color:#fff}
+.btn-wa-teal:hover{background:var(--teal);color:#fff}
+.btn-wa-sand{background:var(--sand);color:#3A2B08}
+.btn-wa-sand:hover{filter:brightness(1.06);color:#3A2B08}
+.hdr-pills .btn svg{display:none}
 .track-chip{display:none;align-items:center;gap:.4rem;font-size:.8rem;font-weight:700;border-radius:99px;padding:.25rem .3rem .25rem .75rem;background:var(--pale);color:var(--teal-deep)}
 .track-chip.on{display:inline-flex}
 [data-track="locacao"] .track-chip{background:#F5E6C4;color:var(--doc-ink)}
