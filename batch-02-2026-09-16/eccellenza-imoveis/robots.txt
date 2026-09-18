@@ -1,0 +1,5 @@
+# MOCKUP. Production: per-language sitemaps; decide which filter combinations are indexable (others noindex + canonical).
+User-agent: *
+Disallow: /*?*
+Allow: /
+Sitemap: https://eccellenzaimoveis.com.br/sitemap.xml

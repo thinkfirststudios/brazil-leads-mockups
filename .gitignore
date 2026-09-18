@@ -1,8 +1,11 @@
-# ── list-building scratch, not part of the deliverable ──────────────────────
+# â”€â”€ list-building scratch, not part of the deliverable â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 MOVE-84-FROM-HOT.ps1
 PASTE-THIS-84-BRAZIL-LEADS.txt
+PASTE-THIS-91-CASSIUS-BATCH-2.txt
+2026-09-15-CASSIUS-BATCH-2-INDEX.md
+MOCKUP-LINKS-old-paths.txt
 
-# ── OneDrive / Windows / macOS noise ────────────────────────────────────────
+# â”€â”€ OneDrive / Windows / macOS noise â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # This working copy lives inside OneDrive, which likes to leave artefacts around.
 desktop.ini
 Thumbs.db
@@ -13,7 +16,7 @@ ehthumbs.db
 .Spotlight-V100
 .Trashes
 
-# ── editor / tooling ────────────────────────────────────────────────────────
+# â”€â”€ editor / tooling â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 .vscode/
 .idea/
 *.swp
@@ -23,11 +26,11 @@ __pycache__/
 .venv/
 node_modules/
 
-# ── local previews ──────────────────────────────────────────────────────────
+# â”€â”€ local previews â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 .cache/
 *.log
 
-# ── internal only — never goes to a public remote ───────────────────────────
+# â”€â”€ internal only â€” never goes to a public remote â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Contact details, decision-maker names, candid critiques of prospects and the
 # pitch angle. These stay on disk and out of git.
 PROMPT.md

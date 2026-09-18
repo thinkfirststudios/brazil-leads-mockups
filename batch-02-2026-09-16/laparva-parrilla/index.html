@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<title>Laparva Parrilla — Parrilla no Porto da Lagoa, Florianópolis</title>
+<!-- [CONFIRM name styling ("Laparva" vs "La Parva") and tradition] before this title ships -->
+<meta name="description" content="Laparva Parrilla — parrilla no Porto da Lagoa, Florianópolis. Reserve sua mesa, veja o cardápio, grupos e eventos, horários e como chegar. (Mockup — conteúdo provisório.)">
+<meta name="robots" content="noindex, nofollow">
+<!-- Domain not registered yet: [CONFIRM preferred domain]. ".example" is a reserved placeholder host. -->
+<link rel="canonical" href="https://laparvaparrilla.example/">
+<link rel="alternate" hreflang="pt-BR" href="https://laparvaparrilla.example/">
+<link rel="alternate" hreflang="es" href="https://laparvaparrilla.example/es/">
+<link rel="alternate" hreflang="en" href="https://laparvaparrilla.example/en/">
+<link rel="alternate" hreflang="x-default" href="https://laparvaparrilla.example/">
+<meta property="og:type" content="restaurant">
+<meta property="og:site_name" content="Laparva Parrilla">
+<meta property="og:title" content="Laparva Parrilla — Parrilla no Porto da Lagoa, Florianópolis">
+<meta property="og:description" content="Parrilla no Porto da Lagoa, Florianópolis. Reservas, cardápio, grupos e eventos.">
+<meta property="og:url" content="https://laparvaparrilla.example/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="es_UY">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:image" content="https://images.unsplash.com/photo-1527324688151-0e627063f2b1?auto=format&fit=crop&w=1200&h=630&q=70">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#7A2E28">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!-- JSON-LD: telephone is verified (+55 48 3030-5353). address + geo OMITTED until 3198 vs 3228 (Rua vs Av.) is resolved.
+     openingHoursSpecification omitted until confirmed. servesCuisine "Uruguaia"/"Argentina" held back pending [CONFIRM tradition].
+     priceRange [CONFIRM] omitted. No rating markup: review count must be live-sourced, never hardcoded. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Laparva Parrilla",
+  "url": "https://laparvaparrilla.example/",
+  "image": "https://images.unsplash.com/photo-1527324688151-0e627063f2b1?auto=format&fit=crop&w=1200&q=70",
+  "telephone": "+55 48 3030-5353",
+  "servesCuisine": ["Parrilla", "Churrasco"],
+  "acceptsReservations": true,
+  "hasMenu": "https://laparvaparrilla.example/#cardapio",
+  "menu": "https://laparvaparrilla.example/#cardapio",
+  "sameAs": ["https://www.instagram.com/laparvaparrilla/"],
+  "inLanguage": "pt-BR"
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<div class="mock-ribbon" role="note">MOCKUP — conteúdo provisório · fotos ilustrativas · itens [CONFIRM] aguardam o restaurante</div>
+
+<!-- 1. Topbar -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="group">
+      <span>Hoje: <span class="confirm">[CONFIRM horário]</span></span>
+      <a href="tel:+554830305353"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>+55 48 3030-5353</a>
+      <a href="https://www.instagram.com/laparvaparrilla/" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>@laparvaparrilla</a>
+    </div>
+    <nav class="lang" aria-label="Idioma">
+      <a href="index.html" hreflang="pt-BR" lang="pt-BR" aria-current="true">PT</a>
+      <a href="es/index.html" hreflang="es" lang="es">ES</a>
+      <a href="en/index.html" hreflang="en" lang="en">EN</a>
+    </nav>
+  </div>
+</div>
+
+<!-- 2. Header -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html" aria-label="Laparva Parrilla — início"><b>Laparva</b><small>Parrilla</small></a>
+    <nav class="site-nav" id="site-nav" aria-label="Principal">
+      <ul>
+        <li><a href="#a-casa">A casa</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+        <li><a href="#grupos">Grupos &amp; eventos</a></li>
+        <li><a href="#onde-estamos">Onde estamos</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-lenha" href="#reservas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Reservar <span class="lbl-long">mesa</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="visually-hidden">Abrir menu</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- 3. Hero — wide, warm -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-media" data-parallax-x="0.05">
+      <!-- PLACEHOLDER-hero -->
+      <img src="https://images.unsplash.com/photo-1527324688151-0e627063f2b1?auto=format&fit=crop&w=2000&h=857&q=70"
+           srcset="https://images.unsplash.com/photo-1527324688151-0e627063f2b1?auto=format&fit=crop&w=900&h=900&q=70 900w, https://images.unsplash.com/photo-1527324688151-0e627063f2b1?auto=format&fit=crop&w=2000&h=857&q=70 2000w, https://images.unsplash.com/photo-1527324688151-0e627063f2b1?auto=format&fit=crop&w=2800&h=1200&q=70 2800w"
+           sizes="100vw" width="2000" height="857" fetchpriority="high"
+           alt="Grelha de parrilla carregada com cortes de carne, linguiças e frango dourando sobre o fogo, em luz quente e aberta.">
+    </div>
+    <span class="photo-badge">Foto ilustrativa — placeholder</span>
+    <div class="wrap hero-inner" id="a-casa">
+      <p class="eyebrow">Parrilla · Porto da Lagoa <span class="confirm">[CONFIRM tradição e endereço]</span></p>
+      <h1 id="hero-title"><span class="ph">[PLACEHOLDER: título de 5–8 palavras — cliente fornece]</span></h1>
+      <div class="actions">
+        <a class="btn btn-lenha" href="#reservas">Reservar mesa</a>
+        <a class="btn btn-ghost" href="#cardapio">Ver o cardápio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Five-icon value row -->
+  <section class="values" aria-label="Destaques da casa">
+    <div class="wrap">
+      <ul data-reveal-group="100">
+        <li data-reveal>
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 22c4 0 7-2.7 7-6.6 0-3.3-2.2-5.4-3.6-7.4-.4 1.8-1.4 2.9-2.4 3.3.3-3.3-1.2-6.4-4-8.3.2 3.2-1.3 5.3-2.8 7.2C4.9 11.9 5 13.4 5 15.4 5 19.3 8 22 12 22z"/><path d="M12 22c-1.8 0-3-1.2-3-3 0-1.9 1.6-2.9 2.2-4.4.9 1 3.8 2.2 3.8 4.4 0 1.8-1.2 3-3 3z"/></svg></div>
+          <h3>A brasa</h3>
+          <p><span class="confirm">[CONFIRM lenha ou carvão]</span><br><span class="ph">[PLACEHOLDER: uma linha]</span></p>
+        </li>
+        <li data-reveal>
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3 17 16.5 3.5a2.1 2.1 0 0 1 3 3L10 16"/><path d="M3 17l3 3 4-4"/><path d="M14 6l4 4"/></svg></div>
+          <h3>Cortes</h3>
+          <p><span class="ph">[PLACEHOLDER: uma linha]</span></p>
+        </li>
+        <li data-reveal>
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M3.5 19c.6-3 2.8-5 5.5-5s4.9 2 5.5 5M14 14.3c.8-.5 1.6-.8 2.5-.8 2.2 0 3.8 1.6 4.3 4.5"/></svg></div>
+          <h3>Mesa para grupos</h3>
+          <p><span class="confirm">[CONFIRM]</span><br><span class="ph">[PLACEHOLDER: uma linha]</span></p>
+        </li>
+        <li data-reveal>
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></div>
+          <h3>Almoço executivo</h3>
+          <p><span class="confirm">[CONFIRM]</span><br><span class="ph">[PLACEHOLDER: uma linha]</span></p>
+        </li>
+        <li data-reveal>
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M9.5 17V7h3.5a3 3 0 0 1 0 6H9.5"/></svg></div>
+          <h3>Estacionamento</h3>
+          <p><span class="confirm">[CONFIRM]</span><br><span class="ph">[PLACEHOLDER: uma linha]</span></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 5. ⭐ Reservar mesa -->
+  <section class="res-band" id="reservas" aria-labelledby="reservas-title">
+    <div class="wrap">
+      <div class="res-grid">
+        <figure class="res-figure" data-reveal>
+          <!-- PLACEHOLDER-reservas -->
+          <img src="https://images.unsplash.com/photo-1530023367847-a683933f4172?auto=format&fit=crop&w=1100&h=825&crop=bottom&q=70" width="1100" height="825" loading="lazy" decoding="async"
+               alt="Mesa longa posta para um grupo, com taças e guardanapos, vista ao longo do comprimento, sem pessoas.">
+          <span class="photo-badge" style="top:10px;bottom:auto">Foto ilustrativa — placeholder</span>
+          <figcaption>
+            <span class="kicker">Reservas</span>
+            <h2 id="reservas-title">Reserve sua mesa</h2>
+            <p>Monte o pedido aqui e envie pelo WhatsApp — ou, se preferir, ligue: <a href="tel:+554830305353" style="color:#fff;font-weight:700">+55 48 3030-5353</a></p>
+          </figcaption>
+        </figure>
+
+        <div class="res-panel" data-reveal>
+          <h3>Pedido de reserva</h3>
+          <form data-demo novalidate
+                data-intro="Olá, Laparva! Gostaria de reservar uma mesa."
+                data-notice="Demonstração: nenhum dado foi enviado. No site final este botão abre o WhatsApp da casa com a mensagem abaixo — número de WhatsApp [CONFIRM] (o 3030-5353 é uma linha fixa/VoIP).">
+            <div class="form-grid">
+              <div class="field">
+                <label for="r-nome">Nome</label>
+                <input id="r-nome" type="text" autocomplete="name" required data-label="Nome" data-error="Informe seu nome.">
+                <span class="field-error" id="r-nome-err" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="r-tel">Telefone</label>
+                <input id="r-tel" type="tel" autocomplete="tel" inputmode="tel" required data-label="Telefone" data-error="Informe um telefone com DDD.">
+                <span class="field-error" id="r-tel-err" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="r-data">Data (DD/MM)</label>
+                <input id="r-data" type="text" inputmode="numeric" placeholder="DD/MM" maxlength="5" required data-ddmm data-label="Data" data-error="Use o formato DD/MM.">
+                <span class="field-error" id="r-data-err" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="r-hora">Horário</label>
+                <input id="r-hora" type="time" required data-label="Horário" data-error="Escolha um horário.">
+                <span class="field-error" id="r-hora-err" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="r-pessoas">Pessoas</label>
+                <input id="r-pessoas" type="number" min="1" inputmode="numeric" required data-label="Pessoas" data-error="Informe quantas pessoas.">
+                <span class="field-error" id="r-pessoas-err" aria-live="polite"></span>
+              </div>
+              <fieldset class="field">
+                <legend>Ambiente <span class="confirm">[CONFIRM se há os dois]</span></legend>
+                <div class="seg">
+                  <label><input type="radio" name="ambiente" value="Salão interno" data-label="Ambiente"> Interno</label>
+                  <label><input type="radio" name="ambiente" value="Área externa" data-label="Ambiente"> Externo</label>
+                </div>
+              </fieldset>
+              <div class="field full">
+                <label for="r-obs">Observações</label>
+                <textarea id="r-obs" data-label="Observações" placeholder="Ocasião, cadeira alta, acessibilidade…"></textarea>
+              </div>
+            </div>
+            <div class="summary" aria-live="polite">
+              <h4>Resumo da mensagem</h4>
+              <pre data-summary></pre>
+            </div>
+            <label class="consent" for="r-lgpd">
+              <input id="r-lgpd" type="checkbox" required data-error="É preciso concordar para continuar.">
+              <span>Concordo com o uso de nome, telefone e data apenas para responder à reserva, com guarda por <span class="confirm">[CONFIRM prazo de retenção]</span>, conforme a <a href="privacidade.html">Política de Privacidade</a>. <span class="field-error" id="r-lgpd-err" aria-live="polite"></span></span>
+            </label>
+            <div class="form-actions">
+              <button class="btn btn-lenha" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41"/></svg> Enviar pelo WhatsApp <span class="confirm">[CONFIRM nº]</span></button>
+              <a class="btn btn-outline" href="tel:+554830305353">Prefiro ligar</a>
+            </div>
+            <div class="form-notice" hidden tabindex="-1" role="status"><span class="notice-text"></span><pre></pre></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Cardápio — photographic grid with prices -->
+  <section class="section cardapio" id="cardapio" aria-labelledby="cardapio-title">
+    <div class="wrap">
+      <div class="center" data-reveal>
+        <span class="kicker">Cardápio</span>
+        <h2 id="cardapio-title">O cardápio</h2>
+        <p class="lede">Categorias, pratos, pesos e preços aguardam o cardápio real da casa. <span class="confirm">[CONFIRM categorias]</span> <span class="confirm">[CONFIRM nomes item a item — PT / ES]</span></p>
+      </div>
+      <p class="mock-note" data-reveal style="max-width:52rem;margin:1.2rem auto 0"><strong>NOTA DO MOCKUP</strong>Existe uma página de cardápio de terceiros num subdomínio <em>menufyy.com</em>. <span class="confirm">[CONFIRM quem a criou, se está correta e se vocês conseguem editá-la]</span></p>
+
+      <div class="rail" data-filter-rail="menu-grid" role="toolbar" aria-label="Categorias do cardápio">
+        <button type="button" data-filter="all" aria-pressed="true">Tudo</button>
+        <button type="button" data-filter="entradas" aria-pressed="false">Entradas</button>
+        <button type="button" data-filter="cortes" aria-pressed="false">Da parrilla — cortes</button>
+        <button type="button" data-filter="sanduiches" aria-pressed="false">Sanduíches</button>
+        <button type="button" class="erva" data-filter="guarnicoes" aria-pressed="false">Guarnições &amp; saladas</button>
+        <button type="button" data-filter="sobremesas" aria-pressed="false">Sobremesas</button>
+        <button type="button" data-filter="bebidas" aria-pressed="false">Vinhos &amp; bebidas</button>
+      </div>
+
+      <div class="menu-notes">
+        <span>Couvert: R$ <span class="confirm">[CONFIRM]</span></span>
+        <span>Taxa de serviço: <span class="confirm">[CONFIRM]</span></span>
+        <span>Cortes por peso: <span class="confirm">[CONFIRM preço por kg e como é calculado]</span></span>
+        <span>Pagamento, incluindo Pix: <span class="confirm">[CONFIRM]</span></span>
+      </div>
+
+      <div class="grid" id="menu-grid" data-reveal-group="100">
+        <!-- Prato do dia / almoço executivo slot -->
+        <article class="card dotted" data-cat="entradas cortes sanduiches guarnicoes sobremesas bebidas" data-reveal>
+          <div class="body">
+            <span class="cat">Prato do dia · almoço executivo</span>
+            <h3><span class="confirm">[CONFIRM se existe]</span></h3>
+            <p class="desc"><span class="ph">[PLACEHOLDER: prato do dia, dias da semana e horário]</span></p>
+            <p class="price">R$ <span class="confirm">[CONFIRM]</span></p>
+          </div>
+        </article>
+
+        <article class="card" data-cat="entradas" data-reveal>
+          <div class="media">
+            <!-- PLACEHOLDER-entrada -->
+            <img src="https://images.unsplash.com/photo-1593504049359-74330189a345?auto=format&fit=crop&w=600&h=450&q=70" width="600" height="450" loading="lazy" decoding="async" alt="Queijo derretido e fumegante sendo puxado de uma panela pequena, fundo escuro e quente.">
+            <span class="photo-badge">Foto ilustrativa</span>
+          </div>
+          <div class="body">
+            <span class="cat">Entradas</span>
+            <h3><span class="confirm">[CONFIRM nome]</span></h3>
+            <p class="desc"><span class="ph">[PLACEHOLDER: descrição em uma linha]</span></p>
+            <p class="meta">Porção: <span class="confirm">[CONFIRM]</span></p>
+            <div class="chips"><span class="chip">Alérgenos [CONFIRM]</span><span class="chip">Glúten [CONFIRM]</span></div>
+            <p class="price">R$ <span class="confirm">[CONFIRM]</span></p>
+          </div>
+        </article>
+
+        <article class="card" data-cat="cortes" data-reveal>
+          <div class="media">
+            <!-- PLACEHOLDER-corte-1 -->
+            <img src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?auto=format&fit=crop&w=600&h=450&q=70" width="600" height="450" loading="lazy" decoding="async" alt="Corte grelhado e fatiado em chapa de ferro com aspargos e ervas.">
+            <span class="badge-serves"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M3.5 19c.6-3 2.8-5 5.5-5s4.9 2 5.5 5M14 14.3c.8-.5 1.6-.8 2.5-.8 2.2 0 3.8 1.6 4.3 4.5"/></svg>Serve <span class="confirm">[CONFIRM]</span></span>
+            <span class="photo-badge">Foto ilustrativa</span>
+          </div>
+          <div class="body">
+            <span class="cat">Da parrilla</span>
+            <h3><span class="confirm">[CONFIRM nome do corte]</span></h3>
+            <p class="desc"><span class="ph">[PLACEHOLDER: descrição em uma linha]</span></p>
+            <p class="meta">Peso: <span class="confirm">[CONFIRM]</span></p>
+            <div class="chips"><span class="chip">Alérgenos [CONFIRM]</span><span class="chip">Glúten [CONFIRM]</span></div>
+            <p class="price">R$ <span class="confirm">[CONFIRM]</span></p>
+          </div>
+        </article>
+
+        <article class="card" data-cat="cortes" data-reveal>
+          <div class="media">
+            <!-- PLACEHOLDER-corte-2 -->
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=600&h=450&q=70" width="600" height="450" loading="lazy" decoding="async" alt="Corte grelhado servido com batatas fritas rústicas em prato branco.">
+            <span class="photo-badge">Foto ilustrativa</span>
+          </div>
+          <div class="body">
+            <span class="cat">Da parrilla</span>
+            <h3><span class="confirm">[CONFIRM nome do corte]</span></h3>
+            <p class="desc"><span class="ph">[PLACEHOLDER: descrição em uma linha]</span></p>
+            <p class="meta">Peso: <span class="confirm">[CONFIRM]</span></p>
+            <div class="chips"><span class="chip">Alérgenos [CONFIRM]</span><span class="chip">Glúten [CONFIRM]</span></div>
+            <p class="price">R$ <span class="confirm">[CONFIRM]</span></p>
+          </div>
+        </article>
+
+        <article class="card wide" data-cat="cortes" data-reveal>
+          <div class="media">
+            <!-- PLACEHOLDER-tabua-compartilhada -->
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1100&h=620&q=70" width="1100" height="620" loading="lazy" decoding="async" alt="Tábua grande com carnes grelhadas em espetos, legumes e molhos, vista de cima, para compartilhar.">
+            <span class="badge-serves"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M3.5 19c.6-3 2.8-5 5.5-5s4.9 2 5.5 5M14 14.3c.8-.5 1.6-.8 2.5-.8 2.2 0 3.8 1.6 4.3 4.5"/></svg>Serve <span class="confirm">[CONFIRM]</span></span>
+            <span class="photo-badge">Foto ilustrativa</span>
+          </div>
+          <div class="body">
+            <span class="cat">Da parrilla · para compartilhar</span>
+            <h3><span class="confirm">[CONFIRM nome]</span></h3>
+            <p class="desc"><span class="ph">[PLACEHOLDER: o que vem na tábua]</span></p>
+            <p class="meta">Peso total: <span class="confirm">[CONFIRM]</span> · Preço por kg: <span class="confirm">[CONFIRM se aplicável]</span></p>
+            <div class="chips"><span class="chip">Alérgenos [CONFIRM]</span><span class="chip">Glúten [CONFIRM]</span></div>
+            <p class="price">R$ <span class="confirm">[CONFIRM]</span></p>
+          </div>
+        </article>
+
+        <article class="card" data-cat="cortes" data-reveal>
+          <div class="media">
+            <!-- PLACEHOLDER-corte-3 -->
+            <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=600&h=450&q=70" width="600" height="450" loading="lazy" decoding="async" alt="Corte grosso de carne sendo fatiado, interior rosado, garfo e faca sobre tábua.">
+            <span class="badge-serves"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M3.5 19c.6-3 2.8-5 5.5-5s4.9 2 5.5 5M14 14.3c.8-.5 1.6-.8 2.5-.8 2.2 0 3.8 1.6 4.3 4.5"/></svg>Serve <span class="confirm">[CONFIRM]</span></span>
+            <span class="photo-badge">Foto ilustrativa</span>
+          </div>
+          <div class="body">
+            <span class="cat">Da parrilla</span>
+            <h3><span class="confirm">[CONFIRM nome do corte]</span></h3>
+            <p class="desc"><span class="ph">[PLACEHOLDER: descrição em uma linha]</span></p>
+            <p class="meta">Peso: <span class="confirm">[CONFIRM]</span></p>
+            <div class="chips"><span class="chip">Alérgenos [CONFIRM]</span><span class="chip">Glúten [CONFIRM]</span></div>
+            <p class="price">R$ <span class="confirm">[CONFIRM]</span></p>
+          </div>
+        </article>
+
+        <article class="card" data-cat="sanduiches" data-reveal>
+          <div class="media">
+            <!-- PLACEHOLDER-sanduiche -->
+            <img src="https://images.unsplash.com/photo-1521390188846-e2a3a97453a0?auto=format&fit=crop&w=600&h=450&q=70" width="600" height="450" loading="lazy" decoding="async" alt="Sanduíches recheados em pão crocante sobre tábua, com o corte virado para a câmera.">
+            <span class="photo-badge">Foto ilustrativa</span>
+          </div>
+          <div class="body">
+            <span class="cat">Sanduíches</span>
+            <h3><span class="confirm">[CONFIRM nome]</span></h3>
+            <p class="desc"><span class="ph">[PLACEHOLDER: descrição em uma linha]</span></p>
+            <div class="chips"><span class="chip">Alérgenos [CONFIRM]</span><span class="chip">CONTÉM GLÚTEN [CONFIRM]</span></div>
+            <p class="price">R$ <span class="confirm">[CONFIRM]</span></p>
+          </div>
+        </article>
+
+        <article class="card erva" data-cat="guarnicoes" data-reveal>
+          <div class="media">
+            <!-- PLACEHOLDER-salada -->
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&h=450&q=70" width="600" height="450" loading="lazy" decoding="async" alt="Tigela de salada colorida com folhas, tomates e legumes, vista de cima em luz natural.">
+            <span class="photo-badge">Foto ilustrativa</span>
+          </div>
+          <div class="body">
+            <span class="cat">Guarnições &amp; saladas</span>
+            <h3><span class="confirm">[CONFIRM nome]</span></h3>
+            <p class="desc"><span class="ph">[PLACEHOLDER: descrição em uma linha]</span></p>
+            <div class="chips"><span class="chip">Alérgenos [CONFIRM — molhos e chimichurri]</span><span class="chip">Glúten [CONFIRM]</span></div>
+            <p class="price">R$ <span class="confirm">[CONFIRM]</span></p>
+          </div>
+        </article>
+
+        <article class="card" data-cat="sobremesas" data-reveal>
+          <div class="media">
+            <!-- PLACEHOLDER-sobremesa -->
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&h=450&q=70" width="600" height="450" loading="lazy" decoding="async" alt="Sobremesas cremosas em copinhos de vidro com morangos por cima.">
+            <span class="photo-badge">Foto ilustrativa</span>
+          </div>
+          <div class="body">
+            <span class="cat">Sobremesas</span>
+            <h3><span class="confirm">[CONFIRM nome]</span></h3>
+            <p class="desc"><span class="ph">[PLACEHOLDER: descrição em uma linha]</span></p>
+            <div class="chips"><span class="chip">Alérgenos [CONFIRM]</span><span class="chip">Glúten [CONFIRM]</span></div>
+            <p class="price">R$ <span class="confirm">[CONFIRM]</span></p>
+          </div>
+        </article>
+
+        <article class="card" data-cat="bebidas" data-reveal>
+          <div class="media">
+            <!-- PLACEHOLDER-bebidas -->
+            <img src="https://images.unsplash.com/photo-1482275548304-a58859dc31b7?auto=format&fit=crop&w=600&h=450&q=70" width="600" height="450" loading="lazy" decoding="async" alt="Garrafa de vinho e taças vazias sobre mesa de madeira em luz quente de fim de tarde.">
+            <span class="photo-badge">Foto ilustrativa</span>
+          </div>
+          <div class="body">
+            <span class="cat">Vinhos &amp; bebidas</span>
+            <h3><span class="confirm">[CONFIRM rótulo]</span></h3>
+            <p class="desc"><span class="ph">[PLACEHOLDER: uva · região]</span></p>
+            <div class="chips"><span class="chip">Contém sulfitos [CONFIRM]</span><span class="chip">+18</span></div>
+            <p class="price">R$ <span class="confirm">[CONFIRM]</span></p>
+          </div>
+        </article>
+
+        <p class="mock-note filter-empty" data-filter-empty hidden>Nenhum item nesta categoria ainda. <span class="confirm">[CONFIRM]</span></p>
+      </div>
+
+      <aside class="allergen-key" data-reveal aria-labelledby="alerg-title">
+        <h3 id="alerg-title">Alérgenos (RDC Anvisa 26/2015)</h3>
+        <ul>
+          <li class="chip">glúten</li><li class="chip">leite</li><li class="chip">ovo</li><li class="chip">castanhas/nozes</li><li class="chip">amendoim</li><li class="chip">soja</li><li class="chip">peixe</li><li class="chip">crustáceos</li><li class="chip">moluscos</li><li class="chip">sulfitos</li>
+        </ul>
+        <p>Cada item terá a lista completa de alérgenos e a indicação “CONTÉM GLÚTEN” / “NÃO CONTÉM GLÚTEN” (Lei 10.674/2003) — incluindo o pão dos sanduíches, empanados e sobremesas. <span class="confirm">[CONFIRM ingredientes item a item]</span></p>
+      </aside>
+      <div class="center-cta"><a class="btn btn-outline" href="#reservas">Reservar mesa</a></div>
+    </div>
+  </section>
+
+  <!-- 7. A parrilla -->
+  <section class="section parrilla-band" id="a-parrilla" aria-labelledby="parrilla-title">
+    <div class="wrap">
+      <div class="split">
+        <div data-reveal>
+          <span class="kicker">A parrilla</span>
+          <h2 id="parrilla-title">Como cozinhamos</h2>
+          <p><span class="ph">[PLACEHOLDER: 3–4 frases sobre como a casa cozinha — cliente fornece]</span></p>
+          <p>Lenha ou carvão: <span class="confirm">[CONFIRM lenha ou carvão]</span></p>
+          <p class="mock-note"><strong>NOTA DO MOCKUP</strong>Diretórios descrevem a casa como uruguaia e também como argentina. <span class="confirm">[CONFIRM a tradição antes de escrever qualquer frase desta seção]</span> — se for a tradição uruguaia, ela entra aqui com as palavras de vocês.</p>
+        </div>
+        <figure class="photo" data-reveal>
+          <!-- PLACEHOLDER-fogo -->
+          <img src="https://images.unsplash.com/photo-1508615263227-c5d58c1e5821?auto=format&fit=crop&w=1000&h=667&q=70" width="1000" height="667" loading="lazy" decoding="async" alt="Mão adulta virando um corte com pegador sobre a grelha, chamas altas e brasas por baixo.">
+          <span class="photo-badge">Foto ilustrativa — placeholder</span>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Stats band — visibly empty -->
+  <section class="stats" aria-label="Números da casa">
+    <div class="wrap">
+      <ul data-reveal-group="100">
+        <li data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><div><span class="num"><span class="confirm">[CONFIRM]</span></span><span class="lbl">anos na Lagoa</span></div></li>
+        <li data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg><div><span class="num"><span class="confirm">[CONFIRM — link ao vivo]</span></span><span class="lbl">avaliação</span></div></li>
+        <li data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 17 16.5 3.5a2.1 2.1 0 0 1 3 3L10 16"/><path d="M3 17l3 3 4-4"/></svg><div><span class="num"><span class="confirm">[CONFIRM]</span></span><span class="lbl">cortes na carta</span></div></li>
+        <li data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M3.5 19c.6-3 2.8-5 5.5-5s4.9 2 5.5 5M14 14.3c.8-.5 1.6-.8 2.5-.8 2.2 0 3.8 1.6 4.3 4.5"/></svg><div><span class="num"><span class="confirm">[CONFIRM]</span></span><span class="lbl">lugares</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 9. O salão — carousel + lightbox -->
+  <section class="section" id="salao" aria-labelledby="salao-title">
+    <div class="wrap">
+      <div class="split">
+        <div data-reveal>
+          <span class="kicker">O salão</span>
+          <h2 id="salao-title">O salão</h2>
+        </div>
+        <div data-reveal>
+          <p><span class="ph">[PLACEHOLDER: 2–3 frases sobre o ambiente — jantar longo, almoço rápido ou os dois — cliente fornece]</span></p>
+          <p>Salão interno e área externa: <span class="confirm">[CONFIRM]</span></p>
+        </div>
+      </div>
+      <div class="carousel" data-carousel data-reveal>
+        <div class="carousel-track" tabindex="0" aria-label="Galeria do salão (fotos ilustrativas)">
+          <figure class="slide">
+            <a href="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=75" data-lightbox data-caption="Salão à noite — foto ilustrativa">
+              <!-- PLACEHOLDER-salao-1 -->
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&h=533&q=70" width="800" height="533" loading="lazy" decoding="async" alt="Mesa de restaurante à noite com prato servido, taças de vinho e mãos de adultos, luz quente.">
+            </a>
+            <figcaption>Salão à noite <span class="confirm">[CONFIRM]</span></figcaption>
+            <span class="photo-badge" style="top:10px;bottom:auto">Foto ilustrativa</span>
+          </figure>
+          <figure class="slide">
+            <a href="https://images.unsplash.com/photo-1515169067868-5387ec356754?auto=format&fit=crop&w=1600&q=75" data-lightbox data-caption="Ambiente com velas — foto ilustrativa">
+              <!-- PLACEHOLDER-salao-2 -->
+              <img src="https://images.unsplash.com/photo-1515169067868-5387ec356754?auto=format&fit=crop&w=800&h=533&q=70" width="800" height="533" loading="lazy" decoding="async" alt="Adultos conversando em pé em volta de uma mesa de madeira com velas, garrafas e plantas, luz quente.">
+            </a>
+            <figcaption>Clima de jantar <span class="confirm">[CONFIRM]</span></figcaption>
+            <span class="photo-badge" style="top:10px;bottom:auto">Foto ilustrativa</span>
+          </figure>
+          <figure class="slide">
+            <a href="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1600&q=75" data-lightbox data-caption="Salão interno — foto ilustrativa">
+              <!-- PLACEHOLDER-salao-3 -->
+              <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&h=533&q=70" width="800" height="533" loading="lazy" decoding="async" alt="Salão amplo de restaurante com madeira, cadeiras em couro e luminárias, sem pessoas.">
+            </a>
+            <figcaption>Salão interno <span class="confirm">[CONFIRM]</span></figcaption>
+            <span class="photo-badge" style="top:10px;bottom:auto">Foto ilustrativa</span>
+          </figure>
+          <figure class="slide">
+            <a href="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1600&q=75" data-lightbox data-caption="Área externa coberta — foto ilustrativa">
+              <!-- PLACEHOLDER-terraco -->
+              <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&h=533&q=70" width="800" height="533" loading="lazy" decoding="async" alt="Terraço coberto com mesas postas ao entardecer, água e morros ao fundo, sem pessoas.">
+            </a>
+            <figcaption>Área externa <span class="confirm">[CONFIRM]</span></figcaption>
+            <span class="photo-badge" style="top:10px;bottom:auto">Foto ilustrativa</span>
+          </figure>
+          <figure class="slide">
+            <a href="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=75" data-lightbox data-caption="Mesas postas — foto ilustrativa">
+              <!-- PLACEHOLDER-salao-4 -->
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&h=533&q=70" width="800" height="533" loading="lazy" decoding="async" alt="Interior de restaurante com madeira, pendentes e mesas postas, sem pessoas.">
+            </a>
+            <figcaption>Mesas postas <span class="confirm">[CONFIRM]</span></figcaption>
+            <span class="photo-badge" style="top:10px;bottom:auto">Foto ilustrativa</span>
+          </figure>
+        </div>
+        <div class="carousel-nav">
+          <button type="button" data-prev aria-label="Foto anterior">←</button>
+          <button type="button" data-next aria-label="Próxima foto">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Grupos & eventos -->
+  <section class="section groups" id="grupos" aria-labelledby="grupos-title">
+    <div class="wrap">
+      <div class="split rev">
+        <div data-reveal>
+          <span class="kicker">Grupos &amp; eventos</span>
+          <h2 id="grupos-title">Grupos &amp; eventos</h2>
+          <ul class="checklist">
+            <li><span>Mesas grandes: <span class="confirm">[CONFIRM capacidade]</span></span></li>
+            <li><span>Menu fechado para grupos: <span class="confirm">[CONFIRM se existe]</span> · valor por pessoa R$ <span class="confirm">[CONFIRM]</span></span></li>
+            <li><span>Número mínimo de pessoas: <span class="confirm">[CONFIRM]</span></span></li>
+            <li><span>Área reservada: <span class="confirm">[CONFIRM]</span></span></li>
+          </ul>
+          <div class="card-form">
+            <form data-demo novalidate
+                  data-intro="Olá, Laparva! Quero consultar uma reserva para grupo."
+                  data-notice="Demonstração: nenhum dado foi enviado. No site final esta consulta abre no WhatsApp da casa — número [CONFIRM].">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="g-nome">Nome</label>
+                  <input id="g-nome" type="text" autocomplete="name" required data-label="Nome" data-error="Informe seu nome.">
+                  <span class="field-error" id="g-nome-err" aria-live="polite"></span>
+                </div>
+                <div class="field">
+                  <label for="g-data">Data (DD/MM)</label>
+                  <input id="g-data" type="text" inputmode="numeric" placeholder="DD/MM" maxlength="5" required data-ddmm data-label="Data" data-error="Use o formato DD/MM.">
+                  <span class="field-error" id="g-data-err" aria-live="polite"></span>
+                </div>
+                <div class="field">
+                  <label for="g-pessoas">Número de pessoas</label>
+                  <input id="g-pessoas" type="number" min="1" required data-label="Pessoas" data-error="Informe quantas pessoas.">
+                  <span class="field-error" id="g-pessoas-err" aria-live="polite"></span>
+                </div>
+                <div class="field">
+                  <label for="g-ocasiao">Ocasião</label>
+                  <input id="g-ocasiao" type="text" data-label="Ocasião" placeholder="Aniversário, empresa…">
+                </div>
+              </div>
+              <label class="consent" for="g-lgpd">
+                <input id="g-lgpd" type="checkbox" required data-error="É preciso concordar para continuar.">
+                <span>Concordo com o uso destes dados apenas para responder à consulta, conforme a <a href="privacidade.html">Política de Privacidade</a>. <span class="field-error" id="g-lgpd-err" aria-live="polite"></span></span>
+              </label>
+              <button class="btn btn-lenha" type="submit">Montar consulta de grupo</button>
+              <div class="form-notice" hidden tabindex="-1" role="status"><span class="notice-text"></span><pre></pre></div>
+            </form>
+          </div>
+        </div>
+        <figure class="photo" data-reveal>
+          <!-- PLACEHOLDER-grupos -->
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&h=1100&q=70" width="1000" height="1100" loading="lazy" decoding="async" style="aspect-ratio:10/11" alt="Mesa comunitária longa posta para um grupo grande, com flores, taças e pratos, luz quente, sem pessoas.">
+          <span class="photo-badge">Foto ilustrativa — placeholder</span>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Almoço executivo — delete if they don't run one -->
+  <section class="section lunch" id="almoco" aria-labelledby="almoco-title">
+    <div class="wrap">
+      <div class="split">
+        <div data-reveal>
+          <span class="kicker">Almoço executivo</span>
+          <h2 id="almoco-title">Almoço executivo</h2>
+          <p class="mock-note"><strong>NOTA DO MOCKUP</strong><span class="confirm">[CONFIRM se a casa serve almoço executivo]</span> — se não servir, esta seção é removida.</p>
+          <ul class="info-list">
+            <li><span>Dias</span><span><span class="confirm">[CONFIRM]</span></span></li>
+            <li><span>Horário</span><span><span class="confirm">[CONFIRM]</span></span></li>
+            <li><span>Valor</span><span>R$ <span class="confirm">[CONFIRM]</span></span></li>
+            <li><span>O que inclui</span><span><span class="ph">[PLACEHOLDER: composição do prato — cliente fornece]</span></span></li>
+          </ul>
+        </div>
+        <figure class="photo" data-reveal>
+          <!-- PLACEHOLDER-almoco -->
+          <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=1000&h=667&q=70" width="1000" height="667" loading="lazy" decoding="async" alt="Prato de almoço servido em luz do dia: carne grelhada com batatas e brócolis em prato branco.">
+          <span class="photo-badge">Foto ilustrativa — placeholder</span>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. Vinhos & bebidas -->
+  <section class="section" id="vinhos" aria-labelledby="vinhos-title">
+    <div class="wrap">
+      <span class="kicker" data-reveal>Vinhos &amp; bebidas</span>
+      <h2 id="vinhos-title" data-reveal>Vinhos &amp; bebidas</h2>
+      <div class="drinks-grid">
+        <div class="list-col" data-reveal>
+          <h3>Vinhos <span class="confirm">[CONFIRM lista]</span></h3>
+          <ul>
+            <li><span><span class="confirm">[CONFIRM rótulo]</span></span><span class="p">R$ <span class="confirm">[CONFIRM]</span></span><p><span class="ph">[PLACEHOLDER: uva · região]</span> · contém sulfitos <span class="confirm">[CONFIRM]</span></p></li>
+            <li><span><span class="confirm">[CONFIRM rótulo]</span></span><span class="p">R$ <span class="confirm">[CONFIRM]</span></span><p><span class="ph">[PLACEHOLDER: uva · região]</span> · taça / garrafa <span class="confirm">[CONFIRM]</span></p></li>
+            <li><span><span class="confirm">[CONFIRM rótulo]</span></span><span class="p">R$ <span class="confirm">[CONFIRM]</span></span><p><span class="ph">[PLACEHOLDER: uva · região]</span></p></li>
+          </ul>
+        </div>
+        <div class="list-col" data-reveal>
+          <h3>Bebidas <span class="confirm">[CONFIRM]</span></h3>
+          <ul>
+            <li><span><span class="confirm">[CONFIRM bebida]</span></span><span class="p">R$ <span class="confirm">[CONFIRM]</span></span><p><span class="ph">[PLACEHOLDER: descrição]</span></p></li>
+            <li><span><span class="confirm">[CONFIRM bebida]</span></span><span class="p">R$ <span class="confirm">[CONFIRM]</span></span><p><span class="ph">[PLACEHOLDER: descrição]</span></p></li>
+            <li><span><span class="confirm">[CONFIRM bebida sem álcool]</span></span><span class="p">R$ <span class="confirm">[CONFIRM]</span></span><p><span class="ph">[PLACEHOLDER: descrição]</span></p></li>
+          </ul>
+        </div>
+        <figure class="photo" data-reveal>
+          <!-- PLACEHOLDER-vinho -->
+          <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?auto=format&fit=crop&w=800&h=900&q=70" width="800" height="900" loading="lazy" decoding="async" style="aspect-ratio:8/9" alt="Vinho tinto sendo servido numa taça à mesa, luz quente, rótulo fora de foco.">
+          <span class="photo-badge">Foto ilustrativa — placeholder</span>
+        </figure>
+      </div>
+      <div class="alcohol-legal" data-reveal>
+        <p>Venda proibida para menores de 18 anos</p>
+        <p>Se beber, não dirija</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. Avaliações — live widget or nothing -->
+  <section class="section" id="avaliacoes" aria-labelledby="aval-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="reviews-frame" data-reveal>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>
+        <h2 id="aval-title" style="font-size:1.8rem">Avaliações</h2>
+        <p><strong>[WIDGET AO VIVO DO PERFIL NO GOOGLE]</strong> <span class="confirm">[CONFIRM perfil e integração]</span></p>
+        <p class="lede" style="margin-inline:auto">Nota e número de avaliações aparecem aqui somente via widget ao vivo ou link para o perfil — nunca como número fixo nem como depoimentos copiados.</p>
+        <a class="btn btn-outline btn-sm" href="#avaliacoes" aria-disabled="true">Ver avaliações no Google <span class="confirm">[CONFIRM link]</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. Onde estamos -->
+  <section class="section" id="onde-estamos" aria-labelledby="onde-title" style="background:var(--torrado-soft)">
+    <div class="wrap">
+      <div class="where-grid">
+        <div data-reveal>
+          <span class="kicker">Onde estamos</span>
+          <h2 id="onde-title">Onde estamos</h2>
+          <p class="addr">Vereador Osni Ortiga, Porto da Lagoa <span class="confirm">[CONFIRM — 3198 ou 3228, Rua ou Av.]</span></p>
+          <p class="mock-note"><strong>NOTA DO MOCKUP — ENDEREÇO DIVERGENTE</strong>A planilha interna indica <em>Rua Vereador Osni Ortiga 3198</em>; um diretório indica <em>Av. Vereador Osni Ortiga 3228</em>. <span class="confirm">[CONFIRM]</span></p>
+          <ul class="info-list">
+            <li><span>Bairro</span><span>Porto da Lagoa <span class="confirm">[CONFIRM]</span> — na região da Lagoa da Conceição</span></li>
+            <li><span>Como chegar</span><span><span class="ph">[PLACEHOLDER: onde o Porto da Lagoa fica entre o Rio Tavares e a Lagoa da Conceição]</span></span></li>
+            <li><span>Estacionamento</span><span><span class="confirm">[CONFIRM]</span></span></li>
+            <li><span>Ônibus</span><span><span class="confirm">[CONFIRM]</span></span></li>
+            <li><span>Telefone</span><span><a href="tel:+554830305353">+55 48 3030-5353</a></span></li>
+          </ul>
+        </div>
+        <div class="map-frame" data-reveal role="img" aria-label="Espaço reservado para o mapa — será incorporado depois que o número do endereço for confirmado">
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            <p><strong>[MAPA]</strong><br>Incorporar depois de <span class="confirm">[CONFIRM 3198 ou 3228]</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15. Horários -->
+  <section class="section" id="horarios" aria-labelledby="horarios-title">
+    <div class="wrap" style="max-width:900px">
+      <div class="center" data-reveal>
+        <span class="kicker">Horários</span>
+        <h2 id="horarios-title">Horários</h2>
+        <p class="lede">Almoço e jantar são serviços separados? <span class="confirm">[CONFIRM]</span></p>
+      </div>
+      <div class="table-scroll" data-reveal>
+        <table class="hours">
+          <caption class="visually-hidden">Horários por dia, almoço e jantar — a confirmar</caption>
+          <thead><tr><th scope="col">Dia</th><th scope="col">Almoço</th><th scope="col">Jantar</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Segunda</th><td><span class="confirm">[CONFIRM]</span></td><td><span class="confirm">[CONFIRM]</span></td></tr>
+            <tr><th scope="row">Terça</th><td><span class="confirm">[CONFIRM]</span></td><td><span class="confirm">[CONFIRM]</span></td></tr>
+            <tr><th scope="row">Quarta</th><td><span class="confirm">[CONFIRM]</span></td><td><span class="confirm">[CONFIRM]</span></td></tr>
+            <tr><th scope="row">Quinta</th><td><span class="confirm">[CONFIRM]</span></td><td><span class="confirm">[CONFIRM]</span></td></tr>
+            <tr><th scope="row">Sexta</th><td><span class="confirm">[CONFIRM]</span></td><td><span class="confirm">[CONFIRM]</span></td></tr>
+            <tr><th scope="row">Sábado</th><td><span class="confirm">[CONFIRM]</span></td><td><span class="confirm">[CONFIRM]</span></td></tr>
+            <tr><th scope="row">Domingo</th><td><span class="confirm">[CONFIRM]</span></td><td><span class="confirm">[CONFIRM]</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- 16. Footer -->
+<footer class="site-footer" id="contato">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <span class="wordmark"><b>Laparva</b><small>Parrilla</small></span>
+        <p style="margin-top:1rem">Grafia do nome: <span class="confirm">[CONFIRM “Laparva” ou “La Parva”]</span></p>
+        <p>Razão social: <span class="confirm">[CONFIRM]</span><br>CNPJ: <span class="confirm">[CONFIRM]</span><br>Alvará sanitário: <span class="confirm">[CONFIRM]</span></p>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li>Vereador Osni Ortiga, Porto da Lagoa, Florianópolis/SC <span class="confirm">[CONFIRM nº 3198 ou 3228 · Rua ou Av.]</span></li>
+          <li>Telefone: <a href="tel:+554830305353">+55 48 3030-5353</a></li>
+          <li>WhatsApp: <span class="confirm">[CONFIRM celular]</span></li>
+          <li><a href="https://www.instagram.com/laparvaparrilla/" rel="noopener" target="_blank">Instagram @laparvaparrilla</a></li>
+          <li>Facebook: <span class="confirm">[CONFIRM página atual]</span></li>
+          <li>iFood: <span class="confirm">[CONFIRM]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Horários</h3>
+        <ul class="footer-hours">
+          <li><span>Seg</span><span class="confirm">[CONFIRM]</span></li>
+          <li><span>Ter</span><span class="confirm">[CONFIRM]</span></li>
+          <li><span>Qua</span><span class="confirm">[CONFIRM]</span></li>
+          <li><span>Qui</span><span class="confirm">[CONFIRM]</span></li>
+          <li><span>Sex</span><span class="confirm">[CONFIRM]</span></li>
+          <li><span>Sáb</span><span class="confirm">[CONFIRM]</span></li>
+          <li><span>Dom</span><span class="confirm">[CONFIRM]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+          <li><a href="#grupos">Grupos &amp; eventos</a></li>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
+          <li><a href="#" data-cookie-open>Preferências de cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>Alérgenos: todos os itens terão declaração de alérgenos (RDC Anvisa 26/2015) e a indicação “CONTÉM GLÚTEN” / “NÃO CONTÉM GLÚTEN” (Lei 10.674/2003). Em caso de alergia, avise a equipe antes de pedir. <span class="confirm">[CONFIRM]</span></p>
+      <p class="alcohol">Venda proibida para menores de 18 anos · Se beber, não dirija</p>
+      <p>© <span data-year>2026</span> Laparva Parrilla. Mockup de demonstração — conteúdo provisório.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- 17. Sticky mobile bar -->
+<div class="sticky-bar" role="navigation" aria-label="Ações rápidas">
+  <a class="btn btn-lenha" href="#reservas">Reservar mesa</a>
+  <a class="btn btn-ghost" href="tel:+554830305353">Ligar</a>
+</div>
+
+<a class="wa-float" href="#contato" aria-label="WhatsApp — número a confirmar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41"/></svg><span>[CONFIRM WhatsApp]</span></a>
+
+<div class="cookie" id="cookie-banner" role="dialog" aria-modal="false" aria-labelledby="cookie-title" hidden>
+  <div class="wrap">
+    <h2 id="cookie-title">Cookies</h2>
+    <p>Usamos cookies necessários para o site funcionar. Cookies de análise e de marketing só são ativados com a sua permissão. Saiba mais na <a href="privacidade.html">Política de Privacidade</a>.</p>
+    <div class="cookie-prefs" id="cookie-prefs" hidden>
+      <label><input type="checkbox" checked disabled> <span><strong>Necessários</strong> — sempre ativos<small>Guardam sua escolha e mantêm o site funcionando.</small></span></label>
+      <label><input type="checkbox" data-cookie-cat="analise"> <span><strong>Análise</strong><small>Medição anônima de visitas. <span class="confirm">[CONFIRM ferramenta]</span></small></span></label>
+      <label><input type="checkbox" data-cookie-cat="marketing"> <span><strong>Marketing</strong><small>Pixels de anúncios. <span class="confirm">[CONFIRM ferramenta]</span></small></span></label>
+      <button class="btn btn-outline" type="button" data-cookie="save">Salvar preferências</button>
+    </div>
+    <div class="cookie-actions">
+      <button class="btn btn-lenha" type="button" data-cookie="accept">Aceitar</button>
+      <button class="btn btn-outline" type="button" data-cookie="reject">Rejeitar</button>
+      <button class="btn btn-outline" type="button" data-cookie="prefs" aria-controls="cookie-prefs" aria-expanded="false">Preferências</button>
+    </div>
+  </div>
+</div>
+
+<dialog class="lightbox" id="lightbox" aria-label="Imagem ampliada">
+  <button class="close" type="button" aria-label="Fechar">×</button>
+  <img src="data:," alt="">
+  <p></p>
+</dialog>
+
+<script src="script.js" defer></script>
+</body>
+</html>

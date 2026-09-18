@@ -1,0 +1,5 @@
+# Production must serve index, follow. The previous Kenlo holding page served noindex, nofollow - do not inherit it.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.unikimoveis.com.br/sitemap.xml

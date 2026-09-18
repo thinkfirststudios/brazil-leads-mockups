@@ -1,0 +1,7 @@
+# Mockup: block all crawling until the site is approved and launched.
+User-agent: *
+Disallow: /
+
+# Production version:
+# User-agent: *
+# Sitemap: https://camillusimoveis.com.br/sitemap.xml

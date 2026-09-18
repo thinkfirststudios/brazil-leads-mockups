@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<title>Unik Imóveis — Imóveis à venda no Campeche, Florianópolis/SC</title>
+<meta name="description" content="Unik Imóveis, Campeche, Florianópolis/SC. Navegue pelos imóveis por tipo e bairro: apartamentos, casas, casas em condomínio, coberturas, studios, terrenos e salas/conjuntos. CRECI [CONFIRM].">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.unikimoveis.com.br/">
+<link rel="alternate" hreflang="pt-BR" href="https://www.unikimoveis.com.br/">
+<link rel="alternate" hreflang="x-default" href="https://www.unikimoveis.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Unik Imóveis">
+<meta property="og:title" content="Unik Imóveis — Imóveis à venda no Campeche, Florianópolis/SC">
+<meta property="og:description" content="Imóveis por tipo e bairro no sul da Ilha de Santa Catarina. CRECI [CONFIRM].">
+<meta property="og:url" content="https://www.unikimoveis.com.br/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1504681869696-d977211a5f4c?auto=format&fit=crop&w=1200&h=630&q=70">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Unik Imóveis — Campeche, Florianópolis/SC">
+<meta name="twitter:description" content="Imóveis por tipo e bairro no sul da Ilha. CRECI [CONFIRM].">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1504681869696-d977211a5f4c?auto=format&fit=crop&w=1200&h=630&q=70">
+<meta name="theme-color" content="#1B2A4A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1504681869696-d977211a5f4c?auto=format&fit=crop&w=1600&q=70" fetchpriority="high">
+<link rel="stylesheet" href="styles.css">
+<!--
+  BUILD-TIME STATUS NOTE (not user-visible) — 16/09/2026
+  The previous site, https://www.unikimoveis.com.br/, returned HTTP 503 on every path tested
+  (/, and /imoveis/a-venda/apartamento/florianopolis/campeche), serving a Kenlo holding page with
+  <meta name="robots" content="noindex, nofollow">. No inventory could be migrated. That is why every
+  listing, land lot and matrix count in this mockup is a STRUCTURAL PLACEHOLDER, not migrated content.
+  Production must ship robots "index, follow" (see <meta name="robots"> above) and preserve the indexed
+  tree /imoveis/{a-venda|para-alugar}/{tipo}/{cidade}/{bairro}/ exactly, incl. the "+" multi-type separator.
+  Matrix counts must be generated from the real inventory feed at build time (data-count="N"); until then
+  they render as [CONFIRM] and are never animated.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://www.unikimoveis.com.br/#agency",
+      "name": "Unik Imóveis",
+      "url": "https://www.unikimoveis.com.br/",
+      "identifier": { "@type": "PropertyValue", "propertyID": "CRECI", "value": "[CONFIRM]" },
+      "areaServed": [
+        { "@type": "Place", "name": "Campeche, Florianópolis - SC" },
+        { "@type": "Place", "name": "Novo Campeche, Florianópolis - SC" },
+        { "@type": "Place", "name": "Rio Tavares, Florianópolis - SC" },
+        { "@type": "Place", "name": "Morro das Pedras, Florianópolis - SC" },
+        { "@type": "Place", "name": "Ribeirão da Ilha, Florianópolis - SC" },
+        { "@type": "Place", "name": "Lagoa da Conceição, Florianópolis - SC" }
+      ],
+      "sameAs": ["https://www.facebook.com/unikimoveis/"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.unikimoveis.com.br/#site",
+      "url": "https://www.unikimoveis.com.br/",
+      "name": "Unik Imóveis",
+      "inLanguage": "pt-BR",
+      "publisher": { "@id": "https://www.unikimoveis.com.br/#agency" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.unikimoveis.com.br/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Quais documentos costumam ser pedidos na compra de um imóvel?", "acceptedAnswer": { "@type": "Answer", "text": "Em geral: documentos pessoais do comprador e do vendedor, a matrícula atualizada do imóvel emitida pelo Cartório de Registro de Imóveis, certidões negativas do vendedor e do imóvel e, em condomínio, a declaração de quitação das taxas condominiais. A lista exata depende do caso e do cartório." } },
+        { "@type": "Question", "name": "O que é o ITBI?", "acceptedAnswer": { "@type": "Answer", "text": "O ITBI (Imposto sobre Transmissão de Bens Imóveis) é um imposto municipal pago, em regra, pelo comprador na transferência do imóvel. Em Florianópolis ele é recolhido à Prefeitura; alíquota e base de cálculo devem ser confirmadas na legislação municipal vigente." } },
+        { "@type": "Question", "name": "Qual a diferença entre escritura e registro?", "acceptedAnswer": { "@type": "Answer", "text": "A escritura pública é o documento lavrado em Tabelionato de Notas que formaliza a compra e venda. A propriedade só se transfere com o registro dessa escritura na matrícula do imóvel, no Cartório de Registro de Imóveis competente." } },
+        { "@type": "Question", "name": "Como funciona o financiamento imobiliário?", "acceptedAnswer": { "@type": "Answer", "text": "O banco analisa o crédito do comprador, avalia o imóvel e, se aprovado, emite o contrato de financiamento, que também é registrado na matrícula. Condições, taxas e prazos dependem de cada instituição e da análise de crédito." } },
+        { "@type": "Question", "name": "O que verificar na matrícula do imóvel?", "acceptedAnswer": { "@type": "Answer", "text": "Quem é o proprietário atual, a descrição e a área do imóvel, e se há ônus registrados, como hipoteca, alienação fiduciária, penhora ou usufruto. Peça sempre a certidão de inteiro teor atualizada." } },
+        { "@type": "Question", "name": "O que perguntar antes de comprar um terreno?", "acceptedAnswer": { "@type": "Answer", "text": "Qual o zoneamento do lote segundo o Plano Diretor municipal e o que ele permite construir; quais redes de infraestrutura chegam ao lote (água, energia, esgoto, pavimentação); e se o lote tem matrícula própria e escritura pública, ou se é posse ou contrato particular." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 32 32"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2a13 13 0 0 0 6.6 1.8c7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4a10.4 10.4 0 0 1-1.7-5.7C5.1 9.9 10 5.2 16 5.2s10.9 4.7 10.9 10.6S22 26.4 16 26.4zm6-7.9c-.3-.2-1.9-1-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.8 1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 2.2.9 3 1 4.1.8.7-.1 1.9-.8 2.2-1.5s.3-1.3.2-1.5c-.1-.1-.3-.2-.6-.4z"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 18V7m0 7h18v4M21 14v-3a3 3 0 0 0-3-3h-7v6M7 11.5a1.5 1.5 0 1 0 0-.01"/></symbol>
+  <symbol id="i-suite" viewBox="0 0 24 24"><path d="M4 20V9l8-5 8 5v11M9 20v-6h6v6"/></symbol>
+  <symbol id="i-bath" viewBox="0 0 24 24"><path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v-3zM6 12V6a2 2 0 0 1 4 0M7 19l-1 2M17 19l1 2"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 16h14M6 16l1.5-5h9L18 16M5 16v3h2v-2M19 16v3h-2v-2M8 13.5h.01M16 13.5h.01"/></symbol>
+  <symbol id="i-area" viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 9h5V4M20 15h-5v5"/></symbol>
+  <symbol id="i-price" viewBox="0 0 24 24"><path d="M12 3v18M16 7H10a2.5 2.5 0 0 0 0 5h4a2.5 2.5 0 0 1 0 5H8"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-9-8.6C1.6 8.4 3.4 5 6.8 5c2 0 3.3 1.1 5.2 3 1.9-1.9 3.2-3 5.2-3 3.4 0 5.2 3.4 3.8 6.4C19 15.6 12 20 12 20z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 6 9-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12zM12 11.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 7v5l3 2"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4l14 8-14 8z"/></symbol>
+</svg>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="mock-ribbon" role="note"><strong>MOCKUP</strong> — conteúdo provisório · proposta não publicada · imóveis, contagens e contatos são placeholders</div>
+
+<!-- 1. UTILITY BAR -->
+<div class="utility">
+  <div class="container">
+    <span class="creci">CRECI <span class="confirm">[CRECI — CONFIRM]</span></span>
+    <span class="sep hide-sm">|</span>
+    <span class="hide-sm">Telefone <span class="confirm">[CONFIRM]</span></span>
+    <span class="sep hide-sm">|</span>
+    <span>Campeche · Florianópolis</span>
+    <span class="sep hide-sm">|</span>
+    <span class="hide-sm">Horário <span class="confirm">[CONFIRM]</span></span>
+    <span class="lang" aria-label="Idioma">
+      <a href="./" aria-current="true" hreflang="pt-BR">PT</a>
+      <span aria-disabled="true" title="Versões EN/ES dependem da confirmação do perfil de contatos">EN · ES <span class="confirm">[CONFIRM escopo]</span></span>
+    </span>
+  </div>
+</div>
+
+<!-- 2. STICKY HEADER -->
+<header class="site-header">
+  <div class="container">
+    <a class="wordmark" href="./" aria-label="Unik Imóveis — início">
+      <b>UNIK</b><small>IMÓVEIS · CAMPECHE</small><span class="logo-ph">[LOGO — client to supply]</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Principal">
+      <ul>
+        <li><a href="#matriz">Comprar</a></li>
+        <li><a href="#matriz">Alugar <span class="confirm tag">CONFIRM</span></a></li>
+        <li><a href="#terrenos">Terrenos</a></li>
+        <li><a href="#bairros">Bairros</a></li>
+        <li><a href="#anunciar">Anunciar</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <a class="btn-wa-pill" href="#contato" data-wa-text="Olá! Vim pelo site da Unik Imóveis."><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp <span class="confirm">[CONFIRM WhatsApp]</span></a>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- 3. HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-media">
+    <!-- PLACEHOLDER-hero : elevated wide view of the Campeche plain, 21:9 -->
+    <img src="https://images.unsplash.com/photo-1504681869696-d977211a5f4c?auto=format&fit=crop&w=1600&q=70"
+         srcset="https://images.unsplash.com/photo-1504681869696-d977211a5f4c?auto=format&fit=crop&w=800&q=70 800w, https://images.unsplash.com/photo-1504681869696-d977211a5f4c?auto=format&fit=crop&w=1600&q=70 1600w, https://images.unsplash.com/photo-1504681869696-d977211a5f4c?auto=format&fit=crop&w=2400&q=70 2400w"
+         sizes="100vw" width="2400" height="1029" fetchpriority="high"
+         alt="Vista aérea de um litoral com faixa de areia, mar claro e vegetação densa — foto ilustrativa no lugar da vista da planície do Campeche">
+  </div>
+  <div class="badge-float" aria-hidden="true"><strong>Imóveis por tipo e bairro</strong>Cada combinação tem sua própria página estática.</div>
+  <div class="container">
+    <p class="hero-kicker">Campeche · Sul da Ilha · Florianópolis/SC</p>
+    <h1 id="hero-title"><span class="ph">[PLACEHOLDER HEADLINE: one line, 6–9 words — client to supply or approve]</span></h1>
+    <p class="sub"><span class="ph">[PLACEHOLDER: 1 sentence]</span></p>
+
+    <form class="search-card" data-matrix-search role="search" aria-label="Buscar imóveis">
+      <div>
+        <label for="s-tipo">Tipo</label>
+        <select id="s-tipo" name="tipo">
+          <option value="">Todos os tipos</option>
+          <option value="apartamento">Apartamento</option>
+          <option value="casa">Casa</option>
+          <option value="casa-em-condominio">Casa em Condomínio</option>
+          <option value="cobertura">Cobertura</option>
+          <option value="studio">Studio</option>
+          <option value="terreno">Terreno</option>
+          <option value="conjunto">Sala/Conjunto</option>
+        </select>
+      </div>
+      <div>
+        <label for="s-bairro">Bairro</label>
+        <select id="s-bairro" name="bairro">
+          <option value="">Todos os bairros</option>
+          <option value="campeche">Campeche</option>
+          <option value="novo-campeche">Novo Campeche</option>
+          <option value="rio-tavares">Rio Tavares</option>
+          <option value="morro-das-pedras">Morro das Pedras</option>
+          <option value="ribeirao-da-ilha">Ribeirão da Ilha</option>
+          <option value="lagoa-da-conceicao">Lagoa da Conceição</option>
+        </select>
+      </div>
+      <div>
+        <label for="s-valor">Faixa de valor (R$)</label>
+        <select id="s-valor" name="valor">
+          <option value="">Qualquer valor</option>
+          <option value="a">Faixa 1 — R$ [CONFIRM]</option>
+          <option value="b">Faixa 2 — R$ [CONFIRM]</option>
+          <option value="c">Faixa 3 — R$ [CONFIRM]</option>
+        </select>
+      </div>
+      <button class="btn btn-cta" type="submit">Buscar <span class="arrow" aria-hidden="true">→</span></button>
+      <p class="search-note" aria-live="polite">A busca abre a página estática da combinação tipo × bairro. Faixas de valor: <span class="confirm">[CONFIRM com o feed real]</span></p>
+    </form>
+  </div>
+</section>
+
+<!-- 4. A MATRIZ — TIPO × BAIRRO -->
+<section class="section" id="matriz" aria-labelledby="matriz-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">A matriz</span>
+        <h2 id="matriz-title">Imóveis por tipo e bairro</h2>
+      </div>
+      <p>Cada célula é uma página própria, no mesmo endereço que o Google já conhece: <span class="url-chip">/imoveis/a-venda/&lt;tipo&gt;/florianopolis/&lt;bairro&gt;/</span></p>
+    </div>
+
+    <div class="matrix-wrap reveal">
+      <div class="matrix-toolbar">
+        <div class="seg" role="group" aria-label="Finalidade">
+          <button type="button" aria-pressed="true">À venda</button>
+          <button type="button" aria-pressed="false" disabled aria-describedby="alugar-note">Para alugar</button>
+        </div>
+        <p id="alugar-note" class="note" style="margin:0">“Para alugar” <span class="confirm">[CONFIRM se a Unik trabalha com locação]</span> · lista de tipos e bairros <span class="confirm">[CONFIRM]</span></p>
+      </div>
+
+      <div class="matrix-desktop matrix-scroll">
+<!--MATRIX_DESKTOP:START-->
+        <table class="matrix">
+          <caption>Matriz tipo &times; bairro &mdash; cada c&eacute;lula abre uma p&aacute;gina est&aacute;tica. Contagens: <span class="confirm">[CONFIRM]</span> at&eacute; serem geradas do feed real. Tipos e bairros <span class="confirm">[CONFIRM]</span>.</caption>
+          <thead><tr><th scope="col">Tipo \ Bairro</th><th scope="col"><a href="bairros/campeche/index.html">Campeche</a></th><th scope="col"><a href="bairros/novo-campeche/index.html">Novo Campeche</a></th><th scope="col"><a href="bairros/rio-tavares/index.html">Rio Tavares</a></th><th scope="col"><a href="bairros/morro-das-pedras/index.html">Morro das Pedras</a></th><th scope="col"><a href="bairros/ribeirao-da-ilha/index.html">Ribeirão da Ilha</a></th><th scope="col"><a href="bairros/lagoa-da-conceicao/index.html">Lagoa da Conceição</a></th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Apartamentos<small>/apartamento/</small></th><td><a class="cell-link" href="imoveis/a-venda/apartamento/florianopolis/campeche/index.html"><span class="lbl">Apartamentos &middot; Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/apartamento/florianopolis/novo-campeche/index.html"><span class="lbl">Apartamentos &middot; Novo Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/apartamento/florianopolis/rio-tavares/index.html"><span class="lbl">Apartamentos &middot; Rio Tavares</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/apartamento/florianopolis/morro-das-pedras/index.html"><span class="lbl">Apartamentos &middot; Morro das Pedras</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/apartamento/florianopolis/ribeirao-da-ilha/index.html"><span class="lbl">Apartamentos &middot; Ribeirão da Ilha</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/apartamento/florianopolis/lagoa-da-conceicao/index.html"><span class="lbl">Apartamentos &middot; Lagoa da Conceição</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td></tr>
+            <tr><th scope="row">Casas<small>/casa/</small></th><td><a class="cell-link" href="imoveis/a-venda/casa/florianopolis/campeche/index.html"><span class="lbl">Casas &middot; Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/casa/florianopolis/novo-campeche/index.html"><span class="lbl">Casas &middot; Novo Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/casa/florianopolis/rio-tavares/index.html"><span class="lbl">Casas &middot; Rio Tavares</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/casa/florianopolis/morro-das-pedras/index.html"><span class="lbl">Casas &middot; Morro das Pedras</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/casa/florianopolis/ribeirao-da-ilha/index.html"><span class="lbl">Casas &middot; Ribeirão da Ilha</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/casa/florianopolis/lagoa-da-conceicao/index.html"><span class="lbl">Casas &middot; Lagoa da Conceição</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td></tr>
+            <tr><th scope="row">Casas em Condomínio<small>/casa-em-condominio/</small></th><td><a class="cell-link" href="imoveis/a-venda/casa-em-condominio/florianopolis/campeche/index.html"><span class="lbl">Casas em Condomínio &middot; Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/casa-em-condominio/florianopolis/novo-campeche/index.html"><span class="lbl">Casas em Condomínio &middot; Novo Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/casa-em-condominio/florianopolis/rio-tavares/index.html"><span class="lbl">Casas em Condomínio &middot; Rio Tavares</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/casa-em-condominio/florianopolis/morro-das-pedras/index.html"><span class="lbl">Casas em Condomínio &middot; Morro das Pedras</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/casa-em-condominio/florianopolis/ribeirao-da-ilha/index.html"><span class="lbl">Casas em Condomínio &middot; Ribeirão da Ilha</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/casa-em-condominio/florianopolis/lagoa-da-conceicao/index.html"><span class="lbl">Casas em Condomínio &middot; Lagoa da Conceição</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td></tr>
+            <tr><th scope="row">Coberturas<small>/cobertura/</small></th><td><a class="cell-link" href="imoveis/a-venda/cobertura/florianopolis/campeche/index.html"><span class="lbl">Coberturas &middot; Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/cobertura/florianopolis/novo-campeche/index.html"><span class="lbl">Coberturas &middot; Novo Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/cobertura/florianopolis/rio-tavares/index.html"><span class="lbl">Coberturas &middot; Rio Tavares</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/cobertura/florianopolis/morro-das-pedras/index.html"><span class="lbl">Coberturas &middot; Morro das Pedras</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/cobertura/florianopolis/ribeirao-da-ilha/index.html"><span class="lbl">Coberturas &middot; Ribeirão da Ilha</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/cobertura/florianopolis/lagoa-da-conceicao/index.html"><span class="lbl">Coberturas &middot; Lagoa da Conceição</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td></tr>
+            <tr><th scope="row">Studios<small>/studio/</small></th><td><a class="cell-link" href="imoveis/a-venda/studio/florianopolis/campeche/index.html"><span class="lbl">Studios &middot; Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/studio/florianopolis/novo-campeche/index.html"><span class="lbl">Studios &middot; Novo Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/studio/florianopolis/rio-tavares/index.html"><span class="lbl">Studios &middot; Rio Tavares</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/studio/florianopolis/morro-das-pedras/index.html"><span class="lbl">Studios &middot; Morro das Pedras</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/studio/florianopolis/ribeirao-da-ilha/index.html"><span class="lbl">Studios &middot; Ribeirão da Ilha</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/studio/florianopolis/lagoa-da-conceicao/index.html"><span class="lbl">Studios &middot; Lagoa da Conceição</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td></tr>
+            <tr><th scope="row">Terrenos<small>/terreno/</small></th><td><a class="cell-link" href="imoveis/a-venda/terreno/florianopolis/campeche/index.html"><span class="lbl">Terrenos &middot; Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/terreno/florianopolis/novo-campeche/index.html"><span class="lbl">Terrenos &middot; Novo Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/terreno/florianopolis/rio-tavares/index.html"><span class="lbl">Terrenos &middot; Rio Tavares</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/terreno/florianopolis/morro-das-pedras/index.html"><span class="lbl">Terrenos &middot; Morro das Pedras</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/terreno/florianopolis/ribeirao-da-ilha/index.html"><span class="lbl">Terrenos &middot; Ribeirão da Ilha</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/terreno/florianopolis/lagoa-da-conceicao/index.html"><span class="lbl">Terrenos &middot; Lagoa da Conceição</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td></tr>
+            <tr><th scope="row">Salas/Conjuntos<small>/conjunto/</small></th><td><a class="cell-link" href="imoveis/a-venda/conjunto/florianopolis/campeche/index.html"><span class="lbl">Salas/Conjuntos &middot; Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/conjunto/florianopolis/novo-campeche/index.html"><span class="lbl">Salas/Conjuntos &middot; Novo Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/conjunto/florianopolis/rio-tavares/index.html"><span class="lbl">Salas/Conjuntos &middot; Rio Tavares</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/conjunto/florianopolis/morro-das-pedras/index.html"><span class="lbl">Salas/Conjuntos &middot; Morro das Pedras</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/conjunto/florianopolis/ribeirao-da-ilha/index.html"><span class="lbl">Salas/Conjuntos &middot; Ribeirão da Ilha</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td><td><a class="cell-link" href="imoveis/a-venda/conjunto/florianopolis/lagoa-da-conceicao/index.html"><span class="lbl">Salas/Conjuntos &middot; Lagoa da Conceição</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span></span><span class="lbl">im&oacute;veis</span><span class="go" aria-hidden="true">&rarr;</span></a></td></tr>
+          </tbody>
+        </table>
+<!--MATRIX_DESKTOP:END-->
+      </div>
+
+      <div class="matrix-mobile">
+<!--MATRIX_MOBILE:START-->
+        <details open><summary>Apartamentos</summary><ul>
+          <li><a href="imoveis/a-venda/apartamento/florianopolis/campeche/index.html"><span>Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/apartamento/florianopolis/novo-campeche/index.html"><span>Novo Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/apartamento/florianopolis/rio-tavares/index.html"><span>Rio Tavares</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/apartamento/florianopolis/morro-das-pedras/index.html"><span>Morro das Pedras</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/apartamento/florianopolis/ribeirao-da-ilha/index.html"><span>Ribeirão da Ilha</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/apartamento/florianopolis/lagoa-da-conceicao/index.html"><span>Lagoa da Conceição</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+        </ul></details>
+        <details><summary>Casas</summary><ul>
+          <li><a href="imoveis/a-venda/casa/florianopolis/campeche/index.html"><span>Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/casa/florianopolis/novo-campeche/index.html"><span>Novo Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/casa/florianopolis/rio-tavares/index.html"><span>Rio Tavares</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/casa/florianopolis/morro-das-pedras/index.html"><span>Morro das Pedras</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/casa/florianopolis/ribeirao-da-ilha/index.html"><span>Ribeirão da Ilha</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/casa/florianopolis/lagoa-da-conceicao/index.html"><span>Lagoa da Conceição</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+        </ul></details>
+        <details><summary>Casas em Condomínio</summary><ul>
+          <li><a href="imoveis/a-venda/casa-em-condominio/florianopolis/campeche/index.html"><span>Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/casa-em-condominio/florianopolis/novo-campeche/index.html"><span>Novo Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/casa-em-condominio/florianopolis/rio-tavares/index.html"><span>Rio Tavares</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/casa-em-condominio/florianopolis/morro-das-pedras/index.html"><span>Morro das Pedras</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/casa-em-condominio/florianopolis/ribeirao-da-ilha/index.html"><span>Ribeirão da Ilha</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/casa-em-condominio/florianopolis/lagoa-da-conceicao/index.html"><span>Lagoa da Conceição</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+        </ul></details>
+        <details><summary>Coberturas</summary><ul>
+          <li><a href="imoveis/a-venda/cobertura/florianopolis/campeche/index.html"><span>Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/cobertura/florianopolis/novo-campeche/index.html"><span>Novo Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/cobertura/florianopolis/rio-tavares/index.html"><span>Rio Tavares</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/cobertura/florianopolis/morro-das-pedras/index.html"><span>Morro das Pedras</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/cobertura/florianopolis/ribeirao-da-ilha/index.html"><span>Ribeirão da Ilha</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/cobertura/florianopolis/lagoa-da-conceicao/index.html"><span>Lagoa da Conceição</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+        </ul></details>
+        <details><summary>Studios</summary><ul>
+          <li><a href="imoveis/a-venda/studio/florianopolis/campeche/index.html"><span>Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/studio/florianopolis/novo-campeche/index.html"><span>Novo Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/studio/florianopolis/rio-tavares/index.html"><span>Rio Tavares</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/studio/florianopolis/morro-das-pedras/index.html"><span>Morro das Pedras</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/studio/florianopolis/ribeirao-da-ilha/index.html"><span>Ribeirão da Ilha</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/studio/florianopolis/lagoa-da-conceicao/index.html"><span>Lagoa da Conceição</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+        </ul></details>
+        <details><summary>Terrenos</summary><ul>
+          <li><a href="imoveis/a-venda/terreno/florianopolis/campeche/index.html"><span>Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/terreno/florianopolis/novo-campeche/index.html"><span>Novo Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/terreno/florianopolis/rio-tavares/index.html"><span>Rio Tavares</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/terreno/florianopolis/morro-das-pedras/index.html"><span>Morro das Pedras</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/terreno/florianopolis/ribeirao-da-ilha/index.html"><span>Ribeirão da Ilha</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/terreno/florianopolis/lagoa-da-conceicao/index.html"><span>Lagoa da Conceição</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+        </ul></details>
+        <details><summary>Salas/Conjuntos</summary><ul>
+          <li><a href="imoveis/a-venda/conjunto/florianopolis/campeche/index.html"><span>Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/conjunto/florianopolis/novo-campeche/index.html"><span>Novo Campeche</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/conjunto/florianopolis/rio-tavares/index.html"><span>Rio Tavares</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/conjunto/florianopolis/morro-das-pedras/index.html"><span>Morro das Pedras</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/conjunto/florianopolis/ribeirao-da-ilha/index.html"><span>Ribeirão da Ilha</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+          <li><a href="imoveis/a-venda/conjunto/florianopolis/lagoa-da-conceicao/index.html"><span>Lagoa da Conceição</span><span class="count" data-count=""><span class="confirm">[CONFIRM]</span> im&oacute;veis</span></a></li>
+        </ul></details>
+<!--MATRIX_MOBILE:END-->
+      </div>
+    </div>
+
+    <div class="matrix-legend reveal">
+      <span><span class="confirm">[CONFIRM]</span> = contagem gerada do feed real de estoque; nunca um número decorativo.</span>
+      <span>Endereço preservado também para combinações: <a href="imoveis/a-venda/terreno+conjunto/florianopolis/campeche/index.html" class="url-chip">/imoveis/a-venda/terreno+conjunto/florianopolis/campeche/</a></span>
+    </div>
+  </div>
+</section>
+
+<!-- 5. IMÓVEIS EM DESTAQUE -->
+<section class="section section-alt" id="destaques" aria-labelledby="destaques-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Destaques</span>
+        <h2 id="destaques-title">Imóveis em destaque</h2>
+      </div>
+      <p>Estrutura dos cartões apenas. Nenhum imóvel, preço, código ou endereço abaixo é real.</p>
+    </div>
+    <div class="grid grid-4" data-stagger="100">
+<!--CARDS:START-->
+      <article class="card reveal">
+        <div class="card-media ph-img">
+          <!-- PLACEHOLDER-listing : Apartamento -->
+          <img src="https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&w=720&q=70" width="720" height="540" loading="lazy" alt="Edifício residencial baixo e contemporâneo com varandas de vidro — foto ilustrativa">
+          <span class="ribbon">À venda</span>
+          <button class="fav" type="button" aria-pressed="false" aria-label="Favoritar (demonstração)"><svg aria-hidden="true"><use href="#i-heart"/></svg></button>
+        </div>
+        <div class="card-body">
+          <span class="structure-tag">[PLACEHOLDER LISTING — structure only]</span>
+          <h3>Apartamento · <span class="ph">[bairro]</span></h3>
+          <p class="loc">Ref. <span class="confirm">[CONFIRM]</span> · Florianópolis/SC</p>
+          <ul class="specs">
+            <li><svg aria-hidden="true"><use href="#i-bed"/></svg>Dormitórios <span class="confirm">[CONFIRM]</span></li>
+            <li><svg aria-hidden="true"><use href="#i-suite"/></svg>Suítes <span class="confirm">[CONFIRM]</span></li>
+            <li><svg aria-hidden="true"><use href="#i-bath"/></svg>Banheiros <span class="confirm">[CONFIRM]</span></li>
+            <li><svg aria-hidden="true"><use href="#i-car"/></svg>Vagas <span class="confirm">[CONFIRM]</span></li>
+            <li><svg aria-hidden="true"><use href="#i-area"/></svg>Área privativa <span class="confirm">[CONFIRM] m²</span></li>
+          </ul>
+          <p class="price">R$ <span class="confirm">[CONFIRM]</span></p>
+          <p class="creci-line">Unik Imóveis · CRECI <span class="confirm">[CRECI — CONFIRM]</span></p>
+          <a class="btn btn-wa" href="index.html#contato" data-wa-text="Olá! Tenho interesse no imóvel ref. [CÓDIGO]."><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp com a referência</a>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card-media ph-img">
+          <!-- PLACEHOLDER-listing : Apartamento -->
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=720&q=70" width="720" height="540" loading="lazy" alt="Sala integrada clara com sofá, cozinha aberta e parede de madeira — foto ilustrativa">
+          <span class="ribbon">Lançamento [CONFIRM]</span>
+          <button class="fav" type="button" aria-pressed="false" aria-label="Favoritar (demonstração)"><svg aria-hidden="true"><use href="#i-heart"/></svg></button>
+        </div>
+        <div class="card-body">
+          <span class="structure-tag">[PLACEHOLDER LISTING — structure only]</span>
+          <h3>Apartamento · <span class="ph">[bairro]</span></h3>
+          <p class="loc">Ref. <span class="confirm">[CONFIRM]</span> · Florianópolis/SC</p>
+          <ul class="specs">
+            <li><svg aria-hidden="true"><use href="#i-bed"/></svg>Dormitórios <span class="confirm">[CONFIRM]</span></li>
+            <li><svg aria-hidden="true"><use href="#i-suite"/></svg>Suítes <span class="confirm">[CONFIRM]</span></li>
+            <li><svg aria-hidden="true"><use href="#i-bath"/></svg>Banheiros <span class="confirm">[CONFIRM]</span></li>
+            <li><svg aria-hidden="true"><use href="#i-car"/></svg>Vagas <span class="confirm">[CONFIRM]</span></li>
+            <li><svg aria-hidden="true"><use href="#i-area"/></svg>Área privativa <span class="confirm">[CONFIRM] m²</span></li>
+          </ul>
+          <p class="price">R$ <span class="confirm">[CONFIRM]</span></p>
+          <p class="creci-line">Unik Imóveis · CRECI <span class="confirm">[CRECI — CONFIRM]</span></p>
+          <a class="btn btn-wa" href="index.html#contato" data-wa-text="Olá! Tenho interesse no imóvel ref. [CÓDIGO]."><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp com a referência</a>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card-media ph-img">
+          <!-- PLACEHOLDER-listing : Casa -->
+          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=720&q=70" width="720" height="540" loading="lazy" alt="Casa moderna murada com piscina e grandes janelas — foto ilustrativa">
+          <span class="ribbon">À venda</span>
+          <button class="fav" type="button" aria-pressed="false" aria-label="Favoritar (demonstração)"><svg aria-hidden="true"><use href="#i-heart"/></svg></button>
+        </div>
+        <div class="card-body">
+          <span class="structure-tag">[PLACEHOLDER LISTING — structure only]</span>
+          <h3>Casa · <span class="ph">[bairro]</span></h3>
+          <p class="loc">Ref. <span class="confirm">[CONFIRM]</span> · Florianópolis/SC</p>
+          <ul class="specs">
+            <li><svg aria-hidden="true"><use href="#i-bed"/></svg>Dormitórios <span class="confirm">[CONFIRM]</span></li>
+            <li><svg aria-hidden="true"><use href="#i-suite"/></svg>Suítes <span class="confirm">[CONFIRM]</span></li>
+            <li><svg aria-hidden="true"><use href="#i-bath"/></svg>Banheiros <span class="confirm">[CONFIRM]</span></li>
+            <li><svg aria-hidden="true"><use href="#i-car"/></svg>Vagas <span class="confirm">[CONFIRM]</span></li>
+            <li><svg aria-hidden="true"><use href="#i-area"/></svg>Área privativa <span class="confirm">[CONFIRM] m²</span></li>
+          </ul>
+          <p class="price">R$ <span class="confirm">[CONFIRM]</span></p>
+          <p class="creci-line">Unik Imóveis · CRECI <span class="confirm">[CRECI — CONFIRM]</span></p>
+          <a class="btn btn-wa" href="index.html#contato" data-wa-text="Olá! Tenho interesse no imóvel ref. [CÓDIGO]."><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp com a referência</a>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card-media ph-img">
+          <!-- PLACEHOLDER-listing : Cobertura -->
+          <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=720&q=70" width="720" height="540" loading="lazy" alt="Cozinha moderna branca com madeira, ilha e janela ampla — foto ilustrativa">
+          <span class="ribbon">À venda</span>
+          <button class="fav" type="button" aria-pressed="false" aria-label="Favoritar (demonstração)"><svg aria-hidden="true"><use href="#i-heart"/></svg></button>
+        </div>
+        <div class="card-body">
+          <span class="structure-tag">[PLACEHOLDER LISTING — structure only]</span>
+          <h3>Cobertura · <span class="ph">[bairro]</span></h3>
+          <p class="loc">Ref. <span class="confirm">[CONFIRM]</span> · Florianópolis/SC</p>
+          <ul class="specs">
+            <li><svg aria-hidden="true"><use href="#i-bed"/></svg>Dormitórios <span class="confirm">[CONFIRM]</span></li>
+            <li><svg aria-hidden="true"><use href="#i-suite"/></svg>Suítes <span class="confirm">[CONFIRM]</span></li>
+            <li><svg aria-hidden="true"><use href="#i-bath"/></svg>Banheiros <span class="confirm">[CONFIRM]</span></li>
+            <li><svg aria-hidden="true"><use href="#i-car"/></svg>Vagas <span class="confirm">[CONFIRM]</span></li>
+            <li><svg aria-hidden="true"><use href="#i-area"/></svg>Área privativa <span class="confirm">[CONFIRM] m²</span></li>
+          </ul>
+          <p class="price">R$ <span class="confirm">[CONFIRM]</span></p>
+          <p class="creci-line">Unik Imóveis · CRECI <span class="confirm">[CRECI — CONFIRM]</span></p>
+          <a class="btn btn-wa" href="index.html#contato" data-wa-text="Olá! Tenho interesse no imóvel ref. [CÓDIGO]."><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp com a referência</a>
+        </div>
+      </article>
+<!--CARDS:END-->
+    </div>
+  </div>
+</section>
+
+<!-- 6. TERRENOS E CONJUNTOS -->
+<section class="section land-band" id="terrenos" aria-labelledby="terrenos-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Terreno + conjunto</span>
+        <h2 id="terrenos-title">Terrenos e conjuntos</h2>
+      </div>
+      <p>Quem compra terreno precisa de outras informações: zoneamento, infraestrutura e situação documental — informadas lote a lote, com fonte e data.</p>
+    </div>
+    <div class="grid grid-2" data-stagger="120">
+      <article class="card land-card reveal">
+        <div class="card-media ph-img">
+          <!-- PLACEHOLDER-terreno-1 : cleared flat building plot, 16:10 -->
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=70" width="900" height="563" loading="lazy" alt="Terreno plano e aberto ao entardecer — foto ilustrativa de lote">
+          <span class="ribbon">Terreno</span>
+        </div>
+        <div class="card-body">
+          <span class="structure-tag">[PLACEHOLDER LISTING — structure only]</span>
+          <h3>Terreno · <span class="ph">[bairro]</span></h3>
+          <dl class="land-facts">
+            <div><dt>Área total</dt><dd><span class="confirm">[CONFIRM] m²</span></dd></div>
+            <div><dt>Testada × profundidade</dt><dd><span class="confirm">[CONFIRM] m × [CONFIRM] m</span></dd></div>
+            <div><dt>Topografia</dt><dd><span class="confirm">[CONFIRM]</span></dd></div>
+            <div><dt>Zoneamento</dt><dd><span class="confirm">[CONFIRM per lot — Plano Diretor, fonte e data]</span></dd></div>
+            <div><dt>Infraestrutura</dt><dd>Água <span class="confirm">[CONFIRM]</span> · Luz <span class="confirm">[CONFIRM]</span> · Esgoto <span class="confirm">[CONFIRM]</span> · Pavimentação <span class="confirm">[CONFIRM]</span></dd></div>
+            <div><dt>Escritura / matrícula</dt><dd><span class="confirm">[CONFIRM: escritura pública + matrícula registrada, ou posse / contrato particular]</span></dd></div>
+            <div><dt>Loteamento</dt><dd><span class="confirm">[CONFIRM]</span></dd></div>
+          </dl>
+          <p class="price">R$ <span class="confirm">[CONFIRM]</span></p>
+          <p class="creci-line">Unik Imóveis · CRECI <span class="confirm">[CRECI — CONFIRM]</span></p>
+          <a class="btn btn-wa" href="#contato" data-wa-text="Olá! Quero saber mais sobre o terreno ref. [CÓDIGO]."><svg aria-hidden="true"><use href="#i-wa"/></svg>Perguntar pelo WhatsApp</a>
+        </div>
+      </article>
+      <article class="card land-card reveal">
+        <div class="card-media ph-img">
+          <!-- PLACEHOLDER-loteamento : paved loteamento streets, 16:10 -->
+          <img src="https://images.unsplash.com/photo-1524813686514-a57563d77965?auto=format&fit=crop&w=900&q=70" width="900" height="563" loading="lazy" alt="Vista aérea de ruas pavimentadas de um loteamento residencial com casas baixas — foto ilustrativa">
+          <span class="ribbon">Loteamento</span>
+        </div>
+        <div class="card-body">
+          <span class="structure-tag">[PLACEHOLDER LISTING — structure only]</span>
+          <h3>Lote em loteamento · <span class="ph">[bairro]</span></h3>
+          <dl class="land-facts">
+            <div><dt>Área total</dt><dd><span class="confirm">[CONFIRM] m²</span></dd></div>
+            <div><dt>Testada × profundidade</dt><dd><span class="confirm">[CONFIRM] m × [CONFIRM] m</span></dd></div>
+            <div><dt>Topografia</dt><dd><span class="confirm">[CONFIRM]</span></dd></div>
+            <div><dt>Zoneamento</dt><dd><span class="confirm">[CONFIRM per lot — Plano Diretor, fonte e data]</span></dd></div>
+            <div><dt>Infraestrutura</dt><dd>Água <span class="confirm">[CONFIRM]</span> · Luz <span class="confirm">[CONFIRM]</span> · Esgoto <span class="confirm">[CONFIRM]</span> · Pavimentação <span class="confirm">[CONFIRM]</span></dd></div>
+            <div><dt>Escritura / matrícula</dt><dd><span class="confirm">[CONFIRM: escritura pública + matrícula registrada, ou posse / contrato particular]</span></dd></div>
+            <div><dt>Loteamento</dt><dd><span class="confirm">[CONFIRM nome e aprovação]</span></dd></div>
+          </dl>
+          <p class="price">R$ <span class="confirm">[CONFIRM]</span></p>
+          <p class="creci-line">Unik Imóveis · CRECI <span class="confirm">[CRECI — CONFIRM]</span></p>
+          <a class="btn btn-wa" href="#contato" data-wa-text="Olá! Quero saber mais sobre o lote ref. [CÓDIGO]."><svg aria-hidden="true"><use href="#i-wa"/></svg>Perguntar pelo WhatsApp</a>
+        </div>
+      </article>
+    </div>
+    <p class="note reveal" style="margin-top:22px">A área construível depende do zoneamento de cada lote no Plano Diretor de Florianópolis — nunca é generalizada para um loteamento inteiro.</p>
+  </div>
+</section>
+
+<!-- 7. BAIRROS -->
+<section class="section" id="bairros" aria-labelledby="bairros-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Bairros</span>
+        <h2 id="bairros-title">Bairros atendidos</h2>
+      </div>
+      <p>Cobertura <span class="confirm">[CONFIRM]</span>. Cada bairro reúne todos os tipos de imóvel disponíveis nele.</p>
+    </div>
+    <div class="tiles" data-stagger="90">
+<!--TILES:START-->
+      <a class="tile reveal" href="bairros/campeche/index.html">
+        <!-- PLACEHOLDER-bairro-campeche -->
+        <img src="https://images.unsplash.com/photo-1495954484750-af469f2f9be5?auto=format&fit=crop&w=640&q=70" width="640" height="640" loading="lazy" alt="Passarela de madeira sobre a restinga levando à praia — foto ilustrativa do Campeche">
+        <div class="tile-body"><h3>Campeche</h3><p>Dist&acirc;ncia at&eacute; a praia <span class="confirm">[CONFIRM] m</span> &middot; <span class="confirm">[CONFIRM]</span> im&oacute;veis</p><p style="font-size:.62rem;opacity:.85">FOTO ILUSTRATIVA &mdash; placeholder</p></div>
+      </a>
+      <a class="tile reveal" href="bairros/novo-campeche/index.html">
+        <!-- PLACEHOLDER-bairro-novo-campeche -->
+        <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=640&q=70" width="640" height="640" loading="lazy" alt="Edifícios residenciais baixos com varandas — foto ilustrativa do Novo Campeche">
+        <div class="tile-body"><h3>Novo Campeche</h3><p>Dist&acirc;ncia at&eacute; a praia <span class="confirm">[CONFIRM] m</span> &middot; <span class="confirm">[CONFIRM]</span> im&oacute;veis</p><p style="font-size:.62rem;opacity:.85">FOTO ILUSTRATIVA &mdash; placeholder</p></div>
+      </a>
+      <a class="tile reveal" href="bairros/rio-tavares/index.html">
+        <!-- PLACEHOLDER-bairro-rio-tavares -->
+        <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=640&q=70" width="640" height="640" loading="lazy" alt="Rua plana arborizada com casa ao fundo — foto ilustrativa do Rio Tavares">
+        <div class="tile-body"><h3>Rio Tavares</h3><p>Dist&acirc;ncia at&eacute; a praia <span class="confirm">[CONFIRM] m</span> &middot; <span class="confirm">[CONFIRM]</span> im&oacute;veis</p><p style="font-size:.62rem;opacity:.85">FOTO ILUSTRATIVA &mdash; placeholder</p></div>
+      </a>
+      <a class="tile reveal" href="bairros/morro-das-pedras/index.html">
+        <!-- PLACEHOLDER-bairro-morro-das-pedras -->
+        <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=640&q=70" width="640" height="640" loading="lazy" alt="Costão rochoso com enseada e mar agitado — foto ilustrativa do Morro das Pedras">
+        <div class="tile-body"><h3>Morro das Pedras</h3><p>Dist&acirc;ncia at&eacute; a praia <span class="confirm">[CONFIRM] m</span> &middot; <span class="confirm">[CONFIRM]</span> im&oacute;veis</p><p style="font-size:.62rem;opacity:.85">FOTO ILUSTRATIVA &mdash; placeholder</p></div>
+      </a>
+      <a class="tile reveal" href="bairros/ribeirao-da-ilha/index.html">
+        <!-- PLACEHOLDER-bairro-ribeirao-da-ilha -->
+        <img src="https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=640&q=70" width="640" height="640" loading="lazy" alt="Baía de águas calmas entre morros com vegetação — foto ilustrativa do Ribeirão da Ilha">
+        <div class="tile-body"><h3>Ribeirão da Ilha</h3><p>Dist&acirc;ncia at&eacute; a praia <span class="confirm">[CONFIRM] m</span> &middot; <span class="confirm">[CONFIRM]</span> im&oacute;veis</p><p style="font-size:.62rem;opacity:.85">FOTO ILUSTRATIVA &mdash; placeholder</p></div>
+      </a>
+      <a class="tile reveal" href="bairros/lagoa-da-conceicao/index.html">
+        <!-- PLACEHOLDER-bairro-lagoa-da-conceicao -->
+        <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=640&q=70" width="640" height="640" loading="lazy" alt="Lagoa de águas calmas com trapiche de madeira — foto ilustrativa da Lagoa da Conceição">
+        <div class="tile-body"><h3>Lagoa da Conceição</h3><p>Dist&acirc;ncia at&eacute; a praia <span class="confirm">[CONFIRM] m</span> &middot; <span class="confirm">[CONFIRM]</span> im&oacute;veis</p><p style="font-size:.62rem;opacity:.85">FOTO ILUSTRATIVA &mdash; placeholder</p></div>
+      </a>
+<!--TILES:END-->
+    </div>
+  </div>
+</section>
+
+<!-- 8. ANUNCIAR -->
+<section class="section owner dark" id="anunciar" aria-labelledby="anunciar-title">
+  <div class="container owner-grid">
+    <div class="reveal">
+      <span class="eyebrow">Sou proprietário</span>
+      <h2 id="anunciar-title">Anunciar meu imóvel</h2>
+      <p><span class="ph">[PLACEHOLDER: 2 sentences]</span></p>
+      <ul class="checklist">
+        <li><span>Avaliação gratuita <span class="confirm">[CONFIRM se é oferecida]</span></span></li>
+        <li><span>Atendimento pelo WhatsApp <span class="confirm">[CONFIRM número]</span></span></li>
+        <li><span>Imóvel publicado na matriz tipo × bairro do site</span></li>
+      </ul>
+    </div>
+    <form class="form-card reveal" data-demo aria-labelledby="form-anunciar-title">
+      <h3 id="form-anunciar-title">Conte sobre o imóvel</h3>
+      <div class="field">
+        <label for="a-tipo">Tipo</label>
+        <select id="a-tipo" name="tipo" required>
+          <option value="">Selecione</option>
+          <option>Apartamento</option><option>Casa</option><option>Casa em Condomínio</option><option>Cobertura</option><option>Studio</option><option>Terreno</option><option>Sala/Conjunto</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="a-bairro">Bairro</label>
+        <select id="a-bairro" name="bairro" required>
+          <option value="">Selecione</option>
+          <option>Campeche</option><option>Novo Campeche</option><option>Rio Tavares</option><option>Morro das Pedras</option><option>Ribeirão da Ilha</option><option>Lagoa da Conceição</option><option>Outro</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="a-fin">Finalidade</label>
+        <select id="a-fin" name="finalidade" required>
+          <option value="">Selecione</option>
+          <option>Vender</option>
+          <option>Alugar [CONFIRM]</option>
+        </select>
+      </div>
+      <label class="consent"><input type="checkbox" name="lgpd"> <span>Autorizo o uso destes dados para retorno sobre o meu imóvel, conforme a <a href="privacidade.html">Política de Privacidade</a>.</span></label>
+      <button class="btn btn-wa" type="submit"><svg aria-hidden="true"><use href="#i-wa"/></svg>Continuar no WhatsApp <span class="confirm">[CONFIRM]</span></button>
+      <p class="form-notice" role="status"></p>
+      <p class="creci-line" style="margin-top:10px">Não pedimos CPF nem documentos pelo site.</p>
+    </form>
+  </div>
+</section>
+
+<!-- 9. SOBRE -->
+<section class="section" id="sobre" aria-labelledby="sobre-title">
+  <div class="container about-grid">
+    <div class="reveal">
+      <span class="eyebrow">Sobre a Unik</span>
+      <h2 id="sobre-title">Sobre a Unik Imóveis</h2>
+      <p><span class="ph">[PLACEHOLDER: 2–3 sentence agency description — client to supply]</span></p>
+      <p class="note">Posicionamento (ex.: “alto padrão”) só entra quando a Unik confirmar com as próprias palavras. Anos de atuação <span class="confirm">[CONFIRM]</span> · equipe <span class="confirm">[CONFIRM]</span>.</p>
+    </div>
+    <div class="team" data-stagger="100">
+      <div class="person reveal">
+        <div class="photo-frame">[BROKER PHOTO — client to supply]</div>
+        <h3><span class="ph">[Nome do corretor]</span></h3>
+        <p>CRECI <span class="confirm">[CONFIRM]</span></p>
+      </div>
+      <div class="person reveal">
+        <div class="photo-frame">[BROKER PHOTO — client to supply]</div>
+        <h3><span class="ph">[Nome do corretor]</span></h3>
+        <p>CRECI <span class="confirm">[CONFIRM]</span></p>
+      </div>
+      <div class="person reveal">
+        <div class="photo-frame">[BROKER PHOTO — client to supply]</div>
+        <h3><span class="ph">[Nome do corretor]</span></h3>
+        <p>CRECI <span class="confirm">[CONFIRM]</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. VÍDEOS / TOURS — ships only if the YouTube channel is confirmed active and theirs -->
+<section class="section section-alt" id="videos" aria-labelledby="videos-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Vídeos</span>
+        <h2 id="videos-title">Vídeos e tours</h2>
+      </div>
+      <p><span class="confirm">[CONFIRM que o canal do YouTube está ativo e é da Unik — se estiver parado, esta seção sai]</span> Os vídeos só carregam depois do clique.</p>
+    </div>
+    <div class="grid grid-2" data-stagger="120">
+      <div class="reveal">
+        <button class="video-facade" type="button" data-yt="" aria-label="Reproduzir vídeo: tour por imóvel (placeholder)">
+          <!-- PLACEHOLDER-video-1 thumbnail -->
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=70" width="900" height="506" loading="lazy" alt="Casa contemporânea iluminada ao entardecer — miniatura ilustrativa de vídeo">
+          <span class="play" aria-hidden="true"><svg><use href="#i-play"/></svg></span>
+          <span class="vt">Tour por imóvel · <span class="ph">[título do vídeo]</span></span>
+        </button>
+        <p class="video-note creci-line" aria-live="polite" style="margin-top:8px">Miniatura ilustrativa — FOTO ILUSTRATIVA — placeholder</p>
+      </div>
+      <div class="reveal">
+        <button class="video-facade" type="button" data-yt="" aria-label="Reproduzir vídeo: passeio pelo bairro (placeholder)">
+          <!-- PLACEHOLDER-video-2 thumbnail -->
+          <img src="https://images.unsplash.com/photo-1495954484750-af469f2f9be5?auto=format&fit=crop&w=900&q=70" width="900" height="506" loading="lazy" alt="Passarela de madeira sobre a restinga levando à praia — miniatura ilustrativa de vídeo">
+          <span class="play" aria-hidden="true"><svg><use href="#i-play"/></svg></span>
+          <span class="vt">Passeio pelo bairro · <span class="ph">[título do vídeo]</span></span>
+        </button>
+        <p class="video-note creci-line" aria-live="polite" style="margin-top:8px">Miniatura ilustrativa — FOTO ILUSTRATIVA — placeholder</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. FAQ -->
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Dúvidas</span>
+        <h2 id="faq-title">Perguntas frequentes</h2>
+      </div>
+      <p>Informação geral. Prazos, taxas e alíquotas dependem de cada caso <span class="confirm">[CONFIRM antes de publicar valores]</span>.</p>
+    </div>
+    <div class="faq" data-stagger="80">
+      <details class="reveal"><summary>Quais documentos costumam ser pedidos na compra de um imóvel?</summary><div class="answer"><p>Em geral: documentos pessoais do comprador e do vendedor, a matrícula atualizada do imóvel emitida pelo Cartório de Registro de Imóveis, certidões negativas do vendedor e do imóvel e, em condomínio, a declaração de quitação das taxas condominiais. A lista exata depende do caso e do cartório.</p></div></details>
+      <details class="reveal"><summary>O que é o ITBI?</summary><div class="answer"><p>O ITBI (Imposto sobre Transmissão de Bens Imóveis) é um imposto municipal pago, em regra, pelo comprador na transferência do imóvel. Em Florianópolis ele é recolhido à Prefeitura; alíquota e base de cálculo <span class="confirm">[CONFIRM na legislação municipal vigente]</span>.</p></div></details>
+      <details class="reveal"><summary>Qual a diferença entre escritura e registro?</summary><div class="answer"><p>A escritura pública é o documento lavrado em Tabelionato de Notas que formaliza a compra e venda. A propriedade só se transfere com o registro dessa escritura na matrícula do imóvel, no Cartório de Registro de Imóveis competente.</p></div></details>
+      <details class="reveal"><summary>Como funciona o financiamento imobiliário?</summary><div class="answer"><p>O banco analisa o crédito do comprador, avalia o imóvel e, se aprovado, emite o contrato de financiamento, que também é registrado na matrícula. Condições, taxas e prazos dependem de cada instituição e da análise de crédito.</p></div></details>
+      <details class="reveal"><summary>O que verificar na matrícula do imóvel?</summary><div class="answer"><p>Quem é o proprietário atual, a descrição e a área do imóvel, e se há ônus registrados, como hipoteca, alienação fiduciária, penhora ou usufruto. Peça sempre a certidão de inteiro teor atualizada.</p></div></details>
+      <details class="reveal"><summary>O que perguntar antes de comprar um terreno?</summary><div class="answer"><p>Qual o zoneamento do lote segundo o Plano Diretor municipal e o que ele permite construir; quais redes de infraestrutura chegam ao lote (água, energia, esgoto, pavimentação); e se o lote tem matrícula própria e escritura pública, ou se é posse ou contrato particular.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 12. CONTATO -->
+<section class="section section-alt" id="contato" aria-labelledby="contato-title">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <span class="eyebrow">Contato</span>
+      <h2 id="contato-title">Fale com a Unik</h2>
+      <ul class="contact-list">
+        <li><span class="ic" aria-hidden="true" style="background:var(--wa-dark)"><svg style="fill:#fff;stroke:none"><use href="#i-wa"/></svg></span><div><strong>WhatsApp</strong><span class="confirm">[CONFIRM WhatsApp — nenhum número capturado]</span></div></li>
+        <li><span class="ic" aria-hidden="true"><svg><use href="#i-phone"/></svg></span><div><strong>Telefone</strong><span class="confirm">[CONFIRM]</span></div></li>
+        <li><span class="ic" aria-hidden="true"><svg><use href="#i-mail"/></svg></span><div><strong>E-mail</strong><span class="confirm">[CONFIRM]</span></div></li>
+        <li><span class="ic" aria-hidden="true"><svg><use href="#i-pin"/></svg></span><div><strong>Endereço</strong>Campeche, Florianópolis/SC · rua e número <span class="confirm">[CONFIRM]</span></div></li>
+        <li><span class="ic" aria-hidden="true"><svg><use href="#i-clock"/></svg></span><div><strong>Horário</strong><span class="confirm">[CONFIRM]</span></div></li>
+        <li><span class="ic" aria-hidden="true"><svg><use href="#i-suite"/></svg></span><div><strong>Registro</strong>CRECI <span class="confirm">[CRECI — CONFIRM]</span></div></li>
+      </ul>
+    </div>
+    <div class="map-frame reveal" aria-label="Mapa (carrega somente após clique)">
+      <div>
+        <p style="margin:0 0 6px">Unik Imóveis · Campeche, Florianópolis/SC</p>
+        <p style="margin:0 0 14px;font-weight:500">Endereço completo <span class="confirm">[CONFIRM]</span></p>
+        <p style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0">
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Campeche%2C+Florian%C3%B3polis+-+SC" target="_blank" rel="noopener">Abrir no Google Maps</a>
+          <button class="btn btn-dark" type="button" data-map-src="https://www.google.com/maps?q=Campeche,+Florian%C3%B3polis+-+SC&amp;output=embed" data-map-title="Mapa do bairro Campeche, Florianópolis">Carregar mapa</button>
+        </p>
+        <p class="creci-line" style="margin-top:10px">O mapa do Google só é carregado depois do clique. Mostra o bairro, não o endereço — que ainda precisa ser confirmado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer dark">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="wordmark" href="./"><b>UNIK</b><small>IMÓVEIS · CAMPECHE</small></a>
+        <p class="creci-badge">CRECI <span class="confirm">[CONFIRM]</span></p>
+        <p style="margin:0">CNPJ <span class="confirm">[CONFIRM]</span><br>Campeche, Florianópolis/SC — endereço <span class="confirm">[CONFIRM]</span></p>
+      </div>
+      <div>
+        <h2>Comprar</h2>
+        <ul>
+          <li><a href="imoveis/a-venda/apartamento/florianopolis/campeche/index.html">Apartamentos no Campeche</a></li>
+          <li><a href="imoveis/a-venda/casa/florianopolis/campeche/index.html">Casas no Campeche</a></li>
+          <li><a href="imoveis/a-venda/terreno+conjunto/florianopolis/campeche/index.html">Terrenos e conjuntos no Campeche</a></li>
+          <li><a href="#matriz">Todos os tipos e bairros</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Unik</h2>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#anunciar">Anunciar imóvel</a></li>
+          <li><a href="https://www.facebook.com/unikimoveis/" rel="noopener" target="_blank">Facebook</a> <span class="confirm">[CONFIRM ativo]</span></li>
+          <li>YouTube <span class="confirm">[CONFIRM URL do canal]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Privacidade</h2>
+        <ul>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
+          <li><button type="button" class="linklike" data-cookie-prefs>Preferências de cookies</button></li>
+          <li><a href="sitemap.xml">Mapa do site</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Unik Imóveis · CRECI <span class="confirm">[CONFIRM]</span></span>
+      <span>Imagens: fotos ilustrativas de banco de imagens (placeholder).</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="#contato" aria-label="WhatsApp — número a confirmar"><svg aria-hidden="true"><use href="#i-wa"/></svg><span class="wa-label">WhatsApp <span class="confirm">[CONFIRM WhatsApp]</span></span></a>
+<nav class="mobile-bar" aria-label="Contato rápido">
+  <a class="mb-wa" href="#contato"><svg aria-hidden="true" style="fill:#fff"><use href="#i-wa"/></svg>WhatsApp <span class="confirm">[CONFIRM]</span></a>
+  <a class="mb-call" href="#contato"><svg aria-hidden="true" style="fill:none;stroke:#fff;stroke-width:1.8"><use href="#i-phone"/></svg>Ligar <span class="confirm">[CONFIRM]</span></a>
+</nav>
+
+<script src="script.js" defer></script>
+</body>
+</html>

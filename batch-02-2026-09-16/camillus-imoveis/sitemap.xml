@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mockup sitemap. Production adds /encomende-seu-imovel, /financiamento-e-bancos, /cadastre-seu-imovel (existing URLs preserved or 301-mapped) and one page per south-island bairro with live inventory. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://camillusimoveis.com.br/</loc></url>
+  <url><loc>https://camillusimoveis.com.br/imoveis/morro-das-pedras/</loc></url>
+  <url><loc>https://camillusimoveis.com.br/privacidade.html</loc></url>
+</urlset>

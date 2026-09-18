@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bibi Pizzaria — Pizza Napolitana e Rodízio em Santa Mônica, Florianópolis</title>
+<meta name="description" content="Pizzaria napolitana na Av. Madre Benvenuta, 968, Santa Mônica, Florianópolis. Rodízio com mais de 40 opções, à la carte, happy hour e eventos. Todos os dias, das 18h às 23h30.">
+<!-- MOCKUP: "Delivery" kept OUT of the title until a delivery path exists (brief, Tech/SEO). Neighbourhood fixed: Santa Mônica, not "região central". -->
+<link rel="canonical" href="https://bibipizza.com.br/">
+<link rel="alternate" hreflang="pt-BR" href="https://bibipizza.com.br/">
+<link rel="alternate" hreflang="en" href="https://bibipizza.com.br/en/">
+<link rel="alternate" hreflang="x-default" href="https://bibipizza.com.br/">
+<meta property="og:type" content="restaurant">
+<meta property="og:site_name" content="Bibi Pizzaria">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Bibi Pizzaria — Pizza Napolitana e Rodízio em Santa Mônica, Florianópolis">
+<meta property="og:description" content="Rodízio, à la carte, happy hour e eventos na Av. Madre Benvenuta, 968 — Santa Mônica. Todos os dias, 18h–23h30.">
+<meta property="og:url" content="https://bibipizza.com.br/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&amp;fit=crop&amp;w=1200&amp;q=70">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1A1413">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&amp;fit=crop&amp;w=1920&amp;q=70" media="(min-width: 768px)">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+<!-- JSON-LD: no rating or review markup until real review data exists. geo omitted (coordinates not verified). priceRange omitted until rodízio price is confirmed. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://bibipizza.com.br/#restaurant",
+  "name": "Bibi Pizzaria",
+  "alternateName": "Bibi Pizza",
+  "url": "https://bibipizza.com.br/",
+  "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1200&q=70",
+  "servesCuisine": ["Italian", "Pizza"],
+  "hasMenu": "https://bibipizza.com.br/cardapio/",
+  "menu": "https://bibipizza.com.br/cardapio/",
+  "acceptsReservations": true,
+  "telephone": "+55-48-98442-3532",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Me. Benvenuta, 968",
+    "addressLocality": "Florianópolis",
+    "addressRegion": "SC",
+    "postalCode": "88035-000",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "18:00",
+    "closes": "23:30"
+  }],
+  "makesOffer": {
+    "@type": "Offer",
+    "name": "Happy hour: chopp e taça de vinho com 50% OFF",
+    "description": "De segunda a sexta, das 18h às 19h30. [CONFIRM promoção vigente — adicionar validFrom/validThrough antes do lançamento]",
+    "priceCurrency": "BRL"
+  },
+  "sameAs": ["https://www.instagram.com/bibipizzafloripa/"]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<div class="mock-ribbon" role="note">MOCKUP — conteúdo provisório · não é o site oficial</div>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="wordmark" href="index.html" aria-label="Bibi Pizzaria — início">
+      <b>BIBI</b>
+      <small>Pizzaria · Pizza <span class="confirm confirm--dark">[CONFIRM logo + nome comercial]</span></small>
+    </a>
+    <nav class="main-nav" aria-label="Principal">
+      <ul>
+        <li><a href="cardapio/index.html">Cardápio</a></li>
+        <li><a href="rodizio/index.html">Rodízio</a></li>
+        <li><a href="#happy-hour">Happy Hour</a></li>
+        <li><a href="eventos/index.html">Eventos</a></li>
+        <li><a href="delivery/index.html">Delivery</a></li>
+        <li><a href="#a-casa">A Casa</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="lang" aria-label="Idioma"><a href="index.html" aria-current="true" hreflang="pt-BR" lang="pt-BR">PT</a><a href="en/index.html" hreflang="en" lang="en">EN</a></div>
+    <div class="header-cta">
+      <a class="btn btn--sm" href="#reservas">Reservar</a>
+      <a class="btn btn--sm btn--wa" href="https://wa.me/5548984423532?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">Pedir no WhatsApp</a>
+    </div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu"><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Menu móvel">
+  <ul>
+    <li><a href="cardapio/index.html">Cardápio</a></li>
+    <li><a href="rodizio/index.html">Rodízio</a></li>
+    <li><a href="#happy-hour">Happy Hour</a></li>
+    <li><a href="eventos/index.html">Eventos</a></li>
+    <li><a href="delivery/index.html">Delivery</a></li>
+    <li><a href="#a-casa">A Casa</a></li>
+    <li><a href="#contato">Contato</a></li>
+    <li><a href="en/index.html" lang="en" hreflang="en">English</a></li>
+  </ul>
+  <a class="btn" href="#reservas">Reservar mesa</a>
+  <a class="btn btn--wa" href="https://wa.me/5548984423532?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">Pedir no WhatsApp</a>
+</nav>
+
+<main id="conteudo">
+
+<!-- ============ 2. HERO ============ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__media"><!-- PLACEHOLDER-hero -->
+    <picture>
+      <source media="(min-width: 768px)" srcset="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&amp;fit=crop&amp;w=1920&amp;q=70">
+      <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&amp;fit=crop&amp;w=900&amp;h=1300&amp;q=70" alt="Pizza napolitana de borda alta e manchada recém-saída do forno a lenha, com as chamas ao fundo" fetchpriority="high" width="1920" height="1280">
+    </picture>
+  </div>
+  <div class="hero__glow" aria-hidden="true"></div>
+  <span class="photo-badge">Foto ilustrativa — placeholder</span>
+  <div class="wrap">
+    <div class="hero__inner">
+      <p class="eyebrow">Pizza napolitana · Santa Mônica, Florianópolis</p>
+      <h1 id="hero-title">BIBI <em>Pizzaria</em></h1>
+      <p class="positioning"><span class="ph">[PLACEHOLDER: one-line positioning — client to supply]</span></p>
+      <ul class="hero-facts">
+        <li class="fact-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Todos os dias, 18h–23h30</li>
+        <li class="fact-pill fact-pill--brass hh-flag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3h10v6a5 5 0 0 1-10 0z"/><path d="M16 5h2a2 2 0 0 1 0 4h-2"/><path d="M11 14v5M7 21h8"/></svg>Chopp e vinho 50% OFF · seg–sex, 18h–19h30</li>
+      </ul>
+      <div class="btn-row">
+        <a class="btn" href="#reservas">Reservar mesa <span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost" href="#cardapio">Ver cardápio</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. FOUR-TRACK SWITCHER ============ -->
+<section class="tracks" aria-label="Escolha como quer vir à BIBI">
+  <div class="wrap">
+    <div class="tracks__card reveal" data-tabs>
+      <div class="tablist" role="tablist" aria-label="Formatos de serviço">
+        <button class="tab" role="tab" id="tab-rodizio" aria-controls="panel-rodizio" aria-selected="true" data-color="#C9A227" data-hash="rodizio-panel">Rodízio<small>40+ opções</small></button>
+        <button class="tab" role="tab" id="tab-alacarte" aria-controls="panel-alacarte" aria-selected="false" tabindex="-1" data-color="#D9581F">À la carte<small>pizzas e massas</small></button>
+        <button class="tab" role="tab" id="tab-happy" aria-controls="panel-happy" aria-selected="false" tabindex="-1" data-color="#E0B43A">Happy hour<small>seg–sex</small></button>
+        <button class="tab" role="tab" id="tab-eventos" aria-controls="panel-eventos" aria-selected="false" tabindex="-1" data-color="#C4623A">Eventos<small>festas e grupos</small></button>
+        <span class="tab-underline" aria-hidden="true"></span>
+      </div>
+      <div class="panels">
+        <div class="panel" role="tabpanel" id="panel-rodizio" aria-labelledby="tab-rodizio" tabindex="0">
+          <div class="panel__grid">
+            <div>
+              <h3>Rodízio de pizza napolitana</h3>
+              <ul>
+                <li>Mais de 40 opções, entre entradas, massas e pizzas napolitanas salgadas e doces</li>
+                <li>Preço por pessoa: <span class="confirm">[CONFIRM preço do rodízio]</span></li>
+                <li>Dias, horários e regras: <span class="confirm">[CONFIRM]</span></li>
+              </ul>
+              <a class="btn btn--brass" href="rodizio/index.html">Como funciona o rodízio <span class="arr" aria-hidden="true">→</span></a>
+            </div>
+            <div class="panel__temp temp-rodizio"><span class="price-pill">R$ 00,00 <span class="confirm">[CONFIRM preço do rodízio]</span></span><span class="big">Entradas · Massas · Pizzas salgadas · Pizzas doces</span></div>
+          </div>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-alacarte" aria-labelledby="tab-alacarte" tabindex="0" hidden>
+          <div class="panel__grid">
+            <div>
+              <h3>À la carte</h3>
+              <ul>
+                <li>Massa de longa fermentação, farinha tipo 00, modelada à mão</li>
+                <li>Assada em alta temperatura</li>
+                <li>Sabores, tamanhos e preços: <span class="confirm">[CONFIRM cardápio completo]</span></li>
+              </ul>
+              <a class="btn" href="#cardapio">Ver o cardápio <span class="arr" aria-hidden="true">→</span></a>
+            </div>
+            <div class="panel__temp temp-alacarte"><span class="big">O cardápio agora está na página — sem PDF para baixar.</span></div>
+          </div>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-happy" aria-labelledby="tab-happy" tabindex="0" hidden>
+          <div class="panel__grid">
+            <div>
+              <h3>Happy hour</h3>
+              <ul>
+                <li>Chopp e taça de vinho com 50% OFF</li>
+                <li>De segunda a sexta, das 18h às 19h30</li>
+                <li>Rótulos participantes: <span class="confirm">[CONFIRM]</span> · Promoção vigente: <span class="confirm">[CONFIRM]</span></li>
+              </ul>
+              <a class="btn btn--brass" href="#happy-hour">Detalhes do happy hour <span class="arr" aria-hidden="true">→</span></a>
+            </div>
+            <div class="panel__temp temp-happy"><span class="price-pill">50% OFF</span><span class="big">seg–sex · 18h às 19h30</span></div>
+          </div>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-eventos" aria-labelledby="tab-eventos" tabindex="0" hidden>
+          <div class="panel__grid">
+            <div>
+              <h3>Eventos &amp; festas</h3>
+              <ul>
+                <li>Aniversário · Formatura · Evento corporativo</li>
+                <li>Capacidade: <span class="confirm">[CONFIRM]</span> · Espaço exclusivo: <span class="confirm">[CONFIRM]</span></li>
+              </ul>
+              <a class="btn btn--wa" href="https://wa.me/5548984423532?text=Ol%C3%A1!%20Quero%20informa%C3%A7%C3%B5es%20sobre%20eventos%20na%20BIBI." target="_blank" rel="noopener">Consultar evento no WhatsApp</a>
+            </div>
+            <div class="panel__temp temp-eventos"><span class="big">Aniversário · Formatura · Corporativo</span><a href="eventos/index.html">Ver página de eventos →</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. TRUST STRIP ============ -->
+<section class="section--tight" aria-label="Diferenciais">
+  <div class="wrap">
+    <div class="trust">
+      <div class="trust__item reveal" style="--i:0"><div class="trust__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l2.5 2"/></svg></div><h3>Massa de longa fermentação</h3><p>Modelada à mão</p></div>
+      <div class="trust__item reveal" style="--i:1"><div class="trust__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21V8"/><path d="M12 12c-3 0-4-2-4-4 2 0 4 1 4 4zm0 0c3 0 4-2 4-4-2 0-4 1-4 4zm0 4c-3 0-4-2-4-4 2 0 4 1 4 4zm0 0c3 0 4-2 4-4-2 0-4 1-4 4zM12 8c-1-1-1-3 0-5 1 2 1 4 0 5z"/></svg></div><h3>Farinha tipo 00</h3><p>Base da pizza napolitana</p></div>
+      <div class="trust__item reveal" style="--i:2"><div class="trust__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3c1 3 5 5 5 10a5 5 0 0 1-10 0c0-3 2-4 2-6 1 1 2 2 3 2 0-2-1-4 0-6z"/></svg></div><h3>Forno em alta temperatura</h3><p>Assada como manda a tradição</p></div>
+      <div class="trust__item reveal" style="--i:3"><div class="trust__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2v20M4.9 7l14.2 10M4.9 17 19.1 7"/></svg></div><h3>Espaço kids climatizado</h3><p>Com pager e monitoria</p></div>
+      <div class="trust__item reveal" style="--i:4"><div class="trust__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m12 3 9 9-9 9-9-9z"/><path d="m8 12 4-4 4 4-4 4z"/></svg></div><h3>Aceitamos Pix</h3><p><span class="confirm">[CONFIRM]</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. CARDÁPIO ============ -->
+<section class="section" id="cardapio" aria-labelledby="cardapio-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Cardápio</p>
+      <h2 id="cardapio-title">O cardápio da BIBI, direto na página</h2>
+      <p class="lede">Rodízio, pizzas à la carte, entradas, massas, sobremesas e bebidas. Pratos, ingredientes e preços: <span class="confirm">[CONFIRM — cliente envia o cardápio em formato de dados]</span></p>
+    </div>
+
+    <div class="menu-strip">
+      <figure class="reveal" style="--i:0"><!-- PLACEHOLDER-menu-1 --><img src="https://images.unsplash.com/photo-1564936281291-294551497d81?auto=format&amp;fit=crop&amp;w=480&amp;q=70" alt="Pizza margherita com muçarela e manjericão vista de cima" loading="lazy" width="480" height="480"><span class="photo-badge">Foto ilustrativa</span></figure>
+      <figure class="reveal" style="--i:1"><!-- PLACEHOLDER-menu-2 --><img src="https://images.unsplash.com/photo-1693307090398-2a6d5cc39c77?auto=format&amp;fit=crop&amp;w=480&amp;q=70" alt="Pizza sendo levada ao forno em uma pá" loading="lazy" width="480" height="480"><span class="photo-badge">Foto ilustrativa</span></figure>
+      <figure class="reveal" style="--i:2"><!-- PLACEHOLDER-menu-3 --><img src="https://images.unsplash.com/photo-1649400454485-b8ad827f929d?auto=format&amp;fit=crop&amp;w=480&amp;q=70" alt="Burrata sobre tomates em prato escuro" loading="lazy" width="480" height="480"><span class="photo-badge">Foto ilustrativa</span></figure>
+      <figure class="reveal" style="--i:3"><!-- PLACEHOLDER-menu-4 --><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&amp;fit=crop&amp;w=480&amp;q=70" alt="Massa fresca com molho em frigideira" loading="lazy" width="480" height="480"><span class="photo-badge">Foto ilustrativa</span></figure>
+      <figure class="reveal" style="--i:0"><!-- PLACEHOLDER-menu-5 --><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&amp;fit=crop&amp;w=480&amp;q=70" alt="Sobremesa com frutas vermelhas em prato escuro" loading="lazy" width="480" height="480"><span class="photo-badge">Foto ilustrativa</span></figure>
+      <figure class="reveal" style="--i:1"><!-- PLACEHOLDER-menu-6 --><img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&amp;fit=crop&amp;w=480&amp;q=70" alt="Chopp sendo servido na torneira" loading="lazy" width="480" height="480"><span class="photo-badge">Foto ilustrativa</span></figure>
+      <figure class="reveal" style="--i:2"><!-- PLACEHOLDER-menu-7 --><img src="https://images.unsplash.com/photo-1571081538808-612772b00e9f?auto=format&amp;fit=crop&amp;w=480&amp;q=70" alt="Burrata com pães rústicos servida como antepasto" loading="lazy" width="480" height="480"><span class="photo-badge">Foto ilustrativa</span></figure>
+      <figure class="reveal" style="--i:3"><!-- PLACEHOLDER-menu-8 --><img src="https://images.unsplash.com/photo-1532460734809-e7f8475ca917?auto=format&amp;fit=crop&amp;w=480&amp;q=70" alt="Mãos abrindo a massa de pizza sobre bancada enfarinhada" loading="lazy" width="480" height="480"><span class="photo-badge">Foto ilustrativa</span></figure>
+    </div>
+
+    <nav class="menu-nav" aria-label="Categorias do cardápio">
+      <a href="#menu-rodizio">A · Rodízio</a>
+      <a href="#menu-pizzas">B · Pizzas à la carte</a>
+      <a href="#menu-pratos">C · Entradas, massas e sobremesas</a>
+      <a href="#menu-bebidas">D · Bebidas</a>
+      <a href="#alergenos">Alérgenos</a>
+    </nav>
+
+    <!-- A. RODÍZIO -->
+    <div class="menu-group" id="menu-rodizio">
+      <div class="menu-group__head"><h3><span class="tag-letter">A</span>Rodízio</h3></div>
+      <div class="rodizio-card reveal">
+        <p><span class="price-pill" data-menu="rodizio-price">R$ 00,00 <span class="confirm">[CONFIRM preço do rodízio]</span></span></p>
+        <p style="margin-top:14px;font-size:1.1rem"><strong>Mais de 40 opções</strong>, entre entradas, massas e pizzas napolitanas salgadas e doces.</p>
+        <p class="menu-note">Regras do rodízio: <span class="confirm">[CONFIRM: dias, horários, política de crianças, tempo limite]</span></p>
+        <div class="rodizio-cats" data-menu="rodizio">
+          <div class="rodizio-cat"><h4>Entradas</h4><ul><li><span class="confirm">[CONFIRM sabor]</span></li><li><span class="confirm">[CONFIRM sabor]</span></li><li><span class="confirm">[CONFIRM sabor]</span></li></ul></div>
+          <div class="rodizio-cat"><h4>Massas</h4><ul><li><span class="confirm">[CONFIRM sabor]</span></li><li><span class="confirm">[CONFIRM sabor]</span></li><li><span class="confirm">[CONFIRM sabor]</span></li></ul></div>
+          <div class="rodizio-cat"><h4>Pizzas salgadas</h4><ul><li><span class="confirm">[CONFIRM sabor]</span></li><li><span class="confirm">[CONFIRM sabor]</span></li><li><span class="confirm">[CONFIRM sabor]</span></li><li><span class="confirm">[CONFIRM sabor]</span></li></ul></div>
+          <div class="rodizio-cat"><h4>Pizzas doces</h4><ul><li><span class="confirm">[CONFIRM sabor]</span></li><li><span class="confirm">[CONFIRM sabor]</span></li></ul></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- B. PIZZAS -->
+    <div class="menu-group" id="menu-pizzas">
+      <div class="menu-group__head"><h3><span class="tag-letter">B</span>À la carte — pizzas</h3><p class="menu-note" style="margin:0">Todas as pizzas: massa com farinha de trigo tipo 00 — ver <a href="#alergenos">alérgenos</a>.</p></div>
+      <div class="menu-cards" data-menu="pizzas">
+        <article class="dish"><figure class="dish__media"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Pizza napolitana com borda alta e manjericão sobre mesa de pedra" loading="lazy" width="640" height="480"><span class="photo-badge">Foto ilustrativa — placeholder</span></figure><div class="dish__body"><h4 class="dish__name"><span class="confirm">[CONFIRM nome]</span></h4><p class="dish__desc"><span class="confirm">[CONFIRM ingredientes]</span></p><p class="dish__meta">Tamanhos: <span class="confirm">[CONFIRM tamanhos]</span></p><p class="dish__meta"><span class="price">R$ 00,00</span> <span class="confirm">[CONFIRM preço]</span></p><div class="tags"><span class="tag tag--gluten">Contém / não contém glúten <span class="confirm">[CONFIRM glúten]</span></span><span class="tag tag--allergen">Alérgenos <span class="confirm">[CONFIRM alérgenos]</span></span></div></div></article>
+        <article class="dish"><figure class="dish__media"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Pizza com folhas verdes e queijo fresco em fundo escuro" loading="lazy" width="640" height="480"><span class="photo-badge">Foto ilustrativa — placeholder</span></figure><div class="dish__body"><h4 class="dish__name"><span class="confirm">[CONFIRM nome]</span></h4><p class="dish__desc"><span class="confirm">[CONFIRM ingredientes]</span></p><p class="dish__meta">Tamanhos: <span class="confirm">[CONFIRM tamanhos]</span></p><p class="dish__meta"><span class="price">R$ 00,00</span> <span class="confirm">[CONFIRM preço]</span></p><div class="tags"><span class="tag tag--gluten">Contém / não contém glúten <span class="confirm">[CONFIRM glúten]</span></span><span class="tag tag--allergen">Alérgenos <span class="confirm">[CONFIRM alérgenos]</span></span></div></div></article>
+        <article class="dish"><figure class="dish__media"><img src="https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?auto=format&amp;fit=crop&amp;w=640&amp;q=70" alt="Pizza com tomate e manjericão vista de cima em fundo escuro" loading="lazy" width="640" height="480"><span class="photo-badge">Foto ilustrativa — placeholder</span></figure><div class="dish__body"><h4 class="dish__name"><span class="confirm">[CONFIRM nome]</span></h4><p class="dish__desc"><span class="confirm">[CONFIRM ingredientes]</span></p><p class="dish__meta">Tamanhos: <span class="confirm">[CONFIRM tamanhos]</span></p><p class="dish__meta"><span class="price">R$ 00,00</span> <span class="confirm">[CONFIRM preço]</span></p><div class="tags"><span class="tag tag--gluten">Contém / não contém glúten <span class="confirm">[CONFIRM glúten]</span></span><span class="tag tag--allergen">Alérgenos <span class="confirm">[CONFIRM alérgenos]</span></span></div></div></article>
+      </div>
+    </div>
+
+    <!-- C. ENTRADAS, MASSAS E SOBREMESAS -->
+    <div class="menu-group" id="menu-pratos">
+      <div class="menu-group__head"><h3><span class="tag-letter">C</span>Entradas, massas e sobremesas</h3></div>
+      <div class="menu-list" data-menu="lists">
+        <h4>Entradas</h4>
+        <div class="row"><div class="row__top"><span class="row__name"><span class="confirm">[CONFIRM nome]</span></span><span class="row__dots" aria-hidden="true"></span><span class="price">R$ 00,00</span> <span class="confirm">[CONFIRM preço]</span></div><p><span class="confirm">[CONFIRM descrição]</span></p></div>
+        <div class="row"><div class="row__top"><span class="row__name"><span class="confirm">[CONFIRM nome]</span></span><span class="row__dots" aria-hidden="true"></span><span class="price">R$ 00,00</span> <span class="confirm">[CONFIRM preço]</span></div><p><span class="confirm">[CONFIRM descrição]</span></p></div>
+        <h4>Massas</h4>
+        <div class="row"><div class="row__top"><span class="row__name"><span class="confirm">[CONFIRM nome]</span></span><span class="row__dots" aria-hidden="true"></span><span class="price">R$ 00,00</span> <span class="confirm">[CONFIRM preço]</span></div><p><span class="confirm">[CONFIRM descrição]</span></p></div>
+        <h4>Sobremesas</h4>
+        <div class="row"><div class="row__top"><span class="row__name"><span class="confirm">[CONFIRM nome]</span></span><span class="row__dots" aria-hidden="true"></span><span class="price">R$ 00,00</span> <span class="confirm">[CONFIRM preço]</span></div><p><span class="confirm">[CONFIRM descrição]</span></p></div>
+      </div>
+    </div>
+
+    <!-- D. BEBIDAS -->
+    <div class="menu-group" id="menu-bebidas">
+      <div class="menu-group__head"><h3><span class="tag-letter">D</span>Bebidas</h3></div>
+      <p class="menu-note">Happy hour: chopp e taça de vinho com 50% OFF, de segunda a sexta, das 18h às 19h30. Rótulos participantes: <span class="confirm">[CONFIRM]</span></p>
+      <div class="menu-list" data-menu="bebidas">
+        <h4>Chopp</h4>
+        <div class="row"><div class="row__top"><span class="row__name"><span class="confirm">[CONFIRM nome]</span></span><span class="row__dots" aria-hidden="true"></span><span class="price">R$ 00,00</span> <span class="confirm">[CONFIRM preço]</span></div><p><span class="confirm">[CONFIRM descrição]</span></p></div>
+        <h4>Vinhos (taça)</h4>
+        <div class="row"><div class="row__top"><span class="row__name"><span class="confirm">[CONFIRM nome]</span></span><span class="row__dots" aria-hidden="true"></span><span class="price">R$ 00,00</span> <span class="confirm">[CONFIRM preço]</span></div><p><span class="confirm">[CONFIRM descrição]</span></p></div>
+        <h4>Sem álcool</h4>
+        <div class="row"><div class="row__top"><span class="row__name"><span class="confirm">[CONFIRM nome]</span></span><span class="row__dots" aria-hidden="true"></span><span class="price">R$ 00,00</span> <span class="confirm">[CONFIRM preço]</span></div><p><span class="confirm">[CONFIRM descrição]</span></p></div>
+      </div>
+    </div>
+    <p><a class="btn btn--ghost" href="cardapio/index.html">Abrir o cardápio em página própria <span class="arr" aria-hidden="true">→</span></a></p>
+    <!-- Redesign note: keep the current Google Drive PDF reachable (or 301 it to /cardapio/) — it is externally linked. -->
+  </div>
+</section>
+
+<!-- ============ 6. RODÍZIO — COMO FUNCIONA ============ -->
+<section class="section band-char" id="rodizio" aria-labelledby="rodizio-title">
+  <div class="wrap split">
+    <figure class="media media--45 reveal"><!-- PLACEHOLDER-rodizio -->
+      <img src="https://images.unsplash.com/photo-1600628421055-4d30de868b8f?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Pizza sendo servida à mesa e fatias passando de mão em mão, rostos fora do enquadramento" loading="lazy" width="900" height="1125">
+      <span class="photo-badge">Foto ilustrativa — placeholder</span>
+    </figure>
+    <div class="reveal" style="--i:1">
+      <p class="eyebrow">Rodízio — como funciona</p>
+      <h2 id="rodizio-title">Mais de 40 opções, passando pela mesa</h2>
+      <p class="lede">Entradas, massas e pizzas napolitanas salgadas e doces.</p>
+      <dl class="facts">
+        <div class="fact"><dt>Preço por pessoa</dt><dd>R$ 00,00 <span class="confirm">[CONFIRM preço do rodízio]</span></dd></div>
+        <div class="fact"><dt>Dias e horários</dt><dd><span class="confirm">[CONFIRM]</span></dd></div>
+        <div class="fact"><dt>O que está incluído</dt><dd>Entradas, massas, pizzas salgadas e doces</dd></div>
+        <div class="fact"><dt>O que não está incluído</dt><dd><span class="confirm">[CONFIRM — ex.: bebidas]</span></dd></div>
+        <div class="fact"><dt>Crianças</dt><dd><span class="confirm">[CONFIRM política e valores]</span></dd></div>
+        <div class="fact"><dt>Tempo limite / regras da casa</dt><dd><span class="confirm">[CONFIRM]</span></dd></div>
+      </dl>
+      <div class="btn-row" style="display:flex;flex-wrap:wrap;gap:12px">
+        <a class="btn" href="#reservas">Reservar para o rodízio</a>
+        <a class="btn btn--ghost" href="rodizio/index.html">Página do rodízio <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. HAPPY HOUR ============ -->
+<!-- [CONFIRM — promoção vigente?] MAINTENANCE: promotions expire. Edit HAPPY_HOUR in script.js and this band together; a stale promo is a CDC exposure. -->
+<section class="section hh-band" id="happy-hour" aria-labelledby="hh-title">
+  <div class="wrap split split--rev">
+    <figure class="media media--43 reveal"><!-- PLACEHOLDER-happy-hour -->
+      <img src="https://images.unsplash.com/photo-1566633806327-68e152aaf26d?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Copo de chopp sendo servido sobre o balcão em luz quente" loading="lazy" width="900" height="675">
+      <span class="photo-badge">Foto ilustrativa — placeholder</span>
+    </figure>
+    <div class="reveal" style="--i:1">
+      <p class="eyebrow">Happy hour</p>
+      <h2 id="hh-title" class="hh-headline">Chopp e taça de vinho com 50% OFF<span>Segunda a sexta · 18h às 19h30</span></h2>
+      <p class="countdown" data-hh-status role="status"><span class="dot" aria-hidden="true"></span><span class="txt">De segunda a sexta, das 18h às 19h30</span></p>
+      <dl class="facts">
+        <div class="fact"><dt>Válido para</dt><dd>Chopp e taça de vinho · rótulos <span class="confirm">[CONFIRM]</span></dd></div>
+        <div class="fact"><dt>Condições</dt><dd><span class="confirm">[CONFIRM: limite por pessoa, consumo no local]</span></dd></div>
+      </dl>
+      <p class="menu-note">Promoção sujeita a alteração. Vigência: <span class="confirm">[CONFIRM promoção vigente]</span></p>
+      <a class="btn btn--brass" href="#reservas">Reservar para o happy hour</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. DELIVERY ============ -->
+<section class="section" id="delivery" aria-labelledby="delivery-title">
+  <div class="wrap split">
+    <figure class="media media--43 reveal"><!-- PLACEHOLDER-delivery -->
+      <img src="https://images.unsplash.com/photo-1630466913899-31fb06c6110e?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Pizza dentro de caixa de papelão aberta" loading="lazy" width="900" height="675">
+      <span class="photo-badge">Foto ilustrativa — placeholder</span>
+    </figure>
+    <div class="reveal" style="--i:1">
+      <p class="eyebrow">Delivery &amp; pedidos</p>
+      <h2 id="delivery-title">Como pedir a BIBI em casa</h2>
+      <p class="lede">Canal de pedido: <span class="confirm">[CONFIRM: WhatsApp, iFood ou entrega própria]</span></p>
+      <dl class="facts">
+        <div class="fact"><dt>Área de entrega</dt><dd><span class="confirm">[CONFIRM bairros]</span></dd></div>
+        <div class="fact"><dt>Pedido mínimo</dt><dd>R$ 00,00 <span class="confirm">[CONFIRM]</span></dd></div>
+        <div class="fact"><dt>Taxa de entrega</dt><dd>R$ 00,00 <span class="confirm">[CONFIRM]</span></dd></div>
+        <div class="fact"><dt>Tempo estimado</dt><dd><span class="confirm">[CONFIRM]</span></dd></div>
+        <div class="fact"><dt>iFood</dt><dd><span class="confirm">[CONFIRM]</span></dd></div>
+        <div class="fact"><dt>Pagamento</dt><dd>Pix <span class="confirm">[CONFIRM]</span> · Cartões <span class="confirm">[CONFIRM]</span></dd></div>
+      </dl>
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        <a class="btn btn--wa" href="https://wa.me/5548984423532?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20para%20delivery." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.23 9.43-9.44 9.43zm8.03-17.46A11.27 11.27 0 0 0 12.04.72C5.79.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.28l5.68-1.49a11.3 11.3 0 0 0 5.75 1.47c6.25 0 11.34-5.09 11.34-11.34 0-3.03-1.18-5.88-3.32-8.02z"/></svg>Pedir no WhatsApp</a>
+        <a class="btn btn--ghost" href="delivery/index.html">Página de delivery <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. EVENTOS ============ -->
+<section class="section band-char" id="eventos" aria-labelledby="eventos-title">
+  <div class="wrap split split--rev">
+    <figure class="media media--43 reveal"><!-- PLACEHOLDER-eventos -->
+      <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Salão de restaurante com mesas postas com toalhas e taças, sem pessoas" loading="lazy" width="900" height="675">
+      <span class="photo-badge">Foto ilustrativa — placeholder</span>
+    </figure>
+    <div class="reveal" style="--i:1">
+      <p class="eyebrow">Eventos &amp; festas</p>
+      <h2 id="eventos-title">Aniversário, formatura e evento corporativo</h2>
+      <dl class="facts">
+        <div class="fact"><dt>Formatos</dt><dd><span class="confirm">[CONFIRM: rodízio, menu fechado, coquetel]</span></dd></div>
+        <div class="fact"><dt>Capacidade</dt><dd><span class="confirm">[CONFIRM]</span></dd></div>
+        <div class="fact"><dt>Salão exclusivo</dt><dd><span class="confirm">[CONFIRM]</span></dd></div>
+        <div class="fact"><dt>Valores</dt><dd><span class="confirm">[CONFIRM — sob consulta?]</span></dd></div>
+      </dl>
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        <a class="btn btn--wa" href="https://wa.me/5548984423532?text=Ol%C3%A1!%20Quero%20informa%C3%A7%C3%B5es%20sobre%20eventos%20na%20BIBI." target="_blank" rel="noopener">Consultar data no WhatsApp</a>
+        <a class="btn btn--ghost" href="eventos/index.html">Página de eventos <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. ESPAÇO KIDS (icon treatment — no photography, by design) ============ -->
+<section class="section--tight" id="espaco-kids" aria-labelledby="kids-title">
+  <div class="wrap split">
+    <div class="reveal">
+      <p class="eyebrow">Espaço kids</p>
+      <h2 id="kids-title">Espaço kids climatizado, com pager e monitoria</h2>
+      <p class="lede">Espaço kids climatizado, com pager e monitoria.</p>
+      <p class="menu-note">Como funciona a monitoria, faixa etária, horários e regras de uso: <span class="confirm">[CONFIRM what "monitoria" actually means here]</span></p>
+    </div>
+    <div class="kids-icons reveal" style="--i:1">
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2v20M4.9 7l14.2 10M4.9 17 19.1 7"/></svg><b>Climatizado</b></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M10 6h4M11 18h2"/></svg><b>Pager</b></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><b>Monitoria</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. A CASA ============ -->
+<section class="section band-light" id="a-casa" aria-labelledby="casa-title">
+  <div class="wrap split">
+    <div class="grid grid-2 reveal">
+      <figure class="media media--45" style="margin:0"><!-- PLACEHOLDER-a-casa-oven -->
+        <img src="https://images.unsplash.com/photo-1646656352194-7db15ee021bf?auto=format&amp;fit=crop&amp;w=700&amp;q=70" alt="Boca de forno a lenha com fogo aceso em ambiente escuro" loading="lazy" width="700" height="875">
+        <span class="photo-badge">Foto ilustrativa — placeholder</span>
+      </figure>
+      <div class="empty-frame" style="aspect-ratio:4/5">[TEAM PHOTO — client to supply]<br>Foto do pizzaiolo / equipe</div>
+    </div>
+    <div class="reveal" style="--i:1">
+      <p class="eyebrow">A casa</p>
+      <h2 id="casa-title">Sobre a BIBI</h2>
+      <p><span class="ph">[PLACEHOLDER: 2–3 sentence description — client to supply]</span></p>
+      <dl class="facts">
+        <div class="fact"><dt>Desde</dt><dd><span class="confirm">[CONFIRM]</span></dd></div>
+        <div class="fact"><dt>Quem está por trás</dt><dd><span class="confirm">[CONFIRM]</span></dd></div>
+      </dl>
+      <p>A pizza: massa de longa fermentação, farinha tipo 00, modelada à mão e assada em alta temperatura.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12. GALERIA ============ -->
+<section class="section" id="galeria" aria-labelledby="galeria-title">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Galeria</p><h2 id="galeria-title">Forno, salão e mesa</h2><p class="lede">Imagens ilustrativas — substituir pelas fotos reais da casa.</p></div>
+    <div class="carousel" data-carousel>
+      <div class="carousel__controls">
+        <button class="icon-btn" type="button" data-prev aria-label="Fotos anteriores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+        <button class="icon-btn" type="button" data-next aria-label="Próximas fotos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+      </div>
+      <ul class="carousel__track" aria-label="Galeria de fotos">
+        <li class="carousel__item"><figure style="margin:0"><!-- PLACEHOLDER-gallery-1 --><img src="https://images.unsplash.com/photo-1680798671233-a6823e6e9a1e?auto=format&amp;fit=crop&amp;w=700&amp;q=70" alt="Pizza assando dentro do forno com chamas ao lado" loading="lazy" width="700" height="500"><figcaption>Forno · foto ilustrativa — placeholder</figcaption></figure></li>
+        <li class="carousel__item"><figure style="margin:0"><!-- PLACEHOLDER-gallery-2 --><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=700&amp;q=70" alt="Salão de restaurante com mesas de madeira e iluminação baixa, sem pessoas" loading="lazy" width="700" height="500"><figcaption>Salão · foto ilustrativa — placeholder</figcaption></figure></li>
+        <li class="carousel__item tall"><figure style="margin:0"><!-- PLACEHOLDER-gallery-3 --><img src="https://images.unsplash.com/photo-1537734796389-e1fc293cf856?auto=format&amp;fit=crop&amp;w=500&amp;q=70" alt="Mãos segurando uma bola de massa de pizza em fundo escuro" loading="lazy" width="500" height="700"><figcaption>Massa · foto ilustrativa — placeholder</figcaption></figure></li>
+        <li class="carousel__item"><figure style="margin:0"><!-- PLACEHOLDER-gallery-4 --><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&amp;fit=crop&amp;w=700&amp;q=70" alt="Pizza com folhas verdes e queijo fresco" loading="lazy" width="700" height="500"><figcaption>Pizza · foto ilustrativa — placeholder</figcaption></figure></li>
+        <li class="carousel__item"><figure style="margin:0"><!-- PLACEHOLDER-gallery-5 --><img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&amp;fit=crop&amp;w=700&amp;q=70" alt="Balcão de bar com banquetas e prateleiras iluminadas, sem pessoas" loading="lazy" width="700" height="500"><figcaption>Bar · foto ilustrativa — placeholder</figcaption></figure></li>
+        <li class="carousel__item tall"><figure style="margin:0"><!-- PLACEHOLDER-gallery-6 --><img src="https://images.unsplash.com/photo-1652283321082-72bb2b601abd?auto=format&amp;fit=crop&amp;w=500&amp;q=70" alt="Mãos modelando bolas de massa sobre bancada enfarinhada" loading="lazy" width="500" height="700"><figcaption>Massa · foto ilustrativa — placeholder</figcaption></figure></li>
+        <li class="carousel__item"><figure style="margin:0"><!-- PLACEHOLDER-gallery-7 --><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&amp;fit=crop&amp;w=700&amp;q=70" alt="Área externa de restaurante com mesas ao entardecer, sem pessoas" loading="lazy" width="700" height="500"><figcaption>Fachada / área externa · foto ilustrativa — placeholder</figcaption></figure></li>
+        <li class="carousel__item"><figure style="margin:0"><!-- PLACEHOLDER-gallery-8 --><img src="https://images.unsplash.com/photo-1724734333240-613ab047137b?auto=format&amp;fit=crop&amp;w=700&amp;q=70" alt="Pizza dentro do forno a lenha com fogo ao fundo" loading="lazy" width="700" height="500"><figcaption>Forno · foto ilustrativa — placeholder</figcaption></figure></li>
+        <li class="carousel__item tall"><figure style="margin:0"><!-- PLACEHOLDER-gallery-9 --><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&amp;fit=crop&amp;w=500&amp;q=70" alt="Sobremesa em camadas com framboesas" loading="lazy" width="500" height="700"><figcaption>Sobremesa · foto ilustrativa — placeholder</figcaption></figure></li>
+        <li class="carousel__item"><figure style="margin:0"><!-- PLACEHOLDER-gallery-10 --><img src="https://images.unsplash.com/photo-1474722883778-792e7990302f?auto=format&amp;fit=crop&amp;w=700&amp;q=70" alt="Taça de vinho tinto com uvas em fundo escuro" loading="lazy" width="700" height="500"><figcaption>Vinho · foto ilustrativa — placeholder</figcaption></figure></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13. RESERVAS ============ -->
+<!-- FIX for live bug: every reservation control on this site points to BIBI only (never pensanoevento .../pippo-ristorante). -->
+<section class="section band-char" id="reservas" aria-labelledby="reservas-title">
+  <div class="wrap split">
+    <div class="reveal">
+      <p class="eyebrow">Reservas</p>
+      <h2 id="reservas-title">Reserve sua mesa na BIBI</h2>
+      <p class="lede">Todos os dias, das 18h às 23h30. Av. Me. Benvenuta, 968 — Santa Mônica.</p>
+      <p class="integration-note">Integração de reservas: <span class="confirm">[CONFIRM whether to keep the pensanoevento integration or move to a first-party flow]</span> · Reserva atual da BIBI: <a href="https://pensanoevento.com.br/bibipizzafloripa" target="_blank" rel="noopener">pensanoevento.com.br/bibipizzafloripa</a></p>
+    </div>
+    <form class="form-card reveal" style="--i:1" data-demo novalidate aria-describedby="res-purpose">
+      <div class="form-grid">
+        <div><label for="res-date">Data (DD/MM)</label><input id="res-date" name="data" inputmode="numeric" placeholder="DD/MM" pattern="\d{2}/\d{2}" maxlength="5" data-ddmm required></div>
+        <div><label for="res-time">Horário</label><select id="res-time" name="horario" required><option value="">Selecione</option><option>18:00</option><option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option><option>21:30</option><option>22:00</option></select></div>
+        <div><label for="res-size">Pessoas</label><select id="res-size" name="pessoas" required><option value="">Selecione</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option value="9+">9 ou mais (grupo)</option></select></div>
+        <div><label for="res-format">Formato</label><select id="res-format" name="formato"><option>Rodízio</option><option>À la carte</option><option>Happy hour</option><option>Evento</option></select></div>
+        <div><label for="res-name">Nome</label><input id="res-name" name="nome" autocomplete="name" required></div>
+        <div><label for="res-phone">WhatsApp</label><input id="res-phone" name="telefone" type="tel" autocomplete="tel" placeholder="(48) 00000-0000" required></div>
+        <p class="purpose full" id="res-purpose">Usamos seu nome e telefone apenas para confirmar esta reserva. Horários de reserva: <span class="confirm">[CONFIRM]</span></p>
+        <label class="check full"><input type="checkbox" name="lgpd" required> <span>Li e concordo com a <a href="privacidade.html">Política de Privacidade</a> e autorizo o uso dos meus dados para esta reserva.</span></label>
+        <div class="full"><button class="btn" type="submit" style="width:100%">Reservar</button></div>
+      </div>
+      <p class="form-notice" role="status" tabindex="-1">Demonstração: nenhuma reserva foi enviada. Na versão final, este formulário envia para o sistema de reservas da BIBI.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ 14. AVALIAÇÕES ============ -->
+<section class="section--tight" aria-labelledby="reviews-title">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Avaliações</p><h2 id="reviews-title">O que dizem da BIBI</h2></div>
+    <div class="grid grid-3">
+      <div class="review-card reveal" style="--i:0"><span class="confirm">[CONFIRM — puxar avaliações verificadas do Google antes do lançamento]</span></div>
+      <div class="review-card reveal" style="--i:1"><span class="confirm">[CONFIRM — puxar avaliações verificadas do Google antes do lançamento]</span></div>
+      <div class="review-card reveal" style="--i:2"><span class="confirm">[CONFIRM — puxar avaliações verificadas do Google antes do lançamento]</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 15. ONDE ESTAMOS + HORÁRIOS ============ -->
+<section class="section band-char" id="contato" aria-labelledby="onde-title">
+  <div class="wrap split">
+    <!-- LGPD: no Google Maps iframe loads until the visitor clicks "Carregar mapa". -->
+    <div class="map-ph reveal" data-map="Av.+Me.+Benvenuta%2C+968+-+Santa+M%C3%B4nica%2C+Florian%C3%B3polis+-+SC%2C+88035-000" data-map-title="Mapa: BIBI Pizzaria, Av. Me. Benvenuta, 968">
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><strong>Av. Me. Benvenuta, 968 — Santa Mônica</strong>
+        <p class="map-actions"><button class="btn btn--sm" type="button" data-map-load>Carregar mapa</button> <a class="btn btn--sm btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Me.+Benvenuta%2C+968+-+Santa+M%C3%B4nica%2C+Florian%C3%B3polis+-+SC%2C+88035-000" target="_blank" rel="noopener">Abrir no Google Maps</a></p>
+        <p class="map-note">Ao carregar o mapa, o Google recebe dados da sua navegação.</p></div>
+    </div>
+    <div class="reveal" style="--i:1">
+      <p class="eyebrow">Onde estamos</p>
+      <h2 id="onde-title">Santa Mônica, Florianópolis</h2>
+      <address><strong>Av. Me. Benvenuta, 968</strong><br>Santa Mônica, Florianópolis — SC<br>CEP 88035-000</address>
+      <table class="hours">
+        <caption class="sr-only">Horário de funcionamento</caption>
+        <tbody>
+          <tr><th scope="row">Todos os dias</th><td>18:00–23:30</td></tr>
+          <tr class="hh"><th scope="row">Happy hour · seg–sex</th><td>18:00–19:30</td></tr>
+        </tbody>
+      </table>
+      <p>Estacionamento: <span class="confirm">[CONFIRM]</span><br>WhatsApp: <a href="https://wa.me/5548984423532" target="_blank" rel="noopener">(48) 98442-3532</a><br>Instagram: <a href="https://www.instagram.com/bibipizzafloripa/" target="_blank" rel="noopener">@bibipizzafloripa</a><br>E-mail: <span class="confirm">[CONFIRM]</span></p>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Me.+Benvenuta%2C+968+-+Santa+M%C3%B4nica%2C+Florian%C3%B3polis+-+SC%2C+88035-000" target="_blank" rel="noopener">Como chegar <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 16. TRABALHE CONOSCO ============ -->
+<section class="section--tight" id="trabalhe-conosco" aria-labelledby="jobs-title">
+  <div class="wrap">
+    <div class="form-card reveal" style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
+      <div><h2 id="jobs-title" style="font-size:1.6rem;margin:0 0 .2em">Trabalhe conosco</h2><p style="margin:0">Envie seu currículo para: <span class="confirm">[CONFIRM e-mail para currículos]</span></p></div>
+      <span class="btn btn--ghost" aria-disabled="true">E-mail <span class="confirm">[CONFIRM]</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 17. ALÉRGENOS ============ -->
+<section class="section band-light" id="alergenos" aria-labelledby="alergenos-title">
+  <div class="wrap">
+    <div class="allergen-box reveal">
+      <p class="eyebrow">Alérgenos &amp; informações</p>
+      <h2 id="alergenos-title">Alérgenos e glúten</h2>
+      <p class="legal-line">CONTÉM GLÚTEN — as massas da casa são feitas com farinha de trigo tipo 00. Declaração por item (Lei 10.674/2003): <span class="confirm">[CONFIRM per item]</span></p>
+      <p>Declaração de alérgenos (ANVISA RDC 26/2015) — presença por prato: <span class="confirm">[CONFIRM per item]</span></p>
+      <ul class="allergen-grid">
+        <li>Trigo (glúten)<span>Massas e pizzas <span class="confirm">[CONFIRM]</span></span></li>
+        <li>Leite<span><span class="confirm">[CONFIRM]</span></span></li>
+        <li>Ovos<span><span class="confirm">[CONFIRM]</span></span></li>
+        <li>Soja<span><span class="confirm">[CONFIRM]</span></span></li>
+        <li>Castanhas<span><span class="confirm">[CONFIRM]</span></span></li>
+        <li>Amendoim<span><span class="confirm">[CONFIRM]</span></span></li>
+        <li>Gergelim<span><span class="confirm">[CONFIRM]</span></span></li>
+      </ul>
+      <p><strong>Contato cruzado:</strong> preparamos todos os itens em cozinha compartilhada, com o mesmo forno e a mesma bancada de preparo, onde há farinha de trigo. Por isso, pode haver traços de glúten e de outros alérgenos em qualquer item. <span class="confirm">[CONFIRM texto final com a cozinha]</span></p>
+      <p>Tem alergia ou restrição? Fale com a equipe antes de pedir. Alvará sanitário: <span class="confirm">[CONFIRM]</span></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ 18. FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="wordmark" style="margin-bottom:12px"><b>BIBI</b><small>Pizzaria · Pizza <span class="confirm confirm--dark">[CONFIRM nome comercial]</span></small></p>
+        <p style="color:var(--muted)">Pizza napolitana, rodízio, happy hour e eventos em Santa Mônica, Florianópolis.</p>
+        <div class="lang" aria-label="Idioma"><a href="index.html" aria-current="true" hreflang="pt-BR">PT</a><a href="en/index.html" hreflang="en" lang="en">EN</a></div>
+      </div>
+      <div>
+        <h2>Links rápidos</h2>
+        <ul>
+          <li><a href="cardapio/index.html">Cardápio</a></li>
+          <li><a href="rodizio/index.html">Rodízio</a></li>
+          <li><a href="#happy-hour">Happy hour</a></li>
+          <li><a href="eventos/index.html">Eventos</a></li>
+          <li><a href="delivery/index.html">Delivery</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+          <li><a href="#trabalhe-conosco">Trabalhe conosco</a></li>
+          <li><a href="#alergenos">Alérgenos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Horários</h2>
+        <table class="footer-hours"><caption class="sr-only">Horários</caption><tbody>
+          <tr><th scope="row">Todos os dias</th><td>18:00–23:30</td></tr>
+          <tr class="hh"><th scope="row">Happy hour (seg–sex)</th><td>18:00–19:30</td></tr>
+        </tbody></table>
+      </div>
+      <div>
+        <h2>Contato</h2>
+        <address><ul>
+          <li>Av. Me. Benvenuta, 968 — Santa Mônica, Florianópolis, SC, 88035-000</li>
+          <li><a href="https://wa.me/5548984423532" target="_blank" rel="noopener">WhatsApp (48) 98442-3532</a></li>
+          <li><a href="https://www.instagram.com/bibipizzafloripa/" target="_blank" rel="noopener">Instagram @bibipizzafloripa</a></li>
+          <li>E-mail: <span class="confirm confirm--dark">[CONFIRM]</span></li>
+        </ul></address>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p style="margin:0">© <span data-year>2026</span> Bibi Pizzaria <span class="confirm confirm--dark">[CONFIRM razão social]</span> · CNPJ <span class="confirm confirm--dark">[CONFIRM]</span></p>
+      <p style="margin:0"><a href="privacidade.html">Política de Privacidade</a> · <button class="linklike" type="button" data-cookie-open>Preferências de cookies</button></p>
+    </div>
+  </div>
+</footer>
+
+<!-- persistent chrome -->
+<div class="cta-bar" role="region" aria-label="Ações rápidas">
+  <a class="btn" href="#reservas">Reservar</a>
+  <a class="btn btn--wa" href="https://wa.me/5548984423532?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">Pedir no WhatsApp</a>
+</div>
+<a class="wa-float" href="https://wa.me/5548984423532?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20BIBI." target="_blank" rel="noopener" aria-label="Conversar com a BIBI no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.23 9.43-9.44 9.43zm8.03-17.46A11.27 11.27 0 0 0 12.04.72C5.79.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.28l5.68-1.49a11.3 11.3 0 0 0 5.75 1.47c6.25 0 11.34-5.09 11.34-11.34 0-3.03-1.18-5.88-3.32-8.02z"/></svg></a>
+
+<div class="cookie" id="cookie" hidden>
+  <div class="cookie__sheet" role="dialog" aria-modal="false" aria-labelledby="cookie-title">
+    <h2 id="cookie-title" tabindex="-1">Cookies e privacidade</h2>
+    <p>Usamos cookies necessários para o site funcionar. Com a sua permissão, também usamos cookies de análise e de marketing. Você pode mudar sua escolha a qualquer momento. <a href="privacidade.html">Política de Privacidade</a>.</p>
+    <div class="cookie__prefs" hidden>
+      <div class="pref"><div><label for="ck-necessary">Necessários</label><p>Essenciais para o funcionamento do site. Sempre ativos.</p></div><input type="checkbox" id="ck-necessary" checked disabled></div>
+      <div class="pref"><div><label for="ck-analytics">Análise</label><p>Ajudam a entender como o site é usado.</p></div><input type="checkbox" id="ck-analytics"></div>
+      <div class="pref"><div><label for="ck-marketing">Marketing</label><p>Usados para anúncios e conteúdo de terceiros (ex.: mapas incorporados).</p></div><input type="checkbox" id="ck-marketing"></div>
+    </div>
+    <div class="cookie__actions">
+      <button class="btn btn--solid-dark" type="button" data-ck="accept">Aceitar</button>
+      <button class="btn btn--solid-dark" type="button" data-ck="reject">Rejeitar</button>
+      <button class="btn btn--outline-dark btn-pref" type="button" data-ck="prefs">Preferências</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

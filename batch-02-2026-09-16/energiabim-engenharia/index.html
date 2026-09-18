@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EnergiaBIM Engenharia — Modelagem e coordenação BIM | Florianópolis, SC</title>
+<!-- MOCKUP: [CONFIRM the service list before publishing it] — title/meta name modelling, coordination, clash detection and quantity take-off. -->
+<meta name="description" content="Consultoria em BIM para escritórios de arquitetura, incorporadoras e construtoras. Modelagem, compatibilização e quantitativos. Florianópolis, Santa Catarina.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://www.example.com/">
+<link rel="alternate" hreflang="pt-BR" href="https://www.example.com/">
+<link rel="alternate" hreflang="en" href="https://www.example.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://www.example.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="EnergiaBIM Engenharia — Modelagem e coordenação BIM">
+<meta property="og:description" content="Consultoria em BIM para escritórios de arquitetura, incorporadoras e construtoras. Florianópolis, SC.">
+<meta property="og:url" content="https://www.example.com/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1200&h=630&q=70">
+<meta name="theme-color" content="#123A5A">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!-- JSON-LD notes: email, LinkedIn (sameAs), openingHours (08:00–18:00 [CONFIRM]), geo and the responsible-engineer Person node with CREA are OMITTED until confirmed. Service nodes mirror the brief's meta list and are [CONFIRM]. No rating or review markup. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["ProfessionalService", "Organization"],
+      "@id": "https://www.example.com/#empresa",
+      "name": "EnergiaBIM Engenharia",
+      "legalName": "EnergiaBIM Engenharia LTDA",
+      "branchCode": "Sala 109, Bloco C",
+      "url": "https://www.example.com/",
+      "telephone": "+55 48 98811-4123",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rod. Dr Antônio Luiz Moura Gonzaga, 3339 — Sala 109, Bloco C, Multi Open Shopping e Offices",
+        "addressLocality": "Florianópolis",
+        "addressRegion": "SC",
+        "addressCountry": "BR"
+      },
+      "areaServed": {"@type": "Country", "name": "Brasil"},
+      "containedInPlace": {"@id": "https://www.example.com/#multi-open"}
+    },
+    {
+      "@type": "ShoppingCenter",
+      "@id": "https://www.example.com/#multi-open",
+      "name": "Multi Open Shopping e Offices",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rod. Dr Antônio Luiz Moura Gonzaga, 3339",
+        "addressLocality": "Florianópolis",
+        "addressRegion": "SC",
+        "addressCountry": "BR"
+      }
+    },
+    {"@type": "Service", "name": "Modelagem BIM", "provider": {"@id": "https://www.example.com/#empresa"}, "areaServed": "BR"},
+    {"@type": "Service", "name": "Compatibilização de projetos e detecção de interferências", "provider": {"@id": "https://www.example.com/#empresa"}, "areaServed": "BR"},
+    {"@type": "Service", "name": "Quantitativos BIM", "provider": {"@id": "https://www.example.com/#empresa"}, "areaServed": "BR"}
+  ]
+}
+</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 16h14M6 16l1.5-5h9L18 16M5 16v3h2v-2m10 2h2v-3"/></symbol>
+  <symbol id="i-lift" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 9l3-3 3 3M9 15l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 10h18M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M6 3h8l4 4v14H6zM14 3v4h4M9 12h6M9 16h6"/></symbol>
+  <symbol id="i-iso" viewBox="0 0 120 80"><path d="M60 8 110 36 60 64 10 36Z M10 36v8l50 28 50-28v-8 M60 64v8" fill="none" stroke="#1F4E79" stroke-width="2"/><path d="M35 22 85 50 M85 22 35 50" stroke="#1F4E79" stroke-width="1" stroke-dasharray="3 3"/></symbol>
+</svg>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="mock-ribbon" role="note">MOCKUP — conteúdo provisório · não é o site oficial da empresa</div>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="wordmark" href="index.html" aria-label="EnergiaBIM Engenharia — início">EnergiaBIM<small>Engenharia · Florianópolis/SC</small></a>
+    <nav class="nav" aria-label="Principal">
+      <ul>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#entregaveis">Entregáveis</a></li>
+        <li><a href="#processo">Processo</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <span class="lang" role="group" aria-label="Idioma"><span aria-current="true" lang="pt-BR">PT</span><a href="en/index.html" hreflang="en" lang="en">EN</a></span>
+      <a class="btn btn-primary btn-sm hide-sm" href="#proposta">Solicitar proposta</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu"><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <div>
+      <ul>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#entregaveis">Entregáveis</a></li>
+        <li><a href="#processo">Processo</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#proposta">Solicitar proposta</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- 2. HERO — technical band with layered-model diagram (inline SVG, not a photograph) -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap inner">
+      <div>
+        <span class="eyebrow">Engenharia · BIM · Florianópolis/SC</span>
+        <h1 id="hero-title"><span class="ph">[PLACEHOLDER: capability line — client to supply]</span></h1>
+        <p class="lead">Disciplinas: <span class="ph">[PLACEHOLDER — client to supply]</span> — para escritórios de arquitetura, incorporadoras e construtoras. <span class="confirm">[CONFIRM]</span></p>
+        <div class="btn-row">
+          <a class="btn btn-signal" href="#proposta">Solicitar proposta</a>
+          <a class="btn btn-ghost" href="#entregaveis">Ver entregáveis</a>
+        </div>
+      </div>
+      <figure class="model" data-spread style="margin:0">
+        <svg viewBox="0 0 520 470" role="img" aria-labelledby="model-title">
+          <title id="model-title">Diagrama isométrico ilustrativo de um modelo BIM separado em cinco camadas</title>
+          <defs>
+            <linearGradient id="sig" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4f86b8"/><stop offset="1" stop-color="#D98324"/></linearGradient>
+            <linearGradient id="face" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1F4E79" stop-opacity=".55"/><stop offset="1" stop-color="#123A5A" stop-opacity=".35"/></linearGradient>
+          </defs>
+          <g class="layer" style="--n:0">
+            <path d="M90 330 L260 428 L260 440 L90 342 Z" fill="#0f2a42"/><path d="M430 330 L260 428 L260 440 L430 342 Z" fill="#0b2133"/>
+            <path d="M260 232 L430 330 L260 428 L90 330 Z" fill="url(#face)" stroke="#6fa3cf" stroke-width="1.2"/>
+            <g stroke="#6fa3cf" stroke-opacity=".45" stroke-width=".8"><path d="M302.5 256.5 L132.5 354.5 M345 281 L175 379 M387.5 305.5 L217.5 403.5 M217.5 256.5 L387.5 354.5 M175 281 L345 379 M132.5 305.5 L302.5 403.5"/></g>
+            <text x="444" y="346">L01</text>
+          </g>
+          <g class="layer" style="--n:1">
+            <path d="M90 330 L260 428 L260 440 L90 342 Z" fill="#0f2a42"/><path d="M430 330 L260 428 L260 440 L430 342 Z" fill="#0b2133"/>
+            <path d="M260 232 L430 330 L260 428 L90 330 Z" fill="url(#face)" stroke="#6fa3cf" stroke-width="1.2"/>
+            <g stroke="#cfe0ef" stroke-width="2.2" stroke-linecap="round"><path d="M260 281v-16M302.5 305.5v-16M345 330v-16M217.5 305.5v-16M260 330v-16M302.5 354.5v-16M175 330v-16M217.5 354.5v-16M260 379v-16"/></g>
+            <text x="444" y="346">L02</text>
+          </g>
+          <g class="layer" style="--n:2">
+            <path d="M90 330 L260 428 L260 440 L90 342 Z" fill="#0f2a42"/><path d="M430 330 L260 428 L260 440 L430 342 Z" fill="#0b2133"/>
+            <path d="M260 232 L430 330 L260 428 L90 330 Z" fill="url(#face)" stroke="#6fa3cf" stroke-width="1.2"/>
+            <g fill="none" stroke="#e6eff7" stroke-width="2"><path d="M260 255.5 L389.2 330 L260 404.5 L130.8 330 Z M324.6 292.7 L195.4 367.2 M186.9 297.7 L251.5 334.9"/></g>
+            <text x="444" y="346">L03</text>
+          </g>
+          <g class="layer" style="--n:3">
+            <path d="M90 330 L260 428 L260 440 L90 342 Z" fill="#0f2a42"/><path d="M430 330 L260 428 L260 440 L430 342 Z" fill="#0b2133"/>
+            <path d="M260 232 L430 330 L260 428 L90 330 Z" fill="url(#face)" stroke="#6fa3cf" stroke-width="1.2"/>
+            <g fill="none" stroke="url(#sig)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M226 271.2 L328 330 L243 379"/><path d="M294 271.2 L209 320.2 L302.5 373.9"/></g>
+            <text x="444" y="346">L04</text>
+          </g>
+          <g class="layer" style="--n:4">
+            <path d="M90 330 L260 428 L260 440 L90 342 Z" fill="#0f2a42" fill-opacity=".7"/><path d="M430 330 L260 428 L260 440 L430 342 Z" fill="#0b2133" fill-opacity=".7"/>
+            <path d="M260 232 L430 330 L260 428 L90 330 Z" fill="#1F4E79" fill-opacity=".18" stroke="#9fc0de" stroke-width="1.2"/>
+            <g stroke="#9fc0de" stroke-width="1" stroke-dasharray="5 5"><path d="M203.9 264.3 L373.9 362.3 M146.1 297.7 L316.1 395.7"/></g>
+            <text x="444" y="346">L05</text>
+          </g>
+          <line class="scan" x1="70" y1="452" x2="450" y2="452" stroke="url(#sig)" stroke-width="2" stroke-opacity=".8"/>
+        </svg>
+        <figcaption>Diagrama ilustrativo — camadas genéricas; disciplinas reais <span class="confirm">[CONFIRM]</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3. SERVIÇOS -->
+  <section id="servicos" class="section" aria-labelledby="serv-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Serviços</span>
+        <h2 id="serv-title">Serviços</h2>
+        <p>Cada serviço só será publicado depois de confirmado por escrito.</p>
+      </div>
+      <div class="grid g-3" data-stagger>
+        <article class="card svc reveal"><span class="code">S-01</span><h3>Modelagem BIM</h3><p class="muted"><span class="ph">[PLACEHOLDER: 2 lines — client to supply]</span></p><span class="chip-confirm">[CONFIRMAR SE OFERECEMOS]</span></article>
+        <article class="card svc reveal"><span class="code">S-02</span><h3>Compatibilização e detecção de interferências</h3><p class="muted"><span class="ph">[PLACEHOLDER: 2 lines — client to supply]</span></p><span class="chip-confirm">[CONFIRMAR SE OFERECEMOS]</span></article>
+        <article class="card svc reveal"><span class="code">S-03</span><h3>Quantitativos e orçamento</h3><p class="muted"><span class="ph">[PLACEHOLDER: 2 lines — client to supply]</span></p><span class="chip-confirm">[CONFIRMAR SE OFERECEMOS]</span></article>
+        <article class="card svc reveal"><span class="code">S-04</span><h3>Coordenação BIM</h3><p class="muted"><span class="ph">[PLACEHOLDER: 2 lines — client to supply]</span></p><span class="chip-confirm">[CONFIRMAR SE OFERECEMOS]</span></article>
+        <article class="card svc reveal"><span class="code">S-05</span><h3>Modelagem as-built</h3><p class="muted"><span class="ph">[PLACEHOLDER: 2 lines — client to supply]</span></p><span class="chip-confirm">[CONFIRMAR SE OFERECEMOS]</span></article>
+        <article class="card svc svc-energy reveal"><span class="code">S-06</span><h3>Análise energética</h3><p class="muted"><span class="ph">[PLACEHOLDER: 2 lines — client to supply]</span> O “Energia” do nome pode indicar modelagem energética ou engenharia solar — não presumimos qual. Nenhum dado de desempenho, economia ou certificação sem comprovação.</p><span class="chip-confirm">[CONFIRMAR SE OFERECEMOS]</span></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. ENTREGÁVEIS E ESPECIFICAÇÕES -->
+  <section id="entregaveis" class="section gridbg" aria-labelledby="ent-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Entregáveis e especificações</span>
+        <h2 id="ent-title">O que você recebe, disciplina por disciplina</h2>
+        <p>Nível de desenvolvimento (LOD), formatos de arquivo, software e prazo típico de cada entrega. <span class="stamp">atualizado em <span class="ph">[DD/MM]</span></span></p>
+      </div>
+      <p class="spec-note reveal">Formatos de referência: <span class="fmt">IFC</span><span class="fmt">RVT</span><span class="fmt">NWD</span><span class="fmt">DWG</span><span class="fmt">PDF</span> <span class="confirm">[CONFIRM quais são entregues]</span></p>
+      <div class="table-wrap reveal" role="region" aria-labelledby="ent-title" tabindex="0">
+        <table class="spec">
+          <caption>Todas as células são provisórias até o envio da especificação pela empresa. Prazos publicados valem como compromisso.</caption>
+          <thead>
+            <tr><th scope="col">Disciplina</th><th scope="col">Nível de desenvolvimento (LOD)</th><th scope="col">Formato de entrega</th><th scope="col">Software</th><th scope="col">Prazo típico</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row"><span class="ph">[PLACEHOLDER: disciplina]</span></th><td><span class="ph">[PLACEHOLDER]</span></td><td><span class="ph">[PLACEHOLDER]</span></td><td><span class="ph">[PLACEHOLDER]</span></td><td><span class="ph">[PLACEHOLDER]</span></td></tr>
+            <tr><th scope="row"><span class="ph">[PLACEHOLDER: disciplina]</span></th><td><span class="ph">[PLACEHOLDER]</span></td><td><span class="ph">[PLACEHOLDER]</span></td><td><span class="ph">[PLACEHOLDER]</span></td><td><span class="ph">[PLACEHOLDER]</span></td></tr>
+            <tr><th scope="row"><span class="ph">[PLACEHOLDER: disciplina]</span></th><td><span class="ph">[PLACEHOLDER]</span></td><td><span class="ph">[PLACEHOLDER]</span></td><td><span class="ph">[PLACEHOLDER]</span></td><td><span class="ph">[PLACEHOLDER]</span></td></tr>
+            <tr><th scope="row"><span class="ph">[PLACEHOLDER: disciplina]</span></th><td><span class="ph">[PLACEHOLDER]</span></td><td><span class="ph">[PLACEHOLDER]</span></td><td><span class="ph">[PLACEHOLDER]</span></td><td><span class="ph">[PLACEHOLDER]</span></td></tr>
+            <tr><th scope="row"><span class="ph">[PLACEHOLDER: disciplina]</span></th><td><span class="ph">[PLACEHOLDER]</span></td><td><span class="ph">[PLACEHOLDER]</span></td><td><span class="ph">[PLACEHOLDER]</span></td><td><span class="ph">[PLACEHOLDER]</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. PROCESSO -->
+  <section id="processo" class="section" aria-labelledby="proc-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Processo</span>
+        <h2 id="proc-title">Como uma entrega acontece</h2>
+        <p><span class="ph">[PLACEHOLDER: their actual process]</span> — sequência de referência abaixo.</p>
+      </div>
+      <ol class="steps s-5 proc" data-stagger>
+        <li class="step reveal"><h3>Briefing</h3><p><span class="ph">[PLACEHOLDER]</span></p></li>
+        <li class="step reveal"><h3>Levantamento</h3><p><span class="ph">[PLACEHOLDER]</span></p></li>
+        <li class="step reveal"><h3>Modelagem</h3><p><span class="ph">[PLACEHOLDER]</span></p></li>
+        <li class="step reveal"><h3>Compatibilização</h3><p><span class="ph">[PLACEHOLDER]</span></p></li>
+        <li class="step art reveal"><h3>Entrega e ART</h3><p>Entrega dos arquivos com emissão da ART (Anotação de Responsabilidade Técnica) junto ao CREA para o projeto. <span class="confirm">[CONFIRM]</span></p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 6. PROJETOS — deliberately empty structural slot -->
+  <section id="projetos" class="section gridbg" aria-labelledby="proj-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Projetos</span>
+        <h2 id="proj-title">Projetos</h2>
+        <p>Espaço reservado para estudos de caso reais, publicados apenas com autorização escrita do cliente.</p>
+      </div>
+      <div class="grid g-3" data-stagger>
+        <article class="card case reveal">
+          <div class="thumb"><svg aria-hidden="true"><use href="#i-iso"/></svg><span>RENDER ABSTRATO — placeholder, não é obra da empresa</span></div>
+          <div class="card-body">
+            <span class="label">[CASE STUDY — cliente a fornecer]</span>
+            <dl><dt>Tipo de obra</dt><dd>—</dd><dt>Área</dt><dd>— m²</dd><dt>Disciplinas</dt><dd>—</dd><dt>LOD</dt><dd>—</dd><dt>Software</dt><dd>—</dd><dt>Prazo</dt><dd>—</dd><dt>Resultado</dt><dd>—</dd></dl>
+          </div>
+        </article>
+        <article class="card case reveal">
+          <div class="thumb"><svg aria-hidden="true"><use href="#i-iso"/></svg><span>RENDER ABSTRATO — placeholder, não é obra da empresa</span></div>
+          <div class="card-body">
+            <span class="label">[CASE STUDY — cliente a fornecer]</span>
+            <dl><dt>Tipo de obra</dt><dd>—</dd><dt>Área</dt><dd>— m²</dd><dt>Disciplinas</dt><dd>—</dd><dt>LOD</dt><dd>—</dd><dt>Software</dt><dd>—</dd><dt>Prazo</dt><dd>—</dd><dt>Resultado</dt><dd>—</dd></dl>
+          </div>
+        </article>
+        <article class="card case reveal">
+          <div class="thumb"><svg aria-hidden="true"><use href="#i-iso"/></svg><span>RENDER ABSTRATO — placeholder, não é obra da empresa</span></div>
+          <div class="card-body">
+            <span class="label">[CASE STUDY — cliente a fornecer]</span>
+            <dl><dt>Tipo de obra</dt><dd>—</dd><dt>Área</dt><dd>— m²</dd><dt>Disciplinas</dt><dd>—</dd><dt>LOD</dt><dd>—</dd><dt>Software</dt><dd>—</dd><dt>Prazo</dt><dd>—</dd><dt>Resultado</dt><dd>—</dd></dl>
+          </div>
+        </article>
+      </div>
+      <p class="nda reveal">Nomes de projetos e clientes só com autorização por escrito. <span class="confirm">[CONFIRM NDAs]</span></p>
+    </div>
+  </section>
+
+  <!-- 7. SOFTWARE E INTEROPERABILIDADE -->
+  <section id="software" class="section" aria-labelledby="soft-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Software e interoperabilidade</span>
+        <h2 id="soft-title">Software e interoperabilidade</h2>
+        <p>Nomes de plataformas citados apenas em texto; logotipos e selos de parceria exigem autorização. <span class="confirm">[CONFIRM]</span></p>
+      </div>
+      <div class="soft" data-stagger>
+        <div class="panel reveal"><h3>Plataformas de modelagem</h3><p class="muted"><span class="ph">[PLACEHOLDER: list]</span></p></div>
+        <div class="panel reveal"><h3>Coordenação e revisão</h3><p class="muted"><span class="ph">[PLACEHOLDER: list]</span></p></div>
+        <div class="panel reveal"><h3>Exportação e troca de arquivos</h3><p class="muted"><span class="ph">[PLACEHOLDER: list]</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. SOBRE -->
+  <section id="sobre" class="section gridbg" aria-labelledby="sobre-title">
+    <div class="wrap split">
+      <div class="reveal">
+        <span class="eyebrow">Sobre</span>
+        <h2 id="sobre-title">Sobre a EnergiaBIM</h2>
+        <p><span class="ph">[PLACEHOLDER: 2–3 sentences — client to supply.]</span></p>
+        <div class="panel engineer">
+          <div class="frame-empty">[FOTO DO ENGENHEIRO — cliente fornece]</div>
+          <div>
+            <h3 style="margin-bottom:.3em">Responsável técnico</h3>
+            <p style="margin:0">Nome: <span class="confirm">[CONFIRM]</span><br>CREA: <span class="confirm">[CONFIRM — never invent]</span><br>Registro da empresa no CREA: <span class="confirm">[CONFIRM]</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="frame-empty team-frame reveal"><div>[TEAM PHOTO — client to supply]</div></div>
+    </div>
+  </section>
+
+  <!-- 9. SOLICITAR PROPOSTA -->
+  <section id="proposta" class="section" aria-labelledby="prop-title">
+    <div class="wrap proposal">
+      <div class="reveal">
+        <span class="eyebrow">Solicitar proposta</span>
+        <h2 id="prop-title">Solicitar proposta</h2>
+        <p class="muted">Descreva o projeto no formulário ou use o canal que preferir.</p>
+        <div class="routes">
+          <div class="route"><svg aria-hidden="true"><use href="#i-mail"/></svg><div><strong>E-mail</strong><small><span class="confirm">[CONFIRM — e-mail comercial]</span></small></div></div>
+          <a class="route" href="tel:+5548988114123" style="text-decoration:none;color:inherit"><svg aria-hidden="true"><use href="#i-phone"/></svg><div><strong>(48) 98811-4123</strong><small>Telefone</small></div></a>
+        </div>
+      </div>
+      <form class="form panel reveal" data-demo novalidate>
+        <h3>Briefing do projeto</h3>
+        <div class="row two">
+          <div class="field"><label for="p-nome">Nome</label><input id="p-nome" name="nome" autocomplete="name" required></div>
+          <div class="field"><label for="p-empresa">Empresa</label><input id="p-empresa" name="empresa" autocomplete="organization" required></div>
+        </div>
+        <div class="row two">
+          <div class="field"><label for="p-funcao">Função</label><input id="p-funcao" name="funcao" autocomplete="organization-title"></div>
+          <div class="field"><label for="p-tipo">Tipo de obra</label>
+            <select id="p-tipo" name="tipo"><option value="">Selecione</option><option>Residencial</option><option>Comercial</option><option>Industrial</option><option>Institucional</option><option>Infraestrutura</option><option>Outro</option></select></div>
+        </div>
+        <div class="row two">
+          <div class="field"><label for="p-area">Área aproximada (m²)</label><input id="p-area" name="area" type="number" min="0" inputmode="numeric"></div>
+          <div class="field"><label for="p-lod">LOD desejado</label>
+            <select id="p-lod" name="lod"><option value="">Não sei / a definir</option><option>LOD 100</option><option>LOD 200</option><option>LOD 300</option><option>LOD 350</option><option>LOD 400</option><option>LOD 500</option></select></div>
+        </div>
+        <fieldset class="field">
+          <legend>Disciplinas necessárias</legend>
+          <div class="checks">
+            <label><input type="checkbox" name="disc" value="arquitetura"> Arquitetura</label>
+            <label><input type="checkbox" name="disc" value="estrutura"> Estrutura</label>
+            <label><input type="checkbox" name="disc" value="hidrossanitario"> Hidrossanitário</label>
+            <label><input type="checkbox" name="disc" value="eletrica"> Elétrica</label>
+            <label><input type="checkbox" name="disc" value="climatizacao"> Climatização</label>
+            <label><input type="checkbox" name="disc" value="outra"> Outra</label>
+          </div>
+        </fieldset>
+        <div class="row two">
+          <div class="field"><label for="p-prazo">Prazo</label><input id="p-prazo" name="prazo" placeholder="DD/MM/AAAA"></div>
+          <div class="field"><label for="p-email">E-mail</label><input id="p-email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <div class="field"><label for="p-tel">Telefone</label><input id="p-tel" name="telefone" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="p-msg">Mensagem</label><textarea id="p-msg" name="mensagem"></textarea></div>
+        <label class="consent"><input type="checkbox" data-consent> <span>Li a <a href="privacidade.html">Política de Privacidade</a> e autorizo o tratamento destes dados para a elaboração da proposta.</span></label>
+        <p class="legal-note">Finalidade: elaborar e responder à proposta. Base legal: procedimentos preliminares a contrato / legítimo interesse (LGPD art. 7º, V e IX). Retenção: <span class="ph">[PLACEHOLDER: prazo]</span>. Informações de projeto são tratadas como confidenciais; armazenamento: <span class="ph">[PLACEHOLDER: como e onde]</span>.</p>
+        <button class="btn btn-primary" type="submit">Enviar solicitação (demonstração)</button>
+        <p class="form-notice" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- 10. ONDE ESTAMOS -->
+  <section id="onde" class="section gridbg" aria-labelledby="onde-title">
+    <div class="wrap split">
+      <div class="reveal">
+        <span class="eyebrow">Onde estamos</span>
+        <h2 id="onde-title">Sala 109, Bloco C — Multi Open Shopping e Offices</h2>
+        <ul class="info-list">
+          <li><svg aria-hidden="true"><use href="#i-pin"/></svg><span>Rod. Dr Antônio Luiz Moura Gonzaga, 3339 (SC-406)<br>Rio Tavares / Campeche, Florianópolis — SC <span class="confirm">[CONFIRM neighbourhood label]</span></span></li>
+          <li><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Horário comercial: 08h–18h (horário dos Offices) <span class="confirm">[CONFIRM]</span></span></li>
+          <li><svg aria-hidden="true"><use href="#i-cal"/></svg><span>Reuniões com agendamento prévio <span class="confirm">[CONFIRM]</span></span></li>
+          <li><svg aria-hidden="true"><use href="#i-lift"/></svg><span>Acesso por elevador: <span class="confirm">[CONFIRM]</span></span></li>
+          <li><svg aria-hidden="true"><use href="#i-car"/></svg><span>Estacionamento: <span class="ph">[PLACEHOLDER]</span></span></li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <div class="map-ph" id="mapa" data-map-title="Mapa — Multi Open Shopping e Offices" data-map-src="https://www.google.com/maps?q=Multi+Open+Shopping+Rod.+Dr+Ant%C3%B4nio+Luiz+Moura+Gonzaga+3339+Florian%C3%B3polis&amp;output=embed">
+          <span class="pin" aria-hidden="true"></span>
+          <span class="note">Mapa não carregado — nenhum conteúdo de terceiros antes do seu clique.</span>
+          <address>Sala 109, Bloco C · Multi Open Shopping e Offices<br>Rod. Dr Antônio Luiz Moura Gonzaga, 3339 — Florianópolis/SC</address>
+          <div class="btn-row">
+            <button class="btn map-dark-btn" type="button" data-map-load="mapa">Carregar mapa</button>
+            <a class="btn map-light-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Multi+Open+Shopping+Rod.+Dr+Ant%C3%B4nio+Luiz+Moura+Gonzaga+3339+Florian%C3%B3polis" target="_blank" rel="noopener">Abrir no Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. CONTATO -->
+  <section id="contato" class="section" aria-labelledby="contato-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Contato</span>
+        <h2 id="contato-title">Contato</h2>
+      </div>
+      <div class="grid g-4" data-stagger>
+        <div class="panel reveal"><h3>Telefone</h3><p><a href="tel:+5548988114123">(48) 98811-4123</a></p></div>
+        <div class="panel reveal"><h3>E-mail</h3><p><span class="confirm">[CONFIRM — a B2B firm needs a real business email]</span></p></div>
+        <div class="panel reveal"><h3>LinkedIn</h3><p><span class="confirm">[CONFIRM]</span></p></div>
+        <div class="panel reveal"><h3>WhatsApp</h3><p><a class="wa-secondary" href="https://wa.me/5548988114123?text=Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20um%20projeto." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>(48) 98811-4123</a><br><span class="confirm">[CONFIRM they want WhatsApp as a business channel]</span></p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <p class="wordmark" style="color:#fff">EnergiaBIM<small style="color:rgba(255,255,255,.7)">Engenharia</small></p>
+        <p>Razão social: EnergiaBIM Engenharia LTDA<br>CNPJ <span class="confirm">[CONFIRM]</span><br>Registro CREA (empresa) <span class="confirm">[CONFIRM]</span><br>Responsável técnico · CREA <span class="confirm">[CONFIRM]</span></p>
+      </div>
+      <div>
+        <h2>Endereço</h2>
+        <p>Sala 109, Bloco C — Multi Open Shopping e Offices<br>Rod. Dr Antônio Luiz Moura Gonzaga, 3339 (SC-406)<br>Rio Tavares / Campeche, Florianópolis — SC <span class="confirm">[CONFIRM]</span><br>Horário: 08h–18h <span class="confirm">[CONFIRM]</span></p>
+      </div>
+      <div>
+        <h2>Contato</h2>
+        <ul>
+          <li><a href="tel:+5548988114123">(48) 98811-4123</a></li>
+          <li>E-mail <span class="confirm">[CONFIRM]</span></li>
+          <li>LinkedIn <span class="confirm">[CONFIRM]</span></li>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
+          <li><button class="linklike" type="button" data-cookie-open>Preferências de cookies</button></li>
+          <li><a href="en/index.html" hreflang="en" lang="en">English version</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span data-year>2026</span> EnergiaBIM Engenharia LTDA. Mockup — conteúdo provisório.</span>
+      <span>Imagens e diagramas: ilustrativos (placeholder) — não representam obras da empresa.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Brief override: B2B floating affordance is a proposal button, not a WhatsApp bubble; WhatsApp lives in the contact section. -->
+<a class="cta-float" href="#proposta"><svg aria-hidden="true"><use href="#i-doc"/></svg>Solicitar proposta</a>
+
+<div class="cookie" id="cookie-banner" role="dialog" aria-modal="false" aria-labelledby="cookie-title" aria-hidden="true">
+  <div class="cookie-inner">
+    <h2 id="cookie-title">Sua privacidade</h2>
+    <p>Usamos cookies necessários para o funcionamento do site. Cookies de análise e marketing só são ativados com a sua permissão. Veja a <a href="privacidade.html">Política de Privacidade</a>.</p>
+    <div class="cookie-prefs">
+      <label><input type="checkbox" checked disabled> <span><strong>Necessários</strong> — sempre ativos; garantem o funcionamento básico.</span></label>
+      <label><input type="checkbox" data-cat="analise"> <span><strong>Análise</strong> — medição de audiência de forma agregada.</span></label>
+      <label><input type="checkbox" data-cat="marketing"> <span><strong>Marketing</strong> — conteúdo e anúncios personalizados.</span></label>
+      <button class="btn c-btn" type="button" data-cookie="save" style="margin-top:10px;border-radius:10px">Salvar preferências</button>
+    </div>
+    <div class="cookie-actions">
+      <button class="btn c-btn" type="button" data-cookie="accept">Aceitar</button>
+      <button class="btn c-btn" type="button" data-cookie="reject">Rejeitar</button>
+      <button class="btn c-btn-alt full" type="button" data-cookie="prefs">Preferências</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

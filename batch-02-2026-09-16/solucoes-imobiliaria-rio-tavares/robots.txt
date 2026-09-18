@@ -1,0 +1,5 @@
+# MOCKUP — no lançamento, trocar por "Allow: /" e o domínio real [CONFIRM]
+User-agent: *
+Disallow: /
+
+Sitemap: https://dominio-a-definir.com.br/sitemap.xml

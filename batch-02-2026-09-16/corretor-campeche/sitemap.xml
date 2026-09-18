@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MOCKUP: acrescentar URLs de imóveis reais (e o mapa 301 das URLs antigas do Tecimob) antes do lançamento -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://corretorcampeche.com.br/</loc></url>
+  <url><loc>https://corretorcampeche.com.br/avaliacao/</loc></url>
+  <url><loc>https://corretorcampeche.com.br/avaliacao/campeche/</loc></url>
+  <url><loc>https://corretorcampeche.com.br/terrenos-campeche/</loc></url>
+  <url><loc>https://corretorcampeche.com.br/campeche-central/</loc></url>
+  <url><loc>https://corretorcampeche.com.br/campeche-leste/</loc></url>
+  <url><loc>https://corretorcampeche.com.br/novo-campeche/</loc></url>
+  <url><loc>https://corretorcampeche.com.br/privacidade.html</loc></url>
+</urlset>

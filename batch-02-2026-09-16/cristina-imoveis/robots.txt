@@ -1,0 +1,4 @@
+# MOCKUP — domain [CONFIRM]. Replace host before launch.
+User-agent: *
+Allow: /
+Sitemap: https://dominio-a-confirmar.invalid/sitemap.xml

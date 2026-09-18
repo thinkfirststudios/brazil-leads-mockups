@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mockup sitemap. Production: add one URL per real listing (/comprar/<ref>/) generated from the Vista/Loft feed; keep the 301 map for the current Vista/Loft URLs. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://www.livingfloripa.com.br/</loc><xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.livingfloripa.com.br/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.livingfloripa.com.br/en/"/><xhtml:link rel="alternate" hreflang="es" href="https://www.livingfloripa.com.br/es/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.livingfloripa.com.br/"/></url>
+  <url><loc>https://www.livingfloripa.com.br/en/</loc><xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.livingfloripa.com.br/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.livingfloripa.com.br/en/"/><xhtml:link rel="alternate" hreflang="es" href="https://www.livingfloripa.com.br/es/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.livingfloripa.com.br/"/></url>
+  <url><loc>https://www.livingfloripa.com.br/es/</loc><xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.livingfloripa.com.br/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.livingfloripa.com.br/en/"/><xhtml:link rel="alternate" hreflang="es" href="https://www.livingfloripa.com.br/es/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.livingfloripa.com.br/"/></url>
+  <url><loc>https://www.livingfloripa.com.br/privacidade.html</loc></url>
+  <url><loc>https://www.livingfloripa.com.br/bairros/morro-das-pedras/</loc></url>
+  <url><loc>https://www.livingfloripa.com.br/bairros/campeche/</loc></url>
+  <url><loc>https://www.livingfloripa.com.br/bairros/lagoa-da-conceicao/</loc></url>
+  <url><loc>https://www.livingfloripa.com.br/bairros/ribeirao-da-ilha/</loc></url>
+</urlset>

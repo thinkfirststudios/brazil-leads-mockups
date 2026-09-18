@@ -1,0 +1,7 @@
+# Reescrito do zero — UMA declaração de sitemap. As 20 declarações sitemapNNN.xml (404) do site atual NÃO foram trazidas.
+# [CONFIRM origem daquelas declarações via varredura de segurança antes de abordar o assunto]
+# MOCKUP — não indexar enquanto for demonstração. No lançamento, trocar por "Allow: /".
+User-agent: *
+Disallow: /
+
+Sitemap: https://imoveiscomcris.com.br/sitemap.xml

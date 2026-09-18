@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<!-- Speculative pitch mockup for a prospect who has not commissioned, seen or
+     approved it. Must never be indexed or compete with the real business. -->
+<title>Haute Haus — Guest House à beira da Lagoa da Conceição, Florianópolis</title>
+<!-- ⚠ Their live homepage title is "Nova Principal - Haute Haus" — a leftover
+     WordPress page name shipped as the site title tag. Replaced on every page. -->
+<meta name="description" content="Oito suítes duplas em dois hectares de área verde, à beira da Lagoa da Conceição. Piscina, lounge, café da manhã e espaço para eventos. Desde 2015.">
+<link rel="canonical" href="https://hautehaus.com.br/">
+<link rel="alternate" hreflang="pt-BR" href="https://hautehaus.com.br/">
+<link rel="alternate" hreflang="en" href="https://hautehaus.com.br/en/">
+<link rel="alternate" hreflang="x-default" href="https://hautehaus.com.br/">
+<!-- [CONFIRM] a third tree at /es/. Their own copy says staff are "desenvoltos
+     em francês, espanhol e italiano" — Spanish is the one with real search
+     volume into Floripa, so it is the one worth testing first.
+     On any migration: change the WEB records only. NEVER touch MX. -->
+<meta property="og:title" content="Haute Haus — Guest House à beira da Lagoa da Conceição, Florianópolis">
+<meta property="og:description" content="Oito suítes duplas em dois hectares de área verde, à beira da Lagoa da Conceição. Piscina, lounge, café da manhã e espaço para eventos. Desde 2015.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"BedAndBreakfast",
+ "@id":"https://hautehaus.com.br/#lodging",
+ "name":"Haute Haus Guest House",
+ "slogan":"Praticando a arte de receber bem desde 2015",
+ "url":"https://hautehaus.com.br/",
+ "inLanguage":"pt-BR",
+ "telephone":["+5548988119246","+554832067934"],
+ "email":"[CONFIRM]",
+ "numberOfRooms":8,
+ "priceRange":"[CONFIRM]",
+ "currenciesAccepted":"BRL",
+ "paymentAccepted":"[CONFIRM: Pix, cart\u00f5es]",
+ "address":{"@type":"PostalAddress","streetAddress":"Rua Vereador Osni Ortiga, 789",
+   "addressLocality":"Lagoa da Concei\u00e7\u00e3o, Florian\u00f3polis","addressRegion":"SC",
+   "postalCode":"88062-450","addressCountry":"BR"},
+ "geo":{"@type":"GeoCoordinates","latitude":"[CONFIRM]","longitude":"[CONFIRM]"},
+ "availableLanguage":["pt-BR","en","fr","es","it"],
+ "amenityFeature":[
+   {"@type":"LocationFeatureSpecification","name":"Piscina","value":true},
+   {"@type":"LocationFeatureSpecification","name":"Caf\u00e9 da manh\u00e3","value":true},
+   {"@type":"LocationFeatureSpecification","name":"Ar-condicionado","value":true},
+   {"@type":"LocationFeatureSpecification","name":"Cofre","value":true},
+   {"@type":"LocationFeatureSpecification","name":"Banheiro privativo","value":true},
+   {"@type":"LocationFeatureSpecification","name":"Frigobar","value":true},
+   {"@type":"LocationFeatureSpecification","name":"Wi-Fi","value":"[CONFIRM]"},
+   {"@type":"LocationFeatureSpecification","name":"Estacionamento","value":"[CONFIRM]"},
+   {"@type":"LocationFeatureSpecification","name":"Bicicletas para h\u00f3spedes","value":"[CONFIRM]"}
+ ]
+}
+</script>
+<!-- availableLanguage is the quiet win here. Haute Haus states on their own
+     homepage that staff are fluent in English and comfortable in French,
+     Spanish and Italian — and almost no lodging in this market fills that
+     field. It costs nothing and it is entirely true.
+     NO aggregateRating and NO reviews are emitted: the reviews on their site
+     carry no platform attribution, so there is nothing to attribute.
+     EventVenue markup waits on confirmed capacities. -->
+</head>
+<body>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+
+<!-- 1 · Utility bar. Both numbers labelled: their site publishes two and
+     distinguishes neither. -->
+<div class="util">
+  <div class="wrap util__in">
+    <span><span class="lbl">Celular</span> <a href="#" data-tel-mobile>+55 (48) 98811-9246</a></span>
+    <span class="hide-sm"><span class="lbl">Fixo</span> <a href="#" data-tel-landline>+55 (48) 3206-7934</a></span>
+    <span class="hide-sm smallcaps">Lagoa da Conceição · Florianópolis</span>
+    <span class="util__r">
+      <span class="hide-sm"><span class="lbl">Instagram</span> <span class="cfm">[CONFIRM]</span></span>
+      <span class="langs">
+        <a href="index.html" hreflang="pt-BR" lang="pt-BR" class="on">PT</a>
+        <a href="en/index.html" hreflang="en" lang="en">EN</a>
+      </span>
+    </span>
+  </div>
+</div>
+
+<!-- 2 · Sticky nav — three items, one reserved action -->
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="index.html">Haute Haus<small>Guest House</small></a>
+    <nav class="nav" aria-label="Navegação principal"><a href="#acomodacoes">Acomodações</a><a href="#eventos">Eventos</a><a href="#blog">Blog</a></nav>
+    <div class="hdr__r">
+      <a class="btn btn--sm" href="#disponibilidade">Reservar</a>
+      <button class="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mnav" aria-label="Menu"><a href="#acomodacoes">Acomodações</a><a href="#eventos">Eventos</a><a href="#blog">Blog</a><a href="#disponibilidade">Reservar</a></nav>
+<main id="main">
+
+<!-- 3 · Hero — one full-viewport photograph, flat wash, their own line beneath -->
+<section class="hero">
+  <!-- PLACEHOLDER-hero-arquitetura.jpg — royalty-free stock (Unsplash).
+       This is a DESIGN property and the final build should carry zero stock:
+       real architectural photography is non-negotiable before launch. -->
+  <img class="hero__img" src="https://images.unsplash.com/photo-1541959833400-049d37f98ccd?auto=format&fit=crop&w=1900&q=74" width="1900" height="1267" fetchpriority="high"
+    alt="Arquitetura de casa de praia minimalista em reboco branco e madeira escura, cercada de vegetação madura na luz baixa da tarde — imagem ilustrativa de banco de imagens">
+  <div class="wrap hero__in on-dark">
+    <h1 class="h1">Oito suítes. Dois hectares. Uma lagoa.</h1>
+    <p class="verbatim">“Praticando a arte de receber bem desde 2015.”</p>
+    <p class="smallcaps">
+      <span>8 suítes duplas</span>
+      <span>2 hectares de área verde</span>
+      <span>Piscina e lounge</span>
+      <span>Café da manhã</span>
+      <span>Desde 2015</span>
+    </p>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     4 · ⭐ AVAILABILITY WIDGET — the highest-leverage change on this lead.
+     Their entire booking mechanism today is one dropdown ("1 Hóspede" /
+     "2 Hóspedes") and a send button. There are NO date fields at all: a guest
+     cannot express when they want to come. Every enquiry becomes a manual
+     email thread, and everyone who will not wait goes to an OTA.
+     ========================================================================== -->
+<div class="wrap" id="disponibilidade">
+  <form class="avail" id="availForm" data-rv>
+    <div class="avail__in">
+      <div class="f">
+        <label for="checkin">Check-in (DD/MM)</label>
+        <input type="date" id="checkin" name="checkin" required>
+      </div>
+      <div class="f">
+        <label for="checkout">Check-out (DD/MM)</label>
+        <input type="date" id="checkout" name="checkout" required>
+      </div>
+      <div class="f">
+        <label for="pax">Hóspedes</label>
+        <select id="pax" name="pax"><option>1</option><option selected>2</option></select>
+      </div>
+      <div class="f">
+        <label for="vista">Vista</label>
+        <select id="vista" name="vista">
+          <option>Indiferente</option>
+          <option>Lagoa</option>
+          <option>Piscina</option>
+          <option>Jardim</option>
+        </select>
+      </div>
+      <div class="go"><button class="btn" type="submit">Verificar disponibilidade</button></div>
+    </div>
+    <p class="avail__note">Hoje, o formulário de reserva da Haute Haus oferece “1 Hóspede” ou “2 Hóspedes” e um botão Enviar — <strong>sem nenhum campo de data</strong>. Quem quer vir em março não tem como dizer isso. Este campo entrega a consulta com as datas escritas, direto na conversa.</p>
+  </form>
+</div>
+
+<!-- 5 · Quem somos — their verbatim positioning paragraph -->
+<section class="sec" id="quem-somos">
+  <div class="wrap">
+    <div class="split split--top">
+      <div data-rv>
+        <p class="eyebrow"><span>Quem somos</span></p>
+        <h2 class="h2">Uma releitura do estilo praiano com um twist moderno e minimalista.</h2>
+        <p class="verbatim" style="margin-top:26px">“A Haute Haus é uma charmosa Guest House localizada às margens da Lagoa da Conceição. Seu projeto arquitetônico é uma releitura do estilo praiano com um twist moderno e minimalista. Possuímos 8 suítes duplas, algumas com vista para a Lagoa, e outras com vista para a piscina. São 2 hectares de muita vegetação e contato com a natureza, além de um lounge à beira da piscina.”</p>
+        <p class="muted">Palavras deles, reproduzidas literalmente. Essa frase é a marca inteira em uma linha — e é o briefing de design deste site.</p>
+        <p class="cfm-note" style="margin-top:22px">Eles se descrevem como <strong>Guest House</strong> — não pousada, não hotel. A distinção é deliberada e é mantida em todo o site, inclusive no schema (<code>BedAndBreakfast</code>) e nos títulos.</p>
+      </div>
+      <figure class="shot shot--tall" data-rv>
+        <!-- PLACEHOLDER-detalhe-arquitetonico.jpg — royalty-free stock (Unsplash) -->
+        <img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=900&q=72" width="900" height="1200" loading="lazy" decoding="async"
+          alt="Detalhe arquitetônico — parede branca encontrando ripado de madeira escura, com sombra de vegetação tropical — imagem ilustrativa">
+        <figcaption class="cap">Imagem de banco de imagens. Uma propriedade de design merece fotografia arquitetônica real — zero stock na entrega final.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     6 · ⭐ OS DOIS HECTARES.
+     Two hectares for eight suites is an extraordinary land-to-room ratio, and
+     their site states it exactly once, in a subordinate clause, inside a list
+     of facilities. Here it leads with the number.
+     ========================================================================== -->
+<section class="sec sec--verde on-dark" id="hectares">
+  <div class="wrap">
+    <div class="hectare">
+      <div data-rv>
+        <p class="eyebrow"><span>A propriedade</span></p>
+        <p class="bignum"><span data-count="2">2</span> ha</p>
+        <h2 class="h2" style="margin-top:18px">Dois hectares para oito suítes.</h2>
+        <p class="lede" style="margin-top:16px">Vinte mil metros quadrados de vegetação para dezesseis hóspedes. É uma proporção fora de escala para uma hospedagem — e no site atual ela aparece uma única vez, numa oração subordinada, no meio de uma lista de facilidades.</p>
+        <div class="ratio">
+          <div><b data-count="8">8</b><span>suítes duplas</span></div>
+          <div><b data-count="2">2</b><span>hectares</span></div>
+          <div><b data-count="2015">2015</b><span>recebendo desde</span></div>
+        </div>
+        <p class="cfm-note" style="margin-top:26px;color:rgba(242,240,236,.86)">A grafia deles é “02 héctares”. Corrigida para “hectares” em todo o site, sem alterar o sentido.</p>
+      </div>
+      <div data-rv>
+        <figure class="shot">
+          <!-- PLACEHOLDER-area-verde.jpg — royalty-free stock (Unsplash) -->
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1100&q=72" width="1100" height="825" loading="lazy" decoding="async"
+            alt="Caminho entre árvores maduras em uma área verde ampla — imagem ilustrativa de banco de imagens">
+        </figure>
+        <figure class="shot" style="margin-top:2px">
+          <!-- PLACEHOLDER-aereo-lagoa.jpg — royalty-free stock (Unsplash) -->
+          <img src="https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=1100&q=72" width="1100" height="825" loading="lazy" decoding="async"
+            alt="Vista elevada de uma área verde arborizada junto a uma grande lagoa — imagem ilustrativa de banco de imagens">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · The vista system — teach the view before showing the rooms -->
+<section class="sec sec--band" id="vistas">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow"><span>O sistema de vistas</span></p>
+      <h2 class="h2">Os quartos diferem por uma coisa: a vista.</h2>
+      <p class="lede">Seis tipos publicados, praticamente as mesmas comodidades em todos. O que muda de verdade é para onde a sacada aponta — então a vista vem antes do quarto.</p>
+    </div>
+    <div class="vistas" data-rv>
+      <div class="vista">
+        <!-- PLACEHOLDER — royalty-free stock (Unsplash), shot from a balcony -->
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=72" width="700" height="875" loading="lazy" decoding="async"
+          alt="Vista a partir de uma sacada — lagoa — imagem ilustrativa">
+        <div class="vista__b"><b>Lagoa</b><p>Sacada com rede sobre a água. É a vista que os hóspedes citam nas avaliações.</p></div>
+      </div>
+      <div class="vista">
+        <!-- PLACEHOLDER — royalty-free stock (Unsplash), shot from a balcony -->
+        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=700&q=72" width="700" height="875" loading="lazy" decoding="async"
+          alt="Vista a partir de uma sacada — piscina — imagem ilustrativa">
+        <div class="vista__b"><b>Piscina</b><p>Sacada voltada para a piscina e o lounge onde o café da manhã é servido.</p></div>
+      </div>
+      <div class="vista">
+        <!-- PLACEHOLDER — royalty-free stock (Unsplash), shot from a balcony -->
+        <img src="https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&w=700&q=72" width="700" height="875" loading="lazy" decoding="async"
+          alt="Vista a partir de uma sacada — jardim — imagem ilustrativa">
+        <div class="vista__b"><b>Jardim</b><p>Verde denso dos dois hectares, e o quarto mais silencioso da casa.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · Room carousel — six cards, view chip, bed, amenities, rate slot -->
+<section class="sec" id="acomodacoes">
+  <div class="wrap">
+    <div class="sec-head sec-head--row" data-rv>
+      <div>
+        <p class="eyebrow"><span>Acomodações</span></p>
+        <h2 class="h2">Seis tipos publicados. Oito suítes.</h2>
+      </div>
+      <p class="lede" style="max-width:40ch">Como oito suítes se distribuem entre seis tipos nomeados não está publicado em lugar nenhum, e nenhum m² aparece no site atual. <span class="cfm">[CONFIRM]</span></p>
+    </div>
+    <div class="railwrap" data-rv>
+      <div class="rail">
+        <article class="room">
+          <div class="room__i">
+            <!-- PLACEHOLDER — royalty-free stock (Unsplash). No people in any frame. -->
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=700&q=70" width="700" height="525" loading="lazy" decoding="async"
+              alt="Quarto sereno com roupa de cama branca e detalhes em madeira escura — imagem ilustrativa">
+            <span class="chipview">Lagoa</span>
+          </div>
+          <div class="room__b">
+            <h3>Quarto com Vista da Lagoa</h3>
+            <span class="bed">Cama King ou duas de solteiro</span>
+            <ul class="amen"><li>Sacada com rede</li><li>Vista para a Lagoa</li><li>Frigobar</li><li>Cofre</li><li>Ar-condicionado</li><li>Secador</li><li>Banheiro privativo</li></ul>
+            <div class="rate">
+              <span class="n"><span class="cfm">[CONFIRM diária]</span></span>
+              <span class="u">R$ · por noite · [CONFIRM temporada e mínimo de noites]</span>
+            </div>
+            <div><span class="cfm">[CONFIRM m²]</span></div>
+          </div>
+        </article>
+        <article class="room">
+          <div class="room__i">
+            <!-- PLACEHOLDER — royalty-free stock (Unsplash). No people in any frame. -->
+            <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=700&q=70" width="700" height="525" loading="lazy" decoding="async"
+              alt="Quarto sereno com roupa de cama branca e detalhes em madeira escura — imagem ilustrativa">
+            <span class="chipview">Piscina</span>
+          </div>
+          <div class="room__b">
+            <h3>Quarto com Vista da Piscina</h3>
+            <span class="bed">Cama King ou duas de solteiro</span>
+            <ul class="amen"><li>Sacada com vista para a piscina</li><li>Frigobar</li><li>Cofre</li><li>Ar-condicionado</li><li>Secador</li><li>Banheiro privativo</li></ul>
+            <div class="rate">
+              <span class="n"><span class="cfm">[CONFIRM diária]</span></span>
+              <span class="u">R$ · por noite · [CONFIRM temporada e mínimo de noites]</span>
+            </div>
+            <div><span class="cfm">[CONFIRM m²]</span></div>
+          </div>
+        </article>
+        <article class="room">
+          <div class="room__i">
+            <!-- PLACEHOLDER — royalty-free stock (Unsplash). No people in any frame. -->
+            <img src="https://images.unsplash.com/photo-1590073844006-33379778ae09?auto=format&fit=crop&w=700&q=70" width="700" height="525" loading="lazy" decoding="async"
+              alt="Quarto sereno com roupa de cama branca e detalhes em madeira escura — imagem ilustrativa">
+            <span class="chipview">Jardim</span>
+          </div>
+          <div class="room__b">
+            <h3>Quarto com vista para Jardim</h3>
+            <span class="bed">Cama Queen ou duas de solteiro</span>
+            <ul class="amen"><li>Frigobar</li><li>Cofre</li><li>Ar-condicionado</li><li>Secador</li><li>Banheiro privativo</li></ul>
+            <div class="rate">
+              <span class="n"><span class="cfm">[CONFIRM diária]</span></span>
+              <span class="u">R$ · por noite · [CONFIRM temporada e mínimo de noites]</span>
+            </div>
+            <div><span class="cfm">[CONFIRM m²]</span></div>
+          </div>
+        </article>
+        <article class="room">
+          <div class="room__i">
+            <!-- PLACEHOLDER — royalty-free stock (Unsplash). No people in any frame. -->
+            <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=700&q=70" width="700" height="525" loading="lazy" decoding="async"
+              alt="Quarto sereno com roupa de cama branca e detalhes em madeira escura — imagem ilustrativa">
+            <span class="chipview">[CONFIRM]</span>
+          </div>
+          <div class="room__b">
+            <h3>Quarto Standard</h3>
+            <span class="bed">Cama Queen ou duas de solteiro</span>
+            <ul class="amen"><li>Frigobar</li><li>Cofre</li><li>Ar-condicionado</li><li>Secador</li><li>Banheiro privativo</li></ul>
+            <div class="rate">
+              <span class="n"><span class="cfm">[CONFIRM diária]</span></span>
+              <span class="u">R$ · por noite · [CONFIRM temporada e mínimo de noites]</span>
+            </div>
+            <div><span class="cfm">[CONFIRM m²]</span></div>
+          </div>
+        </article>
+        <article class="room">
+          <div class="room__i">
+            <!-- PLACEHOLDER — royalty-free stock (Unsplash). No people in any frame. -->
+            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=700&q=70" width="700" height="525" loading="lazy" decoding="async"
+              alt="Quarto sereno com roupa de cama branca e detalhes em madeira escura — imagem ilustrativa">
+            <span class="chipview">Jardim + Piscina</span>
+          </div>
+          <div class="room__b">
+            <h3>Quarto com Vista da Piscina Jr</h3>
+            <span class="bed">Cama King</span>
+            <ul class="amen"><li>Sacada com vista para o jardim e a piscina</li><li>Frigobar</li><li>Cofre</li><li>Ar-condicionado</li><li>Secador</li><li>Banheiro privativo</li></ul>
+            <div class="rate">
+              <span class="n"><span class="cfm">[CONFIRM diária]</span></span>
+              <span class="u">R$ · por noite · [CONFIRM temporada e mínimo de noites]</span>
+            </div>
+            <div><span class="cfm">[CONFIRM m²]</span></div>
+          </div>
+        </article>
+        <article class="room">
+          <div class="room__i">
+            <!-- PLACEHOLDER — royalty-free stock (Unsplash). No people in any frame. -->
+            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=700&q=70" width="700" height="525" loading="lazy" decoding="async"
+              alt="Quarto sereno com roupa de cama branca e detalhes em madeira escura — imagem ilustrativa">
+            <span class="chipview">[CONFIRM]</span>
+          </div>
+          <div class="room__b">
+            <h3>Quarto Standard Jr</h3>
+            <span class="bed">Cama Queen</span>
+            <ul class="amen"><li>Frigobar</li><li>Cofre</li><li>Ar-condicionado</li><li>Secador</li><li>Banheiro privativo</li></ul>
+            <div class="rate">
+              <span class="n"><span class="cfm">[CONFIRM diária]</span></span>
+              <span class="u">R$ · por noite · [CONFIRM temporada e mínimo de noites]</span>
+            </div>
+            <div><span class="cfm">[CONFIRM m²]</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="railnav">
+        <button type="button" data-rail="prev" aria-label="Anterior">&larr;</button>
+        <button type="button" data-rail="next" aria-label="Próximo">&rarr;</button>
+      </div>
+    </div>
+
+    <!-- ⚠ Live content defects, shown rather than silently corrected. Raising
+         these gently is part of the pitch: they are cheap to fix and they cost
+         trust with a guest who compares two pages. -->
+    <div class="duo" style="margin-top:clamp(30px,3.4vw,50px)">
+      <div class="defect" data-rv>
+        <b>Contradição a resolver</b>
+        Na home, o <em>“Quarto com vista para Jardim”</em> é descrito como <em>“Sacada com rede e vista para Lagoa”</em> — a vista errada, copiada do quarto da Lagoa. Em <code>/acomodacoes/</code> está correto. Um hóspede que compara as duas páginas recebe duas respostas diferentes sobre o mesmo quarto. Este site usa a versão de <code>/acomodacoes/</code> e deixa a contradição visível até vocês dizerem qual é a certa.
+      </div>
+      <div class="defect" data-rv>
+        <b>Dois detalhes menores, ao vivo hoje</b>
+        A sacada do <em>“Quarto com Vista da Piscina Jr”</em> é descrita como <em>“vista do jardim e pátio”</em> na home e <em>“vista para o jardim e a piscina”</em> em acomodações. E há um espaço perdido dentro da palavra: <em>“Q uarto com Vista da Piscina Jr”</em> — nas duas páginas.
+      </div>
+    </div>
+    <p class="cfm-note" style="margin-top:24px" data-rv>Nenhuma diária aparece neste site. Nenhuma foi publicada por vocês e nenhuma é inventada — nem tabela, nem faixa, nem “a partir de”. As vagas de preço ficam visíveis para vocês verem exatamente o que falta.</p>
+  </div>
+</section>
+
+<!-- 9 + 10 · Pool, lounge and breakfast -->
+<section class="sec sec--areia" id="piscina">
+  <div class="wrap">
+    <div class="split">
+      <figure class="shot" data-rv>
+        <!-- PLACEHOLDER-piscina-lounge.jpg — royalty-free stock (Unsplash) -->
+        <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1000&q=72" width="1000" height="750" loading="lazy" decoding="async"
+          alt="Piscina com área de lounge de mobiliário baixo e vegetação, na luz do fim de tarde — imagem ilustrativa">
+      </figure>
+      <div data-rv>
+        <p class="eyebrow"><span>A piscina e o lounge</span></p>
+        <h2 class="h2">O lounge à beira da piscina.</h2>
+        <p class="lede" style="margin-top:16px">É o espaço que as avaliações publicadas citam com mais frequência, e é onde o café da manhã é servido.</p>
+      </div>
+    </div>
+
+    <div class="split" style="margin-top:clamp(40px,5vw,80px)">
+      <div data-rv>
+        <p class="eyebrow"><span>Café da manhã</span></p>
+        <h2 class="h2">Servido junto à piscina.</h2>
+        <p class="lede" style="margin-top:16px">Uma avaliação publicada diz que o café da manhã <em>“poderia ser mais variado”</em>. Se isso já foi resolvido, esta seção é exatamente o lugar de dizer — e vira um argumento de venda em vez de uma crítica solta. <span class="cfm">[CONFIRM]</span></p>
+        <p class="cfm-note">A mesma avaliação cita que <em>“a internet oscila um pouco”</em>. Wi-Fi é uma comodidade que entra no schema e na página — e não entra enquanto não estiver estável. [CONFIRM estado da infraestrutura de Wi-Fi.]</p>
+      </div>
+      <figure class="shot" data-rv>
+        <!-- PLACEHOLDER-cafe-da-manha.jpg — royalty-free stock (Unsplash). No people. -->
+        <img src="https://images.unsplash.com/photo-1540914124281-342587941389?auto=format&fit=crop&w=1000&q=72" width="1000" height="750" loading="lazy" decoding="async"
+          alt="Café da manhã posto sobre uma mesa — frutas, pães e café na luz da manhã — imagem ilustrativa">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · Bicicletas — offered, never marketed -->
+<section class="sec">
+  <div class="wrap">
+    <div class="split split--wide">
+      <div data-rv>
+        <p class="eyebrow"><span>Bicicletas</span></p>
+        <h2 class="h2">Bicicletas gratuitas para hóspedes — e nenhuma palavra sobre isso no site.</h2>
+        <p class="lede" style="margin-top:16px">As avaliações mencionam bicicletas gratuitas e a proximidade da Avenida das Rendeiras repetidamente. A descrição de comodidades de vocês nunca cita nenhuma das duas coisas. É uma cortesia real, com encanto real, invisível para quem ainda não se hospedou. <span class="cfm">[CONFIRM]</span></p>
+      </div>
+      <figure class="shot" data-rv>
+        <!-- PLACEHOLDER-bicicletas.jpg — royalty-free stock (Unsplash). No people. -->
+        <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=900&q=72" width="900" height="675" loading="lazy" decoding="async"
+          alt="Bicicleta encostada em uma parede clara — imagem ilustrativa de banco de imagens">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 12 · Hospitalidade + 13 · Idiomas -->
+<section class="sec sec--charcoal on-dark" id="hospitalidade">
+  <div class="wrap">
+    <div class="split split--top">
+      <div data-rv>
+        <p class="eyebrow"><span>Hospitalidade</span></p>
+        <h2 class="h2">“Praticando a arte de receber bem.”</h2>
+        <p class="lede" style="margin-top:16px">As avaliações publicadas descrevem uma equipe pequena e presente, e uma dupla mãe e filha trabalhando na casa. É a razão mais citada para voltar.</p>
+        <p class="cfm-note" style="color:rgba(242,240,236,.86)">As avaliações citam funcionários pelo nome. <strong>Nenhum nome de colaborador é publicado neste site sem consentimento documentado</strong> — nem em depoimento, nem em legenda de foto. E nenhuma avaliação daqui aponta para uma plataforma: as do site atual não têm origem declarada, então não há o que atribuir. Ou puxamos ao vivo de uma fonte nomeada, ou apresentamos anonimizado — e nota nenhuma é afirmada.</p>
+      </div>
+      <div data-rv>
+        <figure class="shot">
+          <!-- PLACEHOLDER-recepcao.jpg — royalty-free stock (Unsplash). No people in frame. -->
+          <img src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=72" width="900" height="675" loading="lazy" decoding="async"
+            alt="Detalhe de uma mesa de recepção com flores frescas — imagem ilustrativa de banco de imagens">
+        </figure>
+        <h3 class="h3" style="margin:34px 0 14px">Idiomas</h3>
+        <p style="color:rgba(242,240,236,.82)">Frase de vocês, palavra por palavra: <em>“Nossos colaboradores são fluentes em inglês e desenvoltos em francês, espanhol e italiano.”</em> Vocês contrataram para receber estrangeiro — e nunca construíram uma página para ele.</p>
+        <div class="langsrow" style="margin-top:20px;border-color:rgba(242,240,236,.28)">
+          <div><b>PT</b><span>Nativo</span></div>
+          <div><b>EN</b><span>Fluente</span></div>
+          <div><b>FR</b><span>Desenvolto</span></div>
+          <div><b>ES</b><span>Desenvolto</span></div>
+          <div><b>IT</b><span>Desenvolto</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 14 · Eventos — its own band, its own funnel -->
+<section class="sec sec--band" id="eventos">
+  <div class="wrap">
+    <div class="sec-head" data-rv>
+      <p class="eyebrow"><span>Eventos</span></p>
+      <h2 class="h2">Dois hectares, espaço exclusivo — e nenhum caminho para pedir orçamento.</h2>
+      <p class="lede">Frase de vocês: <em>“A Haute Haus também é o ambiente ideal para realização de eventos, encontros, cursos e celebrações, contando com espaço exclusivo para momentos inesquecíveis.”</em> Hoje isso é um item de menu e nada mais. É a linha de maior margem que vocês não estão vendendo.</p>
+    </div>
+    <div class="split split--top">
+      <div data-rv>
+        <div class="duo">
+          <figure class="shot">
+            <!-- PLACEHOLDER-evento-mesa.jpg — royalty-free stock (Unsplash). No people in frame. -->
+            <img src="https://images.unsplash.com/photo-1530023367847-a683933f4172?auto=format&fit=crop&w=700&q=72" width="700" height="525" loading="lazy" decoding="async"
+              alt="Mesa longa posta ao ar livre com linho e luzes — imagem ilustrativa de banco de imagens">
+          </figure>
+          <figure class="shot">
+            <!-- PLACEHOLDER-evento-curso.jpg — royalty-free stock (Unsplash). No people in frame. -->
+            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=700&q=72" width="700" height="525" loading="lazy" decoding="async"
+              alt="Sala clara preparada para um curso, com mesas simples e vista para o jardim — imagem ilustrativa">
+          </figure>
+        </div>
+        <ul class="rows">
+          <li><b>Capacidade</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Layouts</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Uso exclusivo da casa</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Antecedência mínima</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Valores</b><span><span class="cfm">[CONFIRM]</span></span></li>
+        </ul>
+      </div>
+      <div class="form" data-rv>
+        <h3 class="h3" style="margin-bottom:8px">Consulta de evento</h3>
+        <p class="muted" style="font-size:.9rem">Um funil separado, de propósito: evento e hospedagem têm prazos, decisores e margens diferentes.</p>
+        <form id="eventForm">
+          <div class="fr">
+            <div class="field"><label for="evnome">Nome</label><input type="text" id="evnome" name="nome" required></div>
+            <div class="field"><label for="evwa">WhatsApp</label><input type="tel" id="evwa" name="whatsapp" required></div>
+          </div>
+          <div class="fr">
+            <div class="field"><label for="evtipo">Tipo de evento</label>
+              <select id="evtipo" name="tipo">
+                <option>Celebração</option>
+                <option>Encontro</option>
+                <option>Curso / workshop</option>
+                <option>Corporativo</option>
+                <option>Outro</option>
+              </select></div>
+            <div class="field"><label for="evdata">Data prevista (DD/MM)</label><input type="date" id="evdata" name="data"></div>
+          </div>
+          <div class="field"><label for="evpax">Nº de convidados</label><input type="number" id="evpax" name="pax" min="1" inputmode="numeric" required></div>
+          <label class="consent" for="evconsent">
+            <input type="checkbox" id="evconsent" data-consent>
+            <span>Autorizo o uso destes dados para responder a esta consulta de evento, conforme a <a href="privacidade.html">Política de Privacidade</a>.</span>
+          </label>
+          <button class="btn btn--full" type="submit">Enviar consulta <span class="ar">&rarr;</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 15 · Localização -->
+<section class="sec" id="localizacao">
+  <div class="wrap">
+    <div class="split split--top">
+      <div data-rv>
+        <p class="eyebrow"><span>Localização</span></p>
+        <h2 class="h2">Rua Vereador Osni Ortiga, 789.</h2>
+        <p class="lede" style="margin-top:14px">Lagoa da Conceição, Florianópolis — SC, 88062-450.</p>
+        <ul class="rows">
+          <li><b>Avenida das Rendeiras</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Aeroporto FLN</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Praia Mole</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Joaquina</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Estacionamento</b><span><span class="cfm">[CONFIRM]</span></span></li>
+        </ul>
+      </div>
+      <div class="map" data-rv role="img" aria-label="Mapa — Rua Vereador Osni Ortiga, 789, Lagoa da Conceição">
+        <div class="map__grid" aria-hidden="true"></div>
+        <div>
+          <div class="pin" aria-hidden="true"></div>
+          <strong style="display:block;font-size:1.1rem;font-weight:500;letter-spacing:-.02em">Lagoa da Conceição</strong>
+          <span class="smallcaps" style="display:block;margin-top:8px">Rua Vereador Osni Ortiga, 789</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 16 · Blog -->
+<section class="sec sec--areia" id="blog">
+  <div class="wrap">
+    <div class="sec-head sec-head--row" data-rv>
+      <div>
+        <p class="eyebrow"><span>Blog</span></p>
+        <h2 class="h2">O blog que já existe fica onde está.</h2>
+      </div>
+      <p class="lede" style="max-width:38ch">Todo post indexado é preservado ou recebe um 301. <span class="cfm">[CONFIRM]</span></p>
+    </div>
+    <div class="vistas" data-rv>
+      <article class="vista">
+        <!-- PLACEHOLDER — royalty-free stock (Unsplash) -->
+        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=700&q=70" width="700" height="875" loading="lazy" decoding="async"
+          alt="Imagem ilustrativa de post do blog — foto de banco de imagens">
+        <div class="vista__b"><b><span class="cfm">[CONFIRM título do post]</span></b><p>DD/MM/AAAA <span class="cfm">[CONFIRM]</span></p></div>
+      </article>
+      <article class="vista">
+        <!-- PLACEHOLDER — royalty-free stock (Unsplash) -->
+        <img src="https://images.unsplash.com/photo-1533713692156-f70938dc0d54?auto=format&fit=crop&w=700&q=70" width="700" height="875" loading="lazy" decoding="async"
+          alt="Imagem ilustrativa de post do blog — foto de banco de imagens">
+        <div class="vista__b"><b><span class="cfm">[CONFIRM título do post]</span></b><p>DD/MM/AAAA <span class="cfm">[CONFIRM]</span></p></div>
+      </article>
+      <article class="vista">
+        <!-- PLACEHOLDER — royalty-free stock (Unsplash) -->
+        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=700&q=70" width="700" height="875" loading="lazy" decoding="async"
+          alt="Imagem ilustrativa de post do blog — foto de banco de imagens">
+        <div class="vista__b"><b><span class="cfm">[CONFIRM título do post]</span></b><p>DD/MM/AAAA <span class="cfm">[CONFIRM]</span></p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 17 · Contato -->
+<section class="sec" id="contato">
+  <div class="wrap">
+    <div class="split split--top">
+      <div data-rv>
+        <p class="eyebrow"><span>Contato</span></p>
+        <h2 class="h2">Estamos de braços e portas abertas.</h2>
+        <p class="muted" style="margin-top:14px">Frase de vocês, levemente corrigida: no site está <em>“viver a experiências Haute Haus”</em>.</p>
+        <ul class="rows">
+          <li><b>Celular</b><span><a href="#" data-tel-mobile>+55 (48) 98811-9246</a></span></li>
+          <li><b>Fixo</b><span><a href="#" data-tel-landline>+55 (48) 3206-7934</a></span></li>
+          <li><b>WhatsApp</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>E-mail</b><span><span class="cfm">[CONFIRM]</span></span></li>
+          <li><b>Formas de pagamento</b><span>Pix <span class="cfm">[CONFIRM]</span></span></li>
+        </ul>
+        <p class="cfm-note" style="margin-top:22px">O e-mail de vocês está ofuscado pelo filtro anti-spam do tema a ponto de ser ilegível no código-fonte — ou seja, ilegível para qualquer hóspede que tente copiá-lo. E não existe link de WhatsApp em nenhuma página. São dois canais de contato que existem e não funcionam.</p>
+      </div>
+      <div class="form" data-rv>
+        <h3 class="h3" style="margin-bottom:8px">Fale com a casa</h3>
+        <p class="muted" style="font-size:.9rem">Mockup — nada é enviado.</p>
+        <form data-mock>
+          <div class="fr">
+            <div class="field"><label for="cnome">Nome</label><input type="text" id="cnome" name="nome" required></div>
+            <div class="field"><label for="cemail">E-mail</label><input type="email" id="cemail" name="email" required></div>
+          </div>
+          <div class="field"><label for="cmsg">Mensagem</label><textarea id="cmsg" name="msg"></textarea></div>
+          <label class="consent" for="cconsent">
+            <input type="checkbox" id="cconsent" data-consent>
+            <span>Autorizo o uso do meu nome e e-mail apenas para responder a esta mensagem, conforme a <a href="privacidade.html">Política de Privacidade</a>.
+              O formulário atual de vocês coleta esses dados sem nenhuma caixa de consentimento visível.</span>
+          </label>
+          <button class="btn btn--full" type="submit">Enviar <span class="ar">&rarr;</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 18 · full-bleed blue hour before the footer -->
+<div class="full">
+  <!-- PLACEHOLDER-blue-hour.jpg — royalty-free stock (Unsplash) -->
+  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1900&q=72" width="1900" height="814" loading="lazy" decoding="async"
+    alt="Casa moderna na hora azul, com luz quente através de grandes janelas e vegetação em silhueta — imagem ilustrativa">
+</div>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div>
+        <span class="brand">Haute Haus<small>Guest House</small></span>
+        <p style="font-size:.92rem;margin-top:16px">Rua Vereador Osni Ortiga, 789<br>
+          Lagoa da Conceição<br>Florianópolis — SC · 88062-450</p>
+      </div>
+      <div>
+        <h4>A casa</h4>
+        <ul>
+          <li><a href="#acomodacoes">Acomodações</a></li>
+          <li><a href="#vistas">As vistas</a></li>
+          <li><a href="#hectares">Os dois hectares</a></li>
+          <li><a href="#piscina">Piscina e café da manhã</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="#" data-tel-mobile>+55 (48) 98811-9246</a></li>
+          <li><a href="#" data-tel-landline>+55 (48) 3206-7934</a></li>
+          <li>E-mail <span class="cfm">[CONFIRM]</span></li>
+          <li>Instagram <span class="cfm">[CONFIRM]</span></li>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
+          <li><a href="#" data-ck-open>Preferências de cookies</a></li>
+          <li><a href="en/index.html" hreflang="en">English</a></li>
+        </ul>
+      </div>
+      <div class="wacta">
+        <b>WhatsApp</b>
+        <p style="font-size:.9rem;margin:0 0 14px">Fale direto com a casa e reserve sem comissão de OTA.</p>
+        <a class="btn btn--wa btn--sm" href="#" data-wa>Abrir conversa <span class="ar">&rarr;</span></a>
+        <p style="font-size:.78rem;margin:14px 0 0;color:rgba(242,240,236,.6)">O celular publicado é usado aqui como WhatsApp, mas o site de vocês nunca o identifica como tal e não tem link wa.me em página nenhuma. [CONFIRM]</p>
+      </div>
+    </div>
+    <div class="ftr__legal">
+      <span>CNPJ <span class="cfm">[CONFIRM]</span></span>
+      <span>CADASTUR <span class="cfm">[CONFIRM]</span></span>
+      <span>Razão social <span class="cfm">[CONFIRM]</span></span>
+      <span>Cadastro no Ministério do Turismo é obrigatório para meios de hospedagem no Brasil.</span>
+    </div>
+    <div class="ftr__legal" style="border-top:0;padding-top:0;margin-top:8px">
+      <span>© 2026 Haute Haus — mockup de demonstração. Todas as fotografias são de banco de imagens e nenhuma diária, medida, nota ou registro foi inventado.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="#" data-wa aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.24-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg></a>
+<div class="mbar">
+  <a class="btn btn--wa" href="#" data-wa>WhatsApp</a>
+  <a class="btn" href="#disponibilidade">Reservar</a>
+</div>
+
+<div class="ck" role="dialog" aria-label="Preferências de cookies">
+  <div class="ck__in">
+    <div>
+      <p><strong>Cookies e dados pessoais.</strong>
+        Só o essencial fica ligado. Analytics e marketing ficam desligados até você ligar, e nada vem marcado. Nenhuma política de privacidade foi encontrada no site atual da Haute Haus — esta é nova.
+        <a href="privacidade.html">Política de Privacidade</a></p>
+      <div class="ck__opts">
+        <label><input type="checkbox" checked disabled> Essenciais</label>
+        <label><input type="checkbox" id="ckA"> Analytics</label>
+        <label><input type="checkbox" id="ckM"> Marketing</label>
+      </div>
+    </div>
+    <div class="ck__btns">
+      <button class="btn btn--line btn--sm" data-ck="none">Recusar</button>
+      <button class="btn btn--line btn--sm" data-ck="save">Salvar</button>
+      <button class="btn btn--sm" data-ck="all">Aceitar</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

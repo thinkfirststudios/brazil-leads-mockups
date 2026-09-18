@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MOCKUP: production should split per language (pt/es/en) -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://eccellenzaimoveis.com.br/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/alugar/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/alugar/sem-fiador/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/bairros/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/bairros/armacao/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/bairros/barra-da-lagoa/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/bairros/cacupe/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/bairros/campeche/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/bairros/corrego-grande/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/bairros/jurere/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/bairros/lagoa-da-conceicao/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/bairros/morro-das-pedras/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/bairros/novo-campeche/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/bairros/pantano-do-sul/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/bairros/ribeirao-da-ilha/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/bairros/rio-tavares/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/bairros/santo-antonio-de-lisboa/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/bairros/trindade/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/comprar/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/comprar/aceita-pet/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/comprar/estuda-permuta/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/comprar/mcmv/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/comprar/na-planta/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/comprar/pronto-para-morar/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/en/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/es/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/privacidade.html</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/regiao/governador-celso-ramos/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/regiao/paulo-lopes/</loc></url>
+  <url><loc>https://eccellenzaimoveis.com.br/regiao/sao-jose/</loc></url>
+</urlset>

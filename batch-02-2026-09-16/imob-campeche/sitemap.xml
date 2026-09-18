@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mockup sitemap. In production, segment into sitemap-imoveis.xml, sitemap-terrenos.xml, sitemap-lancamentos.xml and sitemap-bairros.xml under a sitemap index. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://imobcampeche.com.br/</loc></url>
+  <url><loc>https://imobcampeche.com.br/imoveis/</loc></url>
+  <url><loc>https://imobcampeche.com.br/terrenos/</loc></url>
+  <url><loc>https://imobcampeche.com.br/lancamentos/</loc></url>
+  <url><loc>https://imobcampeche.com.br/bairros/campeche/</loc></url>
+  <url><loc>https://imobcampeche.com.br/bairros/rio-tavares/</loc></url>
+  <url><loc>https://imobcampeche.com.br/bairros/ribeirao-da-ilha/</loc></url>
+  <url><loc>https://imobcampeche.com.br/bairros/lagoa-da-conceicao/</loc></url>
+  <url><loc>https://imobcampeche.com.br/privacidade.html</loc></url>
+</urlset>

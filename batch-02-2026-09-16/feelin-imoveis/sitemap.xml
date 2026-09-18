@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mockup sitemap. Production: sitemap index segmented by tier — sitemap-florianopolis.xml (bairros), sitemap-litoral.xml (cidades), sitemap-lancamentos.xml, sitemap-guias.xml, sitemap-alugar.xml. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://feelinimoveis.com.br/</loc></url>
+  <url><loc>https://feelinimoveis.com.br/comprar/</loc></url>
+  <url><loc>https://feelinimoveis.com.br/alugar/</loc></url>
+  <url><loc>https://feelinimoveis.com.br/florianopolis/</loc></url>
+  <url><loc>https://feelinimoveis.com.br/florianopolis/campeche/</loc></url>
+  <url><loc>https://feelinimoveis.com.br/litoral-e-regiao/</loc></url>
+  <url><loc>https://feelinimoveis.com.br/privacidade.html</loc></url>
+</urlset>

@@ -1,0 +1,5 @@
+# 301 redirects from the current Wix default slugs to the new real slugs
+# (Netlify/Cloudflare Pages syntax — adapt to the final host). Keeps existing shared links working.
+/blank-1     /sobre/      301
+/blank-2     /adocao/     301
+/contact-9   /contato/    301

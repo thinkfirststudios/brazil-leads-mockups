@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mockup sitemap. Production: add listing pages and the preserved Noticias / A Empresa / Financiamento / Correspondente Bancario URLs (301 map). -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.campechesulimoveis.com.br/</loc></url>
+  <url><loc>https://www.campechesulimoveis.com.br/comprar/</loc></url>
+  <url><loc>https://www.campechesulimoveis.com.br/alugar/</loc></url>
+  <url><loc>https://www.campechesulimoveis.com.br/privacidade.html</loc></url>
+  <url><loc>https://www.campechesulimoveis.com.br/bairros/campeche/</loc></url>
+  <url><loc>https://www.campechesulimoveis.com.br/bairros/ribeirao-da-ilha/</loc></url>
+  <url><loc>https://www.campechesulimoveis.com.br/bairros/rio-tavares/</loc></url>
+  <url><loc>https://www.campechesulimoveis.com.br/bairros/morro-das-pedras/</loc></url>
+  <url><loc>https://www.campechesulimoveis.com.br/bairros/armacao-do-pantano-do-sul/</loc></url>
+  <url><loc>https://www.campechesulimoveis.com.br/bairros/pantano-do-sul/</loc></url>
+  <url><loc>https://www.campechesulimoveis.com.br/bairros/rio-vermelho/</loc></url>
+  <url><loc>https://www.campechesulimoveis.com.br/bairros/ingleses-do-rio-vermelho/</loc></url>
+</urlset>

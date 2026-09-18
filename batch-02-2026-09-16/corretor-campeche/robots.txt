@@ -1,0 +1,5 @@
+# MOCKUP — não indexar enquanto for demonstração. No lançamento, trocar por "Allow: /".
+User-agent: *
+Disallow: /
+
+Sitemap: https://corretorcampeche.com.br/sitemap.xml

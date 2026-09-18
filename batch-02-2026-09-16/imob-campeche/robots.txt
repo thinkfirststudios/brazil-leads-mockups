@@ -1,0 +1,8 @@
+# Mockup: block all crawling until the site is approved and launched.
+User-agent: *
+Disallow: /
+
+# Production version:
+# User-agent: *
+# Disallow: /*?*ordem=
+# Sitemap: https://imobcampeche.com.br/sitemap.xml
