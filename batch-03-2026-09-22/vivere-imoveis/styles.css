@@ -158,15 +158,15 @@ p { margin: 0 0 1.1em; max-width: 68ch; }
 }
 .hdr.is-condensed { border-bottom-color: var(--line-soft); }
 .hdr.is-condensed .hdr__in { padding-top: 9px; padding-bottom: 9px; }
-.hdr.is-condensed .mark__ring { width: 36px; height: 27px; }
+.hdr.is-condensed .mark__seal { width: 42px; height: 42px; }
 
 .mark { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--navy); }
-.mark__ring { width: 46px; height: 35px; flex: none; transition: width .3s var(--ease), height .3s var(--ease); }
+.mark__seal { width: 56px; height: 56px; flex: none; transition: width .3s var(--ease), height .3s var(--ease); }
 .mark__txt { display: flex; flex-direction: column; line-height: 1; }
-.mark__name { font-family: var(--serif); font-size: 1.5rem; letter-spacing: .26em; }
+.mark__name { font-family: var(--sans); font-size: 1.05rem; font-weight: 500; letter-spacing: .3em; }
 .mark__sub {
-  font-size: .52rem; letter-spacing: .3em; color: var(--muted);
-  text-transform: uppercase; margin-top: 4px;
+  font-size: .5rem; letter-spacing: .24em; color: var(--muted);
+  text-transform: uppercase; margin-top: 5px;
 }
 
 .nav { display: none; }
@@ -447,8 +447,8 @@ p { margin: 0 0 1.1em; max-width: 68ch; }
 .ftr { background: var(--navy-deep); color: rgba(255,255,255,.82); padding: 64px 0 0; margin-top: 8px; }
 .ftr__grid { display: grid; gap: 34px; padding-bottom: 44px; }
 .ftr__brand { display: grid; grid-template-columns: auto 1fr; gap: 0 14px; align-items: center; }
-.ftr__mark { width: 44px; height: 34px; color: var(--sand); grid-row: 1 / 2; }
-.ftr .mark__name { color: #fff; font-size: 1.6rem; align-self: center; }
+.ftr__seal { width: 86px; height: 86px; grid-row: 1 / 2; }
+.ftr .mark__name { color: #fff; font-size: 1.15rem; align-self: center; }
 .ftr__tag, .ftr__addr, .ftr__phone { grid-column: 1 / -1; }
 .ftr__tag { font-family: var(--serif); font-size: 1.1rem; color: var(--sand-deep); margin: .5em 0 1.4em; }
 .ftr__addr, .ftr__phone { font-size: .86rem; line-height: 1.7; }
@@ -501,8 +501,8 @@ p { margin: 0 0 1.1em; max-width: 68ch; }
 @media (max-width: 419px) {
   .hdr__in { gap: 8px; }
   .mark { gap: 9px; min-width: 0; }
-  .mark__ring { width: 38px; height: 29px; }
-  .mark__name { font-size: 1.15rem; letter-spacing: .16em; }
+  .mark__seal { width: 44px; height: 44px; }
+  .mark__name { font-size: .92rem; letter-spacing: .2em; }
   .mark__sub { display: none; }
   .lang a { padding: 12px 5px; }
   .hdr__act { gap: 4px; }

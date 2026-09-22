@@ -1,20 +1,22 @@
 VIVERE - Imoveis Selecionados / maquete especulativa ThinkFirst Studios
 
-logo-vivere.svg        selo completo (disco azul-marinho, anel de texto, monograma V)
-logo-vivere-light.svg  mesmo selo sem o disco, para fundos escuros
-favicon.svg            monograma sem o anel de texto, que some abaixo de ~32px
+logo.jpg                selo oficial, arquivo enviado pelo cliente em 22/09/2026
+                        (1080x1080). Usado no cabecalho e na pagina "A VIVERE".
+logo-vivere-light.png   o MESMO arquivo com o fundo marinho removido por alfa,
+                        para aparecer sobre o rodape escuro. Nada redesenhado.
+favicon.png             o mesmo selo reduzido a 96px, para a aba do navegador.
 
-Os tres arquivos foram REDESENHADOS EM VETOR a partir da arte enviada pelo
-cliente em 22/09/2026. Nao sao os arquivos originais da marca: o tipo do anel
-de texto e uma aproximacao (Inter) e a geometria do V foi tracada a olho.
-[CONFIRM logotipo] - pedir o vetor oficial antes de qualquer producao.
+Nenhum destes arquivos e um redesenho: os dois derivados saem do proprio
+logo.jpg. [CONFIRM logotipo] - pedir o vetor oficial (SVG/AI/EPS) antes de
+producao; a partir dele o selo fica nitido em qualquer tamanho e o rodape
+dispensa o PNG.
 
-Cores tiradas do proprio selo e aplicadas ao site inteiro:
-  azul-marinho  #1E2B3C   (--navy)
-  off-white     #F3F1EC   (base de --sand #F2EFE9)
+Cores amostradas do arquivo e aplicadas ao site inteiro:
+  azul-marinho  #1D283A   (--navy)   83,6% dos pixels do selo
+  off-white     #F4F5F0   (--sand)
 
-O cabecalho e o rodape desenham o monograma em SVG inline, para herdar a cor
-do contexto; o selo completo fica nestes arquivos.
+O nome ao lado do selo usa Inter em caixa alta com entreletra larga, que e o
+tipo do proprio anel do selo - nao a serifa usada nos titulos das paginas.
 
 Nenhuma fotografia dos anuncios da VIVERE foi copiada para esta pasta. As
 imagens das paginas sao de banco de imagens (Unsplash), carregadas por URL e

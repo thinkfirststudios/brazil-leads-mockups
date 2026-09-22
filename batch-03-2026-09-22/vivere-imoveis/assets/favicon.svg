@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="VIVERE">
-  <!-- Monograma do selo VIVERE, sem o anel de texto (ilegivel a 16px). -->
-  <rect width="64" height="64" fill="#1D283A"></rect>
-  <path d="M 4 12.2 L 32 51.8 L 60 12.2 L 53.7 12.2 L 32 40.7 L 21.4 12.2 Z"
-        fill="none" stroke="#F4F5F0" stroke-width="2.4" stroke-linejoin="miter" stroke-miterlimit="10"></path>
-</svg>
