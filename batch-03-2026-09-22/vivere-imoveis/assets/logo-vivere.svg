@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" role="img" aria-label="VIVERE - Imoveis Selecionados">
+  <!-- PLACEHOLDER: reconstrucao tipografica do monograma + wordmark.
+       Arquivo vetorial oficial da marca: [CONFIRM logotipo] -->
+  <circle cx="44" cy="48" r="30" fill="none" stroke="#1F3A5F" stroke-width="1.2"/>
+  <path d="M30 37 L44 63 L58 37" fill="none" stroke="#1F3A5F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="92" y="48" font-family="Cormorant Garamond, Georgia, serif" font-size="34" letter-spacing="9" fill="#1F3A5F">VIVERE</text>
+  <text x="94" y="68" font-family="Inter, Helvetica, Arial, sans-serif" font-size="9" letter-spacing="5" fill="#5B6B7D">IMOVEIS SELECIONADOS</text>
+</svg>
