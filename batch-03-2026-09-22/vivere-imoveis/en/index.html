@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://images.unsplash.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -59,18 +59,17 @@
 }</script>
 </head>
 <body>
+<div class="page">
 <a class="skip" href="#main">Skip to content</a>
 <header class="hdr" data-header>
-  <div class="wrap hdr__in">
+  <div class="hdr__in">
     <a class="mark" href="index.html" aria-label="VIVERE — Imóveis Selecionados">
       <!-- Selo oficial da VIVERE, arquivo enviado pelo cliente (assets/logo.jpg, 1080x1080). -->
       <img class="mark__seal" src="../assets/logo.jpg" width="112" height="112"
            alt="Selo da VIVERE — Imóveis Selecionados" decoding="async">
-      <span class="mark__txt">
-        <!-- wordmark oficial (assets/wordmark.png). O E da VIVERE nao tem haste
-             vertical: nenhuma fonte reproduz isso, por isso entra como imagem. -->
-        <img class="mark__word" src="../assets/wordmark.png" width="2718" height="427" alt="VIVERE" decoding="async">
-        <span class="mark__sub">IMÓVEIS SELECIONADOS</span></span>
+      <!-- wordmark oficial (assets/wordmark.png). O E da VIVERE nao tem haste
+           vertical: nenhuma fonte reproduz isso, por isso entra como imagem. -->
+      <img class="mark__word" src="../assets/wordmark.png" width="2718" height="427" alt="VIVERE" decoding="async">
     </a>
     <nav class="nav" aria-label="Main navigation"><ul><li><a href="../imoveis.html">Properties</a></li><li><a href="../bairros.html">Neighbourhoods</a></li><li><a href="#international">Buying from abroad</a></li><li><a href="../sobre.html">About</a></li><li><a href="../contato.html">Contact</a></li></ul></nav>
     <div class="hdr__act">
@@ -79,7 +78,7 @@
         <a href="index.html" hreflang="en" lang="en" aria-current="true">EN</a>
         <a href="../es/index.html" hreflang="es" lang="es">ES</a>
       </nav>
-      <a class="btn btn--wa btn--sm" href="https://wa.me/5548991979159?text=Ol%C3%A1%2C%20VIVERE.%20Vi%20o%20site%20e%20gostaria%20de%20falar%20sobre%20um%20im%C3%B3vel." rel="noopener"><svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>WhatsApp</a>
+      <a class="btn btn--dark btn--pill btn--sm hdr__cta" href="../index.html#avaliacao">Request a valuation</a>
       <button class="burger" type="button" data-burger aria-expanded="false" aria-controls="sheet">
         <span class="burger__bars" aria-hidden="true"></span><span class="sr">Menu</span>
       </button>
@@ -87,6 +86,8 @@
   </div>
   <div class="sheet" id="sheet" data-sheet hidden>
     <nav aria-label="Main navigation"><ul><li><a href="../imoveis.html">Properties</a></li><li><a href="../bairros.html">Neighbourhoods</a></li><li><a href="#international">Buying from abroad</a></li><li><a href="../sobre.html">About</a></li><li><a href="../contato.html">Contact</a></li></ul></nav>
+    <a class="btn btn--dark btn--pill btn--wide" href="../index.html#avaliacao">Request a valuation</a>
+    <a class="btn btn--quiet btn--pill btn--wide" href="https://wa.me/5548991979159?text=Ol%C3%A1%2C%20VIVERE.%20Vi%20o%20site%20e%20gostaria%20de%20falar%20sobre%20um%20im%C3%B3vel." rel="noopener"><svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>WhatsApp</a>
   </div>
 </header>
 <main id="main">
@@ -100,18 +101,10 @@
     </div>
   </section>
   <section class="band band--search" aria-label="Selected properties"><div class="wrap"><form class="search" aria-label="Property search" data-search>
-  <div class="search__modes" role="group" aria-label="For sale / Rental">
-    <button type="button" class="search__mode is-on" data-mode="venda" aria-pressed="true">For sale</button>
-    <button type="button" class="search__mode" data-mode="locacao" aria-pressed="false">Rental</button>
-  </div>
-  <div class="search__fields">
-    <div class="field"><label for="s-tipo">Type</label><select id="s-tipo"><option>Any</option><option>Apartamento</option><option>Apartamento Garden</option><option>Casa</option><option>Casa Geminada</option><option>Cobertura</option><option>Studio</option><option>Loft</option><option>Terreno</option><option>Comercial</option><option>Pousada</option></select></div>
-    <div class="field"><label for="s-bairro">Neighbourhood</label><select id="s-bairro"><option>Any</option><option>Jurerê Internacional</option><option>Jurerê</option><option>Campeche</option><option>Novo Campeche</option><option>Centro</option><option>Itacorubi</option><option>Canasvieiras</option><option>Cachoeira do Bom Jesus</option><option>Rio Tavares</option><option>João Paulo</option><option>Morro das Pedras</option><option>Porto da Lagoa</option><option>Santo Antônio de Lisboa</option></select></div>
-    <div class="field"><label for="s-faixa">Price range</label><select id="s-faixa"><option>Any</option><option>Até R$ 1.500.000</option><option>R$ 1.500.000 – R$ 3.000.000</option><option>R$ 3.000.000 – R$ 6.000.000</option><option>Acima de R$ 6.000.000</option></select></div>
-    <button class="btn btn--navy search__go" type="submit">Search properties</button>
-  </div>
-  <p class="search__note">In this mockup the search is illustrative. In production it queries VIVERE’s property database. <span class="confirm">[CONFIRM — does the imobibrasil plan expose a feed/API?]</span></p>
-</form></div></section>
+  <div class="search__fields"><div class="seg"><span class="seg__i" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M10 21v-6h4v6"/></svg></span><span class="seg__t"><label for="s-neg">Deal</label><select id="s-neg"><option>For sale</option><option>Rental</option></select></span></div><div class="seg"><span class="seg__i" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><span class="seg__t"><label for="s-tipo">Property type</label><select id="s-tipo"><option>Any</option><option>Apartamento</option><option>Apartamento Garden</option><option>Casa</option><option>Casa Geminada</option><option>Cobertura</option><option>Studio</option><option>Loft</option><option>Terreno</option><option>Comercial</option><option>Pousada</option></select></span></div><div class="seg"><span class="seg__i" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span><span class="seg__t"><label for="s-bairro">Neighbourhood</label><select id="s-bairro"><option>Any</option><option>Jurerê Internacional</option><option>Jurerê</option><option>Campeche</option><option>Novo Campeche</option><option>Centro</option><option>Itacorubi</option><option>Canasvieiras</option><option>Cachoeira do Bom Jesus</option><option>Rio Tavares</option><option>João Paulo</option><option>Morro das Pedras</option><option>Porto da Lagoa</option><option>Santo Antônio de Lisboa</option></select></span></div><div class="seg"><span class="seg__i" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 9.2c-.6-.9-1.7-1.4-3-1.4-1.8 0-3 .9-3 2.2 0 2.9 6 1.3 6 4.2 0 1.3-1.2 2.2-3 2.2-1.3 0-2.4-.5-3-1.4M12 6v12"/></svg></span><span class="seg__t"><label for="s-faixa">Price range</label><select id="s-faixa"><option>Any</option><option>Até R$ 1.500.000</option><option>R$ 1.500.000 – R$ 3.000.000</option><option>R$ 3.000.000 – R$ 6.000.000</option><option>Acima de R$ 6.000.000</option></select></span></div></div>
+  <button class="btn btn--dark btn--pill search__go" type="submit">Search</button>
+</form>
+<p class="search__note">In this mockup the search is illustrative. In production it queries VIVERE’s property database. <span class="confirm">[CONFIRM — does the imobibrasil plan expose a feed/API?]</span></p></div></section>
   <section class="band">
     <div class="wrap">
       <div class="shead" data-reveal><p class="eyebrow">Selected properties</p><h2>A selection, not a catalogue.</h2></div>
@@ -198,6 +191,7 @@
     <button type="button" class="btn btn--navy btn--sm" data-cookie-yes>Accept</button>
   </div>
 </div>
+</div><!-- /.page -->
 <script src="../script.js" defer></script>
 </body>
 </html>

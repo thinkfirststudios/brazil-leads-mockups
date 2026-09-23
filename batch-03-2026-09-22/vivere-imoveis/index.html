@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://images.unsplash.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -59,18 +59,17 @@
 }</script>
 </head>
 <body>
+<div class="page">
 <a class="skip" href="#main">Ir para o conteúdo</a>
 <header class="hdr" data-header>
-  <div class="wrap hdr__in">
+  <div class="hdr__in">
     <a class="mark" href="index.html" aria-label="VIVERE — Imóveis Selecionados">
       <!-- Selo oficial da VIVERE, arquivo enviado pelo cliente (assets/logo.jpg, 1080x1080). -->
       <img class="mark__seal" src="assets/logo.jpg" width="112" height="112"
            alt="Selo da VIVERE — Imóveis Selecionados" decoding="async">
-      <span class="mark__txt">
-        <!-- wordmark oficial (assets/wordmark.png). O E da VIVERE nao tem haste
-             vertical: nenhuma fonte reproduz isso, por isso entra como imagem. -->
-        <img class="mark__word" src="assets/wordmark.png" width="2718" height="427" alt="VIVERE" decoding="async">
-        <span class="mark__sub">IMÓVEIS SELECIONADOS</span></span>
+      <!-- wordmark oficial (assets/wordmark.png). O E da VIVERE nao tem haste
+           vertical: nenhuma fonte reproduz isso, por isso entra como imagem. -->
+      <img class="mark__word" src="assets/wordmark.png" width="2718" height="427" alt="VIVERE" decoding="async">
     </a>
     <nav class="nav" aria-label="Navegação principal"><ul><li><a href="imoveis.html">Imóveis</a></li><li><a href="bairros.html">Bairros</a></li><li><a href="index.html#lancamentos">Lançamentos</a></li><li><a href="sobre.html">A VIVERE</a></li><li><a href="contato.html">Contato</a></li></ul></nav>
     <div class="hdr__act">
@@ -79,7 +78,7 @@
         <a href="en/index.html" hreflang="en" lang="en">EN</a>
         <a href="es/index.html" hreflang="es" lang="es">ES</a>
       </nav>
-      <a class="btn btn--wa btn--sm" href="https://wa.me/5548991979159?text=Ol%C3%A1%2C%20VIVERE.%20Vi%20o%20site%20e%20gostaria%20de%20falar%20sobre%20um%20im%C3%B3vel." rel="noopener"><svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>WhatsApp</a>
+      <a class="btn btn--dark btn--pill btn--sm hdr__cta" href="index.html#avaliacao">Avalie seu imóvel</a>
       <button class="burger" type="button" data-burger aria-expanded="false" aria-controls="sheet">
         <span class="burger__bars" aria-hidden="true"></span><span class="sr">Menu</span>
       </button>
@@ -87,41 +86,42 @@
   </div>
   <div class="sheet" id="sheet" data-sheet hidden>
     <nav aria-label="Navegação principal"><ul><li><a href="imoveis.html">Imóveis</a></li><li><a href="bairros.html">Bairros</a></li><li><a href="index.html#lancamentos">Lançamentos</a></li><li><a href="sobre.html">A VIVERE</a></li><li><a href="contato.html">Contato</a></li></ul></nav>
+    <a class="btn btn--dark btn--pill btn--wide" href="index.html#avaliacao">Avalie seu imóvel</a>
+    <a class="btn btn--quiet btn--pill btn--wide" href="https://wa.me/5548991979159?text=Ol%C3%A1%2C%20VIVERE.%20Vi%20o%20site%20e%20gostaria%20de%20falar%20sobre%20um%20im%C3%B3vel." rel="noopener"><svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>WhatsApp</a>
   </div>
 </header>
 <main id="main">
   <section class="hero" aria-labelledby="hero-h">
     <div class="hero__media" data-parallax><!-- STOCK PLACEHOLDER (hero) - foto de banco de imagens, nao e foto do imovel do cliente --><img class="hero__img" src="https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?auto=format&fit=crop&w=1024&q=72 1024w, https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?auto=format&fit=crop&w=2400&q=72 2400w" sizes="100vw" alt="Vista aérea de praia de águas claras com casas à beira-mar em Florianópolis — imagem ilustrativa de banco de imagens" width="2400" height="1350" loading="eager" fetchpriority="high" decoding="async"></div>
     <div class="hero__scrim" aria-hidden="true"></div>
-    <div class="wrap hero__in">
+    <div class="hero__in">
       <p class="eyebrow eyebrow--light">Jurerê Internacional · Florianópolis</p>
-      <h1 id="hero-h">Morar ou Investir,<br>seu imóvel está aqui!</h1>
-      <p class="hero__sub">O luxo está nos detalhes. Imóveis exclusivos em Florianópolis. Venda · Aluguel · Investimentos</p>
+      <h1 id="hero-h">Morar ou Investir,<br><em>seu imóvel está aqui!</em></h1>
+      <p class="hero__sub">O luxo está nos detalhes. Imóveis exclusivos em Florianópolis.<br>Venda · Aluguel · Investimentos</p>
     </div>
+    <div class="hero__search"><form class="search" aria-label="Busca de imóveis" data-search>
+  <div class="search__fields"><div class="seg"><span class="seg__i" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M10 21v-6h4v6"/></svg></span><span class="seg__t"><label for="s-neg">Negócio</label><select id="s-neg"><option>Venda</option><option>Locação</option></select></span></div><div class="seg"><span class="seg__i" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><span class="seg__t"><label for="s-tipo">Tipo de imóvel</label><select id="s-tipo"><option>Qualquer</option><option>Apartamento</option><option>Apartamento Garden</option><option>Casa</option><option>Casa Geminada</option><option>Cobertura</option><option>Studio</option><option>Loft</option><option>Terreno</option><option>Comercial</option><option>Pousada</option></select></span></div><div class="seg"><span class="seg__i" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span><span class="seg__t"><label for="s-bairro">Bairro</label><select id="s-bairro"><option>Qualquer</option><option>Jurerê Internacional</option><option>Jurerê</option><option>Campeche</option><option>Novo Campeche</option><option>Centro</option><option>Itacorubi</option><option>Canasvieiras</option><option>Cachoeira do Bom Jesus</option><option>Rio Tavares</option><option>João Paulo</option><option>Morro das Pedras</option><option>Porto da Lagoa</option><option>Santo Antônio de Lisboa</option></select></span></div><div class="seg"><span class="seg__i" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 9.2c-.6-.9-1.7-1.4-3-1.4-1.8 0-3 .9-3 2.2 0 2.9 6 1.3 6 4.2 0 1.3-1.2 2.2-3 2.2-1.3 0-2.4-.5-3-1.4M12 6v12"/></svg></span><span class="seg__t"><label for="s-faixa">Faixa de preço</label><select id="s-faixa"><option>Qualquer</option><option>Até R$ 1.500.000</option><option>R$ 1.500.000 – R$ 3.000.000</option><option>R$ 3.000.000 – R$ 6.000.000</option><option>Acima de R$ 6.000.000</option></select></span></div></div>
+  <button class="btn btn--dark btn--pill search__go" type="submit">Buscar</button>
+</form>
+<p class="search__note">Nesta maquete a busca é ilustrativa. Em produção, ela consulta a base de imóveis da VIVERE. <span class="confirm">[CONFIRM — o plano imobibrasil expõe feed/API?]</span></p></div>
   </section>
 
-  <section class="band band--search" aria-label="Busca">
-    <div class="wrap"><form class="search" aria-label="Busca de imóveis" data-search>
-  <div class="search__modes" role="group" aria-label="Venda / Locação">
-    <button type="button" class="search__mode is-on" data-mode="venda" aria-pressed="true">Venda</button>
-    <button type="button" class="search__mode" data-mode="locacao" aria-pressed="false">Locação</button>
-  </div>
-  <div class="search__fields">
-    <div class="field"><label for="s-tipo">Tipo</label><select id="s-tipo"><option>Qualquer</option><option>Apartamento</option><option>Apartamento Garden</option><option>Casa</option><option>Casa Geminada</option><option>Cobertura</option><option>Studio</option><option>Loft</option><option>Terreno</option><option>Comercial</option><option>Pousada</option></select></div>
-    <div class="field"><label for="s-bairro">Bairro</label><select id="s-bairro"><option>Qualquer</option><option>Jurerê Internacional</option><option>Jurerê</option><option>Campeche</option><option>Novo Campeche</option><option>Centro</option><option>Itacorubi</option><option>Canasvieiras</option><option>Cachoeira do Bom Jesus</option><option>Rio Tavares</option><option>João Paulo</option><option>Morro das Pedras</option><option>Porto da Lagoa</option><option>Santo Antônio de Lisboa</option></select></div>
-    <div class="field"><label for="s-faixa">Faixa de preço</label><select id="s-faixa"><option>Qualquer</option><option>Até R$ 1.500.000</option><option>R$ 1.500.000 – R$ 3.000.000</option><option>R$ 3.000.000 – R$ 6.000.000</option><option>Acima de R$ 6.000.000</option></select></div>
-    <button class="btn btn--navy search__go" type="submit">Buscar imóveis</button>
-  </div>
-  <p class="search__note">Nesta maquete a busca é ilustrativa. Em produção, ela consulta a base de imóveis da VIVERE. <span class="confirm">[CONFIRM — o plano imobibrasil expõe feed/API?]</span></p>
-</form></div>
+  <section class="band" id="sobre" aria-labelledby="sobre-h">
+    <div class="wrap lede">
+      <p class="eyebrow">A VIVERE</p>
+      <div>
+        <p class="statement" id="sobre-h" data-reveal>Oferecemos uma <em>seleção excepcional</em> de imóveis à venda, médio a alto padrão, em Florianópolis. Especialidade em <em>Jurerê Internacional</em> e região.</p>
+        <ul class="stats" data-reveal><li class="stat"><span class="stat__n stat__n--txt">CRECI/SC 8883-J</span><span class="stat__c">Registro da agência</span></li><li class="stat"><span class="stat__n" data-count="13">0</span><span class="stat__c">Bairros atendidos</span></li><li class="stat"><span class="stat__n" data-count="10">0</span><span class="stat__c">Tipos de imóvel</span></li><li class="stat"><span class="stat__n stat__n--txt">R$ 1,1M – 11M</span><span class="stat__c">Faixa dos anúncios publicados</span></li></ul>
+        <p class="note">Cada número acima sai do que a VIVERE já publica: o registro da agência, os bairros listados, os tipos de imóvel oferecidos e a faixa dos anúncios ativos. Ano de fundação <span class="confirm">[CONFIRM]</span> · Nº de corretores <span class="confirm">[CONFIRM]</span> · Imóveis negociados <span class="confirm">[CONFIRM]</span>.</p>
+      </div>
+    </div>
   </section>
 
   <section class="band" id="selecionados" aria-labelledby="sel-h">
     <div class="wrap">
       <div class="shead" data-reveal>
-        <p class="eyebrow">Imóveis Selecionados</p>
-        <h2 id="sel-h">Uma seleção, não um catálogo.</h2>
-        <p class="shead__sub">Seleção excepcional de imóveis à venda, médio a alto padrão, em Florianópolis. Especialidade em Jurerê Internacional e região.</p>
+        <h2 id="sel-h">Imóveis <em>Selecionados</em></h2>
+        <p class="shead__sub">Uma seleção, não um catálogo.</p>
       </div>
       <div class="cards"><article class="card" data-reveal>
   <a class="card__media" href="imovel.html" aria-label="Ver detalhes do imóvel em Jurerê Internacional">
@@ -130,18 +130,13 @@
     <span class="card__tag">Vista mar</span>
   </a>
   <div class="card__body">
-    <p class="card__bairro">Jurerê Internacional</p>
-    <h3 class="card__price">R$ 2.190.000</h3>
-    <ul class="card__specs">
-      <li>Apartamento</li>
-      <li>Área <span class="confirm">[CONFIRM]</span></li>
-      <li>Dorm./suítes <span class="confirm">[CONFIRM]</span></li>
-      <li>Vagas <span class="confirm">[CONFIRM]</span></li>
-    </ul>
+    <p class="card__price">R$ 2.190.000</p>
+    <h3 class="card__title">Apartamento · Jurerê Internacional</h3>
+    <ul class="card__chips"><li>Área <span class="confirm">[CONFIRM]</span></li><li>Dorm. <span class="confirm">[CONFIRM]</span></li><li>Suítes <span class="confirm">[CONFIRM]</span></li><li>Vagas <span class="confirm">[CONFIRM]</span></li></ul>
     <p class="card__ref">Ref. <span class="confirm">[CONFIRM — formato #AP092]</span></p>
     <div class="card__acts">
       <a class="link-quiet" href="imovel.html">Ver imóvel</a>
-      <a class="btn btn--quiet btn--sm" href="https://wa.me/5548991979159?text=Ol%C3%A1%2C%20VIVERE.%20Tenho%20interesse%20no%20im%C3%B3vel%20de%20R%24%202.190.000%20em%20Apartamento." rel="noopener"><svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>WhatsApp</a>
+      <a class="btn btn--quiet btn--pill btn--sm" href="https://wa.me/5548991979159?text=Ol%C3%A1%2C%20VIVERE.%20Tenho%20interesse%20no%20im%C3%B3vel%20de%20R%24%202.190.000%20em%20Apartamento." rel="noopener"><svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>WhatsApp</a>
     </div>
   </div>
 </article><article class="card" data-reveal>
@@ -151,18 +146,13 @@
     <span class="card__tag">Frente ao mar</span>
   </a>
   <div class="card__body">
-    <p class="card__bairro">Quadra Mar</p>
-    <h3 class="card__price">R$ 3.990.000</h3>
-    <ul class="card__specs">
-      <li>Casa</li>
-      <li>Área <span class="confirm">[CONFIRM]</span></li>
-      <li>Dorm./suítes <span class="confirm">[CONFIRM]</span></li>
-      <li>Vagas <span class="confirm">[CONFIRM]</span></li>
-    </ul>
+    <p class="card__price">R$ 3.990.000</p>
+    <h3 class="card__title">Casa · Quadra Mar</h3>
+    <ul class="card__chips"><li>Área <span class="confirm">[CONFIRM]</span></li><li>Dorm. <span class="confirm">[CONFIRM]</span></li><li>Suítes <span class="confirm">[CONFIRM]</span></li><li>Vagas <span class="confirm">[CONFIRM]</span></li></ul>
     <p class="card__ref">Ref. <span class="confirm">[CONFIRM — formato #AP092]</span></p>
     <div class="card__acts">
       <a class="link-quiet" href="imovel.html">Ver imóvel</a>
-      <a class="btn btn--quiet btn--sm" href="https://wa.me/5548991979159?text=Ol%C3%A1%2C%20VIVERE.%20Tenho%20interesse%20no%20im%C3%B3vel%20de%20R%24%203.990.000%20em%20Casa." rel="noopener"><svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>WhatsApp</a>
+      <a class="btn btn--quiet btn--pill btn--sm" href="https://wa.me/5548991979159?text=Ol%C3%A1%2C%20VIVERE.%20Tenho%20interesse%20no%20im%C3%B3vel%20de%20R%24%203.990.000%20em%20Casa." rel="noopener"><svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>WhatsApp</a>
     </div>
   </div>
 </article><article class="card" data-reveal>
@@ -172,18 +162,13 @@
     <span class="card__tag">6 unidades</span>
   </a>
   <div class="card__body">
-    <p class="card__bairro">Novo Campeche</p>
-    <h3 class="card__price">R$ 5.750.000</h3>
-    <ul class="card__specs">
-      <li>Residencial boutique</li>
-      <li>Área <span class="confirm">[CONFIRM]</span></li>
-      <li>Dorm./suítes <span class="confirm">[CONFIRM]</span></li>
-      <li>Vagas <span class="confirm">[CONFIRM]</span></li>
-    </ul>
+    <p class="card__price">R$ 5.750.000</p>
+    <h3 class="card__title">Residencial boutique · Novo Campeche</h3>
+    <ul class="card__chips"><li>Área <span class="confirm">[CONFIRM]</span></li><li>Dorm. <span class="confirm">[CONFIRM]</span></li><li>Suítes <span class="confirm">[CONFIRM]</span></li><li>Vagas <span class="confirm">[CONFIRM]</span></li></ul>
     <p class="card__ref">Ref. <span class="confirm">[CONFIRM — formato #AP092]</span></p>
     <div class="card__acts">
       <a class="link-quiet" href="imovel.html">Ver imóvel</a>
-      <a class="btn btn--quiet btn--sm" href="https://wa.me/5548991979159?text=Ol%C3%A1%2C%20VIVERE.%20Tenho%20interesse%20no%20im%C3%B3vel%20de%20R%24%205.750.000%20em%20Residencial boutique." rel="noopener"><svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>WhatsApp</a>
+      <a class="btn btn--quiet btn--pill btn--sm" href="https://wa.me/5548991979159?text=Ol%C3%A1%2C%20VIVERE.%20Tenho%20interesse%20no%20im%C3%B3vel%20de%20R%24%205.750.000%20em%20Residencial boutique." rel="noopener"><svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>WhatsApp</a>
     </div>
   </div>
 </article><article class="card" data-reveal>
@@ -193,18 +178,13 @@
     <span class="card__tag">Pátio Jurerê</span>
   </a>
   <div class="card__body">
-    <p class="card__bairro">Pátio Jurerê</p>
-    <h3 class="card__price">R$ 2.750.000</h3>
-    <ul class="card__specs">
-      <li>Apartamento</li>
-      <li>Área <span class="confirm">[CONFIRM]</span></li>
-      <li>Dorm./suítes <span class="confirm">[CONFIRM]</span></li>
-      <li>Vagas <span class="confirm">[CONFIRM]</span></li>
-    </ul>
+    <p class="card__price">R$ 2.750.000</p>
+    <h3 class="card__title">Apartamento · Pátio Jurerê</h3>
+    <ul class="card__chips"><li>Área <span class="confirm">[CONFIRM]</span></li><li>Dorm. <span class="confirm">[CONFIRM]</span></li><li>Suítes <span class="confirm">[CONFIRM]</span></li><li>Vagas <span class="confirm">[CONFIRM]</span></li></ul>
     <p class="card__ref">Ref. <span class="confirm">[CONFIRM — formato #AP092]</span></p>
     <div class="card__acts">
       <a class="link-quiet" href="imovel.html">Ver imóvel</a>
-      <a class="btn btn--quiet btn--sm" href="https://wa.me/5548991979159?text=Ol%C3%A1%2C%20VIVERE.%20Tenho%20interesse%20no%20im%C3%B3vel%20de%20R%24%202.750.000%20em%20Apartamento." rel="noopener"><svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>WhatsApp</a>
+      <a class="btn btn--quiet btn--pill btn--sm" href="https://wa.me/5548991979159?text=Ol%C3%A1%2C%20VIVERE.%20Tenho%20interesse%20no%20im%C3%B3vel%20de%20R%24%202.750.000%20em%20Apartamento." rel="noopener"><svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>WhatsApp</a>
     </div>
   </div>
 </article><article class="card" data-reveal>
@@ -214,18 +194,13 @@
     <span class="card__tag">Novo Campeche</span>
   </a>
   <div class="card__body">
-    <p class="card__bairro">Novo Campeche</p>
-    <h3 class="card__price">R$ 1.500.000</h3>
-    <ul class="card__specs">
-      <li>Apartamento</li>
-      <li>Área <span class="confirm">[CONFIRM]</span></li>
-      <li>Dorm./suítes <span class="confirm">[CONFIRM]</span></li>
-      <li>Vagas <span class="confirm">[CONFIRM]</span></li>
-    </ul>
+    <p class="card__price">R$ 1.500.000</p>
+    <h3 class="card__title">Apartamento · Novo Campeche</h3>
+    <ul class="card__chips"><li>Área <span class="confirm">[CONFIRM]</span></li><li>Dorm. <span class="confirm">[CONFIRM]</span></li><li>Suítes <span class="confirm">[CONFIRM]</span></li><li>Vagas <span class="confirm">[CONFIRM]</span></li></ul>
     <p class="card__ref">Ref. <span class="confirm">[CONFIRM — formato #AP092]</span></p>
     <div class="card__acts">
       <a class="link-quiet" href="imovel.html">Ver imóvel</a>
-      <a class="btn btn--quiet btn--sm" href="https://wa.me/5548991979159?text=Ol%C3%A1%2C%20VIVERE.%20Tenho%20interesse%20no%20im%C3%B3vel%20de%20R%24%201.500.000%20em%20Apartamento." rel="noopener"><svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>WhatsApp</a>
+      <a class="btn btn--quiet btn--pill btn--sm" href="https://wa.me/5548991979159?text=Ol%C3%A1%2C%20VIVERE.%20Tenho%20interesse%20no%20im%C3%B3vel%20de%20R%24%201.500.000%20em%20Apartamento." rel="noopener"><svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>WhatsApp</a>
     </div>
   </div>
 </article><article class="card" data-reveal>
@@ -235,31 +210,34 @@
     <span class="card__tag">Centro</span>
   </a>
   <div class="card__body">
-    <p class="card__bairro">Centro</p>
-    <h3 class="card__price">R$ 1.275.000</h3>
-    <ul class="card__specs">
-      <li>Apartamento</li>
-      <li>Área <span class="confirm">[CONFIRM]</span></li>
-      <li>Dorm./suítes <span class="confirm">[CONFIRM]</span></li>
-      <li>Vagas <span class="confirm">[CONFIRM]</span></li>
-    </ul>
+    <p class="card__price">R$ 1.275.000</p>
+    <h3 class="card__title">Apartamento · Centro</h3>
+    <ul class="card__chips"><li>Área <span class="confirm">[CONFIRM]</span></li><li>Dorm. <span class="confirm">[CONFIRM]</span></li><li>Suítes <span class="confirm">[CONFIRM]</span></li><li>Vagas <span class="confirm">[CONFIRM]</span></li></ul>
     <p class="card__ref">Ref. <span class="confirm">[CONFIRM — formato #AP092]</span></p>
     <div class="card__acts">
       <a class="link-quiet" href="imovel.html">Ver imóvel</a>
-      <a class="btn btn--quiet btn--sm" href="https://wa.me/5548991979159?text=Ol%C3%A1%2C%20VIVERE.%20Tenho%20interesse%20no%20im%C3%B3vel%20de%20R%24%201.275.000%20em%20Apartamento." rel="noopener"><svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>WhatsApp</a>
+      <a class="btn btn--quiet btn--pill btn--sm" href="https://wa.me/5548991979159?text=Ol%C3%A1%2C%20VIVERE.%20Tenho%20interesse%20no%20im%C3%B3vel%20de%20R%24%201.275.000%20em%20Apartamento." rel="noopener"><svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>WhatsApp</a>
     </div>
   </div>
 </article></div>
+      <p class="center"><a class="btn btn--outline btn--pill btn--wide" href="imoveis.html">Ver todos os imóveis</a></p>
       <p class="note">Valores e bairros conforme anúncios publicados pela VIVERE. Área, dormitórios, suítes, vagas e código de referência de cada imóvel entram do sistema da imobiliária — o formato real de código é <strong>#AP092 · #AP107 · #CA119 · #CO051 · #LJ001</strong>. <span class="confirm">[CONFIRM — código de cada imóvel]</span></p>
-      <p class="center"><a class="btn btn--navy" href="imoveis.html">Ver todos os imóveis</a></p>
     </div>
+  </section>
+
+  <section class="band band--tight" aria-label="Bairros em destaque">
+    <div class="wrap mosaic" data-reveal><figure class="tile m_tall"><!-- STOCK PLACEHOLDER (p_novo_campeche) - foto de banco de imagens, nao e foto do imovel do cliente --><img class="tile__img" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1024&q=72 1024w, https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(min-width: 900px) 26vw, 46vw" alt="Casa contemporânea com piscina em Florianópolis — imagem ilustrativa de banco de imagens" width="1200" height="1500" loading="lazy" decoding="async"></figure><figure class="tile m_sq"><!-- STOCK PLACEHOLDER (p_patio) - foto de banco de imagens, nao e foto do imovel do cliente --><img class="tile__img" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1024&q=72 1024w, https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(min-width: 900px) 26vw, 46vw" alt="Fachada de residência contemporânea — imagem ilustrativa de banco de imagens" width="1200" height="1500" loading="lazy" decoding="async"></figure><a class="tile tile--dark m_dark" href="bairros.html">
+      <span class="tile__label">Jurerê Internacional</span>
+      <span class="tile__arrow" aria-hidden="true">&#8599;</span>
+      <span class="sr">Ver o guia do bairro</span>
+    </a><figure class="tile m_wide"><!-- STOCK PLACEHOLDER (p_quadra_mar) - foto de banco de imagens, nao e foto do imovel do cliente --><img class="tile__img" src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1024&q=72 1024w, https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(min-width: 900px) 26vw, 46vw" alt="Casa com piscina e vista para o mar — imagem ilustrativa de banco de imagens" width="1200" height="1500" loading="lazy" decoding="async"></figure><figure class="tile m_fill"><!-- STOCK PLACEHOLDER (d_sunclub) - foto de banco de imagens, nao e foto do imovel do cliente --><img class="tile__img" src="https://images.unsplash.com/photo-1596178067639-5c6e68aea6dc?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1596178067639-5c6e68aea6dc?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1596178067639-5c6e68aea6dc?auto=format&fit=crop&w=1024&q=72 1024w, https://images.unsplash.com/photo-1596178067639-5c6e68aea6dc?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1596178067639-5c6e68aea6dc?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(min-width: 900px) 26vw, 46vw" alt="Piscina e palmeiras em residencial à beira-mar — imagem ilustrativa de banco de imagens" width="1200" height="1500" loading="lazy" decoding="async"></figure></div>
   </section>
 
   <section class="band band--sand" id="lancamentos" aria-labelledby="dev-h">
     <div class="wrap">
       <div class="shead" data-reveal>
-        <p class="eyebrow">Lançamentos e empreendimentos</p>
-        <h2 id="dev-h">Os endereços que a VIVERE acompanha.</h2>
+        <p class="eyebrow">Lançamentos</p>
+        <h2 id="dev-h">Os endereços que a VIVERE <em>acompanha</em>.</h2>
       </div>
     </div>
     <div class="devs" data-carousel>
@@ -311,48 +289,46 @@
     <div class="wrap">
       <div class="shead" data-reveal>
         <p class="eyebrow">Guias de bairro</p>
-        <h2 id="bai-h">Onde ficam os imóveis — e como é morar ali.</h2>
+        <h2 id="bai-h">Onde ficam os imóveis — e <em>como é morar ali</em>.</h2>
         <p class="shead__sub">Conteúdo que hoje não existe no site e é a maior abertura de busca orgânica da VIVERE.</p>
       </div>
       <div class="bcards"><article class="bcard" data-reveal>
       <a class="bcard__media" href="bairros.html"><!-- STOCK PLACEHOLDER (b_jurere) - foto de banco de imagens, nao e foto do imovel do cliente --><img class="bcard__img" src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1024&q=72 1024w, https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(min-width: 900px) 30vw, 88vw" alt="Paisagem de Jurerê Internacional, Florianópolis — imagem ilustrativa de banco de imagens" width="900" height="675" loading="lazy" decoding="async"><span class="card__scrim" aria-hidden="true"></span></a>
       <h3>Jurerê Internacional</h3><p class="bcard__line">A especialidade da VIVERE.</p>
-      <p class="placeholder">[PLACEHOLDER: 2–3 parágrafos sobre o bairro — cliente fornecerá]</p>
       <a class="link-quiet" href="bairros.html">Guia do bairro</a>
     </article><article class="bcard" data-reveal>
       <a class="bcard__media" href="bairros.html"><!-- STOCK PLACEHOLDER (b_campeche) - foto de banco de imagens, nao e foto do imovel do cliente --><img class="bcard__img" src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1024&q=72 1024w, https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(min-width: 900px) 30vw, 88vw" alt="Paisagem de Campeche, Florianópolis — imagem ilustrativa de banco de imagens" width="900" height="675" loading="lazy" decoding="async"><span class="card__scrim" aria-hidden="true"></span></a>
       <h3>Campeche</h3><p class="bcard__line">Mar aberto e bairro em transformação.</p>
-      <p class="placeholder">[PLACEHOLDER: 2–3 parágrafos sobre o bairro — cliente fornecerá]</p>
       <a class="link-quiet" href="bairros.html">Guia do bairro</a>
     </article><article class="bcard" data-reveal>
       <a class="bcard__media" href="bairros.html"><!-- STOCK PLACEHOLDER (b_centro) - foto de banco de imagens, nao e foto do imovel do cliente --><img class="bcard__img" src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1024&q=72 1024w, https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(min-width: 900px) 30vw, 88vw" alt="Fachada de edifício residencial contemporâneo — imagem ilustrativa de banco de imagens" width="900" height="675" loading="lazy" decoding="async"><span class="card__scrim" aria-hidden="true"></span></a>
       <h3>Centro</h3><p class="bcard__line">Vida urbana e vista para a baía.</p>
-      <p class="placeholder">[PLACEHOLDER: 2–3 parágrafos sobre o bairro — cliente fornecerá]</p>
       <a class="link-quiet" href="bairros.html">Guia do bairro</a>
     </article><article class="bcard" data-reveal>
       <a class="bcard__media" href="bairros.html"><!-- STOCK PLACEHOLDER (b_sal) - foto de banco de imagens, nao e foto do imovel do cliente --><img class="bcard__img" src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1024&q=72 1024w, https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(min-width: 900px) 30vw, 88vw" alt="Paisagem de Santo Antônio de Lisboa, Florianópolis — imagem ilustrativa de banco de imagens" width="900" height="675" loading="lazy" decoding="async"><span class="card__scrim" aria-hidden="true"></span></a>
       <h3>Santo Antônio de Lisboa</h3><p class="bcard__line">Casario açoriano e pôr do sol na baía norte.</p>
-      <p class="placeholder">[PLACEHOLDER: 2–3 parágrafos sobre o bairro — cliente fornecerá]</p>
       <a class="link-quiet" href="bairros.html">Guia do bairro</a>
     </article><article class="bcard" data-reveal>
       <a class="bcard__media" href="bairros.html"><!-- STOCK PLACEHOLDER (b_lagoa) - foto de banco de imagens, nao e foto do imovel do cliente --><img class="bcard__img" src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&fit=crop&w=1024&q=72 1024w, https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(min-width: 900px) 30vw, 88vw" alt="Paisagem de Porto da Lagoa, Florianópolis — imagem ilustrativa de banco de imagens" width="900" height="675" loading="lazy" decoding="async"><span class="card__scrim" aria-hidden="true"></span></a>
       <h3>Porto da Lagoa</h3><p class="bcard__line">Entre a Lagoa da Conceição e o mar do sul da ilha.</p>
-      <p class="placeholder">[PLACEHOLDER: 2–3 parágrafos sobre o bairro — cliente fornecerá]</p>
       <a class="link-quiet" href="bairros.html">Guia do bairro</a>
     </article></div>
     </div>
   </section>
 
-  <section class="band band--navy" id="internacional" aria-labelledby="int-h">
-    <div class="wrap split">
-      <div data-reveal>
-        <p class="eyebrow eyebrow--light">International buyers · Compradores internacionales</p>
-        <h2 id="int-h">Comprar em Florianópolis morando fora do Brasil.</h2>
-        <p>Jurerê Internacional é um dos mercados mais internacionais do país. Esta seção existe em português, inglês e espanhol — em páginas próprias, indexáveis, não em tradução automática.</p>
-        <p class="placeholder">[PLACEHOLDER: processo de compra por não residente, CPF, documentação — cliente fornecerá, com revisão do advogado]</p>
-        <p class="int__links"><a class="btn btn--light" href="en/index.html" hreflang="en" lang="en">English</a> <a class="btn btn--light" href="es/index.html" hreflang="es" lang="es">Español</a></p>
+  <section class="band band--tight" id="internacional" aria-labelledby="int-h">
+    <div class="wrap">
+      <div class="darkband" data-reveal>
+        <div class="darkband__media"><!-- STOCK PLACEHOLDER (d_quay) - foto de banco de imagens, nao e foto do imovel do cliente --><img class="darkband__img" src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1024&q=72 1024w, https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=2400&q=72 2400w" sizes="92vw" alt="Deck com vista para o mar ao entardecer — imagem ilustrativa de banco de imagens" width="1600" height="900" loading="lazy" decoding="async"></div>
+        <span class="darkband__scrim" aria-hidden="true"></span>
+        <div class="darkband__in">
+          <p class="eyebrow eyebrow--light">International buyers · Compradores internacionales</p>
+          <h2 id="int-h">Comprar em Florianópolis <em>morando fora do Brasil</em>.</h2>
+          <p>Jurerê Internacional é um dos mercados mais internacionais do país. Esta seção existe em português, inglês e espanhol — em páginas próprias, indexáveis, não em tradução automática.</p>
+          <p class="placeholder">[PLACEHOLDER: processo de compra por não residente, CPF, documentação — cliente fornecerá, com revisão do advogado]</p>
+          <p class="int__links"><a class="btn btn--light btn--pill" href="en/index.html" hreflang="en" lang="en">English</a> <a class="btn btn--light btn--pill" href="es/index.html" hreflang="es" lang="es">Español</a></p>
+        </div>
       </div>
-      <figure class="split__fig" data-reveal><!-- STOCK PLACEHOLDER (p_novo_campeche) - foto de banco de imagens, nao e foto do imovel do cliente --><img class="split__img" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1024&q=72 1024w, https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(min-width: 900px) 42vw, 92vw" alt="Casa contemporânea com piscina e palmeiras em Florianópolis — imagem ilustrativa de banco de imagens" width="1200" height="900" loading="lazy" decoding="async"></figure>
     </div>
   </section>
 
@@ -360,7 +336,7 @@
     <div class="wrap">
       <div class="shead" data-reveal>
         <p class="eyebrow">Equipe</p>
-        <h2 id="team-h">Quem atende quem compra.</h2>
+        <h2 id="team-h">Quem atende <em>quem compra</em>.</h2>
       </div>
       <div class="people"><article class="person" data-reveal>
       <div class="person__frame" role="img" aria-label="Espaço reservado para a fotografia de Deivis Vieira">
@@ -393,7 +369,7 @@
       <figure class="split__fig" data-reveal><!-- STOCK PLACEHOLDER (avaliacao) - foto de banco de imagens, nao e foto do imovel do cliente --><img class="split__img" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=72" srcset="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=640&q=72 640w, https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1024&q=72 1024w, https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=72 1600w, https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2400&q=72 2400w" sizes="(min-width: 900px) 42vw, 92vw" alt="Sala de jantar integrada à cozinha em imóvel contemporâneo — imagem ilustrativa de banco de imagens" width="1200" height="900" loading="lazy" decoding="async"></figure>
       <div data-reveal>
         <p class="eyebrow">Avalie seu imóvel</p>
-        <h2 id="av-h">Quanto vale o seu imóvel hoje?</h2>
+        <h2 id="av-h">Quanto vale o seu imóvel <em>hoje</em>?</h2>
         <p>Envie os dados do imóvel e a VIVERE retorna com uma avaliação de mercado. <span class="confirm">[CONFIRM — prazo de retorno]</span></p>
         <form class="vform" data-form novalidate>
   <div class="vform__row">
@@ -418,9 +394,9 @@
     <div class="wrap contact">
       <div data-reveal>
         <p class="eyebrow">Contato</p>
-        <h2 id="ct-h">Fale com a VIVERE.</h2>
+        <h2 id="ct-h">Fale com a <em>VIVERE</em>.</h2>
         <p>WhatsApp é o caminho mais rápido. Também atendemos por telefone e e-mail.</p>
-        <p><a class="btn btn--wa" href="https://wa.me/5548991979159?text=Ol%C3%A1%2C%20VIVERE.%20Vi%20o%20site%20e%20gostaria%20de%20falar%20sobre%20um%20im%C3%B3vel." rel="noopener"><svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>Conversar no WhatsApp</a></p>
+        <p><a class="btn btn--dark btn--pill" href="https://wa.me/5548991979159?text=Ol%C3%A1%2C%20VIVERE.%20Vi%20o%20site%20e%20gostaria%20de%20falar%20sobre%20um%20im%C3%B3vel." rel="noopener"><svg class="wa-i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>Conversar no WhatsApp</a></p>
       </div>
       <ul class="contact__list" data-reveal>
         <li><strong>Endereço</strong><span class="confirm">[CONFIRM — dois endereços publicados atualmente]</span> Avenida dos Salmões, 230 · Sala 211 — Jurerê Internacional, 88053-365 <span class="sep">ou</span> Rua dos Chernes, 90 · Sala 01 — Jurerê Internacional, 88053-365</li>
@@ -461,6 +437,7 @@
     <button type="button" class="btn btn--navy btn--sm" data-cookie-yes>Aceitar</button>
   </div>
 </div>
+</div><!-- /.page -->
 <script src="script.js" defer></script>
 </body>
 </html>

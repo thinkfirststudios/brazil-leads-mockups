@@ -149,6 +149,34 @@
     });
   });
 
+
+  /* ---------------------------------------------------------- contagem */
+  var counters = $$('[data-count]');
+  if (counters.length) {
+    var run = function (el) {
+      var target = parseInt(el.getAttribute('data-count'), 10) || 0;
+      if (quiet()) { el.textContent = String(target); return; }
+      var t0 = null, dur = 900;
+      var tick = function (ts) {
+        if (t0 === null) { t0 = ts; }
+        var k = Math.min((ts - t0) / dur, 1);
+        el.textContent = String(Math.round(target * (1 - Math.pow(1 - k, 3))));
+        if (k < 1) { window.requestAnimationFrame(tick); }
+      };
+      window.requestAnimationFrame(tick);
+    };
+    if (!('IntersectionObserver' in window)) {
+      counters.forEach(run);
+    } else {
+      var co = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) { run(e.target); co.unobserve(e.target); }
+        });
+      }, { threshold: 0.5 });
+      counters.forEach(function (el) { co.observe(el); });
+    }
+  }
+
   /* ---------------------------------------------------------- cookies */
   var bar = $('[data-cookie]');
   if (bar) {
