@@ -671,6 +671,55 @@ body { background: var(--grad-field); background-attachment: fixed; }
   .feat__asideimg { aspect-ratio: 16 / 9; }
 }
 
+/* ===================================================================
+   MAIS MARINHO: painel do destaque, faixa da equipe, rotulos e chips
+   =================================================================== */
+
+/* o painel do imovel em destaque passa a marinho - contraste direto
+   com a fotografia clara ao lado */
+.feat__panel { background: var(--grad-navy); border-color: transparent; color: rgba(255,255,255,.88); }
+.feat__panel h2 { color: #fff; }
+.feat__panel .eyebrow { color: rgba(255,255,255,.72); }
+.feat__panel .eyebrow::after { background: rgba(255,255,255,.55); }
+.feat__price { color: #fff; }
+.feat__chips li { background: rgba(255,255,255,.12); color: #fff; }
+.feat__chips .confirm { color: #f0d9a8; }
+.feat__ref, .feat__creci { color: rgba(255,255,255,.72); }
+.feat__panel .placeholder { border-left-color: rgba(255,255,255,.35); color: rgba(255,255,255,.76); }
+.feat__panel .confirm { background: rgba(253,244,227,.14); border-color: rgba(232,212,168,.42); color: #f0d9a8; }
+.feat__panel .btn--dark { background: #fff; color: var(--ink); }
+.feat__panel .btn--dark:hover { background: var(--sand); }
+.feat__panel .btn--outline { border-color: rgba(255,255,255,.55); color: #fff; }
+.feat__panel .btn--outline:hover { background: rgba(255,255,255,.14); border-color: #fff; }
+
+/* a equipe ganha faixa marinho: molduras e contatos invertem */
+.band--navyband .person__frame { border-color: rgba(255,255,255,.34); background: rgba(255,255,255,.06); }
+.band--navyband .person__frame span { color: rgba(255,255,255,.72); }
+.band--navyband .person__creci { color: rgba(255,255,255,.7); }
+.band--navyband .person__contact a { color: #fff; }
+.band--navyband .note { color: rgba(255,255,255,.7); }
+.band--navyband .link-quiet { color: #fff; border-bottom-color: rgba(255,255,255,.4); }
+.band--navyband .link-quiet:hover { border-bottom-color: #fff; }
+.band--navyband .btn--quiet { border-color: rgba(255,255,255,.45); color: #fff; }
+.band--navyband .btn--quiet:hover { background: rgba(255,255,255,.14); border-color: #fff; }
+.band--navyband .card__title { color: rgba(255,255,255,.75); }
+.band--navyband .card__price { color: #fff; }
+.band--navyband .card__chips li { background: rgba(255,255,255,.12); color: #fff; }
+
+/* rotulos de secao no azul do selo, nao em cinza */
+.eyebrow { color: var(--navy); }
+.eyebrow--light { color: rgba(255,255,255,.82); }
+.band--navyband .eyebrow, .darkband .eyebrow { color: rgba(255,255,255,.72); }
+
+/* titulo e chips dos cartoes puxam para o azul */
+.card__title { color: var(--accent); }
+.card__chips li { background: rgba(29,40,58,.07); color: var(--navy); }
+.imovel__chips li { background: rgba(29,40,58,.07); color: var(--navy); }
+.pills li { border-color: rgba(29,40,58,.22); color: var(--navy); }
+
+/* fio marinho no topo de cada faixa clara, para separar sem linha cinza */
+.band--sand { border-top: 2px solid transparent; border-image: var(--grad-navy) 1; }
+
 /* ---------------------------------------------------------------- 0-419 */
 @media (max-width: 419px) {
   .mark__word { width: 86px; }
