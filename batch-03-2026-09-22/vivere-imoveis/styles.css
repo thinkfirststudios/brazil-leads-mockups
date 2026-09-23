@@ -286,7 +286,7 @@ p.center > .btn--wide { max-width: 100%; margin-top: 8px; }
 .shead__sub { color: var(--muted); }
 
 .lede { display: grid; gap: 18px; }
-.lede > .eyebrow { margin: 0; }
+.lede > .eyebrow { margin: 0; align-self: start; }
 .statement {
   font-family: var(--serif); font-size: clamp(1.5rem, 2.9vw, 2.5rem);
   line-height: 1.22; max-width: 26ch; margin: 0 0 1.4em; color: var(--ink);
@@ -719,6 +719,64 @@ body { background: var(--grad-field); background-attachment: fixed; }
 
 /* fio marinho no topo de cada faixa clara, para separar sem linha cinza */
 .band--sand { border-top: 2px solid transparent; border-image: var(--grad-navy) 1; }
+
+/* ===================================================================
+   GRADIENTES
+   Mesma familia do selo, percurso mais largo para que se enxerguem.
+   Ponta clara #2E4266: branco 10,1:1, corpo 7,7:1, secundario 5,3:1.
+   =================================================================== */
+:root {
+  --grad-navy: linear-gradient(145deg, #2e4266 0%, #131c2a 100%);
+  --grad-navy-soft: linear-gradient(145deg, #38507a 0%, #1a2436 100%);
+  /* o campo atras da moldura deixa de ser cinza e passa a marinho */
+  --grad-field: linear-gradient(160deg, #2e4266 0%, #17212f 58%, #0e151f 100%);
+  --glow: radial-gradient(120% 90% at 12% 0%, rgba(255,255,255,.12), rgba(255,255,255,0) 62%);
+}
+
+/* as superficies marinho ganham uma luz suave no canto, para nao chapar */
+.ftr, .band--navyband, .darkband, .feat__panel, .tile--dark {
+  background-image: var(--glow), var(--grad-navy);
+}
+.hero { background-image: var(--glow), var(--grad-navy); }
+
+/* o botao escuro mostra o percurso do gradiente */
+.btn--dark, .btn--navy, .btn--wa, .wa-float { background-image: var(--grad-navy); }
+.btn--dark:hover, .btn--navy:hover, .btn--wa:hover, .wa-float:hover { background-image: var(--grad-navy-soft); }
+.feat__tag { background-image: var(--grad-navy); }
+
+/* numeros das estatisticas em texto gradiente */
+.stat__n {
+  background: linear-gradient(135deg, #1d283a 0%, #46566e 100%);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: var(--navy);
+}
+.band--navyband .stat__n, .darkband .stat__n {
+  background: linear-gradient(135deg, #ffffff 0%, #c6cedd 100%);
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+
+/* fio gradiente entre duas faixas claras, em vez de linha cinza */
+.band + .band {
+  border-top: 1px solid transparent;
+  border-image: linear-gradient(90deg, rgba(29,40,58,0), rgba(29,40,58,.28) 18%, rgba(29,40,58,.28) 82%, rgba(29,40,58,0)) 1;
+}
+.band + .band--navyband, .band--navyband + .band, .band + .band--sand, .band--sand + .band { border-top-color: transparent; border-image: none; }
+
+/* a fotografia dos cartoes recebe o veu marinho ao passar o cursor */
+.card__media::after, .bcard__media::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; border-radius: inherit;
+  background: linear-gradient(140deg, rgba(46,66,102,.45), rgba(19,28,42,0) 62%);
+  opacity: 0; transition: opacity .45s var(--ease);
+}
+.card__media:hover::after, .bcard__media:hover::after { opacity: 1; }
+
+/* a pilula de busca assenta sobre um leve degrade, nao branco puro */
+.search { background-image: linear-gradient(180deg, #ffffff 0%, #f6f7f9 100%); }
+
+/* faixa areia com transicao mais longa */
+.band--sand {
+  background-image: linear-gradient(180deg, #ffffff 0%, var(--sand) 18%, var(--sand) 82%, #ffffff 100%);
+}
 
 /* ---------------------------------------------------------------- 0-419 */
 @media (max-width: 419px) {
