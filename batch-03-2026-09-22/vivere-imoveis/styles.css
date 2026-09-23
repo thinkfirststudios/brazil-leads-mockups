@@ -90,7 +90,7 @@ p { margin: 0 0 1.1em; max-width: 68ch; }
 
 .wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
 .narrow { max-width: 820px; }
-.center { text-align: center; }
+.center { text-align: center; max-width: none; }
 
 .eyebrow {
   font-size: .68rem; font-weight: 500; letter-spacing: .16em;
@@ -139,6 +139,7 @@ p { margin: 0 0 1.1em; max-width: 68ch; }
 .btn--light:hover { background: var(--sand); }
 .btn--sm { min-height: 44px; padding: 9px 18px; font-size: .82rem; }
 .btn--wide { width: 100%; }
+p.center > .btn--wide { max-width: 100%; margin-top: 8px; }
 .wa-i { width: 1.05em; height: 1.05em; flex: none; }
 
 .link-quiet {
@@ -567,6 +568,107 @@ p { margin: 0 0 1.1em; max-width: 68ch; }
   opacity: 1; transform: none;
   transition: opacity .55s var(--ease), transform .55s var(--ease);
   transition-delay: var(--d, 0ms);
+}
+
+/* ===================================================================
+   AZUL-MARINHO E GRADIENTES
+   Duas paradas, mesma familia, tiradas do selo. Nenhuma cor nova entra.
+   =================================================================== */
+:root {
+  --navy-lift: #243248;
+  --grad-navy: linear-gradient(152deg, #243248 0%, #141d2a 100%);
+  --grad-navy-soft: linear-gradient(152deg, #2b3a52 0%, #1a2433 100%);
+  --grad-field: linear-gradient(180deg, #9aa4b0 0%, #798492 100%);
+  --grad-sand: linear-gradient(180deg, #ffffff 0%, var(--sand) 22%, var(--sand) 78%, #ffffff 100%);
+}
+
+body { background: var(--grad-field); background-attachment: fixed; }
+
+/* botoes e superficies solidas passam a gradiente */
+.btn--dark, .btn--navy, .btn--wa { background: var(--grad-navy); border-color: transparent; }
+.btn--dark:hover, .btn--navy:hover, .btn--wa:hover { background: var(--grad-navy-soft); }
+.wa-float { background: var(--grad-navy); }
+.wa-float:hover { background: var(--grad-navy-soft); }
+.tile--dark { background: var(--grad-navy); }
+.ftr { background: var(--grad-navy); }
+.darkband { background: var(--grad-navy); }
+.hero { background: var(--grad-navy); }
+.pgal__main { background: var(--grad-navy); }
+
+/* a faixa clara ganha transicao para o branco em vez de corte seco */
+.band--sand { background: var(--grad-sand); }
+
+/* uma faixa marinho inteira no meio da pagina: os lancamentos */
+.band--navyband {
+  background: var(--grad-navy); color: rgba(255,255,255,.88);
+  border-radius: var(--r-md); margin: 0 10px;
+}
+.band--navyband h2, .band--navyband h3, .band--navyband .dev__name { color: #fff; }
+.band--navyband .eyebrow { color: rgba(255,255,255,.72); }
+.band--navyband .dev__meta { color: rgba(255,255,255,.72); }
+.band--navyband .shead__sub, .band--navyband p { color: rgba(255,255,255,.86); }
+.band--navyband .confirm {
+  background: rgba(253,244,227,.14); border-color: rgba(232,212,168,.42); color: #f0d9a8;
+}
+.band--navyband .round {
+  background: transparent; border-color: rgba(255,255,255,.4); color: #fff;
+}
+.band--navyband .round:hover { background: rgba(255,255,255,.12); border-color: #fff; }
+
+/* filete marinho sob os rotulos de secao, para o azul aparecer no corpo claro */
+.shead .eyebrow, .lede > .eyebrow { position: relative; padding-bottom: 12px; }
+.shead .eyebrow::after, .lede > .eyebrow::after {
+  content: ""; position: absolute; left: 0; bottom: 0; width: 34px; height: 2px;
+  background: var(--grad-navy); border-radius: 2px;
+}
+.eyebrow--light::after { background: rgba(255,255,255,.55) !important; }
+
+/* numeros das estatisticas no azul do selo */
+.stat__n { color: var(--navy); }
+.band--navyband .stat__n, .darkband .stat__n { color: #fff; }
+
+/* ===================================================================
+   IMOVEL EM DESTAQUE na landing page
+   =================================================================== */
+.feat { display: grid; gap: 16px; }
+.feat__media {
+  position: relative; border-radius: var(--r-md); overflow: hidden;
+  background: var(--sand-deep); aspect-ratio: 16 / 11;
+}
+.feat__img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s var(--ease); }
+.feat:hover .feat__img { transform: scale(1.02); }
+.feat__tag {
+  position: absolute; left: 18px; top: 18px; z-index: 2;
+  background: var(--grad-navy); color: #fff; border-radius: var(--pill);
+  font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; padding: 8px 16px;
+}
+.feat__panel {
+  background: #fff; border: 1px solid var(--line-soft);
+  border-radius: var(--r-md); padding: 28px 24px;
+}
+.feat__price { font-family: var(--serif); font-size: clamp(1.9rem, 3vw, 2.6rem); color: var(--navy); margin: 0 0 .5em; }
+.feat__chips { list-style: none; display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 1em; padding: 0; }
+.feat__chips li {
+  font-size: .76rem; background: var(--sand); border-radius: var(--pill);
+  padding: 6px 13px; display: inline-flex; gap: 5px; align-items: center;
+}
+.feat__chips .confirm { border: 0; background: none; padding: 0; }
+.feat__ref { font-size: .82rem; color: var(--muted); margin: 0 0 1.2em; }
+.feat__acts { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 1em; }
+.feat__creci { font-size: .76rem; color: var(--muted); margin: 0; }
+.feat__aside { margin: 0; border-radius: var(--r-md); overflow: hidden; background: var(--sand-deep); }
+.feat__asideimg { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4 / 3; }
+
+@media (min-width: 900px) {
+  .feat {
+    grid-template-columns: 1.55fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 18px;
+  }
+  .feat__media { grid-column: 1; grid-row: 1 / span 2; aspect-ratio: auto; height: 100%; min-height: 520px; }
+  .feat__panel { grid-column: 2; grid-row: 1; padding: 34px 30px; }
+  .feat__aside { grid-column: 2; grid-row: 2; }
+  .feat__asideimg { aspect-ratio: 16 / 9; }
 }
 
 /* ---------------------------------------------------------------- 0-419 */
