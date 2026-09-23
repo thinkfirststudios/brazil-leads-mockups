@@ -177,6 +177,33 @@
     }
   }
 
+
+  /* ---------------------------------------------------------- mosaico */
+  var groups = $$('.mosaic, .devs');
+  if (groups.length) {
+    if (quiet() || !('IntersectionObserver' in window)) {
+      groups.forEach(function (g) { g.classList.add('is-in'); });
+    } else {
+      var mo = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); mo.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      groups.forEach(function (g) { mo.observe(g); });
+    }
+  }
+
+  /* ------------------------------------------- flutuante so apos a dobra */
+  var float_ = $('.wa-float');
+  if (float_ && !quiet()) {
+    var syncFloat = function () {
+      if (window.scrollY > window.innerHeight * 0.55) { float_.removeAttribute('data-hidden'); }
+      else { float_.setAttribute('data-hidden', ''); }
+    };
+    syncFloat();
+    window.addEventListener('scroll', syncFloat, { passive: true });
+  }
+
   /* ---------------------------------------------------------- cookies */
   var bar = $('[data-cookie]');
   if (bar) {
