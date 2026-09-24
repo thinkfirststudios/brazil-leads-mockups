@@ -339,7 +339,14 @@
   /* ---------------------------------------------------------------- eventos */
   document.addEventListener('click', function (e) {
     var a = e.target.closest('[data-add]');
-    if (a) { add(a.getAttribute('data-add'), 1); return; }
+    if (a) {
+      add(a.getAttribute('data-add'), 1);
+      if (!quiet()) {
+        a.classList.add('is-done');
+        window.setTimeout(function () { a.classList.remove('is-done'); }, 700);
+      }
+      return;
+    }
 
     var line = e.target.closest('[data-line]');
     if (line) {
@@ -403,6 +410,35 @@
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
+  /* grupos revelam os filhos em cascata: um filho fora da vista nunca
+     intersecta sozinho e ficaria invisivel */
+  var groups = $$('.cats, .steps, .gal, .whys');
+  if (groups.length) {
+    if (quiet() || !('IntersectionObserver' in window)) {
+      groups.forEach(function (g) { g.classList.add('is-in'); });
+    } else {
+      var go = new IntersectionObserver(function (es) {
+        es.forEach(function (en) {
+          if (en.isIntersecting) { en.target.classList.add('is-in'); go.unobserve(en.target); }
+        });
+      }, { threshold: 0.12 });
+      groups.forEach(function (g) { go.observe(g); });
+    }
+  }
+
+  /* barra fina de progresso de leitura */
+  if (!quiet()) {
+    var bar2 = document.createElement('div');
+    bar2.className = 'progress';
+    document.body.appendChild(bar2);
+    var onProg = function () {
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar2.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + '%';
+    };
+    onProg();
+    window.addEventListener('scroll', onProg, { passive: true });
+  }
+
   var reveals = $$('[data-reveal]');
   if (!reveals.length) { /* nada */ }
   else if (quiet() || !('IntersectionObserver' in window)) {
@@ -426,10 +462,16 @@
     var CK = 'gm-cookie';
     var stored = null;
     try { stored = window.localStorage.getItem(CK); } catch (e) { stored = null; }
-    if (!stored) { window.setTimeout(function () { bar.hidden = false; }, 800); }
+    if (!stored) {
+      window.setTimeout(function () {
+        bar.hidden = false;
+        document.body.classList.add('has-consent');
+      }, 800);
+    }
     var close = function (v) {
       try { window.localStorage.setItem(CK, v); } catch (e) { /* modo privado */ }
       bar.hidden = true;
+      document.body.classList.remove('has-consent');
     };
     var yes = $('[data-consent-yes]', bar), no = $('[data-consent-no]', bar);
     if (yes) { yes.addEventListener('click', function () { close('accept'); }); }

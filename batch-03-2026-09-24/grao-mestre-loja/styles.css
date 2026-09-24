@@ -514,6 +514,123 @@ code { font-family: var(--mono); font-size: .88em; background: var(--oat); paddi
   .iconbtn, .burger { width: 40px; height: 40px; }
 }
 
+/* o cabecalho fica grudado no topo: alvos de ancora precisam de folga,
+   senao "Como funciona" chega escondido atras dele */
+[id] { scroll-margin-top: 88px; }
+
+/* a barra fina de progresso nao pode capturar clique */
+.progress { pointer-events: none; }
+
+/* enquanto o aviso de cookies esta na tela, a pagina ganha folga no pe,
+   senao ele cobre o botao de finalizar compra */
+body.has-consent { padding-bottom: 168px; }
+@media (min-width: 560px) {
+  body.has-consent { padding-bottom: 132px; }
+  /* o resumo do pedido fica na coluna direita: o aviso sai de cima dele */
+  .consent { left: 16px; right: auto; max-width: 420px; }
+}
+
+/* ===================================================================
+   GRADIENTES, SEGUNDA CAMADA
+   =================================================================== */
+:root {
+  --g-sale: linear-gradient(135deg, #b8492f 0%, #7e2c1a 100%);
+  --g-out: linear-gradient(135deg, #6a4e2e 0%, #3c2b18 100%);
+  --g-price: linear-gradient(135deg, #2c4a32 0%, #47733a 100%);
+  --g-rule: linear-gradient(90deg, rgba(122,92,58,0), rgba(122,92,58,.32) 18%, rgba(122,92,58,.32) 82%, rgba(122,92,58,0));
+  --g-card: linear-gradient(180deg, #ffffff 0%, #fdfbf6 100%);
+  --g-tilewash: linear-gradient(160deg, rgba(44,74,50,.42), rgba(44,74,50,0) 62%);
+}
+
+/* selos em gradiente */
+.badge--sale { background-image: var(--g-sale); }
+.badge--out { background-image: var(--g-out); }
+
+/* preco em texto gradiente */
+.card__price .price:not(.price--old), .pdp__price .price:not(.price--old) {
+  background: var(--g-price);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: var(--forest);
+}
+
+/* cartoes sobre degrade suave, e um veu verde na foto ao passar o cursor */
+.card, .why, .co, .cart-table { background-image: var(--g-card); }
+.cat__media { position: relative; }
+.cat__media::after {
+  content: ""; position: absolute; inset: 0; background: var(--g-tilewash);
+  opacity: 0; transition: opacity .4s var(--ease); pointer-events: none;
+}
+.cat:hover .cat__media::after { opacity: 1; }
+
+/* fio gradiente entre faixas claras vizinhas */
+.band + .band:not(.band--forest):not(.band--oat) {
+  border-top: 1px solid transparent; border-image: var(--g-rule) 1;
+}
+
+/* rodape da gaveta e resumo do carrinho em degrade de aveia */
+.drawer__foot { background-image: linear-gradient(180deg, var(--oat) 0%, var(--oat-dk) 100%); }
+
+/* filete da marca no topo da pagina */
+.hdr::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px;
+  background-image: linear-gradient(90deg, #2c4a32 0%, #d6a93f 50%, #2c4a32 100%);
+}
+.hdr { position: sticky; }
+
+/* barra de progresso de leitura, fina, no topo */
+.progress {
+  position: fixed; left: 0; top: 0; height: 3px; z-index: 250; width: 0;
+  background-image: linear-gradient(90deg, #2c4a32, #587a3e, #d6a93f);
+  transition: width .1s linear;
+}
+
+/* ===================================================================
+   MOVIMENTO, SEGUNDA CAMADA
+   =================================================================== */
+@keyframes gm-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes gm-tick { 0% { transform: scale(1); } 45% { transform: scale(1.12); } 100% { transform: scale(1); } }
+@keyframes gm-unmask { from { clip-path: inset(0 0 12% 0); transform: scale(1.05); } to { clip-path: inset(0 0 0 0); transform: scale(1); } }
+
+/* as fotografias entram por mascara, nao so por opacidade */
+[data-reveal].is-in .cat__img,
+[data-reveal].is-in .gal__img,
+[data-reveal].is-in .hero__img { animation: gm-unmask 1s var(--ease) both; }
+
+/* categorias e passos escalonam os filhos */
+.cats.is-in .cat, .steps.is-in .step, .gal.is-in .gal__item, .whys.is-in .why {
+  opacity: 1; transform: none;
+  transition: opacity .6s var(--ease), transform .6s var(--ease);
+}
+.cats .cat, .steps .step, .gal .gal__item, .whys .why { opacity: 0; transform: translateY(16px); }
+.cats.is-in .cat:nth-child(1), .steps.is-in .step:nth-child(1), .gal.is-in .gal__item:nth-child(1), .whys.is-in .why:nth-child(1) { transition-delay: 0ms; }
+.cats.is-in .cat:nth-child(2), .steps.is-in .step:nth-child(2), .gal.is-in .gal__item:nth-child(2), .whys.is-in .why:nth-child(2) { transition-delay: 80ms; }
+.cats.is-in .cat:nth-child(3), .steps.is-in .step:nth-child(3), .gal.is-in .gal__item:nth-child(3), .whys.is-in .why:nth-child(3) { transition-delay: 160ms; }
+.cats.is-in .cat:nth-child(4), .gal.is-in .gal__item:nth-child(4) { transition-delay: 240ms; }
+.cats.is-in .cat:nth-child(5), .gal.is-in .gal__item:nth-child(5) { transition-delay: 320ms; }
+.cats.is-in .cat:nth-child(n+6), .gal.is-in .gal__item:nth-child(n+6) { transition-delay: 400ms; }
+
+/* botao de adicionar confirma sozinho */
+.card__add.is-done { background-image: linear-gradient(135deg, #587a3e, #3f5a2b); }
+.card__add.is-done svg { animation: gm-tick .45s var(--ease); }
+
+/* linhas do carrinho entram */
+.ci { animation: gm-fade .35s var(--ease) both; }
+
+/* a ficha do produto revela a foto */
+.pdp__media img { animation: gm-unmask 1s var(--ease) both; }
+
+/* chips e categorias respondem ao toque */
+.chip, .catbar button { transition: background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease), transform .18s var(--ease); }
+
+@media (prefers-reduced-motion: reduce) {
+  .progress { display: none; }
+  [data-reveal].is-in .cat__img, [data-reveal].is-in .gal__img,
+  [data-reveal].is-in .hero__img, .pdp__media img, .ci,
+  .card__add.is-done svg { animation: none !important; }
+  .cats .cat, .steps .step, .gal .gal__item, .whys .why { opacity: 1; transform: none; }
+  .cat:hover .cat__media::after { opacity: 0; }
+}
+
 /* ---------------------------------------------------------------- 560+ */
 @media (min-width: 560px) {
   :root { --gut: 24px; }
