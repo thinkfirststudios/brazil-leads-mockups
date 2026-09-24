@@ -435,8 +435,6 @@
   /* ----------------------------------------------------------- checkout */
   $$('[data-checkout]').forEach(function (b) {
     b.addEventListener('click', function () {
-      var note = $('[data-checkout-note]');
-      if (note) { note.hidden = false; }
       b.textContent = document.documentElement.lang === 'en'
         ? 'Shopify checkout — not part of this mockup'
         : 'Checkout do Shopify — fora desta maquete';
