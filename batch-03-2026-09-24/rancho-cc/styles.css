@@ -161,12 +161,21 @@ p { margin: 0 0 1em; max-width: 68ch; }
 .cart-count[hidden] { display: none; }
 
 /* barra de categorias */
-.catbar { border-top: 1px solid var(--line-2); background: var(--oat); }
+.catbar { border-top: 1px solid var(--line-2); background: var(--oat); position: relative; }
 .catbar__in {
   display: flex; gap: 6px; overflow-x: auto; padding: 8px var(--gut);
   scrollbar-width: none; max-width: var(--wrap); margin: 0 auto;
 }
 .catbar__in::-webkit-scrollbar { display: none; }
+/* o Chrome descarta o padding final em container flex com rolagem: este
+   espacador devolve a folga, senao o ultimo chip encosta na borda */
+.catbar__in::after { content: ""; flex: none; width: 2px; }
+/* sinaliza que ha mais a rolar, em vez de parecer cortado */
+.catbar::after {
+  content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: 46px;
+  background: linear-gradient(90deg, rgba(242,235,220,0), var(--oat) 78%);
+  pointer-events: none;
+}
 .catbar button {
   flex: none; border: 1px solid transparent; background: none; cursor: pointer;
   font-family: var(--sans); font-size: .84rem; font-weight: 600; color: var(--kraft-dk);
@@ -452,6 +461,11 @@ p { margin: 0 0 1em; max-width: 68ch; }
 
 /* ---------------------------------------------------------------- 860+ */
 @media (min-width: 860px) {
+  /* 10 categorias somam ~1300px e o wrap tem 1180: rolando, "Congelados"
+     ficava invisivel em qualquer largura de desktop. Quebra em duas linhas. */
+  .catbar__in { flex-wrap: wrap; overflow: visible; justify-content: center; row-gap: 4px; }
+  .catbar__in::after { display: none; }
+  .catbar::after { display: none; }
   .band { padding: 76px 0; }
   .hero__in { padding: 86px 0 70px; }
   .search { display: block; }
