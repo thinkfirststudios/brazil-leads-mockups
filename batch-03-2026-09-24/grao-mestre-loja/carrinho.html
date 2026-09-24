@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carrinho — Grão Mestre</title>
+<meta name="description" content="Carrinho e prévia de checkout da loja Grão Mestre.">
+<meta name="robots" content="noindex, nofollow">
+<!-- MAQUETE ESPECULATIVA da ThinkFirst Studios para Grão Mestre.
+     LEAD, nao cliente. Nada publicado, nenhum dominio aponta para este arquivo.
+     Catalogo ilustrativo: nenhum produto, preco ou peso veio da Grao Mestre.
+     Tudo que nao pudemos verificar esta marcado [A CONFIRMAR] na pagina.
+     Arquitetura: front-end proprio + Shopify por tras (headless). Os dados de
+     produto vivem num unico array, no formato da Storefront API. -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Carrinho — Grão Mestre">
+<meta property="og:description" content="Carrinho e prévia de checkout da loja Grão Mestre.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=72">
+<meta name="theme-color" content="#2C4A32">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+<header class="hdr" data-header>
+  <div class="wrap hdr__in">
+    <a class="brand" href="index.html" aria-label="Grão Mestre — início">
+      <!-- PLACEHOLDER-logo: marca tipográfica provisória. [A CONFIRMAR logotipo e cores] -->
+      <span class="brand__mark" aria-hidden="true">GM</span>
+      <span class="brand__txt">
+        <span class="brand__name">Grão Mestre</span>
+        <span class="brand__sub">Empório &amp; Buffet Natural</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Navegação principal"><ul><li><a href="index.html">Início</a></li><li><a href="loja.html">Loja</a></li><li><a href="buffet.html">Buffet</a></li><li><a href="index.html#como-funciona">Como funciona</a></li><li><a href="index.html#contato">Contato</a></li></ul></nav>
+    <div class="hdr__acts">
+      <a class="btn btn--wa btn--sm hdr__wa" href="index.html#contato">WhatsApp</a>
+      <a class="iconbtn" href="carrinho.html" aria-label="Ver carrinho">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6h15l-1.6 9.5h-12z"/><circle cx="9.5" cy="20" r="1.3"/><circle cx="17.5" cy="20" r="1.3"/><path d="M6 6 5 2.8H2"/></svg>
+        <span class="cart-count" data-cart-count hidden>0</span>
+      </a>
+      <button class="burger" type="button" data-burger aria-expanded="false" aria-controls="sheet">
+        <span class="burger__bars" aria-hidden="true"></span><span class="sr">Menu</span>
+      </button>
+    </div>
+  </div>
+  <div class="sheet" id="sheet" data-sheet hidden>
+    <nav aria-label="Navegação principal"><ul><li><a href="index.html">Início</a></li><li><a href="loja.html">Loja</a></li><li><a href="buffet.html">Buffet</a></li><li><a href="index.html#como-funciona">Como funciona</a></li><li><a href="index.html#contato">Contato</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+  <section class="phead phead--plain">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Trilha"><a href="index.html">Início</a> / <a href="loja.html">Loja</a> / <span aria-current="page">Carrinho</span></nav>
+      <h1>Seu carrinho</h1>
+    </div>
+  </section>
+
+  <section class="band band--tight">
+    <div class="wrap checkout">
+      <div>
+        <div class="cart-table" data-cart-page></div>
+        <p class="center" style="margin-top:20px"><a class="link-quiet" href="loja.html">Continuar comprando</a></p>
+      </div>
+
+      <aside class="co">
+        <h2 class="co__h">Resumo</h2>
+        <div class="co__rows">
+          <div class="co__row"><span>Subtotal</span><span class="price" data-subtotal>R$ 0,00</span></div>
+          <div class="co__row"><span>Frete</span><span><span class="cfm">[A CONFIRMAR — taxa por área]</span></span></div>
+          <div class="co__row co__row--total"><span>Total</span><span class="price" data-subtotal>R$ 0,00</span></div>
+        </div>
+
+        <fieldset class="co__box">
+          <legend>Entrega</legend>
+          <label class="radio"><input type="radio" name="entrega" value="local" checked>
+            <span><strong>Entrega local</strong>Na região da loja, inclusive congelados. <span class="cfm">[A CONFIRMAR — área e taxa]</span></span></label>
+          <label class="radio"><input type="radio" name="entrega" value="retirada">
+            <span><strong>Retirada na loja</strong>Sem custo, no balcão. <span class="cfm">[A CONFIRMAR — horário de retirada]</span></span></label>
+        </fieldset>
+
+        <fieldset class="co__box">
+          <legend>Pagamento</legend>
+          <label class="radio"><input type="radio" name="pgto" value="pix" checked>
+            <span><strong>Pix</strong>Aprovação na hora.</span></label>
+          <label class="radio"><input type="radio" name="pgto" value="cartao">
+            <span><strong>Cartão de crédito</strong>Parcelamento <span class="cfm">[A CONFIRMAR]</span></span></label>
+        </fieldset>
+
+        <button class="btn btn--forest btn--full btn--lg" type="button" data-checkout>Finalizar compra</button>
+        <p class="note" data-checkout-note>Esta é uma prévia de checkout. Em produção o pagamento acontece no checkout seguro da plataforma — nada aqui cobra, guarda dados de cartão ou cria pedido.</p>
+      </aside>
+    </div>
+  </section>
+</main>
+<footer class="ftr">
+  <div class="wrap ftr__grid">
+    <div class="ftr__brand">
+      <span class="brand__mark" aria-hidden="true">GM</span>
+      <p class="ftr__name">Grão Mestre</p>
+      <p class="ftr__tag">Empório de produtos naturais e buffet no almoço.</p>
+    </div>
+    <div>
+      <h2 class="ftr__h">Loja</h2>
+      <ul>
+        <li><a href="loja.html">Todos os produtos</a></li>
+        <li><a href="loja.html#categorias">Categorias</a></li>
+        <li><a href="carrinho.html">Carrinho</a></li>
+        <li><a href="index.html#como-funciona">Entrega e retirada</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="ftr__h">Buffet</h2>
+      <ul>
+        <li><a href="buffet.html">O buffet</a></li>
+        <li><a href="buffet.html#horarios">Horários</a></li>
+        <li><a href="index.html#contato">Onde estamos</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="ftr__h">Contato</h2>
+      <ul>
+        <li>Endereço: <span class="cfm">[A CONFIRMAR]</span></li>
+        <li>WhatsApp: <span class="cfm">[A CONFIRMAR — número de WhatsApp da Grão Mestre]</span></li>
+        <li>Horário da loja: <span class="cfm">[A CONFIRMAR]</span></li>
+        <li><a href="https://www.instagram.com/emporiograomestresc/" rel="noopener">@emporiograomestresc</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap ftr__bot">
+    <p><a href="privacidade.html">Política de Privacidade</a> · <a href="termos.html">Termos de Uso</a> · CNPJ <span class="cfm">[A CONFIRMAR]</span></p>
+    <p>© <span data-year>2026</span> Grão Mestre. Instagram é o único canal confirmado hoje.</p>
+    <p class="ftr__demo">Maquete especulativa criada pela ThinkFirst Studios para apresentação. Não é o site publicado da Grão Mestre, e o catálogo exibido é ilustrativo.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="index.html#contato" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>
+</a>
+
+<div class="consent" data-consent hidden role="region" aria-label="Aviso de cookies">
+  <p>Usamos apenas o essencial para a loja funcionar — o seu carrinho fica guardado no seu próprio navegador. Sem rastreamento e sem publicidade.</p>
+  <div class="consent__btns">
+    <button class="btn btn--ghost btn--sm" type="button" data-consent-no>Recusar</button>
+    <button class="btn btn--forest btn--sm" type="button" data-consent-yes>Aceitar</button>
+  </div>
+</div>
+
+<aside class="drawer" data-drawer role="dialog" aria-modal="true" aria-label="Carrinho" aria-hidden="true">
+  <div class="drawer__top">
+    <h2>Seu carrinho</h2>
+    <button class="iconbtn" type="button" data-cart-close aria-label="Fechar carrinho">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+  <div class="drawer__list" data-cart-list></div>
+  <div class="drawer__foot">
+    <div class="drawer__row"><span>Subtotal</span><span class="price" data-subtotal>R$ 0,00</span></div>
+    <p class="drawer__note">Frete e retirada calculados na próxima etapa. <span class="cfm">[A CONFIRMAR — taxa e área de entrega]</span></p>
+    <a class="btn btn--forest btn--full" href="carrinho.html">Ver carrinho e finalizar</a>
+  </div>
+</aside>
+<div class="scrim" data-scrim></div>
+
+<script src="app.js?v=1" defer></script>
+</body>
+</html>
