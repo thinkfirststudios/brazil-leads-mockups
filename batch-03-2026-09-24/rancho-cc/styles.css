@@ -274,7 +274,7 @@ p { margin: 0 0 1em; max-width: 68ch; }
 }
 .badge--local { background: var(--g-sprout); }
 .badge--nac { background: var(--g-kraft); }
-.badge--frozen { background: linear-gradient(135deg, #4a7f96, #325b6d); }
+.badge--frozen { background: linear-gradient(135deg, #3f6e84, #27495a); }
 .card__body { padding: 12px 13px 14px; display: flex; flex-direction: column; flex: 1; gap: 4px; }
 .card__cat { font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; color: var(--kraft); font-weight: 600; }
 .card__name { font-family: var(--serif); font-size: .98rem; font-weight: 600; margin: 0; line-height: 1.25; }
@@ -459,13 +459,104 @@ p { margin: 0 0 1em; max-width: 68ch; }
   .consent { left: auto; right: 16px; max-width: 420px; }
 }
 
-/* ---------------------------------------------------------------- 860+ */
-@media (min-width: 860px) {
-  /* 10 categorias somam ~1300px e o wrap tem 1180: rolando, "Congelados"
-     ficava invisivel em qualquer largura de desktop. Quebra em duas linhas. */
+/* ===================================================================
+   GRADIENTES
+   Familia verde-terra da marca. O verde da Rancho e escuro (#2C4A32);
+   abrimos ate #3E6B48 para que o percurso apareca. Branco sobre a ponta
+   clara fica em 7,2:1.
+   =================================================================== */
+:root {
+  --forest-lift: #3e6b48;
+  --g-forest: linear-gradient(150deg, #3e6b48 0%, #16291b 100%);
+  --g-forest-soft: linear-gradient(150deg, #4c7e57 0%, #1d3524 100%);
+  --g-wheat: linear-gradient(135deg, #e0b954 0%, #a87b2a 100%);
+  --g-kraft: linear-gradient(135deg, #7a5c3a 0%, #513b22 100%);
+  /* ponta clara escurecida: com #8FB268 o branco do selo ficava em 2,4:1 */
+  --g-sprout: linear-gradient(135deg, #587a3e 0%, #3f5a2b 100%);
+  --glow: radial-gradient(120% 90% at 14% 0%, rgba(255,255,255,.14), rgba(255,255,255,0) 62%);
+  --g-page: linear-gradient(180deg, #fbf7ef 0%, #f6f1e5 100%);
+}
+
+body { background-image: var(--g-page); background-attachment: fixed; }
+
+/* superficies escuras ganham luz de canto em vez de chapado */
+.ftr, .band--forest { background-image: var(--glow), var(--g-forest); }
+.btn--forest, .brand__mark, .card__add { background-image: var(--g-forest); }
+.btn--forest:hover, .card__add:hover { background-image: var(--g-forest-soft); }
+
+/* a faixa aveia transita em vez de cortar */
+.band--oat {
+  background-image: linear-gradient(180deg, #fbf7ef 0%, var(--oat) 16%, var(--oat) 84%, #fbf7ef 100%);
+}
+
+/* fio gradiente entre duas faixas claras */
+.band + .band:not(.band--forest):not(.band--oat) {
+  border-top: 1px solid transparent;
+  border-image: linear-gradient(90deg, rgba(138,106,69,0), rgba(138,106,69,.3) 20%, rgba(138,106,69,.3) 80%, rgba(138,106,69,0)) 1;
+}
+
+/* preco em texto gradiente */
+.card__price, .modal__price {
+  background: linear-gradient(135deg, #2c4a32 0%, #47733a 100%);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: var(--forest);
+}
+
+/* a pilula de busca e o verificador de CEP assentam em degrade */
+.search input { background-image: linear-gradient(180deg, #fff 0%, #fbf8f2 100%); }
+.cep { background-image: linear-gradient(180deg, #fff 0%, #f7f3ea 100%); }
+
+/* ===================================================================
+   MOVIMENTO
+   =================================================================== */
+@keyframes r-rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+@keyframes r-card { from { opacity: 0; transform: translateY(14px) scale(.985); } to { opacity: 1; transform: none; } }
+@keyframes r-pop { 0% { transform: scale(1); } 40% { transform: scale(1.35); } 100% { transform: scale(1); } }
+@keyframes r-slide { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+@keyframes r-drift { from { transform: scale(1.02); } to { transform: scale(1.1) translate3d(-1%, -1%, 0); } }
+
+/* entrada do heroi, em sequencia */
+.hero__in .eyebrow { animation: r-rise .8s var(--ease) both .12s; }
+.hero__in h1 { animation: r-rise .9s var(--ease) both .24s; }
+.hero__lede { animation: r-rise .9s var(--ease) both .38s; }
+.cep { animation: r-rise .9s var(--ease) both .52s; }
+.hero__media img { animation: r-drift 30s ease-in-out infinite alternate; }
+
+/* os cartoes entram escalonados a cada filtragem */
+.card { animation: r-card .5s var(--ease) both; animation-delay: calc(var(--i, 0) * 45ms); }
+
+/* o contador do carrinho pulsa ao mudar */
+.cart-count.is-bump { animation: r-pop .45s var(--ease); }
+
+/* resultado do CEP desliza */
+.cep__out { animation: r-slide .35s var(--ease); }
+
+/* linhas do carrinho entram */
+.ci { animation: r-slide .3s var(--ease) both; }
+
+/* elevacoes discretas */
+.cat, .card { transition: transform .35s var(--ease), box-shadow .35s var(--ease), border-color .3s var(--ease); }
+.chip, .catbar button { transition: background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease), transform .2s var(--ease); }
+.chip:active, .catbar button:active { transform: scale(.96); }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__in .eyebrow, .hero__in h1, .hero__lede, .cep, .hero__media img,
+  .card, .cart-count.is-bump, .cep__out, .ci { animation: none !important; }
+  .cat:hover, .card:hover, .btn:hover { transform: none; }
+}
+
+/* ------------------------------------------- barra de categorias, 640+ */
+/* 10 categorias somam ~1300px. Rolando, "Congelados" ficava fora da vista
+   em qualquer largura de desktop e tambem no tablet. Acima de 640 a barra
+   quebra em linhas e nada e cortado; abaixo disso continua trilho. */
+@media (min-width: 640px) {
   .catbar__in { flex-wrap: wrap; overflow: visible; justify-content: center; row-gap: 4px; }
   .catbar__in::after { display: none; }
   .catbar::after { display: none; }
+}
+
+/* ---------------------------------------------------------------- 860+ */
+@media (min-width: 860px) {
   .band { padding: 76px 0; }
   .hero__in { padding: 86px 0 70px; }
   .search { display: block; }

@@ -174,14 +174,14 @@
     return true;
   };
 
-  var cardHTML = function (p) {
+  var cardHTML = function (p, i) {
     var badges = p.entrega === 'local'
       ? '<span class="badge badge--local">Entrega local</span>'
       : '<span class="badge badge--nac">Envio para todo o Brasil</span>';
     if (p.tags.indexOf('congelado') > -1) {
       badges += '<span class="badge badge--frozen">Congelado</span>';
     }
-    return '<article class="card">' +
+    return '<article class="card" style="--i:' + (i || 0) + '">' +
       '<div class="card__media">' +
         '<img src="' + imgUrl(p) + '" alt="Espaço reservado para a fotografia de ' + p.title + '" loading="lazy" decoding="async" width="500" height="500">' +
         '<div class="card__badges">' + badges + '</div>' +
@@ -213,7 +213,7 @@
     if (!grid) { return; }
     var list = PRODUCTS.filter(matches);
     grid.innerHTML = list.length
-      ? list.map(cardHTML).join('')
+      ? list.map(function (p, i) { return cardHTML(p, i); }).join('')
       : '<p class="empty">Nenhum produto encontrado com esses filtros. <button class="btn btn--ghost btn--sm" data-clear>Limpar filtros</button></p>';
     if (countEl) {
       countEl.textContent = list.length + (list.length === 1 ? ' produto' : ' produtos');
@@ -244,6 +244,15 @@
     $$('[data-cat]').forEach(function (b) {
       b.setAttribute('aria-pressed', b.getAttribute('data-cat') === id ? 'true' : 'false');
     });
+    /* no trilho estreito o chip escolhido pode estar fora da vista */
+    var chip = $('[data-catbar] [data-cat="' + id + '"]');
+    var rail = $('[data-catbar]');
+    if (chip && rail && rail.scrollWidth > rail.clientWidth + 1) {
+      var cr = chip.getBoundingClientRect(), rr = rail.getBoundingClientRect();
+      if (cr.left < rr.left || cr.right > rr.right) {
+        rail.scrollTo({ left: chip.offsetLeft - 16, behavior: quiet() ? 'auto' : 'smooth' });
+      }
+    }
     render();
   }
 
@@ -311,8 +320,14 @@
   function drawCart() {
     var units = state.cart.reduce(function (n, l) { return n + l.qty; }, 0);
     if (countBadge) {
+      var before = countBadge.textContent;
       countBadge.textContent = String(units);
       countBadge.hidden = units === 0;
+      if (before !== String(units) && units > 0 && !quiet()) {
+        countBadge.classList.remove('is-bump');
+        void countBadge.offsetWidth;   /* reinicia a animacao */
+        countBadge.classList.add('is-bump');
+      }
     }
     if (!listEl) { return; }
     if (!state.cart.length) {
