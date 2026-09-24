@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rancho | Compras Coletivas — mercado de produtos naturais em Florianópolis</title>
+<meta name="description" content="Produtos sustentáveis direto do produtor, a preços reduzidos. Granel, mercearia, hortifrúti, congelados e limpeza, com entrega local em Florianópolis e envio para todo o Brasil.">
+<meta name="robots" content="noindex, nofollow">
+<!-- MAQUETE ESPECULATIVA da ThinkFirst Studios para Rancho | Compras Coletivas.
+     LEAD, nao cliente. Nada publicado, nenhum dominio aponta para este arquivo.
+     O catalogo e ILUSTRATIVO: nenhum produto ou preco foi copiado do rancho.cc.
+     Fatos da empresa que nao pudemos verificar estao marcados [CONFIRM].
+     Layout herdado da maquete do Grao Mestre (batch-01-2026-09-10), que o
+     gerente aprovou; o que muda e a passagem de folheto para loja. -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Rancho | Compras Coletivas">
+<meta property="og:description" content="Produtos sustentáveis direto do produtor, a preços reduzidos.">
+<meta name="theme-color" content="#2c4a32">
+<link rel="alternate" hreflang="pt-BR" href="./index.html">
+<link rel="alternate" hreflang="en" href="./en/index.html">
+<link rel="alternate" hreflang="x-default" href="./index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+
+<header class="hdr">
+  <div class="wrap hdr__top">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">R</span>
+      <span class="brand__txt">
+        <span class="brand__name">Rancho</span>
+        <span class="brand__sub">Compras Coletivas</span>
+      </span>
+    </a>
+
+    <form class="search" role="search" onsubmit="return false">
+      <label class="sr" for="q">Buscar produtos</label>
+      <svg class="search__i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Buscar arroz, castanha, congelados…" data-search autocomplete="off">
+    </form>
+
+    <div class="hdr__acts">
+      <a class="iconbtn" href="#contato" aria-label="Fale conosco">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      </a>
+      <button class="iconbtn" type="button" data-cart-open aria-label="Abrir carrinho">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M6 6 5 3H2"/></svg>
+        <span class="cart-count" data-cart-count hidden>0</span>
+      </button>
+    </div>
+  </div>
+  <nav class="catbar" aria-label="Categorias">
+    <div class="catbar__in" data-catbar></div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ------------------------------------------------------------- hero -->
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="hero__media">
+      <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=2000&q=70"
+           alt="Bancada de feira com verduras e legumes frescos — imagem ilustrativa de banco de imagens"
+           width="2000" height="1200" fetchpriority="high" decoding="async">
+    </div>
+    <span class="hero__scrim" aria-hidden="true"></span>
+    <div class="wrap hero__in">
+      <p class="eyebrow">Florianópolis · direto do produtor</p>
+      <h1 id="hero-h">Produtos sustentáveis, do produtor à sua casa</h1>
+      <p class="hero__lede">Granel, mercearia, hortifrúti, congelados e limpeza — reunidos em compra coletiva para chegar a um preço mais justo dos dois lados do balcão.</p>
+
+      <form class="cep" data-cep>
+        <label class="cep__lab" for="cep">Onde você recebe? Digite seu CEP</label>
+        <div class="cep__row">
+          <input id="cep" type="text" inputmode="numeric" placeholder="88000-000" maxlength="9" data-cep-input>
+          <button class="btn btn--wheat" type="submit">Verificar entrega</button>
+        </div>
+        <p class="cep__out" data-cep-out hidden></p>
+        <p class="cep__note">Nesta maquete a verificação é ilustrativa e decide pelo prefixo do CEP. Em produção ela consulta a lista real de bairros atendidos. <span class="cfm">[CONFIRM bairros e faixas de CEP atendidos hoje]</span></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- --------------------------------------------------------- categorias -->
+  <section class="band" aria-labelledby="cats-h">
+    <div class="wrap">
+      <div class="shead" data-reveal>
+        <p class="eyebrow">Compre por categoria</p>
+        <h2 id="cats-h">O que tem no rancho desta vez</h2>
+        <p>As oito categorias abaixo são as que a Rancho já publica hoje. <strong>Congelados</strong> é a nona, proposta nesta maquete para os itens que só saem na entrega local. <span class="cfm">[CONFIRM se há congelados na operação atual]</span></p>
+      </div>
+      <div class="cats" data-cats data-reveal></div>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------- loja -->
+  <section class="band band--oat" id="loja" aria-labelledby="loja-h">
+    <div class="wrap">
+      <div class="shead" data-reveal>
+        <p class="eyebrow">Loja</p>
+        <h2 id="loja-h">Todos os produtos</h2>
+        <p>Cada item mostra como ele chega até você: <strong>entrega local</strong> para perecíveis e congelados, <strong>envio para todo o Brasil</strong> para o que é seco e estável na prateleira.</p>
+      </div>
+
+      <div class="filters" data-reveal>
+        <button class="chip" type="button" data-tag="vegano" aria-pressed="false">Vegano</button>
+        <button class="chip" type="button" data-tag="sem-gluten" aria-pressed="false">Sem glúten</button>
+        <button class="chip" type="button" data-tag="congelado" aria-pressed="false">Congelado</button>
+        <button class="chip" type="button" data-tag="perecivel" aria-pressed="false">Perecível</button>
+        <button class="chip" type="button" data-tag="biodegradavel" aria-pressed="false">Biodegradável</button>
+        <span class="filters__count" data-count aria-live="polite"></span>
+      </div>
+
+      <div class="grid" data-grid></div>
+
+      <p class="note" style="margin-top:26px">⚠️ <strong>Catálogo ilustrativo.</strong> Os produtos, pesos e preços acima foram escritos para esta maquete e não vieram do rancho.cc. Servem para mostrar como a loja se comporta — filtro, ficha, carrinho e tipo de entrega. As imagens são <strong>espaços reservados</strong>, não fotografias: tentamos banco de imagens e o assunto vinha errado com frequência. A fotografia dos produtos é um entregável do projeto. O acervo real entra pelo Shopify. <span class="cfm">[CONFIRM catálogo, preços e unidades reais]</span></p>
+      <p class="note">“Orgânico”, “agroecológico” e qualquer alegação de saúde são termos regulados no Brasil. Nenhuma alegação terapêutica aparece nesta maquete, e todo selo de certificação tem um espaço próprio na ficha do produto, marcado <span class="cfm">[CONFIRM certificação]</span> enquanto não houver certificado verificável.</p>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------------- entrega -->
+  <section class="band" id="entrega" aria-labelledby="ent-h">
+    <div class="wrap">
+      <div class="shead" data-reveal>
+        <p class="eyebrow">Como funciona a entrega</p>
+        <h2 id="ent-h">Dois caminhos, conforme o que você põe no carrinho</h2>
+      </div>
+      <div class="steps" data-reveal>
+        <article class="step">
+          <h3>Você informa o CEP</h3>
+          <p>O site verifica se o seu endereço está na área de entrega local da Rancho ou se receberá apenas por transportadora.</p>
+        </article>
+        <article class="step">
+          <h3>O carrinho se divide sozinho</h3>
+          <p>Perecíveis, hortifrúti e congelados seguem pela entrega local. Secos e itens de prateleira seguem por envio nacional. Cada linha do carrinho mostra qual é qual.</p>
+        </article>
+        <article class="step">
+          <h3>Pagamento no checkout</h3>
+          <p>O pedido é finalizado no checkout seguro do Shopify, com Pix, cartão e parcelamento. <span class="cfm">[CONFIRM meios de pagamento e parcelamento praticados]</span></p>
+        </article>
+      </div>
+      <ul class="pay" data-reveal>
+        <li>Pix</li>
+        <li>Cartão de crédito</li>
+        <li>Parcelamento <span class="cfm">[CONFIRM]</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------ ciclo -->
+  <section class="band band--forest" id="ciclo" aria-labelledby="ciclo-h">
+    <div class="wrap">
+      <div class="shead" data-reveal>
+        <p class="eyebrow">O ciclo da compra coletiva</p>
+        <h2 id="ciclo-h">A compra que só existe porque somos muitos</h2>
+        <p>Este é o mecanismo que diferencia a Rancho de uma loja comum, e é a parte que uma loja online genérica costuma esconder. Aqui ele é a estrutura do site.</p>
+      </div>
+      <div class="cycle" data-reveal>
+        <article class="cyc">
+          <p class="cyc__t">Início do mês</p>
+          <h3>Abre a compra coletiva</h3>
+          <p>A lista do mês vai ao ar e o grupo compra junto. O volume é o que reduz o preço e é o que dá previsibilidade a quem produz. <span class="cfm">[CONFIRM datas de abertura e fechamento]</span></p>
+        </article>
+        <article class="cyc">
+          <p class="cyc__t">Demais semanas</p>
+          <h3>Vendas do estoque</h3>
+          <p>O que sobra da coletiva fica disponível por unidade, enquanto durar. <span class="cfm">[CONFIRM como o estoque é reposto]</span></p>
+        </article>
+      </div>
+      <p class="note" data-reveal style="margin-top:22px">Fonte: o próprio rancho.cc descreve os dois modelos de compra. Datas, prazos e valores de frete não foram verificados e continuam marcados.</p>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------ sobre -->
+  <section class="band" id="sobre" aria-labelledby="sobre-h">
+    <div class="wrap">
+      <div class="shead" data-reveal>
+        <p class="eyebrow">Sobre a Rancho</p>
+        <h2 id="sobre-h">Consumo como ferramenta, não como impulso</h2>
+        <p>A Rancho conecta produtores sustentáveis a um grupo de consumidores responsáveis por meio de compras coletivas, priorizando o que é local, familiar, artesanal, agroecológico, orgânico e biodegradável.</p>
+        <p class="note">O parágrafo acima resume o que a própria Rancho publica. Tudo o que não está publicado — ano de fundação, número de produtores parceiros, equipe, CNPJ, endereço — fica de fora desta maquete de propósito. <span class="cfm">[CONFIRM razão social, CNPJ e endereço]</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------------- contato -->
+  <section class="band band--oat" id="contato" aria-labelledby="ct-h">
+    <div class="wrap">
+      <div class="shead" data-reveal>
+        <p class="eyebrow">Contato</p>
+        <h2 id="ct-h">Fale com a Rancho</h2>
+        <p>WhatsApp é o caminho mais rápido para dúvidas sobre pedido, entrega e produtos.</p>
+      </div>
+      <p data-reveal>
+        <a class="btn btn--wa" href="https://wa.me/554833653564?text=Ol%C3%A1%2C%20Rancho.%20Tenho%20uma%20d%C3%BAvida%20sobre%20um%20pedido." rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:1.1em;height:1.1em"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>
+          Conversar no WhatsApp
+        </a>
+      </p>
+      <p class="note" data-reveal>Telefone publicado no site da Rancho: (48) 3365-3564. <span class="cfm">[CONFIRM se este número atende WhatsApp]</span> — o botão acima assume que sim.</p>
+    </div>
+  </section>
+</main>
+
+<!-- ------------------------------------------------------------- footer -->
+<footer class="ftr">
+  <div class="wrap ftr__grid">
+    <div>
+      <span class="brand__name">Rancho</span><br>
+      <span class="brand__sub">Compras Coletivas</span>
+      <p style="margin-top:14px;font-size:.88rem">Produtos sustentáveis direto do produtor, a preços reduzidos. Florianópolis, SC.</p>
+    </div>
+    <div>
+      <h2>Loja</h2>
+      <ul>
+        <li><a href="#loja">Todos os produtos</a></li>
+        <li><a href="#entrega">Como funciona a entrega</a></li>
+        <li><a href="#ciclo">Compra coletiva</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Rancho</h2>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="https://www.instagram.com/rancho.cc/" rel="noopener">Instagram</a></li>
+        <li><a href="en/index.html" hreflang="en" lang="en">English</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Legal</h2>
+      <ul>
+        <li><a href="privacidade.html">Privacidade e LGPD</a></li>
+        <li><a href="privacidade.html#cookies">Cookies</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap ftr__bot">
+    <p><strong>Endereço</strong> <span class="cfm">[CONFIRM]</span> · <strong>Horário</strong> <span class="cfm">[CONFIRM]</span> · <strong>CNPJ</strong> <span class="cfm">[CONFIRM]</span></p>
+    <p>Telefone (48) 3365-3564 · © <span data-year>2026</span> Rancho | Compras Coletivas.</p>
+    <p class="ftr__demo">Maquete especulativa criada pela ThinkFirst Studios para apresentação. Não é o site publicado da Rancho, e o catálogo exibido é ilustrativo.</p>
+  </div>
+</footer>
+
+<!-- ------------------------------------------------------------ carrinho -->
+<div class="scrim" data-scrim></div>
+
+<aside class="drawer" data-drawer role="dialog" aria-modal="true" aria-label="Carrinho" aria-hidden="true">
+  <div class="drawer__top">
+    <h2>Seu carrinho</h2>
+    <button class="iconbtn" type="button" data-cart-close aria-label="Fechar carrinho">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+  <div class="drawer__list" data-cart-list></div>
+  <div class="drawer__foot">
+    <div class="drawer__row"><span>Subtotal</span><span class="price" data-subtotal>R$ 0,00</span></div>
+    <div class="drawer__row" data-local-line hidden><span>Entrega local</span><span>perecíveis e congelados <span class="cfm">[CONFIRM frete]</span></span></div>
+    <div class="drawer__row" data-nac-line hidden><span>Envio nacional</span><span>itens secos <span class="cfm">[CONFIRM frete]</span></span></div>
+    <div class="drawer__row drawer__row--total"><span>Total</span><span class="price" data-subtotal>R$ 0,00</span></div>
+    <button class="btn btn--forest btn--full" type="button" data-checkout>Finalizar compra</button>
+    <p class="note" style="margin-top:10px">O checkout real acontece na página do Shopify, fora desta maquete. Nada aqui cobra, guarda dados ou cria pedido.</p>
+  </div>
+</aside>
+
+<!-- --------------------------------------------------------------- modal -->
+<div class="modal" data-modal hidden role="dialog" aria-modal="true" aria-labelledby="modal-t">
+  <div class="modal__box">
+    <button class="modal__x" type="button" data-modal-close aria-label="Fechar">✕</button>
+    <div data-modal-body></div>
+  </div>
+</div>
+
+<a class="wa-float" href="https://wa.me/554833653564?text=Ol%C3%A1%2C%20Rancho." rel="noopener" aria-label="WhatsApp Rancho">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></svg>
+</a>
+
+<div class="consent" data-consent hidden role="region" aria-label="Aviso de cookies">
+  <p>Usamos apenas cookies essenciais para o funcionamento da loja. Nada de rastreamento ou publicidade sem o seu aceite.</p>
+  <div class="consent__btns">
+    <button class="btn btn--ghost btn--sm" type="button" data-consent-no>Recusar</button>
+    <button class="btn btn--forest btn--sm" type="button" data-consent-yes>Aceitar</button>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
